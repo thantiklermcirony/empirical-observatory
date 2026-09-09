@@ -1,0 +1,58 @@
+name: Publish contribution research
+on:
+  push:
+    paths: ['.github/workflows/publish-research.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify and unpack reviewed research
+        run: |
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import hashlib, json, shutil, zipfile
+          archive=Path('contribution-scan.zip')
+          assert hashlib.sha256(archive.read_bytes()).hexdigest()=='fddcc6d6a6b90f5a0d07de9da972c3ba2c2eece348f22ce5a448f1750a5f7549'
+          target_root=Path('research/contribution-scan')
+          with zipfile.ZipFile(archive) as z:
+              assert z.testzip() is None
+              manifest=json.loads(z.read('Manifest.json'))
+              expected={entry['path']:entry['sha256'] for entry in manifest}
+              assert set(z.namelist())==set(expected)|{'Manifest.json'}
+              for item in z.infolist():
+                  rel=PurePosixPath(item.filename)
+                  assert not rel.is_absolute() and '..' not in rel.parts and rel.parts[0]!='.git'
+                  data=z.read(item)
+                  if item.filename in expected:
+                      assert hashlib.sha256(data).hexdigest()==expected[item.filename]
+                  target=target_root.joinpath(*rel.parts)
+                  assert target.resolve().is_relative_to(target_root.resolve())
+                  target.parent.mkdir(parents=True,exist_ok=True)
+                  target.write_bytes(data)
+          shutil.copyfile(archive,target_root/'Research_and_Scanner.zip')
+          archive.unlink()
+          workflow=Path('.github/workflows/verify.yml')
+          text=workflow.read_text()
+          text=text.replace('on: [push, pull_request]','on: [push, pull_request, workflow_dispatch]')
+          text+="\n  scanner:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with:\n          python-version: '3.12'\n      - run: python -m unittest discover -s research/contribution-scan/scanner -p test_github_scan.py -v\n"
+          workflow.write_text(text)
+          Path('.github/workflows/publish-research.yml').unlink()
+          PY
+      - name: Check scanner before publication
+        run: python -m unittest discover -s research/contribution-scan/scanner -p test_github_scan.py -v
+      - name: Publish verified research source
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/contribution-scan .github/workflows contribution-scan.zip
+          git commit -m "Publish contribution scan, evidence and tested scanner"
+          git push
