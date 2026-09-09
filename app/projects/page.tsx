@@ -1,15 +1,25 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Orbit } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Current projects — The Empirical Architecture',
   description:
-    'Try our open experiments, inspect two tested Graphiti memory fixes, and find a concrete way to contribute.',
+    'Inspect our submitted Pertpy biological evaluator and Graphiti memory fixes, try open experiments, and help with the next research project.',
 };
 
 const github = 'https://github.com/thantiklermcirony';
 const projects = [
+  {
+    name: 'NeuroGym / observable decisions',
+    status: 'NEXT INVESTIGATION',
+    description:
+      'Check whether a decision-making task gives an agent the signal it needs to know when to act. We will reproduce the reported problem before proposing a fix.',
+    href: 'https://github.com/neurogym/neurogym/issues/279',
+    action: 'Read the open question',
+    source: 'https://github.com/neurogym/neurogym',
+  },
   {
     name: 'TAO / adaptive control',
     status: 'PLAYABLE EXPERIMENT',
@@ -84,7 +94,105 @@ export default function Projects() {
           </Link>
         </div>
       </section>
-      <section className="graphiti-feature" aria-labelledby="graphiti-title">
+      <section
+        className="graphiti-feature pertpy-feature"
+        id="pertpy"
+        aria-labelledby="pertpy-title"
+      >
+        <div className="project-status">
+          <span className="status-light" /> CONTRIBUTION SUBMITTED · AWAITING
+          REVIEW
+        </div>
+        <div className="graphiti-heading">
+          <div>
+            <span className="eyebrow">
+              LATEST PROJECT / BIOLOGICAL PREDICTION
+            </span>
+            <h2 id="pertpy-title">
+              Does the prediction
+              <br />
+              actually work?
+            </h2>
+          </div>
+          <p>
+            Our Pertpy evaluator checks biological predictions against simple
+            baselines, keeps training and test cells separate, and makes missing
+            or misleading scores visible. The contribution and review are
+            public.
+          </p>
+        </div>
+        <div className="graphiti-fixes">
+          <article>
+            <span className="project-number">01 / REAL CELLS</span>
+            <h3>Eight unseen gene combinations.</h3>
+            <p>
+              We tested the evaluator on 4,553 selected cells from the Norman
+              dataset. Conventional additive predictions beat the no-change
+              baseline in seven of eight combinations.
+            </p>
+            <Link href="https://github.com/scverse/pertpy/pull/1098">
+              Review Pertpy PR #1098 <ArrowUpRight size={18} />
+            </Link>
+          </article>
+          <article>
+            <span className="project-number">
+              02 / A NECESSARY REALITY CHECK
+            </span>
+            <h3>Good correlation can hide a bad answer.</h3>
+            <p>
+              One combination scored 0.84 on response correlation, yet had 3.06
+              times the squared prediction error of the no-change baseline. A
+              single attractive score would hide that failure.
+            </p>
+            <Link href="/research/Pertpy_Evaluation_Report.md">
+              Read the results and limits <ArrowUpRight size={18} />
+            </Link>
+          </article>
+        </div>
+        <figure className="pertpy-result">
+          <Image
+            src="/research/Norman_Baseline_Comparison.png"
+            width={2040}
+            height={1156}
+            loading="lazy"
+            unoptimized
+            alt="Additive prediction lowers mean squared error in seven of eight held-out gene combinations. DUSP9 plus MAPK1 has correlation 0.84 but 3.06 times the no-change error."
+          />
+          <figcaption>
+            Conventional baselines on one K562 dataset. IDA has not yet been
+            scored.{' '}
+            <Link href="/research/Norman_Baseline_Comparison.png">
+              Open the full-size chart.
+            </Link>
+          </figcaption>
+        </figure>
+        <div className="project-evidence">
+          <CheckCircle2 size={22} />
+          <p>
+            <strong>
+              84 evaluator cases pass on both tested Python versions.
+            </strong>{' '}
+            Independent calculations reproduce the real-data results. The full
+            type check and documentation build also pass.{' '}
+            <Link href="https://github.com/thantiklermcirony/pertpy/actions/runs/34415474373">
+              Inspect the validation.
+            </Link>
+          </p>
+        </div>
+        <p className="project-caveat">
+          Submitted for maintainer review; not merged. This is a first
+          evaluation API and a testing ground for IDA. It does not establish an
+          IDA advantage or a new biological finding.{' '}
+          <Link href="/research/Reproduce_Pertpy_Evaluation.md">
+            Reproduce the experiment.
+          </Link>
+        </p>
+      </section>
+      <section
+        className="graphiti-feature"
+        id="graphiti"
+        aria-labelledby="graphiti-title"
+      >
         <div className="project-status">
           <span className="status-light" /> TWO FIXES SUBMITTED · AWAITING
           REVIEW
