@@ -1,1 +1,37 @@
-
+name: Publish reviewed source
+on:
+  push:
+    paths: ['.github/workflows/verify.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and publish reviewed release
+        run: |
+          python - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import hashlib, zipfile
+          archive = Path('observatory-source.zip')
+          assert hashlib.sha256(archive.read_bytes()).hexdigest() == 'a91cd14a46f68b0c49967af346840f1cdf45c913cb3cbfdaa29a11497684bd70'
+          with zipfile.ZipFile(archive) as z:
+              assert z.testzip() is None
+              for item in z.infolist():
+                  rel = PurePosixPath(item.filename)
+                  assert not rel.is_absolute() and '..' not in rel.parts
+                  assert rel.parts[0] != '.git'
+                  assert rel.parts[:2] != ('.github', 'workflows')
+                  if item.is_dir(): continue
+                  target = Path(*rel.parts)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(z.read(item))
+          archive.unlink()
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --all
+          git commit -m "Publish Observatory 0.2 reviewed source and evidence"
+          git push
