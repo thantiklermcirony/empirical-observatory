@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-09-09T14:10:17.356228+00:00",
+  "catalogEntries": 21,
+  "mainPriorities": 12,
+  "allCatalogIssuesVerifiedOpenAtRecordedTime": true,
+  "inventoryIssues": 2058,
+  "targetRepositories": 42,
+  "repositoriesWithReturnedIssues": 41,
+  "scannerVersion": "0.1.1",
+  "scannerTestsPassed": 20,
+  "liveSchema2Searches": [
+    "snap-stanford/GEARS",
+    "scverse/cellrank",
+    "theislab/cpa"
+  ],
+  "executedUpstreamReproductions": [
+    {
+      "project": "Qiskit",
+      "version": "2.1.2",
+      "case": "integer versus generator seed across10PUBs"
+    }
+  ],
+  "newUpstreamSubmissions": 0,
+  "liveAtlasRetrievals": 0,
+  "limitations": [
+    "Coverage is bounded and partially incomplete.",
+    "Other proposed upstream failures were not executed.",
+    "No framework-specific superiority or cost saving established."
+  ]
+}

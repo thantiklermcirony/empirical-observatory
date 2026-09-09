@@ -1,0 +1,17 @@
+{
+  "qiskitVersion": "2.1.2",
+  "sourceFileSha256": "80700c0f124a57f0a9abfb16edce1dfc08be7192e75e6c2d9e55925fd1cb8466",
+  "pubs": 10,
+  "shotsPerPub": 64,
+  "integerSeedUniqueShotStrings": 1,
+  "generatorSeedUniqueShotStrings": 10,
+  "generatorReproducibleAcrossFreshInstances": true,
+  "classification": "Reproduction on installed Qiskit version; not a latest-main test or a novel algorithm.",
+  "issueUrls": [
+    "https://github.com/Qiskit/qiskit/issues/13730",
+    "https://github.com/Qiskit/qiskit/issues/13047"
+  ],
+  "numpyVersion": "2.5.3",
+  "pythonVersion": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0"
+}

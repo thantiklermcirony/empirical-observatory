@@ -1,0 +1,256 @@
+{
+  "groups": [
+    {
+      "id": "bilawalsidhu--gods-eye-view",
+      "repositories": [
+        "bilawalsidhu/gods-eye-view"
+      ]
+    },
+    {
+      "id": "braindecode--braindecode",
+      "repositories": [
+        "braindecode/braindecode"
+      ]
+    },
+    {
+      "id": "brainflow-dev--brainflow",
+      "repositories": [
+        "brainflow-dev/brainflow"
+      ]
+    },
+    {
+      "id": "casadi--casadi",
+      "repositories": [
+        "casadi/casadi"
+      ]
+    },
+    {
+      "id": "cesiumgs--cesium",
+      "repositories": [
+        "CesiumGS/cesium"
+      ]
+    },
+    {
+      "id": "do-mpc--do-mpc",
+      "repositories": [
+        "do-mpc/do-mpc"
+      ]
+    },
+    {
+      "id": "dynamicslab--pysindy",
+      "repositories": [
+        "dynamicslab/pysindy"
+      ]
+    },
+    {
+      "id": "farama-foundation--gymnasium",
+      "repositories": [
+        "Farama-Foundation/Gymnasium"
+      ]
+    },
+    {
+      "id": "getzep--graphiti",
+      "repositories": [
+        "getzep/graphiti"
+      ]
+    },
+    {
+      "id": "google-deepmind--alphagenome",
+      "repositories": [
+        "google-deepmind/alphagenome"
+      ]
+    },
+    {
+      "id": "google-deepmind--alphagenome_research",
+      "repositories": [
+        "google-deepmind/alphagenome_research"
+      ]
+    },
+    {
+      "id": "koala73--worldmonitor",
+      "repositories": [
+        "koala73/worldmonitor"
+      ]
+    },
+    {
+      "id": "langchain-ai--langgraph",
+      "repositories": [
+        "langchain-ai/langgraph"
+      ]
+    },
+    {
+      "id": "letta-ai--letta",
+      "repositories": [
+        "letta-ai/letta"
+      ]
+    },
+    {
+      "id": "mem0ai--mem0",
+      "repositories": [
+        "mem0ai/mem0"
+      ]
+    },
+    {
+      "id": "meta-pytorch--botorch",
+      "repositories": [
+        "meta-pytorch/botorch"
+      ]
+    },
+    {
+      "id": "mne-tools--mne-python",
+      "repositories": [
+        "mne-tools/mne-python"
+      ]
+    },
+    {
+      "id": "mobilitydata--gbfs",
+      "repositories": [
+        "MobilityData/gbfs"
+      ]
+    },
+    {
+      "id": "neurogym--neurogym",
+      "repositories": [
+        "neurogym/neurogym"
+      ]
+    },
+    {
+      "id": "neurotechx--moabb",
+      "repositories": [
+        "NeuroTechX/moabb"
+      ]
+    },
+    {
+      "id": "patrick-kidger--diffrax",
+      "repositories": [
+        "patrick-kidger/diffrax"
+      ]
+    },
+    {
+      "id": "pennylaneai--pennylane",
+      "repositories": [
+        "PennyLaneAI/pennylane"
+      ]
+    },
+    {
+      "id": "proroklab--popgym",
+      "repositories": [
+        "proroklab/popgym"
+      ]
+    },
+    {
+      "id": "pydata--xarray",
+      "repositories": [
+        "pydata/xarray"
+      ]
+    },
+    {
+      "id": "python-control--python-control",
+      "repositories": [
+        "python-control/python-control"
+      ]
+    },
+    {
+      "id": "qiskit--qiskit",
+      "repositories": [
+        "Qiskit/qiskit"
+      ]
+    },
+    {
+      "id": "quantumlib--cirq",
+      "repositories": [
+        "quantumlib/Cirq"
+      ]
+    },
+    {
+      "id": "qutip--qutip",
+      "repositories": [
+        "qutip/qutip"
+      ]
+    },
+    {
+      "id": "sciml--differentialequations.jl",
+      "repositories": [
+        "SciML/DifferentialEquations.jl"
+      ]
+    },
+    {
+      "id": "sciml--ordinarydiffeq.jl",
+      "repositories": [
+        "SciML/OrdinaryDiffEq.jl"
+      ]
+    },
+    {
+      "id": "scipy--scipy",
+      "repositories": [
+        "scipy/scipy"
+      ]
+    },
+    {
+      "id": "scverse--cellrank",
+      "repositories": [
+        "scverse/cellrank"
+      ]
+    },
+    {
+      "id": "scverse--pertpy",
+      "repositories": [
+        "scverse/pertpy"
+      ]
+    },
+    {
+      "id": "scverse--scanpy",
+      "repositories": [
+        "scverse/scanpy"
+      ]
+    },
+    {
+      "id": "scverse--scvi-tools",
+      "repositories": [
+        "scverse/scvi-tools"
+      ]
+    },
+    {
+      "id": "snap-stanford--gears",
+      "repositories": [
+        "snap-stanford/GEARS"
+      ]
+    },
+    {
+      "id": "stanfordnlp--dspy",
+      "repositories": [
+        "stanfordnlp/dspy"
+      ]
+    },
+    {
+      "id": "theislab--cpa",
+      "repositories": [
+        "theislab/cpa"
+      ]
+    },
+    {
+      "id": "theislab--scvelo",
+      "repositories": [
+        "theislab/scvelo"
+      ]
+    },
+    {
+      "id": "ukgovernmentbeis--inspect_ai",
+      "repositories": [
+        "UKGovernmentBEIS/inspect_ai"
+      ]
+    },
+    {
+      "id": "ukgovernmentbeis--inspect_evals",
+      "repositories": [
+        "UKGovernmentBEIS/inspect_evals"
+      ]
+    },
+    {
+      "id": "xiaowu0162--longmemeval",
+      "repositories": [
+        "xiaowu0162/LongMemEval"
+      ]
+    }
+  ]
+}

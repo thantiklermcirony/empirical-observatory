@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "scannerVersion": "0.1.1",
+  "updatedAt": "2026-09-09T14:05:05.373124+00:00",
+  "configSha256": "96c2383df26089b55eee6c4d8b9fb9ff29d093b4092fd689698b6af53e7a6235",
+  "scope": "Named public repository issues only; bounded search, not all GitHub.",
+  "requestsThisRun": 2,
+  "stop": null,
+  "coverage": [
+    {
+      "group": "cellrank",
+      "repositories": [
+        "scverse/cellrank"
+      ],
+      "pagesRetrieved": 1,
+      "requestedPageCap": 1,
+      "returnedItems": 2,
+      "reportedTotalCount": 2,
+      "uniqueIssuesRetrieved": 2,
+      "duplicateItems": 0,
+      "excludedItems": 0,
+      "identityCoverageKnown": true,
+      "complete": true,
+      "searchCeilingReached": false,
+      "incompleteResults": false,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    },
+    {
+      "group": "cpa",
+      "repositories": [
+        "theislab/cpa"
+      ],
+      "pagesRetrieved": 1,
+      "requestedPageCap": 1,
+      "returnedItems": 22,
+      "reportedTotalCount": 22,
+      "uniqueIssuesRetrieved": 22,
+      "duplicateItems": 0,
+      "excludedItems": 0,
+      "identityCoverageKnown": true,
+      "complete": true,
+      "searchCeilingReached": false,
+      "incompleteResults": false,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+is%3Apublic+repo%3Ascverse%2Fcellrank&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T14:05:04.300055+00:00",
+      "totalCount": 2,
+      "incompleteResults": false,
+      "rateRemaining": "9",
+      "rateReset": "1788962764",
+      "responseSha256": "155733aa1ff4b31f79a174eeec9d89acd30acbd1be5244283d54a4e2b6ab3a94",
+      "group": "cellrank",
+      "page": 1,
+      "returnedItems": 2,
+      "issueKeys": [
+        "scverse/cellrank#1376",
+        "scverse/cellrank#1191"
+      ]
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+is%3Apublic+repo%3Atheislab%2Fcpa&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T14:05:05.354285+00:00",
+      "totalCount": 22,
+      "incompleteResults": false,
+      "rateRemaining": "8",
+      "rateReset": "1788962764",
+      "responseSha256": "dcdc1f6157ebf3a0fd896fb1292c550c335e0ab6b76671624ff366c80ae3f97d",
+      "group": "cpa",
+      "page": 1,
+      "returnedItems": 22,
+      "issueKeys": [
+        "theislab/cpa#64",
+        "theislab/cpa#24",
+        "theislab/cpa#63",
+        "theislab/cpa#62",
+        "theislab/cpa#59",
+        "theislab/cpa#61",
+        "theislab/cpa#60",
+        "theislab/cpa#40",
+        "theislab/cpa#56",
+        "theislab/cpa#53",
+        "theislab/cpa#49",
+        "theislab/cpa#42",
+        "theislab/cpa#41",
+        "theislab/cpa#39",
+        "theislab/cpa#38",
+        "theislab/cpa#27",
+        "theislab/cpa#32",
+        "theislab/cpa#36",
+        "theislab/cpa#35",
+        "theislab/cpa#22",
+        "theislab/cpa#9",
+        "theislab/cpa#8"
+      ]
+    }
+  ],
+  "uniqueOpenIssues": 24
+}

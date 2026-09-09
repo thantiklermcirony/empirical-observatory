@@ -1,0 +1,1878 @@
+{
+  "checkedOn": "2026-09-09",
+  "priorityCount": 12,
+  "catalogCount": 21,
+  "rankingMethod": "Ordinal portfolio judgment: need, impact, testability, framework fit, effort and existing contribution coverage. Not a quantitative impact estimate.",
+  "opportunities": [
+    {
+      "priority": 1,
+      "displayOrder": 1,
+      "repository": "getzep/graphiti",
+      "issue": 1841,
+      "url": "https://github.com/getzep/graphiti/issues/1841",
+      "category": "AI campaign",
+      "stage": "Reproduce first",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-09-06T10:33:44Z",
+        "updatedAt": "2026-09-06T10:33:44Z",
+        "verifiedAt": "2026-09-09T13:46:49.025321+00:00",
+        "source": "https://api.github.com/repos/getzep/graphiti/issues/1841",
+        "commentsCount": 0,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "7910405739b2208723de7936d8eddab9e5e3a7fb25a88bd51b3a1cdd26015ad0"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "graphiti_state_transitions",
+        "repo": "getzep/graphiti",
+        "issue_url": "https://github.com/getzep/graphiti/issues/1841",
+        "evidence_level": "User-reported behavior; current pinned-version reproduction required",
+        "requested_behavior": "Clarify or repair when a later release/reassignment invalidates an earlier project-assignment fact.",
+        "prior_art": [
+          {
+            "url": "https://github.com/getzep/graphiti",
+            "relationship": "Temporal validity, provenance and supersession are existing core capabilities."
+          },
+          {
+            "url": "https://github.com/getzep/graphiti/issues/1515",
+            "relationship": "Existing temporal retrieval benchmark request with a proposed MemTest adapter."
+          },
+          {
+            "url": "https://github.com/getzep/graphiti/issues/1571",
+            "relationship": "Related question about temporal cues in reranking."
+          }
+        ],
+        "deliverable": "A minimal two-episode reproducer and parameterized relation-transition regression suite, followed by the narrowest patch or ontology configuration correction supported by the reproduction.",
+        "framework_specific": "Declare which relation types are exclusive, the valid-time/query-time semantics, and what observations warrant a state revision without deleting history.",
+        "ordinary_engineering": "Database fixtures, extraction mocks, edge-query assertions and adapter wiring.",
+        "prerequisites": [
+          "Pin Graphiti commit, graph backend and LLM configuration.",
+          "Separate extraction failure from invalidation failure.",
+          "Obtain an explicit semantic expectation for exclusive versus multiple concurrent assignments."
+        ],
+        "reproduction": {
+          "first_gate": "Replay the reported reassignment in a fresh graph; compare extracted edges, valid-time intervals and current/historical queries.",
+          "cases": [
+            "Exclusive assignment superseded",
+            "Two concurrent assignments remain valid",
+            "Release negated",
+            "Release scheduled for a future date",
+            "Correction arrives after a newer event",
+            "Same predicate on a different person",
+            "Ingestion order differs from event-time order"
+          ],
+          "initial_budget": "CPU graph service plus mocked extracted edges; 2-4 CPU-hours setup/test budget.",
+          "later_budget": "At most 50 end-to-end extraction calls in a separately priced cap; no model training."
+        },
+        "baselines": [
+          "Current Graphiti defaults",
+          "Typed ontology/configuration without code change",
+          "Simple deterministic single-valued state store with history"
+        ],
+        "acceptance_metrics": [
+          "Correct current and historical answers for every frozen fixture",
+          "False invalidation rate on multi-valued and entity-ambiguity controls",
+          "Results under both ingestion orders with declared semantics",
+          "Extraction calls, latency and added storage"
+        ],
+        "falsifiers": [
+          "Current configuration already handles the reported case",
+          "The fix erases legitimate concurrent relationships",
+          "Historical answers become wrong",
+          "Improvement depends on evaluator-only oracle metadata"
+        ],
+        "proposed_public_claim": "Versioned state-transition tests and a scoped temporal-memory fix if reproduced.",
+        "prohibited_inference": "New temporal-graph theory or general AI superiority.",
+        "current_verification": {
+          "url": "https://github.com/getzep/graphiti/issues/1841",
+          "state": "open",
+          "title": "[ISSUE] Facts Invalidation Is Not Happening Properly",
+          "created_at": "2026-09-06T10:33:44Z",
+          "updated_at": "2026-09-06T10:33:44Z",
+          "retrieved_at": "2026-09-09T13:46:49.025321+00:00",
+          "labels": [],
+          "comments_count": 0,
+          "draft": null,
+          "merged_at": null,
+          "api_source": "https://api.github.com/repos/getzep/graphiti/issues/1841"
+        }
+      }
+    },
+    {
+      "priority": 2,
+      "displayOrder": 2,
+      "repository": "scverse/pertpy",
+      "issue": 1035,
+      "url": "https://github.com/scverse/pertpy/issues/1035",
+      "category": "Biology campaign",
+      "stage": "Narrow evaluator implementation",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-07-07T19:18:06Z",
+        "updatedAt": "2026-07-07T19:18:06Z",
+        "verifiedAt": "2026-09-09T13:46:49.932427+00:00",
+        "source": "https://api.github.com/repos/scverse/pertpy/issues/1035",
+        "commentsCount": 0,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "fb586b6e9b6030d5c14627fe65cd8176889dc5640555dce6efe914c4a21808ed"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "pertpy-1035",
+        "repository": "scverse/pertpy",
+        "issue_number": 1035,
+        "title": "Benchmarking & evaluation harness for perturbation prediction (baseline-aware)",
+        "issue_url": "https://github.com/scverse/pertpy/issues/1035",
+        "opened_on": "2026-07-07",
+        "status": "open",
+        "status_observed_on": "2026-09-09",
+        "live_api_verified": true,
+        "implementation_started": false,
+        "maintainers_contacted": false,
+        "programme_fit": [
+          "measurement contract",
+          "context-specific comparison",
+          "held-out intervention prediction",
+          "baseline-aware evaluation"
+        ],
+        "requested_behavior": [
+          "Standard held-out perturbation, combination and cell-type splits",
+          "Control-mean, additive/linear and nearest-perturbation baselines",
+          "Per-DEG delta/logFC correlation, E-distance, sign accuracy and top-k DEG overlap",
+          "Measured/predicted AnnData evaluator returning tidy DataFrames"
+        ],
+        "existing_work": [
+          "PerturbationComparison",
+          "Distance metrics",
+          "DistanceSpace.nearest_perturbations",
+          "Runtime benchmarking issue #173 is a distinct request"
+        ],
+        "contribution": "Build a narrow AnnData evaluator and versioned split/measurement manifest. Explicitly align feature IDs and normalization, compute baselines from training controls only, and report metrics by intervention and context. Include a negative-control task where mean prediction is optimal.",
+        "dependencies": [
+          "pertpy",
+          "anndata",
+          "numpy",
+          "scipy",
+          "pandas"
+        ],
+        "code_license": {
+          "spdx": "MIT",
+          "source_url": "https://github.com/scverse/pertpy"
+        },
+        "reproduction": {
+          "dataset_license": "Unresolved: record is publicly downloadable, but rendered Rights section did not expose a specific license during this audit. Do not assume repository code license covers data or mirror files before checking.",
+          "manifest_strategy": "Pin original source URL, version/record, checksum, acquisition date and preprocessing. Prefer a downloader over redistributing unverified artifacts.",
+          "downloaded_in_this_scan": false,
+          "record_url": "https://zenodo.org/records/13350497",
+          "previous_record_inspected_url": "https://zenodo.org/records/10044268",
+          "name": "Norman 2019 Perturb-seq",
+          "loader": "pertpy.data.norman_2019()",
+          "loader_source": "https://github.com/scverse/pertpy/blob/main/src/pertpy/data/_datasets.py",
+          "hosted_file": "https://exampledata.scverse.org/pertpy/norman_2019.h5ad",
+          "original_accession": "GSE133344",
+          "prior_record_file": "NormanWeissman2019_filtered.h5ad",
+          "prior_record_md5": "c870e6967d91c017d9da827bab183cd6",
+          "context": "Single cell context supports perturbation/combinations tests; it is insufficient by itself to validate generalization across biological contexts.",
+          "related_report_url": "https://github.com/snap-stanford/GEARS/issues/82"
+        },
+        "acceptance_metrics": [
+          "Independent NumPy metric equivalence on tiny reference cases",
+          "Deterministic splits and ID alignment",
+          "All train/test leakage fixtures rejected",
+          "Every scorecard includes strongest declared simple baselines",
+          "Any scientific advantage evaluated only on prespecified held-out endpoints"
+        ],
+        "falsifier": "Conventional mean/additive baselines erase the programme's claimed predictive advantage; the evaluator remains useful software.",
+        "causal_identification_limit": "Better evaluation does not identify mechanisms or overcome confounding; held-out predictive accuracy is not proof of causality.",
+        "prior_attempt_status": "Issue lists existing primitives. No claim of an absence of other work; check linked branches and maintainer activity before coding.",
+        "sources": [
+          "https://github.com/scverse/pertpy/issues/1035",
+          "https://github.com/scverse/pertpy/blob/main/src/pertpy/data/_datasets.py",
+          "https://zenodo.org/records/13350497",
+          "https://zenodo.org/records/10044268",
+          "https://github.com/snap-stanford/GEARS/issues/82",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12220817/"
+        ],
+        "retrieved_at": "2026-09-09T13:46:49.932427+00:00",
+        "created_at": "2026-07-07T19:18:06Z",
+        "updated_at": "2026-07-07T19:18:06Z",
+        "closed_at": null,
+        "verification_artifact": "verified/scverse__pertpy__issues__1035.json",
+        "api_source": "https://api.github.com/repos/scverse/pertpy/issues/1035"
+      }
+    },
+    {
+      "priority": 3,
+      "displayOrder": 3,
+      "repository": "python-control/python-control",
+      "issue": 1173,
+      "url": "https://github.com/python-control/python-control/issues/1173",
+      "category": "Early contribution",
+      "stage": "Maintainer-supported interface candidate",
+      "verification": {
+        "state": "open",
+        "createdAt": "2025-07-23T17:56:20Z",
+        "updatedAt": "2025-11-09T02:59:04Z",
+        "verifiedAt": "2026-09-09T13:46:38.641279+00:00",
+        "commentsCount": 1,
+        "assigneeCount": 0
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "repository": "python-control/python-control",
+        "number": 1173,
+        "title": "dlqe should return Kalman filter gain rather than Kalman predictor gain",
+        "url": "https://github.com/python-control/python-control/issues/1173",
+        "state": "open",
+        "createdAt": "2025-07-23T17:56:20Z",
+        "updatedAt": "2025-11-09T02:59:04Z",
+        "verifiedAt": "2026-09-09T13:46:38.641279+00:00",
+        "statusSource": "https://api.github.com/repos/python-control/python-control/issues?state=open&sort=updated&direction=desc&per_page=100",
+        "authorAssociation": "NONE",
+        "commentsReported": 1,
+        "commentsRead": 1,
+        "commentsComplete": true,
+        "commentsVerifiedAt": "2026-09-09T13:46:45.440026+00:00",
+        "commentSources": [
+          "https://github.com/python-control/python-control/issues/1173#issuecomment-3507426464"
+        ],
+        "codeReproduced": false,
+        "currentMainPinnedAndExecuted": false,
+        "acceptanceMetricsAreProposed": true,
+        "disposition": "implementation_candidate_after_current_main_reproduction",
+        "programmeConnection": "IDA measurement time and state meaning; a precise filtering/prediction contract for conventional baselines.",
+        "maintainerRequestedBehavior": {
+          "endorsement": "explicit_member_comment",
+          "summary": "Member murrayrm supports exposing filter-form gain through an optional keyword or separate function; the API choice is not settled.",
+          "url": "https://github.com/python-control/python-control/issues/1173#issuecomment-3507426464"
+        },
+        "problem": "The issue distinguishes the current predictor gain A P C^T(C P C^T+R)^-1 from the filter gain P C^T(C P C^T+R)^-1. Recovering the latter by inverting A fails when A is singular.",
+        "existingAttempts": "One maintainer comment; no matching Kalman/filter-form PR title in the complete 87-row open issue/PR inventory. This is not a full closed-PR, branch or commit search.",
+        "reproductionInputs": {
+          "origin": "Our proposed analytic fixtures; the issue supplies formulas rather than this matrix example.",
+          "fixtures": [
+            "A=diag(0,0.8), G=C=Q=R=I_2",
+            "Scalar A=0, G=C=Q=R=1: prior P=1, filter gain=0.5, predictor gain=0."
+          ]
+        },
+        "contribution": "Add a backward-compatible filter-form option or small companion function, explicit current-measurement versus next-state docs, and independent singular-A regressions. Preserve the predictor default; resolve how returned poles are defined.",
+        "acceptanceMetric": [
+          "On well-conditioned float64 fixtures, filter gain agrees with a direct linear solve using P to rtol=1e-12 and atol=1e-12; never invert A.",
+          "Existing default outputs and estimator time convention remain unchanged.",
+          "A noise-free one-step example confirms that the new gain updates the current state, while the existing gain predicts the next state."
+        ],
+        "dependenciesCompute": "CPU only: Python, python-control, NumPy, SciPy and pytest. Slycot is an optional existing backend; start with method='scipy'. Small 1x1/2x2 matrices require no cloud account or GPU.",
+        "license": {
+          "id": "BSD-3-Clause",
+          "source": "https://github.com/python-control/python-control/blob/main/LICENSE"
+        },
+        "noveltyBoundary": "Classical Kalman filtering, not a new estimator or evidence that established control ignores context. The contribution is API correctness and measurement semantics.",
+        "falsifier": "If pinned current main or an existing implementation already exposes the required gain with these semantics, do not duplicate it. Reduce the work to missing regression/documentation coverage or drop it.",
+        "nextGate": "Pin main, run the two fixtures, inspect current contribution guidance and complete linked/closed PR search before implementing."
+      }
+    },
+    {
+      "priority": 4,
+      "displayOrder": 4,
+      "repository": "neurogym/neurogym",
+      "issue": 279,
+      "url": "https://github.com/neurogym/neurogym/issues/279",
+      "category": "AI campaign",
+      "stage": "Protocol audit first",
+      "verification": {
+        "state": "open",
+        "createdAt": "2025-12-16T11:36:24Z",
+        "updatedAt": "2025-12-16T13:41:26Z",
+        "verifiedAt": "2026-09-09T13:46:49.489828+00:00",
+        "source": "https://api.github.com/repos/neurogym/neurogym/issues/279",
+        "commentsCount": 1,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "9a1717b5a5c406eaa91e19c624aef7b0dbeeee6650f0c4922b355efea7c0bec4"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "neurogym_observation_contract",
+        "repo": "neurogym/neurogym",
+        "issue_url": "https://github.com/neurogym/neurogym/issues/279",
+        "evidence_level": "Question about intended protocol versus possible implementation bug",
+        "requested_behavior": "Clarify how a learner detects the decision period in ContextDecisionMaking when delay duration varies and an explicit go cue appears absent.",
+        "prior_art": [
+          {
+            "url": "https://neurogym.github.io/neurogym/latest/examples/contextdecisionmaking/",
+            "relationship": "Official simplified context-dependent task and recurrent-training example."
+          },
+          {
+            "url": "https://neurogym.github.io/neurogym/latest/api/envs/#neurogym.envs.native.contextdecisionmaking.ContextDecisionMaking",
+            "relationship": "Official task configuration and timing/reward parameters."
+          },
+          {
+            "url": "https://github.com/neurogym/neurogym",
+            "relationship": "Existing Gymnasium interface and NeuroGym vanilla-RNN fork."
+          },
+          {
+            "url": "https://github.com/Stable-Baselines-Team/stable-baselines3-contrib/issues/295",
+            "relationship": "Recurrent baseline support already being developed upstream."
+          },
+          {
+            "url": "https://github.com/neurogym/neurogym/issues/279#issuecomment-3660419410",
+            "relationship": "Maintainer says they will inspect the task and requests design input; no resolution in the fresh comment snapshot."
+          }
+        ],
+        "deliverable": "A trace-based observation/action/timing contract test, a cue ablation notebook and either a narrow cue fix or clearer task documentation.",
+        "framework_specific": "Ask which distinctions in hidden phase are actually identifiable from permitted history and whether those distinctions are necessary for the scored action.",
+        "ordinary_engineering": "Environment trace logging, period-boundary assertions and documentation.",
+        "prerequisites": [
+          "Pin current code; sole fresh maintainer comment acknowledges investigation without resolving task design.",
+          "Audit actual observation generation and reward handling; the full current step method was not retrieved/executed in this scan.",
+          "Keep info ground truth and internal phase labels unavailable to the learner."
+        ],
+        "reproduction": {
+          "first_gate": "Generate matched trials with fixed stimuli and different delay lengths; inspect observable prefixes at decision boundaries before training.",
+          "cases": [
+            "Fixed delay",
+            "Variable delay",
+            "Explicit go cue added as experimental ablation",
+            "Persistently emit remembered choice after stimulus",
+            "Action penalty outside decision tested",
+            "Abort versus non-abort conditions"
+          ],
+          "initial_budget": "CPU only: 100 paired trial traces, no RL/PyTorch installation necessary for the first audit; 1-2 CPU-hours cap.",
+          "later_budget": "Only if unresolved, compare a simple rule policy and LSTM under identical observations across multiple seeds; price a bounded training run separately."
+        },
+        "baselines": [
+          "Remembered choice emitted throughout waiting interval",
+          "Fixed-timer policy",
+          "Recurrent policy using only permitted observations"
+        ],
+        "acceptance_metrics": [
+          "Decision-boundary distinguishability under the declared protocol",
+          "Premature responses and reward under the persistent-choice control",
+          "Correctness and timing separately",
+          "No hidden phase or ground-truth leakage to the policy"
+        ],
+        "falsifiers": [
+          "Current task has a usable cue omitted from the issue report",
+          "Timing need not be identified to earn the intended reward",
+          "Proposed cue changes the scientific task rather than repairing it",
+          "Training succeeds through a scoring shortcut rather than demonstrated phase inference"
+        ],
+        "proposed_public_claim": "An observation-adequacy audit of one synthetic task.",
+        "prohibited_inference": "A theorem about brain function, consciousness, or recurrent-model failure.",
+        "current_verification": {
+          "url": "https://github.com/neurogym/neurogym/issues/279",
+          "state": "open",
+          "title": "Possible bug in the \"Context Decision Making\" task",
+          "created_at": "2025-12-16T11:36:24Z",
+          "updated_at": "2025-12-16T13:41:26Z",
+          "retrieved_at": "2026-09-09T13:46:49.489828+00:00",
+          "labels": [],
+          "comments_count": 1,
+          "draft": null,
+          "merged_at": null,
+          "api_source": "https://api.github.com/repos/neurogym/neurogym/issues/279"
+        },
+        "comments_verification": {
+          "retrieved_at": "2026-09-09T13:50:51.611667+00:00",
+          "api_source": "https://api.github.com/repos/neurogym/neurogym/issues/279/comments?per_page=100",
+          "items": [
+            {
+              "url": "https://github.com/neurogym/neurogym/issues/279#issuecomment-3660419410",
+              "created_at": "2025-12-16T13:01:16Z",
+              "updated_at": "2025-12-16T13:01:16Z",
+              "author_association": "MEMBER"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": 5,
+      "displayOrder": 5,
+      "repository": "xiaowu0162/LongMemEval",
+      "issue": 50,
+      "url": "https://github.com/xiaowu0162/LongMemEval/issues/50",
+      "category": "AI campaign",
+      "stage": "Dataset audit first",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-07-15T05:27:26Z",
+        "updatedAt": "2026-07-27T08:31:44Z",
+        "verifiedAt": "2026-09-09T13:46:49.398632+00:00",
+        "source": "https://api.github.com/repos/xiaowu0162/LongMemEval/issues/50",
+        "commentsCount": 0,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "28dda7ae16452feb0f560a0f1ef0f3fd249c3d851fa94b23e6994119bbdb2a30"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "longmemeval_evidence_audit",
+        "repo": "xiaowu0162/LongMemEval",
+        "issue_url": "https://github.com/xiaowu0162/LongMemEval/issues/50",
+        "evidence_level": "Reported annotation inconsistencies in cleaned S data; not independently adjudicated",
+        "requested_behavior": "Resolve relative-date, evidence-turn and evidence-session inconsistencies for identified benchmark questions.",
+        "prior_art": [
+          {
+            "url": "https://github.com/xiaowu0162/LongMemEval/issues/12",
+            "relationship": "Older possible stale-answer report; may be repaired by cleaned release, so not the primary anchor."
+          },
+          {
+            "url": "https://github.com/xiaowu0162/LongMemEval",
+            "relationship": "Temporal reasoning, knowledge updates and abstention already belong to the benchmark; cleaned histories released in September 2025."
+          },
+          {
+            "url": "https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned",
+            "relationship": "Official cleaned dataset to hash and inspect."
+          },
+          {
+            "url": "https://github.com/xiaowu0162/LongMemEval-V2",
+            "relationship": "Current separate agent-memory benchmark with dynamic-state and premise-awareness tasks, defined adapter interface and accuracy/latency frontier."
+          }
+        ],
+        "deliverable": "A version-aware evidence audit manifest and deterministic annotation checks, with a small adjudicated patch proposal only when the released data confirms the report.",
+        "framework_specific": "Bind the question time, utterance time, event time and source identity before determining what answer the available record supports.",
+        "ordinary_engineering": "Dataset hashing, parser, date arithmetic, annotation integrity and report generation.",
+        "prerequisites": [
+          "Pin original, cleaned and relevant current revisions by checksum.",
+          "Inspect full relevant histories, not just has_answer turns.",
+          "Keep evaluation question IDs, labels and gold evidence outside candidate retrieval inputs."
+        ],
+        "reproduction": {
+          "first_gate": "Check reported IDs 9aaed6a3, gpt4_f420262d, gpt4_5dcc0aab and 46a3abf7 against the exact cleaned artifact; separately check historical ad7109d1.",
+          "cases": [
+            "Relative date anchored to question",
+            "Relative date anchored to utterance",
+            "Intended future event versus completed event",
+            "Answer-turn versus answer-session consistency",
+            "Ambiguous history kept ambiguous"
+          ],
+          "initial_budget": "CPU parsing and a four-item full-history manual review; no model inference or large-model download.",
+          "later_budget": "Apply deterministic checks to the full selected split; separately cap any human/model adjudication or reader rerun."
+        },
+        "baselines": [
+          "Unchanged released labels",
+          "Human review blinded to model identity",
+          "Deterministic annotation/date checks without a new architecture"
+        ],
+        "acceptance_metrics": [
+          "Exact artifact hashes and source turn/session references for every finding",
+          "All proposed label changes independently adjudicated before upstream submission",
+          "No automatic corrections for ambiguous semantics",
+          "Original-versus-corrected scoring sensitivity reported if model rankings are evaluated"
+        ],
+        "falsifiers": [
+          "Current cleaned artifact already resolves the reports",
+          "Full context supports the existing answer",
+          "A supposed correction imports information unavailable to the model",
+          "Label edits improve only the submitter's own model"
+        ],
+        "proposed_public_claim": "A reproducible dataset-quality and temporal-evidence audit.",
+        "prohibited_inference": "Benchmark leadership or a new memory architecture demonstrated by cleaning labels.",
+        "current_verification": {
+          "url": "https://github.com/xiaowu0162/LongMemEval/issues/50",
+          "state": "open",
+          "title": "Maybe it's an incorrect info?",
+          "created_at": "2026-07-15T05:27:26Z",
+          "updated_at": "2026-07-27T08:31:44Z",
+          "retrieved_at": "2026-09-09T13:46:49.398632+00:00",
+          "labels": [],
+          "comments_count": 0,
+          "draft": null,
+          "merged_at": null,
+          "api_source": "https://api.github.com/repos/xiaowu0162/LongMemEval/issues/50"
+        }
+      }
+    },
+    {
+      "priority": 6,
+      "displayOrder": 6,
+      "repository": "google-deepmind/alphagenome",
+      "issue": 48,
+      "url": "https://github.com/google-deepmind/alphagenome/issues/48",
+      "category": "Genomic reliability",
+      "stage": "Validate existing proposed PR46",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-09-08T17:03:36Z",
+        "updatedAt": "2026-09-08T18:07:16Z",
+        "verifiedAt": "2026-09-09T13:46:50.805352+00:00",
+        "source": "https://api.github.com/repos/google-deepmind/alphagenome/issues/48",
+        "commentsCount": 0,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "7aaca0bc3ec1ab0c52fc5358b05806b291a05f31c19b7f0549fec4d3ca0063fa"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "alphagenome-48",
+        "repository": "google-deepmind/alphagenome",
+        "issue_number": 48,
+        "title": "`TrackData` slicing can mislabel returned genomic coordinates",
+        "issue_url": "https://github.com/google-deepmind/alphagenome/issues/48",
+        "opened_on": "2026-09-08",
+        "status": "open",
+        "status_observed_on": "2026-09-09",
+        "live_api_verified": true,
+        "implementation_started": false,
+        "maintainers_contacted": false,
+        "programme_fit": [
+          "physical coordinate contract",
+          "measurement-to-state mapping",
+          "compositional transformations"
+        ],
+        "requested_behavior": [
+          "Preserve agreement between returned track bins and genomic interval labels after unaligned or repeated slicing"
+        ],
+        "existing_work": [
+          "TrackData genomic-coordinate representation",
+          "Existing open PR #46 proposes a slicing fix"
+        ],
+        "contribution": "Offer independent contract/property tests or review of the existing PR, not a competing patch. Test aligned, unaligned and repeated slices, with an explicit rounding-versus-rejection contract.",
+        "dependencies": [
+          "alphagenome local SDK",
+          "numpy",
+          "Existing SDK test stack"
+        ],
+        "code_license": {
+          "spdx": "Apache-2.0",
+          "source_url": "https://github.com/google-deepmind/alphagenome"
+        },
+        "reproduction": {
+          "name": "Three-bin numeric fixture from public issue",
+          "synthetic": true,
+          "interval": {
+            "start": 0,
+            "end": 384
+          },
+          "resolution": 128,
+          "values": [
+            10,
+            20,
+            30
+          ],
+          "slice": {
+            "start": 127,
+            "end": 383
+          },
+          "reported_returned_values": [
+            10,
+            20
+          ],
+          "reported_assigned_interval": {
+            "start": 127,
+            "end": 383
+          },
+          "actual_returned_bin_interval": {
+            "start": 0,
+            "end": 256
+          },
+          "api_key_required": false,
+          "live_service_queries_performed": 0,
+          "dataset_license": "No provider prediction data required. Use newly authored numeric software fixtures inspired by the public report."
+        },
+        "acceptance_metrics": [
+          "Zero disagreement between returned values and physical genomic coordinate labels",
+          "Aligned composed slices equal direct slices",
+          "Unsupported unaligned requests produce an explicit documented error or well-defined rounding"
+        ],
+        "falsifier": "PR #46 already covers all proposed contracts, or the proposed interval expectation conflicts with intended API semantics.",
+        "causal_identification_limit": "Coordinate correctness is not evidence of predictive accuracy, causal identification or a new biological discovery.",
+        "prior_attempt_status": {
+          "url": "https://github.com/google-deepmind/alphagenome/pull/46",
+          "title": "fix TrackData slicing",
+          "status": "open",
+          "opened_on": "2026-09-06",
+          "action": "Prefer review and independent regression cases for existing work.",
+          "retrieved_at": "2026-09-09T13:46:51.082581+00:00",
+          "updated_at": "2026-09-08T18:35:04Z",
+          "merged_at": null,
+          "verification_artifact": "verified/google-deepmind__alphagenome__pulls__46.json"
+        },
+        "atlas_caveats": [
+          "No live Atlas retrieval occurred in the earlier adapter work or this scan.",
+          "Client code licensing is separate from provider prediction/API terms.",
+          "TERT/Kircher overlap with existing CAGI benchmarks remains explicit; reproducing that assay is not a novel held-out validation."
+        ],
+        "sources": [
+          "https://github.com/google-deepmind/alphagenome/issues/48",
+          "https://github.com/google-deepmind/alphagenome/pull/46",
+          "https://github.com/google-deepmind/alphagenome",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12851941/"
+        ],
+        "retrieved_at": "2026-09-09T13:46:50.805352+00:00",
+        "created_at": "2026-09-08T17:03:36Z",
+        "updated_at": "2026-09-08T18:07:16Z",
+        "closed_at": null,
+        "verification_artifact": "verified/google-deepmind__alphagenome__issues__48.json",
+        "api_source": "https://api.github.com/repos/google-deepmind/alphagenome/issues/48"
+      }
+    },
+    {
+      "priority": 7,
+      "displayOrder": 7,
+      "repository": "Qiskit/qiskit",
+      "issue": 13730,
+      "url": "https://github.com/Qiskit/qiskit/issues/13730",
+      "category": "Quantum reliability",
+      "stage": "Reproduced on 2.1.2; target-version gate remains",
+      "verification": {
+        "state": "open",
+        "createdAt": "2025-01-24T07:45:50Z",
+        "updatedAt": "2025-06-09T09:58:15Z",
+        "verifiedAt": "2026-09-09T13:46:48.478644+00:00",
+        "source": "https://api.github.com/repos/Qiskit/qiskit/issues/13730",
+        "commentsCount": 4,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "292643d489d4c49bdf5753e501ea70bdaf36f921b77f2c6bbf8e9a4487329ba7"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "contribution": "Agree seed scope and add independent-batch/reproducibility regression tests; one problem family with issue13047.",
+        "programme_fit": "Explicit stochastic experiment contracts; standard random-number engineering.",
+        "existing_work": [
+          "https://github.com/Qiskit/qiskit/issues/13047"
+        ],
+        "reproduction": {
+          "qiskitVersion": "2.1.2",
+          "sourceFileSha256": "80700c0f124a57f0a9abfb16edce1dfc08be7192e75e6c2d9e55925fd1cb8466",
+          "pubs": 10,
+          "shotsPerPub": 64,
+          "integerSeedUniqueShotStrings": 1,
+          "generatorSeedUniqueShotStrings": 10,
+          "generatorReproducibleAcrossFreshInstances": true,
+          "classification": "Reproduction on installed Qiskit version; not a latest-main test or a novel algorithm.",
+          "issueUrls": [
+            "https://github.com/Qiskit/qiskit/issues/13730",
+            "https://github.com/Qiskit/qiskit/issues/13047"
+          ],
+          "numpyVersion": "2.5.3",
+          "pythonVersion": "3.12.14",
+          "platform": "Windows-11-10.0.26200-SP0"
+        },
+        "current_source_inspection": {
+          "retrievedAt": "2026-09-09T13:50:55.761992+00:00",
+          "commit": "a58029e2343ccc5cc99489524a9bfc7fd7838c30",
+          "sourceUrl": "https://raw.githubusercontent.com/Qiskit/qiskit/a58029e2343ccc5cc99489524a9bfc7fd7838c30/qiskit/primitives/statevector_sampler.py",
+          "sourceSha256": "5ce10cc66c91c042251736f48864c9c511b153bb244c11924bd9275c92b9e8b9",
+          "rateRemaining": "2",
+          "validation": "Source inspection only; execution reproduction separately uses Qiskit 2.1.2."
+        },
+        "acceptance_metrics": [
+          "Agreed seed semantics on pinned target release",
+          "Reproducibility across fresh instances",
+          "Multi-seed dependence checks for declared independent batches",
+          "Compatibility of public seed property and repeated runs"
+        ],
+        "falsifier": "Current target code already meets intended semantics, or the apparent dependence is explicitly required by the chosen API contract.",
+        "dependencies": [
+          "qiskit==2.1.2 for the included reproduction",
+          "numpy"
+        ],
+        "novelty_boundary": "Neither a new random-number method nor a quantum speedup; 10 distinct strings do not prove statistical independence."
+      }
+    },
+    {
+      "priority": 8,
+      "displayOrder": 8,
+      "repository": "SciML/OrdinaryDiffEq.jl",
+      "issue": 4388,
+      "url": "https://github.com/SciML/OrdinaryDiffEq.jl/issues/4388",
+      "category": "Numerical reliability",
+      "stage": "Review existing proposed correction",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-08-26T20:47:40Z",
+        "updatedAt": "2026-09-06T21:25:49Z",
+        "verifiedAt": "2026-09-09T13:55:36.981677+00:00",
+        "commentsCount": 2,
+        "assigneeCount": 0
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "repository": "SciML/OrdinaryDiffEq.jl",
+        "number": 4388,
+        "title": "Inaccurate ForwardDiff event-time derivative through a terminating ContinuousCallback",
+        "url": "https://github.com/SciML/OrdinaryDiffEq.jl/issues/4388",
+        "state": "open",
+        "createdAt": "2026-08-26T20:47:40Z",
+        "updatedAt": "2026-09-06T21:25:49Z",
+        "verifiedAt": "2026-09-09T13:46:40.871407+00:00",
+        "statusSource": "https://api.github.com/repos/SciML/OrdinaryDiffEq.jl/issues?state=open&sort=updated&direction=desc&per_page=100",
+        "authorAssociation": "NONE",
+        "commentsReported": 2,
+        "commentsRead": 2,
+        "commentsComplete": true,
+        "commentsVerifiedAt": "2026-09-09T13:46:47.706138+00:00",
+        "commentSources": [
+          "https://github.com/SciML/OrdinaryDiffEq.jl/issues/4388#issuecomment-5560724256",
+          "https://github.com/SciML/OrdinaryDiffEq.jl/issues/4388#issuecomment-5562281443"
+        ],
+        "codeReproduced": false,
+        "currentMainPinnedAndExecuted": false,
+        "acceptanceMetricsAreProposed": true,
+        "disposition": "independent_regression_and_review_of_existing_fix",
+        "programmeConnection": "TAO and differentiable dynamics must distinguish accurate event values from accurate derivatives; threshold-time sensitivity is a testable contract.",
+        "maintainerRequestedBehavior": {
+          "endorsement": "member_diagnosis_and_extension_proposal",
+          "summary": "Member singhharsh1708 identifies inaccurate dual partials in root finding and proposes a ForwardDiff extension. The reporter says they already have a similar local fix.",
+          "url": "https://github.com/SciML/OrdinaryDiffEq.jl/issues/4388#issuecomment-5560724256"
+        },
+        "problem": "For u'=1 and a terminating event u-q=0, the reported event value is accurate but ForwardDiff's derivative deviates from the exact value 1. Tightening integration tolerance does not remove the reported error.",
+        "existingAttempts": "Maintainer diagnosis isolates DiffEqBase.find_root/ModAB dual-number partial propagation; a dual Newton correction is proposed while preserving the bracket-side value. The reporter confirms a similar local fix, so a duplicate implementation would waste work.",
+        "existingAttemptSources": [
+          "https://github.com/SciML/OrdinaryDiffEq.jl/issues/4388#issuecomment-5562281443"
+        ],
+        "reproductionInputs": {
+          "origin": "Issue MRE and maintainer root-only example, with proposed parameter sweep.",
+          "fixtures": [
+            "u'=1, u(0)=0, terminating ContinuousCallback u-q=0; q=3 gives exact T=3 and dT/dq=1",
+            "Root-only sin(t)-q with q=Dual(0.4,1), bracket [0,2]; compare 1/sqrt(1-q*q)",
+            "Julia 1.12.2, ForwardDiff 1.4.5, OrdinaryDiffEqVerner 2.4.0 and OrdinaryDiffEqTsit5 2.1.4 as reported."
+          ]
+        },
+        "contribution": "Create an independently parameterized value-and-derivative regression suite, then review/test the existing author's patch in the appropriate DiffEqBase extension. Include event-side preservation and well-conditioned versus tangent-root behavior.",
+        "acceptanceMetric": [
+          "On declared well-conditioned float64 analytic roots, derivative absolute error <=1e-10 and event value accuracy is retained.",
+          "The returned root remains on the required bracket side; test both Tsit5 and Vern9.",
+          "Tangencies and non-differentiable event changes are explicitly outside smooth sensitivity claims; unsupported cases fail clearly or retain documented behavior."
+        ],
+        "dependenciesCompute": "CPU only: Julia, OrdinaryDiffEq solver subpackages, DiffEqBase, ForwardDiff and test tooling. Initial scalar ODE/root tests are small. No external dataset, account, GPU or paid service.",
+        "license": {
+          "id": "MIT",
+          "source": "https://raw.githubusercontent.com/SciML/OrdinaryDiffEq.jl/master/LICENSE.md",
+          "note": "Implementation may belong in DiffEqBase; verify that repository's contribution and license files before changing it."
+        },
+        "noveltyBoundary": "Implicit root differentiation and Newton correction are established mathematics. This can improve a reliability test; it does not establish a TAO control advantage.",
+        "falsifier": "If the existing extension already passes an adequate parameterized suite, contribute review evidence only or drop the candidate. Failure near a tangent root is not evidence of a universal solver defect.",
+        "nextGate": "Inspect the reporter's available branch/linked work and pin DiffEqBase before reproducing; do not patch the integrator body merely because the report is in OrdinaryDiffEq."
+      }
+    },
+    {
+      "priority": 9,
+      "displayOrder": 9,
+      "repository": "scverse/scvi-tools",
+      "issue": 3834,
+      "url": "https://github.com/scverse/scvi-tools/issues/3834",
+      "category": "Biology campaign",
+      "stage": "Registration semantics audit",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-06-07T20:20:12Z",
+        "updatedAt": "2026-06-08T15:54:04Z",
+        "verifiedAt": "2026-09-09T13:46:50.465022+00:00",
+        "source": "https://api.github.com/repos/scverse/scvi-tools/issues/3834",
+        "commentsCount": 4,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "ef3c9bb19fcf7f6582dc5bcf109f39c981f0aa8b29712194f782443e7c22ee7b"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "scvi-tools-3834",
+        "repository": "scverse/scvi-tools",
+        "issue_number": 3834,
+        "title": "MultiVI MuData setup rejects unpaired observations despite model supporting missing modalities",
+        "issue_url": "https://github.com/scverse/scvi-tools/issues/3834",
+        "opened_on": "2026-06-07",
+        "status": "open",
+        "status_observed_on": "2026-09-09",
+        "live_api_verified": true,
+        "implementation_started": false,
+        "maintainers_contacted": false,
+        "programme_fit": [
+          "measurement availability",
+          "state versus representation",
+          "input invariants"
+        ],
+        "requested_behavior": [
+          "Permit or document structurally unpaired MuData inputs for MultiVI without losing missing-modality semantics"
+        ],
+        "existing_work": [
+          "MultiVI already models missing modalities",
+          "Official tutorial mixes RNA-only, ATAC-only and paired cells",
+          "Batch and categorical context conditioning already present",
+          "Related compatibility PR #3776 was merged 2026-04-12"
+        ],
+        "contribution": "First reproduce registration with tiny structurally unpaired synthetic MuData. Document conversion to the supported aligned representation while preserving union cell IDs, masks and values. If structural-unpaired registration is appropriate, change only the relevant path with compatibility tests; do not disable global validation.",
+        "dependencies": [
+          "scvi-tools",
+          "mudata",
+          "muon",
+          "anndata",
+          "torch"
+        ],
+        "code_license": {
+          "spdx": "BSD-3-Clause",
+          "source_url": "https://github.com/scverse/scvi-tools/blob/main/LICENSE"
+        },
+        "reproduction": {
+          "name": "Synthetic RNA-only/ATAC-only/paired cell fixture, then official PBMC tutorial data",
+          "synthetic_first": true,
+          "tutorial_url": "https://docs.scvi-tools.org/en/stable/tutorials/notebooks/multimodal/MultiVI_tutorial.html",
+          "hosted_file": "https://exampledata.scverse.org/scvi-tools/pbmc_10k_preprocessed.h5mu",
+          "tutorial_version_observed": "scvi-tools 1.4.2",
+          "dataset_license": "Public tutorial download; exact derivative artifact redistribution license not independently verified. Do not infer it from code license or guess 10x terms.",
+          "downloaded_in_this_scan": false,
+          "compatibility_limit": "Tutorial has aligned modality row tables with withheld modality measurements. This is distinct from unequal observation indices across modality tables. ATAC requires a common peak feature set."
+        },
+        "acceptance_metrics": [
+          "Union observation IDs, ordering and observed values preserved",
+          "Missingness represented explicitly rather than biological zeros",
+          "Existing paired-data behavior unchanged",
+          "Fixed-seed inference parity with supported aligned representation within a declared numerical tolerance"
+        ],
+        "falsifier": "Conversion changes the likelihood semantics, invents measured zeros, or the desired structural-unpaired path cannot preserve the model contract.",
+        "causal_identification_limit": "Missingness support is software engineering, not identification of unobserved biological mechanisms.",
+        "prior_attempt_status": {
+          "url": "https://github.com/scverse/scvi-tools/pull/3776",
+          "title": "fix: AttributeError after rich upgrade and MultiVI errors after Mudata upgrade",
+          "status": "merged",
+          "merged_on": "2026-04-12",
+          "reported_implicated_commit": "1a2d127c1f7e364e21ea92e92c99ee844016a114",
+          "caution": "Issue's suspected regression is a report, not locally verified in this research scan."
+        },
+        "sources": [
+          "https://github.com/scverse/scvi-tools/issues/3834",
+          "https://github.com/scverse/scvi-tools/pull/3776",
+          "https://docs.scvi-tools.org/en/stable/tutorials/notebooks/multimodal/MultiVI_tutorial.html",
+          "https://github.com/scverse/scvi-tools/blob/main/LICENSE"
+        ],
+        "retrieved_at": "2026-09-09T13:46:50.465022+00:00",
+        "created_at": "2026-06-07T20:20:12Z",
+        "updated_at": "2026-06-08T15:54:04Z",
+        "closed_at": null,
+        "verification_artifact": "verified/scverse__scvi-tools__issues__3834.json",
+        "api_source": "https://api.github.com/repos/scverse/scvi-tools/issues/3834"
+      }
+    },
+    {
+      "priority": 10,
+      "displayOrder": 10,
+      "repository": "patrick-kidger/diffrax",
+      "issue": 766,
+      "url": "https://github.com/patrick-kidger/diffrax/issues/766",
+      "category": "Numerical reliability",
+      "stage": "Reproduce existing ControlTerm approach",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-08-13T13:18:21Z",
+        "updatedAt": "2026-09-09T11:11:08Z",
+        "verifiedAt": "2026-09-09T13:46:39.119386+00:00",
+        "commentsCount": 3,
+        "assigneeCount": 0
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "repository": "patrick-kidger/diffrax",
+        "number": 766,
+        "title": "Zero-order-hold inputs with fixed-step solvers in a single diffeqsolve",
+        "url": "https://github.com/patrick-kidger/diffrax/issues/766",
+        "state": "open",
+        "createdAt": "2026-08-13T13:18:21Z",
+        "updatedAt": "2026-09-09T11:11:08Z",
+        "verifiedAt": "2026-09-09T13:46:39.119386+00:00",
+        "statusSource": "https://api.github.com/repos/patrick-kidger/diffrax/issues?state=open&sort=updated&direction=desc&per_page=100",
+        "authorAssociation": "NONE",
+        "commentsReported": 3,
+        "commentsRead": 3,
+        "commentsComplete": true,
+        "commentsVerifiedAt": "2026-09-09T13:46:45.905468+00:00",
+        "commentSources": [
+          "https://github.com/patrick-kidger/diffrax/issues/766#issuecomment-5480530064",
+          "https://github.com/patrick-kidger/diffrax/issues/766#issuecomment-5558099597",
+          "https://github.com/patrick-kidger/diffrax/issues/766#issuecomment-5600883636"
+        ],
+        "codeReproduced": false,
+        "currentMainPinnedAndExecuted": false,
+        "acceptanceMetricsAreProposed": true,
+        "disposition": "extend_existing_attempt_with_conformance_tests_first",
+        "programmeConnection": "TAO's held modes and scheduled interventions require precise boundary semantics when passed to a numerical solver.",
+        "maintainerRequestedBehavior": {
+          "endorsement": "owner_discussion_of_compatible_design",
+          "summary": "Owner patrick-kidger discusses special handling for wrapped step-size controllers; he has not accepted a final implementation. The requested outcome is fixed-step held inputs in one solve while retaining dense output, events and adjoints.",
+          "url": "https://github.com/patrick-kidger/diffrax/issues/766#issuecomment-5558099597"
+        },
+        "problem": "Searching held input by time assigns a Runge-Kutta boundary stage to the wrong interval. Left versus right search alone shifts the error instead of resolving both endpoints.",
+        "existingAttempts": "An outer lax.scan with interval-constant input works. An Aug 31 comment proposes a fixed-step controller with jumps. A Sep 9 comment reports a piecewise-linear integrated input used as ControlTerm; aligned StepTo restored fifth-order behavior and gradient agreement in that author's tests. Those results have not been independently reproduced here.",
+        "existingAttemptSources": [
+          "https://github.com/patrick-kidger/diffrax/issues/766#issuecomment-5480530064",
+          "https://github.com/patrick-kidger/diffrax/issues/766#issuecomment-5600883636"
+        ],
+        "reproductionInputs": {
+          "origin": "Issue fixture plus proposed extensions.",
+          "fixtures": [
+            "y'=-y+u, y(0)=0; ts=[0,1,2,3,4], us=[1,0.5,-0.5,0.3,0.8]",
+            "Exact interval oracle: y_next=u+(y-u)*exp(-delta_t)",
+            "Nonuniform input intervals, stages aligned to and straddling boundaries; supported dense-output and adjoint configurations."
+          ]
+        },
+        "contribution": "Independently reproduce the existing ControlTerm approach, then add a documented conformance matrix and any missing boundary/event/dense-output/gradient regressions. Propose a wrapper change only if the existing approach fails an agreed supported requirement.",
+        "acceptanceMetric": [
+          "Aligned Tsit5 endpoint error has an observed convergence slope above 4 on a declared pre-roundoff refinement range, against the analytic oracle.",
+          "Fixed float64 fixtures reach declared tolerances; checkpointed gradients agree with analytic or step-size-swept finite-difference derivatives to rtol=1e-5.",
+          "Straddling-step and discontinuity cases are detected/documented rather than silently advertised as fifth-order; supported dense-output/event behavior has explicit tests."
+        ],
+        "dependenciesCompute": "CPU only: Python, Diffrax, JAX/jaxlib, Equinox and pytest. Reproduce the comment's Diffrax 0.7.2 float64 setup, then separately pin current main. JAX compilation overhead is expected; no GPU or paid endpoint needed.",
+        "license": {
+          "id": "Apache-2.0",
+          "source": "https://github.com/patrick-kidger/diffrax/blob/main/LICENSE"
+        },
+        "noveltyBoundary": "Zero-order holds, jump-aware integration and ControlTerm are established numerical ideas. Do not rename the commenter's solution or call it new TAO mathematics.",
+        "falsifier": "If the existing ControlTerm plus boundary-aligned StepTo meets every supported requirement and already has adequate tests/docs, the proposed new solver interface has no demonstrated need.",
+        "nextGate": "Run the fresh Sep 9 example before designing code; record supported versus unsupported requirements and credit the authors."
+      }
+    },
+    {
+      "priority": 11,
+      "displayOrder": 11,
+      "repository": "do-mpc/do-mpc",
+      "issue": 531,
+      "url": "https://github.com/do-mpc/do-mpc/issues/531",
+      "category": "Numerical reliability",
+      "stage": "Clock-contract audit; no maintainer endorsement",
+      "verification": {
+        "state": "open",
+        "createdAt": "2025-12-28T20:49:57Z",
+        "updatedAt": "2026-01-07T00:10:58Z",
+        "verifiedAt": "2026-09-09T13:46:42.906528+00:00",
+        "commentsCount": 3,
+        "assigneeCount": 0
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "repository": "do-mpc/do-mpc",
+        "number": 531,
+        "title": "Sync of system outputs and states in `Simulator.data`",
+        "url": "https://github.com/do-mpc/do-mpc/issues/531",
+        "state": "open",
+        "createdAt": "2025-12-28T20:49:57Z",
+        "updatedAt": "2026-01-07T00:10:58Z",
+        "verifiedAt": "2026-09-09T13:46:42.906528+00:00",
+        "statusSource": "https://api.github.com/repos/do-mpc/do-mpc/issues?state=open&sort=updated&direction=desc&per_page=100",
+        "authorAssociation": "NONE",
+        "commentsReported": 3,
+        "commentsRead": 3,
+        "commentsComplete": true,
+        "commentsVerifiedAt": "2026-09-09T13:46:47.274485+00:00",
+        "commentSources": [
+          "https://github.com/do-mpc/do-mpc/issues/531#issuecomment-3695047615",
+          "https://github.com/do-mpc/do-mpc/issues/531#issuecomment-3715861523",
+          "https://github.com/do-mpc/do-mpc/issues/531#issuecomment-3715886922"
+        ],
+        "codeReproduced": false,
+        "currentMainPinnedAndExecuted": false,
+        "acceptanceMetricsAreProposed": true,
+        "disposition": "triage_and_contract_documentation_candidate_not_maintainer_endorsed",
+        "programmeConnection": "The programme's measurement provenance directly applies to current state, next measurement and available-at time in MPC/simulator/estimator logs.",
+        "maintainerRequestedBehavior": {
+          "endorsement": "not_verified",
+          "summary": "The reporter asks for coherent Simulator.data time/state/output alignment. All three comments are from the reporter; no maintainer request or accepted design is present in the checked thread.",
+          "url": "https://github.com/do-mpc/do-mpc/issues/531"
+        },
+        "problem": "For a unit-rate integrator with y=x, the report shows saved times/states 0..4 but saved outputs 1..5. make_step returns a next-step measurement while the data row carries a pre-step state/time.",
+        "existingAttempts": "The reporter proposes logging y0 or separating measurement from update, and compares simulator, estimator and MPC ledgers. No patch or maintainer-approved change appears in the reviewed thread; this is a support issue, not an accepted bug diagnosis.",
+        "reproductionInputs": {
+          "origin": "Issue MRE.",
+          "fixtures": [
+            "Continuous dx/dt=u, y=x, initial x=0, u=1, dt=1, five simulator steps",
+            "Reported stack: Python 3.13.7, CasADi 3.7.2, do-mpc 5.1.1",
+            "Compare each component's _time, _x and _y and explicitly label physical sample time versus row/return time."
+          ]
+        },
+        "contribution": "Reproduce the three-ledger alignment and propose a documented time contract or compatible export/view with x_k, u_k and y_(k+1) labels plus measurement/availability time. Change core logging only after deciding compatibility semantics; preserve make_step's return contract.",
+        "acceptanceMetric": [
+          "For the identity sensor, x and y joined by physical measurement time agree to atol=1e-10 on the deterministic fixture.",
+          "Every exported sample declares its physical time and availability/order; no next-step observation is assigned to an earlier decision deadline.",
+          "Existing controller-loop trajectories and make_step return semantics remain unchanged; proposed export/docs have a regression reproducer."
+        ],
+        "dependenciesCompute": "CPU only: Python, do-mpc, CasADi, NumPy and pytest; pandas is optional for the comparison table. No GPU, account or cloud solve required.",
+        "license": {
+          "id": "LGPL-3.0",
+          "source": "https://github.com/do-mpc/do-mpc/blob/master/LICENSE.txt",
+          "note": "API identification is LGPL-3.0. Verify exact upstream notice before distributing modified library code; prefer a standalone audit script initially."
+        },
+        "noveltyBoundary": "An explicit observation clock is useful engineering, not proof that MPC is conceptually wrong or that IDA outperforms it.",
+        "falsifier": "If the apparent mismatch is an intentional and sufficiently documented next-step convention, do not relabel it as a numerical bug. Restrict the contribution to export/docs if they remove a demonstrated ambiguity.",
+        "nextGate": "Reproduce locally and locate maintainers' documented conventions; this candidate requires design confirmation before a breaking code proposal."
+      }
+    },
+    {
+      "priority": 12,
+      "displayOrder": 12,
+      "repository": "scverse/pertpy",
+      "issue": 1037,
+      "url": "https://github.com/scverse/pertpy/issues/1037",
+      "category": "Biology campaign",
+      "stage": "Later calibrated design experiment",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-07-07T19:18:08Z",
+        "updatedAt": "2026-07-07T19:18:08Z",
+        "verifiedAt": "2026-09-09T13:46:50.345304+00:00",
+        "source": "https://api.github.com/repos/scverse/pertpy/issues/1037",
+        "commentsCount": 0,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "044a4172b77100081f1aea9de83d692cfb308b9cc0a158922245447d90f1d539"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "pertpy-1037",
+        "repository": "scverse/pertpy",
+        "issue_number": 1037,
+        "title": "Experimental design & power analysis for perturbation screens",
+        "issue_url": "https://github.com/scverse/pertpy/issues/1037",
+        "opened_on": "2026-07-07",
+        "status": "open",
+        "status_observed_on": "2026-09-09",
+        "live_api_verified": true,
+        "implementation_started": false,
+        "maintainers_contacted": false,
+        "programme_fit": [
+          "IDA next measurement selection",
+          "intervention design",
+          "explicit independent units",
+          "budget-aware experiments"
+        ],
+        "requested_behavior": [
+          "Sample-size and power estimates from effect size and variability",
+          "Pilot minimum-detectable-effect and post-hoc power summaries",
+          "Active-learning perturbation selection",
+          "Design module using Distance/DistanceTest and perturbation prediction/space tools"
+        ],
+        "existing_work": [
+          "Distance and DistanceTest",
+          "Prediction and perturbation-space primitives",
+          "Classical experimental-design and power methods must remain baselines"
+        ],
+        "contribution": "Build a pilot-resampling operating-characteristic module with explicit biological replicate units, effect assumptions, seeds, null controls and costs. Only after the baseline evaluator is reliable, add an IDA selector compared with random, fixed and uncertainty-based selection at equal assay cost.",
+        "dependencies": [
+          "pertpy",
+          "anndata",
+          "numpy",
+          "scipy",
+          "pandas",
+          "Existing statistical testing stack"
+        ],
+        "code_license": {
+          "spdx": "MIT",
+          "source_url": "https://github.com/scverse/pertpy"
+        },
+        "reproduction": {
+          "dataset_license": "Unresolved: record is publicly downloadable, but rendered Rights section did not expose a specific license during this audit. Do not assume repository code license covers data or mirror files before checking.",
+          "manifest_strategy": "Pin original source URL, version/record, checksum, acquisition date and preprocessing. Prefer a downloader over redistributing unverified artifacts.",
+          "downloaded_in_this_scan": false,
+          "record_url": "https://zenodo.org/records/13350497",
+          "previous_record_inspected_url": "https://zenodo.org/records/10044268",
+          "name": "Papalexi pooled/arrayed perturbation pilot",
+          "loader": "pertpy.data.papalexi_2021()",
+          "original_accession": "GSE153056",
+          "replication_audit_required": true,
+          "compatibility_limit": "Audit whether metadata provides genuinely independent biological replicates. If not, report within-pilot sampling sensitivity, not calibrated population power."
+        },
+        "acceptance_metrics": [
+          "Null type-I error and interval coverage within prespecified simulation tolerance",
+          "Reproducible seeds and design manifest",
+          "Cells and biological replicates counted separately",
+          "Selection advantage on prespecified decision loss at equal cost"
+        ],
+        "falsifier": "Conventional allocation matches IDA, or the apparent advantage disappears under replicate-aware analysis.",
+        "causal_identification_limit": "Confounding, nonidentifiability and absent independent replicates cannot be fixed by software. Observed-effect post-hoc power must not be presented as independent evidence.",
+        "prior_attempt_status": "Open roadmap request. Scope the first contribution to calibrated design diagnostics; adaptive biological discovery is a separate empirical claim.",
+        "sources": [
+          "https://github.com/scverse/pertpy/issues/1037",
+          "https://github.com/scverse/pertpy/blob/main/src/pertpy/data/_datasets.py",
+          "https://zenodo.org/records/13350497",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12220817/"
+        ],
+        "retrieved_at": "2026-09-09T13:46:50.345304+00:00",
+        "created_at": "2026-07-07T19:18:08Z",
+        "updated_at": "2026-07-07T19:18:08Z",
+        "closed_at": null,
+        "verification_artifact": "verified/scverse__pertpy__issues__1037.json",
+        "api_source": "https://api.github.com/repos/scverse/pertpy/issues/1037"
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 13,
+      "repository": "scverse/pertpy",
+      "issue": 1039,
+      "url": "https://github.com/scverse/pertpy/issues/1039",
+      "category": "Second wave",
+      "stage": "Explicit readout interface",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-07-07T19:18:11Z",
+        "updatedAt": "2026-08-04T15:33:44Z",
+        "verifiedAt": "2026-09-09T13:46:50.383924+00:00",
+        "source": "https://api.github.com/repos/scverse/pertpy/issues/1039",
+        "commentsCount": 0,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "7e30299b7db39c58a1bd2d001a760a95678ca9921212b0096c33695418c9289f"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "pertpy-1039",
+        "repository": "scverse/pertpy",
+        "issue_number": 1039,
+        "title": "Multimodal perturbation readouts (Perturb-CITE-seq, Perturb-ATAC, multiome)",
+        "issue_url": "https://github.com/scverse/pertpy/issues/1039",
+        "opened_on": "2026-07-07",
+        "status": "open",
+        "status_observed_on": "2026-09-09",
+        "live_api_verified": true,
+        "implementation_started": false,
+        "maintainers_contacted": false,
+        "programme_fit": [
+          "explicit measurement operator",
+          "cross-modal feature contract",
+          "missing measurement versus biological zero"
+        ],
+        "requested_behavior": [
+          "Protein, ATAC and joint-feature readouts instead of implicit RNA.X assumptions",
+          "Consistent MuData-first conventions",
+          "Explicit layer, obsm or modality selection",
+          "Perturbation assignment/QC across modalities",
+          "Validation on Perturb-CITE-seq and multiome datasets"
+        ],
+        "existing_work": [
+          "Papalexi multimodal example",
+          "MuData use in Mixscape and Milo",
+          "Existing multimodal datasets and loaders"
+        ],
+        "contribution": "Implement a readout resolver for one Distance workflow, returning matrix plus modality, layer/representation, feature IDs, normalization and measured/missing mask. Reject cross-readout mismatches and preserve masks.",
+        "dependencies": [
+          "pertpy",
+          "mudata",
+          "anndata",
+          "numpy",
+          "scipy"
+        ],
+        "code_license": {
+          "spdx": "MIT",
+          "source_url": "https://github.com/scverse/pertpy"
+        },
+        "reproduction": {
+          "dataset_license": "Unresolved: record is publicly downloadable, but rendered Rights section did not expose a specific license during this audit. Do not assume repository code license covers data or mirror files before checking.",
+          "manifest_strategy": "Pin original source URL, version/record, checksum, acquisition date and preprocessing. Prefer a downloader over redistributing unverified artifacts.",
+          "downloaded_in_this_scan": false,
+          "record_url": "https://zenodo.org/records/13350497",
+          "previous_record_inspected_url": "https://zenodo.org/records/10044268",
+          "name": "Papalexi 2021 ECCITE-seq",
+          "loader": "pertpy.data.papalexi_2021()",
+          "loader_source": "https://github.com/scverse/pertpy/blob/main/src/pertpy/data/_datasets.py",
+          "hosted_file": "https://exampledata.scverse.org/pertpy/papalexi_2021.h5mu",
+          "original_accession": "GSE153056",
+          "context": "Stimulated THP-1 RNA/protein perturbation measurements. Audit matching cell IDs and readout transformations before comparisons.",
+          "prior_record_files": [
+            {
+              "file": "PapalexiSatija2021_eccite_arrayed_protein.h5ad",
+              "md5": "5e4346855f70c7ae90da9eb75ea12414"
+            },
+            {
+              "file": "PapalexiSatija2021_eccite_arrayed_RNA.h5ad",
+              "md5": "843820d48b024348d6132cd53be0da91"
+            },
+            {
+              "file": "PapalexiSatija2021_eccite_protein.h5ad",
+              "md5": "07290242b0e835c9474bb816de9cda45"
+            },
+            {
+              "file": "PapalexiSatija2021_eccite_RNA.h5ad",
+              "md5": "d9e8bfe20b0e7b0919be042e8fcf6d03"
+            }
+          ]
+        },
+        "acceptance_metrics": [
+          "Explicit RNA results match current RNA path",
+          "Protein distances match independently extracted protein matrix",
+          "Feature permutation invariance after ID alignment",
+          "Wrong or absent readout raises explicit error",
+          "Unmeasured features are not silently converted to measured zero"
+        ],
+        "falsifier": "Existing current interfaces already satisfy the complete contract, making a proposed wrapper redundant.",
+        "causal_identification_limit": "A modality selector establishes a software measurement contract; it neither identifies causal effects nor establishes better biological prediction.",
+        "prior_attempt_status": "Issue explicitly recognizes existing multimodal support; extend one workflow without presenting modality-aware analysis as new.",
+        "sources": [
+          "https://github.com/scverse/pertpy/issues/1039",
+          "https://github.com/scverse/pertpy/blob/main/src/pertpy/data/_datasets.py",
+          "https://zenodo.org/records/13350497",
+          "https://zenodo.org/records/10044268",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12220817/"
+        ],
+        "retrieved_at": "2026-09-09T13:46:50.383924+00:00",
+        "created_at": "2026-07-07T19:18:11Z",
+        "updated_at": "2026-08-04T15:33:44Z",
+        "closed_at": null,
+        "verification_artifact": "verified/scverse__pertpy__issues__1039.json",
+        "api_source": "https://api.github.com/repos/scverse/pertpy/issues/1039"
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 14,
+      "repository": "casadi/casadi",
+      "issue": 4303,
+      "url": "https://github.com/casadi/casadi/issues/4303",
+      "category": "Second wave",
+      "stage": "Assigned roadmap; narrow conformance slice",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-03-03T12:46:49Z",
+        "updatedAt": "2026-03-03T12:46:49Z",
+        "verifiedAt": "2026-09-09T13:46:42.888170+00:00",
+        "commentsCount": 0,
+        "assigneeCount": 1
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "repository": "casadi/casadi",
+        "number": 4303,
+        "title": "Sensitivity support for integration with events",
+        "url": "https://github.com/casadi/casadi/issues/4303",
+        "state": "open",
+        "createdAt": "2026-03-03T12:46:49Z",
+        "updatedAt": "2026-03-03T12:46:49Z",
+        "verifiedAt": "2026-09-09T13:46:42.888170+00:00",
+        "statusSource": "https://api.github.com/repos/casadi/casadi/issues?state=open&sort=updated&direction=desc&per_page=100",
+        "authorAssociation": "MEMBER",
+        "commentsReported": 0,
+        "commentsRead": 0,
+        "commentsComplete": true,
+        "commentsVerifiedAt": null,
+        "commentSources": [],
+        "codeReproduced": false,
+        "currentMainPinnedAndExecuted": false,
+        "acceptanceMetricsAreProposed": true,
+        "disposition": "larger_maintainer_roadmap_conformance_slice",
+        "programmeConnection": "Differentiable hybrid control has event/reset boundaries; TAO can supply explicit test cases, while the numerical derivatives must obey standard sensitivity rules.",
+        "maintainerRequestedBehavior": {
+          "endorsement": "member_authored_assigned_roadmap",
+          "summary": "Member jaeandersson lists numeric adjoint, forward/reverse sparsity propagation, and symbolic forward/adjoint sensitivity support for event integration. The issue is assigned to him and targets version 3.9.",
+          "url": "https://github.com/casadi/casadi/issues/4303"
+        },
+        "problem": "Event integration exists, but the maintainer has a specific remaining sensitivity roadmap. A bounded contribution should test one slice instead of promising the whole engine.",
+        "existingAttempts": "Closed predecessor #3682 delivered event integration and numeric forward sensitivity; the remaining categories moved to #4303. Current issue has zero comments. No event/sensitivity-titled PR appeared in the first 100 recently updated open rows, which is not an exhaustive branch/PR search.",
+        "existingAttemptSources": [
+          "https://github.com/casadi/casadi/issues/3682",
+          "https://github.com/casadi/casadi/issues/4393"
+        ],
+        "reproductionInputs": {
+          "origin": "Our proposed analytic fixture plus the separate public #4393 event reproducer.",
+          "fixtures": [
+            "Proposed smooth crossing: x'=p, x(0)=0, guard q-x=0, p>0, q>0; exact event T=q/p, dT/dp=-q/p^2, dT/dq=1/p",
+            "Proposed reset x+=r*x- with a terminal objective after the event; compare analytic reset-aware sensitivity and finite differences on a fixed event-count region",
+            "Before sensitivities, run #4393's x'=1 event-at-0.5 plugin/direction matrix; unsupported IDAS/event configurations must not be mistaken for derivative failures."
+          ]
+        },
+        "contribution": "Prepare a small event-sensitivity conformance fixture and coverage matrix for the existing numeric-forward path and one requested adjoint/sparsity slice. An eventual implementation belongs in CasADi's existing roadmap, not a forked replacement solver.",
+        "acceptanceMetric": [
+          "For smooth transverse crossings with fixed event order/count, proposed derivative agreement rtol<=1e-6 and atol<=1e-8 against analytic references.",
+          "Forward/reverse products, if supported, agree through dot-product duality within the same declared tolerance.",
+          "Unsupported plugin/direction/sensitivity combinations are explicitly classified; no successful-looking zero derivatives for unsupported paths."
+        ],
+        "dependenciesCompute": "Small fixtures: CPU Python, CasADi and NumPy. Core implementation: C++ compiler, CMake and existing SUNDIALS plugins/build system; materially more setup than python-control. No paid account or GPU. A full adjoint/sparsity implementation is not a one-session promise.",
+        "license": {
+          "id": "LGPL-3.0",
+          "source": "https://github.com/casadi/casadi/blob/main/LICENSE.txt",
+          "note": "API license classification; inspect plugin dependency notices and contribution guidance for a source-build patch."
+        },
+        "noveltyBoundary": "Hybrid-system and saltation/event sensitivity theory already exists. The proposed programme contribution is an independent reproducible contract/example, not discovery of differentiable events.",
+        "falsifier": "If current support or maintainer tests already cover the chosen slice, do not duplicate them. An event failing to trigger invalidates a sensitivity comparison rather than proving an adjoint defect.",
+        "nextGate": "Pin current CasADi and reproduce supported event firing first; choose one missing roadmap slice and inspect assigned maintainer work before implementation."
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 15,
+      "repository": "scipy/scipy",
+      "issue": 23515,
+      "url": "https://github.com/scipy/scipy/issues/23515",
+      "category": "Second wave",
+      "stage": "Constrained distribution fitting",
+      "verification": {
+        "state": "open",
+        "createdAt": "2025-08-27T09:35:44Z",
+        "updatedAt": "2025-09-10T14:45:21Z",
+        "verifiedAt": "2026-09-09T13:46:48.467090+00:00",
+        "source": "https://api.github.com/repos/scipy/scipy/issues/23515",
+        "commentsCount": 11,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "c7e9b0c3f9902b576bebc8cc047b4986341faf370e1fa733d2ff257b7091b9f2"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "contribution": "Reproduce constrained distribution fits, then propose compatible shape-constraint metadata and bounded-solver behavior for a narrow distribution family.",
+        "programme_fit": "Admissible domains and coordinate choices must preserve feasible endpoints and coupled constraints.",
+        "existing_work": "SciPy already has constrained optimization; the request concerns fitting interfaces. Check current linked PRs before coding.",
+        "reproduction": "Use trapezoid shape parameters with0<=c<=d<=1, then compare default fitting, an explicitly bounded/constraint-aware solver, and a declared reparameterization.",
+        "acceptance_metrics": [
+          "Returned parameters satisfy all coupled constraints",
+          "Likelihood and fit diagnostics agree with an independent constrained reference",
+          "Boundary optima remain representable",
+          "Backward compatibility and runtime measured"
+        ],
+        "falsifier": "Existing supported fitting routes already satisfy the needed contract, or a proposed chart excludes valid boundary optima.",
+        "novelty_boundary": "A coordinate transformation is not a universal constrained-optimization solution.",
+        "sources": [
+          "https://github.com/scipy/scipy/issues/23515"
+        ]
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 16,
+      "repository": "NeuroTechX/moabb",
+      "issue": 1104,
+      "url": "https://github.com/NeuroTechX/moabb/issues/1104",
+      "category": "Second wave",
+      "stage": "Conditional interface/test gap",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-06-27T20:03:05Z",
+        "updatedAt": "2026-06-28T12:07:34Z",
+        "verifiedAt": "2026-09-09T13:54:33.655608+00:00",
+        "commentsCount": 1,
+        "assigneeCount": 2
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "moabb-1104",
+        "repository": "NeuroTechX/moabb",
+        "issue_number": 1104,
+        "url": "https://github.com/NeuroTechX/moabb/issues/1104",
+        "state": "open",
+        "created_at": "2026-06-27T20:03:05Z",
+        "updated_at": "2026-06-28T12:07:34Z",
+        "verified_at": "2026-09-09T13:54:33.655608+00:00",
+        "assignees_count": 2,
+        "status_evidence": "Fresh search snapshot plus exact primary issue page, not a fresh individual REST call.",
+        "stage": "conditional_reproduction_not_implementation_ready",
+        "requested_behavior": "Public metadata-aware fold construction with a target session test set and exclusion of all target-subject sessions from training.",
+        "current_capabilities": [
+          "CrossSubjectMode presets including trialwise scoring",
+          "Labeled and unlabeled calibration routing",
+          "Metadata-derived groups",
+          "Callable inner CV arguments",
+          "Standalone transfer splitter discussed in existing work"
+        ],
+        "contribution": "On a pinned checkout, test existing routes first. If gap persists, add minimal compatible splitter injection and auditable fold manifests. If already supported, add a tested example only.",
+        "reproduction": "Synthetic subject/session table and expanded trial fixture, then MOABB FakeDataset. No human EEG data required.",
+        "acceptance": [
+          "No target-subject training rows",
+          "Exact intended target/session test rows",
+          "Stable IDs under row permutation",
+          "Backward-compatible group CV",
+          "Explicit calibration and transductive access",
+          "No test labels routed to fitting outside declared supervised calibration"
+        ],
+        "falsifier": "An existing supported configuration already realizes the exact requested contract without ambiguity.",
+        "dependencies": [
+          "moabb",
+          "scikit-learn",
+          "pandas",
+          "numpy",
+          "mne"
+        ],
+        "code_license": "BSD-3-Clause",
+        "scientific_limit": "Evaluation/input contract only; no causal neural, clinical or consciousness claim.",
+        "sources": [
+          "https://github.com/NeuroTechX/moabb/issues/1104",
+          "https://github.com/NeuroTechX/moabb/issues/1088",
+          "https://github.com/NeuroTechX/moabb/issues/1077",
+          "https://moabb.neurotechx.com/docs/generated/moabb.evaluations.CrossSubjectEvaluation.html",
+          "https://raw.githubusercontent.com/NeuroTechX/moabb/develop/moabb/evaluations/evaluations.py",
+          "https://raw.githubusercontent.com/NeuroTechX/moabb/develop/moabb/evaluations/splitters.py",
+          "https://github.com/NeuroTechX/moabb"
+        ]
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 17,
+      "repository": "mem0ai/mem0",
+      "issue": 5867,
+      "url": "https://github.com/mem0ai/mem0/issues/5867",
+      "category": "Existing work",
+      "stage": "Independent validation alongside PR6017",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-06-25T15:56:47Z",
+        "updatedAt": "2026-09-03T18:27:54Z",
+        "verifiedAt": "2026-09-09T13:46:49.859749+00:00",
+        "source": "https://api.github.com/repos/mem0ai/mem0/issues/5867",
+        "commentsCount": 8,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "a570e60dd2a962abc547d912b4dd0f3d82bd6c80c027ba255942004ec15971d4"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "mem0_false_merge_controls",
+        "repo": "mem0ai/mem0",
+        "issue_url": "https://github.com/mem0ai/mem0/issues/5867",
+        "evidence_level": "Contributor-confirmed intentional ADD-only design; requested current-state behavior is a design/feature decision with an active PR, not a newly confirmed bug.",
+        "requested_behavior": "Resolve contradictory added memories without corrupting legitimately distinct facts.",
+        "prior_art": [
+          {
+            "url": "https://github.com/mem0ai/mem0/pull/6017",
+            "relationship": "Open unmerged conflict-resolution implementation; validate or extend its tests rather than write a competing patch."
+          },
+          {
+            "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5003008273",
+            "relationship": "Contributor classifies this as a design/feature gap rather than broken code."
+          },
+          {
+            "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5084114511",
+            "relationship": "Existing detailed proposal for typed keys, validity windows, ambiguity and false-merge controls; direct prior art."
+          },
+          {
+            "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5525489824",
+            "relationship": "Existing multiple-copy supersession concern; reported field example not independently validated."
+          },
+          {
+            "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5098731240",
+            "relationship": "Existing hosted SDK reproduction account warns to poll asynchronous extraction; hosted findings are not identical to OSS reproduction."
+          }
+        ],
+        "deliverable": "Independent read-path and multiple-copy supersession fixtures/results for existing PR6017, extending rather than duplicating prior counterexample proposals.",
+        "framework_specific": "Use the programme's scope/evidence discipline to execute independent tests. Typed keys, current/history separation and validity-window supersession are already proposed by upstream commenters; these are not our novel design.",
+        "ordinary_engineering": "Embedding mocks, update-history assertions and test parametrization.",
+        "prerequisites": [
+          "Pin current source/PR and review the fresh design discussion already inspected in this scan.",
+          "Pin both base and proposed head.",
+          "Keep exact duplicate removal separate from semantic contradiction and update."
+        ],
+        "reproduction": {
+          "first_gate": "Run the existing PR's tests on base and head, then replay the original two-memory report.",
+          "cases": [
+            "Same person changes one exclusive preference",
+            "Same person likes two things concurrently",
+            "Different people with similar facts",
+            "High-similarity extra attribute",
+            "Historical versus current fact",
+            "Negation and corrections",
+            "Context-specific preferences",
+            "Multiple stored copies assert one superseded claim; normal retrieval must not resurrect another copy"
+          ],
+          "initial_budget": "CPU mocked-vector test suite with 20-40 fixtures; 1-2 CPU-hours cap.",
+          "later_budget": "At most 40 separately priced extraction/embedding calls across selected cases; no training."
+        },
+        "baselines": [
+          "Current main",
+          "PR6017 unchanged",
+          "Exact-duplicate-only processing",
+          "Typed-scope gate if counterexamples justify it"
+        ],
+        "acceptance_metrics": [
+          "Stale-answer reduction and false-merge rate reported jointly",
+          "All relevant existing PR tests still pass",
+          "History remains queryable or reversibly represented",
+          "Added calls and latency are measured",
+          "Stale-answer rate measured across all matching copies on ordinary search, not only history-table writes"
+        ],
+        "falsifiers": [
+          "Existing PR already passes the full counterexample suite",
+          "Scope gate has no advantage over simple baseline",
+          "Any stale-answer improvement is offset by greater destruction of valid facts"
+        ],
+        "proposed_public_claim": "Independent validation of an existing memory-update fix.",
+        "prohibited_inference": "Ownership of the existing fix or invention of memory conflict resolution.",
+        "current_verification": {
+          "url": "https://github.com/mem0ai/mem0/issues/5867",
+          "state": "open",
+          "title": "ADD-only memory extraction can create conflicting memories",
+          "created_at": "2026-06-25T15:56:47Z",
+          "updated_at": "2026-09-03T18:27:54Z",
+          "retrieved_at": "2026-09-09T13:46:49.859749+00:00",
+          "labels": [
+            "bug",
+            "enhancement",
+            "P2-medium"
+          ],
+          "comments_count": 8,
+          "draft": null,
+          "merged_at": null,
+          "api_source": "https://api.github.com/repos/mem0ai/mem0/issues/5867"
+        },
+        "comments_verification": {
+          "retrieved_at": "2026-09-09T13:50:51.654080+00:00",
+          "api_source": "https://api.github.com/repos/mem0ai/mem0/issues/5867/comments?per_page=100",
+          "items": [
+            {
+              "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-4807522605",
+              "created_at": "2026-06-26T08:02:45Z",
+              "updated_at": "2026-06-26T08:02:45Z",
+              "author_association": "CONTRIBUTOR"
+            },
+            {
+              "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-4951626756",
+              "created_at": "2026-07-12T14:57:53Z",
+              "updated_at": "2026-07-12T14:57:53Z",
+              "author_association": "NONE"
+            },
+            {
+              "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5003008273",
+              "created_at": "2026-07-17T11:55:17Z",
+              "updated_at": "2026-07-17T11:55:17Z",
+              "author_association": "CONTRIBUTOR"
+            },
+            {
+              "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5084114511",
+              "created_at": "2026-07-26T15:23:19Z",
+              "updated_at": "2026-07-26T15:23:19Z",
+              "author_association": "NONE"
+            },
+            {
+              "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5098731240",
+              "created_at": "2026-07-28T01:14:42Z",
+              "updated_at": "2026-07-28T01:14:42Z",
+              "author_association": "NONE"
+            },
+            {
+              "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5388548103",
+              "created_at": "2026-08-23T21:25:42Z",
+              "updated_at": "2026-08-23T21:25:42Z",
+              "author_association": "NONE"
+            },
+            {
+              "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5525489824",
+              "created_at": "2026-09-03T12:07:51Z",
+              "updated_at": "2026-09-03T12:07:51Z",
+              "author_association": "NONE"
+            },
+            {
+              "url": "https://github.com/mem0ai/mem0/issues/5867#issuecomment-5530278162",
+              "created_at": "2026-09-03T18:27:54Z",
+              "updated_at": "2026-09-03T18:27:54Z",
+              "author_association": "NONE"
+            }
+          ]
+        },
+        "existing_pr_verification": {
+          "url": "https://github.com/mem0ai/mem0/pull/6017",
+          "state": "open",
+          "title": "fix: detect and resolve conflicting memories during ADD extraction",
+          "created_at": "2026-06-30T18:21:05Z",
+          "updated_at": "2026-07-17T13:42:21Z",
+          "retrieved_at": "2026-09-09T13:46:49.950089+00:00",
+          "labels": [],
+          "comments_count": 1,
+          "draft": false,
+          "merged_at": null,
+          "api_source": "https://api.github.com/repos/mem0ai/mem0/pulls/6017"
+        }
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 18,
+      "repository": "UKGovernmentBEIS/inspect_ai",
+      "issue": 4143,
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143",
+      "category": "Existing work",
+      "stage": "External package reported; comparison only",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-06-04T20:28:02Z",
+        "updatedAt": "2026-08-28T17:01:26Z",
+        "verifiedAt": "2026-09-09T13:46:48.923526+00:00",
+        "source": "https://api.github.com/repos/UKGovernmentBEIS/inspect_ai/issues/4143",
+        "commentsCount": 4,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "5f92fc5b051f339aad0692ba1a87056170153737614d2c8b7d447873426de196"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "id": "inspect_claim_support",
+        "repo": "UKGovernmentBEIS/inspect_ai",
+        "issue_url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143",
+        "evidence_level": "Latest contributor comment reports implementation in external package; package not downloaded or tested.",
+        "requested_behavior": "Score whether agent claims are supported by the available execution evidence, with an explicit not-evaluable outcome.",
+        "prior_art": [
+          {
+            "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143",
+            "relationship": "Issue author is already developing runtime evidence capture; do not claim to invent the idea."
+          },
+          {
+            "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4116",
+            "relationship": "Related completion-proof request."
+          },
+          {
+            "url": "https://inspect.aisi.org.uk/scorers.html",
+            "relationship": "Existing custom scorer and model-grading infrastructure."
+          },
+          {
+            "url": "https://github.com/UKGovernmentBEIS/inspect_ai/blob/main/CONTRIBUTING.md",
+            "relationship": "Core contributions require accepted direction; an external extension is the initial deliverable."
+          },
+          {
+            "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143#issuecomment-5455377194",
+            "relationship": "Contributor reports PR4166 closed as external-package fit and publication as inspect-claim-support."
+          }
+        ],
+        "deliverable": "First assess existing inspect-claim-support as a baseline; only extend it if a separately reproduced evidence-scope gap remains.",
+        "framework_specific": "Bind each assertion to evidence events, artifact identity/version, time and admissible observation scope; separate task success, support and contradiction.",
+        "ordinary_engineering": "Log adapters, JSON validation, hashing and scorer packaging.",
+        "prerequisites": [
+          "Retrieve and pin the existing inspect-claim-support package and its source.",
+          "Run its existing tests and compare rubric/evidence visibility against any proposed contract.",
+          "Do not duplicate its transcript support scorer or claim maintainer acceptance of new core code."
+        ],
+        "reproduction": {
+          "first_gate": "The open-issue gap was already implemented according to the August 28 contributor comment. Package validation, not a fresh scorer, is the next gate.",
+          "cases": [
+            "Tool call attempted but failed",
+            "Response says success but target artifact absent",
+            "Artifact exists with stale hash/version",
+            "Right content written to wrong target",
+            "Current observed artifact supports claim",
+            "Partial capture makes no-egress assertion unknown",
+            "Missing evidence is unknown rather than automatically false"
+          ],
+          "initial_budget": "CPU only: 20-40 synthetic/local trace fixtures, at most 2 CPU-hours; no paid model calls needed for deterministic contract tests.",
+          "later_budget": "Optional separate capped live-agent study; price first and keep a fixed model/task set."
+        },
+        "baselines": [
+          "Existing Inspect scorers with explicit rubric",
+          "Exact structured evidence checker",
+          "Model judge at equal evidence access"
+        ],
+        "acceptance_metrics": [
+          "Zero false support on the frozen deterministic contradiction/missing-evidence fixture set",
+          "Support coverage reported separately from false-support rate",
+          "Unknown rate and confusion matrix by evidence-completeness condition",
+          "CPU latency and trace-storage overhead"
+        ],
+        "falsifiers": [
+          "Existing supported extension already meets the contract",
+          "New scorer accepts a forbidden inference from partial capture",
+          "It reduces false support only by rejecting all claims",
+          "It confuses a successful tool request with observed target-state change"
+        ],
+        "proposed_public_claim": "A tested support classification for explicitly scoped execution traces.",
+        "prohibited_inference": "A universal hallucination detector or proof of external truth.",
+        "decision": "existing_implementation_baseline_not_an_unfilled_request",
+        "existing_implementation": {
+          "reported_package": "inspect-claim-support",
+          "package_url": "https://pypi.org/project/inspect-claim-support/",
+          "pr_url": "https://github.com/UKGovernmentBEIS/inspect_ai/pull/4166",
+          "verification": "Reported in fresh issue comment; package/PR not independently fetched successfully."
+        },
+        "current_verification": {
+          "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143",
+          "state": "open",
+          "title": "Idea: a \"claim support\" scorer (claimed vs what the transcript actually shows)",
+          "created_at": "2026-06-04T20:28:02Z",
+          "updated_at": "2026-08-28T17:01:26Z",
+          "retrieved_at": "2026-09-09T13:46:48.923526+00:00",
+          "labels": [],
+          "comments_count": 4,
+          "draft": null,
+          "merged_at": null,
+          "api_source": "https://api.github.com/repos/UKGovernmentBEIS/inspect_ai/issues/4143"
+        },
+        "comments_verification": {
+          "retrieved_at": "2026-09-09T13:50:51.831643+00:00",
+          "api_source": "https://api.github.com/repos/UKGovernmentBEIS/inspect_ai/issues/4143/comments?per_page=100",
+          "items": [
+            {
+              "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143#issuecomment-4642025608",
+              "created_at": "2026-06-07T09:07:42Z",
+              "updated_at": "2026-06-07T09:07:42Z",
+              "author_association": "CONTRIBUTOR"
+            },
+            {
+              "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143#issuecomment-4642044654",
+              "created_at": "2026-06-07T09:15:52Z",
+              "updated_at": "2026-06-07T09:15:52Z",
+              "author_association": "NONE"
+            },
+            {
+              "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143#issuecomment-4716062184",
+              "created_at": "2026-06-16T07:32:28Z",
+              "updated_at": "2026-06-16T07:32:28Z",
+              "author_association": "CONTRIBUTOR"
+            },
+            {
+              "url": "https://github.com/UKGovernmentBEIS/inspect_ai/issues/4143#issuecomment-5455377194",
+              "created_at": "2026-08-28T17:01:26Z",
+              "updated_at": "2026-08-28T17:01:26Z",
+              "author_association": "CONTRIBUTOR"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 19,
+      "repository": "dynamicslab/pysindy",
+      "issue": 661,
+      "url": "https://github.com/dynamicslab/pysindy/issues/661",
+      "category": "Existing work",
+      "stage": "Existing fix and regression in PR692",
+      "verification": {
+        "state": "open",
+        "createdAt": "2025-11-09T19:54:17Z",
+        "updatedAt": "2025-11-09T19:54:17Z",
+        "verifiedAt": "2026-09-09T13:46:41.252698+00:00",
+        "commentsCount": 0,
+        "assigneeCount": 0
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "repository": "dynamicslab/pysindy",
+        "number": 661,
+        "title": "[BUG] Trapping objective missing term",
+        "url": "https://github.com/dynamicslab/pysindy/issues/661",
+        "state": "open",
+        "createdAt": "2025-11-09T19:54:17Z",
+        "updatedAt": "2025-11-09T19:54:17Z",
+        "verifiedAt": "2026-09-09T13:46:41.252698+00:00",
+        "statusSource": "https://api.github.com/repos/dynamicslab/pysindy/issues?state=open&sort=updated&direction=desc&per_page=100",
+        "authorAssociation": "MEMBER",
+        "commentsReported": 0,
+        "commentsRead": 0,
+        "commentsComplete": true,
+        "commentsVerifiedAt": "2026-09-09T13:46:46.762956+00:00",
+        "commentSources": [],
+        "codeReproduced": false,
+        "currentMainPinnedAndExecuted": false,
+        "acceptanceMetricsAreProposed": true,
+        "disposition": "deprioritized_existing_patch_and_requested_regression_already_exist",
+        "existingPR": {
+          "repository": "dynamicslab/pysindy",
+          "number": 692,
+          "title": "Fix cubic penalty in trapping objective",
+          "url": "https://github.com/dynamicslab/pysindy/pull/692",
+          "state": "open",
+          "createdAt": "2026-07-16T12:10:05Z",
+          "updatedAt": "2026-07-16T12:10:05Z",
+          "verifiedAt": "2026-09-09T13:46:41.252698+00:00",
+          "statusSource": "https://api.github.com/repos/dynamicslab/pysindy/issues?state=open&sort=updated&direction=desc&per_page=100",
+          "authorAssociation": "NONE",
+          "commentsReported": 0,
+          "commentsRead": 0,
+          "commentsComplete": true,
+          "commentsVerifiedAt": null,
+          "commentSources": [],
+          "codeReproduced": false,
+          "currentMainPinnedAndExecuted": false,
+          "acceptanceMetricsAreProposed": true
+        },
+        "reason": "Open PR #692 already fixes the cubic objective term and includes an independent two-penalty regression, reporting 13 passing trapping tests. This was initially attractive as a maintainer-filed good-first-issue, but the proposed obvious contribution is already supplied. Independent review or missing edge-case coverage only.",
+        "license": {
+          "id": "MIT",
+          "source": "https://raw.githubusercontent.com/dynamicslab/pysindy/main/LICENSE"
+        },
+        "dependenciesCompute": "Python >=3.11, NumPy >=2, SciPy, scikit-learn, derivative; optional CVXPY/SCS for relevant paths. CPU only for objective/regression fixtures.",
+        "dependencySource": "https://github.com/dynamicslab/pysindy/blob/main/pyproject.toml",
+        "noveltyBoundary": "Correcting an existing trapping penalty is not a new stability theorem or evidence for a general UHL claim.",
+        "nextGate": "Inspect PR #692's actual diff and tests before proposing any review contribution; no local reproduction has been run."
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 20,
+      "repository": "meta-pytorch/botorch",
+      "issue": 3303,
+      "url": "https://github.com/meta-pytorch/botorch/issues/3303",
+      "category": "Existing work",
+      "stage": "Existing fix and tests in PR3359",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-05-05T16:24:46Z",
+        "updatedAt": "2026-05-05T16:26:21Z",
+        "verifiedAt": "2026-09-09T13:46:38.833533+00:00",
+        "commentsCount": 0,
+        "assigneeCount": 0
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "repository": "meta-pytorch/botorch",
+        "number": 3303,
+        "title": "[Bug]: Default samplers are dependent for qHVKG",
+        "url": "https://github.com/meta-pytorch/botorch/issues/3303",
+        "state": "open",
+        "createdAt": "2026-05-05T16:24:46Z",
+        "updatedAt": "2026-05-05T16:26:21Z",
+        "verifiedAt": "2026-09-09T13:46:38.833533+00:00",
+        "statusSource": "https://api.github.com/repos/meta-pytorch/botorch/issues?state=open&sort=updated&direction=desc&per_page=100",
+        "authorAssociation": "CONTRIBUTOR",
+        "commentsReported": 0,
+        "commentsRead": 0,
+        "commentsComplete": true,
+        "commentsVerifiedAt": "2026-09-09T13:46:46.322641+00:00",
+        "commentSources": [],
+        "codeReproduced": false,
+        "currentMainPinnedAndExecuted": false,
+        "acceptanceMetricsAreProposed": true,
+        "disposition": "deprioritized_existing_full_fix_under_review",
+        "existingPR": {
+          "repository": "meta-pytorch/botorch",
+          "number": 3359,
+          "title": "Fix dependent qHVKG fantasy samplers",
+          "url": "https://github.com/meta-pytorch/botorch/pull/3359",
+          "state": "open",
+          "createdAt": "2026-08-19T21:47:58Z",
+          "updatedAt": "2026-08-30T06:41:34Z",
+          "verifiedAt": "2026-09-09T13:46:38.833533+00:00",
+          "statusSource": "https://api.github.com/repos/meta-pytorch/botorch/issues?state=open&sort=updated&direction=desc&per_page=100",
+          "authorAssociation": "NONE",
+          "commentsReported": 1,
+          "commentsRead": 0,
+          "commentsComplete": false,
+          "commentsVerifiedAt": null,
+          "commentSources": [],
+          "codeReproduced": false,
+          "currentMainPinnedAndExecuted": false,
+          "acceptanceMetricsAreProposed": true
+        },
+        "reason": "Open PR #3359 already changes the qHVKG fantasy-sampler handling and adds tests. A new competing fix is not justified. Independent multi-seed dependence calibration or acquisition-ranking regression could help only if absent from that patch.",
+        "license": {
+          "id": "MIT",
+          "source": "https://github.com/meta-pytorch/botorch/blob/main/LICENSE"
+        },
+        "dependenciesCompute": "CPU PyTorch, GPyTorch, BoTorch; the reported two-output, 10x2 input, 512-fantasy fixture is small. No external data or paid service.",
+        "reproductionInputs": "Issue: two independent SingleTaskGP outputs in ModelListGP, random 10x2 inputs, outputs from X^2+flipped X, 512 fantasies; reported BoTorch 0.17.2, Python 3.12.11.",
+        "noveltyBoundary": "Independent random streams and correctly estimated value-of-information are established statistical requirements. This is not a new IDA acquisition function.",
+        "maintenanceSource": "https://github.com/meta-pytorch/botorch/issues/3308",
+        "maintenanceNote": "Maintainers announced reduced dedicated support and volunteer maintenance, not abandonment. Check review capacity before expecting rapid acceptance."
+      }
+    },
+    {
+      "priority": null,
+      "displayOrder": 21,
+      "repository": "pymc-devs/pymc-examples",
+      "issue": 880,
+      "url": "https://github.com/pymc-devs/pymc-examples/issues/880",
+      "category": "Existing work",
+      "stage": "Existing geometric-check proposal; extension only",
+      "verification": {
+        "state": "open",
+        "createdAt": "2026-05-20T18:09:31Z",
+        "updatedAt": "2026-05-20T18:09:31Z",
+        "verifiedAt": "2026-09-09T13:46:48.953499+00:00",
+        "source": "https://api.github.com/repos/pymc-devs/pymc-examples/issues/880",
+        "commentsCount": 0,
+        "assigneeCount": 0,
+        "sourceSnapshotSha256": "4755ed7007c2db3c2edb466518658fc820764f7f42cb417f9acab5bde78afaab"
+      },
+      "metricsStatus": "proposed unless explicitly identified as executed",
+      "details": {
+        "contribution": "Compare an existing topological posterior predictive check proposal with conventional diagnostics on prespecified misspecification controls; extend only if a concrete gap survives.",
+        "programme_fit": "Geometric summaries can ask different questions of predictive distributions.",
+        "existing_work": "The issue author already proposes topological posterior predictive checks. Credit that proposal.",
+        "acceptance_metrics": [
+          "Null calibration",
+          "Known misspecification sensitivity",
+          "Comparison with conventional summaries",
+          "No tuning on final held-out anomalies"
+        ],
+        "falsifier": "Existing diagnostics detect the same failures at lower complexity or the topology statistic is miscalibrated.",
+        "novelty_boundary": "Not an original programme proposal, and no local notebook execution was performed.",
+        "sources": [
+          "https://github.com/pymc-devs/pymc-examples/issues/880"
+        ]
+      }
+    }
+  ]
+}

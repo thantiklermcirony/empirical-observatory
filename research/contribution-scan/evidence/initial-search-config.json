@@ -1,0 +1,12 @@
+{
+  "groups": [
+    {"id": "ai-memory", "repositories": ["getzep/graphiti", "mem0ai/mem0", "xiaowu0162/LongMemEval", "letta-ai/letta", "langchain-ai/langgraph"]},
+    {"id": "ai-evaluation", "repositories": ["UKGovernmentBEIS/inspect_ai", "UKGovernmentBEIS/inspect_evals", "neurogym/neurogym", "proroklab/popgym", "Farama-Foundation/Gymnasium", "stanfordnlp/dspy"]},
+    {"id": "biology-state", "repositories": ["scverse/pertpy", "scverse/scvi-tools", "scverse/scanpy", "theislab/cellrank", "theislab/scvelo"]},
+    {"id": "biology-prediction", "repositories": ["snap-stanford/GEARS", "theislab/cpa", "google-deepmind/alphagenome", "google-deepmind/alphagenome_research"]},
+    {"id": "quantum", "repositories": ["Qiskit/qiskit", "quantumlib/Cirq", "PennyLaneAI/pennylane", "qutip/qutip"]},
+    {"id": "eeg", "repositories": ["brainflow-dev/brainflow", "braindecode/braindecode", "mne-tools/mne-python", "NeuroTechX/moabb"]},
+    {"id": "dynamics", "repositories": ["patrick-kidger/diffrax", "dynamicslab/pysindy", "SciML/OrdinaryDiffEq.jl", "meta-pytorch/botorch", "scipy/scipy"]},
+    {"id": "earth", "repositories": ["bilawalsidhu/gods-eye-view", "koala73/worldmonitor", "CesiumGS/cesium", "MobilityData/gbfs", "pydata/xarray"]}
+  ]
+}

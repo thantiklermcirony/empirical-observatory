@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "scannerVersion": "0.1.0",
+  "updatedAt": "2026-09-09T13:57:12.078464+00:00",
+  "configSha256": "5bb5c1b0ac0d29c435f84a29b6ae491ce055cf38193bb8166dc835375609ed61",
+  "scope": "Named public repository issues only; bounded search, not all GitHub.",
+  "requestsThisRun": 3,
+  "stop": null,
+  "coverage": [
+    {
+      "group": "ai-memory",
+      "repositories": [
+        "getzep/graphiti",
+        "mem0ai/mem0",
+        "xiaowu0162/LongMemEval",
+        "letta-ai/letta",
+        "langchain-ai/langgraph"
+      ],
+      "pagesRetrieved": 2,
+      "requestedPageCap": 2,
+      "returnedItems": 200,
+      "reportedTotalCount": 1167,
+      "complete": false,
+      "searchCeilingReached": true,
+      "incompleteResults": false,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    },
+    {
+      "group": "ai-evaluation",
+      "repositories": [
+        "UKGovernmentBEIS/inspect_ai",
+        "UKGovernmentBEIS/inspect_evals",
+        "neurogym/neurogym",
+        "proroklab/popgym",
+        "Farama-Foundation/Gymnasium",
+        "stanfordnlp/dspy"
+      ],
+      "pagesRetrieved": 2,
+      "requestedPageCap": 2,
+      "returnedItems": 168,
+      "reportedTotalCount": 749,
+      "complete": false,
+      "searchCeilingReached": false,
+      "incompleteResults": true,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    },
+    {
+      "group": "biology-state",
+      "repositories": [
+        "scverse/pertpy",
+        "scverse/scvi-tools",
+        "scverse/scanpy",
+        "theislab/cellrank",
+        "theislab/scvelo"
+      ],
+      "pagesRetrieved": 2,
+      "requestedPageCap": 2,
+      "returnedItems": 200,
+      "reportedTotalCount": 543,
+      "complete": false,
+      "searchCeilingReached": false,
+      "incompleteResults": true,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    },
+    {
+      "group": "biology-prediction",
+      "repositories": [
+        "snap-stanford/GEARS",
+        "theislab/cpa",
+        "google-deepmind/alphagenome",
+        "google-deepmind/alphagenome_research"
+      ],
+      "pagesRetrieved": 1,
+      "requestedPageCap": 2,
+      "returnedItems": 4,
+      "reportedTotalCount": 44,
+      "complete": false,
+      "searchCeilingReached": false,
+      "incompleteResults": true,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    },
+    {
+      "group": "quantum",
+      "repositories": [
+        "Qiskit/qiskit",
+        "quantumlib/Cirq",
+        "PennyLaneAI/pennylane",
+        "qutip/qutip"
+      ],
+      "pagesRetrieved": 2,
+      "requestedPageCap": 2,
+      "returnedItems": 96,
+      "reportedTotalCount": 1292,
+      "complete": false,
+      "searchCeilingReached": true,
+      "incompleteResults": true,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    },
+    {
+      "group": "eeg",
+      "repositories": [
+        "brainflow-dev/brainflow",
+        "braindecode/braindecode",
+        "mne-tools/mne-python",
+        "NeuroTechX/moabb"
+      ],
+      "pagesRetrieved": 2,
+      "requestedPageCap": 2,
+      "returnedItems": 119,
+      "reportedTotalCount": 732,
+      "complete": false,
+      "searchCeilingReached": false,
+      "incompleteResults": true,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    },
+    {
+      "group": "dynamics",
+      "repositories": [
+        "patrick-kidger/diffrax",
+        "dynamicslab/pysindy",
+        "SciML/OrdinaryDiffEq.jl",
+        "meta-pytorch/botorch",
+        "scipy/scipy"
+      ],
+      "pagesRetrieved": 2,
+      "requestedPageCap": 2,
+      "returnedItems": 159,
+      "reportedTotalCount": 2189,
+      "complete": false,
+      "searchCeilingReached": true,
+      "incompleteResults": true,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    },
+    {
+      "group": "earth",
+      "repositories": [
+        "bilawalsidhu/gods-eye-view",
+        "koala73/worldmonitor",
+        "CesiumGS/cesium",
+        "MobilityData/gbfs",
+        "pydata/xarray"
+      ],
+      "pagesRetrieved": 2,
+      "requestedPageCap": 2,
+      "returnedItems": 200,
+      "reportedTotalCount": 2986,
+      "complete": false,
+      "searchCeilingReached": true,
+      "incompleteResults": false,
+      "caveat": "Updated-time pagination is not an atomic snapshot; changing issues can move between pages."
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Agetzep%2Fgraphiti+repo%3Amem0ai%2Fmem0+repo%3Axiaowu0162%2FLongMemEval+repo%3Aletta-ai%2Fletta+repo%3Alangchain-ai%2Flanggraph&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T13:54:24.767230+00:00",
+      "totalCount": 1167,
+      "incompleteResults": false,
+      "rateRemaining": "9",
+      "rateReset": "1788962123",
+      "responseSha256": "a9ac0daec16c3ef948ba55aa433aa1a4acc13b2c774caee467eca3479beeaa68",
+      "group": "ai-memory",
+      "page": 1,
+      "returnedItems": 100
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3AUKGovernmentBEIS%2Finspect_ai+repo%3AUKGovernmentBEIS%2Finspect_evals+repo%3Aneurogym%2Fneurogym+repo%3Aproroklab%2Fpopgym+repo%3AFarama-Foundation%2FGymnasium+repo%3Astanfordnlp%2Fdspy&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T13:54:26.660060+00:00",
+      "totalCount": 749,
+      "incompleteResults": true,
+      "rateRemaining": "8",
+      "rateReset": "1788962123",
+      "responseSha256": "7bbdcf30367c1eb2da01b175bdf8db20213d68450caa908ffc61152678f33e87",
+      "group": "ai-evaluation",
+      "page": 1,
+      "returnedItems": 68
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Ascverse%2Fpertpy+repo%3Ascverse%2Fscvi-tools+repo%3Ascverse%2Fscanpy+repo%3Atheislab%2Fcellrank+repo%3Atheislab%2Fscvelo&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T13:54:29.039089+00:00",
+      "totalCount": 543,
+      "incompleteResults": false,
+      "rateRemaining": "7",
+      "rateReset": "1788962123",
+      "responseSha256": "807397264fdf80071d95af0b6668520f84a68d7ab41d1e1d59bcd690654ef5f3",
+      "group": "biology-state",
+      "page": 1,
+      "returnedItems": 100
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Asnap-stanford%2FGEARS+repo%3Atheislab%2Fcpa+repo%3Agoogle-deepmind%2Falphagenome+repo%3Agoogle-deepmind%2Falphagenome_research&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T13:54:30.287262+00:00",
+      "totalCount": 44,
+      "incompleteResults": true,
+      "rateRemaining": "6",
+      "rateReset": "1788962123",
+      "responseSha256": "3bc94dd9c50aff110071f7233ea808f3edc70ce5d03c2f9c56de820a3b0fb6bc",
+      "group": "biology-prediction",
+      "page": 1,
+      "returnedItems": 4
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3AQiskit%2Fqiskit+repo%3Aquantumlib%2FCirq+repo%3APennyLaneAI%2Fpennylane+repo%3Aqutip%2Fqutip&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T13:54:32.249302+00:00",
+      "totalCount": 1292,
+      "incompleteResults": true,
+      "rateRemaining": "5",
+      "rateReset": "1788962123",
+      "responseSha256": "57a06848e6238e32ec0b04cc741143f77851262bfc75544f1610493319296824",
+      "group": "quantum",
+      "page": 1,
+      "returnedItems": 87
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Abrainflow-dev%2Fbrainflow+repo%3Abraindecode%2Fbraindecode+repo%3Amne-tools%2Fmne-python+repo%3ANeuroTechX%2Fmoabb&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T13:54:33.655608+00:00",
+      "totalCount": 732,
+      "incompleteResults": true,
+      "rateRemaining": "4",
+      "rateReset": "1788962123",
+      "responseSha256": "77cb9787fdb7a05b8eb5d2fbe1b4a73d7865399ed0cf8459e8b04b1522687fd9",
+      "group": "eeg",
+      "page": 1,
+      "returnedItems": 24
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Apatrick-kidger%2Fdiffrax+repo%3Adynamicslab%2Fpysindy+repo%3ASciML%2FOrdinaryDiffEq.jl+repo%3Ameta-pytorch%2Fbotorch+repo%3Ascipy%2Fscipy&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T13:55:36.981677+00:00",
+      "totalCount": 2189,
+      "incompleteResults": true,
+      "rateRemaining": "9",
+      "rateReset": "1788962195",
+      "responseSha256": "46a934d9470a92d123d74792721e934ebf5e47ee950198b5c01e0a856e318e90",
+      "group": "dynamics",
+      "page": 1,
+      "returnedItems": 98
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Abilawalsidhu%2Fgods-eye-view+repo%3Akoala73%2Fworldmonitor+repo%3ACesiumGS%2Fcesium+repo%3AMobilityData%2Fgbfs+repo%3Apydata%2Fxarray&sort=updated&order=desc&per_page=100&page=1",
+      "retrievedAt": "2026-09-09T13:55:38.912968+00:00",
+      "totalCount": 2986,
+      "incompleteResults": false,
+      "rateRemaining": "8",
+      "rateReset": "1788962195",
+      "responseSha256": "293d6979d678680d883753dadc856f8fbc0dcec0116ad98b4773882c8bb36b72",
+      "group": "earth",
+      "page": 1,
+      "returnedItems": 100
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Agetzep%2Fgraphiti+repo%3Amem0ai%2Fmem0+repo%3Axiaowu0162%2FLongMemEval+repo%3Aletta-ai%2Fletta+repo%3Alangchain-ai%2Flanggraph&sort=updated&order=desc&per_page=100&page=2",
+      "retrievedAt": "2026-09-09T13:55:41.281549+00:00",
+      "totalCount": 1167,
+      "incompleteResults": false,
+      "rateRemaining": "7",
+      "rateReset": "1788962195",
+      "responseSha256": "2f4d998496e2cdce19acdce5a133687a78ecb8cc2bce94ca03be3ff5892c488e",
+      "group": "ai-memory",
+      "page": 2,
+      "returnedItems": 100
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3AUKGovernmentBEIS%2Finspect_ai+repo%3AUKGovernmentBEIS%2Finspect_evals+repo%3Aneurogym%2Fneurogym+repo%3Aproroklab%2Fpopgym+repo%3AFarama-Foundation%2FGymnasium+repo%3Astanfordnlp%2Fdspy&sort=updated&order=desc&per_page=100&page=2",
+      "retrievedAt": "2026-09-09T13:55:43.356677+00:00",
+      "totalCount": 749,
+      "incompleteResults": false,
+      "rateRemaining": "6",
+      "rateReset": "1788962195",
+      "responseSha256": "83032b251856ea3dbae946a446156dfe3d107b7006ec3f8524e502b2b2883f99",
+      "group": "ai-evaluation",
+      "page": 2,
+      "returnedItems": 100
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Ascverse%2Fpertpy+repo%3Ascverse%2Fscvi-tools+repo%3Ascverse%2Fscanpy+repo%3Atheislab%2Fcellrank+repo%3Atheislab%2Fscvelo&sort=updated&order=desc&per_page=100&page=2",
+      "retrievedAt": "2026-09-09T13:55:45.868810+00:00",
+      "totalCount": 531,
+      "incompleteResults": true,
+      "rateRemaining": "5",
+      "rateReset": "1788962195",
+      "responseSha256": "f47ec6d5cd0cdc49aebfd75adc2f7e5f13854de85b9ef54dde4c2a6123ce6c3f",
+      "group": "biology-state",
+      "page": 2,
+      "returnedItems": 100
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3AQiskit%2Fqiskit+repo%3Aquantumlib%2FCirq+repo%3APennyLaneAI%2Fpennylane+repo%3Aqutip%2Fqutip&sort=updated&order=desc&per_page=100&page=2",
+      "retrievedAt": "2026-09-09T13:55:47.658322+00:00",
+      "totalCount": 1292,
+      "incompleteResults": true,
+      "rateRemaining": "4",
+      "rateReset": "1788962195",
+      "responseSha256": "20d0a4c4a1e25f07b7a2dba97b169c2454ebe5d960139143bdfca9a7e373d3a3",
+      "group": "quantum",
+      "page": 2,
+      "returnedItems": 9
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Abrainflow-dev%2Fbrainflow+repo%3Abraindecode%2Fbraindecode+repo%3Amne-tools%2Fmne-python+repo%3ANeuroTechX%2Fmoabb&sort=updated&order=desc&per_page=100&page=2",
+      "retrievedAt": "2026-09-09T13:57:08.165966+00:00",
+      "totalCount": 732,
+      "incompleteResults": true,
+      "rateRemaining": "9",
+      "rateReset": "1788962286",
+      "responseSha256": "8aaf53f8a76f597315e276f48f5f962cb7ee51670b86e4c8fd9a7f31643635a4",
+      "group": "eeg",
+      "page": 2,
+      "returnedItems": 95
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Apatrick-kidger%2Fdiffrax+repo%3Adynamicslab%2Fpysindy+repo%3ASciML%2FOrdinaryDiffEq.jl+repo%3Ameta-pytorch%2Fbotorch+repo%3Ascipy%2Fscipy&sort=updated&order=desc&per_page=100&page=2",
+      "retrievedAt": "2026-09-09T13:57:10.051629+00:00",
+      "totalCount": 2189,
+      "incompleteResults": true,
+      "rateRemaining": "8",
+      "rateReset": "1788962286",
+      "responseSha256": "9ee2521ccbbe724c5019162937c81501fb37732d99882173720249922f8b073c",
+      "group": "dynamics",
+      "page": 2,
+      "returnedItems": 61
+    },
+    {
+      "url": "https://api.github.com/search/issues?q=is%3Aissue+is%3Aopen+repo%3Abilawalsidhu%2Fgods-eye-view+repo%3Akoala73%2Fworldmonitor+repo%3ACesiumGS%2Fcesium+repo%3AMobilityData%2Fgbfs+repo%3Apydata%2Fxarray&sort=updated&order=desc&per_page=100&page=2",
+      "retrievedAt": "2026-09-09T13:57:12.028521+00:00",
+      "totalCount": 2986,
+      "incompleteResults": false,
+      "rateRemaining": "7",
+      "rateReset": "1788962286",
+      "responseSha256": "67bff4fa814894e6eb7ca4366558398be264c2866ad56f50b65c9b31e61a783b",
+      "group": "earth",
+      "page": 2,
+      "returnedItems": 100
+    }
+  ],
+  "uniqueOpenIssues": 1146
+}
