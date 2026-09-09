@@ -1,5 +1,10 @@
 # The Empirical Observatory
 
+**[CURRENT PROJECTS →](https://empirical-observatory.madmanmuzza.chatgpt.site/projects)** · **[ENTER THE LIVE STATION →](https://empirical-observatory.madmanmuzza.chatgpt.site)**
+
+The projects page links runnable experiments, source, evidence and the two submitted Graphiti fixes. Direct laboratory links work without an API key.
+
+
 A playable research station for testing what measurements reveal—and what they miss. Part of [The Empirical Architecture](https://github.com/thantiklermcirony/empirical-architecture).
 
 **Release 0.2: First Contact** contains three working experiments, a local instrument dock, a replayable logbook and an Earth / AI / Genome expedition workspace. The orbital scene uses Three.js; numerical results come from the experiment engines, not the visual effects.
@@ -73,4 +78,4 @@ Original project code is MIT. Dependency code, provider data and manuscript mate
 
 **Compatibility notice:** new records use engine 0.2.0. Old quantum records replay with a bias warning because v0.1 coupled state selection to its first random shot. Exclude those records from statistical evidence. Details and numerical corrections are in [the release audit](research/Release_0.2.md).
 
-The hosted preview currently has owner-only access. Public GitHub users can run the complete source locally; the repository does not promise anonymous access to the hosted preview.
+The [hosted Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site) is public. Experiment history stays in each visitor's own browser. Optional hardware and provider adapters still need local setup; they are not advertised as cloud services.
