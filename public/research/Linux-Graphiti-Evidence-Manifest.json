@@ -1,0 +1,74 @@
+{
+  "run_url": "https://github.com/thantiklermcirony/graphiti/actions/runs/34410688322",
+  "artifact_url": "https://github.com/thantiklermcirony/graphiti/actions/runs/34410688322/artifacts/10127132648",
+  "audit_commit": "1b5670465e0a30854401281f995ff2bcefebbe58",
+  "archive_sha256": "c4198b6d623f6ad2da775a9ed634079951ae6b69e2155905a5b017b0f56d4e77",
+  "archive_matches_expected_actions_digest": true,
+  "archive_digest_expected_source": "Actions UI digest supplied by publishing agent; independently recomputed on downloaded archive",
+  "files": [
+    {
+      "name": "Linux-Graphiti-Baseline-Database.json",
+      "source_member": "baseline-database.json",
+      "sha256": "dffd87fa52c63370a7dd57747d40507c91197d1c3078adbe59b61fae972e96ca",
+      "bytes": 42314
+    },
+    {
+      "name": "Linux-Graphiti-Candidate-Database.json",
+      "source_member": "candidate-database.json",
+      "sha256": "e94f0ca04c34b594ad93718cabf7642aceeff6f246cac3d81d6e787e22ddfd60",
+      "bytes": 43933
+    },
+    {
+      "name": "Linux-Graphiti-Baseline-Roundtrip.json",
+      "source_member": "baseline-roundtrip.json",
+      "sha256": "b289cf648bf3ca0fdeb8d3d8b93b572a10bbc5ad549bdbbb8436f3404d1b220e",
+      "bytes": 7172
+    },
+    {
+      "name": "Linux-Graphiti-UTC-Roundtrip.json",
+      "source_member": "utc-roundtrip.json",
+      "sha256": "462951970d4a400c69d847505437d1eecf1376e7a159f49121302af1a4b0dad2",
+      "bytes": 7378
+    },
+    {
+      "name": "Linux-Graphiti-Source-Manifest.json",
+      "source_member": "source-manifest.json",
+      "sha256": "afa6bcad665dabdb914c8b4cb5c57c304bda8cc880db12b7af0e554f84bc6136",
+      "bytes": 1724
+    },
+    {
+      "name": "Linux-Graphiti-Run-Summary.md",
+      "source_member": "SUMMARY.md",
+      "sha256": "0a51ad8e84432acc81c9cd4c2108c7dc8e1f17ad1757300ab41aa784f48e1aed",
+      "bytes": 355
+    },
+    {
+      "name": "Linux-Graphiti-Verdict.json",
+      "source_member": "verdict.json",
+      "sha256": "419ec63ec1bd8d259c2383c7bf4d6a6f2f685d5de9e5e9c3cdf44078a53ce1b6",
+      "bytes": 7178
+    },
+    {
+      "name": "Linux-Graphiti-Audit.md",
+      "source_member": null,
+      "sha256": "a46c5dd51559734734d2ede95420978deac2bb4f5e3c84b9b93aaff111a14e62",
+      "bytes": 4850,
+      "kind": "independent public summary derived from artifact"
+    }
+  ],
+  "scope": "Synthetic finite resolver/persistence evidence; no model-quality evaluation",
+  "recorded_counts": {
+    "baseline_cases_passed": 0,
+    "candidate_cases_passed": 4,
+    "executed_cases_per_source": 4,
+    "skipped_cases": 0,
+    "baseline_query_assertions_passed": 20,
+    "candidate_query_assertions_passed": 32,
+    "query_assertions_per_source": 32,
+    "declared_timepoints": 16,
+    "baseline_storage_assertions_passed": 6,
+    "candidate_storage_assertions_passed": 13,
+    "storage_assertions_per_source": 13,
+    "external_model_api_calls": 0
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "started_at": "2026-09-09T22:09:20.998865+00:00",
+  "finished_at": "2026-09-09T22:09:51.652417+00:00",
+  "pass": true,
+  "problems": [],
+  "stages": [
+    {
+      "name": "baseline-regressions",
+      "exit_code": 1,
+      "source": "/home/runner/work/graphiti/graphiti/sources/baseline",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "-c",
+        "import sys;from pathlib import Path;sys.path.insert(0,sys.argv[1]);import graphiti_core.helpers as h;import graphiti_core.utils.maintenance.edge_operations as o;print(\"ACTUAL_HELPERS=\"+h.__file__,flush=True);print(\"ACTUAL_RESOLVER=\"+o.__file__,flush=True);assert Path(h.__file__).resolve().is_relative_to(Path(sys.argv[1]));assert Path(o.__file__).resolve().is_relative_to(Path(sys.argv[1]));import pytest;raise SystemExit(pytest.main(sys.argv[2:]))",
+        "/home/runner/work/graphiti/graphiti/sources/baseline",
+        "/home/runner/work/graphiti/graphiti/sources/candidate/tests/utils/maintenance/test_edge_temporal_identity.py",
+        "/home/runner/work/graphiti/graphiti/sources/candidate/tests/utils/maintenance/test_edge_temporal_resolution.py",
+        "/home/runner/work/graphiti/graphiti/sources/candidate/tests/test_db_date_roundtrip.py",
+        "-q",
+        "--tb=short",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=/home/runner/work/graphiti/graphiti/evidence/baseline-regressions.xml",
+        "--basetemp=/home/runner/work/graphiti/graphiti/evidence/baseline-pytest-tmp"
+      ],
+      "elapsed_seconds": 4.376,
+      "counts": {
+        "tests": 48,
+        "failures": 30,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "name": "baseline-independent",
+      "exit_code": 1,
+      "source": "/home/runner/work/graphiti/graphiti/sources/baseline",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "/home/runner/work/graphiti/graphiti/audit-source/audit/temporal-memory/independent_temporal_cases.py",
+        "-v"
+      ],
+      "elapsed_seconds": 2.119
+    },
+    {
+      "name": "candidate-regressions",
+      "exit_code": 0,
+      "source": "/home/runner/work/graphiti/graphiti/sources/candidate",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "-c",
+        "import sys;from pathlib import Path;sys.path.insert(0,sys.argv[1]);import graphiti_core.helpers as h;import graphiti_core.utils.maintenance.edge_operations as o;print(\"ACTUAL_HELPERS=\"+h.__file__,flush=True);print(\"ACTUAL_RESOLVER=\"+o.__file__,flush=True);assert Path(h.__file__).resolve().is_relative_to(Path(sys.argv[1]));assert Path(o.__file__).resolve().is_relative_to(Path(sys.argv[1]));import pytest;raise SystemExit(pytest.main(sys.argv[2:]))",
+        "/home/runner/work/graphiti/graphiti/sources/candidate",
+        "/home/runner/work/graphiti/graphiti/sources/candidate/tests/utils/maintenance/test_edge_temporal_identity.py",
+        "/home/runner/work/graphiti/graphiti/sources/candidate/tests/utils/maintenance/test_edge_temporal_resolution.py",
+        "/home/runner/work/graphiti/graphiti/sources/candidate/tests/test_db_date_roundtrip.py",
+        "-q",
+        "--tb=short",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=/home/runner/work/graphiti/graphiti/evidence/candidate-regressions.xml",
+        "--basetemp=/home/runner/work/graphiti/graphiti/evidence/candidate-pytest-tmp"
+      ],
+      "elapsed_seconds": 3.093,
+      "counts": {
+        "tests": 48,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "name": "candidate-independent",
+      "exit_code": 0,
+      "source": "/home/runner/work/graphiti/graphiti/sources/candidate",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "/home/runner/work/graphiti/graphiti/audit-source/audit/temporal-memory/independent_temporal_cases.py",
+        "-v"
+      ],
+      "elapsed_seconds": 2.741
+    },
+    {
+      "name": "baseline-database",
+      "exit_code": 1,
+      "source": "/home/runner/work/graphiti/graphiti/sources/baseline",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "/home/runner/work/graphiti/graphiti/audit-source/audit/temporal-memory/database_temporal_audit.py",
+        "--stage",
+        "baseline-database",
+        "--require-fulltext",
+        "--output",
+        "/home/runner/work/graphiti/graphiti/evidence/baseline-database.json"
+      ],
+      "elapsed_seconds": 7.544
+    },
+    {
+      "name": "candidate-database",
+      "exit_code": 0,
+      "source": "/home/runner/work/graphiti/graphiti/sources/candidate",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "/home/runner/work/graphiti/graphiti/audit-source/audit/temporal-memory/database_temporal_audit.py",
+        "--stage",
+        "candidate-database",
+        "--require-fulltext",
+        "--output",
+        "/home/runner/work/graphiti/graphiti/evidence/candidate-database.json"
+      ],
+      "elapsed_seconds": 2.935
+    },
+    {
+      "name": "baseline-roundtrip",
+      "exit_code": 1,
+      "source": "/home/runner/work/graphiti/graphiti/sources/baseline",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "/home/runner/work/graphiti/graphiti/audit-source/audit/temporal-memory/database_temporal_audit.py",
+        "--stage",
+        "baseline-roundtrip",
+        "--roundtrip-only",
+        "--output",
+        "/home/runner/work/graphiti/graphiti/evidence/baseline-roundtrip.json"
+      ],
+      "elapsed_seconds": 2.463
+    },
+    {
+      "name": "utc-roundtrip",
+      "exit_code": 0,
+      "source": "/home/runner/work/graphiti/graphiti/sources/utc",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "/home/runner/work/graphiti/graphiti/audit-source/audit/temporal-memory/database_temporal_audit.py",
+        "--stage",
+        "utc-roundtrip",
+        "--roundtrip-only",
+        "--output",
+        "/home/runner/work/graphiti/graphiti/evidence/utc-roundtrip.json"
+      ],
+      "elapsed_seconds": 3.027
+    },
+    {
+      "name": "candidate-roundtrip",
+      "exit_code": 0,
+      "source": "/home/runner/work/graphiti/graphiti/sources/candidate",
+      "command": [
+        "/home/runner/work/graphiti/graphiti/sources/candidate/.venv/bin/python",
+        "-B",
+        "/home/runner/work/graphiti/graphiti/audit-source/audit/temporal-memory/database_temporal_audit.py",
+        "--stage",
+        "candidate-roundtrip",
+        "--roundtrip-only",
+        "--output",
+        "/home/runner/work/graphiti/graphiti/evidence/candidate-roundtrip.json"
+      ],
+      "elapsed_seconds": 2.349
+    }
+  ],
+  "meaning": "Finite deterministic bookkeeping and real persistence integration; supplied semantic decisions and constant vectors, no model-quality claim."
+}

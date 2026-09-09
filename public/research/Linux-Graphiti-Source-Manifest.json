@@ -1,0 +1,33 @@
+{
+  "baseline_commit": "eaa4128681bc53487138a4bbc22d58336ebe70d2",
+  "public_patches": {
+    "utc": {
+      "commit": "83ded3a6e027be978c78cecc68c920e278e98de1",
+      "changed_paths": [
+        "graphiti_core/helpers.py",
+        "tests/test_db_date_roundtrip.py"
+      ],
+      "patch_sha256": "fe34162dc69677102ed02c07da4f69486b78bc0867dcf19517784ee105eecd31"
+    },
+    "temporal": {
+      "commit": "1e6289c1ee40c42dc588791217e3ee0efc175826",
+      "changed_paths": [
+        "graphiti_core/utils/maintenance/edge_operations.py",
+        "tests/utils/maintenance/test_edge_temporal_identity.py",
+        "tests/utils/maintenance/test_edge_temporal_resolution.py"
+      ],
+      "patch_sha256": "e8c8af51e5490b5c07bcb99520e24ee9ec59378fa1185eddee95ba5ab3ddb060"
+    }
+  },
+  "candidate_base_commit": "eaa4128681bc53487138a4bbc22d58336ebe70d2",
+  "candidate_is_local_combination_not_a_public_commit": true,
+  "candidate_source_sha256": {
+    "graphiti_core/helpers.py": "93b6e16aa0574f83de8ec2ec1b030fdb0cbbeb5be10b2307482eb6326e4d07a6",
+    "graphiti_core/utils/maintenance/edge_operations.py": "11a8876f994f8d0c84d7871dc39ae741581edf7c957ca7203c82a8e11eb43eb2",
+    "tests/test_db_date_roundtrip.py": "ccf937984efdc9e7490d0ceabf05e4661883841659644c639fb5f7682f058431",
+    "tests/utils/maintenance/test_edge_temporal_identity.py": "60852a9569c9d3f90b8d43855b28ec23829c1862d2927587c2c004d249971c2f",
+    "tests/utils/maintenance/test_edge_temporal_resolution.py": "7be4393238d973a645b5e391bad30add7c58d56b9358a69c02841a552db9208f"
+  },
+  "combined_patch_sha256": "24dc118cdf53ecad86788711f4c463b1e27ed39c9724dde8a37219c6a8b3aba4",
+  "uv_lock_sha256": "e77a59749ccf46128032af51ce258f9c878d109743f86797bf9643c4f1a6398d"
+}

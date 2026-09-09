@@ -13,7 +13,11 @@ Against Graphiti 0.30.2 at eaa4128681bc53487138a4bbc22d58336ebe70d2, the 48 new 
 
 The exact published timestamp branch (83ded3a6e027be978c78cecc68c920e278e98de1) independently passed 397 tests, with 11 skipped. The temporal branch (1e6289c1ee40c42dc588791217e3ee0efc175826) passed 415, with 11 skipped. Those totals include existing project tests. Ruff, changed-file formatting and changed-production-file Pyright passed on both branches. Full-project type checking still had optional-integration diagnostics.
 
-A real Neo4j 5.26.30 audit of the combined candidate improved 26 declared query assertions from 16 passing to all 26 passing, across 13 fixed timepoints and two query paths. Three scenarios completed. A fourth, fulltext-dependent batch case could not complete because the sandbox prevented index creation. The separate unchanged-read/resave diagnostic failed before and passed after. Full database integration remains incomplete at this evidence date.
+The [Linux / Neo4j 5.26.30 audit passed](https://github.com/thantiklermcirony/graphiti/actions/runs/34410688322). All four declared database scenarios completed: reactivation, finite-interval clipping, expiry without context, and batch period retention. The baseline failures were reproduced; the combined candidate passed. Required fulltext and range indexes were online. The separate unchanged-read/resave diagnostic failed on the baseline and passed on both the timestamp-only branch and the combined candidate, without resolver or model calls.
+
+This closes the fourth-case gap in the earlier Windows audit. The first Linux attempt exposed a naming collision in our forwarding wrapper; renaming its Cypher argument preserved the named fulltext query parameter. No production fix or expected assertion was changed. The passing run records immutable source commits, dependency versions, JSON results and logs. The [audit source](https://github.com/thantiklermcirony/graphiti/tree/1b5670465e0a30854401281f995ff2bcefebbe58/audit/temporal-memory) makes the check reproducible.
+
+Both contributions now have successful CLA and Ruff checks. Other upstream workflows require maintainer approval, and an approving review is still required. Neither contribution has been merged.
 
 ## What this establishes
 

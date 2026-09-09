@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "stage": "utc-roundtrip",
+  "run_id": "7832f667c2ed427f",
+  "kind": "unchanged_edge_save_read_save",
+  "started_at": "2026-09-09T22:09:48.725172+00:00",
+  "provenance": {
+    "source_directory": "/home/runner/work/graphiti/graphiti/sources/utc",
+    "harness_sha256": "3a7a429e94ec1df97986e7de83a2c70ef6671a812f97452120b7b37f9037bb2d",
+    "root_supplied_base_commit": "eaa4128681bc53487138a4bbc22d58336ebe70d2",
+    "actual_imported_resolver": "/home/runner/work/graphiti/graphiti/sources/utc/graphiti_core/utils/maintenance/edge_operations.py",
+    "source_sha256": {
+      "graphiti_core/utils/maintenance/edge_operations.py": "b773ff4489968af2a996d5074e679cab9806cc0904a7ff9f2aecc74382325abe",
+      "graphiti_core/edges.py": "0151d72ebfb057033c6d52a163e22f252f67b915722e14315b685c7831b3b1c6",
+      "graphiti_core/nodes.py": "529eb74b7c93e7551f6287b1a7bf6818d31fd045623b3260967dad573e4d801c",
+      "graphiti_core/driver/neo4j_driver.py": "44101e499c0c0764741736da4a91c2cf7fd0917adc22e1db7b9a316cbfb7e6d2",
+      "graphiti_core/helpers.py": "93b6e16aa0574f83de8ec2ec1b030fdb0cbbeb5be10b2307482eb6326e4d07a6",
+      "graphiti_core/driver/record_parsers.py": "71c57fda49ac56856ab29b25d719947aee79625090233f09f6b6aac743cf2112"
+    },
+    "python": "3.12.14",
+    "packages": {
+      "graphiti-core": "0.30.2",
+      "neo4j": "6.1.0",
+      "numpy": "2.4.1",
+      "pydantic": "2.12.5"
+    }
+  },
+  "expected": {
+    "active_at_start": true,
+    "active_at_end": false
+  },
+  "resolver_calls": 0,
+  "model_api_calls": 0,
+  "scope": "One unique synthetic group; real saves, read parser and direct Cypher only",
+  "fulltext_indexes_required": false,
+  "group_id": "ea_temporal_utc-roundtrip_7832f667c2ed427f_unchanged_resave",
+  "before_initial_save_python_values": {
+    "valid_at": {
+      "iso": "2026-01-01T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1767225600.0
+    },
+    "invalid_at": {
+      "iso": "2026-01-11T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1768089600.0
+    },
+    "created_at": {
+      "iso": "2026-09-09T22:09:48.967962+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1788991788.967962
+    },
+    "expired_at": {
+      "iso": "2026-09-09T22:09:48.967977+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1788991788.967977
+    },
+    "reference_time": {
+      "iso": "2026-01-01T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1767225600.0
+    }
+  },
+  "after_initial_save_database_values": [
+    {
+      "uuid": "ea_temporal_utc-roundtrip_7832f667c2ed427f_unchanged_resave_unchanged",
+      "valid_text": "2026-01-01T00:00:00Z",
+      "invalid_text": "2026-01-11T00:00:00Z",
+      "start_parameter_text": "2026-01-01T00:00:00Z",
+      "end_parameter_text": "2026-01-11T00:00:00Z",
+      "valid_epoch": 1767225600,
+      "invalid_epoch": 1768089600,
+      "start_parameter_epoch": 1767225600,
+      "end_parameter_epoch": 1768089600,
+      "valid_nanosecond": 0,
+      "invalid_nanosecond": 0,
+      "start_equal": true,
+      "end_equal": true,
+      "active_at_start": true,
+      "active_at_end": false
+    }
+  ],
+  "after_read_python_values": {
+    "valid_at": {
+      "iso": "2026-01-01T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1767225600.0
+    },
+    "invalid_at": {
+      "iso": "2026-01-11T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1768089600.0
+    },
+    "created_at": {
+      "iso": "2026-09-09T22:09:48.967962+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1788991788.967962
+    },
+    "expired_at": {
+      "iso": "2026-09-09T22:09:48.967977+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1788991788.967977
+    },
+    "reference_time": {
+      "iso": "2026-01-01T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1767225600.0
+    }
+  },
+  "after_unchanged_resave_database_values": [
+    {
+      "uuid": "ea_temporal_utc-roundtrip_7832f667c2ed427f_unchanged_resave_unchanged",
+      "valid_text": "2026-01-01T00:00:00Z",
+      "invalid_text": "2026-01-11T00:00:00Z",
+      "start_parameter_text": "2026-01-01T00:00:00Z",
+      "end_parameter_text": "2026-01-11T00:00:00Z",
+      "valid_epoch": 1767225600,
+      "invalid_epoch": 1768089600,
+      "start_parameter_epoch": 1767225600,
+      "end_parameter_epoch": 1768089600,
+      "valid_nanosecond": 0,
+      "invalid_nanosecond": 0,
+      "start_equal": true,
+      "end_equal": true,
+      "active_at_start": true,
+      "active_at_end": false
+    }
+  ],
+  "after_second_read_python_values": {
+    "valid_at": {
+      "iso": "2026-01-01T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1767225600.0
+    },
+    "invalid_at": {
+      "iso": "2026-01-11T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1768089600.0
+    },
+    "created_at": {
+      "iso": "2026-09-09T22:09:48.967962+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1788991788.967962
+    },
+    "expired_at": {
+      "iso": "2026-09-09T22:09:48.967977+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1788991788.967977
+    },
+    "reference_time": {
+      "iso": "2026-01-01T00:00:00+00:00",
+      "python_type": "datetime.datetime",
+      "tzinfo_type": "datetime.timezone",
+      "tzinfo_repr": "datetime.timezone.utc",
+      "tzname": "UTC",
+      "epoch_seconds": 1767225600.0
+    }
+  },
+  "unchanged_temporal_answers": true,
+  "unchanged_native_values": true,
+  "finished_at": "2026-09-09T22:09:49.167933+00:00",
+  "actual_database_query_calls": {
+    "setup": 31,
+    "unchanged_roundtrip": 9
+  }
+}

@@ -1,0 +1,1087 @@
+{
+  "schema_version": "1.0",
+  "stage": "baseline-database",
+  "run_id": "19da036ddbba41a2",
+  "started_at": "2026-09-09T22:09:35.242739+00:00",
+  "endpoint": "bolt://127.0.0.1:17687",
+  "data_scope": "New unique synthetic fixture groups only; no deletion or cleanup performed",
+  "provenance": {
+    "source_directory": "/home/runner/work/graphiti/graphiti/sources/baseline",
+    "harness_sha256": "3a7a429e94ec1df97986e7de83a2c70ef6671a812f97452120b7b37f9037bb2d",
+    "root_supplied_base_commit": "eaa4128681bc53487138a4bbc22d58336ebe70d2",
+    "actual_imported_resolver": "/home/runner/work/graphiti/graphiti/sources/baseline/graphiti_core/utils/maintenance/edge_operations.py",
+    "source_sha256": {
+      "graphiti_core/utils/maintenance/edge_operations.py": "b773ff4489968af2a996d5074e679cab9806cc0904a7ff9f2aecc74382325abe",
+      "graphiti_core/edges.py": "0151d72ebfb057033c6d52a163e22f252f67b915722e14315b685c7831b3b1c6",
+      "graphiti_core/nodes.py": "529eb74b7c93e7551f6287b1a7bf6818d31fd045623b3260967dad573e4d801c",
+      "graphiti_core/driver/neo4j_driver.py": "44101e499c0c0764741736da4a91c2cf7fd0917adc22e1db7b9a316cbfb7e6d2",
+      "graphiti_core/helpers.py": "15e14d0b9ac09b13147f8f65c5772576878ece70fb7dbc072417e925f0c35fdd",
+      "graphiti_core/driver/record_parsers.py": "71c57fda49ac56856ab29b25d719947aee79625090233f09f6b6aac743cf2112"
+    },
+    "python": "3.12.14",
+    "packages": {
+      "graphiti-core": "0.30.2",
+      "neo4j": "6.1.0",
+      "numpy": "2.4.1",
+      "pydantic": "2.12.5"
+    }
+  },
+  "model_api_calls": 0,
+  "semantic_embedding_evaluation": false,
+  "limitations": [
+    "All facts, event times and model decisions are supplied synthetic fixtures.",
+    "Four-dimensional constant embeddings exercise real storage/filter code, not retrieval quality.",
+    "Temporal queries answer valid time after all events are ingested; knowledge-time replay is not evaluated.",
+    "Original issue1841 end-only release extraction is not reproduced by this harness.",
+    "Baseline and candidate use identical declared cases but different isolated group/UUID identifiers.",
+    "Query counts include actual driver calls, not internal server transactions or driver network retries."
+  ],
+  "cases": [
+    {
+      "case": "reactivation",
+      "status": "executed",
+      "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation",
+      "supplied_input_edges": [
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_first",
+          "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation",
+          "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_person",
+          "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_project",
+          "created_at": "2026-09-09T22:09:37.018940Z",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_evidence_first"
+          ],
+          "expired_at": "2026-09-09T22:09:37.018957Z",
+          "valid_at": "2026-01-01T00:00:00Z",
+          "invalid_at": "2026-01-11T00:00:00Z",
+          "reference_time": "2026-01-01T00:00:00Z",
+          "attributes": {}
+        },
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_gap",
+          "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation",
+          "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_person",
+          "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_project",
+          "created_at": "2026-09-09T22:09:37.040750Z",
+          "name": "NOT_ASSIGNED",
+          "fact": "Kiran is not assigned to the Payments Project.",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_evidence_gap"
+          ],
+          "expired_at": null,
+          "valid_at": "2026-01-11T00:00:00Z",
+          "invalid_at": null,
+          "reference_time": "2026-01-11T00:00:00Z",
+          "attributes": {}
+        },
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_reactivated",
+          "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation",
+          "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_person",
+          "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_project",
+          "created_at": "2026-09-09T22:09:37.497474Z",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_evidence_reactivated"
+          ],
+          "expired_at": null,
+          "valid_at": "2026-01-21T00:00:00Z",
+          "invalid_at": null,
+          "reference_time": "2026-01-21T00:00:00Z",
+          "attributes": {}
+        }
+      ],
+      "resolution_trace": [
+        {
+          "input_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_reactivated",
+          "related_uuids": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_first"
+          ],
+          "broader_uuids": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_gap"
+          ],
+          "configured_duplicate_indices": [
+            0
+          ],
+          "configured_contradiction_indices": [
+            1
+          ],
+          "resolved": {
+            "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_first",
+            "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation",
+            "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_person",
+            "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_project",
+            "created_at": "2026-09-09T22:09:37.018940Z",
+            "name": "ASSIGNED",
+            "fact": "Kiran is assigned to the Payments Project.",
+            "episodes": [
+              "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_evidence_first",
+              "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_evidence_reactivated"
+            ],
+            "expired_at": "2026-09-09T22:09:37.018957Z",
+            "valid_at": "2026-01-01T00:00:00Z",
+            "invalid_at": "2026-01-11T00:00:00Z",
+            "reference_time": "2026-01-01T00:00:00Z",
+            "attributes": {
+              "target_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_project",
+              "source_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_person"
+            }
+          },
+          "invalidated_uuids": [],
+          "duplicate_uuids": [],
+          "model_seam_calls": 0
+        }
+      ],
+      "persisted_records": [
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_first",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "valid_at": "2026-01-01T00:00:00.000000000+00:00",
+          "invalid_at": "2026-01-11T00:00:00.000000000+00:00",
+          "neo4j_valid_at_text": "2026-01-01T00:00:00Z[UTC]",
+          "neo4j_invalid_at_text": "2026-01-11T00:00:00Z[UTC]",
+          "expired_at": "2026-09-09T22:09:37.018957000+00:00",
+          "created_at": "2026-09-09T22:09:37.018940000+00:00",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_evidence_first",
+            "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_evidence_reactivated"
+          ],
+          "reference_time": "2026-01-01T00:00:00.000000000+00:00"
+        },
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_gap",
+          "name": "NOT_ASSIGNED",
+          "fact": "Kiran is not assigned to the Payments Project.",
+          "valid_at": "2026-01-11T00:00:00.000000000+00:00",
+          "invalid_at": null,
+          "neo4j_valid_at_text": "2026-01-11T00:00:00Z",
+          "neo4j_invalid_at_text": null,
+          "expired_at": null,
+          "created_at": "2026-09-09T22:09:37.040750000+00:00",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_reactivation_evidence_gap"
+          ],
+          "reference_time": "2026-01-11T00:00:00.000000000+00:00"
+        }
+      ],
+      "storage_assertions": [
+        {
+          "check": "first_persisted_interval",
+          "expected_valid_at": "2026-01-01T00:00:00+00:00",
+          "expected_invalid_at": "2026-01-11T00:00:00+00:00",
+          "pass": true
+        },
+        {
+          "check": "gap_persisted_interval",
+          "expected_valid_at": "2026-01-11T00:00:00+00:00",
+          "expected_invalid_at": "2026-01-21T00:00:00+00:00",
+          "pass": false
+        },
+        {
+          "check": "reactivated_persisted_interval",
+          "expected_valid_at": "2026-01-21T00:00:00+00:00",
+          "expected_invalid_at": null,
+          "pass": false
+        },
+        {
+          "check": "number_of_retained_periods",
+          "expected": 3,
+          "actual": 2,
+          "pass": false
+        }
+      ],
+      "temporal_queries": [
+        {
+          "day_offset": 5,
+          "asof": "2026-01-06T00:00:00+00:00",
+          "expected_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 10,
+          "asof": "2026-01-11T00:00:00+00:00",
+          "expected_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "ASSIGNED",
+            "NOT_ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "ASSIGNED",
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_pass": false,
+          "graphiti_filter_pass": false,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 15,
+          "asof": "2026-01-16T00:00:00+00:00",
+          "expected_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 20,
+          "asof": "2026-01-21T00:00:00+00:00",
+          "expected_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_pass": false,
+          "graphiti_filter_pass": false,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 25,
+          "asof": "2026-01-26T00:00:00+00:00",
+          "expected_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_pass": false,
+          "graphiti_filter_pass": false,
+          "query_paths_agree": true
+        }
+      ],
+      "supplied_model_calls": [],
+      "synthetic_embedding_calls": {},
+      "cross_encoder_calls": 0,
+      "pass": false
+    },
+    {
+      "case": "finite_interval_clipping",
+      "status": "executed",
+      "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping",
+      "supplied_input_edges": [
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_later",
+          "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping",
+          "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_person",
+          "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_project",
+          "created_at": "2026-09-09T22:09:39.362097Z",
+          "name": "NOT_ASSIGNED",
+          "fact": "Kiran is not assigned to the Payments Project.",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_evidence_later"
+          ],
+          "expired_at": null,
+          "valid_at": "2026-01-11T00:00:00Z",
+          "invalid_at": null,
+          "reference_time": "2026-01-11T00:00:00Z",
+          "attributes": {}
+        },
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_earlier",
+          "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping",
+          "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_person",
+          "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_project",
+          "created_at": "2026-09-09T22:09:39.417090Z",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_evidence_earlier"
+          ],
+          "expired_at": null,
+          "valid_at": "2026-01-01T00:00:00Z",
+          "invalid_at": "2026-01-21T00:00:00Z",
+          "reference_time": "2026-01-01T00:00:00Z",
+          "attributes": {}
+        }
+      ],
+      "resolution_trace": [
+        {
+          "input_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_earlier",
+          "related_uuids": [],
+          "broader_uuids": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_later"
+          ],
+          "configured_duplicate_indices": [],
+          "configured_contradiction_indices": [
+            0
+          ],
+          "resolved": {
+            "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_earlier",
+            "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping",
+            "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_person",
+            "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_project",
+            "created_at": "2026-09-09T22:09:39.417090Z",
+            "name": "ASSIGNED",
+            "fact": "Kiran is assigned to the Payments Project.",
+            "episodes": [
+              "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_evidence_earlier"
+            ],
+            "expired_at": "2026-09-09T22:09:39.427553Z",
+            "valid_at": "2026-01-01T00:00:00Z",
+            "invalid_at": "2026-01-21T00:00:00Z",
+            "reference_time": "2026-01-01T00:00:00Z",
+            "attributes": {}
+          },
+          "invalidated_uuids": [],
+          "duplicate_uuids": [],
+          "model_seam_calls": 1
+        }
+      ],
+      "persisted_records": [
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_earlier",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "valid_at": "2026-01-01T00:00:00.000000000+00:00",
+          "invalid_at": "2026-01-21T00:00:00.000000000+00:00",
+          "neo4j_valid_at_text": "2026-01-01T00:00:00Z",
+          "neo4j_invalid_at_text": "2026-01-21T00:00:00Z",
+          "expired_at": "2026-09-09T22:09:39.427553000+00:00",
+          "created_at": "2026-09-09T22:09:39.417090000+00:00",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_evidence_earlier"
+          ],
+          "reference_time": "2026-01-01T00:00:00.000000000+00:00"
+        },
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_later",
+          "name": "NOT_ASSIGNED",
+          "fact": "Kiran is not assigned to the Payments Project.",
+          "valid_at": "2026-01-11T00:00:00.000000000+00:00",
+          "invalid_at": null,
+          "neo4j_valid_at_text": "2026-01-11T00:00:00Z",
+          "neo4j_invalid_at_text": null,
+          "expired_at": null,
+          "created_at": "2026-09-09T22:09:39.362097000+00:00",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_finite_interval_clipping_evidence_later"
+          ],
+          "reference_time": "2026-01-11T00:00:00.000000000+00:00"
+        }
+      ],
+      "storage_assertions": [
+        {
+          "check": "earlier_persisted_interval",
+          "expected_valid_at": "2026-01-01T00:00:00+00:00",
+          "expected_invalid_at": "2026-01-11T00:00:00+00:00",
+          "pass": false
+        },
+        {
+          "check": "later_persisted_interval",
+          "expected_valid_at": "2026-01-11T00:00:00+00:00",
+          "expected_invalid_at": null,
+          "pass": true
+        },
+        {
+          "check": "number_of_retained_periods",
+          "expected": 2,
+          "actual": 2,
+          "pass": true
+        }
+      ],
+      "temporal_queries": [
+        {
+          "day_offset": 5,
+          "asof": "2026-01-06T00:00:00+00:00",
+          "expected_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 10,
+          "asof": "2026-01-11T00:00:00+00:00",
+          "expected_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "ASSIGNED",
+            "NOT_ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "ASSIGNED",
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_pass": false,
+          "graphiti_filter_pass": false,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 15,
+          "asof": "2026-01-16T00:00:00+00:00",
+          "expected_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "ASSIGNED",
+            "NOT_ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "ASSIGNED",
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_pass": false,
+          "graphiti_filter_pass": false,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 25,
+          "asof": "2026-01-26T00:00:00+00:00",
+          "expected_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "NOT_ASSIGNED"
+          ],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        }
+      ],
+      "supplied_model_calls": [
+        {
+          "prompt_name": "dedupe_edges.resolve_edge",
+          "supplied_response": {
+            "duplicate_facts": [],
+            "contradicted_facts": [
+              0
+            ]
+          }
+        }
+      ],
+      "synthetic_embedding_calls": {},
+      "cross_encoder_calls": 0,
+      "pass": false
+    },
+    {
+      "case": "no_context_expiry",
+      "status": "executed",
+      "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry",
+      "supplied_input_edges": [
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_historical",
+          "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry",
+          "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_person",
+          "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_project",
+          "created_at": "2026-09-09T22:09:39.642202Z",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_evidence_historical"
+          ],
+          "expired_at": null,
+          "valid_at": "2026-01-01T00:00:00Z",
+          "invalid_at": "2026-01-11T00:00:00Z",
+          "reference_time": "2026-01-01T00:00:00Z",
+          "attributes": {}
+        }
+      ],
+      "resolution_trace": [
+        {
+          "input_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_historical",
+          "related_uuids": [],
+          "broader_uuids": [],
+          "configured_duplicate_indices": [],
+          "configured_contradiction_indices": [],
+          "resolved": {
+            "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_historical",
+            "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry",
+            "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_person",
+            "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_project",
+            "created_at": "2026-09-09T22:09:39.642202Z",
+            "name": "ASSIGNED",
+            "fact": "Kiran is assigned to the Payments Project.",
+            "episodes": [
+              "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_evidence_historical"
+            ],
+            "expired_at": null,
+            "valid_at": "2026-01-01T00:00:00Z",
+            "invalid_at": "2026-01-11T00:00:00Z",
+            "reference_time": "2026-01-01T00:00:00Z",
+            "attributes": {}
+          },
+          "invalidated_uuids": [],
+          "duplicate_uuids": [],
+          "model_seam_calls": 0
+        }
+      ],
+      "persisted_records": [
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_historical",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "valid_at": "2026-01-01T00:00:00.000000000+00:00",
+          "invalid_at": "2026-01-11T00:00:00.000000000+00:00",
+          "neo4j_valid_at_text": "2026-01-01T00:00:00Z",
+          "neo4j_invalid_at_text": "2026-01-11T00:00:00Z",
+          "expired_at": null,
+          "created_at": "2026-09-09T22:09:39.642202000+00:00",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_no_context_expiry_evidence_historical"
+          ],
+          "reference_time": "2026-01-01T00:00:00.000000000+00:00"
+        }
+      ],
+      "storage_assertions": [
+        {
+          "check": "historical_persisted_interval",
+          "expected_valid_at": "2026-01-01T00:00:00+00:00",
+          "expected_invalid_at": "2026-01-11T00:00:00+00:00",
+          "pass": true
+        },
+        {
+          "check": "number_of_retained_periods",
+          "expected": 1,
+          "actual": 1,
+          "pass": true
+        },
+        {
+          "check": "historical_edge_has_system_expiration_metadata",
+          "pass": false
+        }
+      ],
+      "temporal_queries": [
+        {
+          "day_offset": -1,
+          "asof": "2025-12-31T00:00:00+00:00",
+          "expected_relations": [],
+          "direct_cypher_relations": [],
+          "graphiti_filtered_relations": [],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 5,
+          "asof": "2026-01-06T00:00:00+00:00",
+          "expected_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 10,
+          "asof": "2026-01-11T00:00:00+00:00",
+          "expected_relations": [],
+          "direct_cypher_relations": [],
+          "graphiti_filtered_relations": [],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 15,
+          "asof": "2026-01-16T00:00:00+00:00",
+          "expected_relations": [],
+          "direct_cypher_relations": [],
+          "graphiti_filtered_relations": [],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        }
+      ],
+      "supplied_model_calls": [],
+      "synthetic_embedding_calls": {},
+      "cross_encoder_calls": 0,
+      "pass": false
+    },
+    {
+      "case": "batch_period_retention",
+      "status": "executed",
+      "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention",
+      "supplied_input_edges": [
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_first",
+          "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention",
+          "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_person",
+          "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_project",
+          "created_at": "2026-09-09T22:09:39.836068Z",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_evidence_first"
+          ],
+          "expired_at": null,
+          "valid_at": "2026-01-01T00:00:00Z",
+          "invalid_at": "2026-01-06T00:00:00Z",
+          "reference_time": "2026-01-01T00:00:00Z",
+          "attributes": {}
+        },
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_second",
+          "group_id": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention",
+          "source_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_person",
+          "target_node_uuid": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_project",
+          "created_at": "2026-09-09T22:09:39.869648Z",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_evidence_second"
+          ],
+          "expired_at": null,
+          "valid_at": "2026-01-11T00:00:00Z",
+          "invalid_at": null,
+          "reference_time": "2026-01-11T00:00:00Z",
+          "attributes": {}
+        }
+      ],
+      "resolution_trace": [
+        {
+          "kind": "real_batch_resolver",
+          "input_uuids": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_first",
+            "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_second"
+          ],
+          "resolved_uuids": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_first"
+          ],
+          "invalidated_uuids": [],
+          "new_uuids": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_first"
+          ]
+        }
+      ],
+      "persisted_records": [
+        {
+          "uuid": "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_first",
+          "name": "ASSIGNED",
+          "fact": "Kiran is assigned to the Payments Project.",
+          "valid_at": "2026-01-01T00:00:00.000000000+00:00",
+          "invalid_at": "2026-01-06T00:00:00.000000000+00:00",
+          "neo4j_valid_at_text": "2026-01-01T00:00:00Z",
+          "neo4j_invalid_at_text": "2026-01-06T00:00:00Z",
+          "expired_at": null,
+          "created_at": "2026-09-09T22:09:39.836068000+00:00",
+          "episodes": [
+            "ea_temporal_baseline-database_19da036ddbba41a2_batch_period_retention_evidence_first"
+          ],
+          "reference_time": "2026-01-01T00:00:00.000000000+00:00"
+        }
+      ],
+      "storage_assertions": [
+        {
+          "check": "first_persisted_interval",
+          "expected_valid_at": "2026-01-01T00:00:00+00:00",
+          "expected_invalid_at": "2026-01-06T00:00:00+00:00",
+          "pass": true
+        },
+        {
+          "check": "second_persisted_interval",
+          "expected_valid_at": "2026-01-11T00:00:00+00:00",
+          "expected_invalid_at": null,
+          "pass": false
+        },
+        {
+          "check": "number_of_retained_periods",
+          "expected": 2,
+          "actual": 1,
+          "pass": false
+        }
+      ],
+      "temporal_queries": [
+        {
+          "day_offset": 2,
+          "asof": "2026-01-03T00:00:00+00:00",
+          "expected_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_relations": [
+            "ASSIGNED"
+          ],
+          "graphiti_filtered_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 7,
+          "asof": "2026-01-08T00:00:00+00:00",
+          "expected_relations": [],
+          "direct_cypher_relations": [],
+          "graphiti_filtered_relations": [],
+          "direct_cypher_pass": true,
+          "graphiti_filter_pass": true,
+          "query_paths_agree": true
+        },
+        {
+          "day_offset": 12,
+          "asof": "2026-01-13T00:00:00+00:00",
+          "expected_relations": [
+            "ASSIGNED"
+          ],
+          "direct_cypher_relations": [],
+          "graphiti_filtered_relations": [],
+          "direct_cypher_pass": false,
+          "graphiti_filter_pass": false,
+          "query_paths_agree": true
+        }
+      ],
+      "supplied_model_calls": [],
+      "synthetic_embedding_calls": {
+        "create_batch": 2,
+        "batch_texts": 2,
+        "create": 2
+      },
+      "cross_encoder_calls": 0,
+      "pass": false
+    }
+  ],
+  "server_components": [
+    {
+      "name": "Neo4j Kernel",
+      "versions": [
+        "5.26.30"
+      ],
+      "edition": "community"
+    }
+  ],
+  "required_range_indexes_online": true,
+  "index_states": [
+    {
+      "name": "community_group_id",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "community_name",
+      "type": "FULLTEXT",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "community_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "created_at_edge_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "created_at_entity_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "created_at_episodic_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "edge_name_and_fact",
+      "type": "FULLTEXT",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "entity_group_id",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "entity_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "episode_content",
+      "type": "FULLTEXT",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "episode_group_id",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "episode_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "expired_at_edge_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "has_episode_group_id",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "has_episode_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "has_member_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "index_343aff4e",
+      "type": "LOOKUP",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "index_f7700477",
+      "type": "LOOKUP",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "invalid_at_edge_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "mention_group_id",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "mention_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "name_edge_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "name_entity_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "next_episode_group_id",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "next_episode_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "node_name_and_summary",
+      "type": "FULLTEXT",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "relation_group_id",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "relation_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "saga_group_id",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "saga_name",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "saga_uuid",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "valid_at_edge_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "valid_at_episodic_index",
+      "type": "RANGE",
+      "state": "ONLINE",
+      "failure_message_excerpt": "",
+      "failure_message_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "required_fulltext_index_online": true,
+  "finished_at": "2026-09-09T22:09:40.736041+00:00",
+  "elapsed_seconds": 5.493301978999966,
+  "actual_database_query_calls": {
+    "setup": 34,
+    "reactivation": 21,
+    "finite_interval_clipping": 16,
+    "no_context_expiry": 13,
+    "batch_period_retention": 17
+  },
+  "query_text_sha256_counts": {
+    "e64fb2b18a27c12164c9f8c88c6909dfb296cf2cbc0a8fbb708944aa335f279c": 1,
+    "ad0c4588719d8d0bd3062088002a29027c650f160ef2df326a261d6105783467": 1,
+    "f5c5da9971c121bf41cfe02ed4b7f77306e8b3c92f507ef6d8ed004770354b29": 1,
+    "4e8ed25049b6544a9a2b2600415614006c1ae356e79c2aec64f8ec500b4dbec8": 1,
+    "19107ee7c7753f76b41aac78b44498a67f45adedbbb4eaad1470621001064c39": 1,
+    "7dfba29d33d5fc8fa39878eab5f1706ca9d76ee9937c1099b0e3fda7a2f26e08": 1,
+    "8d61a05a3dae356735fc640c977945def934964a705380df8131a9c734351740": 1,
+    "516d5a7b924ffd6800c8b9cb27c7adb8249a2cb6f63d4033bc5ac13020997718": 1,
+    "6a5bd7ace6f57dc87c1f0e78037dfe22b7c0f6e98005413f0ba625b7f2580294": 1,
+    "d1949b0bfeb5afa8371e05965d5b3a3e2b0a7475bd423bbbda7cd1abcf448832": 1,
+    "6170aef43814680823eb77cdff1145589cc8e4b2d3ceb8fb7a28e46a2b8fdc7f": 1,
+    "aa590eae1e82ea9b6c1cfd1f731a0ed600e4dfba808eaa2921fab09640c62932": 1,
+    "0b69d6d767ed509944fbde307c86f6159ddfe8b096172f6574191660feec3b4f": 1,
+    "d2179d035436893a4cff01db86bf7292c3e704cd31441b215879a1b5f98b57ee": 1,
+    "427457a850718657c5dd76923c5ea24ac3147d946739115a6f4b3cd45fe276c9": 1,
+    "d4169c4b2e3eaefa690824fadc159a2e7199f321f4852e6d308b78075d98e5a7": 1,
+    "35f7f0f12f3c2239098dac0517ff8071ef425430e91d48dc985b619a660b00ed": 1,
+    "42b274423cdd94a4a6c3614616471d974a87f541b074c07a7fedff4f44b94cd7": 1,
+    "15e898a58c06363235f541bfa44c88439283ac923bf384822f1ceb2d14996b62": 1,
+    "d9e765aa33941d630ec749a938a21bf19a128033f0b43c78fa9980400a443ec7": 1,
+    "c61b85ac91b77cb08a32ffda044c89b10a6bf1bed9c9af965a18d900608b7e86": 1,
+    "e7a522f4c748f41e8640657179179ce5bbe1f56d62d160bfdd25077743a836ae": 1,
+    "0654c3c3d68b916b60f78afb56900dea6eaf55ac9685ba09aa8e26fca43b54bf": 1,
+    "c0264d80fa959ef9921b8cefe2d01025a0bc662e2f805ba32cce5a9bf5dee948": 1,
+    "68d41930853fd918928e199c25ee75abba5b315436328bdbf705f16e9ad8ba74": 1,
+    "a31a53baf42bba3b97d37b5439f7b99856f6f3882fd2d088f8f424a17abb4ad6": 1,
+    "38cb77965f222f73953e2f48ca673cd0460728ab9a52d6f4c30f6c681ce8d040": 1,
+    "ff427cff77b525d55da2f39f890216208aee8914212fba8e47111aa98e7f22f4": 1,
+    "e7aedbaf8d4401fcf7da64a9c6680ae9e800d6a03d7c874ab8eb918a307f5acb": 1,
+    "e5c57cfdebd4b0b9ecd56e735331f398e3a122e201a0be59bc5d55027a2e02a8": 1,
+    "6a4020b27b6d8066a28966ee36785b441ff8d1526fb64bbb13b23ec0a9a4e056": 1,
+    "68cab5379e41ba7e0ff6cd321140ee3b8e6859ddb341473049cd78da6127cad8": 1,
+    "4be503e759ba53fae3b9c40b3a933a5d5f0cd8d23c1248a1f740cc1abed84f96": 2,
+    "da009177ad7558aa1d24edd3a81c4ced935d9a4b6ed17b5387d3b850ab7e4147": 8,
+    "787f210da3e3602a39b2c93c59fea45bb3f691435a3b1691e2c2be279887546f": 8,
+    "3f6ba4191645e48c39af1d867f1277897d1290f3e7fad1cba6386e0d918ee358": 7,
+    "1fb741fa2c0c988f45d23c01a34f3d0217f3129d605611961259f65acdaed341": 3,
+    "be6c1b47e996a1a36d81812222748cd967bbd3686b89f081d6fba4ed889c0156": 4,
+    "33596cc082027ccfb81326af85f26ea80c81485d7ac00de728cf5f027614db0f": 16,
+    "6137a7360b6402705b2eee74aa8461bd987af390ffe9a3ae08b5f3f6bda3af93": 16,
+    "fc91ebd76c3a92e9db88c6e1dccaef3a813553cb036c43c31ecfb64c236cd89a": 1,
+    "0919802ed02b355b9526f8fac9977b0426ed2c9a521706fdbdb67f60879178f1": 1,
+    "cc88d8640895456f4dec6d5910d3764fa606372114c5952a39eb46532eef3e92": 1,
+    "3551714ee1df16ed7e3c78efa1b33c34dadaf9ac20bc97f634ca9822bb050cff": 1,
+    "8c9c16196b15c000f27a8adedef9d33d35acc6dec9fbf45d1cee08c49f0a42ce": 1
+  },
+  "passed_cases": 0,
+  "planned_cases": 4,
+  "executed_cases": 4,
+  "skipped_cases": 0,
+  "executed_suite_pass": false,
+  "full_suite_completed": true,
+  "pass": false,
+  "status": "fail"
+}
