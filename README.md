@@ -49,6 +49,16 @@ No experiment records are uploaded by the app. The browser retains the latest 30
 
 The optional WebMCP tools expose a station summary and navigation only. They cannot start a human experiment, read raw response/signal records, connect hardware or execute cloud jobs.
 
+## Current contribution campaign
+
+The [42-repository research scan](research/contribution-scan/Research_Report.md) collected 2,058 open-issue leads and selected 12 priorities, with 21 detailed opportunity records. Start with a current-code reproduction, identify existing fixes, and test a concrete state, measurement or timing contract.
+
+- **AI:** Graphiti temporal-memory transitions, LongMemEval evidence and NeuroGym observation protocols.
+- **Biology:** Pertpy's baseline-aware evaluator, explicit readouts and later calibrated IDA comparisons.
+- **Numerical systems:** python-control's filter/predictor distinction and independent event/held-input tests.
+
+The [reusable scanner](research/contribution-scan/scanner/github_scan.py) has 20 offline tests. [Run or refresh the scan](research/contribution-scan/README.md), [inspect the ranked records](research/contribution-scan/Opportunities.json), or [download the complete research package](research/contribution-scan/Research_and_Scanner.zip). The inventory is bounded and partly incomplete; these are contribution opportunities, not 2,058 validated bugs or proof of framework superiority.
+
 ## Contribute
 
 Start with a reproducible counterexample, stronger baseline, dataset adapter or accessible learning improvement. Read [CONTRIBUTING.md](CONTRIBUTING.md). Keep papers, assumptions, code and measured results distinct. An impressive result should survive another person's implementation.
