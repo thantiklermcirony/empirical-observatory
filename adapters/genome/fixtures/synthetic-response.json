@@ -1,0 +1,23 @@
+{
+  "schema": "observatory-atlas/1",
+  "mode": "synthetic-fixture",
+  "source": "software-test-fixture",
+  "networkCalls": 0,
+  "warning": "Fabricated software fixture. Neither AlphaGenome predictions nor experimental biological measurements. Fixture scorer and ontology names are not real provider identifiers.",
+  "assembly": "GRCh38",
+  "coordinateSystem": "1-based",
+  "variants": [{
+    "variant": {"chromosome": "chr1", "position": 100, "reference_bases": "A", "alternate_bases": "C"},
+    "status": "fixture",
+    "scores": [{
+      "scorer": "FIXTURE_SIGNED_SCORER",
+      "isSigned": true,
+      "shape": [1, 2],
+      "observations": [{"variant": {"chromosome": "chr1", "position": 100, "reference_bases": "A", "alternate_bases": "C"}, "gene_id": "FIXTURE_GENE"}],
+      "tracks": [{"ontology_curie": "FIXTURE:CELL_A"}, {"ontology_curie": "FIXTURE:CELL_B"}],
+      "predictedScores": [[-0.25, 0.5]],
+      "providerQuantiles": [[0.2, 0.8]],
+      "source": "software-test-fixture"
+    }]
+  }]
+}

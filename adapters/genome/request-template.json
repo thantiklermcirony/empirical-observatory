@@ -1,0 +1,14 @@
+{
+  "schema": "observatory-atlas-request/1",
+  "assembly": "GRCh38",
+  "coordinateSystem": "1-based",
+  "organism": "Homo sapiens",
+  "purpose": "Public literature variant for interface planning; no score or measurement is supplied",
+  "variantSource": "https://pmc.ncbi.nlm.nih.gov/articles/12851941/",
+  "requestedScorers": [],
+  "ontologyTerms": [],
+  "geneIds": [],
+  "variants": [
+    {"chromosome": "chr5", "position": 1295046, "reference_bases": "T", "alternate_bases": "G"}
+  ]
+}

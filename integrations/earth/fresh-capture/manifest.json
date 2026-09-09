@@ -1,0 +1,39 @@
+{
+  "schema": "earth-capture-manifest/1",
+  "capture": "single-observation",
+  "downloads": [
+    {
+      "name": "system_information",
+      "url": "https://gbfs.urbansharing.com/oslobysykkel.no/system_information.json",
+      "retrievedAt": "2026-09-09T10:47:03.097Z",
+      "sha256": "98bbbfb545bcb297db5301976322c01917195d041f01a0e0ad1ecd633d1b8441",
+      "bytes": 574
+    },
+    {
+      "name": "station_information",
+      "url": "https://gbfs.urbansharing.com/oslobysykkel.no/station_information.json",
+      "retrievedAt": "2026-09-09T10:47:03.511Z",
+      "sha256": "7c2cc65649de15052d924fced856594bbf24d061f47e51ef3eb71b410a4b4cad",
+      "bytes": 142695
+    },
+    {
+      "name": "station_status",
+      "url": "https://gbfs.urbansharing.com/oslobysykkel.no/station_status.json",
+      "retrievedAt": "2026-09-09T10:47:03.723Z",
+      "sha256": "8aaa6d38c0d22fc5cf403a49fb5684f8524cf376f19791027486f80245528304",
+      "bytes": 72757
+    }
+  ],
+  "normalizedSha256": "d41050f158832e74716d0d3c40c91960d8837b14f2c7a849deac1427f4f979d5",
+  "source": {
+    "id": "oslobysykkel",
+    "name": "Oslo City Bike",
+    "license": "NLOD-2.0",
+    "licenseUrl": "https://data.norge.no/nlod/en/2.0",
+    "attribution": "Contains data from Oslo City Bike under NLOD 2.0. Selected and normalized by the Empirical Observatory; no provider endorsement.",
+    "documentation": "https://oslobysykkel.no/en/open-data/realtime",
+    "informationUrl": "https://gbfs.urbansharing.com/oslobysykkel.no/station_information.json",
+    "statusUrl": "https://gbfs.urbansharing.com/oslobysykkel.no/station_status.json"
+  },
+  "changes": "Downloaded bytes retained; normalized records preserve missing values; no interpolation or forecast."
+}

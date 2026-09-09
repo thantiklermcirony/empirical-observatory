@@ -1,2 +1,66 @@
-# empirical-observatory
-A playable research station for adaptive control, quantum measurement, real-world observations and scientific AI. Reproducible experiments, explicit evidence, open integrations.
+# The Empirical Observatory
+
+A playable research station for testing what measurements reveal—and what they miss. Part of [The Empirical Architecture](https://github.com/thantiklermcirony/empirical-architecture).
+
+**Release 0.2: First Contact** contains three working experiments, a local instrument dock, a replayable logbook and an Earth / AI / Genome expedition workspace. The orbital scene uses Three.js; numerical results come from the experiment engines, not the visual effects.
+
+| Laboratory | What you do | What is measured |
+|---|---|---|
+| TAO Chamber | Recover a bounded reactor, explore five exact flows and compare controllers | Synthetic tracking, recovery, boundary exposure and actuator effort |
+| Signal Bay | Respond to 24 timed signals under fixed/adaptive windows | Your actual local keypress/tap timing and correctness |
+| Quantum Lab | Spend shots to identify a hidden state; compare gate order | Quantum Tensors probabilities and seeded simulated outcomes |
+| Instrument Dock | Connect the local BrainFlow bridge | Explicitly labelled synthetic, recorded or hardware signals |
+| Earth expedition | Capture real Oslo station observations and replay comparisons | Available-bike counts, reported capacity, clocks, missingness and provenance |
+| AI expedition | Explore executed POPGym results | Held-out recall accuracy and negative controls |
+| Genome expedition | Export a validated request plan and run the local Atlas adapter | Metadata-driven query contracts; no live model score included |
+| Logbook | Export/import records and rerun their analysis | Versioned configurations, actions and evidence |
+
+This release is a research prototype. It does not establish biological universality, quantum advantage, consciousness measurement or AI cost savings. It makes concrete experiments possible and preserves their limitations.
+
+## Run
+
+Use Node 24 LTS and pnpm. The lockfile is included.
+
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+```
+
+Open the Local URL printed by the server. No scientific API key is needed for the three game laboratories. Hardware and cloud access are optional local adapters; see [adapters/README.md](adapters/README.md).
+
+```sh
+pnpm test
+pnpm typecheck
+pnpm research
+pnpm build
+```
+
+`pnpm research` regenerates the published controller comparison and quantum reference probabilities. Python verification uses the separate adapter requirements and `python -m unittest discover -s adapters -v`.
+
+## Scientific starting point
+
+The controller fixture is derived from the [TAO manuscript](https://ssrn.com/abstract=6779487), with a newly specified plant. It is not a reproduction of the manuscript's original benchmark. The first held-out comparison finds the PI controller has the lowest mean absolute error; TAO does not dominate all metrics. All four automatic controllers share observations, quality fallback, action limits and tuning budget. [Methods and results](research/Methods.md).
+
+The quantum game uses established quantum mechanics and Bayesian experimental design. The response task is a real local behaviour exercise with illustrative forecasts, not a trained AI benchmark. The [current release and acceptance gates](research/Release_0.2.md) document what shipped and what still needs evidence. The [original integration audit](research/Next_Big_Job.md) specifies how to extend this release through AlphaGenome, God's Eye View, biological analysis tools and established AI environments.
+
+## Records and privacy
+
+No experiment records are uploaded by the app. The browser retains the latest 30 records; export important results because browser storage can be cleared or become full. Imports are untrusted and validated. A valid file is not an attested human or hardware measurement. Simulation replay recomputes evidence; behaviour is reanalysed rather than physically replayed. Seeded runs are repeatable under the declared engine version.
+
+The optional WebMCP tools expose a station summary and navigation only. They cannot start a human experiment, read raw response/signal records, connect hardware or execute cloud jobs.
+
+## Contribute
+
+Start with a reproducible counterexample, stronger baseline, dataset adapter or accessible learning improvement. Read [CONTRIBUTING.md](CONTRIBUTING.md). Keep papers, assumptions, code and measured results distinct. An impressive result should survive another person's implementation.
+
+Original project code is MIT. Dependency code, provider data and manuscript materials retain their own licenses; see [THIRD_PARTY.md](THIRD_PARTY.md).
+
+## Integration entry points
+
+- **Earth / God's Eye:** `node integrations/earth/collect-oslo.mjs ./oslo-capture`; [module wiring and data terms](integrations/earth/README.md). Live capture is also available in the station, with a fixed station subset and one-minute request spacing.
+- **AlphaGenome Atlas:** `python adapters/genome/atlas_adapter.py plan`; [live setup and assay preflight](adapters/genome/README.md). The default is offline. Provider access and applicable output terms are separate from the SDK license.
+- **AI memory:** [POPGym protocol and rerun command](integrations/memory/Memory_Protocol.md). Full executed results include per-episode data; this is a standard-task diagnostic.
+
+**Compatibility notice:** new records use engine 0.2.0. Old quantum records replay with a bias warning because v0.1 coupled state selection to its first random shot. Exclude those records from statistical evidence. Details and numerical corrections are in [the release audit](research/Release_0.2.md).
+
+The hosted preview currently has owner-only access. Public GitHub users can run the complete source locally; the repository does not promise anonymous access to the hosted preview.

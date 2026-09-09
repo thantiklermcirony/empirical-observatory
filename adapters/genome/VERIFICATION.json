@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-09",
+  "package": "Genome Observatory adapter",
+  "testsPassed": 16,
+  "testsFailed": 0,
+  "testsSkippedWithInstalledSdk": 0,
+  "sdkVersion": "0.9.0",
+  "sdkCommit": "aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d",
+  "checks": ["Offline default makes no network call", "Synthetic fixture is clearly labelled", "Strict assembly, SNV, query-limit and scorer validation", "Reference-window allele and coordinate check", "Unknown credentials fields rejected", "Matched variant/allele assay join and quality exclusions", "Real SDK imports, protobuf request creation and local transport stub", "Missing predictions and nonfinite values stay missing"],
+  "realProviderRequests": 0,
+  "experimentalBiologyMeasurementsIncluded": 0,
+  "liveTermsAndArtifactReuseCleared": false,
+  "status": "adapter-tested; live-access-and-scientific-validation-pending"
+}

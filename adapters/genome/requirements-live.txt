@@ -1,0 +1,3 @@
+# Optional live-read SDK, pinned to the exact inspected interface.
+# No dependency installation is needed for plan/fixture modes or unit tests.
+alphagenome @ https://github.com/google-deepmind/alphagenome/archive/aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d.zip

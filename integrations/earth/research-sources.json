@@ -1,0 +1,37 @@
+{
+  "checkedOn": "2026-09-09",
+  "integrationTarget": {
+    "repository": "https://github.com/bilawalsidhu/gods-eye-view",
+    "commit": "759652207fd1279ece97f0f19af566feb9a82146",
+    "primarySourceFiles": ["src/main.js", "src/data/manager.js", "src/data/layerState.js", "src/data/bikeshare.js", "src/data/earthquakes.js", "src/data/dataCredits.js", "LICENSE"],
+    "verifiedFinding": "GBFS bikeshare already exists. An observation experiment layer must add evidence/replay functionality, not claim a new live bikeshare capability.",
+    "sourceLicense": "MIT, excluding third-party data/assets",
+    "validation": "Pinned interfaces read, standalone dependency-injected layer unit-tested; complete host integration and browser acceptance not tested"
+  },
+  "dataSources": [
+    {
+      "name": "Oslo City Bike real-time GBFS",
+      "url": "https://oslobysykkel.no/en/open-data/realtime",
+      "licenseEvidence": "https://oslobysykkel.no/en/open-data",
+      "license": "NLOD-2.0",
+      "licenseUrl": "https://data.norge.no/nlod/en/2.0",
+      "credentials": "No API key; provider requests application Client-Identifier header",
+      "implemented": true
+    },
+    {
+      "name": "Oslo City Bike historical trips",
+      "url": "https://oslobysykkel.no/en/open-data/historical",
+      "license": "NLOD-2.0",
+      "constraint": "Trip selection excludes staff moves, cancelled trips and trips under one minute. It cannot reconstruct actual historical station availability.",
+      "implemented": false
+    }
+  ],
+  "checks": {
+    "command": "node --test earth.test.mjs",
+    "tests": 13,
+    "passed": 13,
+    "failed": 0,
+    "report": "tests.junit.xml"
+  },
+  "noClaimsOf": ["forecasting improvement", "TAO validity in urban mobility", "upstream acceptance", "full browser integration", "archived availability reconstructed from trip counts"]
+}

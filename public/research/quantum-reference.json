@@ -1,0 +1,114 @@
+{
+  "engine": "quantum-tensors@0.4.15",
+  "noise": 0.12,
+  "rows": [
+    {
+      "state": "0",
+      "basis": "X",
+      "ideal": 0.5000000000000001,
+      "depolarised": 0.5000000000000001
+    },
+    {
+      "state": "0",
+      "basis": "Y",
+      "ideal": 0.5000000000000001,
+      "depolarised": 0.5000000000000001
+    },
+    {
+      "state": "0",
+      "basis": "Z",
+      "ideal": 1,
+      "depolarised": 0.94
+    },
+    {
+      "state": "1",
+      "basis": "X",
+      "ideal": 0.5000000000000001,
+      "depolarised": 0.5000000000000001
+    },
+    {
+      "state": "1",
+      "basis": "Y",
+      "ideal": 0.5000000000000001,
+      "depolarised": 0.5000000000000001
+    },
+    {
+      "state": "1",
+      "basis": "Z",
+      "ideal": 0,
+      "depolarised": 0.06
+    },
+    {
+      "state": "+",
+      "basis": "X",
+      "ideal": 1,
+      "depolarised": 0.9400000000000004
+    },
+    {
+      "state": "+",
+      "basis": "Y",
+      "ideal": 0.5000000000000002,
+      "depolarised": 0.5000000000000002
+    },
+    {
+      "state": "+",
+      "basis": "Z",
+      "ideal": 0.5000000000000001,
+      "depolarised": 0.5000000000000001
+    },
+    {
+      "state": "-",
+      "basis": "X",
+      "ideal": 0,
+      "depolarised": 0.06
+    },
+    {
+      "state": "-",
+      "basis": "Y",
+      "ideal": 0.5000000000000002,
+      "depolarised": 0.5000000000000002
+    },
+    {
+      "state": "-",
+      "basis": "Z",
+      "ideal": 0.5000000000000001,
+      "depolarised": 0.5000000000000001
+    },
+    {
+      "state": "+i",
+      "basis": "X",
+      "ideal": 0.5000000000000002,
+      "depolarised": 0.5000000000000002
+    },
+    {
+      "state": "+i",
+      "basis": "Y",
+      "ideal": 1,
+      "depolarised": 0.9400000000000004
+    },
+    {
+      "state": "+i",
+      "basis": "Z",
+      "ideal": 0.5000000000000001,
+      "depolarised": 0.5000000000000001
+    },
+    {
+      "state": "-i",
+      "basis": "X",
+      "ideal": 0.5000000000000002,
+      "depolarised": 0.5000000000000002
+    },
+    {
+      "state": "-i",
+      "basis": "Y",
+      "ideal": 0,
+      "depolarised": 0.06
+    },
+    {
+      "state": "-i",
+      "basis": "Z",
+      "ideal": 0.5000000000000001,
+      "depolarised": 0.5000000000000001
+    }
+  ]
+}

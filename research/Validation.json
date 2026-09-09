@@ -1,0 +1,30 @@
+{
+  "release": "0.2.0",
+  "checkedDate": "2026-09-09",
+  "nodeTests": {
+    "passed": 36,
+    "failed": 0
+  },
+  "pythonTests": {
+    "passed": 23,
+    "failed": 0,
+    "groups": {
+      "genome": 16,
+      "memory": 4,
+      "brainflowAndQiskit": 3
+    }
+  },
+  "quantumReferenceCases": 18,
+  "typecheck": "passed",
+  "projectLint": "passed",
+  "lintScope": "app, components/observatory, lib, tests and scripts. Unmodified scaffold components/ui and hooks are not linted by the project command. TypeScript compilation includes imported components.",
+  "lintExceptions": "React Compiler diagnostics are disabled in four imperative browser/engine components with comments; no React Compiler is configured. prefer-tag-over-role is disabled for project JSX because SVG image semantics and live status containers deliberately use ARIA roles. Hooks, types and other correctness/accessibility checks remain enabled.",
+  "brainflow": "Actual synthetic-board SDK acquisition and authenticated loopback HTTP tested. Physical EEG not tested. Playback-file path not exercised.",
+  "qiskit": "Local Statevector and Aer tested. IBM submission path not exercised.",
+  "browserInteractionQA": "Focused local browser checks passed: navigation, actual Earth capture and count comparison, AI current-cue selection, Genome invalid input and plan export, quantum measurement/save/replay. No fabricated human task completion or physical EEG validation.",
+  "webMCP": "Both tools registered and executed; read-back confirms navigation. Invalid laboratory and unexpected read parameters intentionally rejected.",
+  "externalIntegrations": "Actual Oslo snapshot + live capture; lifecycle-tested optional Gods Eye module (full host not run); real POPGym diagnostic; actual AlphaGenome SDK with stub transport, no live query.",
+  "claims": "No biological, consciousness, AI-efficiency or quantum-advantage claim is validated by these implementation checks.",
+  "productionBuild": "passed",
+  "totalAutomatedTests": 59
+}

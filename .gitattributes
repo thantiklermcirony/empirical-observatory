@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# These files carry exact-byte provenance hashes; do not rewrite line endings.
+integrations/earth/*.json -text
+integrations/earth/fresh-capture/*.json -text
+public/research/oslo-*.json -text

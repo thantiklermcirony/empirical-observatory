@@ -1,0 +1,208 @@
+{
+  "checkedAt": "2026-09-09T07:01:09.601164+00:00",
+  "scope": "17 targeted repositories. Metadata audit for all; source interface audit for AlphaGenome and God's Eye View. Not an exhaustive GitHub census or a claim of runtime integration.",
+  "repositories": [
+    {
+      "repository": "google-deepmind/alphagenome",
+      "url": "https://github.com/google-deepmind/alphagenome",
+      "description": "This API provides programmatic access to the AlphaGenome model developed by Google DeepMind.",
+      "commit": "aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d",
+      "starsAtAudit": 2040,
+      "archived": false,
+      "licenseSpdxFromGitHub": "Apache-2.0",
+      "inspectedSourceFiles": [
+        {
+          "path": "src/alphagenome/atlas/atlas.py",
+          "url": "https://raw.githubusercontent.com/google-deepmind/alphagenome/aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d/src/alphagenome/atlas/atlas.py",
+          "sha256": "d6584b9757bed70bb4117770a9ad6e716c1e615797718a13a72bb006b35e7925",
+          "bytes": 16105
+        },
+        {
+          "path": "src/alphagenome/models/dna_client.py",
+          "url": "https://raw.githubusercontent.com/google-deepmind/alphagenome/aa6fc8f6faadcb8c910fa2b85b57386fbd5c7b5d/src/alphagenome/models/dna_client.py",
+          "sha256": "bd2b8864e500a75b6fb64a6bf37daa3a1d30b57382cc8ad9979d28bf63eebd72",
+          "bytes": 32677
+        }
+      ]
+    },
+    {
+      "repository": "google-deepmind/alphagenome_research",
+      "url": "https://github.com/google-deepmind/alphagenome_research",
+      "description": "Research code accompanying AlphaGenome ",
+      "commit": "0db53bd4352c66d1e00a049a81da373a066e6670",
+      "starsAtAudit": 840,
+      "archived": false,
+      "licenseSpdxFromGitHub": "Apache-2.0",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "commit": "759652207fd1279ece97f0f19af566feb9a82146",
+      "starsAtAudit": 19927,
+      "archived": false,
+      "licenseSpdxFromGitHub": "NOASSERTION",
+      "inspectedSourceFiles": [
+        {
+          "path": "src/data/manager.js",
+          "url": "https://raw.githubusercontent.com/bilawalsidhu/gods-eye-view/759652207fd1279ece97f0f19af566feb9a82146/src/data/manager.js",
+          "sha256": "290949b2cf7d7c55d849f1a3fd2b96ee023989d91a40587c4e05d583a2061068",
+          "bytes": 90326
+        },
+        {
+          "path": "src/data/earthquakes.js",
+          "url": "https://raw.githubusercontent.com/bilawalsidhu/gods-eye-view/759652207fd1279ece97f0f19af566feb9a82146/src/data/earthquakes.js",
+          "sha256": "bff66a85f996254d2829d715b195c1af6ca6675a1cd2a36170a28edb0eb152b5",
+          "bytes": 10671
+        },
+        {
+          "path": "src/data/contextStore.js",
+          "url": "https://raw.githubusercontent.com/bilawalsidhu/gods-eye-view/759652207fd1279ece97f0f19af566feb9a82146/src/data/contextStore.js",
+          "sha256": "e302125b7fc01f857f311751a8e983e7f234fec5aaaa44301a3059dfcf26c422",
+          "bytes": 6897
+        }
+      ]
+    },
+    {
+      "repository": "CesiumGS/cesium",
+      "url": "https://github.com/CesiumGS/cesium",
+      "description": "An open-source JavaScript library for world-class 3D globes and maps :earth_americas:",
+      "commit": "e0f5ce30d59611ededb4e769794aa101bc0321f4",
+      "starsAtAudit": 15692,
+      "archived": false,
+      "licenseSpdxFromGitHub": "Apache-2.0",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "koala73/worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "commit": "6fc5d448f2a8b2d4d191a81807f41a35cc6ed7cb",
+      "starsAtAudit": 85876,
+      "archived": false,
+      "licenseSpdxFromGitHub": "AGPL-3.0",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "scverse/pertpy",
+      "url": "https://github.com/scverse/pertpy",
+      "description": "Single-cell perturbation analysis",
+      "commit": "3001be83e49bb00be7ed2a7482af59eec80cb239",
+      "starsAtAudit": 339,
+      "archived": false,
+      "licenseSpdxFromGitHub": "MIT",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "scverse/cellrank",
+      "url": "https://github.com/scverse/cellrank",
+      "description": "CellRank: dynamics from multi-view single-cell data",
+      "commit": "d7191d75684c86b58adbb317c8aae7d06f2682f3",
+      "starsAtAudit": 456,
+      "archived": false,
+      "licenseSpdxFromGitHub": "BSD-3-Clause",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "aristoteleo/dynamo-release",
+      "url": "https://github.com/aristoteleo/dynamo-release",
+      "description": "Inclusive model of expression dynamics with conventional or metabolic labeling based scRNA-seq / multiomics, vector field reconstruction and differential geometry analyses",
+      "commit": "69ba903000a1dcd5aa7d8b36a9318c1b22c5d650",
+      "starsAtAudit": 510,
+      "archived": false,
+      "licenseSpdxFromGitHub": "BSD-3-Clause",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "snap-stanford/GEARS",
+      "url": "https://github.com/snap-stanford/GEARS",
+      "description": "GEARS is a geometric deep learning model that predicts outcomes of novel multi-gene perturbations",
+      "commit": "f374e43e197b295016d80395d7a54ddb81cc6769",
+      "starsAtAudit": 406,
+      "archived": false,
+      "licenseSpdxFromGitHub": "MIT",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "proroklab/popgym",
+      "url": "https://github.com/proroklab/popgym",
+      "description": "Partially Observable Process Gym",
+      "commit": "410d5aa626dae8024f498354d8781a0d1870c399",
+      "starsAtAudit": 225,
+      "archived": false,
+      "licenseSpdxFromGitHub": "MIT",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "Farama-Foundation/Gymnasium",
+      "url": "https://github.com/Farama-Foundation/Gymnasium",
+      "description": "A standard API for single-agent reinforcement learning environments, with popular reference environments and related utilities (formerly Gym)",
+      "commit": "91be3d8dc7103b620a2df17cb4c258e0bd863e36",
+      "starsAtAudit": 12504,
+      "archived": false,
+      "licenseSpdxFromGitHub": "MIT",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "commit": "297f5fc6592e89fc41960251e88b6cf94fd7573e",
+      "starsAtAudit": 15005,
+      "archived": false,
+      "licenseSpdxFromGitHub": "Apache-2.0",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "brainflow-dev/brainflow",
+      "url": "https://github.com/brainflow-dev/brainflow",
+      "description": "BrainFlow is a library intended to obtain, parse and analyze EEG, EMG, ECG and other kinds of data from biosensors",
+      "commit": "212be505299785ec02485bdc2b24423dd383953a",
+      "starsAtAudit": 1746,
+      "archived": false,
+      "licenseSpdxFromGitHub": "NOASSERTION",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "sccn/liblsl",
+      "url": "https://github.com/sccn/liblsl",
+      "description": "C++ lsl library for multi-modal time-synched data transmission over the local network",
+      "commit": "e651023ca67996a05a028fd88a28603297120294",
+      "starsAtAudit": 177,
+      "archived": false,
+      "licenseSpdxFromGitHub": "NOASSERTION",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "Quantum-Flytrap/quantum-tensors",
+      "url": "https://github.com/Quantum-Flytrap/quantum-tensors",
+      "description": "Quantum Tensors - NPM package for sparse matrix operations for quantum information and computing",
+      "commit": "b8c677c51475ba33644cb62658796b5a190fdf42",
+      "starsAtAudit": 59,
+      "archived": false,
+      "licenseSpdxFromGitHub": null,
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "Qiskit/qiskit-aer",
+      "url": "https://github.com/Qiskit/qiskit-aer",
+      "description": "Aer is a high performance simulator for quantum circuits that includes noise models",
+      "commit": "837c3ef3c39248aae936580360c22224dcefb265",
+      "starsAtAudit": 693,
+      "archived": false,
+      "licenseSpdxFromGitHub": "Apache-2.0",
+      "inspectedSourceFiles": []
+    },
+    {
+      "repository": "micro-manager/pycro-manager",
+      "url": "https://github.com/micro-manager/pycro-manager",
+      "description": "Python control of micro-manager for customized data acquisition ",
+      "commit": "c9c8acd1969fb5e55619d8284b6c1fd96fc236b4",
+      "starsAtAudit": 187,
+      "archived": false,
+      "licenseSpdxFromGitHub": "BSD-3-Clause",
+      "inspectedSourceFiles": []
+    }
+  ]
+}

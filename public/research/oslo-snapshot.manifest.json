@@ -1,0 +1,75 @@
+{
+  "schema": "earth-capture-manifest/1",
+  "capture": "single-observation",
+  "source": {
+    "id": "oslobysykkel",
+    "name": "Oslo City Bike",
+    "license": "NLOD-2.0",
+    "licenseUrl": "https://data.norge.no/nlod/en/2.0",
+    "attribution": "Contains data from Oslo City Bike under NLOD 2.0. Selected and normalized by the Empirical Observatory; no provider endorsement.",
+    "documentation": "https://oslobysykkel.no/en/open-data/realtime",
+    "informationUrl": "https://gbfs.urbansharing.com/oslobysykkel.no/station_information.json",
+    "statusUrl": "https://gbfs.urbansharing.com/oslobysykkel.no/station_status.json"
+  },
+  "retrievedAt": "2026-09-09T10:47:03.723Z",
+  "retrievalClockMeaning": "Actual completed station-status download; component clocks and exact byte hashes are preserved below",
+  "downloads": [
+    {
+      "name": "system_information",
+      "url": "https://gbfs.urbansharing.com/oslobysykkel.no/system_information.json",
+      "retrievedAt": "2026-09-09T10:47:03.097Z",
+      "sha256": "98bbbfb545bcb297db5301976322c01917195d041f01a0e0ad1ecd633d1b8441",
+      "bytes": 574,
+      "file": "fresh-capture/system_information.json"
+    },
+    {
+      "name": "station_information",
+      "url": "https://gbfs.urbansharing.com/oslobysykkel.no/station_information.json",
+      "retrievedAt": "2026-09-09T10:47:03.511Z",
+      "sha256": "7c2cc65649de15052d924fced856594bbf24d061f47e51ef3eb71b410a4b4cad",
+      "bytes": 142695,
+      "file": "fresh-capture/station_information.json"
+    },
+    {
+      "name": "station_status",
+      "url": "https://gbfs.urbansharing.com/oslobysykkel.no/station_status.json",
+      "retrievedAt": "2026-09-09T10:47:03.723Z",
+      "sha256": "8aaa6d38c0d22fc5cf403a49fb5684f8524cf376f19791027486f80245528304",
+      "bytes": 72757,
+      "file": "fresh-capture/station_status.json"
+    }
+  ],
+  "selection": {
+    "rule": "First 24 station IDs in lexical order from this information feed; no filtering by outcomes or quality",
+    "stationIds": [
+      "1009",
+      "1919",
+      "2270",
+      "2304",
+      "2305",
+      "2306",
+      "2307",
+      "2308",
+      "2315",
+      "2328",
+      "2330",
+      "2332",
+      "2333",
+      "2334",
+      "2339",
+      "2340",
+      "2347",
+      "2349",
+      "2350",
+      "2351",
+      "2355",
+      "3725",
+      "377",
+      "380"
+    ]
+  },
+  "normalizedFile": "oslo-snapshot.json",
+  "normalizedSha256": "10a32aab32a6b819eb89939af66dce0a249f0abf1b3c3b0d88ae8cd919cd4ebe",
+  "modifications": "Selected 24 stations; joined by station ID; standardized clocks and labels; derived availability fraction; retained missing values and quality flags. No historical interpolation or prediction.",
+  "eligibleStationCount": 24
+}

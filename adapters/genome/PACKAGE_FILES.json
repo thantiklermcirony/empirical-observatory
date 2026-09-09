@@ -1,0 +1,15 @@
+[
+  "atlas_adapter.py",
+  "assay_preflight.py",
+  "test_atlas_adapter.py",
+  "test_assay_preflight.py",
+  "test_sdk_contract.py",
+  "request-template.json",
+  "requirements-live.txt",
+  "fixtures/synthetic-response.json",
+  "README.md",
+  "RESEARCH.md",
+  "VERIFICATION.json",
+  "PACKAGE_FILES.json",
+  ".gitignore"
+]

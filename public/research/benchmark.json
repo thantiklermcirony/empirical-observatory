@@ -1,0 +1,759 @@
+{
+  "protocol": "bast-fixture-0.1",
+  "trainingSeeds": [
+    11,
+    12,
+    13,
+    14
+  ],
+  "testSeeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+  ],
+  "gains": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    18
+  ],
+  "score": "MAE + 2*BRI/30 + 0.002*actuator effort",
+  "notes": "Same observations, action limits, quality fallback and tuning budget. Four classical controllers; no learned baseline. Synthetic held-out seeds do not establish real-world superiority. Recovery is the first one-second dwell after the initial perturbation.",
+  "rows": [
+    {
+      "controller": "linear",
+      "gain": 12,
+      "tuning": [
+        {
+          "gain": 12,
+          "score": 0.01802997753996136
+        },
+        {
+          "gain": 18,
+          "score": 0.018245226435587462
+        },
+        {
+          "gain": 8,
+          "score": 0.018696135319806437
+        },
+        {
+          "gain": 4,
+          "score": 0.022291188185404723
+        },
+        {
+          "gain": 2,
+          "score": 0.030687801360810528
+        },
+        {
+          "gain": 1,
+          "score": 0.045427009238794
+        }
+      ],
+      "runs": [
+        {
+          "seed": 101,
+          "stress": "endpoint",
+          "mae": 0.007269897388225314,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00018715822954163132,
+          "actuatorEffort": 1.5104939270578712,
+          "chartTravel": 8.736033869426123,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 102,
+          "stress": "repeated",
+          "mae": 0.017207502313975043,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 2.7514596144381733,
+          "chartTravel": 18.484658702784348,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 103,
+          "stress": "stale",
+          "mae": 0.008251295098848112,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.4689779053554088,
+          "chartTravel": 8.059716210778602,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 104,
+          "stress": "switching",
+          "mae": 0.019970579131546314,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 4.010030524924442,
+          "chartTravel": 18.33134005525235,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.938
+        },
+        {
+          "seed": 105,
+          "stress": "endpoint",
+          "mae": 0.0075122210430612815,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.000644916218918706,
+          "actuatorEffort": 1.5131134157780028,
+          "chartTravel": 9.206871233723477,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 106,
+          "stress": "repeated",
+          "mae": 0.017428478714387855,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00018105347471328791,
+          "actuatorEffort": 2.739259127858019,
+          "chartTravel": 18.791385268241598,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 107,
+          "stress": "stale",
+          "mae": 0.008482677059341701,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.421852350085746,
+          "chartTravel": 8.315654472243473,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 108,
+          "stress": "switching",
+          "mae": 0.02026922318580974,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 4.00141636280637,
+          "chartTravel": 18.688792999867122,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.936
+        },
+        {
+          "seed": 109,
+          "stress": "endpoint",
+          "mae": 0.0069701042463431685,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.4914628998917085,
+          "chartTravel": 7.752139312342935,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.982
+        },
+        {
+          "seed": 110,
+          "stress": "repeated",
+          "mae": 0.017638924463126628,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.000644980342185731,
+          "actuatorEffort": 2.7282621432016794,
+          "chartTravel": 19.237307228864548,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 111,
+          "stress": "stale",
+          "mae": 0.0085779009934576,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00017804566930716833,
+          "actuatorEffort": 1.4609999471852428,
+          "chartTravel": 8.760947478903361,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 112,
+          "stress": "switching",
+          "mae": 0.020312498064592628,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 3.962967025056459,
+          "chartTravel": 18.843391839984516,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.936
+        }
+      ],
+      "mae": 0.013324275141892947,
+      "boundaryFraction": 0.0011111111111111111,
+      "actuatorEffort": 2.4216912703032603,
+      "recoverySeconds": 0.612499999999988,
+      "unrecovered": 0
+    },
+    {
+      "controller": "pi",
+      "gain": 12,
+      "tuning": [
+        {
+          "gain": 12,
+          "score": 0.01731637592324339
+        },
+        {
+          "gain": 8,
+          "score": 0.01779153341608658
+        },
+        {
+          "gain": 18,
+          "score": 0.01779689718994634
+        },
+        {
+          "gain": 4,
+          "score": 0.021716658314786443
+        },
+        {
+          "gain": 2,
+          "score": 0.03244203931223339
+        },
+        {
+          "gain": 1,
+          "score": 0.0496070155204005
+        }
+      ],
+      "runs": [
+        {
+          "seed": 101,
+          "stress": "endpoint",
+          "mae": 0.006846712036471043,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00017988503021215964,
+          "actuatorEffort": 1.5481881147052445,
+          "chartTravel": 8.77069576358097,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 102,
+          "stress": "repeated",
+          "mae": 0.016801640999667033,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 2.812993600768706,
+          "chartTravel": 18.547316537432305,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 103,
+          "stress": "stale",
+          "mae": 0.007628116170695564,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.5032994718632977,
+          "chartTravel": 8.108612454156004,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 104,
+          "stress": "switching",
+          "mae": 0.01821722140318489,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 4.1681081668296915,
+          "chartTravel": 18.50654093836602,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 105,
+          "stress": "endpoint",
+          "mae": 0.00707150214513031,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0006388702318034963,
+          "actuatorEffort": 1.5495870469883342,
+          "chartTravel": 9.238993755996185,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 106,
+          "stress": "repeated",
+          "mae": 0.016773498884274138,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0001736219340527055,
+          "actuatorEffort": 2.801840176190005,
+          "chartTravel": 18.853076688912747,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 107,
+          "stress": "stale",
+          "mae": 0.007775186912857797,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.4520967351930636,
+          "chartTravel": 8.358749446938853,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 108,
+          "stress": "switching",
+          "mae": 0.01832864826767354,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 4.155617347720223,
+          "chartTravel": 18.85317787482386,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.938
+        },
+        {
+          "seed": 109,
+          "stress": "endpoint",
+          "mae": 0.006565254118976801,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.5306171605619527,
+          "chartTravel": 7.789069733127576,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.982
+        },
+        {
+          "seed": 110,
+          "stress": "repeated",
+          "mae": 0.0169363305456354,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0006391875533731825,
+          "actuatorEffort": 2.7915233331645966,
+          "chartTravel": 19.3007884787576,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 111,
+          "stress": "stale",
+          "mae": 0.007979825118454154,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0001707894617481217,
+          "actuatorEffort": 1.4939341838428073,
+          "chartTravel": 8.803633755810969,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 112,
+          "stress": "switching",
+          "mae": 0.018262401561816452,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 4.119966684407083,
+          "chartTravel": 19.007409474289357,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.938
+        }
+      ],
+      "mae": 0.01243219484706976,
+      "boundaryFraction": 0.0011111111111111111,
+      "actuatorEffort": 2.493981001852917,
+      "recoverySeconds": 0.6083333333333214,
+      "unrecovered": 0
+    },
+    {
+      "controller": "sigmoid",
+      "gain": 12,
+      "tuning": [
+        {
+          "gain": 12,
+          "score": 0.01824517605232978
+        },
+        {
+          "gain": 18,
+          "score": 0.018345400665620452
+        },
+        {
+          "gain": 8,
+          "score": 0.01911712581330733
+        },
+        {
+          "gain": 4,
+          "score": 0.02332588519914095
+        },
+        {
+          "gain": 2,
+          "score": 0.032188646814855115
+        },
+        {
+          "gain": 1,
+          "score": 0.046065549487891475
+        }
+      ],
+      "runs": [
+        {
+          "seed": 101,
+          "stress": "endpoint",
+          "mae": 0.007366224559772876,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00018715982012274326,
+          "actuatorEffort": 1.5077879490982447,
+          "chartTravel": 8.73409953541853,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 102,
+          "stress": "repeated",
+          "mae": 0.017488767911229115,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 2.7436454611779264,
+          "chartTravel": 18.47359419176679,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 103,
+          "stress": "stale",
+          "mae": 0.008344195341877768,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.4663419918232872,
+          "chartTravel": 8.056561339422599,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 104,
+          "stress": "switching",
+          "mae": 0.020404658124900357,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 3.998127427577733,
+          "chartTravel": 18.31339094897408,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.936
+        },
+        {
+          "seed": 105,
+          "stress": "endpoint",
+          "mae": 0.0076073921733431915,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.000644917754138458,
+          "actuatorEffort": 1.5105325450075202,
+          "chartTravel": 9.203140475887684,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 106,
+          "stress": "repeated",
+          "mae": 0.017702257259499143,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00018105536931765505,
+          "actuatorEffort": 2.732289304004949,
+          "chartTravel": 18.78423705282739,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 107,
+          "stress": "stale",
+          "mae": 0.008579071483215244,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.4189545175465796,
+          "chartTravel": 8.312571112005909,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 108,
+          "stress": "switching",
+          "mae": 0.0207086895269801,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 3.9890068932732228,
+          "chartTravel": 18.666614926247277,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.936
+        },
+        {
+          "seed": 109,
+          "stress": "endpoint",
+          "mae": 0.007060996859307286,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.488781864430396,
+          "chartTravel": 7.748093278299427,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 110,
+          "stress": "repeated",
+          "mae": 0.017914473931334322,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0006449841783553287,
+          "actuatorEffort": 2.721323169830935,
+          "chartTravel": 19.228476744251232,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 111,
+          "stress": "stale",
+          "mae": 0.008671697855437449,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00017805346792164925,
+          "actuatorEffort": 1.4580785930370472,
+          "chartTravel": 8.752709317786413,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 112,
+          "stress": "switching",
+          "mae": 0.020756426088876463,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 3.9509862312032906,
+          "chartTravel": 18.824860646690336,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.936
+        }
+      ],
+      "mae": 0.013550404259647776,
+      "boundaryFraction": 0.0011111111111111111,
+      "actuatorEffort": 2.4154879956675943,
+      "recoverySeconds": 0.6499999999999879,
+      "unrecovered": 0
+    },
+    {
+      "controller": "tao",
+      "gain": 18,
+      "tuning": [
+        {
+          "gain": 18,
+          "score": 0.01799365328842963
+        },
+        {
+          "gain": 12,
+          "score": 0.018369624362239663
+        },
+        {
+          "gain": 8,
+          "score": 0.019581955554566294
+        },
+        {
+          "gain": 4,
+          "score": 0.023711205395199216
+        },
+        {
+          "gain": 2,
+          "score": 0.0322531505951154
+        },
+        {
+          "gain": 1,
+          "score": 0.04535211861435447
+        }
+      ],
+      "runs": [
+        {
+          "seed": 101,
+          "stress": "endpoint",
+          "mae": 0.007205080331506906,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00018749296085765444,
+          "actuatorEffort": 1.596972496134073,
+          "chartTravel": 8.954079416501981,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 102,
+          "stress": "repeated",
+          "mae": 0.017042598386005022,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 2.8401262979519455,
+          "chartTravel": 18.71178440492073,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 103,
+          "stress": "stale",
+          "mae": 0.008218198772399352,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.5524459089161664,
+          "chartTravel": 8.270478466832216,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 104,
+          "stress": "switching",
+          "mae": 0.019438099470692628,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 4.087098076851281,
+          "chartTravel": 18.546565792460793,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.938
+        },
+        {
+          "seed": 105,
+          "stress": "endpoint",
+          "mae": 0.007449472557364821,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.000644524327695805,
+          "actuatorEffort": 1.6018943771142278,
+          "chartTravel": 9.434652965688423,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 106,
+          "stress": "repeated",
+          "mae": 0.01723843907649321,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.00018062832331123407,
+          "actuatorEffort": 2.823282399810677,
+          "chartTravel": 19.00999374393491,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 107,
+          "stress": "stale",
+          "mae": 0.008421995692949042,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.5009306217799072,
+          "chartTravel": 8.518741072592025,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 108,
+          "stress": "switching",
+          "mae": 0.019737118447750824,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 4.0792101312760165,
+          "chartTravel": 18.903689225821466,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.936
+        },
+        {
+          "seed": 109,
+          "stress": "endpoint",
+          "mae": 0.006909605170596544,
+          "boundaryFraction": 0,
+          "boundaryRisk": 0,
+          "actuatorEffort": 1.5776750980483447,
+          "chartTravel": 7.972451293817599,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.982
+        },
+        {
+          "seed": 110,
+          "stress": "repeated",
+          "mae": 0.017450174121922936,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0006445099313293801,
+          "actuatorEffort": 2.8142223543686025,
+          "chartTravel": 19.456348334165853,
+          "recoverySeconds": 0.6499999999999879,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.94
+        },
+        {
+          "seed": 111,
+          "stress": "stale",
+          "mae": 0.008533342842094489,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0001770025855748491,
+          "actuatorEffort": 1.5421888259923175,
+          "chartTravel": 8.974642683695643,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0.09833333333333333,
+          "corridorFraction": 0.98
+        },
+        {
+          "seed": 112,
+          "stress": "switching",
+          "mae": 0.019753523600039676,
+          "boundaryFraction": 0.0016666666666666668,
+          "boundaryRisk": 0.0015000000000000013,
+          "actuatorEffort": 4.030807651082141,
+          "chartTravel": 19.066475139842886,
+          "recoverySeconds": 0.5999999999999881,
+          "fallbackFraction": 0,
+          "corridorFraction": 0.936
+        }
+      ],
+      "mae": 0.013116470705817953,
+      "boundaryFraction": 0.0011111111111111111,
+      "actuatorEffort": 2.503904519943809,
+      "recoverySeconds": 0.6083333333333214,
+      "unrecovered": 0
+    }
+  ]
+}
