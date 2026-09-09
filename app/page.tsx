@@ -208,6 +208,9 @@ export default function Home() {
               <Link className="projects-cta" href="/projects">
                 Current projects <ArrowUpRight size={22} />
               </Link>
+              <Link className="latest-project" href="/projects#pertpy">
+                New: testing biological predictions
+              </Link>
             </div>
             <div className="flight-label">
               <span className="status-light" /> {completeRooms.size}/3
