@@ -39,13 +39,8 @@ jobs:
                   target.parent.mkdir(parents=True,exist_ok=True)
                   target.write_bytes(data)
           shutil.copyfile(archive,target_root/'Research_and_Scanner.zip')
+          (target_root/'.gitattributes').write_text('* -text\n')
           archive.unlink()
-          workflow=Path('.github/workflows/verify.yml')
-          text=workflow.read_text()
-          text=text.replace('on: [push, pull_request]','on: [push, pull_request, workflow_dispatch]')
-          text+="\n  scanner:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with:\n          python-version: '3.12'\n      - run: python -m unittest discover -s research/contribution-scan/scanner -p test_github_scan.py -v\n"
-          workflow.write_text(text)
-          Path('.github/workflows/publish-research.yml').unlink()
           PY
       - name: Check scanner before publication
         run: python -m unittest discover -s research/contribution-scan/scanner -p test_github_scan.py -v
@@ -53,6 +48,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add research/contribution-scan .github/workflows contribution-scan.zip
+          git add research/contribution-scan contribution-scan.zip
           git commit -m "Publish contribution scan, evidence and tested scanner"
           git push
