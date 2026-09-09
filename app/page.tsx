@@ -1,6 +1,7 @@
 'use client';
 /* oxlint-disable react/react-compiler -- These imperative engine/browser effects synchronize external state; this app does not enable React Compiler. */
 import { useCallback, useEffect, useState } from 'react';
+import Link from 'next/link';
 import {
   Activity,
   ArrowLeft,
@@ -61,6 +62,26 @@ export default function Home() {
     [notice, setNotice] = useState('');
   const current = rooms.find((r) => r.id === selected)!;
   useEffect(() => {
+    const restoreView = () => {
+      const target = window.location.hash.slice(1);
+      const allowed = [
+        'deck',
+        'tao',
+        'behaviour',
+        'quantum',
+        'instrument',
+        'expeditions',
+        'logbook',
+      ];
+      const next = allowed.includes(target) ? target : 'deck';
+      setView(next);
+      if (rooms.some((r) => r.id === next)) setSelected(next);
+    };
+    restoreView();
+    window.addEventListener('hashchange', restoreView);
+    return () => window.removeEventListener('hashchange', restoreView);
+  }, []);
+  useEffect(() => {
     setMotion(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
     try {
       const raw = JSON.parse(
@@ -102,6 +123,7 @@ export default function Home() {
   const navigate = useCallback((v: string) => {
     setView(v);
     if (rooms.some((r) => r.id === v)) setSelected(v);
+    window.location.hash = v === 'deck' ? '' : v;
   }, []);
   useStationTools({ view, records, navigate });
   const completeRooms = new Set(
@@ -130,6 +152,9 @@ export default function Home() {
           <span className="muted">/ FIRST CONTACT</span>
         </div>
         <div className="header-actions">
+          <Link className="projects-link" href="/projects">
+            Current projects <ArrowUpRight size={18} />
+          </Link>
           <Button
             variant="ghost"
             className={view === 'expeditions' ? 'nav-active' : ''}
@@ -180,6 +205,9 @@ export default function Home() {
                 <br />
                 Find out what your instruments missed.
               </p>
+              <Link className="projects-cta" href="/projects">
+                Current projects <ArrowUpRight size={22} />
+              </Link>
             </div>
             <div className="flight-label">
               <span className="status-light" /> {completeRooms.size}/3
@@ -287,9 +315,9 @@ export default function Home() {
         >
           The programme <ArrowUpRight size={14} />
         </a>
-        <a className="text-link" href="/research/Next_Big_Job.md" download>
-          Next expedition <ArrowUpRight size={14} />
-        </a>
+        <Link className="text-link" href="/projects">
+          Current projects <ArrowUpRight size={14} />
+        </Link>
       </footer>
       {notice && (
         <div className="save-notice" role="status">
