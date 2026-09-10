@@ -1,0 +1,42 @@
+{
+  "experiment_id": "synthetic-bookkeeping-v1",
+  "domain": "synthetic",
+  "mode": "synthetic",
+  "target": "invented value one minute later",
+  "units": "synthetic units",
+  "horizon_seconds": 60,
+  "outcome_delay_seconds": 30,
+  "metric": "mse",
+  "models": [
+    {
+      "id": "persistence",
+      "version": "1",
+      "code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+      "artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+      "role": "baseline"
+    },
+    {
+      "id": "illustration",
+      "version": "1",
+      "code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+      "artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+      "role": "candidate"
+    }
+  ],
+  "allowed_source_ids": [
+    "synthetic-input"
+  ],
+  "outcome_source_id": "synthetic-truth",
+  "schedule": {
+    "start_at": "2030-01-01T10:00:00Z",
+    "end_at": "2030-01-01T10:04:00Z",
+    "cadence_seconds": 60,
+    "issue_grace_seconds": 5,
+    "entities": [
+      "invented-system"
+    ]
+  },
+  "eligibility_rule": "Invented scalar observations only; no real system is represented.",
+  "revision_rule": "first_eligible_observation",
+  "gate_rule": "Demonstrate numeric gate bookkeeping only; no scientific benefit claim."
+}

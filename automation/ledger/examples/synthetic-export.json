@@ -1,0 +1,1015 @@
+{
+  "schema": "observatory-ledger/1",
+  "generated_at": "2030-01-01T10:06:00.000000Z",
+  "public_time_attestation": false,
+  "time_claim": "Local recorder timestamps only; synthetic/replay modes are not prospective evidence.",
+  "integrity": {
+    "event_count": 27,
+    "head_sha256": "5663444e752b7c0a5215cb52f54af922d9ec800aad7ab7e147e69c454e25dc91"
+  },
+  "contracts": [
+    {
+      "allowed_source_ids": [
+        "synthetic-input"
+      ],
+      "domain": "synthetic",
+      "eligibility_rule": "Invented scalar observations only; no real system is represented.",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "gate_rule": "Demonstrate numeric gate bookkeeping only; no scientific benefit claim.",
+      "horizon_seconds": 60,
+      "metric": "mse",
+      "mode": "synthetic",
+      "models": [
+        {
+          "artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+          "code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+          "id": "persistence",
+          "role": "baseline",
+          "version": "1"
+        },
+        {
+          "artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+          "code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+          "id": "illustration",
+          "role": "candidate",
+          "version": "1"
+        }
+      ],
+      "outcome_delay_seconds": 30,
+      "outcome_source_id": "synthetic-truth",
+      "revision_rule": "first_eligible_observation",
+      "schedule": {
+        "cadence_seconds": 60,
+        "end_at": "2030-01-01T10:04:00Z",
+        "entities": [
+          "invented-system"
+        ],
+        "issue_grace_seconds": 5,
+        "start_at": "2030-01-01T10:00:00Z"
+      },
+      "target": "invented value one minute later",
+      "units": "synthetic units"
+    }
+  ],
+  "expected_issues": [
+    {
+      "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "entity": "invented-system",
+      "cutoff_at": "2030-01-01T10:00:00.000000Z",
+      "issue_deadline": "2030-01-01T10:00:05.000000Z",
+      "target_at": "2030-01-01T10:01:00.000000Z",
+      "model_id": "persistence",
+      "status": "scored"
+    },
+    {
+      "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "entity": "invented-system",
+      "cutoff_at": "2030-01-01T10:00:00.000000Z",
+      "issue_deadline": "2030-01-01T10:00:05.000000Z",
+      "target_at": "2030-01-01T10:01:00.000000Z",
+      "model_id": "illustration",
+      "status": "scored"
+    },
+    {
+      "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "entity": "invented-system",
+      "cutoff_at": "2030-01-01T10:01:00.000000Z",
+      "issue_deadline": "2030-01-01T10:01:05.000000Z",
+      "target_at": "2030-01-01T10:02:00.000000Z",
+      "model_id": "persistence",
+      "status": "scored"
+    },
+    {
+      "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "entity": "invented-system",
+      "cutoff_at": "2030-01-01T10:01:00.000000Z",
+      "issue_deadline": "2030-01-01T10:01:05.000000Z",
+      "target_at": "2030-01-01T10:02:00.000000Z",
+      "model_id": "illustration",
+      "status": "scored"
+    },
+    {
+      "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "entity": "invented-system",
+      "cutoff_at": "2030-01-01T10:02:00.000000Z",
+      "issue_deadline": "2030-01-01T10:02:05.000000Z",
+      "target_at": "2030-01-01T10:03:00.000000Z",
+      "model_id": "persistence",
+      "status": "scored"
+    },
+    {
+      "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "entity": "invented-system",
+      "cutoff_at": "2030-01-01T10:02:00.000000Z",
+      "issue_deadline": "2030-01-01T10:02:05.000000Z",
+      "target_at": "2030-01-01T10:03:00.000000Z",
+      "model_id": "illustration",
+      "status": "scored"
+    },
+    {
+      "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "entity": "invented-system",
+      "cutoff_at": "2030-01-01T10:03:00.000000Z",
+      "issue_deadline": "2030-01-01T10:03:05.000000Z",
+      "target_at": "2030-01-01T10:04:00.000000Z",
+      "model_id": "persistence",
+      "status": "scored"
+    },
+    {
+      "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "entity": "invented-system",
+      "cutoff_at": "2030-01-01T10:03:00.000000Z",
+      "issue_deadline": "2030-01-01T10:03:05.000000Z",
+      "target_at": "2030-01-01T10:04:00.000000Z",
+      "model_id": "illustration",
+      "status": "failed"
+    }
+  ],
+  "snapshots": [
+    {
+      "content_type": "application/json",
+      "entity": "invented-system",
+      "event_at": "2030-01-01T09:59:00Z",
+      "kind": "observation",
+      "license": "CC0 synthetic demo",
+      "published_at": null,
+      "quality": [],
+      "raw_sha256": "fa9eb1674867237ce1b926af61f1fbf2dfbde291773de6aeed4509e6ae1d01cd",
+      "received_at": "2030-01-01T09:59:00Z",
+      "snapshot_id": "synthetic-input-1",
+      "source_id": "synthetic-input",
+      "source_version": "1",
+      "recorded_at": "2030-01-01T09:59:00.000000Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "invented-system",
+      "event_at": "2030-01-01T10:01:00.000000Z",
+      "kind": "outcome",
+      "license": "CC0 synthetic demo",
+      "published_at": null,
+      "quality": [],
+      "raw_sha256": "178e0a4d803d6453a14796b7da63f1d8c37fab839c00d2a7ac9feea46f218ce1",
+      "received_at": "2030-01-01T10:01:30.000000Z",
+      "snapshot_id": "synthetic-truth-0",
+      "source_id": "synthetic-truth",
+      "source_version": "1",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "invented-system",
+      "event_at": "2030-01-01T10:02:00.000000Z",
+      "kind": "outcome",
+      "license": "CC0 synthetic demo",
+      "published_at": null,
+      "quality": [],
+      "raw_sha256": "178e0a4d803d6453a14796b7da63f1d8c37fab839c00d2a7ac9feea46f218ce1",
+      "received_at": "2030-01-01T10:02:30.000000Z",
+      "snapshot_id": "synthetic-truth-1",
+      "source_id": "synthetic-truth",
+      "source_version": "1",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "invented-system",
+      "event_at": "2030-01-01T10:03:00.000000Z",
+      "kind": "outcome",
+      "license": "CC0 synthetic demo",
+      "published_at": null,
+      "quality": [],
+      "raw_sha256": "178e0a4d803d6453a14796b7da63f1d8c37fab839c00d2a7ac9feea46f218ce1",
+      "received_at": "2030-01-01T10:03:30.000000Z",
+      "snapshot_id": "synthetic-truth-2",
+      "source_id": "synthetic-truth",
+      "source_version": "1",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "invented-system",
+      "event_at": "2030-01-01T10:04:00.000000Z",
+      "kind": "outcome",
+      "license": "CC0 synthetic demo",
+      "published_at": null,
+      "quality": [],
+      "raw_sha256": "178e0a4d803d6453a14796b7da63f1d8c37fab839c00d2a7ac9feea46f218ce1",
+      "received_at": "2030-01-01T10:04:30.000000Z",
+      "snapshot_id": "synthetic-truth-3",
+      "source_id": "synthetic-truth",
+      "source_version": "1",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    }
+  ],
+  "predictions": [
+    {
+      "compute_ms": 0,
+      "cutoff_at": "2030-01-01T10:00:00.000000Z",
+      "entity": "invented-system",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+      "horizon_seconds": 60,
+      "input_snapshot_ids": [
+        "synthetic-input-1"
+      ],
+      "model_artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+      "model_code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+      "model_id": "persistence",
+      "model_version": "1",
+      "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+      "target_at": "2030-01-01T10:01:00.000000Z",
+      "value": 0,
+      "recorded_at": "2030-01-01T10:00:00.000000Z"
+    },
+    {
+      "compute_ms": 0,
+      "cutoff_at": "2030-01-01T10:00:00.000000Z",
+      "entity": "invented-system",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+      "horizon_seconds": 60,
+      "input_snapshot_ids": [
+        "synthetic-input-1"
+      ],
+      "model_artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+      "model_code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+      "model_id": "illustration",
+      "model_version": "1",
+      "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+      "target_at": "2030-01-01T10:01:00.000000Z",
+      "value": 0.5,
+      "recorded_at": "2030-01-01T10:00:00.000000Z"
+    },
+    {
+      "compute_ms": 0,
+      "cutoff_at": "2030-01-01T10:01:00.000000Z",
+      "entity": "invented-system",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+      "horizon_seconds": 60,
+      "input_snapshot_ids": [
+        "synthetic-input-1"
+      ],
+      "model_artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+      "model_code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+      "model_id": "persistence",
+      "model_version": "1",
+      "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+      "target_at": "2030-01-01T10:02:00.000000Z",
+      "value": 0,
+      "recorded_at": "2030-01-01T10:01:00.000000Z"
+    },
+    {
+      "compute_ms": 0,
+      "cutoff_at": "2030-01-01T10:01:00.000000Z",
+      "entity": "invented-system",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+      "horizon_seconds": 60,
+      "input_snapshot_ids": [
+        "synthetic-input-1"
+      ],
+      "model_artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+      "model_code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+      "model_id": "illustration",
+      "model_version": "1",
+      "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+      "target_at": "2030-01-01T10:02:00.000000Z",
+      "value": 0.5,
+      "recorded_at": "2030-01-01T10:01:00.000000Z"
+    },
+    {
+      "compute_ms": 0,
+      "cutoff_at": "2030-01-01T10:02:00.000000Z",
+      "entity": "invented-system",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+      "horizon_seconds": 60,
+      "input_snapshot_ids": [
+        "synthetic-input-1"
+      ],
+      "model_artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+      "model_code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+      "model_id": "persistence",
+      "model_version": "1",
+      "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+      "target_at": "2030-01-01T10:03:00.000000Z",
+      "value": 0,
+      "recorded_at": "2030-01-01T10:02:00.000000Z"
+    },
+    {
+      "compute_ms": 0,
+      "cutoff_at": "2030-01-01T10:02:00.000000Z",
+      "entity": "invented-system",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+      "horizon_seconds": 60,
+      "input_snapshot_ids": [
+        "synthetic-input-1"
+      ],
+      "model_artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+      "model_code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+      "model_id": "illustration",
+      "model_version": "1",
+      "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+      "target_at": "2030-01-01T10:03:00.000000Z",
+      "value": 0.5,
+      "recorded_at": "2030-01-01T10:02:00.000000Z"
+    },
+    {
+      "compute_ms": 0,
+      "cutoff_at": "2030-01-01T10:03:00.000000Z",
+      "entity": "invented-system",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+      "horizon_seconds": 60,
+      "input_snapshot_ids": [
+        "synthetic-input-1"
+      ],
+      "model_artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+      "model_code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+      "model_id": "persistence",
+      "model_version": "1",
+      "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+      "target_at": "2030-01-01T10:04:00.000000Z",
+      "value": 0,
+      "recorded_at": "2030-01-01T10:03:00.000000Z"
+    }
+  ],
+  "failures": [
+    {
+      "model_id": "illustration",
+      "reason": "synthetic worker failure",
+      "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+      "recorded_at": "2030-01-01T10:03:00.000000Z"
+    }
+  ],
+  "outcomes": [
+    {
+      "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+      "snapshot_id": "synthetic-truth-0",
+      "value": 1,
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+      "snapshot_id": "synthetic-truth-1",
+      "value": 1,
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+      "snapshot_id": "synthetic-truth-2",
+      "value": 1,
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+      "snapshot_id": "synthetic-truth-3",
+      "value": 1,
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    }
+  ],
+  "scores": [
+    {
+      "loss": 1.0,
+      "metric": "mse",
+      "model_id": "persistence",
+      "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "loss": 0.25,
+      "metric": "mse",
+      "model_id": "illustration",
+      "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "loss": 1.0,
+      "metric": "mse",
+      "model_id": "persistence",
+      "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "loss": 0.25,
+      "metric": "mse",
+      "model_id": "illustration",
+      "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "loss": 1.0,
+      "metric": "mse",
+      "model_id": "persistence",
+      "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "loss": 0.25,
+      "metric": "mse",
+      "model_id": "illustration",
+      "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    },
+    {
+      "loss": 1.0,
+      "metric": "mse",
+      "model_id": "persistence",
+      "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+      "recorded_at": "2030-01-01T10:06:00.000000Z"
+    }
+  ],
+  "checks": [],
+  "candidates": [
+    {
+      "baseline_model_id": "persistence",
+      "candidate_id": "illustration-v1",
+      "candidate_model_id": "illustration",
+      "description": "Synthetic fixed values exercise the gate; this is not model learning.",
+      "experiment_id": "synthetic-bookkeeping-v1",
+      "test_plan": {
+        "end_at": "2030-01-01T10:04:00Z",
+        "maximum_unpaired_fraction": 0.25,
+        "minimum_pairs": 3,
+        "minimum_relative_improvement": 0.1,
+        "start_at": "2030-01-01T10:00:00Z"
+      },
+      "state": "tested",
+      "proposed_at": "2030-01-01T09:59:00.000000Z",
+      "test_summary": {
+        "admission_checks": [],
+        "baseline_mean_loss": 1.0,
+        "candidate_mean_loss": 0.25,
+        "expected_pairs": 4,
+        "paired_scores_sha256": "0b0bcae48820ba854021a7486e9e664a63fe110f6e14e515b4d408667ee37184",
+        "passed": true,
+        "relative_improvement": 0.75,
+        "resolved_pairs": 3,
+        "unpaired_fraction": 0.25
+      },
+      "tested_at": "2030-01-01T10:06:00.000000Z"
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "event_id": "contract:synthetic-bookkeeping-v1",
+      "kind": "contract_frozen",
+      "payload": {
+        "allowed_source_ids": [
+          "synthetic-input"
+        ],
+        "domain": "synthetic",
+        "eligibility_rule": "Invented scalar observations only; no real system is represented.",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "gate_rule": "Demonstrate numeric gate bookkeeping only; no scientific benefit claim.",
+        "horizon_seconds": 60,
+        "metric": "mse",
+        "mode": "synthetic",
+        "models": [
+          {
+            "artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+            "code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+            "id": "persistence",
+            "role": "baseline",
+            "version": "1"
+          },
+          {
+            "artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+            "code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+            "id": "illustration",
+            "role": "candidate",
+            "version": "1"
+          }
+        ],
+        "outcome_delay_seconds": 30,
+        "outcome_source_id": "synthetic-truth",
+        "revision_rule": "first_eligible_observation",
+        "schedule": {
+          "cadence_seconds": 60,
+          "end_at": "2030-01-01T10:04:00Z",
+          "entities": [
+            "invented-system"
+          ],
+          "issue_grace_seconds": 5,
+          "start_at": "2030-01-01T10:00:00Z"
+        },
+        "target": "invented value one minute later",
+        "units": "synthetic units"
+      },
+      "recorded_at": "2030-01-01T09:59:00.000000Z",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "event_hash": "d08c36741cd2be220590fa05756a00247b0876bb6b42f4b0369942bc198314e5"
+    },
+    {
+      "seq": 2,
+      "event_id": "proposal:illustration-v1",
+      "kind": "candidate_proposed",
+      "payload": {
+        "baseline_model_id": "persistence",
+        "candidate_id": "illustration-v1",
+        "candidate_model_id": "illustration",
+        "description": "Synthetic fixed values exercise the gate; this is not model learning.",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "test_plan": {
+          "end_at": "2030-01-01T10:04:00Z",
+          "maximum_unpaired_fraction": 0.25,
+          "minimum_pairs": 3,
+          "minimum_relative_improvement": 0.1,
+          "start_at": "2030-01-01T10:00:00Z"
+        }
+      },
+      "recorded_at": "2030-01-01T09:59:00.000000Z",
+      "prev_hash": "d08c36741cd2be220590fa05756a00247b0876bb6b42f4b0369942bc198314e5",
+      "event_hash": "751da9dcddbb86f93eab1fba8afdedbd7183f43c9b33318c89af70e1dd651cc0"
+    },
+    {
+      "seq": 3,
+      "event_id": "snapshot:synthetic-input-1",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "invented-system",
+        "event_at": "2030-01-01T09:59:00Z",
+        "kind": "observation",
+        "license": "CC0 synthetic demo",
+        "published_at": null,
+        "quality": [],
+        "raw_sha256": "fa9eb1674867237ce1b926af61f1fbf2dfbde291773de6aeed4509e6ae1d01cd",
+        "received_at": "2030-01-01T09:59:00Z",
+        "snapshot_id": "synthetic-input-1",
+        "source_id": "synthetic-input",
+        "source_version": "1"
+      },
+      "recorded_at": "2030-01-01T09:59:00.000000Z",
+      "prev_hash": "751da9dcddbb86f93eab1fba8afdedbd7183f43c9b33318c89af70e1dd651cc0",
+      "event_hash": "2f787d2902042f26951ce88d48ad5b888ad67ca38d8ddba0d2ff2b38c80a6844"
+    },
+    {
+      "seq": 4,
+      "event_id": "prediction:bb58e9d016519219009619744f0ec21990570bccb921784ddf1e15fc84a09b3e",
+      "kind": "prediction_issued",
+      "payload": {
+        "compute_ms": 0,
+        "cutoff_at": "2030-01-01T10:00:00.000000Z",
+        "entity": "invented-system",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+        "horizon_seconds": 60,
+        "input_snapshot_ids": [
+          "synthetic-input-1"
+        ],
+        "model_artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+        "model_code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+        "model_id": "persistence",
+        "model_version": "1",
+        "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+        "target_at": "2030-01-01T10:01:00.000000Z",
+        "value": 0
+      },
+      "recorded_at": "2030-01-01T10:00:00.000000Z",
+      "prev_hash": "2f787d2902042f26951ce88d48ad5b888ad67ca38d8ddba0d2ff2b38c80a6844",
+      "event_hash": "a8905464ec17474b297ffde1b06d1685c89131a8e0e59a6221f76314a9191df2"
+    },
+    {
+      "seq": 5,
+      "event_id": "prediction:24d02beb3bd742a96edcf49fa479741d8de62cd9cd92faabd2a5945baa005f68",
+      "kind": "prediction_issued",
+      "payload": {
+        "compute_ms": 0,
+        "cutoff_at": "2030-01-01T10:00:00.000000Z",
+        "entity": "invented-system",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+        "horizon_seconds": 60,
+        "input_snapshot_ids": [
+          "synthetic-input-1"
+        ],
+        "model_artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+        "model_code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+        "model_id": "illustration",
+        "model_version": "1",
+        "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+        "target_at": "2030-01-01T10:01:00.000000Z",
+        "value": 0.5
+      },
+      "recorded_at": "2030-01-01T10:00:00.000000Z",
+      "prev_hash": "a8905464ec17474b297ffde1b06d1685c89131a8e0e59a6221f76314a9191df2",
+      "event_hash": "f90195746d73977ca39400d49601e7a8e4245be03ce63ecad21a3c265909efc1"
+    },
+    {
+      "seq": 6,
+      "event_id": "prediction:b949ea050516c46f2dd970fab569d60a74af3ac6c0dd105c50a662735acacfd3",
+      "kind": "prediction_issued",
+      "payload": {
+        "compute_ms": 0,
+        "cutoff_at": "2030-01-01T10:01:00.000000Z",
+        "entity": "invented-system",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+        "horizon_seconds": 60,
+        "input_snapshot_ids": [
+          "synthetic-input-1"
+        ],
+        "model_artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+        "model_code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+        "model_id": "persistence",
+        "model_version": "1",
+        "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+        "target_at": "2030-01-01T10:02:00.000000Z",
+        "value": 0
+      },
+      "recorded_at": "2030-01-01T10:01:00.000000Z",
+      "prev_hash": "f90195746d73977ca39400d49601e7a8e4245be03ce63ecad21a3c265909efc1",
+      "event_hash": "36b253306810802b58b14ab77a804ff40be7cff3bd3b7603aa0f197df67b659c"
+    },
+    {
+      "seq": 7,
+      "event_id": "prediction:6429d3024741410a0379ff6a310812e2fdb68794a0fbd2f5fdb617eb477a24cf",
+      "kind": "prediction_issued",
+      "payload": {
+        "compute_ms": 0,
+        "cutoff_at": "2030-01-01T10:01:00.000000Z",
+        "entity": "invented-system",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+        "horizon_seconds": 60,
+        "input_snapshot_ids": [
+          "synthetic-input-1"
+        ],
+        "model_artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+        "model_code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+        "model_id": "illustration",
+        "model_version": "1",
+        "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+        "target_at": "2030-01-01T10:02:00.000000Z",
+        "value": 0.5
+      },
+      "recorded_at": "2030-01-01T10:01:00.000000Z",
+      "prev_hash": "36b253306810802b58b14ab77a804ff40be7cff3bd3b7603aa0f197df67b659c",
+      "event_hash": "4edb6c6769b33758a69865b2c3b6c75b477afd90695c38c31052f5d8ef656c16"
+    },
+    {
+      "seq": 8,
+      "event_id": "prediction:379c825fd3f21e6dfaf45d832b3ca6b480052a5946d784bd99ed73ed16d35a40",
+      "kind": "prediction_issued",
+      "payload": {
+        "compute_ms": 0,
+        "cutoff_at": "2030-01-01T10:02:00.000000Z",
+        "entity": "invented-system",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+        "horizon_seconds": 60,
+        "input_snapshot_ids": [
+          "synthetic-input-1"
+        ],
+        "model_artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+        "model_code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+        "model_id": "persistence",
+        "model_version": "1",
+        "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+        "target_at": "2030-01-01T10:03:00.000000Z",
+        "value": 0
+      },
+      "recorded_at": "2030-01-01T10:02:00.000000Z",
+      "prev_hash": "4edb6c6769b33758a69865b2c3b6c75b477afd90695c38c31052f5d8ef656c16",
+      "event_hash": "c5a2f343eaf1367498c818e7e74ba1f7ffd14bfbaa8549c6c263a9d6488c4bfa"
+    },
+    {
+      "seq": 9,
+      "event_id": "prediction:4fdab6e15ea6ef11a0547e778e0249b541db7f2f2bea8e31573a07dc0bba363d",
+      "kind": "prediction_issued",
+      "payload": {
+        "compute_ms": 0,
+        "cutoff_at": "2030-01-01T10:02:00.000000Z",
+        "entity": "invented-system",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+        "horizon_seconds": 60,
+        "input_snapshot_ids": [
+          "synthetic-input-1"
+        ],
+        "model_artifact_sha256": "4e50fab858bf7e171a8c1ff555bf3609ac0504d11d097b3ab1c7605e21b4dc79",
+        "model_code_sha256": "4650ce5d0216e95e5296b1994b9bc2f4c79e4cdd9c2af787bc7d4812238c4853",
+        "model_id": "illustration",
+        "model_version": "1",
+        "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+        "target_at": "2030-01-01T10:03:00.000000Z",
+        "value": 0.5
+      },
+      "recorded_at": "2030-01-01T10:02:00.000000Z",
+      "prev_hash": "c5a2f343eaf1367498c818e7e74ba1f7ffd14bfbaa8549c6c263a9d6488c4bfa",
+      "event_hash": "fea063197a557e568ee1f75b701a36e42bad364f75bd92bab434ad9411f7d080"
+    },
+    {
+      "seq": 10,
+      "event_id": "prediction:89f0cb37503558c198be491992163affb20be9143fe448b399923066c404e661",
+      "kind": "prediction_issued",
+      "payload": {
+        "compute_ms": 0,
+        "cutoff_at": "2030-01-01T10:03:00.000000Z",
+        "entity": "invented-system",
+        "experiment_id": "synthetic-bookkeeping-v1",
+        "feature_sha256": "a0b7821a11db531982044ca5ca2e788e2d749d6b696cd3aa4172342f584f2ee1",
+        "horizon_seconds": 60,
+        "input_snapshot_ids": [
+          "synthetic-input-1"
+        ],
+        "model_artifact_sha256": "b66eca82dac6c3cd51bc30116d952c5e61f635ac8312cafcdfc3460a7f0d3bfb",
+        "model_code_sha256": "b51d147368e4c23a51e3580dc3b003af2080dea0a0299628edc8a727b9e86a95",
+        "model_id": "persistence",
+        "model_version": "1",
+        "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+        "target_at": "2030-01-01T10:04:00.000000Z",
+        "value": 0
+      },
+      "recorded_at": "2030-01-01T10:03:00.000000Z",
+      "prev_hash": "fea063197a557e568ee1f75b701a36e42bad364f75bd92bab434ad9411f7d080",
+      "event_hash": "a69d3ac0c197af4a740e449f99dc556eef6f13ad87a97a735f2418a989e5b0dd"
+    },
+    {
+      "seq": 11,
+      "event_id": "failure:b52014fcd324a0739bc714f77e08ebc29f5a42e590460d9f2057f3145b18d693",
+      "kind": "issue_failed",
+      "payload": {
+        "model_id": "illustration",
+        "reason": "synthetic worker failure",
+        "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766"
+      },
+      "recorded_at": "2030-01-01T10:03:00.000000Z",
+      "prev_hash": "a69d3ac0c197af4a740e449f99dc556eef6f13ad87a97a735f2418a989e5b0dd",
+      "event_hash": "e65ad2bba46ed093a3d878023481da0c6b2a9d9fc5ebbeade6e6a522cf704e4b"
+    },
+    {
+      "seq": 12,
+      "event_id": "snapshot:synthetic-truth-0",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "invented-system",
+        "event_at": "2030-01-01T10:01:00.000000Z",
+        "kind": "outcome",
+        "license": "CC0 synthetic demo",
+        "published_at": null,
+        "quality": [],
+        "raw_sha256": "178e0a4d803d6453a14796b7da63f1d8c37fab839c00d2a7ac9feea46f218ce1",
+        "received_at": "2030-01-01T10:01:30.000000Z",
+        "snapshot_id": "synthetic-truth-0",
+        "source_id": "synthetic-truth",
+        "source_version": "1"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "e65ad2bba46ed093a3d878023481da0c6b2a9d9fc5ebbeade6e6a522cf704e4b",
+      "event_hash": "396f190cb0268463ef8f4d6cfca5c1f6db7a2d1f4254c8f7651eb313982ea0af"
+    },
+    {
+      "seq": 13,
+      "event_id": "outcome:1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+      "kind": "outcome_resolved",
+      "payload": {
+        "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da",
+        "snapshot_id": "synthetic-truth-0",
+        "value": 1
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "396f190cb0268463ef8f4d6cfca5c1f6db7a2d1f4254c8f7651eb313982ea0af",
+      "event_hash": "8936435f553d908eed54c36aed374e577d8cbb0bd7a28485ac3daa885b737fab"
+    },
+    {
+      "seq": 14,
+      "event_id": "score:bb58e9d016519219009619744f0ec21990570bccb921784ddf1e15fc84a09b3e",
+      "kind": "score_computed",
+      "payload": {
+        "loss": 1.0,
+        "metric": "mse",
+        "model_id": "persistence",
+        "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "8936435f553d908eed54c36aed374e577d8cbb0bd7a28485ac3daa885b737fab",
+      "event_hash": "0de964d725ccc49723cc3806935248dba8f697dac4de64fff8f95423dd5e42b9"
+    },
+    {
+      "seq": 15,
+      "event_id": "score:24d02beb3bd742a96edcf49fa479741d8de62cd9cd92faabd2a5945baa005f68",
+      "kind": "score_computed",
+      "payload": {
+        "loss": 0.25,
+        "metric": "mse",
+        "model_id": "illustration",
+        "slot_id": "1e2882f926cec93d54d7a06c97a5072ce8722641cc9b5808ff39a79fad1d87da"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "0de964d725ccc49723cc3806935248dba8f697dac4de64fff8f95423dd5e42b9",
+      "event_hash": "ea64d1279459c409030f207a8fc2e0506c0cb38e261f6f1160926cd5f128b422"
+    },
+    {
+      "seq": 16,
+      "event_id": "snapshot:synthetic-truth-1",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "invented-system",
+        "event_at": "2030-01-01T10:02:00.000000Z",
+        "kind": "outcome",
+        "license": "CC0 synthetic demo",
+        "published_at": null,
+        "quality": [],
+        "raw_sha256": "178e0a4d803d6453a14796b7da63f1d8c37fab839c00d2a7ac9feea46f218ce1",
+        "received_at": "2030-01-01T10:02:30.000000Z",
+        "snapshot_id": "synthetic-truth-1",
+        "source_id": "synthetic-truth",
+        "source_version": "1"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "ea64d1279459c409030f207a8fc2e0506c0cb38e261f6f1160926cd5f128b422",
+      "event_hash": "51f1eb2721da567a7aebcbf5f101228a1d0e3d7fc6f4fb2d1b4d30ea9f4cc126"
+    },
+    {
+      "seq": 17,
+      "event_id": "outcome:a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+      "kind": "outcome_resolved",
+      "payload": {
+        "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497",
+        "snapshot_id": "synthetic-truth-1",
+        "value": 1
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "51f1eb2721da567a7aebcbf5f101228a1d0e3d7fc6f4fb2d1b4d30ea9f4cc126",
+      "event_hash": "f531b476ef50d726acefb8544ee3ad41ee200e17136c4b593959804dc27a2b0b"
+    },
+    {
+      "seq": 18,
+      "event_id": "score:b949ea050516c46f2dd970fab569d60a74af3ac6c0dd105c50a662735acacfd3",
+      "kind": "score_computed",
+      "payload": {
+        "loss": 1.0,
+        "metric": "mse",
+        "model_id": "persistence",
+        "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "f531b476ef50d726acefb8544ee3ad41ee200e17136c4b593959804dc27a2b0b",
+      "event_hash": "1e285288213f95bcb4c4bd307b819051447bf432e8a186f78295ae07f359bcf8"
+    },
+    {
+      "seq": 19,
+      "event_id": "score:6429d3024741410a0379ff6a310812e2fdb68794a0fbd2f5fdb617eb477a24cf",
+      "kind": "score_computed",
+      "payload": {
+        "loss": 0.25,
+        "metric": "mse",
+        "model_id": "illustration",
+        "slot_id": "a38c7f558c40cd567064bf1e10a720c39b242e6bc5c37fcc2bed3daffc247497"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "1e285288213f95bcb4c4bd307b819051447bf432e8a186f78295ae07f359bcf8",
+      "event_hash": "d5b8f2ffbc0acf3ab6f8bcfd71947e70bc008b5e8f4491fabafb23a0425f47ed"
+    },
+    {
+      "seq": 20,
+      "event_id": "snapshot:synthetic-truth-2",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "invented-system",
+        "event_at": "2030-01-01T10:03:00.000000Z",
+        "kind": "outcome",
+        "license": "CC0 synthetic demo",
+        "published_at": null,
+        "quality": [],
+        "raw_sha256": "178e0a4d803d6453a14796b7da63f1d8c37fab839c00d2a7ac9feea46f218ce1",
+        "received_at": "2030-01-01T10:03:30.000000Z",
+        "snapshot_id": "synthetic-truth-2",
+        "source_id": "synthetic-truth",
+        "source_version": "1"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "d5b8f2ffbc0acf3ab6f8bcfd71947e70bc008b5e8f4491fabafb23a0425f47ed",
+      "event_hash": "e2d9053b3f51a12a61558760e4a411704964822322fa92c9508f18e2fd997860"
+    },
+    {
+      "seq": 21,
+      "event_id": "outcome:9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+      "kind": "outcome_resolved",
+      "payload": {
+        "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0",
+        "snapshot_id": "synthetic-truth-2",
+        "value": 1
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "e2d9053b3f51a12a61558760e4a411704964822322fa92c9508f18e2fd997860",
+      "event_hash": "6c162ff8ddd0a2db8874cd57a4536f47b4cf36cc77ddeab5d4ad48f6c1032694"
+    },
+    {
+      "seq": 22,
+      "event_id": "score:379c825fd3f21e6dfaf45d832b3ca6b480052a5946d784bd99ed73ed16d35a40",
+      "kind": "score_computed",
+      "payload": {
+        "loss": 1.0,
+        "metric": "mse",
+        "model_id": "persistence",
+        "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "6c162ff8ddd0a2db8874cd57a4536f47b4cf36cc77ddeab5d4ad48f6c1032694",
+      "event_hash": "1ad3e9449fb06d6dc85a23a0d63274f78ced8618fe3140b24f2b5065dc978a05"
+    },
+    {
+      "seq": 23,
+      "event_id": "score:4fdab6e15ea6ef11a0547e778e0249b541db7f2f2bea8e31573a07dc0bba363d",
+      "kind": "score_computed",
+      "payload": {
+        "loss": 0.25,
+        "metric": "mse",
+        "model_id": "illustration",
+        "slot_id": "9e267594a4ef9975ff78628bb5238e5f54a21df4e45e93293e83e83f008009b0"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "1ad3e9449fb06d6dc85a23a0d63274f78ced8618fe3140b24f2b5065dc978a05",
+      "event_hash": "fa00bc1ba00dc9525ced16229799c771fbb7c246b5c50bdfb3547e9b9f462292"
+    },
+    {
+      "seq": 24,
+      "event_id": "snapshot:synthetic-truth-3",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "invented-system",
+        "event_at": "2030-01-01T10:04:00.000000Z",
+        "kind": "outcome",
+        "license": "CC0 synthetic demo",
+        "published_at": null,
+        "quality": [],
+        "raw_sha256": "178e0a4d803d6453a14796b7da63f1d8c37fab839c00d2a7ac9feea46f218ce1",
+        "received_at": "2030-01-01T10:04:30.000000Z",
+        "snapshot_id": "synthetic-truth-3",
+        "source_id": "synthetic-truth",
+        "source_version": "1"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "fa00bc1ba00dc9525ced16229799c771fbb7c246b5c50bdfb3547e9b9f462292",
+      "event_hash": "232d599d085459da358980525bd859b8db6d0f37b8868d88005bd64bf81a978a"
+    },
+    {
+      "seq": 25,
+      "event_id": "outcome:2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+      "kind": "outcome_resolved",
+      "payload": {
+        "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766",
+        "snapshot_id": "synthetic-truth-3",
+        "value": 1
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "232d599d085459da358980525bd859b8db6d0f37b8868d88005bd64bf81a978a",
+      "event_hash": "f37dd86a6bf55e635a0b79212ed3dbc9e3e9a519d8e58ee64433221833d10006"
+    },
+    {
+      "seq": 26,
+      "event_id": "score:89f0cb37503558c198be491992163affb20be9143fe448b399923066c404e661",
+      "kind": "score_computed",
+      "payload": {
+        "loss": 1.0,
+        "metric": "mse",
+        "model_id": "persistence",
+        "slot_id": "2d6ac9d4b7327f6f1a27f4c35e58872c451f4407eee0efd84a21c9defb674766"
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "f37dd86a6bf55e635a0b79212ed3dbc9e3e9a519d8e58ee64433221833d10006",
+      "event_hash": "2a79a73b4bf22fc940c1c1efda7b25f1bea25f52bb93104b1efce7ebabf5b404"
+    },
+    {
+      "seq": 27,
+      "event_id": "test:illustration-v1",
+      "kind": "candidate_tested",
+      "payload": {
+        "candidate_id": "illustration-v1",
+        "summary": {
+          "admission_checks": [],
+          "baseline_mean_loss": 1.0,
+          "candidate_mean_loss": 0.25,
+          "expected_pairs": 4,
+          "paired_scores_sha256": "0b0bcae48820ba854021a7486e9e664a63fe110f6e14e515b4d408667ee37184",
+          "passed": true,
+          "relative_improvement": 0.75,
+          "resolved_pairs": 3,
+          "unpaired_fraction": 0.25
+        }
+      },
+      "recorded_at": "2030-01-01T10:06:00.000000Z",
+      "prev_hash": "2a79a73b4bf22fc940c1c1efda7b25f1bea25f52bb93104b1efce7ebabf5b404",
+      "event_hash": "5663444e752b7c0a5215cb52f54af922d9ec800aad7ab7e147e69c454e25dc91"
+    }
+  ]
+}
