@@ -13,11 +13,11 @@ const github = 'https://github.com/thantiklermcirony';
 const nextMissions = [
   {
     name: '01 / Virtual Cell',
-    status: 'FIRST FLIGHT COMPLETE / NEXT TEST OPEN',
+    status: 'TWO FLIGHTS COMPLETE / RESULTS OPEN',
     description:
-      'Give a transferred gene response a destination: test whether baseline cell measurements explain when transfer succeeds, using a new independent validation context.',
-    href: '/cell',
-    gate: 'CPU prototype · basal-data access and fresh validation required',
+      'Inspect two tests of transferred gene responses. In 50 new cell lines, context-informed retention improved error by only 0.13% and missed the frozen success gate.',
+    href: '/cell#flight02',
+    gate: 'CPU reproduction · independent measurements needed next',
   },
   {
     name: '02 / Ray Serve',
@@ -170,8 +170,7 @@ export default function Projects() {
         aria-labelledby="cell-title"
       >
         <div className="project-status">
-          <span className="status-light" /> REAL DATA · REPRODUCIBLE FIRST
-          FLIGHT
+          <span className="status-light" /> REAL DATA · TWO REPRODUCIBLE FLIGHTS
         </div>
         <div className="graphiti-heading">
           <div>
@@ -195,6 +194,9 @@ export default function Projects() {
           <a href="/research/Virtual_Cell_Flight01.zip">
             Download code and evidence <ArrowUpRight size={18} />
           </a>
+          <a href="/cell#flight02">
+            New: inspect the 50-cell-line test <ArrowUpRight size={18} />
+          </a>
         </div>
         <div className="project-evidence">
           <CheckCircle2 size={22} />
@@ -203,7 +205,9 @@ export default function Projects() {
               4 held-out contexts · 2,052 target genes · 6,642 measured genes.
             </strong>{' '}
             The first adjustment failed its success threshold. Every baseline,
-            failed comparison and missing-data rule stays visible.
+            failed comparison and missing-data rule stays visible. Flight 02
+            tested 50 cell lines and 92 drugs; its 0.13% added ranking benefit
+            also fell below the predeclared 10% threshold.
           </p>
         </div>
         <p className="project-caveat">
