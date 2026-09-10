@@ -1,0 +1,182 @@
+{
+  "url": "https://api.figshare.com/v2/articles/25125587",
+  "retrieved_at_utc": "2026-09-10T07:02:10.092175+00:00",
+  "status": 200,
+  "data": {
+    "files": [
+      {
+        "id": 44351708,
+        "name": "data.zip",
+        "size": 102305,
+        "is_link_only": false,
+        "download_url": "https://ndownloader.figshare.com/files/44351708",
+        "supplied_md5": "df606cae4bf3bc65cb64f85cda2f6c96",
+        "computed_md5": "df606cae4bf3bc65cb64f85cda2f6c96",
+        "mimetype": "application/zip"
+      },
+      {
+        "id": 44351711,
+        "name": "protocols.zip",
+        "size": 614893,
+        "is_link_only": false,
+        "download_url": "https://ndownloader.figshare.com/files/44351711",
+        "supplied_md5": "1d059ab5ac8e265ff2594240107b2c8f",
+        "computed_md5": "1d059ab5ac8e265ff2594240107b2c8f",
+        "mimetype": "application/zip"
+      },
+      {
+        "id": 44351714,
+        "name": "scripts.zip",
+        "size": 41680,
+        "is_link_only": false,
+        "download_url": "https://ndownloader.figshare.com/files/44351714",
+        "supplied_md5": "b424fc781b51bdd86319d39f298b2a63",
+        "computed_md5": "b424fc781b51bdd86319d39f298b2a63",
+        "mimetype": "application/zip"
+      },
+      {
+        "id": 44351717,
+        "name": "results.zip",
+        "size": 57251850,
+        "is_link_only": false,
+        "download_url": "https://ndownloader.figshare.com/files/44351717",
+        "supplied_md5": "d6a9d70a954877317fbcab4b1bdbbb89",
+        "computed_md5": "d6a9d70a954877317fbcab4b1bdbbb89",
+        "mimetype": "application/zip"
+      }
+    ],
+    "folder_structure": {},
+    "authors": [
+      {
+        "id": 17426994,
+        "full_name": "Alison Luciano",
+        "first_name": "Alison",
+        "last_name": "Luciano",
+        "is_active": true,
+        "url_name": "Alison_Luciano",
+        "orcid_id": ""
+      },
+      {
+        "id": 414290,
+        "full_name": "Laura Robinson",
+        "first_name": "Laura",
+        "last_name": "Robinson",
+        "is_active": false,
+        "url_name": "_",
+        "orcid_id": ""
+      },
+      {
+        "id": 4237114,
+        "full_name": "Gaven Garland",
+        "first_name": "Gaven",
+        "last_name": "Garland",
+        "is_active": false,
+        "url_name": "_",
+        "orcid_id": ""
+      },
+      {
+        "id": 8975060,
+        "full_name": "Bonnie Lyons",
+        "first_name": "Bonnie",
+        "last_name": "Lyons",
+        "is_active": false,
+        "url_name": "_",
+        "orcid_id": ""
+      },
+      {
+        "id": 57213,
+        "full_name": "Ron Korstanje",
+        "first_name": "Ron",
+        "last_name": "Korstanje",
+        "is_active": false,
+        "url_name": "Ron_Korstanje",
+        "orcid_id": ""
+      },
+      {
+        "id": 319695,
+        "full_name": "Andrea Di Francesco",
+        "first_name": "Andrea",
+        "last_name": "Di Francesco",
+        "is_active": false,
+        "url_name": "_",
+        "orcid_id": ""
+      },
+      {
+        "id": 173030,
+        "full_name": "Gary A. Churchill",
+        "first_name": "Gary",
+        "last_name": "A. Churchill",
+        "is_active": false,
+        "url_name": "_",
+        "orcid_id": ""
+      }
+    ],
+    "custom_fields": [],
+    "figshare_url": "https://figshare.com/articles/dataset/Supporting_Information_for_Fragility_Longitudinal_Study/25125587",
+    "download_disabled": false,
+    "description": "<p dir=\"ltr\">In this study, we report longitudinal frailty and lifespan data on two genetically distinct mouse cohorts to evaluate noninvasive strategies to predict life expectancy in mice.</p>",
+    "funding": null,
+    "funding_list": [],
+    "version": 1,
+    "status": "public",
+    "size": 58010728,
+    "created_date": "2024-02-06T15:54:42Z",
+    "modified_date": "2024-02-06T15:54:42Z",
+    "is_public": true,
+    "is_confidential": false,
+    "is_metadata_record": false,
+    "confidential_reason": "",
+    "metadata_reason": "",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tags": [
+      "diversity outbred"
+    ],
+    "keywords": [
+      "diversity outbred"
+    ],
+    "categories": [
+      {
+        "id": 24208,
+        "title": "Bioinformatics and computational biology not elsewhere classified",
+        "parent_id": 24181,
+        "path": "/24130/24181/24208",
+        "source_id": "310299",
+        "taxonomy_id": 100
+      }
+    ],
+    "references": [],
+    "has_linked_file": false,
+    "citation": "Luciano, Alison; Robinson, Laura; Garland, Gaven; Lyons, Bonnie; Korstanje, Ron; Di Francesco, Andrea; et al. (2024). Supporting Information for Fragility Longitudinal Study. figshare. Dataset. https://doi.org/10.6084/m9.figshare.25125587.v1",
+    "related_materials": [],
+    "is_embargoed": false,
+    "embargo_date": null,
+    "embargo_type": null,
+    "embargo_title": "",
+    "embargo_reason": "",
+    "embargo_options": [],
+    "id": 25125587,
+    "title": "Supporting Information for Fragility Longitudinal Study",
+    "doi": "10.6084/m9.figshare.25125587.v1",
+    "handle": "",
+    "url": "https://api.figshare.com/v2/articles/25125587",
+    "published_date": "2024-02-06T15:54:42Z",
+    "thumb": "",
+    "defined_type": 3,
+    "defined_type_name": "dataset",
+    "group_id": null,
+    "url_private_api": "https://api.figshare.com/v2/account/articles/25125587",
+    "url_public_api": "https://api.figshare.com/v2/articles/25125587",
+    "url_private_html": "https://figshare.com/account/articles/25125587",
+    "url_public_html": "https://figshare.com/articles/dataset/Supporting_Information_for_Fragility_Longitudinal_Study/25125587",
+    "timeline": {
+      "posted": "2024-02-06T15:54:42",
+      "firstOnline": "2024-02-06"
+    },
+    "resource_title": null,
+    "resource_doi": null
+  }
+}
