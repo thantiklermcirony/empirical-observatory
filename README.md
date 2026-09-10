@@ -1,5 +1,11 @@
 # The Empirical Observatory
 
+**[RESEARCH ATLAS: EXPLORE THE WHOLE PROGRAMME](https://empirical-observatory.madmanmuzza.chatgpt.site/atlas)**
+
+Rotate the programme in perspective, inspect the evidence attached to each research line, and run a simulation that chooses its next test from the latest observation. [Architecture and current capabilities](public/research/observatory-evolution/Architecture.md) · [Protocol, independent checks and reproduction](public/research/observatory-evolution/README.md).
+
+The adaptive test loop achieves 81% exact expected accuracy versus 70% for the strongest fixed schedule in its constructed four-state model, at equal cost. This is a working demonstration of established Bayesian experimental design. Its policy is fixed: cross-project self-improvement remains to be tested. The Atlas and shared conclusions change through reviewed releases; local notebooks preserve replayable simulation records.
+
 **[VIRTUAL CELL: PREDICT → REVEAL → CHALLENGE](https://empirical-observatory.madmanmuzza.chatgpt.site/cell)**
 
 **[CURRENT PROJECTS →](https://empirical-observatory.madmanmuzza.chatgpt.site/projects)** · **[ENTER THE LIVE STATION →](https://empirical-observatory.madmanmuzza.chatgpt.site)**
@@ -31,6 +37,8 @@ Can a gene-response prediction survive a change of cell context? [Open the explo
 The first disagreement adjustment failed its frozen success threshold. Its aggregate error was about 0.11% below global shrinkage, and it lost to the strongest conventional method in every context. Keeping that failure visible is part of the experiment. [Code, all results and CPU reproduction](research/virtual-cell/README.md) · [Report](public/research/Cell_Flight01_Report.md) · [Download](public/research/Virtual_Cell_Flight01.zip).
 
 The next test needs destination-context baseline measurements and fresh independent validation. Contributions that reproduce a result, expose an assumption, add a licensed data adapter or beat the baselines under the same information budget are welcome.
+
+We have audited a separate Tahoe chemical-assay control table spanning 50 cell lines, 14 plates and 62,710 gene identifiers. [Data route](public/research/observatory-evolution/Biology_Data_Route.md) · [Compact controls, source audit and draft protocol](public/research/Virtual_Cell_Next_Inputs.zip). Input selection is frozen; response values have not been inspected. Candidate specification and measurement-scale checks must precede the next experiment. This is data readiness, not a new biological performance result.
 
 ## Run
 

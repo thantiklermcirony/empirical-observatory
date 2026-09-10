@@ -1,0 +1,13 @@
+{
+  "createdAt": "2026-09-10T05:35:37.936Z",
+  "hashes": {
+    "discovery.ts": "9c658b7f976ea314891e43a09bb29cd2616e493a613af5c7edf332cc881f20d4",
+    "protocol.json": "b317eb7e93e269a0a55629b74b52d626d5ae2d151b8505135fd17f976ca8afb0",
+    "benchmark.ts": "bce035e65999b0cf3cb069b71eaed486e6688a08e64f1a75dba162b306c5b37b"
+  },
+  "seedRange": [
+    10000,
+    19999
+  ],
+  "note": "Synthetic evaluation, declared before running this range. The model itself was constructed for a known adaptation contrast."
+}

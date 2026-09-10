@@ -1,0 +1,162 @@
+{
+  "scope": "Exact calculations in an authored synthetic model, not empirical discovery",
+  "reference_sha256": "c006e9b0e0f82b6a4437a35de472afec2fb9d4fed8f79a47c28f3c973fe57593",
+  "initial_information_gain_per_cost": {
+    "gate": 0.5310044064107187,
+    "local_a": 0.26550220320535933,
+    "local_b": 0.26550220320535933,
+    "full": 0.32161017527648017
+  },
+  "after_gate_zero": [
+    0.45,
+    0.45,
+    0.04999999999999999,
+    0.04999999999999999
+  ],
+  "after_gate_one": [
+    0.05,
+    0.05,
+    0.45,
+    0.45
+  ],
+  "all_fixed_schedules": {
+    "gate,gate": {
+      "accuracy": 0.45,
+      "entropy_bits": 1.2579141414502828,
+      "cost": 2.0
+    },
+    "gate,local_a": {
+      "accuracy": 0.63,
+      "entropy_bits": 1.203493390383922,
+      "cost": 2.0
+    },
+    "gate,local_b": {
+      "accuracy": 0.63,
+      "entropy_bits": 1.203493390383922,
+      "cost": 2.0
+    },
+    "local_a,gate": {
+      "accuracy": 0.63,
+      "entropy_bits": 1.203493390383922,
+      "cost": 2.0
+    },
+    "local_a,local_a": {
+      "accuracy": 0.53,
+      "entropy_bits": 1.544176888616251,
+      "cost": 2.0
+    },
+    "local_a,local_b": {
+      "accuracy": 0.45,
+      "entropy_bits": 1.4689955935892813,
+      "cost": 2.0
+    },
+    "local_b,gate": {
+      "accuracy": 0.63,
+      "entropy_bits": 1.203493390383922,
+      "cost": 2.0
+    },
+    "local_b,local_a": {
+      "accuracy": 0.45,
+      "entropy_bits": 1.4689955935892813,
+      "cost": 2.0
+    },
+    "local_b,local_b": {
+      "accuracy": 0.53,
+      "entropy_bits": 1.544176888616251,
+      "cost": 2.0
+    },
+    "full": {
+      "accuracy": 0.7,
+      "entropy_bits": 1.3567796494470397,
+      "cost": 2.0
+    }
+  },
+  "best_fixed_schedule": "full",
+  "exact_policy_metrics": {
+    "adaptive_eig": {
+      "accuracy": 0.81,
+      "entropy_bits": 0.9910916278196342,
+      "cost": 2.0
+    },
+    "best_fixed": {
+      "accuracy": 0.7,
+      "entropy_bits": 1.3567796494470397,
+      "cost": 2.0
+    },
+    "random_feasible": {
+      "accuracy": 0.5858333333333333,
+      "entropy_bits": 1.34738096797818,
+      "cost": 2.0
+    },
+    "prior_only_planner": {
+      "accuracy": 0.45,
+      "entropy_bits": 1.2579141414502828,
+      "cost": 2.0
+    },
+    "optimal_decision_oracle": {
+      "accuracy": 0.81,
+      "entropy_bits": 0.9910916278196342,
+      "cost": 2.0
+    }
+  },
+  "edge_cases_passed": true,
+  "separate_one_step_eig_decision_counterexample": {
+    "isolate_A0": {
+      "eig_bits": 0.8112781244591329,
+      "accuracy": 0.5,
+      "entropy_bits": 1.188721875540867,
+      "cost": 1.0
+    },
+    "noisy_full": {
+      "eig_bits": 0.3950644052568688,
+      "accuracy": 0.6,
+      "entropy_bits": 1.6049355947431312,
+      "cost": 1.0
+    }
+  },
+  "keyed_uniform_test_vectors": {
+    "adaptive-v1|0|hidden": 0.9054011827101931,
+    "adaptive-v1|1|measurement|gate|0": 0.44535629136953503,
+    "adaptive-v1|127|policy|random_feasible|1": 0.27918052359018475
+  },
+  "held_out_seeds_executed": true,
+  "evaluation": {
+    "seed_range_inclusive": [
+      10000,
+      19999
+    ],
+    "metrics": {
+      "adaptive_eig": {
+        "correct": 0.8169,
+        "log_loss_bits": 0.9653183595395296,
+        "cost": 2.0
+      },
+      "best_fixed": {
+        "correct": 0.6951,
+        "log_loss_bits": 1.3705356885651216,
+        "cost": 2.0
+      },
+      "random_feasible": {
+        "correct": 0.5776,
+        "log_loss_bits": 1.3700242520365185,
+        "cost": 2.0
+      },
+      "prior_only_planner": {
+        "correct": 0.4506,
+        "log_loss_bits": 1.260441064054267,
+        "cost": 2.0
+      },
+      "optimal_decision_oracle": {
+        "correct": 0.8169,
+        "log_loss_bits": 0.9653183595395296,
+        "cost": 2.0
+      }
+    },
+    "paired_accuracy_advantage": 0.1218,
+    "approximate_95pct_paired_interval": [
+      0.11006615261224811,
+      0.1335338473877519
+    ],
+    "decision_advantage_gate": true
+  }
+}

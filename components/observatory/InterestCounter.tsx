@@ -32,11 +32,11 @@ export default function InterestCounter() {
   useEffect(() => {
     if (
       disabled() ||
-      !['/', '/projects', '/privacy', '/cell'].includes(pathname)
+      !['/', '/projects', '/privacy', '/cell', '/atlas'].includes(pathname)
     )
       return;
     const page: InterestEvent['page'] =
-      pathname === '/projects' || pathname === '/cell'
+      pathname === '/projects' || pathname === '/cell' || pathname === '/atlas'
         ? 'projects'
         : pathname === '/privacy'
           ? 'privacy'

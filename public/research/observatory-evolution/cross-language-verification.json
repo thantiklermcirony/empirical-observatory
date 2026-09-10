@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "tolerance": 1e-10,
+  "absolute_differences": {
+    "adaptive_eig": {
+      "correct": 0.0,
+      "log_loss_bits": 1.9062529332813938e-13,
+      "cost": 0.0
+    },
+    "best_fixed": {
+      "correct": 0.0,
+      "log_loss_bits": 2.6867397195928788e-14,
+      "cost": 0.0
+    },
+    "random_feasible": {
+      "correct": 0.0,
+      "log_loss_bits": 5.728750807065808e-14,
+      "cost": 0.0
+    },
+    "prior_only_planner": {
+      "correct": 0.0,
+      "log_loss_bits": 1.7408297026122455e-13,
+      "cost": 0.0
+    }
+  },
+  "paired_advantage_and_interval_identical": true,
+  "frozen_engine_unchanged": true,
+  "scope": "Two independently authored implementations of the same constructed finite model; not independent empirical validation of a scientific framework."
+}

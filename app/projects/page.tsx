@@ -111,6 +111,9 @@ export default function Projects() {
           project.
         </p>
         <div className="project-links">
+          <Link href="/atlas">
+            Explore the Research Atlas <ArrowUpRight size={18} />
+          </Link>
           <Link href="/cell">
             Enter Virtual Cell <ArrowUpRight size={18} />
           </Link>
@@ -118,6 +121,48 @@ export default function Projects() {
             Read the programme <ArrowUpRight size={18} />
           </Link>
         </div>
+      </section>
+      <section
+        className="graphiti-feature"
+        id="atlas"
+        aria-labelledby="atlas-title"
+      >
+        <div className="project-status">
+          <span className="status-light" /> INTERACTIVE PROGRAMME / ADAPTIVE
+          EXPLORATION
+        </div>
+        <div className="graphiti-heading">
+          <div>
+            <span className="eyebrow">RESEARCH ATLAS / 01</span>
+            <h2 id="atlas-title">
+              One question.
+              <br />
+              Many frontiers.
+            </h2>
+          </div>
+          <p>
+            Rotate the programme in perspective. Select a research line to
+            inspect its evidence, limits and next test. Run an exploration that
+            changes its next question after each observation.
+          </p>
+        </div>
+        <div className="project-links">
+          <Link href="/atlas">
+            Enter the Atlas <ArrowUpRight size={18} />
+          </Link>
+          <Link href="/atlas#discovery">
+            Run adaptive exploration <ArrowUpRight size={18} />
+          </Link>
+          <Link href="/research/observatory-evolution/README.md">
+            Inspect the methods <ArrowUpRight size={18} />
+          </Link>
+        </div>
+        <p className="project-caveat">
+          The working loop adapts beliefs and test choice in a declared
+          simulation. Learning a better policy across scientific projects is a
+          future experiment. The map and shared conclusions change through
+          reviewed releases.
+        </p>
       </section>
       <section
         className="graphiti-feature pertpy-feature"
