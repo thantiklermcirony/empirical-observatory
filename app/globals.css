@@ -4,6 +4,7 @@
 @import './laboratories.css';
 @import './cell.css';
 @import './atlas.css';
+@import './recovery.css';
 @custom-variant dark (&:is(.dark *));
 @theme inline {
   --color-background: var(--background);
