@@ -1,8 +1,8 @@
 'use client';
+/* oxlint-disable next/no-html-link-for-pages -- Native navigation avoids the reproduced vinext production Link runtime failure. */
 /* oxlint-disable react/react-compiler -- Compiler is not enabled; its analysis crashes on the plotting expression. */
 
 import { useState } from 'react';
-import Link from 'next/link';
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -89,18 +89,18 @@ export default function CellExplorer() {
   return (
     <main className="cell-page">
       <header className="cell-nav">
-        <Link href="/" className="cell-brand">
+        <a href="/" className="cell-brand">
           <Orbit size={28} />
           <span>
             EMPIRICAL
             <br />
             <strong>OBSERVATORY</strong>
           </span>
-        </Link>
-        <Link href="/atlas">Research Atlas</Link>
-        <Link href="/projects">
+        </a>
+        <a href="/atlas">Research Atlas</a>
+        <a href="/projects">
           <ArrowLeft size={15} /> Current projects
-        </Link>
+        </a>
       </header>
       <section className="cell-hero">
         <div>
@@ -421,9 +421,9 @@ export default function CellExplorer() {
           <a href="/research/Virtual_Cell_Flight01.zip" download>
             Download the reproduction package <ArrowUpRight size={17} />
           </a>
-          <Link href="/research/Cell_Flight01_Report.md">
+          <a href="/research/Cell_Flight01_Report.md">
             Read the first-flight report <ArrowUpRight size={17} />
-          </Link>
+          </a>
           <a href="https://doi.org/10.6084/m9.figshare.29498366">
             Original author data / CC BY 4.0 <ArrowUpRight size={17} />
           </a>
@@ -433,9 +433,9 @@ export default function CellExplorer() {
         <span>
           THE EMPIRICAL ARCHITECTURE / OPEN EXPERIMENTS, INSPECTABLE CLAIMS
         </span>
-        <Link href="/projects">
+        <a href="/projects">
           Explore the programme <ArrowUpRight size={14} />
-        </Link>
+        </a>
       </footer>
     </main>
   );

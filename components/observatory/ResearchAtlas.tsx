@@ -1,6 +1,6 @@
 'use client';
+/* oxlint-disable next/no-html-link-for-pages -- Native navigation avoids the reproduced vinext production Link runtime failure. */
 import { useRef, useState } from 'react';
-import Link from 'next/link';
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -22,6 +22,7 @@ export default function ResearchAtlas() {
   const [selected, setSelected] = useState('centre');
   const [camera, setCamera] = useState({ yaw: 0.22, pitch: 0.24, zoom: 1 });
   const [filter, setFilter] = useState('all');
+  const dossier = useRef<HTMLElement | null>(null);
   const drag = useRef<{
     x: number;
     y: number;
@@ -44,26 +45,31 @@ export default function ResearchAtlas() {
   );
   const choose = (id: string) => {
     setSelected(id);
+    if (window.matchMedia('(max-width: 1150px)').matches) {
+      requestAnimationFrame(() =>
+        dossier.current?.scrollIntoView({ block: 'start' }),
+      );
+    }
   };
   return (
     <main className="atlas-page">
       <header className="atlas-header">
-        <Link className="atlas-brand" href="/">
+        <a className="atlas-brand" href="/">
           <Orbit size={26} />
           <span>
             EMPIRICAL OBSERVATORY<strong>RESEARCH ATLAS / 01</strong>
           </span>
-        </Link>
+        </a>
         <nav>
-          <Link href="#discovery">
+          <a href="#discovery">
             Run exploration <ArrowUpRight size={15} />
-          </Link>
-          <Link href="/cell">
+          </a>
+          <a href="/cell">
             Virtual Cell <ArrowUpRight size={15} />
-          </Link>
-          <Link href="/projects">
+          </a>
+          <a href="/projects">
             <ArrowLeft size={15} /> Current projects
-          </Link>
+          </a>
         </nav>
       </header>
       <div className="atlas-intro">
@@ -80,7 +86,7 @@ export default function ResearchAtlas() {
         className="atlas-workspace"
         aria-label="Interactive programme atlas"
       >
-        <aside className="atlas-index">
+        <aside className="atlas-index" id="atlas-index">
           <label htmlFor="atlas-filter">Research layers</label>
           <select
             id="atlas-filter"
@@ -296,7 +302,7 @@ export default function ResearchAtlas() {
             distance, colour and glow do not measure truth or physical geometry.
           </p>
         </div>
-        <aside className="atlas-dossier" aria-live="polite">
+        <aside className="atlas-dossier" aria-live="polite" ref={dossier}>
           <span className="atlas-kicker">
             {node.family === 'centre'
               ? 'THE ORGANISING QUESTION'
@@ -305,10 +311,13 @@ export default function ResearchAtlas() {
           <h2>{node.title}</h2>
           <p className="atlas-question">{node.question}</p>
           <Dossier node={node} />
-          <Link href={node.source} className="atlas-source">
+          <a href={node.source} className="atlas-source">
             {node.sourceLabel}
             <ArrowUpRight size={17} />
-          </Link>
+          </a>
+          <a href="#atlas-index" className="atlas-return">
+            Choose another research line ↑
+          </a>
         </aside>
       </section>
       <section className="atlas-relations">
@@ -355,9 +364,9 @@ export default function ResearchAtlas() {
             releases. It does not autonomously rewrite itself, certify a theorem
             or promote a visitor’s conclusion into shared knowledge.
           </p>
-          <Link href="/cell">
+          <a href="/cell">
             Inspect the latest completed experiment <ArrowUpRight size={16} />
-          </Link>
+          </a>
         </div>
       </section>
     </main>
