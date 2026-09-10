@@ -1,4 +1,4 @@
-import Link from 'next/link';
+/* oxlint-disable next/no-html-link-for-pages -- Native navigation avoids the reproduced vinext production Link runtime failure. */
 import UsagePreference from '@/components/observatory/UsagePreference';
 
 export default function Privacy() {
@@ -11,7 +11,7 @@ export default function Privacy() {
         lineHeight: 1.7,
       }}
     >
-      <Link href="/">← Back to the Observatory</Link>
+      <a href="/">← Back to the Observatory</a>
       <h1>Records and usage counts</h1>
       <p>
         Your experiment records stay in your browser. The Observatory does not

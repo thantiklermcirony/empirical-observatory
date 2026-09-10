@@ -1,4 +1,5 @@
 'use client';
+/* oxlint-disable next/no-html-link-for-pages -- Native navigation avoids the reproduced vinext production Link runtime failure. */
 /* oxlint-disable react/react-compiler -- Device-local persistence and simulation effects are imperative; React Compiler is not enabled. */
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -9,7 +10,6 @@ import {
   RotateCcw,
   Save,
 } from 'lucide-react';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import {
   actions,
@@ -406,9 +406,9 @@ export default function DiscoveryLoop() {
             reaches 70%. Both spend exactly two units. This demonstrates a
             working adaptive loop under stated assumptions.
           </p>
-          <Link href="/research/observatory-evolution/README.md">
+          <a href="/research/observatory-evolution/README.md">
             Inspect protocol, baselines and checks <ArrowUpRight size={15} />
-          </Link>
+          </a>
         </div>
         <table>
           <caption>Exact expected decision accuracy</caption>

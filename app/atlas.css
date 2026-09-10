@@ -482,6 +482,7 @@
   box-shadow: 0 15px 70px #0003;
 }
 .atlas-index {
+  scroll-margin-top: 20px;
   padding: 20px 14px;
   border-right: 1px solid #2c4b5d;
 }
@@ -612,8 +613,20 @@
   border-top: 1px solid #213a49;
 }
 .atlas-dossier {
+  scroll-margin-top: 20px;
   border-left: 1px solid #2c4b5d;
   padding: 22px;
+}
+.atlas-return {
+  display: none;
+}
+@media (max-width: 1150px) {
+  .atlas-return {
+    display: block;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #b2cfdb;
+  }
 }
 .atlas-dossier h2 {
   font-size: 24px;

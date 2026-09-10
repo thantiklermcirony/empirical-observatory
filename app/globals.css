@@ -510,6 +510,9 @@ svg {
   pointer-events: none;
   max-width: 390px;
 }
+.viewport-title a {
+  pointer-events: auto;
+}
 .viewport-title h1 {
   margin: 12px 0 16px;
 }

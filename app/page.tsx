@@ -1,7 +1,7 @@
 'use client';
+/* oxlint-disable next/no-html-link-for-pages -- Native navigation avoids the reproduced vinext production Link runtime failure. */
 /* oxlint-disable react/react-compiler -- These imperative engine/browser effects synchronize external state; this app does not enable React Compiler. */
 import { useCallback, useEffect, useState } from 'react';
-import Link from 'next/link';
 import {
   Activity,
   ArrowLeft,
@@ -152,9 +152,9 @@ export default function Home() {
           <span className="muted">/ FIRST CONTACT</span>
         </div>
         <div className="header-actions">
-          <Link className="projects-link" href="/projects">
+          <a className="projects-link" href="/projects">
             Current projects <ArrowUpRight size={18} />
-          </Link>
+          </a>
           <Button
             variant="ghost"
             className={view === 'expeditions' ? 'nav-active' : ''}
@@ -205,15 +205,15 @@ export default function Home() {
                 <br />
                 Find out what your instruments missed.
               </p>
-              <Link className="projects-cta" href="/projects">
+              <a className="projects-cta" href="/projects">
                 Current projects <ArrowUpRight size={22} />
-              </Link>
-              <Link className="latest-project" href="/cell">
+              </a>
+              <a className="latest-project" href="/cell">
                 Virtual Cell — predict, reveal, challenge
-              </Link>
-              <Link className="latest-project" href="/atlas">
+              </a>
+              <a className="latest-project" href="/atlas">
                 New: Research Atlas — explore the whole programme
-              </Link>
+              </a>
             </div>
             <div className="flight-label">
               <span className="status-light" /> {completeRooms.size}/3
@@ -321,9 +321,9 @@ export default function Home() {
         >
           The programme <ArrowUpRight size={14} />
         </a>
-        <Link className="text-link" href="/projects">
+        <a className="text-link" href="/projects">
           Current projects <ArrowUpRight size={14} />
-        </Link>
+        </a>
       </footer>
       {notice && (
         <div className="save-notice" role="status">
