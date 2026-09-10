@@ -1,0 +1,39 @@
+{
+  "version": "adaptive-tests-v1",
+  "status": "Authored synthetic benchmark; held-out Monte Carlo seeds not yet executed by reviewer",
+  "hypotheses": ["A0", "A1", "B0", "B1"],
+  "prior": [0.25, 0.25, 0.25, 0.25],
+  "measurement_budget": 2,
+  "cost_units": "Abstract measurement cost, not wall time or money",
+  "likelihood_orientation": "Each row is a hidden hypothesis; each column is an observable outcome",
+  "actions": [
+    {"id": "gate", "cost": 1, "outcomes": [0, 1], "likelihood": [[0.9, 0.1], [0.9, 0.1], [0.1, 0.9], [0.1, 0.9]]},
+    {"id": "local_a", "cost": 1, "outcomes": [0, 1], "likelihood": [[0.9, 0.1], [0.1, 0.9], [0.5, 0.5], [0.5, 0.5]]},
+    {"id": "local_b", "cost": 1, "outcomes": [0, 1], "likelihood": [[0.5, 0.5], [0.5, 0.5], [0.9, 0.1], [0.1, 0.9]]},
+    {"id": "full", "cost": 2, "outcomes": [0, 1, 2, 3], "likelihood": [[0.7, 0.1, 0.1, 0.1], [0.1, 0.7, 0.1, 0.1], [0.1, 0.1, 0.7, 0.1], [0.1, 0.1, 0.1, 0.7]]}
+  ],
+  "noise_contract": "Observations conditionally independent given hypothesis, action and repetition; repeated actions allowed",
+  "candidate": "After every observation update Bayes posterior, choose affordable action maximizing expected posterior entropy decrease in bits divided by action cost",
+  "action_ties": ["gate", "local_a", "local_b", "full"],
+  "terminal_decision": "MAP hypothesis, ties by hypothesis order",
+  "stop": "Exactly exhaust budget; do not use a confidence-dependent stopping rule",
+  "baselines": {
+    "best_fixed": "Full diagnostic once; strongest fixed schedule by exact expected terminal accuracy among all affordable precommitted schedules",
+    "random_feasible": "At each step choose uniformly among currently affordable actions, independent of outcomes; same Bayesian update and terminal decision",
+    "prior_only_planner": "Choose EIG/cost actions using original prior every time, but still update terminal belief; planning-feedback ablation",
+    "optimal_decision_oracle": "Finite-horizon dynamic program maximizing expected final MAP accuracy; explanatory upper bound, not an equally cheap learned competitor"
+  },
+  "development_seeds_inclusive": [0, 127],
+  "evaluation_seeds_inclusive": [10000, 19999],
+  "seed_use": "Freeze implementation and protocol hashes before evaluating this seed range; never relabel repeated evaluation as fresh holdout",
+  "uniform": "SHA256 UTF-8 key; take first4bytes as unsigned big-endian x; u=(x+0.5)/4294967296",
+  "hidden_key": "adaptive-v1|{seed}|hidden",
+  "measurement_key": "adaptive-v1|{seed}|measurement|{action_id}|{zero_based_occurrence_of_that_action}",
+  "random_action_key": "adaptive-v1|{seed}|policy|{policy_name}|{zero_based_step}",
+  "pairing": "Same seed supplies the same hidden hypothesis and potential action/repetition outcomes to every policy; policy never receives seed or hidden state",
+  "primary": "Fraction of correct final hidden-state decisions at cost2",
+  "secondary": ["Final log loss in bits", "Mean action cost", "Action frequencies and adaptive next-action changes", "Agreement with exact expected metrics"],
+  "decision_advantage_gate": "Evaluation paired accuracy advantage over best_fixed at least0.05, with approximate paired95percent interval lower endpoint above0; disclose this is a constructed synthetic benchmark",
+  "uncertainty": "Paired episode difference d in{-1,0,1}; interval mean(d)+/-1.96*sample_sd(d)/sqrt(N), approximate Monte Carlo interval only",
+  "claims": "Response-dependent test selection under a known finite model. No learned policy parameters, no cross-episode improvement, no self-rewriting code, no scientific discovery claim. Greedy information gain is not generally decision-optimal."
+}

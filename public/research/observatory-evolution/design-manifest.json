@@ -1,0 +1,9 @@
+{
+  "scope": "Design artifacts and exact oracle only; held-out seeds not evaluated",
+  "files": {
+    "Benchmark_Spec.md": "ea0bb3c201e1294f1244d96286766fa74bc7c98740fd009c22b7afb441ff7d93",
+    "protocol.json": "b317eb7e93e269a0a55629b74b52d626d5ae2d151b8505135fd17f976ca8afb0",
+    "reference_oracle.py": "c006e9b0e0f82b6a4437a35de472afec2fb9d4fed8f79a47c28f3c973fe57593",
+    "reference-results.json": "a6b94cd6efd0b953a1714bf6b8bac5829be8ce0f39c09f9329b699dac53e8c7d"
+  }
+}
