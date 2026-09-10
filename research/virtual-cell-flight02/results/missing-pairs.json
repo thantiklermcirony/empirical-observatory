@@ -1,0 +1,787 @@
+[
+  {
+    "context": "CVCL_0023",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0023",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0028",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0028",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0028",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0028",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0028",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0069",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0069",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0069",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0069",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0099",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0099",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0099",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0099",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0131",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0131",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0131",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0131",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0131",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0131",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0152",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0152",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0152",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0179",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0179",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0179",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0179",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0179",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0218",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0292",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0293",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0293",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0320",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0320",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0332",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0332",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0334",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0334",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0334",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0359",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0359",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0371",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0371",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0371",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0371",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0397",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0397",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0399",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0428",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0428",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0428",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0428",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0428",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0480",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0480",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0480",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0480",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0480",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_0546",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1055",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1055",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1055",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1055",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1056",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1056",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1056",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1056",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1094",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1094",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1097",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1097",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1097",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1098",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1098",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1119",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1119",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1119",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1125",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1125",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1125",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1125",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1285",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1381",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1381",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1478",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1478",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1478",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1495",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1495",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1495",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1495",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1495",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('Belzutifan', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('Hydroxyfasudil', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1531",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1547",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1547",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1547",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1550",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1550",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1550",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1550",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1550",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('Hydroxyfasudil', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('Sonidegib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1571",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1577",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1577",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1577",
+    "treatment": "[('Hydroxyfasudil', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1577",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1577",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1577",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1577",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1577",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1635",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1635",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1635",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1666",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1666",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1666",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1693",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1693",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1715",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1715",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1715",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1716",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1716",
+    "treatment": "[('Belzutifan', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1716",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1716",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1716",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1716",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1716",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1716",
+    "treatment": "[('olaparib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1717",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1717",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1717",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1717",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1724",
+    "treatment": "[('Abemaciclib', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1724",
+    "treatment": "[('DTP3', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1724",
+    "treatment": "[('PF-06260933', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1724",
+    "treatment": "[('Ralimetinib dimesylate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1724",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1731",
+    "treatment": "[('Methylprednisolone succinate', 0.05, 'uM')]",
+    "status": "not_observed"
+  },
+  {
+    "context": "CVCL_1731",
+    "treatment": "[('c-Kit-IN-1', 0.05, 'uM')]",
+    "status": "not_observed"
+  }
+]

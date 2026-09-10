@@ -1,0 +1,42 @@
+{
+  "input_hashes": {
+    "response": "496a7727899fd16a590e535f6a3007f3ded6f120ad2aa10edc2f5a30ea924c16",
+    "controls": "a10416c60c62108da21e236935eb223c1f2eb8d7d9a1c563068934d059657efc",
+    "selection": "ece92b478467bc0fe9d4b80ea59f07928cc78b3aec6e5b565387ea2106ad0930",
+    "preflight": "abd172d5f50dec42ef5a22c8cb21448d2e35dea11be21d892bf83953acffbb89"
+  },
+  "freeze": {
+    "status": "frozen",
+    "frozen_at_utc": "2026-09-10T06:37:09.730021+00:00",
+    "plate1_numeric_responses_opened": false,
+    "reviewed_by": "root after independent implementation and synthetic review",
+    "source_sha256": {
+      "pipeline.py": "a39a929a639c2d1621adf889821cfb61c36253a9f8fba7dd0ea686df794a8b71",
+      "dataio.py": "9bc7c2b1e05082324ac8f9924128e6b362692c49b285e4116ae02cedda42d1fb",
+      "run.py": "fe212ed1a72b8f6edaa6ed43305c4fd6738724d1428f4ea12e44fc7ba4c91f28",
+      "protocol.json": "144dbce0843283375f80124fe23c493064041a1be271943335634275a056d121"
+    },
+    "supporting_sha256": {
+      "requirements.txt": "5e302ff443d90cd9d5248ac123360f2ee0acb7d07343036ad10efe353cbf357d",
+      "README.md": "8ff6476e3fb1b3b3573a7ec46a652c8006120bac45e21ae79ba5964612d6fb75",
+      "test_pipeline.py": "7b5b7a90bfb2a9cc8816a1e8144b85c824cbd20f027bcabc8a0e30e2ccbd91a9",
+      "VALIDATION.json": "8a9bc542620cbd4fa61772df6e894fbc4ef9c68b318632f45f22123bc9f2fd21"
+    },
+    "independent_review_sha256": {
+      "REVIEW.md": "9061d0b5f5cb1e3a76a6d7af1edd52a42ce918af300cb846ce7d56392646f454",
+      "CHECK_RESULTS.json": "9e238e190cb88b5123870bd392c59db10771d054728322f69beadc78ff0f8e80",
+      "RUNNER_CHECK_RESULTS.json": "5a0234c8ec7ffe2eb70b2d7869c5fb3ce5784196af33cda7bff3ec1128a1d55b",
+      "check_pipeline.py": "ea72b16aab625a2200fb59f7034b450ab6f29af3db81de97d1b541df1a82fe7f",
+      "check_runner.py": "a368d69e3806316c7511740e5087053a062f05b75caf48482437505cdf165928",
+      "reference_oracles.py": "ceb62db5c78ca2f24425e7844cfd47de2d248f8f0c19cd7888a9d34b9412a567"
+    },
+    "disclosures": [
+      "Binary response shard acquired and schema/identity columns inspected before freezing; no plate1 numeric response columns decoded.",
+      "Dataset landing page incidentally rendered five plate10 PDE example rows during access research; these were not used in this plate1 design.",
+      "Published gene-panel selection and control/response normalization remain provenance limitations."
+    ]
+  },
+  "publisher_revision": "c7963cf334bec0683225d41c9586d900ca6303a2",
+  "pandas": "3.0.5",
+  "outcome_scale": "Released cell_eval response deltas, preserved without conversion; exact biological normalization unresolved"
+}
