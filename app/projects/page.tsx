@@ -1,5 +1,5 @@
+/* oxlint-disable next/no-html-link-for-pages -- Native navigation avoids the reproduced vinext production Link runtime failure. */
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Orbit } from 'lucide-react';
 
@@ -87,17 +87,17 @@ export default function Projects() {
   return (
     <main className="projects-page">
       <header className="projects-header">
-        <Link className="brand" href="/">
+        <a className="brand" href="/">
           <Orbit size={30} />
           <span>
             THE EMPIRICAL
             <br />
             <strong>ARCHITECTURE</strong>
           </span>
-        </Link>
-        <Link className="text-link" href="/">
+        </a>
+        <a className="text-link" href="/">
           <ArrowLeft size={16} /> Research station
-        </Link>
+        </a>
       </header>
       <section className="projects-intro">
         <span className="eyebrow">OPEN RESEARCH / CURRENT PROJECTS</span>
@@ -111,15 +111,15 @@ export default function Projects() {
           project.
         </p>
         <div className="project-links">
-          <Link href="/atlas">
+          <a href="/atlas">
             Explore the Research Atlas <ArrowUpRight size={18} />
-          </Link>
-          <Link href="/cell">
+          </a>
+          <a href="/cell">
             Enter Virtual Cell <ArrowUpRight size={18} />
-          </Link>
-          <Link href={`${github}/empirical-architecture`}>
+          </a>
+          <a href={`${github}/empirical-architecture`}>
             Read the programme <ArrowUpRight size={18} />
-          </Link>
+          </a>
         </div>
       </section>
       <section
@@ -147,15 +147,15 @@ export default function Projects() {
           </p>
         </div>
         <div className="project-links">
-          <Link href="/atlas">
+          <a href="/atlas">
             Enter the Atlas <ArrowUpRight size={18} />
-          </Link>
-          <Link href="/atlas#discovery">
+          </a>
+          <a href="/atlas#discovery">
             Run adaptive exploration <ArrowUpRight size={18} />
-          </Link>
-          <Link href="/research/observatory-evolution/README.md">
+          </a>
+          <a href="/research/observatory-evolution/README.md">
             Inspect the methods <ArrowUpRight size={18} />
-          </Link>
+          </a>
         </div>
         <p className="project-caveat">
           The working loop adapts beliefs and test choice in a declared
@@ -189,12 +189,12 @@ export default function Projects() {
           </p>
         </div>
         <div className="project-links">
-          <Link href="/cell">
+          <a href="/cell">
             Launch the interactive explorer <ArrowUpRight size={18} />
-          </Link>
-          <Link href="/research/Virtual_Cell_Flight01.zip">
+          </a>
+          <a href="/research/Virtual_Cell_Flight01.zip">
             Download code and evidence <ArrowUpRight size={18} />
-          </Link>
+          </a>
         </div>
         <div className="project-evidence">
           <CheckCircle2 size={22} />
@@ -210,9 +210,9 @@ export default function Projects() {
           This is a replay of recorded author estimates, with CPU reproduction
           code. It establishes a tested evaluation workflow; a biological
           prediction advantage remains unproven.{' '}
-          <Link href="/research/Cell_Flight01_Report.md">
+          <a href="/research/Cell_Flight01_Report.md">
             Read the complete result.
-          </Link>
+          </a>
         </p>
       </section>
       <section
@@ -250,9 +250,9 @@ export default function Projects() {
               snapshot version. The original subscriber stops; the candidate
               receives the replacement state.
             </p>
-            <Link href="https://github.com/ray-project/ray/pull/66039">
+            <a href="https://github.com/ray-project/ray/pull/66039">
               Review the Ray contribution <ArrowUpRight size={18} />
-            </Link>
+            </a>
           </article>
           <article>
             <span className="project-number">02 / RECOVERY</span>
@@ -262,11 +262,11 @@ export default function Projects() {
               old application. The candidate serves the new route while the same
               HAProxy manager survives.
             </p>
-            <Link
+            <a
               href={`${github}/empirical-architecture/actions/workflows/ray-recovery.yml`}
             >
               Inspect the Linux validation <ArrowUpRight size={18} />
-            </Link>
+            </a>
           </article>
         </div>
         <div className="project-evidence">
@@ -321,9 +321,9 @@ export default function Projects() {
               before the correction, and zero times afterwards, in each of four
               controlled rollouts. Reward stays at 1 in both versions.
             </p>
-            <Link href="https://github.com/neurogym/neurogym/pull/295">
+            <a href="https://github.com/neurogym/neurogym/pull/295">
               Review the proposed fix <ArrowUpRight size={18} />
-            </Link>
+            </a>
           </article>
           <article>
             <span className="project-number">02 / PRESERVATION</span>
@@ -333,9 +333,9 @@ export default function Projects() {
               targets, sampled timings and trial draws match. Twenty new cases
               fail on the original; all 32 new cases pass with the correction.
             </p>
-            <Link href="/research/NeuroGym_Contribution_Report.md">
+            <a href="/research/NeuroGym_Contribution_Report.md">
               Read the measured results <ArrowUpRight size={18} />
-            </Link>
+            </a>
           </article>
         </div>
         <figure className="pertpy-result">
@@ -350,9 +350,9 @@ export default function Projects() {
           <figcaption>
             Recorded task signals and policy responses, using the same
             controlled trials.{' '}
-            <Link href="/research/NeuroGym_Go_Cue.png">
+            <a href="/research/NeuroGym_Go_Cue.png">
               Open the full-size chart.
-            </Link>
+            </a>
           </figcaption>
         </figure>
         <div className="project-evidence">
@@ -361,9 +361,9 @@ export default function Projects() {
             <strong>All 132 tests in the full candidate suite pass.</strong>{' '}
             Lint, formatting, type checking and package builds pass on the
             tested Windows/Python 3.12 runtime.{' '}
-            <Link href="/research/NeuroGym_Contribution_Package.zip">
+            <a href="/research/NeuroGym_Contribution_Package.zip">
               Download the patch and reproduction evidence.
-            </Link>
+            </a>
           </p>
         </div>
         <p className="project-caveat">
@@ -407,9 +407,9 @@ export default function Projects() {
               dataset. Conventional additive predictions beat the no-change
               baseline in seven of eight combinations.
             </p>
-            <Link href="https://github.com/scverse/pertpy/pull/1098">
+            <a href="https://github.com/scverse/pertpy/pull/1098">
               Review Pertpy PR #1098 <ArrowUpRight size={18} />
-            </Link>
+            </a>
           </article>
           <article>
             <span className="project-number">
@@ -421,9 +421,9 @@ export default function Projects() {
               times the squared prediction error of the no-change baseline. A
               single attractive score would hide that failure.
             </p>
-            <Link href="/research/Pertpy_Evaluation_Report.md">
+            <a href="/research/Pertpy_Evaluation_Report.md">
               Read the results and limits <ArrowUpRight size={18} />
-            </Link>
+            </a>
           </article>
         </div>
         <figure className="pertpy-result">
@@ -438,9 +438,9 @@ export default function Projects() {
           <figcaption>
             Conventional baselines on one K562 dataset. IDA has not yet been
             scored.{' '}
-            <Link href="/research/Norman_Baseline_Comparison.png">
+            <a href="/research/Norman_Baseline_Comparison.png">
               Open the full-size chart.
-            </Link>
+            </a>
           </figcaption>
         </figure>
         <div className="project-evidence">
@@ -451,21 +451,21 @@ export default function Projects() {
             </strong>{' '}
             The latest test update raises measured line coverage from 90.67% to
             99.11%, with no failures or skips.{' '}
-            <Link href="https://github.com/thantiklermcirony/pertpy/actions/runs/34429620981">
+            <a href="https://github.com/thantiklermcirony/pertpy/actions/runs/34429620981">
               Inspect the test results.
-            </Link>{' '}
-            <Link href="https://github.com/thantiklermcirony/pertpy/actions/runs/34415474373">
+            </a>{' '}
+            <a href="https://github.com/thantiklermcirony/pertpy/actions/runs/34415474373">
               Inspect the earlier real-data validation.
-            </Link>
+            </a>
           </p>
         </div>
         <p className="project-caveat">
           Submitted for maintainer review; not merged. This is a first
           evaluation API and a testing ground for IDA. It does not establish an
           IDA advantage or a new biological finding.{' '}
-          <Link href="/research/Reproduce_Pertpy_Evaluation.md">
+          <a href="/research/Reproduce_Pertpy_Evaluation.md">
             Reproduce the experiment.
-          </Link>
+          </a>
         </p>
       </section>
       <section
@@ -508,9 +508,9 @@ export default function Projects() {
                 After <b>Separate occurrence preserved</b>
               </span>
             </div>
-            <Link href="https://github.com/getzep/graphiti/pull/1867">
+            <a href="https://github.com/getzep/graphiti/pull/1867">
               Review the history fix <ArrowUpRight size={18} />
-            </Link>
+            </a>
           </article>
           <article>
             <span className="project-number">02 / TIME</span>
@@ -527,9 +527,9 @@ export default function Projects() {
                 After <b>Boundary answer preserved</b>
               </span>
             </div>
-            <Link href="https://github.com/getzep/graphiti/pull/1866">
+            <a href="https://github.com/getzep/graphiti/pull/1866">
               Review the timestamp fix <ArrowUpRight size={18} />
-            </Link>
+            </a>
           </article>
         </div>
         <div className="project-evidence">
@@ -538,9 +538,9 @@ export default function Projects() {
             <strong>48 targeted regression cases pass.</strong> Each published
             branch also passed its separate unit checks. A real Neo4j audit
             confirmed the tested boundary behavior.{' '}
-            <Link href="https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Graphiti.md">
+            <a href="https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Graphiti.md">
               Read the evidence and remaining limits.
-            </Link>
+            </a>
           </p>
         </div>
         <p className="project-caveat">
@@ -568,17 +568,17 @@ export default function Projects() {
               <span className="eyebrow">{mission.status}</span>
               <h3>{mission.name}</h3>
               <p>{mission.description}</p>
-              <Link className="project-action" href={mission.href}>
+              <a className="project-action" href={mission.href}>
                 Read the open problem <ArrowUpRight size={18} />
-              </Link>
+              </a>
               <p className="project-caveat">{mission.gate}</p>
             </article>
           ))}
         </div>
-        <Link className="text-link" href="/research/Next_Big_Three.md">
+        <a className="text-link" href="/research/Next_Big_Three.md">
           Read the scan, earlier lessons and Tesla / SpaceX findings{' '}
           <ArrowUpRight size={18} />
-        </Link>
+        </a>
       </section>
       <section className="project-grid" aria-label="Projects to explore">
         {projects.map((project) => (
@@ -586,12 +586,12 @@ export default function Projects() {
             <span className="eyebrow">{project.status}</span>
             <h2>{project.name}</h2>
             <p>{project.description}</p>
-            <Link className="project-action" href={project.href}>
+            <a className="project-action" href={project.href}>
               {project.action} <ArrowUpRight size={18} />
-            </Link>
-            <Link className="project-source" href={project.source}>
+            </a>
+            <a className="project-source" href={project.source}>
               Methods & source
-            </Link>
+            </a>
           </article>
         ))}
       </section>
@@ -602,21 +602,21 @@ export default function Projects() {
           The most useful contribution makes a specific claim easier to check.
         </p>
         <div className="project-links">
-          <Link
+          <a
             href={`${github}/empirical-architecture/blob/main/CONTRIBUTING.md`}
           >
             Find a way to contribute <ArrowUpRight size={18} />
-          </Link>
-          <Link
+          </a>
+          <a
             href={`${github}/empirical-observatory/tree/main/research/contribution-scan`}
           >
             Explore open problems <ArrowUpRight size={18} />
-          </Link>
+          </a>
         </div>
       </section>
       <footer className="projects-footer">
         Founded by Daniel J. Murray · Experiments, evidence and code are
-        identified separately.<Link href="/">Return to the Observatory</Link>
+        identified separately.<a href="/">Return to the Observatory</a>
       </footer>
     </main>
   );
