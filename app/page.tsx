@@ -208,8 +208,8 @@ export default function Home() {
               <a className="projects-cta" href="/projects">
                 Current projects <ArrowUpRight size={22} />
               </a>
-              <a className="latest-project" href="/recovery">
-                Recovery Lab — history, prediction, evidence
+              <a className="latest-project" href="/active-context">
+                Active Context — help your agent resume with evidence
               </a>
               <a className="latest-project" href="/atlas">
                 New: Research Atlas — explore the whole programme
