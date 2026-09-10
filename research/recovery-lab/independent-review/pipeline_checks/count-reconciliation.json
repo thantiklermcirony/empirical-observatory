@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "scope": "Independent arithmetic from exported eligibility rows only; no models or prediction scores.",
+  "preflight_sha256": "bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+  "modes": {
+    "primary": {
+      "landmarks": 4104,
+      "animals": 214,
+      "resolved": 3445,
+      "fraction": 0.8394249512670565,
+      "labels": {
+        "0": 759,
+        "-1": 659,
+        "1": 2505,
+        "2": 181
+      },
+      "reasons": {
+        "observed_burden": 3264,
+        "no_assessment_in_window": 650,
+        "terminal_ES": 29,
+        "terminal_FD": 147,
+        "survival_through_day9_unestablished": 6,
+        "terminal_RE": 5,
+        "other_exit_MSG": 3
+      },
+      "csv_sha256": "a9fe5715b8b3afdaeae6271e7602bb02525506fd47edecd8a822d7091b848e9d"
+    },
+    "complete_items": {
+      "landmarks": 4104,
+      "animals": 214,
+      "resolved": 3410,
+      "fraction": 0.830896686159844,
+      "labels": {
+        "-1": 694,
+        "0": 753,
+        "1": 2478,
+        "2": 179
+      },
+      "reasons": {
+        "current_items_incomplete": 49,
+        "no_assessment_in_window": 636,
+        "observed_burden": 3231,
+        "terminal_ES": 29,
+        "terminal_FD": 145,
+        "survival_through_day9_unestablished": 6,
+        "terminal_RE": 5,
+        "other_exit_MSG": 3
+      },
+      "csv_sha256": "0baf6530f1b899f6c6903cd8f56f51c496c65f9de5ca5446725c5eebd1547862"
+    },
+    "exclude_analgesic": {
+      "landmarks": 4104,
+      "animals": 214,
+      "resolved": 3445,
+      "fraction": 0.8394249512670565,
+      "labels": {
+        "0": 760,
+        "-1": 659,
+        "1": 2504,
+        "2": 181
+      },
+      "reasons": {
+        "observed_burden": 3264,
+        "no_assessment_in_window": 650,
+        "terminal_ES": 29,
+        "terminal_FD": 147,
+        "survival_through_day9_unestablished": 6,
+        "terminal_RE": 5,
+        "other_exit_MSG": 3
+      },
+      "csv_sha256": "bb9bc3d449a0ecf356edd36f1b9dc2c563b80c629c5c01e880de7d1e657145c9"
+    }
+  },
+  "historical_primary_resolved": 3451,
+  "final_primary_resolved": 3445,
+  "conservative_survival_delta": 6,
+  "primary_gate_failed": true,
+  "all_modes_same_intended_landmarks_and_folds": true
+}
