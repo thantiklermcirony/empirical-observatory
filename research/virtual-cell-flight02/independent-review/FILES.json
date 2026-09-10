@@ -1,0 +1,45 @@
+{
+  "compact_files": [
+    {
+      "path": "check_pipeline.py",
+      "bytes": 16231,
+      "sha256": "ea72b16aab625a2200fb59f7034b450ab6f29af3db81de97d1b541df1a82fe7f"
+    },
+    {
+      "path": "CHECK_RESULTS.json",
+      "bytes": 3985,
+      "sha256": "9e238e190cb88b5123870bd392c59db10771d054728322f69beadc78ff0f8e80"
+    },
+    {
+      "path": "check_runner.py",
+      "bytes": 10284,
+      "sha256": "a368d69e3806316c7511740e5087053a062f05b75caf48482437505cdf165928"
+    },
+    {
+      "path": "FINAL_REVIEW.json",
+      "bytes": 825,
+      "sha256": "952a4f6a57027b75f6ac75a5753879df319b084957d9429cb15daf10b5ef0346"
+    },
+    {
+      "path": "reference_oracles.py",
+      "bytes": 5252,
+      "sha256": "ceb62db5c78ca2f24425e7844cfd47de2d248f8f0c19cd7888a9d34b9412a567"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 7035,
+      "sha256": "9061d0b5f5cb1e3a76a6d7af1edd52a42ce918af300cb846ce7d56392646f454"
+    },
+    {
+      "path": "REVIEW_PLAN.md",
+      "bytes": 2985,
+      "sha256": "79437160f1abfb7a97fcc440f8e48cb9b2cc4039c45f3065546283e75a079508"
+    },
+    {
+      "path": "RUNNER_CHECK_RESULTS.json",
+      "bytes": 1352,
+      "sha256": "5a0234c8ec7ffe2eb70b2d7869c5fb3ce5784196af33cda7bff3ec1128a1d55b"
+    }
+  ],
+  "excluded": "Synthetic execution directories and bytecode; their paths and hashes are recorded in runner evidence"
+}
