@@ -1,0 +1,714 @@
+{
+  "schema": "observatory-ledger/1",
+  "generated_at": "2026-09-10T08:20:37.511856Z",
+  "public_time_attestation": false,
+  "time_claim": "Local recorder timestamps only; synthetic/replay modes are not prospective evidence.",
+  "integrity": {
+    "event_count": 16,
+    "head_sha256": "92da5a417db54d7ecc2c7650dd2730d166f5aa4273a631c127c09aa4d1b9f44c"
+  },
+  "contracts": [
+    {
+      "domain": "recovery-lab",
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "kind": "evidence_admission",
+      "mode": "retrospective",
+      "protocol_sha256": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+      "required_checks": [
+        {
+          "comparison": "ge",
+          "evidence_source_id": "recovery-final-preflight",
+          "id": "overall_resolution",
+          "metric": "resolved_label_fraction",
+          "threshold": 0.9
+        },
+        {
+          "comparison": "ge",
+          "evidence_source_id": "recovery-final-preflight",
+          "id": "fold_0_resolution",
+          "metric": "resolved_label_fraction",
+          "threshold": 0.9
+        },
+        {
+          "comparison": "ge",
+          "evidence_source_id": "recovery-final-preflight",
+          "id": "fold_1_resolution",
+          "metric": "resolved_label_fraction",
+          "threshold": 0.9
+        },
+        {
+          "comparison": "ge",
+          "evidence_source_id": "recovery-final-preflight",
+          "id": "fold_2_resolution",
+          "metric": "resolved_label_fraction",
+          "threshold": 0.9
+        },
+        {
+          "comparison": "ge",
+          "evidence_source_id": "recovery-final-preflight",
+          "id": "fold_3_resolution",
+          "metric": "resolved_label_fraction",
+          "threshold": 0.9
+        },
+        {
+          "comparison": "ge",
+          "evidence_source_id": "recovery-final-preflight",
+          "id": "fold_4_resolution",
+          "metric": "resolved_label_fraction",
+          "threshold": 0.9
+        }
+      ],
+      "scope": "Retrospective evidence admission only; no forecast rows, completed model comparison, prospective timing or promotion claim.",
+      "target": "Feasibility of the frozen nearest-day-7 observed-burden endpoint"
+    }
+  ],
+  "expected_issues": [],
+  "snapshots": [
+    {
+      "content_type": "application/json",
+      "entity": "DO-history-available-population",
+      "event_at": "2026-09-10T08:20:37.406647Z",
+      "kind": "observation",
+      "license": "Project-generated audit metadata; source attribution is retained in the audit release.",
+      "published_at": null,
+      "quality": [
+        "retrospective-audit",
+        "not-a-forecast"
+      ],
+      "raw_sha256": "bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+      "received_at": "2026-09-10T08:20:37.406647Z",
+      "snapshot_id": "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+      "source_id": "recovery-final-preflight",
+      "source_version": "sha256:bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+      "recorded_at": "2026-09-10T08:20:37.412802Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "recovery-lab-v1",
+      "event_at": "2026-09-10T08:20:37.453310Z",
+      "kind": "observation",
+      "license": "Project-generated research metadata; see attached source attribution.",
+      "published_at": null,
+      "quality": [
+        "already-observed-evidence",
+        "local-receipt-only"
+      ],
+      "raw_sha256": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+      "received_at": "2026-09-10T08:20:37.453310Z",
+      "snapshot_id": "recovery-frozen-protocol-3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+      "source_id": "recovery-frozen-protocol",
+      "source_version": "sha256:3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+      "recorded_at": "2026-09-10T08:20:37.461773Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "recovery-lab-v1",
+      "event_at": "2026-09-10T08:20:37.461773Z",
+      "kind": "observation",
+      "license": "Project-generated research metadata; see attached source attribution.",
+      "published_at": null,
+      "quality": [
+        "already-observed-evidence",
+        "local-receipt-only"
+      ],
+      "raw_sha256": "7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a",
+      "received_at": "2026-09-10T08:20:37.461773Z",
+      "snapshot_id": "recovery-publication-record-7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a",
+      "source_id": "recovery-publication-record",
+      "source_version": "sha256:7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a",
+      "recorded_at": "2026-09-10T08:20:37.461773Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "recovery-lab-v1",
+      "event_at": "2026-09-10T08:20:37.461773Z",
+      "kind": "observation",
+      "license": "Project-generated research metadata; see attached source attribution.",
+      "published_at": null,
+      "quality": [
+        "already-observed-evidence",
+        "local-receipt-only"
+      ],
+      "raw_sha256": "e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a",
+      "received_at": "2026-09-10T08:20:37.461773Z",
+      "snapshot_id": "recovery-historical-availability-e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a",
+      "source_id": "recovery-historical-availability",
+      "source_version": "sha256:e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a",
+      "recorded_at": "2026-09-10T08:20:37.476811Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "recovery-lab-v1",
+      "event_at": "2026-09-10T08:20:37.477661Z",
+      "kind": "observation",
+      "license": "Project-generated research metadata; see attached source attribution.",
+      "published_at": null,
+      "quality": [
+        "already-observed-evidence",
+        "local-receipt-only"
+      ],
+      "raw_sha256": "efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01",
+      "received_at": "2026-09-10T08:20:37.477661Z",
+      "snapshot_id": "recovery-independent-synthetic-checks-efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01",
+      "source_id": "recovery-independent-synthetic-checks",
+      "source_version": "sha256:efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01",
+      "recorded_at": "2026-09-10T08:20:37.483698Z"
+    },
+    {
+      "content_type": "application/json",
+      "entity": "recovery-lab-v1",
+      "event_at": "2026-09-10T08:20:37.483698Z",
+      "kind": "observation",
+      "license": "Project-generated research metadata; see attached source attribution.",
+      "published_at": null,
+      "quality": [
+        "already-observed-evidence",
+        "local-receipt-only"
+      ],
+      "raw_sha256": "7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167",
+      "received_at": "2026-09-10T08:20:37.483698Z",
+      "snapshot_id": "recovery-independent-count-checks-7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167",
+      "source_id": "recovery-independent-count-checks",
+      "source_version": "sha256:7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167",
+      "recorded_at": "2026-09-10T08:20:37.483698Z"
+    },
+    {
+      "content_type": "text/markdown",
+      "entity": "recovery-lab-v1",
+      "event_at": "2026-09-10T08:20:37.493483Z",
+      "kind": "observation",
+      "license": "Project-generated research metadata; see attached source attribution.",
+      "published_at": null,
+      "quality": [
+        "already-observed-evidence",
+        "local-receipt-only"
+      ],
+      "raw_sha256": "dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c",
+      "received_at": "2026-09-10T08:20:37.493483Z",
+      "snapshot_id": "recovery-independent-source-review-dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c",
+      "source_id": "recovery-independent-source-review",
+      "source_version": "sha256:dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c",
+      "recorded_at": "2026-09-10T08:20:37.496171Z"
+    }
+  ],
+  "predictions": [],
+  "failures": [],
+  "outcomes": [],
+  "scores": [],
+  "checks": [
+    {
+      "check_id": "overall_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8394249512670565,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.419848Z"
+    },
+    {
+      "check_id": "fold_0_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8433242506811989,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.429270Z"
+    },
+    {
+      "check_id": "fold_1_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8430540827147401,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.433838Z"
+    },
+    {
+      "check_id": "fold_2_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8594080338266384,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.440067Z"
+    },
+    {
+      "check_id": "fold_3_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8208955223880597,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.446776Z"
+    },
+    {
+      "check_id": "fold_4_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8239247311827957,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.453310Z"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "recovery-lab-v1-retrospective-proposal",
+      "description": "Retrospective feasibility admission of the publicly frozen Recovery Lab comparison. The endpoint resolution gate failed before fitting; subsequent numerical model results are descriptive and cannot override this failure.",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+        "recovery-frozen-protocol-3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+        "recovery-publication-record-7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a",
+        "recovery-historical-availability-e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a",
+        "recovery-independent-synthetic-checks-efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01",
+        "recovery-independent-count-checks-7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167",
+        "recovery-independent-source-review-dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c"
+      ],
+      "evidence_timing": "already_observed",
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "proposal_sha256": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+      "state": "blocked",
+      "admission_only": true,
+      "proposed_at": "2026-09-10T08:20:37.496171Z",
+      "assessment": {
+        "candidate_id": "recovery-lab-v1-retrospective-proposal",
+        "checks": [
+          {
+            "check_id": "overall_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_0_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_1_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_2_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_3_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_4_resolution",
+            "status": "failed"
+          }
+        ],
+        "status": "blocked"
+      },
+      "assessed_at": "2026-09-10T08:20:37.508135Z"
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "event_id": "contract:recovery-lab-v1-feasibility-admission",
+      "kind": "contract_frozen",
+      "payload": {
+        "domain": "recovery-lab",
+        "experiment_id": "recovery-lab-v1-feasibility-admission",
+        "kind": "evidence_admission",
+        "mode": "retrospective",
+        "protocol_sha256": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+        "required_checks": [
+          {
+            "comparison": "ge",
+            "evidence_source_id": "recovery-final-preflight",
+            "id": "overall_resolution",
+            "metric": "resolved_label_fraction",
+            "threshold": 0.9
+          },
+          {
+            "comparison": "ge",
+            "evidence_source_id": "recovery-final-preflight",
+            "id": "fold_0_resolution",
+            "metric": "resolved_label_fraction",
+            "threshold": 0.9
+          },
+          {
+            "comparison": "ge",
+            "evidence_source_id": "recovery-final-preflight",
+            "id": "fold_1_resolution",
+            "metric": "resolved_label_fraction",
+            "threshold": 0.9
+          },
+          {
+            "comparison": "ge",
+            "evidence_source_id": "recovery-final-preflight",
+            "id": "fold_2_resolution",
+            "metric": "resolved_label_fraction",
+            "threshold": 0.9
+          },
+          {
+            "comparison": "ge",
+            "evidence_source_id": "recovery-final-preflight",
+            "id": "fold_3_resolution",
+            "metric": "resolved_label_fraction",
+            "threshold": 0.9
+          },
+          {
+            "comparison": "ge",
+            "evidence_source_id": "recovery-final-preflight",
+            "id": "fold_4_resolution",
+            "metric": "resolved_label_fraction",
+            "threshold": 0.9
+          }
+        ],
+        "scope": "Retrospective evidence admission only; no forecast rows, completed model comparison, prospective timing or promotion claim.",
+        "target": "Feasibility of the frozen nearest-day-7 observed-burden endpoint"
+      },
+      "recorded_at": "2026-09-10T08:20:37.402166Z",
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "event_hash": "4eb9d2e8f17f2c3575d3db5fdb4c9b712f6b4c5968218fe98547f948ddf3b689"
+    },
+    {
+      "seq": 2,
+      "event_id": "snapshot:recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "DO-history-available-population",
+        "event_at": "2026-09-10T08:20:37.406647Z",
+        "kind": "observation",
+        "license": "Project-generated audit metadata; source attribution is retained in the audit release.",
+        "published_at": null,
+        "quality": [
+          "retrospective-audit",
+          "not-a-forecast"
+        ],
+        "raw_sha256": "bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+        "received_at": "2026-09-10T08:20:37.406647Z",
+        "snapshot_id": "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+        "source_id": "recovery-final-preflight",
+        "source_version": "sha256:bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      },
+      "recorded_at": "2026-09-10T08:20:37.412802Z",
+      "prev_hash": "4eb9d2e8f17f2c3575d3db5fdb4c9b712f6b4c5968218fe98547f948ddf3b689",
+      "event_hash": "b76fc4d66fd78067183f2d9241509804a1089214fe774bd97ec0b9435cce18bc"
+    },
+    {
+      "seq": 3,
+      "event_id": "check:5ad2d2905ce28c23b76a2e8efd819b277e1b0e4834a3087876a101f65e8be060",
+      "kind": "prerequisite_checked",
+      "payload": {
+        "check_id": "overall_resolution",
+        "evidence_snapshot_ids": [
+          "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+        ],
+        "experiment_id": "recovery-lab-v1-feasibility-admission",
+        "observed_value": 0.8394249512670565,
+        "passed": false
+      },
+      "recorded_at": "2026-09-10T08:20:37.419848Z",
+      "prev_hash": "b76fc4d66fd78067183f2d9241509804a1089214fe774bd97ec0b9435cce18bc",
+      "event_hash": "f6144209561d4a134bb8e370de1435c510936649c9745068314055d35288e9a6"
+    },
+    {
+      "seq": 4,
+      "event_id": "check:91220aa5712fa23e87ae819c3f4666b74dc6324fab24b4b1b674f0bb8a570705",
+      "kind": "prerequisite_checked",
+      "payload": {
+        "check_id": "fold_0_resolution",
+        "evidence_snapshot_ids": [
+          "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+        ],
+        "experiment_id": "recovery-lab-v1-feasibility-admission",
+        "observed_value": 0.8433242506811989,
+        "passed": false
+      },
+      "recorded_at": "2026-09-10T08:20:37.429270Z",
+      "prev_hash": "f6144209561d4a134bb8e370de1435c510936649c9745068314055d35288e9a6",
+      "event_hash": "4356215fc802ab470ee63dca1690dbbb728cc658f192824f2fa3ee4654e9238e"
+    },
+    {
+      "seq": 5,
+      "event_id": "check:29c06230cb1644d2a0d2726f40fc9d6873dbfe1c2b62af3e572bc015990cc5bd",
+      "kind": "prerequisite_checked",
+      "payload": {
+        "check_id": "fold_1_resolution",
+        "evidence_snapshot_ids": [
+          "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+        ],
+        "experiment_id": "recovery-lab-v1-feasibility-admission",
+        "observed_value": 0.8430540827147401,
+        "passed": false
+      },
+      "recorded_at": "2026-09-10T08:20:37.433838Z",
+      "prev_hash": "4356215fc802ab470ee63dca1690dbbb728cc658f192824f2fa3ee4654e9238e",
+      "event_hash": "7736fd331a4a170d42577b79ad3145a40cc0844b8c7bb3f336369adaf262aa0e"
+    },
+    {
+      "seq": 6,
+      "event_id": "check:8cb79d77300e504f6cc734070354e89c59907703f3a9e43de7e01371fb62c194",
+      "kind": "prerequisite_checked",
+      "payload": {
+        "check_id": "fold_2_resolution",
+        "evidence_snapshot_ids": [
+          "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+        ],
+        "experiment_id": "recovery-lab-v1-feasibility-admission",
+        "observed_value": 0.8594080338266384,
+        "passed": false
+      },
+      "recorded_at": "2026-09-10T08:20:37.440067Z",
+      "prev_hash": "7736fd331a4a170d42577b79ad3145a40cc0844b8c7bb3f336369adaf262aa0e",
+      "event_hash": "4f76f1c5007ee870ccdc4ae2eefc784220c780ea5bcd885728b975efd17568c3"
+    },
+    {
+      "seq": 7,
+      "event_id": "check:20b7a2ccffea84d6146dd7873dcf31164b4b40f56c282cf85e8f3bb6d3282076",
+      "kind": "prerequisite_checked",
+      "payload": {
+        "check_id": "fold_3_resolution",
+        "evidence_snapshot_ids": [
+          "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+        ],
+        "experiment_id": "recovery-lab-v1-feasibility-admission",
+        "observed_value": 0.8208955223880597,
+        "passed": false
+      },
+      "recorded_at": "2026-09-10T08:20:37.446776Z",
+      "prev_hash": "4f76f1c5007ee870ccdc4ae2eefc784220c780ea5bcd885728b975efd17568c3",
+      "event_hash": "bbddf2d6828ec5de4061568fb058c4327e204624edc51181dd925c074d8b2ce0"
+    },
+    {
+      "seq": 8,
+      "event_id": "check:420c037e388142ac4dce825f51de0c2c0a86da9b3657b570d1168f279b410f03",
+      "kind": "prerequisite_checked",
+      "payload": {
+        "check_id": "fold_4_resolution",
+        "evidence_snapshot_ids": [
+          "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+        ],
+        "experiment_id": "recovery-lab-v1-feasibility-admission",
+        "observed_value": 0.8239247311827957,
+        "passed": false
+      },
+      "recorded_at": "2026-09-10T08:20:37.453310Z",
+      "prev_hash": "bbddf2d6828ec5de4061568fb058c4327e204624edc51181dd925c074d8b2ce0",
+      "event_hash": "8025071e04fafa7750ea66091c3a574576cb029ff6c2e2541110891253d519bd"
+    },
+    {
+      "seq": 9,
+      "event_id": "snapshot:recovery-frozen-protocol-3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "recovery-lab-v1",
+        "event_at": "2026-09-10T08:20:37.453310Z",
+        "kind": "observation",
+        "license": "Project-generated research metadata; see attached source attribution.",
+        "published_at": null,
+        "quality": [
+          "already-observed-evidence",
+          "local-receipt-only"
+        ],
+        "raw_sha256": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+        "received_at": "2026-09-10T08:20:37.453310Z",
+        "snapshot_id": "recovery-frozen-protocol-3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+        "source_id": "recovery-frozen-protocol",
+        "source_version": "sha256:3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325"
+      },
+      "recorded_at": "2026-09-10T08:20:37.461773Z",
+      "prev_hash": "8025071e04fafa7750ea66091c3a574576cb029ff6c2e2541110891253d519bd",
+      "event_hash": "145d93f6323d868afb929d3dc9f3f86be8138f9317d0f118a775cf2c2dbbefdb"
+    },
+    {
+      "seq": 10,
+      "event_id": "snapshot:recovery-publication-record-7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "recovery-lab-v1",
+        "event_at": "2026-09-10T08:20:37.461773Z",
+        "kind": "observation",
+        "license": "Project-generated research metadata; see attached source attribution.",
+        "published_at": null,
+        "quality": [
+          "already-observed-evidence",
+          "local-receipt-only"
+        ],
+        "raw_sha256": "7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a",
+        "received_at": "2026-09-10T08:20:37.461773Z",
+        "snapshot_id": "recovery-publication-record-7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a",
+        "source_id": "recovery-publication-record",
+        "source_version": "sha256:7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a"
+      },
+      "recorded_at": "2026-09-10T08:20:37.461773Z",
+      "prev_hash": "145d93f6323d868afb929d3dc9f3f86be8138f9317d0f118a775cf2c2dbbefdb",
+      "event_hash": "24fcc34c117797354e04b498c07386c6e4849b836789cb76cfa1ca321765bd4b"
+    },
+    {
+      "seq": 11,
+      "event_id": "snapshot:recovery-historical-availability-e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "recovery-lab-v1",
+        "event_at": "2026-09-10T08:20:37.461773Z",
+        "kind": "observation",
+        "license": "Project-generated research metadata; see attached source attribution.",
+        "published_at": null,
+        "quality": [
+          "already-observed-evidence",
+          "local-receipt-only"
+        ],
+        "raw_sha256": "e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a",
+        "received_at": "2026-09-10T08:20:37.461773Z",
+        "snapshot_id": "recovery-historical-availability-e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a",
+        "source_id": "recovery-historical-availability",
+        "source_version": "sha256:e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a"
+      },
+      "recorded_at": "2026-09-10T08:20:37.476811Z",
+      "prev_hash": "24fcc34c117797354e04b498c07386c6e4849b836789cb76cfa1ca321765bd4b",
+      "event_hash": "4463eab61ab1499865addeeb672b587c29a5d60d039249be69bc8ce3fca410dc"
+    },
+    {
+      "seq": 12,
+      "event_id": "snapshot:recovery-independent-synthetic-checks-efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "recovery-lab-v1",
+        "event_at": "2026-09-10T08:20:37.477661Z",
+        "kind": "observation",
+        "license": "Project-generated research metadata; see attached source attribution.",
+        "published_at": null,
+        "quality": [
+          "already-observed-evidence",
+          "local-receipt-only"
+        ],
+        "raw_sha256": "efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01",
+        "received_at": "2026-09-10T08:20:37.477661Z",
+        "snapshot_id": "recovery-independent-synthetic-checks-efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01",
+        "source_id": "recovery-independent-synthetic-checks",
+        "source_version": "sha256:efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01"
+      },
+      "recorded_at": "2026-09-10T08:20:37.483698Z",
+      "prev_hash": "4463eab61ab1499865addeeb672b587c29a5d60d039249be69bc8ce3fca410dc",
+      "event_hash": "7d709f061eab3da7529d6ccf60f3252969c8faadbfa028434a16f5d85898d67e"
+    },
+    {
+      "seq": 13,
+      "event_id": "snapshot:recovery-independent-count-checks-7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "application/json",
+        "entity": "recovery-lab-v1",
+        "event_at": "2026-09-10T08:20:37.483698Z",
+        "kind": "observation",
+        "license": "Project-generated research metadata; see attached source attribution.",
+        "published_at": null,
+        "quality": [
+          "already-observed-evidence",
+          "local-receipt-only"
+        ],
+        "raw_sha256": "7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167",
+        "received_at": "2026-09-10T08:20:37.483698Z",
+        "snapshot_id": "recovery-independent-count-checks-7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167",
+        "source_id": "recovery-independent-count-checks",
+        "source_version": "sha256:7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167"
+      },
+      "recorded_at": "2026-09-10T08:20:37.483698Z",
+      "prev_hash": "7d709f061eab3da7529d6ccf60f3252969c8faadbfa028434a16f5d85898d67e",
+      "event_hash": "1f2680d89be558821590dbdde0b2ef583be79c6212d9636c059e6afb6e3df97a"
+    },
+    {
+      "seq": 14,
+      "event_id": "snapshot:recovery-independent-source-review-dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c",
+      "kind": "snapshot_captured",
+      "payload": {
+        "content_type": "text/markdown",
+        "entity": "recovery-lab-v1",
+        "event_at": "2026-09-10T08:20:37.493483Z",
+        "kind": "observation",
+        "license": "Project-generated research metadata; see attached source attribution.",
+        "published_at": null,
+        "quality": [
+          "already-observed-evidence",
+          "local-receipt-only"
+        ],
+        "raw_sha256": "dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c",
+        "received_at": "2026-09-10T08:20:37.493483Z",
+        "snapshot_id": "recovery-independent-source-review-dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c",
+        "source_id": "recovery-independent-source-review",
+        "source_version": "sha256:dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c"
+      },
+      "recorded_at": "2026-09-10T08:20:37.496171Z",
+      "prev_hash": "1f2680d89be558821590dbdde0b2ef583be79c6212d9636c059e6afb6e3df97a",
+      "event_hash": "6fd0e68a2d1095f8b330459c44555a02d18a86e8accdad5b9dc49482c5476e00"
+    },
+    {
+      "seq": 15,
+      "event_id": "admission-proposal:recovery-lab-v1-retrospective-proposal",
+      "kind": "admission_proposed",
+      "payload": {
+        "candidate_id": "recovery-lab-v1-retrospective-proposal",
+        "description": "Retrospective feasibility admission of the publicly frozen Recovery Lab comparison. The endpoint resolution gate failed before fitting; subsequent numerical model results are descriptive and cannot override this failure.",
+        "evidence_snapshot_ids": [
+          "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+          "recovery-frozen-protocol-3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+          "recovery-publication-record-7ae8210fc17c7f88e449fc81c7a4abfc154b34f87c94f1bd70cf373ad4d2039a",
+          "recovery-historical-availability-e1739b0f38e4a6eade627569fadb42eec1c6eac3b028746d00a3056103d6889a",
+          "recovery-independent-synthetic-checks-efbda56cb66496b4c91f96c437ee91b6b742253c1ca7868fd2fc6abee0837c01",
+          "recovery-independent-count-checks-7abc4b69bc83df0a693a31aefc7dbcf6e2d30b2af65dee71657d9e0e39c0b167",
+          "recovery-independent-source-review-dc54179e38363661964086f77b62e794a79859d0395f6332360b85206656da0c"
+        ],
+        "evidence_timing": "already_observed",
+        "experiment_id": "recovery-lab-v1-feasibility-admission",
+        "proposal_sha256": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325"
+      },
+      "recorded_at": "2026-09-10T08:20:37.496171Z",
+      "prev_hash": "6fd0e68a2d1095f8b330459c44555a02d18a86e8accdad5b9dc49482c5476e00",
+      "event_hash": "608a62f693d82a657ee2d3485e8119ca3582e6fd943c2ea68453560b86613b2f"
+    },
+    {
+      "seq": 16,
+      "event_id": "admission-assessment:recovery-lab-v1-retrospective-proposal",
+      "kind": "admission_assessed",
+      "payload": {
+        "candidate_id": "recovery-lab-v1-retrospective-proposal",
+        "checks": [
+          {
+            "check_id": "overall_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_0_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_1_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_2_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_3_resolution",
+            "status": "failed"
+          },
+          {
+            "check_id": "fold_4_resolution",
+            "status": "failed"
+          }
+        ],
+        "status": "blocked"
+      },
+      "recorded_at": "2026-09-10T08:20:37.508135Z",
+      "prev_hash": "608a62f693d82a657ee2d3485e8119ca3582e6fd943c2ea68453560b86613b2f",
+      "event_hash": "92da5a417db54d7ecc2c7650dd2730d166f5aa4273a631c127c09aa4d1b9f44c"
+    }
+  ]
+}
