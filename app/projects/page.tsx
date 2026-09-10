@@ -6,20 +6,37 @@ import { ArrowLeft, ArrowUpRight, CheckCircle2, Orbit } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Current projects — The Empirical Architecture',
   description:
-    'Inspect our submitted Pertpy biological evaluator and Graphiti memory fixes, try open experiments, and help with the next research project.',
+    'Inspect our submitted NeuroGym decision cue, Pertpy biological evaluator and Graphiti memory fixes, and explore the next contribution opportunities.',
 };
 
 const github = 'https://github.com/thantiklermcirony';
-const projects = [
+const nextMissions = [
   {
-    name: 'NeuroGym / observable decisions',
-    status: 'NEXT INVESTIGATION',
+    name: '01 / Ray Serve',
+    status: 'FIRST REPRODUCTION',
     description:
-      'Check whether a decision-making task gives an agent the signal it needs to know when to act. We will reproduce the reported problem before proposing a fix.',
-    href: 'https://github.com/neurogym/neurogym/issues/279',
-    action: 'Read the open question',
-    source: 'https://github.com/neurogym/neurogym',
+      'After a controller restarts, can the running service recover the right routes? Test actual response identity, then build on the existing recovery discussion.',
+    href: 'https://github.com/ray-project/ray/issues/63784',
+    gate: 'CPU / Linux · contributor review offered',
   },
+  {
+    name: '02 / Dask',
+    status: 'CONTRACT & REPRODUCTION',
+    description:
+      'Should moving empty data partitions change a merge result? Compare row identity with pandas and coordinate with the contributor already investigating.',
+    href: 'https://github.com/dask/dask/issues/12564',
+    gate: 'CPU · issue still awaiting triage',
+  },
+  {
+    name: '03 / NASA F Prime',
+    status: 'CONDITIONAL / DESIGN AGREEMENT',
+    description:
+      'Turn delayed communication records into inspectable ground data. Build a decoder only after the format, ownership and required upstream approval are settled.',
+    href: 'https://github.com/nasa/fprime/issues/5845',
+    gate: 'Offline fixtures · draft writer dependency',
+  },
+];
+const projects = [
   {
     name: 'TAO / adaptive control',
     status: 'PLAYABLE EXPERIMENT',
@@ -96,6 +113,94 @@ export default function Projects() {
       </section>
       <section
         className="graphiti-feature pertpy-feature"
+        id="neurogym"
+        aria-labelledby="neurogym-title"
+      >
+        <div className="project-status">
+          <span className="status-light" /> CONTRIBUTION SUBMITTED · AWAITING
+          REVIEW
+        </div>
+        <div className="graphiti-heading">
+          <div>
+            <span className="eyebrow">
+              LATEST PROJECT / OBSERVABLE DECISIONS
+            </span>
+            <h2 id="neurogym-title">
+              Can the agent see
+              <br />
+              when to act?
+            </h2>
+          </div>
+          <p>
+            A NeuroGym task could demand different answers after identical
+            visible histories. Our proposed fix keeps the existing wait signal
+            on until the decision period begins, making the intended action
+            window visible.
+          </p>
+        </div>
+        <div className="graphiti-fixes">
+          <article>
+            <span className="project-number">01 / INFORMATION</span>
+            <h3>Give the learner the missing signal.</h3>
+            <p>
+              The same observation-driven policy responds early four times
+              before the correction, and zero times afterwards, in each of four
+              controlled rollouts. Reward stays at 1 in both versions.
+            </p>
+            <Link href="https://github.com/neurogym/neurogym/pull/295">
+              Review the proposed fix <ArrowUpRight size={18} />
+            </Link>
+          </article>
+          <article>
+            <span className="project-number">02 / PRESERVATION</span>
+            <h3>Change the cue, preserve the experiment.</h3>
+            <p>
+              Across 240 noisy seeded trials, all other observation channels,
+              targets, sampled timings and trial draws match. Twenty new cases
+              fail on the original; all 32 new cases pass with the correction.
+            </p>
+            <Link href="/research/NeuroGym_Contribution_Report.md">
+              Read the measured results <ArrowUpRight size={18} />
+            </Link>
+          </article>
+        </div>
+        <figure className="pertpy-result">
+          <Image
+            src="/research/NeuroGym_Go_Cue.png"
+            width={1890}
+            height={1224}
+            loading="lazy"
+            unoptimized
+            alt="Recorded before and after traces: keeping the fixation cue active through stimulus and delay distinguishes waiting from the decision period."
+          />
+          <figcaption>
+            Recorded task signals and policy responses, using the same
+            controlled trials.{' '}
+            <Link href="/research/NeuroGym_Go_Cue.png">
+              Open the full-size chart.
+            </Link>
+          </figcaption>
+        </figure>
+        <div className="project-evidence">
+          <CheckCircle2 size={22} />
+          <p>
+            <strong>All 132 tests in the full candidate suite pass.</strong>{' '}
+            Lint, formatting, type checking and package builds pass on the
+            tested Windows/Python 3.12 runtime.{' '}
+            <Link href="/research/NeuroGym_Contribution_Package.zip">
+              Download the patch and reproduction evidence.
+            </Link>
+          </p>
+        </div>
+        <p className="project-caveat">
+          Submitted for maintainer review; not merged. The cue enables waiting;
+          existing reward rules still ignore premature responses. This is a task
+          correctness repair, with no trained-model improvement established.
+          Maintainers will decide the compatibility policy.
+        </p>
+      </section>
+      <section
+        className="graphiti-feature pertpy-feature"
         id="pertpy"
         aria-labelledby="pertpy-title"
       >
@@ -105,9 +210,7 @@ export default function Projects() {
         </div>
         <div className="graphiti-heading">
           <div>
-            <span className="eyebrow">
-              LATEST PROJECT / BIOLOGICAL PREDICTION
-            </span>
+            <span className="eyebrow">BIOLOGICAL PREDICTION</span>
             <h2 id="pertpy-title">
               Does the prediction
               <br />
@@ -268,6 +371,36 @@ export default function Projects() {
           They do not establish a general AI advantage. Status recorded 10
           September 2026; the pull requests show the latest review and checks.
         </p>
+      </section>
+      <section
+        className="project-contribute"
+        id="next"
+        aria-labelledby="next-title"
+      >
+        <span className="eyebrow">NEXT MISSIONS / RESEARCH SHORTLIST</span>
+        <h2 id="next-title">Make silent failures visible.</h2>
+        <p>
+          Three investigations chosen for useful, testable contributions. These
+          are opportunities we have researched, with reproduction and upstream
+          agreement still ahead. Existing authors keep credit for their work.
+        </p>
+        <div className="project-grid">
+          {nextMissions.map((mission) => (
+            <article className="project-card" key={mission.name}>
+              <span className="eyebrow">{mission.status}</span>
+              <h3>{mission.name}</h3>
+              <p>{mission.description}</p>
+              <Link className="project-action" href={mission.href}>
+                Read the open problem <ArrowUpRight size={18} />
+              </Link>
+              <p className="project-caveat">{mission.gate}</p>
+            </article>
+          ))}
+        </div>
+        <Link className="text-link" href="/research/Next_Big_Three.md">
+          Read the scan, earlier lessons and Tesla / SpaceX findings{' '}
+          <ArrowUpRight size={18} />
+        </Link>
       </section>
       <section className="project-grid" aria-label="Projects to explore">
         {projects.map((project) => (
