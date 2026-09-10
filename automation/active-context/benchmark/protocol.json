@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "implementation candidate; execution requires separately frozen code manifest",
+  "name": "Constructed source continuation diagnostic",
+  "episode_count": 30,
+  "projects": 5,
+  "checks_per_project": 3,
+  "requested_claims": ["primary-behavior", "secondary-behavior"],
+  "methods": ["rerun_all", "content_dependency", "fixed_freshness", "active_context"],
+  "fixed_freshness_seconds": 3600,
+  "synthetic_age_seconds": {"old_unchanged": 7200, "all_other_episodes": 60},
+  "timeout_seconds_per_check": 10,
+  "replicates": 1,
+  "policy_order": "Rotate fixed method order left by zero-based episode index modulo four",
+  "continuations": ["fresh_unchanged", "old_unchanged", "unrelated_document", "source_regression", "new_assertion_member", "failed_then_restored"],
+  "source_mutation_meaning": "Authored single-line regressions in disposable copies, not discovered upstream bugs",
+  "new_assertion_meaning": "Authored incompatible proposed requirements, not previously unnoticed upstream errors",
+  "dependency_boundary": "Same explicitly declared package directory, check script, applicable fixture directory, watched environment, command/runtime identity and prerequisite receipts. No hidden dependency oracle or automatic dependency discovery.",
+  "baseline_independence": "Conventional fingerprints and latest-attempt decisions are implemented separately. All policies share actual check execution/receipt instrumentation; its cost includes core capture and independent fingerprint capture equally.",
+  "receipt_age": "Authentic execution clocks are unchanged. A disclosed synthetic age is supplied to the fixed-freshness policy; the other policies may ignore it.",
+  "oracle": "Execute all checks after all four persisted decisions. Exit zero is pass; dedicated assertion exit 10 is a negative assertion; timeout, launch failure, unexpected exit, instability or snapshot error is unresolved.",
+  "primary_metrics": ["unsupported verified claims", "false verified claims", "incorrect and unresolved decisions", "executed checks", "total measured seconds"],
+  "cost_contract": "Total measured cost is each complete continuation decision/execution/final status plus the same common initial evidence-capture time. Report continuation-only time separately. Construction, copying ledger inputs, result serialization and held-back oracle are diagnostic setup/evaluation and excluded. Declared check cost is not measured cost. Initial dual fingerprint instrumentation is common to every method.",
+  "success_gate": {
+    "complete": "All 30 episodes with resolved independent oracle outcomes",
+    "safety": "Zero unsupported verified claims and no more incorrect or unresolved decisions than rerun-all",
+    "cost": "Candidate total measured seconds at most 0.8 times the cheapest equally correct conventional strategy",
+    "tie": "Identical selected-check sets to content/dependency invalidation automatically fail superiority regardless of timing noise"
+  },
+  "no_post_result_tuning": true,
+  "failure_policy": "Retain every failure, timeout and setup error. An invalid initial setup halts with an incomplete result; never silently drop it. Any corrected rerun needs a new explicitly versioned freeze.",
+  "limitations": [
+    "Thirty authored continuations across five pure-Python projects are not an official or statistically representative benchmark.",
+    "No language model, agent task success, remote state, undeclared dependency discovery or model-cost improvement is evaluated.",
+    "Dependencies are manually declared and conservative; installed transitive dependencies remain outside the claimed scope.",
+    "One environment and one timing observation per method/episode do not establish a stable production speedup.",
+    "The strong content-invalidation baseline is expected to select the same checks; this diagnostic can establish integration correctness without algorithmic superiority.",
+    "Local receipts and clocks are not cryptographic proof of execution or public issuance."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-09-10T09:51:08.159616+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "pre-freeze synthetic contracts and pristine upstream assertions only",
+  "scored_policy_runs": 0,
+  "unit_command": "python -m unittest discover -s benchmark -p test_diagnostic.py -v",
+  "unit_tests": 18,
+  "unit_exit_code": 0,
+  "pristine_preflight": "preflight/20260910T094401/PREFLIGHT.json",
+  "pristine_checks_passed": 15,
+  "pristine_checks_expected": 15,
+  "files": {
+    "fetch_replacement.py": "a4693491b63ba015ebc311f19878a70ad3f4a551d27288de9d72394b98089850",
+    "fetch_sources.py": "78ddf49cc3516b3853f0c034816a320418adb1ea1e1f62cc37c3e95f80e24dd0",
+    "policies.py": "725b24ece6e4be9777b10c0eaf14a558eb463db888923c6b158aef25881acddf",
+    "preflight.py": "4d9826e0ccc957189e09961da2faa897c02d2cc0acd969c269045317eb74e53f",
+    "run_diagnostic.py": "2b1884b60b6f3a744d378c37733bf10d4cbf1ce9d62419dbb7572f8b1a09e2e2",
+    "source_checker.py": "3f5e53dfa298e61dd62c7a65af4ec7e86fb4696d7510d66b5c02aad82944b7c5",
+    "specs.py": "115b4888be36f66609686d4b9f8d5ac7317b3f5c07075b4cc7168bdb8530db18",
+    "test_diagnostic.py": "6116cfea1a0972ad928660975fd529b9b4ce7a57a205ddefe4150bf8a6b4bb2d",
+    "unpack_sources.py": "e64c8254f601b38f4a7f871eceb561a1ce6b3a90836a2421a4829264c894c4a2",
+    "protocol.json": "36f457d1b514b3028d8db7ca0edbf9d5566adc391318bd4373090f533bf16797",
+    "MANIFEST.json": "6a1e851d791a2c82f2c7b3d768ba69c29aed8e71f18e72e3e7019df5ed18b1b8",
+    "README.md": "6edd4d1af9efb064720105bab34cbfbff277681839c692278a696ec24118a9fd",
+    "PROTOCOL_DRAFT.md": "c81c76ff4565aec1d40128d0c0b79bdcc4c6fc71f7217bc3a5de909ac38dba74"
+  }
+}
