@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-09-10T06:39:27.074947+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.5.3",
+  "source_sha256": {
+    "pipeline.py": "a39a929a639c2d1621adf889821cfb61c36253a9f8fba7dd0ea686df794a8b71",
+    "dataio.py": "9bc7c2b1e05082324ac8f9924128e6b362692c49b285e4116ae02cedda42d1fb",
+    "run.py": "fe212ed1a72b8f6edaa6ed43305c4fd6738724d1428f4ea12e44fc7ba4c91f28",
+    "protocol.json": "144dbce0843283375f80124fe23c493064041a1be271943335634275a056d121"
+  },
+  "output_sha256": {
+    "fold-0-prediction-manifest.json": "6ddbbb405e7b3629be0e5124198d0e9216dfcb96ae6e4fc09d51debf8894378f",
+    "fold-0-predictions.npz": "a4db4b3fc5e8c44045096875b3f925080312acbd09101ca5dc4be352ca7b5870",
+    "fold-1-prediction-manifest.json": "3c4e5c33affe2c5cb3f9a6ccd60a503a84ad1c80a6599ff284678b28199459fc",
+    "fold-1-predictions.npz": "d7ed8a419271d925df84666dac778f5ace430e96f9184a067eca2bd55f4361e6",
+    "fold-2-prediction-manifest.json": "fad9d9cdbc25f997f30382886a0c48f2d3f5a7e7214f3d90e8a665aa25ab33e2",
+    "fold-2-predictions.npz": "d57b2b1ff15c9fd0540b7b8dcd85bf1d474ce19e1c1506c1f4404f7499432243",
+    "fold-3-prediction-manifest.json": "5ff054d4c4916dabd1af03ea7f775f218b24d959ee7a48a7bd9b70d2ae939e55",
+    "fold-3-predictions.npz": "35c6cddfdd8f1f5174bd42932804ff5733c6c0432df8ea3acd29fe4526306f50",
+    "fold-4-prediction-manifest.json": "bff63f2f065caa4dd47d48ca209ea791b119d6e20a517c71598eb5ba44a06846",
+    "fold-4-predictions.npz": "6180aa8a0f20e74eb50a8644ffdabcd92bf54750925db0b744a6c7f64080a2df",
+    "input-provenance.json": "cb6025f19f046418a1202fad06b92a9df92938ce99fdaaa5593225dce816d16d",
+    "missing-pairs.json": "84bf02a2c1abc130c2939419a7830f1e531cac012e7050d56b8175572d4c86fd",
+    "per-pair.csv": "6b375075f79aea1f70fe2232cbf9767f8d1aa62918966cbb2fa96d2a5ec338df",
+    "retained-masks.jsonl.gz": "c868400ad41c8d425831ef36817ab409ab58132201feeb4f31db15708d2e43be",
+    "summary.json": "bcca99e94bdf0a4f6d04add216b33d5a835a98295a7c662d230afc31dc8b32b1"
+  },
+  "failure_count": 0
+}

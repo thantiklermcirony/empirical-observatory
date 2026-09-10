@@ -1,0 +1,45 @@
+{
+  "stage": "implementation_review_before_freeze",
+  "created_at_utc": "2026-09-10T06:35:30.010593+00:00",
+  "real_plate1_response_values_decoded": false,
+  "real_evaluation_executed": false,
+  "command": [
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\agent-biology\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    ".",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "tests_expected": 19,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "pyarrow": "25.0.1"
+  },
+  "source_and_review_sha256": {
+    "pipeline.py": "a39a929a639c2d1621adf889821cfb61c36253a9f8fba7dd0ea686df794a8b71",
+    "dataio.py": "9bc7c2b1e05082324ac8f9924128e6b362692c49b285e4116ae02cedda42d1fb",
+    "run.py": "fe212ed1a72b8f6edaa6ed43305c4fd6738724d1428f4ea12e44fc7ba4c91f28",
+    "protocol.json": "d869dca89429c23cdebeb793f3db4845e5ca13392f9417b5404f339733f812d7",
+    "test_pipeline.py": "7b5b7a90bfb2a9cc8816a1e8144b85c824cbd20f027bcabc8a0e30e2ccbd91a9",
+    "requirements.txt": "5e302ff443d90cd9d5248ac123360f2ee0acb7d07343036ad10efe353cbf357d",
+    "README.md": "8ff6476e3fb1b3b3573a7ec46a652c8006120bac45e21ae79ba5964612d6fb75"
+  },
+  "test_log_sha256": "c38dbd6f20b11ffbd76af35f530ed9fa253a88585fe0e81f40a86c696725d224",
+  "independent_checks_location": "../independent-review/",
+  "independent_final_rerun": "requested_after_loader_and_diagnostic_only_changes",
+  "limits": [
+    "All execution was synthetic; load_panel numeric response path remains unexecuted.",
+    "Source hashes describe this pre-freeze stage; owner will record final protocol status changes separately."
+  ],
+  "tests_passed": 19,
+  "tests_failed": 0,
+  "syntax_checks": "Four Python files parsed successfully; protocol JSON parsed successfully"
+}

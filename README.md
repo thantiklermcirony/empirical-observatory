@@ -30,15 +30,15 @@ A playable research station for testing what measurements reveal—and what they
 
 This release is a research prototype. It does not establish biological universality, quantum advantage, consciousness measurement or AI cost savings. It makes concrete experiments possible and preserves their limitations.
 
-## Flagship: Virtual Cell / Flight 01
+## Flagship: Virtual Cell / two completed flights
 
 Can a gene-response prediction survive a change of cell context? [Open the explorer](https://empirical-observatory.madmanmuzza.chatgpt.site/cell), reveal real measurements and move a slider to distinguish prediction size from direction. The recorded benchmark spans **4 held-out contexts, 2,052 target genes and 6,642 measured genes**.
 
 The first disagreement adjustment failed its frozen success threshold. Its aggregate error was about 0.11% below global shrinkage, and it lost to the strongest conventional method in every context. Keeping that failure visible is part of the experiment. [Code, all results and CPU reproduction](research/virtual-cell/README.md) · [Report](public/research/Cell_Flight01_Report.md) · [Download](public/research/Virtual_Cell_Flight01.zip).
 
-The next test needs destination-context baseline measurements and fresh independent validation. Contributions that reproduce a result, expose an assumption, add a licensed data adapter or beat the baselines under the same information budget are welcome.
+Flight 02 used a separate Tahoe chemical plate: 50 cell lines, 92 exact drug/dose identities, 4,443 observed pairs and 2,000 released genes. We froze and published the code before decoding its numeric responses, then held out whole cell lines in five nested folds. Adding control-profile information reduced retained prediction error by only **0.13%** versus the best conventional ranker at 75% retention. It missed the declared **10%** gate and beat each fold's best comparison in only **one of five** folds. [Interactive comparison](https://empirical-observatory.madmanmuzza.chatgpt.site/cell#flight02) · [Frozen code and results](research/virtual-cell-flight02) · [Report](public/research/Cell_Flight02_Report.md) · [Reproduction package](public/research/Virtual_Cell_Flight02.zip).
 
-We have audited a separate Tahoe chemical-assay control table spanning 50 cell lines, 14 plates and 62,710 gene identifiers. [Data route](public/research/observatory-evolution/Biology_Data_Route.md) · [Compact controls, source audit and draft protocol](public/research/Virtual_Cell_Next_Inputs.zip). Input selection is frozen; response values have not been inspected. Candidate specification and measurement-scale checks must precede the next experiment. This is data readiness, not a new biological performance result.
+The earlier [input audit](public/research/Virtual_Cell_Next_Inputs.zip) remains a historical record. Plate 1 has now been evaluated; the other plates were not evaluated in this test. Released control means and response deltas were kept on their supplied scales and never added together. Normalization provenance, shared measurement noise and publisher-selected genes limit interpretation. Both added candidates failed their declared success gates; a general biological prediction advantage remains unproven. Contributions that reproduce a result, expose an assumption or test an independent measurement under a frozen comparison are welcome.
 
 ## Run
 

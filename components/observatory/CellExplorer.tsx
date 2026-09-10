@@ -12,6 +12,8 @@ import {
   ScanLine,
 } from 'lucide-react';
 import source from '../../public/research/cell-flight01.json';
+import secondFlight from '../../public/research/cell-flight02.json';
+import CellRiskFlight, { type CellRiskEvidence } from './CellRiskFlight';
 
 type Model =
   | 'zero'
@@ -117,6 +119,11 @@ export default function CellExplorer() {
             Inspect the prediction, reveal the experiment, and test what the
             score really means.
           </p>
+          <div className="cell-evidence-links">
+            <a href="#flight02">
+              New: explore the 50-cell-line test <ArrowUpRight size={17} />
+            </a>
+          </div>
         </div>
         <div className="cell-orbit" aria-hidden="true">
           <div />
@@ -400,18 +407,21 @@ export default function CellExplorer() {
           Virtual Cell Challenge score.
         </p>
       </section>
+      <CellRiskFlight evidence={secondFlight as unknown as CellRiskEvidence} />
       <section className="cell-next">
         <div>
-          <p className="cell-kicker">04 / NEXT FLIGHT</p>
+          <p className="cell-kicker">NEXT QUESTION / AFTER TWO FLIGHTS</p>
           <h2>
-            Give the prediction
-            <br />a destination.
+            What information
+            <br />
+            is still missing?
           </h2>
           <p>
-            The next experiment asks whether baseline cell measurements can
-            identify when a transferred response should be retained, reduced or
-            rejected. These four contexts are now development data; a stronger
-            claim needs a new independent test.
+            Flight 02 tested starting-state measurements in 50 cell lines. Their
+            added ranking benefit was too small to meet the declared gate. A
+            next study must distinguish useful biological information from
+            shared measurement noise and treatment difficulty, then test it on
+            independent measurements. These results remain part of the record.
           </p>
         </div>
         <div className="cell-evidence-links">

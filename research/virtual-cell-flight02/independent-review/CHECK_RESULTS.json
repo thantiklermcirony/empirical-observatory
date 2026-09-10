@@ -1,0 +1,156 @@
+{
+  "module": "../experiment/pipeline.py",
+  "module_sha256": "a39a929a639c2d1621adf889821cfb61c36253a9f8fba7dd0ea686df794a8b71",
+  "test_sha256": "ea72b16aab625a2200fb59f7034b450ab6f29af3db81de97d1b541df1a82fe7f",
+  "real_response_values_read": false,
+  "checks": [
+    {
+      "name": "mean_and_leave_one_out_match_independent_record_oracle",
+      "passed": true,
+      "detail": {
+        "source_pairs": 55,
+        "missing_pairs": 5,
+        "treatments": [
+          "[('A', 0.05, 'uM')]",
+          "[('A', 0.5, 'uM')]",
+          "B ",
+          "B",
+          "C"
+        ]
+      }
+    },
+    {
+      "name": "two_three_four_line_support_and_no_zero_fill",
+      "passed": true,
+      "detail": {
+        "means": [
+          3.0,
+          5.0,
+          3.0
+        ],
+        "support": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "name": "context_risk_reversal_matches_independent_kernel_oracle",
+      "passed": true,
+      "detail": {
+        "risk_matrix": [
+          [
+            38.1828784209139,
+            65.4686874762271
+          ],
+          [
+            65.46868747622709,
+            38.1828784209139
+          ]
+        ],
+        "effective_support": [
+          [
+            1.7725987596987711,
+            1.7725987596987711
+          ],
+          [
+            1.7725987596987713,
+            1.7725987596987713
+          ]
+        ]
+      }
+    },
+    {
+      "name": "degenerate_controls_and_distant_kernel_are_defined",
+      "passed": true,
+      "detail": {
+        "degenerate_components": 0,
+        "distant_effective_support": [
+          [
+            1.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "nested_inner_models_and_transforms_rebuilt_without_validation_lines",
+      "passed": true,
+      "detail": {
+        "inner_mean_fits": 4,
+        "inner_control_fits": 4,
+        "source_lines_per_fit": 9
+      }
+    },
+    {
+      "name": "inner_validation_poison_cannot_change_its_prescoring_candidate_ranks",
+      "passed": true,
+      "detail": {
+        "first_inner_group_rank_calls_unchanged": 10,
+        "original_selection": "b0.5_k16",
+        "poisoned_selection": "uniform",
+        "selection_allowed_to_change": true
+      }
+    },
+    {
+      "name": "outer_predictions_have_no_destination_outcome_argument_and_are_order_invariant",
+      "passed": true,
+      "detail": {
+        "source_row_order": "byte-identical",
+        "treatment_gene_order": "numerically invariant",
+        "destination_outcomes": "scoring only"
+      }
+    },
+    {
+      "name": "control_feature_storage_permutation_preserves_geometry",
+      "passed": true,
+      "detail": {
+        "selected_feature_ids": [
+          "feature-1",
+          "feature-5",
+          "feature-0",
+          "feature-4"
+        ]
+      }
+    },
+    {
+      "name": "ties_exact_treatment_identity_and_ceiling_coverage",
+      "passed": true,
+      "detail": {
+        "exact_labels_retained": [
+          "B ",
+          "[('A', 0.5, 'uM')]",
+          "C",
+          "B"
+        ],
+        "75_percent_of_3": 3,
+        "75_percent_of_5": 4
+      }
+    },
+    {
+      "name": "shared_predictions_conditional_zero_and_equal_line_macro_weighting",
+      "passed": true,
+      "detail": {
+        "equal_line_macro_risk": 50.0,
+        "pooled_row_value_correctly_avoided": 10.0,
+        "zero_risk_on_different_masks": [
+          2.5,
+          12.5
+        ]
+      }
+    },
+    {
+      "name": "invalid_observed_values_and_insufficient_support_fail_explicitly",
+      "passed": true,
+      "detail": {
+        "observed_nan_inf": "rejected",
+        "inner_source_support_below_two": "rejected",
+        "duplicate_feature_identity": "rejected",
+        "empty_target_line": "rejected"
+      }
+    }
+  ],
+  "passed": 11,
+  "failed": 0
+}

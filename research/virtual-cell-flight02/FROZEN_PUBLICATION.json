@@ -1,0 +1,19 @@
+{
+  "verified_at_utc": "2026-09-10T06:38:36.542061+00:00",
+  "github_commit": "ee0a2ab0ce697e2ced11e57564cc23bd95b696af",
+  "url": "https://github.com/thantiklermcirony/empirical-observatory/tree/ee0a2ab0ce697e2ced11e57564cc23bd95b696af/research/virtual-cell-flight02/experiment",
+  "plate1_numeric_response_evaluation_started": false,
+  "exact_byte_match": true,
+  "files": {
+    "dataio.py": "9bc7c2b1e05082324ac8f9924128e6b362692c49b285e4116ae02cedda42d1fb",
+    "FROZEN_EXECUTION.json": "28495a651e3f135aa730b30a92ec4b9865ae8700ed408910f26681d0a4785428",
+    "pipeline.py": "a39a929a639c2d1621adf889821cfb61c36253a9f8fba7dd0ea686df794a8b71",
+    "protocol.json": "144dbce0843283375f80124fe23c493064041a1be271943335634275a056d121",
+    "README.md": "8ff6476e3fb1b3b3573a7ec46a652c8006120bac45e21ae79ba5964612d6fb75",
+    "requirements.txt": "5e302ff443d90cd9d5248ac123360f2ee0acb7d07343036ad10efe353cbf357d",
+    "run.py": "fe212ed1a72b8f6edaa6ed43305c4fd6738724d1428f4ea12e44fc7ba4c91f28",
+    "synthetic-test.log": "c38dbd6f20b11ffbd76af35f530ed9fa253a88585fe0e81f40a86c696725d224",
+    "test_pipeline.py": "7b5b7a90bfb2a9cc8816a1e8144b85c824cbd20f027bcabc8a0e30e2ccbd91a9",
+    "VALIDATION.json": "8a9bc542620cbd4fa61772df6e894fbc4ef9c68b318632f45f22123bc9f2fd21"
+  }
+}

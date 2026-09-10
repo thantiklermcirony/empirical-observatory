@@ -62,10 +62,10 @@ export const atlasNodes: AtlasNode[] = [
     position: [-5.4, 0.1, -2.6],
     question: 'Does a response survive a change of cell context?',
     evidence:
-      'Four held-out contexts, 2,052 target genes and 6,642 measured genes. The first adjustment failed its superiority gate.',
+      'Two completed tests. Flight 01 tested transfer across four contexts. Flight 02 tested context-informed retention across 50 cell lines and 92 drugs; its 0.13% advantage missed the 10% gate.',
     limit:
-      'Author population estimates, confounded protocols and four contexts. No demonstrated IDA advantage or VCC score.',
-    next: 'Acquire destination-cell baseline measurements and reserve fresh validation.',
+      'Both added methods missed their declared gates. Publisher estimates, normalization and shared measurement noise limit interpretation. No demonstrated IDA advantage or VCC score.',
+    next: 'Separate treatment difficulty and shared measurement noise from useful cell-context information, then test independent measurements.',
     source: '/cell',
     sourceLabel: 'Open the real-data explorer',
   },

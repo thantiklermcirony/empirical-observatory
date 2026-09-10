@@ -1,0 +1,20 @@
+{
+  "audit_date_utc": "2026-09-10",
+  "scope": "Schema and design audit before frozen plate-1 response values are decoded",
+  "local_response_columns_decoded": ["cell_line", "treatment"],
+  "local_response_numeric_columns_decoded": [],
+  "local_response_expression_statistics_inspected": false,
+  "local_control_arrays_decoded": ["cell_lines", "features"],
+  "model_fitting_or_evaluation_performed": false,
+  "incidental_external_preview": {
+    "occurred": true,
+    "url": "https://huggingface.co/datasets/tahoebio/tahoe-de-rhaister",
+    "purpose": "Recheck publisher documentation and data license",
+    "unexpected_content": "Default PDEx preview containing plate-10 gene statistics for 5-Azacytidine",
+    "is_frozen_plate1_celleval_file": false,
+    "used_for_design_selection_or_analysis": false,
+    "parent_informed_immediately": true,
+    "mitigation": "Stopped using the landing-page viewer; use saved README or source-code pages for documentation. Retain exact plate-1 no-outcome-access wording."
+  },
+  "original_selection_modified": false
+}

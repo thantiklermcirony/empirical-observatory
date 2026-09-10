@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "real_response_values_read": false,
+  "real_loader_disabled": true,
+  "source_sha256": {
+    "pipeline.py": "a39a929a639c2d1621adf889821cfb61c36253a9f8fba7dd0ea686df794a8b71",
+    "dataio.py": "9bc7c2b1e05082324ac8f9924128e6b362692c49b285e4116ae02cedda42d1fb",
+    "run.py": "fe212ed1a72b8f6edaa6ed43305c4fd6738724d1428f4ea12e44fc7ba4c91f28",
+    "protocol.json": "d869dca89429c23cdebeb793f3db4845e5ca13392f9417b5404f339733f812d7"
+  },
+  "baseline_output": "synthetic-20260910T063604534665Z-baseline",
+  "poisoned_output": "synthetic-20260910T063604534665Z-poison",
+  "prediction_write_boundary_checks": 40,
+  "outer_fold0_arrays_identical_after_outcome_poison": [
+    "context_ids",
+    "treatment_ids",
+    "gene_ids",
+    "source_mean",
+    "ridge_descriptive",
+    "source_support",
+    "effective_support",
+    "candidate",
+    "disagreement",
+    "treatment_risk",
+    "magnitude"
+  ],
+  "outer_fold0_tuning_and_control_map_unchanged": true,
+  "final_diagnostics_and_fold_validation": {
+    "arbitrary_integer_fold_labels_preserved": true,
+    "invalid_fold_assignments_rejected": 3,
+    "source_only_diagnostics_and_tie_boundary": "PASS"
+  },
+  "independent_saved_mask_audit": {
+    "retained_mask_rows_recomputed": 8320,
+    "observed_pair_rows": 93,
+    "missing_pair_rows": 7
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "syntax_checks_passed": [
+    "schema_preflight.py",
+    "summarize_design.py"
+  ],
+  "files": [
+    {
+      "path": "ACCESS_LOG.json",
+      "bytes": 1056,
+      "sha256": "358b2e52b765f1cbfb16912f2b77dd63d5b98a6a494055492bb514381988684b"
+    },
+    {
+      "path": "ACQUISITION.json",
+      "bytes": 541,
+      "sha256": "364532c17f4a3babc48b383bcdb67e8605a233a26808688a9aab9971b60a94c0"
+    },
+    {
+      "path": "DATA_GATE.md",
+      "bytes": 9899,
+      "sha256": "909bb010f4f93cf8962ef8f8f214f80be3ba8848184313badac43d31aba49883"
+    },
+    {
+      "path": "DESIGN_SUMMARY.json",
+      "bytes": 8686,
+      "sha256": "b114a91b900c6d6c92ff5dfb396c5d0c7aa26afab953e5db79d7e43e1d6a38b5"
+    },
+    {
+      "path": "GATES.json",
+      "bytes": 1555,
+      "sha256": "578acaccbca3e4ebee15c63afa7c91724730ba1c3729ae5d64255efa522834f6"
+    },
+    {
+      "path": "SCHEMA_PREFLIGHT.json",
+      "bytes": 336674,
+      "sha256": "abd172d5f50dec42ef5a22c8cb21448d2e35dea11be21d892bf83953acffbb89"
+    },
+    {
+      "path": "schema_preflight.py",
+      "bytes": 8013,
+      "sha256": "e942c54d3c1c4eb6f3e134b4492ed03b6d6e8a5fef04da1a39850f03575b1bcb"
+    },
+    {
+      "path": "summarize_design.py",
+      "bytes": 4182,
+      "sha256": "b2f27615eb7592165f1e358209f8a1db4c8b1407a9316019060daa362e19b6cd"
+    }
+  ],
+  "excluded": [
+    "plate_plate1.parquet"
+  ],
+  "raw_response_values_read": false
+}

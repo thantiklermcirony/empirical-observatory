@@ -1,0 +1,10 @@
+{
+  "acquired_at_utc": "2026-09-10T06:05:52.760305+00:00",
+  "url": "https://huggingface.co/datasets/tahoebio/tahoe-de-rhaister/resolve/c7963cf334bec0683225d41c9586d900ca6303a2/cell_eval/plate_plate1.parquet",
+  "bytes": 65704666,
+  "sha256": "496a7727899fd16a590e535f6a3007f3ded6f120ad2aa10edc2f5a30ea924c16",
+  "verified_sha256": "496a7727899fd16a590e535f6a3007f3ded6f120ad2aa10edc2f5a30ea924c16",
+  "phase": "Design columns only until exact protocol freeze",
+  "response_columns_read": false,
+  "license": "Publisher CC0-1.0"
+}
