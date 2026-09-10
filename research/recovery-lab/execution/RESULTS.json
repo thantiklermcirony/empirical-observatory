@@ -1,0 +1,367 @@
+{
+  "purpose": "Saved-result report only; no model fitting, retuning, or source modification",
+  "public_freeze_url": "https://github.com/thantiklermcirony/empirical-observatory/commit/7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+  "post_run_source_hashes_verified": {
+    "pipeline.py": "be2e8b750f91b0ea10181fbff46073e3038ece589292577c94ed61afe4b9af4c",
+    "run.py": "9b3818b0b01bddfd76d70fa903664e876849d827bfd4f423d246e6c4131e0fdb",
+    "protocol.json": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+    "requirements.txt": "866dd0124334787e2c1f4cfd61383062a7b824eccda6c1f4594325949fc52c5c",
+    "test_pipeline.py": "409f63d97b9c2356e4446d82ccb16ac05945fceaab1d5bdec7d2e993bdd9d074",
+    "README.md": "f117fd8652453fae69b42552baee4f35c92ee18bd80ca2d053cb16bfa033e36d"
+  },
+  "post_run_input_hashes_verified": {
+    "animals.csv": "80bf2cfbf73c3272b45766b9e6d124998c90aec0defd70009b2f1fe9932cde73",
+    "visits.csv": "4c66aff2424a9fdceeb2a08dca76d69a42c1220265591beedc91581acf009991"
+  },
+  "execution": {
+    "started_at_utc": "2026-09-10T08:18:19.393649+00:00",
+    "command": [
+      "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\agent-biology\\.venv\\Scripts\\python.exe",
+      "-u",
+      "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\run.py",
+      "evaluate",
+      "--data",
+      "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\data-audit\\derived",
+      "--output",
+      "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\results",
+      "--frozen-publication",
+      "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\FROZEN_PUBLICATION.json"
+    ],
+    "thread_limits": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "frozen_public_commit": "7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+    "purpose": "One root-authorized real descriptive evaluation; no retuning after outcomes",
+    "finished_at_utc": "2026-09-10T08:25:39.469132+00:00",
+    "runtime_seconds": 440.0704250000126,
+    "exit_code": 0,
+    "outputs": {
+      "complete_items\\animal_losses.csv": {
+        "bytes": 74228,
+        "sha256": "b9d2faa94fe5faebe20d0d51e28773a93b3bd05172cb86275a6f14d3d0754ac0"
+      },
+      "complete_items\\fit_records.json": {
+        "bytes": 166359,
+        "sha256": "5c766ff5071bb710218d7c6b01457e84c1340a90f36221fbb5da91027fb20b84"
+      },
+      "complete_items\\predictions.csv": {
+        "bytes": 1985043,
+        "sha256": "93b4e1ab77a3ab00854d1b8aefe59e6396b57cfa5720cff345b8b5892a9bda18"
+      },
+      "complete_items\\summary.json": {
+        "bytes": 180633,
+        "sha256": "510e31ca9f72ed3234a01f183bf8a07def26e78e51babd75bfc14be74db6f5de"
+      },
+      "exclude_analgesic\\animal_losses.csv": {
+        "bytes": 76030,
+        "sha256": "063622b64652e840f24b7cad6554893a73405f99a9cfc088a8a6d4aadac3e5dc"
+      },
+      "exclude_analgesic\\fit_records.json": {
+        "bytes": 168870,
+        "sha256": "04437a78d32aadb42c3f347e4ef586e831305efba83c5b58e82e0315d789d729"
+      },
+      "exclude_analgesic\\predictions.csv": {
+        "bytes": 1984733,
+        "sha256": "145eb086b4ae9d1230b3186793e5abb72dc80b2c5fe807adc998e65ade2c1e4f"
+      },
+      "exclude_analgesic\\summary.json": {
+        "bytes": 178501,
+        "sha256": "76f2c857c6801d279de32b7ca7b1e3011215fa764941017bb173a1d32568d733"
+      },
+      "primary\\animal_losses.csv": {
+        "bytes": 76047,
+        "sha256": "e50e20f6cf60bf979ff5ec1399a1d3d9c003de1cc1b37d58f9d6528ce65ffc99"
+      },
+      "primary\\fit_records.json": {
+        "bytes": 168870,
+        "sha256": "0c34848f8ad421ea51131c1966d89901f885f5c245e52198deacde1fe44320a9"
+      },
+      "primary\\predictions.csv": {
+        "bytes": 1984769,
+        "sha256": "f5e7069c1018eae68e415f1ecafc5460be8ba7d902829f4d50a7ac27b493ee1b"
+      },
+      "primary\\summary.json": {
+        "bytes": 178491,
+        "sha256": "4af0cccaec2cc0f5546cf0cce14d623aa65e992b653b8d303be924676501beb6"
+      },
+      "SUMMARY.json": {
+        "bytes": 3304,
+        "sha256": "e51cccc21e1811f3e0df72a0b270bb3ce371be7b2b7a3e7efa0da735890bd3c3"
+      }
+    }
+  },
+  "completed_outer_fold_messages": 15,
+  "log_non_progress_lines": [],
+  "modes": {
+    "primary": {
+      "intended_landmarks": 4104,
+      "resolved_landmarks": 3445,
+      "animals": 214,
+      "resolution_fraction": 0.8394249512670565,
+      "best_conventional": "duration_hgb",
+      "brier_by_model": {
+        "transition": 0.4745613896543414,
+        "current": 0.4338201426737981,
+        "history": 0.439777193196479,
+        "duration": 0.43961763057931197,
+        "duration_hgb": 0.4087748902765672,
+        "candidate": 0.4053359635549259
+      },
+      "log_loss_by_model": {
+        "transition": 0.8267573245638488,
+        "current": 0.7408612836302765,
+        "history": 0.7545066631777935,
+        "duration": 0.7483490597118971,
+        "duration_hgb": 0.7069538072749497,
+        "candidate": 0.7108333911746229
+      },
+      "candidate_relative_improvement": 0.00841276409936681,
+      "candidate_fold_wins": 3,
+      "paired_animal_bootstrap": {
+        "animals": 214,
+        "mean_absolute_improvement": 0.0034389267216413293,
+        "ci95": [
+          -0.011599223299859004,
+          0.01832327434197591
+        ],
+        "draws": 2000,
+        "seed": 9102026,
+        "conditioning": "Resamples saved out-of-fold animal losses conditional on fitted models and selected comparator; does not refit overlapping folds or include full training/selection uncertainty"
+      },
+      "gate": {
+        "resolution_pass": false,
+        "numeric_gate_pass": false,
+        "overall_pass": false,
+        "pre_design_primary_resolution_failed": true,
+        "interpretation": "No confirmatory primary success can be claimed; selection/observation process remains unresolved"
+      },
+      "candidate_settings_by_fold": {
+        "0": [
+          "hgb",
+          0.0
+        ],
+        "1": [
+          "logistic",
+          0.1
+        ],
+        "2": [
+          "hgb",
+          0.0
+        ],
+        "3": [
+          "hgb",
+          0.0
+        ],
+        "4": [
+          "hgb",
+          0.0
+        ]
+      },
+      "outer_fits_with_absent_classes": [],
+      "candidate_recovery_subset": {
+        "animals": 208,
+        "landmarks": 2586,
+        "low_observed_outcomes": 351,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.11821471896623326,
+        "multiclass_brier": 0.40892676895409075,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      },
+      "baseline_recovery_subset": {
+        "animals": 208,
+        "landmarks": 2586,
+        "low_observed_outcomes": 351,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.11852603555662708,
+        "multiclass_brier": 0.4170238958900712,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    },
+    "complete_items": {
+      "intended_landmarks": 4104,
+      "resolved_landmarks": 3410,
+      "animals": 214,
+      "resolution_fraction": 0.830896686159844,
+      "best_conventional": "duration_hgb",
+      "brier_by_model": {
+        "transition": 0.4781702890918017,
+        "current": 0.43730308441666105,
+        "history": 0.43478131671636183,
+        "duration": 0.4358165128690527,
+        "duration_hgb": 0.4064988862134957,
+        "candidate": 0.4149482468926226
+      },
+      "log_loss_by_model": {
+        "transition": 0.8322360177445097,
+        "current": 0.7464449664481413,
+        "history": 0.7465293176957875,
+        "duration": 0.7445860545845843,
+        "duration_hgb": 0.7080994107935261,
+        "candidate": 0.7336420269240557
+      },
+      "candidate_relative_improvement": -0.020785692078598282,
+      "candidate_fold_wins": 2,
+      "paired_animal_bootstrap": {
+        "animals": 209,
+        "mean_absolute_improvement": -0.008449360679126874,
+        "ci95": [
+          -0.031009985933930867,
+          0.011035499003237241
+        ],
+        "draws": 2000,
+        "seed": 9102026,
+        "conditioning": "Resamples saved out-of-fold animal losses conditional on fitted models and selected comparator; does not refit overlapping folds or include full training/selection uncertainty"
+      },
+      "gate": {
+        "resolution_pass": false,
+        "numeric_gate_pass": false,
+        "overall_pass": false,
+        "pre_design_primary_resolution_failed": true,
+        "interpretation": "No confirmatory primary success can be claimed; selection/observation process remains unresolved"
+      },
+      "candidate_settings_by_fold": {
+        "0": [
+          "hgb",
+          0.0
+        ],
+        "1": [
+          "logistic",
+          0.1
+        ],
+        "2": [
+          "logistic",
+          0.1
+        ],
+        "3": [
+          "hgb",
+          0.0
+        ],
+        "4": [
+          "hgb",
+          0.0
+        ]
+      },
+      "outer_fits_with_absent_classes": [],
+      "candidate_recovery_subset": {
+        "animals": 205,
+        "landmarks": 2566,
+        "low_observed_outcomes": 351,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.12521009287348928,
+        "multiclass_brier": 0.42078797782211363,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      },
+      "baseline_recovery_subset": {
+        "animals": 205,
+        "landmarks": 2566,
+        "low_observed_outcomes": 351,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.12379980492245853,
+        "multiclass_brier": 0.41104657805654365,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    },
+    "exclude_analgesic": {
+      "intended_landmarks": 4104,
+      "resolved_landmarks": 3445,
+      "animals": 214,
+      "resolution_fraction": 0.8394249512670565,
+      "best_conventional": "duration_hgb",
+      "brier_by_model": {
+        "transition": 0.4751777395737101,
+        "current": 0.43522759671193223,
+        "history": 0.44030059629236673,
+        "duration": 0.44007695057596774,
+        "duration_hgb": 0.4077093177721199,
+        "candidate": 0.4085505541968375
+      },
+      "log_loss_by_model": {
+        "transition": 0.82827952893999,
+        "current": 0.7442298595746643,
+        "history": 0.7564577436573637,
+        "duration": 0.7500067303996149,
+        "duration_hgb": 0.7075517962700341,
+        "candidate": 0.7138501618843764
+      },
+      "candidate_relative_improvement": -0.0020633240106320257,
+      "candidate_fold_wins": 3,
+      "paired_animal_bootstrap": {
+        "animals": 214,
+        "mean_absolute_improvement": -0.0008412364247175528,
+        "ci95": [
+          -0.015977537140603047,
+          0.013341098601509001
+        ],
+        "draws": 2000,
+        "seed": 9102026,
+        "conditioning": "Resamples saved out-of-fold animal losses conditional on fitted models and selected comparator; does not refit overlapping folds or include full training/selection uncertainty"
+      },
+      "gate": {
+        "resolution_pass": false,
+        "numeric_gate_pass": false,
+        "overall_pass": false,
+        "pre_design_primary_resolution_failed": true,
+        "interpretation": "No confirmatory primary success can be claimed; selection/observation process remains unresolved"
+      },
+      "candidate_settings_by_fold": {
+        "0": [
+          "hgb",
+          0.0
+        ],
+        "1": [
+          "logistic",
+          0.1
+        ],
+        "2": [
+          "hgb",
+          0.0
+        ],
+        "3": [
+          "hgb",
+          0.0
+        ],
+        "4": [
+          "hgb",
+          0.0
+        ]
+      },
+      "outer_fits_with_absent_classes": [],
+      "candidate_recovery_subset": {
+        "animals": 208,
+        "landmarks": 2585,
+        "low_observed_outcomes": 352,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.11824942103792915,
+        "multiclass_brier": 0.408788564479129,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      },
+      "baseline_recovery_subset": {
+        "animals": 208,
+        "landmarks": 2585,
+        "low_observed_outcomes": 352,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.11959342878480558,
+        "multiclass_brier": 0.4150745292652722,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    }
+  },
+  "interpretation": [
+    "All three modes are descriptive because the primary observation-resolution gate failed before fitting.",
+    "The endpoint is recorded death/euthanasia by day9 or an observed burden assessment near day7 with survival established through day9; it is not exact latent day7 health.",
+    "Unresolved outcomes are retained in the prediction tables and excluded from the shared within-mode scoring mask, never assigned healthy or zero-valued outcomes.",
+    "The paired bootstrap resamples saved out-of-fold animal losses conditional on fitted models and selected comparator; it does not cover full training or selection uncertainty.",
+    "High-to-low observed deficit recrossing is not durable biological recovery, a causal intervention effect, or a longevity improvement."
+  ]
+}
