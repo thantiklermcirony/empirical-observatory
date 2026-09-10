@@ -97,6 +97,7 @@ export default function CellExplorer() {
             <strong>OBSERVATORY</strong>
           </span>
         </Link>
+        <Link href="/atlas">Research Atlas</Link>
         <Link href="/projects">
           <ArrowLeft size={15} /> Current projects
         </Link>
