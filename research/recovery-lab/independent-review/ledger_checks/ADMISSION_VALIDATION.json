@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-09-10T08:18:31.814029+00:00",
+  "python_version": "3.12.14",
+  "command": "python -m unittest discover -s work/recovery-lab/independent-review/ledger_checks -p test_*.py -v",
+  "exit_code": 0,
+  "test_count": 14,
+  "source_unchanged_during_tests": true,
+  "files_sha256": {
+    "observatory-automation/observatory_ledger/ledger.py": "a5da88af28080417432c16b2c8eed5d3ec539b935d56a8eb0553279901a55525",
+    "observatory-automation/observatory_ledger/recovery.py": "6356e69a1981a922483b61a4d0632bee286cce2bf49398ec22a7f89e61df9364",
+    "observatory-automation/observatory_ledger/adapters.py": "198cdbefa698137327f48bc258c2d2007ba82888da6f46f20ffbd18b9e62a781",
+    "recovery-lab/independent-review/ledger_checks/test_independent_ledger.py": "9ce4f130c4d23ef57ee8373fc68aefc28450edb7674bef9b8a5668860d1bf8dd",
+    "recovery-lab/independent-review/ledger_checks/test_evidence_admission.py": "3622e0e5d3ae7460c5cab464272bb96f5b2cb715edd1dc9e1033872013291f0b",
+    "recovery-lab/experiment/preflight/PREFLIGHT.json": "bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+  },
+  "network_calls": 0,
+  "real_data_model_fits": 0,
+  "source_modified_by_review": false,
+  "real_primary_oracle": {
+    "resolved": 3445,
+    "landmarks": 4104,
+    "fraction": 0.8394249512670565,
+    "threshold": 0.9,
+    "gate_passed": false
+  },
+  "historical_predesign": {
+    "resolved": 3451,
+    "landmarks": 4104,
+    "current_admission_value": false
+  },
+  "regression_found_and_fixed": "Admission proposal inherited checks from unlisted evidence; now rejected",
+  "test_log_sha256": "947e91cc40c13e24970fb2df730c00985518848ac034b9f6a1ba1f40b36cc0c6"
+}

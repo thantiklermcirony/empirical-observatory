@@ -1,0 +1,34 @@
+name: Verify Recovery and evidence contracts
+on:
+  push:
+    branches-ignore: [observatory-data]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Data adapter contracts
+        run: python -m unittest discover -s research/recovery-lab/data-audit -p 'test_*.py' -v
+      - name: Durable evidence contracts
+        working-directory: automation/ledger
+        run: python -m unittest discover -s tests -v
+      - name: Collector contracts
+        working-directory: automation/grid
+        run: python -m unittest discover -s . -p 'test_*.py' -v
+      - name: Research queue contracts
+        working-directory: automation/operations
+        run: python -m unittest -v test_assess.py
+      - name: Install frozen comparison dependencies
+        run: python -m pip install -r research/recovery-lab/experiment/requirements.txt
+      - name: Predictive pipeline contracts
+        run: python -m unittest discover -s research/recovery-lab/experiment -p 'test_*.py' -v
+      - name: Independent pipeline contracts
+        run: python -m unittest discover -s research/recovery-lab/independent-review/pipeline_checks -p 'check_*.py' -v

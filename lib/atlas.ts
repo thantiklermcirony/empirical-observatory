@@ -13,6 +13,24 @@ export type AtlasNode = {
 const programme = 'https://github.com/thantiklermcirony/empirical-architecture';
 export const atlasNodes: AtlasNode[] = [
   {
+    id: 'recovery-lab', title: 'Recovery Lab', family: 'experiment',
+    position: [-4.2, 1.1, 3.4],
+    question: 'Does observed recovery history improve next-week prediction?',
+    evidence: 'A published, frozen comparison uses 214 older DO mice and 4,104 intended landmarks. Only 83.94% have resolvable outcomes; model comparisons remain descriptive.',
+    limit: 'Observation coverage failed the 90% prerequisite. Observed burden changes are not evidence of rejuvenation or human lifespan extension.',
+    next: 'Improve follow-up coverage, distinguish competing biological mechanisms, and freeze a new test on independent observations.',
+    source: '/recovery', sourceLabel: 'Explore measured histories',
+  },
+  {
+    id: 'forecast-ledger', title: 'Arriving evidence', family: 'experiment',
+    position: [3.4, 1.8, -3.9],
+    question: 'Can every forecast retain what was known before its outcome?',
+    evidence: 'A real GB carbon-intensity forecast has been captured with original source bytes, receipt time and exact lead. The collector can resolve mature estimated actuals later.',
+    limit: 'This collects the official comparison forecast. No better predictor or emissions reduction has been demonstrated.',
+    next: 'Accumulate prospective outcomes, preserve missing slots and revisions, then specify an independent model comparison.',
+    source: '/recovery#forecast-ledger', sourceLabel: 'Inspect the public collection record',
+  },
+  {
     id: 'centre',
     title: 'Adequate description',
     family: 'centre',

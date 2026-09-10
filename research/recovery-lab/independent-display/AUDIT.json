@@ -1,0 +1,412 @@
+{
+  "status": "PASSED exact data reconciliation; display wording findings reported separately",
+  "scope": "Read-only verification against saved frozen outputs and measurements; no models run",
+  "input_hashes": {
+    "export": "ad41d62f62f8514a4b19a08c49fe433c612d63a47741079cbe384c2d13de28fc",
+    "exporter": "9222e3a400c12044b7302779de37a834ebc4f3536d4ebd1bca04ed66483e8b00",
+    "component": "2cec4a5148286461fad8f2f22d9328c0c67896348ec0ad47ed80a92c4502f26d",
+    "predictions": "f5e7069c1018eae68e415f1ecafc5460be8ba7d902829f4d50a7ac27b493ee1b",
+    "visits": "4c66aff2424a9fdceeb2a08dca76d69a42c1220265591beedc91581acf009991",
+    "summary": "4af0cccaec2cc0f5546cf0cce14d623aa65e992b653b8d303be924676501beb6"
+  },
+  "cases": 214,
+  "median_selection": "Upper median chronological intended landmark, one per animal; no score/outcome filtering",
+  "probability_values_verified": 3852,
+  "class_order": [
+    "low",
+    "high",
+    "death_or_euthanasia"
+  ],
+  "date_origin": "First recorded assessment for each animal",
+  "history_points_verified": 1785,
+  "assessment_counts": {
+    "30": 1684,
+    "28": 101
+  },
+  "cases_with_incomplete_history_items": [
+    "DO-1D-3074",
+    "DO-20-1006",
+    "DO-20-1025",
+    "DO-20-1045",
+    "DO-20-1054",
+    "DO-20-1056",
+    "DO-20-1064",
+    "DO-20-1065",
+    "DO-20-1067",
+    "DO-20-1087",
+    "DO-2D-4043",
+    "DO-2D-4062",
+    "DO-2D-4072",
+    "DO-2D-4079",
+    "DO-2D-4092",
+    "DO-40-2016",
+    "DO-40-2017",
+    "DO-40-2039",
+    "DO-40-2065",
+    "DO-40-2066",
+    "DO-40-2067",
+    "DO-40-2078",
+    "DO-40-2092",
+    "DO-40-2094",
+    "DO-AL-0033",
+    "DO-AL-0043"
+  ],
+  "ambiguous_low_bound_points": [
+    {
+      "animal": "DO-20-1025",
+      "day": 14,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-20-1025",
+      "day": 35,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-20-1065",
+      "day": 35,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-20-1087",
+      "day": 28,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-20-1087",
+      "day": 35,
+      "severe_lower_bound": 2,
+      "missing": 2
+    },
+    {
+      "animal": "DO-2D-4043",
+      "day": 14,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-2D-4043",
+      "day": 35,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-2D-4062",
+      "day": 28,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-2D-4062",
+      "day": 35,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-2D-4072",
+      "day": 21,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-2D-4072",
+      "day": 35,
+      "severe_lower_bound": 2,
+      "missing": 2
+    },
+    {
+      "animal": "DO-2D-4092",
+      "day": 35,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-40-2066",
+      "day": 14,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-40-2066",
+      "day": 35,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-40-2067",
+      "day": 0,
+      "severe_lower_bound": 2,
+      "missing": 2
+    },
+    {
+      "animal": "DO-40-2067",
+      "day": 14,
+      "severe_lower_bound": 2,
+      "missing": 2
+    },
+    {
+      "animal": "DO-40-2067",
+      "day": 21,
+      "severe_lower_bound": 3,
+      "missing": 2
+    },
+    {
+      "animal": "DO-40-2067",
+      "day": 35,
+      "severe_lower_bound": 2,
+      "missing": 2
+    }
+  ],
+  "displayed_label_counts": {
+    "0": 40,
+    "1": 119,
+    "-1": 44,
+    "2": 11
+  },
+  "displayed_label_reasons": {
+    "observed_burden": 159,
+    "no_assessment_in_window": 44,
+    "terminal_ES": 3,
+    "terminal_FD": 8
+  },
+  "unresolved_cases_retained": [
+    {
+      "animal": "DO-1D-3111",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-1D-3114",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-1D-3163",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-1D-3168",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-1D-3169",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-1D-3188",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1074",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1087",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1135",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1146",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1156",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1168",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1170",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1183",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1188",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-20-1189",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4072",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4084",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4114",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4124",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4162",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4167",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4168",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4172",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4174",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-2D-4180",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2024",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2028",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2065",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2067",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2078",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2081",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2123",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2133",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2156",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2174",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2175",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2178",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2183",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-40-2184",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-AL-0117",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-AL-0128",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-AL-0172",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    },
+    {
+      "animal": "DO-AL-0180",
+      "reason": "no_assessment_in_window",
+      "outcome_date_present": false
+    }
+  ],
+  "terminal_cases_retained": [
+    "DO-1D-3118",
+    "DO-20-1006",
+    "DO-20-1132",
+    "DO-20-1138",
+    "DO-20-1164",
+    "DO-2D-4112",
+    "DO-2D-4123",
+    "DO-40-2017",
+    "DO-40-2066",
+    "DO-40-2140",
+    "DO-AL-0112"
+  ],
+  "numeric_mismatches": 0
+}

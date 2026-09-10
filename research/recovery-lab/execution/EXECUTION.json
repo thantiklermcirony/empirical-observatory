@@ -1,0 +1,82 @@
+{
+  "started_at_utc": "2026-09-10T08:18:19.393649+00:00",
+  "command": [
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\agent-biology\\.venv\\Scripts\\python.exe",
+    "-u",
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\run.py",
+    "evaluate",
+    "--data",
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\data-audit\\derived",
+    "--output",
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\results",
+    "--frozen-publication",
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\FROZEN_PUBLICATION.json"
+  ],
+  "thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "frozen_public_commit": "7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+  "purpose": "One root-authorized real descriptive evaluation; no retuning after outcomes",
+  "finished_at_utc": "2026-09-10T08:25:39.469132+00:00",
+  "runtime_seconds": 440.0704250000126,
+  "exit_code": 0,
+  "outputs": {
+    "complete_items\\animal_losses.csv": {
+      "bytes": 74228,
+      "sha256": "b9d2faa94fe5faebe20d0d51e28773a93b3bd05172cb86275a6f14d3d0754ac0"
+    },
+    "complete_items\\fit_records.json": {
+      "bytes": 166359,
+      "sha256": "5c766ff5071bb710218d7c6b01457e84c1340a90f36221fbb5da91027fb20b84"
+    },
+    "complete_items\\predictions.csv": {
+      "bytes": 1985043,
+      "sha256": "93b4e1ab77a3ab00854d1b8aefe59e6396b57cfa5720cff345b8b5892a9bda18"
+    },
+    "complete_items\\summary.json": {
+      "bytes": 180633,
+      "sha256": "510e31ca9f72ed3234a01f183bf8a07def26e78e51babd75bfc14be74db6f5de"
+    },
+    "exclude_analgesic\\animal_losses.csv": {
+      "bytes": 76030,
+      "sha256": "063622b64652e840f24b7cad6554893a73405f99a9cfc088a8a6d4aadac3e5dc"
+    },
+    "exclude_analgesic\\fit_records.json": {
+      "bytes": 168870,
+      "sha256": "04437a78d32aadb42c3f347e4ef586e831305efba83c5b58e82e0315d789d729"
+    },
+    "exclude_analgesic\\predictions.csv": {
+      "bytes": 1984733,
+      "sha256": "145eb086b4ae9d1230b3186793e5abb72dc80b2c5fe807adc998e65ade2c1e4f"
+    },
+    "exclude_analgesic\\summary.json": {
+      "bytes": 178501,
+      "sha256": "76f2c857c6801d279de32b7ca7b1e3011215fa764941017bb173a1d32568d733"
+    },
+    "primary\\animal_losses.csv": {
+      "bytes": 76047,
+      "sha256": "e50e20f6cf60bf979ff5ec1399a1d3d9c003de1cc1b37d58f9d6528ce65ffc99"
+    },
+    "primary\\fit_records.json": {
+      "bytes": 168870,
+      "sha256": "0c34848f8ad421ea51131c1966d89901f885f5c245e52198deacde1fe44320a9"
+    },
+    "primary\\predictions.csv": {
+      "bytes": 1984769,
+      "sha256": "f5e7069c1018eae68e415f1ecafc5460be8ba7d902829f4d50a7ac27b493ee1b"
+    },
+    "primary\\summary.json": {
+      "bytes": 178491,
+      "sha256": "4af0cccaec2cc0f5546cf0cce14d623aa65e992b653b8d303be924676501beb6"
+    },
+    "SUMMARY.json": {
+      "bytes": 3304,
+      "sha256": "e51cccc21e1811f3e0df72a0b270bb3ce371be7b2b7a3e7efa0da735890bd3c3"
+    }
+  }
+}

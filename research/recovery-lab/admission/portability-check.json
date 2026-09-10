@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "layout": "current_layout",
+      "passed": true
+    },
+    {
+      "layout": "public_repository",
+      "passed": true,
+      "database_created": false
+    }
+  ],
+  "existing_database_unchanged": true,
+  "scope": "Import/path resolution only; no admission execution or event timestamp change."
+}

@@ -1,0 +1,77 @@
+{
+  "version": "recovery-lab-v1",
+  "status": "Prepared before predictive fitting; requires root publication and matching hashes",
+  "question": "Incremental descriptive prediction from prior recovery/burden history beyond current condition, ordinary30day changes and observed duration",
+  "primary_population": "J:DO female mice, surviving to old-age enrollment; whole-animal predictions",
+  "data_selection": {
+    "source": "10.6084/m9.figshare.25125587.v1",
+    "license": "CC BY4.0",
+    "canonical_alias": {"DO-AL-0097": "DO-AL-0105"},
+    "chronology_quarantine": ["AgedB6-0689", "DO-40-2062"],
+    "landmark_requirements": ["At least30days already observed", "At least3prior observations", "No same-day recorded exit", "Chronology-valid animal"],
+    "primary_landmarks_preflight": 4104,
+    "history_available_population": true,
+    "all_source_exit_classes_retained": true,
+    "cage_ids": "Unavailable; animal-group split cannot control unknown cage correlations"
+  },
+  "endpoint": {
+    "target_day": 7,
+    "window_days": [5,9],
+    "terminal_priority": "FD/ES/RE in (t,t+9] overrides prior followup visit",
+    "burden": "30published ordinalitems; dermatitis.25/.75to.5; severe score==1; high whenknownsevere>=4,lowwhenknownsevere+missing<4,otherwiseunknown",
+    "target_selection": "State-identifiable visit closest to t+7 within[5,9], tieearlier",
+    "alive_through_day9": "Later actual attendance OR later recorded FD/ES/RE terminaldate; other exitdate alone insufficient",
+    "unresolved": "Other exit, no identifiable observation, or survival not established; retain reason and forecast without scoring invented label",
+    "not_claimed": "Exact latent day7 state, natural death for every terminal event, latent recovery time, rejuvenation"
+  },
+  "pre_design_disclosure": {
+    "inspected": "Source methods/scripts, animal/visit schema, dates/exits, score missingness, aggregate transitions and six window-availability alternatives; no predictive performance",
+    "original_5_9_resolved_fraction_before_survival_evidence_tightening": 0.8408869395711501,
+    "final_resolved_landmarks_primary": 3445,
+    "final_resolved_landmarks_complete_items": 3410,
+    "final_resolved_landmarks_exclude_analgesic": 3445,
+    "tightening_delta": "Six formerlyresolved landmarks lack survival evidence beyond their future unknown/other-exit date; conservatively unresolved",
+    "examined_windows": [[5,9],[5,10],[4,10],[5,15],[12,16],[10,18]],
+    "selection_rule": "Rejected5–15 aroundday7 despitecoverage; coherentday14alternativesalsofailed90percent; retainedoriginal5–9",
+    "coverage_gate_known_failed": true,
+    "evaluation_scope": "Descriptive only irrespective of model improvement"
+  },
+  "features": {
+    "transition": "Smoothed conditional state/diet/fixed90day age-bin frequencies, fixed hierarchicalbackoff",
+    "current": "Current30items andmissingmasks, knownstate/severe/missingcount, age, diet, currentassessor, weight, temperature",
+    "history": "Current plus fixedpast30day itemchanges, physicaldeltas/percentchange/slopes/std, observedspan/count, temperature-times-weight mean/availability",
+    "duration": "History plus observedcurrentrunlength andleft-censor flag; unknownstate or gap>14interruptsrun",
+    "duration_hgb": "Same durationfeatures, strong nonlinear estimator",
+    "candidate": "Duration plus count of adjacent identifiable high-to-low recrossings with gap<=14; elapsedtime since last; availabilityflag; complete-item severe-count leftstep integral overpast60days; represented/unrepresented days",
+    "integral_rule": "No contribution across gaps>14 or incomplete startingassessment; duration beforeenrollment/unobserved remains explicit, not zero healthyburden",
+    "forbidden": ["Futurevisit/assessor/schedule", "Exit information", "Whole-record clinicalflag", "Totalfollowup/maxima", "Proportionoflifelived", "Labels or baseline predictions fromheldoutanimals"]
+  },
+  "estimators": {
+    "logistic": {"solver": "lbfgs", "max_iter": 2000, "C": [0.1,1.0,10.0]},
+    "hgb": {"max_iter": 100, "max_leaf_nodes": 7, "l2_regularization": 1, "early_stopping": false},
+    "candidate_family_selection": "LogisticCgrid or fixedHGB chosen insideinneranimalfolds only",
+    "preprocessing": "Trainingonly medianimputation with emptyfeatures retained, scaling, categorical onehot unknownignore",
+    "missing_training_classes": "Recorded; allclassprobabilitycolumns retained. Singleclass uses smoothedconstantfallback disclosed",
+    "probability_calibration": "No separateposthoc calibrator; fixed10bin descriptivecalibration reported"
+  },
+  "validation": {
+    "outer": "5deterministic animalfolds stratifieddiet; SHA256sortwithinstratum thenroundrobin",
+    "inner": "3animalfolds fromoutertrainingmetadataonly",
+    "weights": "Eachanimal equal totalweight; trainingweights normalized tomean1",
+    "primary_metric": "Meanwithin-animal multiclassBriersum(3squarederrors), thenmeananimals; range0to2",
+    "comparators": ["transition","current","history","duration","duration_hgb"],
+    "gate": {"required_resolution": 0.9, "required_relative_gain": 0.05, "fold_wins": 4, "positive_bootstrap_lower_limit": true, "overall_pass_for_this_release": false},
+    "bootstrap": "2000paired animalresamples of saved out-of-fold losses, seed9102026, percentile95percent interval ofabsoluteimprovement; conditional on fitted models and selected comparator, withoutrefitting overlappingfolds or full training/selection uncertainty",
+    "secondary": ["Logloss", "Calibration", "Current-high subset low-outcome binaryBrier", "Current-high multiclassBrier", "Diet/fold/animalcoverage"],
+    "sensitivity_modes": ["Primary missingbounds", "Completecurrentandoutcome30items", "Excludeanalgesicitem with unchangedthreshold4"],
+    "no_selection_on_sensitivities": true,
+    "omitted": ["B6transport evaluation", "True semi-Markov likelihood", "Joint longitudinal-survival model", "Durable-recovery futureconfirmation model", "Causalintervention evaluation"]
+  },
+  "sources": [
+    "https://doi.org/10.1007/s11357-024-01226-9",
+    "https://doi.org/10.6084/m9.figshare.25125587.v1",
+    "https://www.nature.com/articles/s41467-025-57807-5",
+    "https://chjackson.github.io/msm/reference/msm.html",
+    "https://arxiv.org/abs/2508.20949v2"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "review_date_utc": "2026-09-10",
+  "python_version": "3.12.14",
+  "source": "work/observatory-automation/observatory_ledger/ledger.py",
+  "source_sha256": "b30b647f9b3d3f26c04061cfa2f09c0f45e3505035e9d52210ef665155ead270",
+  "adapters_sha256": "198cdbefa698137327f48bc258c2d2007ba82888da6f46f20ffbd18b9e62a781",
+  "tests": 6,
+  "passed": 6,
+  "failed": 0,
+  "network_calls": 0,
+  "real_data_model_fits": 0,
+  "core_source_modified": false,
+  "blocking_defects_found": [],
+  "documented_boundaries_demonstrated": [
+    "Caller-supplied prerequisite value is not re-extracted from raw evidence",
+    "Caller-supplied outcome value is not re-extracted from raw evidence"
+  ],
+  "domain_integration_requirement": "Bind Recovery's true failed feasibility fraction and outcomes to frozen data-derived artifacts before real ledger admission or scoring"
+}

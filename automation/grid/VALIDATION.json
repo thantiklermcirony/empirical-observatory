@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-09-10T08:02:25.656404+00:00",
+  "python_version": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "test_count": 26,
+  "exit_code": 0,
+  "network_calls": 0,
+  "model_fits": 0,
+  "files": {
+    "collector.py": "c8647f54dc8351c99e7a4cf2382aad46f7f0a71efc59682782dd8543a7e6551f",
+    "test_collector.py": "a63682216dc6077d7b8fb25431c79dbcb133397430abc9e71dc7691300021c5d",
+    "README.md": "5310d18917be41056e0d256543627984409d4ca615a382f73d183c3bd38352ef",
+    "PROTOCOL.json": "325c3e5dc4d6b5111577cc2aa00ec6e8d8d75245bbf7a52e6b92fa2d48a11f33",
+    "validate.py": "d3c72f633c0dc80525836477592e195991f2e85a53cbc1a3d1adfbb3c3fc3d70"
+  },
+  "test_log_sha256": "a186dd6bbf10b791a953b39e4760722abfe2bcbf7c3f9b3198be5289682ffb10"
+}

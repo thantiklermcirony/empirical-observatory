@@ -1,0 +1,87 @@
+{
+  "attribution": {
+    "description": "Official national carbon-intensity forecasts and estimated actuals; collector maintained independently",
+    "endorsement": "No provider endorsement or affiliation is implied",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "provider": "National Energy System Operator (NESO)",
+    "source": "https://carbonintensity.org.uk/",
+    "terms": "https://github.com/carbon-intensity/terms",
+    "units": "gCO2/kWh"
+  },
+  "candidate_model": null,
+  "capturedAt": "2026-09-10T07:56:22.396523Z",
+  "detail": "Collecting NESO forecasts for the first half-hour starting at least 24 hours after receipt. Actuals resolve no earlier than 48 hours after target end. Issued time is our receipt time; no candidate predictor is being evaluated. Missed counts are unobserved nominal run slots, not verified scheduler failures.",
+  "evidence": "Local capture records; GitHub publication time must be established separately",
+  "forecast_records": [
+    {
+      "actual": null,
+      "actual_raw_sha256": null,
+      "exact_lead_seconds": 86617.603477,
+      "forecast_id": "20260911T0800Z",
+      "issued_at": "2026-09-10T07:56:22.396523Z",
+      "matures_at": "2026-09-13T08:30:00.000000Z",
+      "raw_sha256": "fc401901fb4f88ce5dd25fd56b3bf4b51f2ef870e3549eedffda7a9dc251d2e5",
+      "received_at": "2026-09-10T07:56:22.396523Z",
+      "resolved_at": null,
+      "revision_count": 0,
+      "status": "pending",
+      "target_end": "2026-09-11T08:30:00.000000Z",
+      "target_start": "2026-09-11T08:00:00.000000Z",
+      "value": 93
+    }
+  ],
+  "generated_at": "2026-09-10T07:56:22.410829Z",
+  "geography": "Great Britain national",
+  "health": {
+    "error_count": 0,
+    "expected_run_slots": 1,
+    "forecast_count": 1,
+    "last_run": {
+      "collector_sha256": "724aca7066b7b30a4e51b82ec093720f3a7523734c41e6154f455b02249b43c4",
+      "completed_at": "2026-09-10T07:56:22.410829Z",
+      "errors": [],
+      "forecast_status": "captured",
+      "mature_checked": 0,
+      "mature_missing": 0,
+      "new_resolutions": 0,
+      "new_revisions": 0,
+      "nominal_slot": "2026-09-10T07:35:00.000000Z",
+      "run_id": "20260910T075621274939Z-989afbf9",
+      "started_at": "2026-09-10T07:56:21.274939Z",
+      "target_id": "20260911T0800Z"
+    },
+    "mature_missing_checks": 0,
+    "mature_unresolved_count": 0,
+    "observed_run_slots": 1,
+    "pending_count": 1,
+    "recent_unobserved_slots": [],
+    "resolved_count": 0,
+    "revision_count": 0,
+    "run_count": 1,
+    "slot_interpretation": "Latest nominal UTC slot at actual run start; queued scheduler event times are not reconstructed",
+    "unobserved_run_slots": 0
+  },
+  "last_capture": "2026-09-10T07:56:22.396523Z",
+  "maturity_rule": "first observed non-null national actual at least 48h after target end",
+  "missed": 0,
+  "phase": "collector_only",
+  "predictive_superiority_claim": false,
+  "provenance": "Local capture records; GitHub publication time must be established separately",
+  "records": [
+    {
+      "actual": null,
+      "end": "2026-09-11T08:30:00.000000Z",
+      "forecast": 93,
+      "issuedAt": "2026-09-10T07:56:22.396523Z",
+      "leadHours": 24.060445410277776,
+      "start": "2026-09-11T08:00:00.000000Z"
+    }
+  ],
+  "resolved": 0,
+  "schema_version": 1,
+  "source": "https://carbonintensity.org.uk/",
+  "status": "collecting",
+  "summary_limit": 192,
+  "target_rule": "first UTC half-hour start >= receipt+24h; actual lead in [24h,24.5h)"
+}

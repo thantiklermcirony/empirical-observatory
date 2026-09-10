@@ -12,6 +12,20 @@ export const metadata: Metadata = {
 const github = 'https://github.com/thantiklermcirony';
 const nextMissions = [
   {
+    name: 'Active Context / the AI tool',
+    status: 'PRODUCT PROPOSAL / BENCHMARK NEXT',
+    description: 'Help an agent resume after its environment changes: recover useful context, identify stale conclusions, and choose the checks needed to continue.',
+    href: '/research/AI_Active_Context_Plan.md',
+    gate: 'SDK not yet implemented · compare with dependency tracking',
+  },
+  {
+    name: 'Recovery Lab / measured history',
+    status: 'DESCRIPTIVE RESULTS / OPEN EVIDENCE',
+    description: 'Explore how observed recovery history can be tested against present condition and established models. Follow the automated collection and review loop.',
+    href: '/recovery',
+    gate: 'Whole-animal holdouts · coverage prerequisite failed',
+  },
+  {
     name: '01 / Virtual Cell',
     status: 'TWO FLIGHTS COMPLETE / RESULTS OPEN',
     description:

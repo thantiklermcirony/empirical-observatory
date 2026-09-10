@@ -1,0 +1,25 @@
+{
+  "started_at_utc": "2026-09-10T08:18:19.393649+00:00",
+  "command": [
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\agent-biology\\.venv\\Scripts\\python.exe",
+    "-u",
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\run.py",
+    "evaluate",
+    "--data",
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\data-audit\\derived",
+    "--output",
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\results",
+    "--frozen-publication",
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\recovery-lab\\experiment\\FROZEN_PUBLICATION.json"
+  ],
+  "thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "frozen_public_commit": "7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+  "purpose": "One root-authorized real descriptive evaluation; no retuning after outcomes"
+}

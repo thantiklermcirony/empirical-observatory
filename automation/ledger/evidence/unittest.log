@@ -1,0 +1,49 @@
+test_actual_raw_fraction_is_extracted_and_blocks_admission (test_admission.AdmissionTests.test_actual_raw_fraction_is_extracted_and_blocks_admission) ... ok
+test_evidence_admission_cannot_add_a_fake_schedule (test_admission.AdmissionTests.test_evidence_admission_cannot_add_a_fake_schedule) ... ok
+test_mismatched_fraction_or_partition_rejected_before_write (test_admission.AdmissionTests.test_mismatched_fraction_or_partition_rejected_before_write) ... ok
+test_missing_checks_produce_pending_not_passed (test_admission.AdmissionTests.test_missing_checks_produce_pending_not_passed) ... ok
+test_no_caller_supplied_fraction_argument_exists (test_admission.AdmissionTests.test_no_caller_supplied_fraction_argument_exists) ... ok
+test_raw_nonfinite_and_duplicate_keys_rejected (test_admission.AdmissionTests.test_raw_nonfinite_and_duplicate_keys_rejected) ... ok
+test_retries_preserve_first_receipt_and_checks (test_admission.AdmissionTests.test_retries_preserve_first_receipt_and_checks) ... ok
+test_unlisted_check_evidence_cannot_be_inherited (test_admission.AdmissionTests.test_unlisted_check_evidence_cannot_be_inherited) ... ok
+test_weakened_frozen_threshold_rejected_by_domain_adapter (test_admission.AdmissionTests.test_weakened_frozen_threshold_rejected_by_domain_adapter) ... ok
+test_wrong_reviewed_hash_rejected (test_admission.AdmissionTests.test_wrong_reviewed_hash_rejected) ... ok
+test_backdated_receipt_does_not_bypass_late_ingestion (test_ledger.LedgerTests.test_backdated_receipt_does_not_bypass_late_ingestion) ... ok
+test_candidate_cannot_skip_test_or_review_or_operator_approval (test_ledger.LedgerTests.test_candidate_cannot_skip_test_or_review_or_operator_approval) ... ok
+test_candidate_plan_cannot_be_selected_after_evaluation_starts (test_ledger.LedgerTests.test_candidate_plan_cannot_be_selected_after_evaluation_starts) ... ok
+test_clock_rollback_and_invalid_write_are_atomic (test_ledger.LedgerTests.test_clock_rollback_and_invalid_write_are_atomic) ... ok
+test_delayed_truth_rejected_even_if_resolver_waits_later (test_ledger.LedgerTests.test_delayed_truth_rejected_even_if_resolver_waits_later) ... ok
+test_failed_feasibility_blocks_descriptive_gain_and_unrelated_review (test_ledger.LedgerTests.test_failed_feasibility_blocks_descriptive_gain_and_unrelated_review) ... ok
+test_failed_gate_cannot_be_approved (test_ledger.LedgerTests.test_failed_gate_cannot_be_approved) ... ok
+test_failed_issue_cannot_be_later_filled (test_ledger.LedgerTests.test_failed_issue_cannot_be_later_filled) ... ok
+test_first_eligible_vintage_is_used_and_revisions_preserved (test_ledger.LedgerTests.test_first_eligible_vintage_is_used_and_revisions_preserved) ... ok
+test_freeze_is_idempotent_but_not_editable (test_ledger.LedgerTests.test_freeze_is_idempotent_but_not_editable) ... ok
+test_future_observation_rejected_but_forecast_vintage_allowed (test_ledger.LedgerTests.test_future_observation_rejected_but_forecast_vintage_allowed) ... ok
+test_gate_uses_matched_pairs_and_all_expected_slots (test_ledger.LedgerTests.test_gate_uses_matched_pairs_and_all_expected_slots) ... ok
+test_hash_corruption_detected (test_ledger.LedgerTests.test_hash_corruption_detected) ... ok
+test_invalid_contract_rolls_back (test_ledger.LedgerTests.test_invalid_contract_rolls_back) ... ok
+test_issue_before_cutoff_and_after_deadline_rejected (test_ledger.LedgerTests.test_issue_before_cutoff_and_after_deadline_rejected) ... ok
+test_missing_prerequisite_is_not_silently_passed (test_ledger.LedgerTests.test_missing_prerequisite_is_not_silently_passed) ... ok
+test_naive_receipt_and_future_publication_rejected (test_ledger.LedgerTests.test_naive_receipt_and_future_publication_rejected) ... ok
+test_nonfinite_predictions_rejected (test_ledger.LedgerTests.test_nonfinite_predictions_rejected) ... ok
+test_passed_prerequisite_still_does_not_automatically_promote (test_ledger.LedgerTests.test_passed_prerequisite_still_does_not_automatically_promote) ... ok
+test_prediction_idempotency_survives_deadline_and_rejects_conflict (test_ledger.LedgerTests.test_prediction_idempotency_survives_deadline_and_rejects_conflict) ... ok
+test_promotion_requires_three_explicit_transitions (test_ledger.LedgerTests.test_promotion_requires_three_explicit_transitions) ... ok
+test_raw_payload_corruption_detected (test_ledger.LedgerTests.test_raw_payload_corruption_detected) ... ok
+test_read_snapshot_returns_verified_raw_bytes (test_ledger.LedgerTests.test_read_snapshot_returns_verified_raw_bytes) ... ok
+test_receipt_later_than_cutoff_rejected (test_ledger.LedgerTests.test_receipt_later_than_cutoff_rejected) ... ok
+test_schedule_is_complete_without_worker_records (test_ledger.LedgerTests.test_schedule_is_complete_without_worker_records) ... ok
+test_score_requires_truth_and_recomputes_mse (test_ledger.LedgerTests.test_score_requires_truth_and_recomputes_mse) ... ok
+test_semantic_replay_catches_wrong_score_even_if_rehashed (test_ledger.LedgerTests.test_semantic_replay_catches_wrong_score_even_if_rehashed) ... ok
+test_truncation_requires_trusted_checkpoint (test_ledger.LedgerTests.test_truncation_requires_trusted_checkpoint) ... ok
+test_two_writers_retry_same_snapshot_atomically (test_ledger.LedgerTests.test_two_writers_retry_same_snapshot_atomically) ... ok
+test_wrong_outcome_entity_time_or_source_rejected (test_ledger.LedgerTests.test_wrong_outcome_entity_time_or_source_rejected) ... ok
+test_all_scalar_and_categorical_losses (test_ledger.MetricAndDemoTests.test_all_scalar_and_categorical_losses) ... ok
+test_categorical_score_preserves_labels (test_ledger.MetricAndDemoTests.test_categorical_score_preserves_labels) ... ok
+test_cli_verification_does_not_create_missing_evidence (test_ledger.MetricAndDemoTests.test_cli_verification_does_not_create_missing_evidence) ... ok
+test_demo_is_labeled_synthetic_and_stops_before_review (test_ledger.MetricAndDemoTests.test_demo_is_labeled_synthetic_and_stops_before_review) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.943s
+
+OK

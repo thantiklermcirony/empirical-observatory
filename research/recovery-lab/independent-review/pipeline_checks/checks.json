@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-10T08:15:04.899160+00:00",
+  "source_sha256": {
+    "pipeline.py": "be2e8b750f91b0ea10181fbff46073e3038ece589292577c94ed61afe4b9af4c",
+    "run.py": "9b3818b0b01bddfd76d70fa903664e876849d827bfd4f423d246e6c4131e0fdb"
+  },
+  "source_unchanged_during_checks": true,
+  "tests": 17,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "Independent synthetic fixtures and estimator spies; two tiny synthetic classifiers; no real mouse inputs loaded or fitted."
+}

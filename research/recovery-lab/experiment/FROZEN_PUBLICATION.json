@@ -1,0 +1,18 @@
+{
+  "commit": "7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+  "url": "https://github.com/thantiklermcirony/empirical-observatory/commit/7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+  "verified_at": "2026-09-10T08:17:01.361269+00:00",
+  "source_sha256": {
+    "pipeline.py": "be2e8b750f91b0ea10181fbff46073e3038ece589292577c94ed61afe4b9af4c",
+    "run.py": "9b3818b0b01bddfd76d70fa903664e876849d827bfd4f423d246e6c4131e0fdb",
+    "protocol.json": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+    "requirements.txt": "866dd0124334787e2c1f4cfd61383062a7b824eccda6c1f4594325949fc52c5c",
+    "test_pipeline.py": "409f63d97b9c2356e4446d82ccb16ac05945fceaab1d5bdec7d2e993bdd9d074",
+    "README.md": "f117fd8652453fae69b42552baee4f35c92ee18bd80ca2d053cb16bfa033e36d"
+  },
+  "input_sha256": {
+    "animals.csv": "80bf2cfbf73c3272b45766b9e6d124998c90aec0defd70009b2f1fe9932cde73",
+    "visits.csv": "4c66aff2424a9fdceeb2a08dca76d69a42c1220265591beedc91581acf009991"
+  },
+  "disclosure": "Public source verified byte-for-byte before real model fitting. Eligibility/outcome availability inspected before design; permanently descriptive after failed coverage gate."
+}

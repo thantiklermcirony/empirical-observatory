@@ -11,7 +11,7 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint app components/observatory lib tests scripts",
     "format": "oxfmt",
-    "test": "node --experimental-strip-types --test tests/engine.test.ts tests/interest.test.ts tests/discovery.test.ts integrations/earth/earth.test.mjs",
+    "test": "node --experimental-strip-types --test tests/engine.test.ts tests/interest.test.ts tests/discovery.test.ts tests/forecast-feed.test.ts integrations/earth/earth.test.mjs",
     "typecheck": "tsc --noEmit",
     "research": "node --experimental-strip-types scripts/research.ts"
   },

@@ -1,0 +1,31 @@
+{
+  "status": "Ready for independent review and public freeze; no real predictive fitting",
+  "synthetic_tests": {
+    "command": "python -m unittest -q test_pipeline.py",
+    "passed": 22,
+    "failed": 0
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.7.2"
+  },
+  "files_sha256": {
+    "pipeline.py": "be2e8b750f91b0ea10181fbff46073e3038ece589292577c94ed61afe4b9af4c",
+    "run.py": "9b3818b0b01bddfd76d70fa903664e876849d827bfd4f423d246e6c4131e0fdb",
+    "protocol.json": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+    "test_pipeline.py": "409f63d97b9c2356e4446d82ccb16ac05945fceaab1d5bdec7d2e993bdd9d074",
+    "README.md": "f117fd8652453fae69b42552baee4f35c92ee18bd80ca2d053cb16bfa033e36d",
+    "requirements.txt": "866dd0124334787e2c1f4cfd61383062a7b824eccda6c1f4594325949fc52c5c"
+  },
+  "preflight_files": {
+    "complete_items_landmarks.csv": "0baf6530f1b899f6c6903cd8f56f51c496c65f9de5ca5446725c5eebd1547862",
+    "exclude_analgesic_landmarks.csv": "bb9bc3d449a0ecf356edd36f1b9dc2c563b80c629c5c01e880de7d1e657145c9",
+    "PREFLIGHT.json": "bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+    "primary_landmarks.csv": "a9fe5715b8b3afdaeae6271e7602bb02525506fd47edecd8a822d7091b848e9d"
+  },
+  "real_data_actions": "Eligibility labels and aggregate availability only; no model fit, tuning or prediction scoring",
+  "frozen_publication": "Not yet authorized/executed by this agent"
+}

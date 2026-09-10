@@ -1,0 +1,6200 @@
+{
+  "mode": "exclude_analgesic",
+  "scope": "Descriptive complete-outcome comparison; primary resolution gate was known to fail before fitting",
+  "coverage": {
+    "overall": {
+      "landmarks": 4104,
+      "animals": 214,
+      "resolved": 3445,
+      "fraction": 0.8394249512670565,
+      "current_complete": 4055,
+      "observed_outcome_complete": 3270,
+      "raw_window_with_assessment": 3297,
+      "raw_window_with_complete_assessment": 3297,
+      "raw_window_with_identifiable_assessment": 3297,
+      "label_counts": {
+        "-1": 659,
+        "0": 760,
+        "1": 2504,
+        "2": 181
+      },
+      "reasons": {
+        "observed_burden": 3264,
+        "no_assessment_in_window": 650,
+        "terminal_FD": 147,
+        "terminal_ES": 29,
+        "survival_through_day9_unestablished": 6,
+        "terminal_RE": 5,
+        "other_exit_MSG": 3
+      }
+    },
+    "by_fold": {
+      "0": {
+        "landmarks": 734,
+        "animals": 45,
+        "resolved": 619,
+        "fraction": 0.8433242506811989,
+        "current_complete": 725,
+        "observed_outcome_complete": 578,
+        "raw_window_with_assessment": 585,
+        "raw_window_with_complete_assessment": 585,
+        "raw_window_with_identifiable_assessment": 585,
+        "label_counts": {
+          "-1": 115,
+          "0": 122,
+          "1": 455,
+          "2": 42
+        },
+        "reasons": {
+          "observed_burden": 577,
+          "no_assessment_in_window": 114,
+          "terminal_FD": 37,
+          "terminal_ES": 5,
+          "survival_through_day9_unestablished": 1
+        }
+      },
+      "1": {
+        "landmarks": 943,
+        "animals": 44,
+        "resolved": 795,
+        "fraction": 0.8430540827147401,
+        "current_complete": 933,
+        "observed_outcome_complete": 756,
+        "raw_window_with_assessment": 764,
+        "raw_window_with_complete_assessment": 764,
+        "raw_window_with_identifiable_assessment": 764,
+        "label_counts": {
+          "-1": 148,
+          "0": 183,
+          "1": 572,
+          "2": 40
+        },
+        "reasons": {
+          "observed_burden": 755,
+          "no_assessment_in_window": 145,
+          "terminal_FD": 33,
+          "terminal_ES": 6,
+          "other_exit_MSG": 2,
+          "survival_through_day9_unestablished": 1,
+          "terminal_RE": 1
+        }
+      },
+      "2": {
+        "landmarks": 946,
+        "animals": 42,
+        "resolved": 813,
+        "fraction": 0.8594080338266384,
+        "current_complete": 940,
+        "observed_outcome_complete": 779,
+        "raw_window_with_assessment": 781,
+        "raw_window_with_complete_assessment": 781,
+        "raw_window_with_identifiable_assessment": 781,
+        "label_counts": {
+          "-1": 133,
+          "0": 186,
+          "1": 592,
+          "2": 35
+        },
+        "reasons": {
+          "observed_burden": 778,
+          "no_assessment_in_window": 132,
+          "terminal_FD": 29,
+          "terminal_ES": 4,
+          "terminal_RE": 2,
+          "survival_through_day9_unestablished": 1
+        }
+      },
+      "3": {
+        "landmarks": 737,
+        "animals": 42,
+        "resolved": 605,
+        "fraction": 0.8208955223880597,
+        "current_complete": 725,
+        "observed_outcome_complete": 576,
+        "raw_window_with_assessment": 580,
+        "raw_window_with_complete_assessment": 580,
+        "raw_window_with_identifiable_assessment": 580,
+        "label_counts": {
+          "-1": 132,
+          "0": 171,
+          "1": 404,
+          "2": 30
+        },
+        "reasons": {
+          "observed_burden": 575,
+          "no_assessment_in_window": 130,
+          "terminal_FD": 22,
+          "terminal_ES": 7,
+          "survival_through_day9_unestablished": 1,
+          "terminal_RE": 1,
+          "other_exit_MSG": 1
+        }
+      },
+      "4": {
+        "landmarks": 744,
+        "animals": 41,
+        "resolved": 613,
+        "fraction": 0.8239247311827957,
+        "current_complete": 732,
+        "observed_outcome_complete": 581,
+        "raw_window_with_assessment": 587,
+        "raw_window_with_complete_assessment": 587,
+        "raw_window_with_identifiable_assessment": 587,
+        "label_counts": {
+          "-1": 131,
+          "0": 98,
+          "1": 481,
+          "2": 34
+        },
+        "reasons": {
+          "observed_burden": 579,
+          "no_assessment_in_window": 129,
+          "terminal_FD": 26,
+          "terminal_ES": 7,
+          "survival_through_day9_unestablished": 2,
+          "terminal_RE": 1
+        }
+      }
+    },
+    "by_diet": {
+      "AL": {
+        "landmarks": 231,
+        "animals": 22,
+        "resolved": 191,
+        "fraction": 0.8268398268398268,
+        "current_complete": 229,
+        "observed_outcome_complete": 173,
+        "raw_window_with_assessment": 175,
+        "raw_window_with_complete_assessment": 175,
+        "raw_window_with_identifiable_assessment": 175,
+        "label_counts": {
+          "-1": 40,
+          "0": 44,
+          "1": 129,
+          "2": 18
+        },
+        "reasons": {
+          "observed_burden": 173,
+          "no_assessment_in_window": 40,
+          "terminal_FD": 17,
+          "terminal_ES": 1
+        }
+      },
+      "CR20": {
+        "landmarks": 951,
+        "animals": 49,
+        "resolved": 801,
+        "fraction": 0.8422712933753943,
+        "current_complete": 936,
+        "observed_outcome_complete": 756,
+        "raw_window_with_assessment": 763,
+        "raw_window_with_complete_assessment": 763,
+        "raw_window_with_identifiable_assessment": 763,
+        "label_counts": {
+          "-1": 150,
+          "0": 171,
+          "1": 585,
+          "2": 45
+        },
+        "reasons": {
+          "observed_burden": 756,
+          "no_assessment_in_window": 150,
+          "terminal_FD": 35,
+          "terminal_ES": 9,
+          "terminal_RE": 1
+        }
+      },
+      "CR40": {
+        "landmarks": 2143,
+        "animals": 75,
+        "resolved": 1818,
+        "fraction": 0.8483434437704153,
+        "current_complete": 2123,
+        "observed_outcome_complete": 1762,
+        "raw_window_with_assessment": 1772,
+        "raw_window_with_complete_assessment": 1772,
+        "raw_window_with_identifiable_assessment": 1772,
+        "label_counts": {
+          "-1": 325,
+          "0": 347,
+          "1": 1411,
+          "2": 60
+        },
+        "reasons": {
+          "observed_burden": 1758,
+          "no_assessment_in_window": 320,
+          "terminal_FD": 47,
+          "terminal_ES": 10,
+          "survival_through_day9_unestablished": 4,
+          "terminal_RE": 3,
+          "other_exit_MSG": 1
+        }
+      },
+      "IF1": {
+        "landmarks": 285,
+        "animals": 27,
+        "resolved": 235,
+        "fraction": 0.8245614035087719,
+        "current_complete": 281,
+        "observed_outcome_complete": 208,
+        "raw_window_with_assessment": 214,
+        "raw_window_with_complete_assessment": 214,
+        "raw_window_with_identifiable_assessment": 214,
+        "label_counts": {
+          "-1": 50,
+          "0": 54,
+          "1": 153,
+          "2": 28
+        },
+        "reasons": {
+          "observed_burden": 207,
+          "no_assessment_in_window": 49,
+          "terminal_FD": 22,
+          "terminal_ES": 6,
+          "survival_through_day9_unestablished": 1
+        }
+      },
+      "IF2": {
+        "landmarks": 494,
+        "animals": 41,
+        "resolved": 400,
+        "fraction": 0.8097165991902834,
+        "current_complete": 486,
+        "observed_outcome_complete": 371,
+        "raw_window_with_assessment": 373,
+        "raw_window_with_complete_assessment": 373,
+        "raw_window_with_identifiable_assessment": 373,
+        "label_counts": {
+          "-1": 94,
+          "0": 144,
+          "1": 226,
+          "2": 30
+        },
+        "reasons": {
+          "observed_burden": 370,
+          "no_assessment_in_window": 91,
+          "terminal_FD": 26,
+          "terminal_ES": 3,
+          "other_exit_MSG": 2,
+          "survival_through_day9_unestablished": 1,
+          "terminal_RE": 1
+        }
+      }
+    },
+    "by_current_state": {
+      "-1": {
+        "landmarks": 15,
+        "animals": 15,
+        "resolved": 13,
+        "fraction": 0.8666666666666667,
+        "current_complete": 0,
+        "observed_outcome_complete": 13,
+        "raw_window_with_assessment": 13,
+        "raw_window_with_complete_assessment": 13,
+        "raw_window_with_identifiable_assessment": 13,
+        "label_counts": {
+          "-1": 2,
+          "0": 4,
+          "1": 9
+        },
+        "reasons": {
+          "observed_burden": 13,
+          "no_assessment_in_window": 2
+        }
+      },
+      "0": {
+        "landmarks": 1037,
+        "animals": 160,
+        "resolved": 847,
+        "fraction": 0.8167791706846673,
+        "current_complete": 1035,
+        "observed_outcome_complete": 835,
+        "raw_window_with_assessment": 837,
+        "raw_window_with_complete_assessment": 837,
+        "raw_window_with_identifiable_assessment": 837,
+        "label_counts": {
+          "-1": 190,
+          "0": 404,
+          "1": 430,
+          "2": 13
+        },
+        "reasons": {
+          "observed_burden": 834,
+          "no_assessment_in_window": 188,
+          "terminal_FD": 11,
+          "terminal_ES": 2,
+          "survival_through_day9_unestablished": 1,
+          "other_exit_MSG": 1
+        }
+      },
+      "1": {
+        "landmarks": 3052,
+        "animals": 213,
+        "resolved": 2585,
+        "fraction": 0.8469855832241153,
+        "current_complete": 3020,
+        "observed_outcome_complete": 2422,
+        "raw_window_with_assessment": 2447,
+        "raw_window_with_complete_assessment": 2447,
+        "raw_window_with_identifiable_assessment": 2447,
+        "label_counts": {
+          "-1": 467,
+          "0": 352,
+          "1": 2065,
+          "2": 168
+        },
+        "reasons": {
+          "observed_burden": 2417,
+          "no_assessment_in_window": 460,
+          "terminal_FD": 136,
+          "terminal_ES": 27,
+          "terminal_RE": 5,
+          "survival_through_day9_unestablished": 5,
+          "other_exit_MSG": 2
+        }
+      }
+    },
+    "by_animal": {
+      "DO-1D-3072": {
+        "landmarks": 17,
+        "animals": 1,
+        "resolved": 14,
+        "fraction": 0.8235294117647058,
+        "current_complete": 16,
+        "observed_outcome_complete": 12,
+        "raw_window_with_assessment": 13,
+        "raw_window_with_complete_assessment": 13,
+        "raw_window_with_identifiable_assessment": 13,
+        "label_counts": {
+          "-1": 3,
+          "0": 9,
+          "1": 3,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 12,
+          "no_assessment_in_window": 3,
+          "terminal_ES": 2
+        }
+      },
+      "DO-1D-3074": {
+        "landmarks": 10,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.8,
+        "current_complete": 9,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 2,
+          "1": 8
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 2
+        }
+      },
+      "DO-1D-3084": {
+        "landmarks": 15,
+        "animals": 1,
+        "resolved": 13,
+        "fraction": 0.8666666666666667,
+        "current_complete": 14,
+        "observed_outcome_complete": 12,
+        "raw_window_with_assessment": 12,
+        "raw_window_with_complete_assessment": 12,
+        "raw_window_with_identifiable_assessment": 12,
+        "label_counts": {
+          "-1": 2,
+          "1": 12,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 12,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3092": {
+        "landmarks": 16,
+        "animals": 1,
+        "resolved": 14,
+        "fraction": 0.875,
+        "current_complete": 15,
+        "observed_outcome_complete": 13,
+        "raw_window_with_assessment": 13,
+        "raw_window_with_complete_assessment": 13,
+        "raw_window_with_identifiable_assessment": 13,
+        "label_counts": {
+          "-1": 2,
+          "0": 8,
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 13,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3104": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 0.5714285714285714,
+        "current_complete": 7,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 3,
+          "0": 3,
+          "1": 1
+        },
+        "reasons": {
+          "observed_burden": 4,
+          "no_assessment_in_window": 2,
+          "survival_through_day9_unestablished": 1
+        }
+      },
+      "DO-1D-3110": {
+        "landmarks": 10,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.8,
+        "current_complete": 10,
+        "observed_outcome_complete": 7,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "-1": 2,
+          "0": 3,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3111": {
+        "landmarks": 13,
+        "animals": 1,
+        "resolved": 10,
+        "fraction": 0.7692307692307693,
+        "current_complete": 13,
+        "observed_outcome_complete": 9,
+        "raw_window_with_assessment": 9,
+        "raw_window_with_complete_assessment": 9,
+        "raw_window_with_identifiable_assessment": 9,
+        "label_counts": {
+          "-1": 3,
+          "0": 5,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 9,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3112": {
+        "landmarks": 6,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.8333333333333334,
+        "current_complete": 6,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 1,
+          "0": 2,
+          "1": 1,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "terminal_FD": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-1D-3114": {
+        "landmarks": 19,
+        "animals": 1,
+        "resolved": 16,
+        "fraction": 0.8421052631578947,
+        "current_complete": 19,
+        "observed_outcome_complete": 15,
+        "raw_window_with_assessment": 15,
+        "raw_window_with_complete_assessment": 15,
+        "raw_window_with_identifiable_assessment": 15,
+        "label_counts": {
+          "-1": 3,
+          "0": 4,
+          "1": 11,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 15,
+          "no_assessment_in_window": 3,
+          "terminal_ES": 1
+        }
+      },
+      "DO-1D-3116": {
+        "landmarks": 14,
+        "animals": 1,
+        "resolved": 11,
+        "fraction": 0.7857142857142857,
+        "current_complete": 14,
+        "observed_outcome_complete": 10,
+        "raw_window_with_assessment": 10,
+        "raw_window_with_complete_assessment": 10,
+        "raw_window_with_identifiable_assessment": 10,
+        "label_counts": {
+          "-1": 3,
+          "0": 2,
+          "1": 8,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 10,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3118": {
+        "landmarks": 1,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 1.0,
+        "current_complete": 1,
+        "observed_outcome_complete": 0,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "2": 1
+        },
+        "reasons": {
+          "terminal_ES": 1
+        }
+      },
+      "DO-1D-3123": {
+        "landmarks": 15,
+        "animals": 1,
+        "resolved": 12,
+        "fraction": 0.8,
+        "current_complete": 15,
+        "observed_outcome_complete": 11,
+        "raw_window_with_assessment": 11,
+        "raw_window_with_complete_assessment": 11,
+        "raw_window_with_identifiable_assessment": 11,
+        "label_counts": {
+          "-1": 3,
+          "0": 4,
+          "1": 7,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 11,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3124": {
+        "landmarks": 11,
+        "animals": 1,
+        "resolved": 9,
+        "fraction": 0.8181818181818182,
+        "current_complete": 11,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 2,
+          "0": 5,
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3134": {
+        "landmarks": 22,
+        "animals": 1,
+        "resolved": 19,
+        "fraction": 0.8636363636363636,
+        "current_complete": 22,
+        "observed_outcome_complete": 18,
+        "raw_window_with_assessment": 18,
+        "raw_window_with_complete_assessment": 18,
+        "raw_window_with_identifiable_assessment": 18,
+        "label_counts": {
+          "-1": 3,
+          "0": 2,
+          "1": 16,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 18,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3135": {
+        "landmarks": 15,
+        "animals": 1,
+        "resolved": 14,
+        "fraction": 0.9333333333333333,
+        "current_complete": 15,
+        "observed_outcome_complete": 12,
+        "raw_window_with_assessment": 13,
+        "raw_window_with_complete_assessment": 13,
+        "raw_window_with_identifiable_assessment": 13,
+        "label_counts": {
+          "-1": 1,
+          "0": 4,
+          "1": 8,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 12,
+          "terminal_FD": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-1D-3139": {
+        "landmarks": 12,
+        "animals": 1,
+        "resolved": 11,
+        "fraction": 0.9166666666666666,
+        "current_complete": 12,
+        "observed_outcome_complete": 10,
+        "raw_window_with_assessment": 10,
+        "raw_window_with_complete_assessment": 10,
+        "raw_window_with_identifiable_assessment": 10,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 9,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 10,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3143": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 7,
+        "fraction": 1.0,
+        "current_complete": 7,
+        "observed_outcome_complete": 6,
+        "raw_window_with_assessment": 6,
+        "raw_window_with_complete_assessment": 6,
+        "raw_window_with_identifiable_assessment": 6,
+        "label_counts": {
+          "0": 2,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3145": {
+        "landmarks": 20,
+        "animals": 1,
+        "resolved": 16,
+        "fraction": 0.8,
+        "current_complete": 20,
+        "observed_outcome_complete": 16,
+        "raw_window_with_assessment": 16,
+        "raw_window_with_complete_assessment": 16,
+        "raw_window_with_identifiable_assessment": 16,
+        "label_counts": {
+          "-1": 4,
+          "1": 16
+        },
+        "reasons": {
+          "observed_burden": 16,
+          "no_assessment_in_window": 4
+        }
+      },
+      "DO-1D-3146": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 1.0,
+        "current_complete": 8,
+        "observed_outcome_complete": 7,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "1": 7,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3154": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 1.0,
+        "current_complete": 4,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 3,
+        "raw_window_with_complete_assessment": 3,
+        "raw_window_with_identifiable_assessment": 3,
+        "label_counts": {
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3155": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 1.0,
+        "current_complete": 8,
+        "observed_outcome_complete": 6,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "1": 6,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 6,
+          "terminal_ES": 2
+        }
+      },
+      "DO-1D-3163": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.6666666666666666,
+        "current_complete": 3,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 1,
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3168": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.6666666666666666,
+        "current_complete": 3,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 1,
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3169": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.25,
+        "current_complete": 4,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 3,
+          "1": 1
+        },
+        "reasons": {
+          "no_assessment_in_window": 3,
+          "observed_burden": 1
+        }
+      },
+      "DO-1D-3170": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.625,
+        "current_complete": 8,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 3,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 4,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-1D-3188": {
+        "landmarks": 13,
+        "animals": 1,
+        "resolved": 10,
+        "fraction": 0.7692307692307693,
+        "current_complete": 13,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 9,
+        "raw_window_with_complete_assessment": 9,
+        "raw_window_with_identifiable_assessment": 9,
+        "label_counts": {
+          "-1": 3,
+          "1": 8,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 2
+        }
+      },
+      "DO-1D-3189": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 0.75,
+        "current_complete": 4,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 1,
+          "1": 2,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1006": {
+        "landmarks": 1,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 1.0,
+        "current_complete": 0,
+        "observed_outcome_complete": 0,
+        "raw_window_with_assessment": 0,
+        "raw_window_with_complete_assessment": 0,
+        "raw_window_with_identifiable_assessment": 0,
+        "label_counts": {
+          "2": 1
+        },
+        "reasons": {
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1025": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 9,
+        "fraction": 1.0,
+        "current_complete": 8,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 9,
+        "raw_window_with_complete_assessment": 9,
+        "raw_window_with_identifiable_assessment": 9,
+        "label_counts": {
+          "0": 2,
+          "1": 6,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "terminal_ES": 1
+        }
+      },
+      "DO-20-1029": {
+        "landmarks": 19,
+        "animals": 1,
+        "resolved": 17,
+        "fraction": 0.8947368421052632,
+        "current_complete": 18,
+        "observed_outcome_complete": 15,
+        "raw_window_with_assessment": 16,
+        "raw_window_with_complete_assessment": 16,
+        "raw_window_with_identifiable_assessment": 16,
+        "label_counts": {
+          "-1": 2,
+          "1": 15,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 15,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 2
+        }
+      },
+      "DO-20-1040": {
+        "landmarks": 25,
+        "animals": 1,
+        "resolved": 22,
+        "fraction": 0.88,
+        "current_complete": 24,
+        "observed_outcome_complete": 21,
+        "raw_window_with_assessment": 21,
+        "raw_window_with_complete_assessment": 21,
+        "raw_window_with_identifiable_assessment": 21,
+        "label_counts": {
+          "-1": 3,
+          "0": 1,
+          "1": 20,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 21,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1045": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.8888888888888888,
+        "current_complete": 8,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 7
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-20-1054": {
+        "landmarks": 15,
+        "animals": 1,
+        "resolved": 13,
+        "fraction": 0.8666666666666667,
+        "current_complete": 14,
+        "observed_outcome_complete": 12,
+        "raw_window_with_assessment": 12,
+        "raw_window_with_complete_assessment": 12,
+        "raw_window_with_identifiable_assessment": 12,
+        "label_counts": {
+          "-1": 2,
+          "0": 5,
+          "1": 7,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 12,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1056": {
+        "landmarks": 13,
+        "animals": 1,
+        "resolved": 11,
+        "fraction": 0.8461538461538461,
+        "current_complete": 12,
+        "observed_outcome_complete": 9,
+        "raw_window_with_assessment": 10,
+        "raw_window_with_complete_assessment": 10,
+        "raw_window_with_identifiable_assessment": 10,
+        "label_counts": {
+          "-1": 2,
+          "0": 3,
+          "1": 6,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 9,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 2
+        }
+      },
+      "DO-20-1064": {
+        "landmarks": 10,
+        "animals": 1,
+        "resolved": 9,
+        "fraction": 0.9,
+        "current_complete": 9,
+        "observed_outcome_complete": 7,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 1,
+          "1": 7,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "terminal_FD": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-20-1065": {
+        "landmarks": 13,
+        "animals": 1,
+        "resolved": 11,
+        "fraction": 0.8461538461538461,
+        "current_complete": 12,
+        "observed_outcome_complete": 10,
+        "raw_window_with_assessment": 10,
+        "raw_window_with_complete_assessment": 10,
+        "raw_window_with_identifiable_assessment": 10,
+        "label_counts": {
+          "-1": 2,
+          "0": 4,
+          "1": 6,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 10,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1066": {
+        "landmarks": 31,
+        "animals": 1,
+        "resolved": 26,
+        "fraction": 0.8387096774193549,
+        "current_complete": 30,
+        "observed_outcome_complete": 25,
+        "raw_window_with_assessment": 25,
+        "raw_window_with_complete_assessment": 25,
+        "raw_window_with_identifiable_assessment": 25,
+        "label_counts": {
+          "-1": 5,
+          "0": 6,
+          "1": 19,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 25,
+          "no_assessment_in_window": 5,
+          "terminal_ES": 1
+        }
+      },
+      "DO-20-1067": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 6,
+        "fraction": 0.8571428571428571,
+        "current_complete": 6,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 6,
+        "raw_window_with_complete_assessment": 6,
+        "raw_window_with_identifiable_assessment": 6,
+        "label_counts": {
+          "-1": 1,
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1069": {
+        "landmarks": 30,
+        "animals": 1,
+        "resolved": 23,
+        "fraction": 0.7666666666666667,
+        "current_complete": 29,
+        "observed_outcome_complete": 23,
+        "raw_window_with_assessment": 23,
+        "raw_window_with_complete_assessment": 23,
+        "raw_window_with_identifiable_assessment": 23,
+        "label_counts": {
+          "-1": 7,
+          "0": 1,
+          "1": 22
+        },
+        "reasons": {
+          "observed_burden": 23,
+          "no_assessment_in_window": 7
+        }
+      },
+      "DO-20-1071": {
+        "landmarks": 21,
+        "animals": 1,
+        "resolved": 18,
+        "fraction": 0.8571428571428571,
+        "current_complete": 20,
+        "observed_outcome_complete": 17,
+        "raw_window_with_assessment": 17,
+        "raw_window_with_complete_assessment": 17,
+        "raw_window_with_identifiable_assessment": 17,
+        "label_counts": {
+          "-1": 3,
+          "1": 17,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 17,
+          "no_assessment_in_window": 3,
+          "terminal_ES": 1
+        }
+      },
+      "DO-20-1074": {
+        "landmarks": 24,
+        "animals": 1,
+        "resolved": 20,
+        "fraction": 0.8333333333333334,
+        "current_complete": 23,
+        "observed_outcome_complete": 19,
+        "raw_window_with_assessment": 19,
+        "raw_window_with_complete_assessment": 19,
+        "raw_window_with_identifiable_assessment": 19,
+        "label_counts": {
+          "-1": 4,
+          "1": 19,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 19,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1087": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 0.75,
+        "current_complete": 3,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1097": {
+        "landmarks": 28,
+        "animals": 1,
+        "resolved": 23,
+        "fraction": 0.8214285714285714,
+        "current_complete": 28,
+        "observed_outcome_complete": 22,
+        "raw_window_with_assessment": 22,
+        "raw_window_with_complete_assessment": 22,
+        "raw_window_with_identifiable_assessment": 22,
+        "label_counts": {
+          "-1": 5,
+          "0": 7,
+          "1": 15,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 22,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1098": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 6,
+        "fraction": 0.75,
+        "current_complete": 8,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 2,
+          "0": 3,
+          "1": 2,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1100": {
+        "landmarks": 6,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 0.6666666666666666,
+        "current_complete": 6,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 2,
+          "0": 1,
+          "1": 3
+        },
+        "reasons": {
+          "observed_burden": 4,
+          "no_assessment_in_window": 2
+        }
+      },
+      "DO-20-1101": {
+        "landmarks": 32,
+        "animals": 1,
+        "resolved": 26,
+        "fraction": 0.8125,
+        "current_complete": 32,
+        "observed_outcome_complete": 26,
+        "raw_window_with_assessment": 26,
+        "raw_window_with_complete_assessment": 26,
+        "raw_window_with_identifiable_assessment": 26,
+        "label_counts": {
+          "-1": 6,
+          "0": 9,
+          "1": 17
+        },
+        "reasons": {
+          "observed_burden": 26,
+          "no_assessment_in_window": 6
+        }
+      },
+      "DO-20-1109": {
+        "landmarks": 33,
+        "animals": 1,
+        "resolved": 27,
+        "fraction": 0.8181818181818182,
+        "current_complete": 33,
+        "observed_outcome_complete": 27,
+        "raw_window_with_assessment": 27,
+        "raw_window_with_complete_assessment": 27,
+        "raw_window_with_identifiable_assessment": 27,
+        "label_counts": {
+          "-1": 6,
+          "0": 10,
+          "1": 17
+        },
+        "reasons": {
+          "observed_burden": 27,
+          "no_assessment_in_window": 6
+        }
+      },
+      "DO-20-1116": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.7142857142857143,
+        "current_complete": 7,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 2,
+          "0": 1,
+          "1": 4
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 2
+        }
+      },
+      "DO-20-1122": {
+        "landmarks": 24,
+        "animals": 1,
+        "resolved": 19,
+        "fraction": 0.7916666666666666,
+        "current_complete": 24,
+        "observed_outcome_complete": 18,
+        "raw_window_with_assessment": 18,
+        "raw_window_with_complete_assessment": 18,
+        "raw_window_with_identifiable_assessment": 18,
+        "label_counts": {
+          "-1": 5,
+          "0": 10,
+          "1": 8,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 18,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1123": {
+        "landmarks": 35,
+        "animals": 1,
+        "resolved": 29,
+        "fraction": 0.8285714285714286,
+        "current_complete": 35,
+        "observed_outcome_complete": 28,
+        "raw_window_with_assessment": 28,
+        "raw_window_with_complete_assessment": 28,
+        "raw_window_with_identifiable_assessment": 28,
+        "label_counts": {
+          "-1": 6,
+          "0": 5,
+          "1": 23,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 28,
+          "no_assessment_in_window": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1124": {
+        "landmarks": 30,
+        "animals": 1,
+        "resolved": 24,
+        "fraction": 0.8,
+        "current_complete": 30,
+        "observed_outcome_complete": 23,
+        "raw_window_with_assessment": 23,
+        "raw_window_with_complete_assessment": 23,
+        "raw_window_with_identifiable_assessment": 23,
+        "label_counts": {
+          "-1": 6,
+          "0": 8,
+          "1": 15,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 23,
+          "no_assessment_in_window": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1126": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 6,
+        "fraction": 0.8571428571428571,
+        "current_complete": 7,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1127": {
+        "landmarks": 36,
+        "animals": 1,
+        "resolved": 30,
+        "fraction": 0.8333333333333334,
+        "current_complete": 36,
+        "observed_outcome_complete": 29,
+        "raw_window_with_assessment": 29,
+        "raw_window_with_complete_assessment": 29,
+        "raw_window_with_identifiable_assessment": 29,
+        "label_counts": {
+          "-1": 6,
+          "0": 12,
+          "1": 17,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 29,
+          "no_assessment_in_window": 6,
+          "terminal_ES": 1
+        }
+      },
+      "DO-20-1128": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 6,
+        "fraction": 0.75,
+        "current_complete": 8,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 2,
+          "0": 2,
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1129": {
+        "landmarks": 19,
+        "animals": 1,
+        "resolved": 18,
+        "fraction": 0.9473684210526315,
+        "current_complete": 19,
+        "observed_outcome_complete": 17,
+        "raw_window_with_assessment": 17,
+        "raw_window_with_complete_assessment": 17,
+        "raw_window_with_identifiable_assessment": 17,
+        "label_counts": {
+          "-1": 1,
+          "0": 2,
+          "1": 15,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 17,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1132": {
+        "landmarks": 2,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 1.0,
+        "current_complete": 2,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1135": {
+        "landmarks": 17,
+        "animals": 1,
+        "resolved": 16,
+        "fraction": 0.9411764705882353,
+        "current_complete": 17,
+        "observed_outcome_complete": 14,
+        "raw_window_with_assessment": 15,
+        "raw_window_with_complete_assessment": 15,
+        "raw_window_with_identifiable_assessment": 15,
+        "label_counts": {
+          "-1": 1,
+          "0": 6,
+          "1": 8,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 14,
+          "terminal_FD": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-20-1136": {
+        "landmarks": 60,
+        "animals": 1,
+        "resolved": 53,
+        "fraction": 0.8833333333333333,
+        "current_complete": 60,
+        "observed_outcome_complete": 53,
+        "raw_window_with_assessment": 53,
+        "raw_window_with_complete_assessment": 53,
+        "raw_window_with_identifiable_assessment": 53,
+        "label_counts": {
+          "-1": 7,
+          "0": 9,
+          "1": 44
+        },
+        "reasons": {
+          "observed_burden": 53,
+          "no_assessment_in_window": 7
+        }
+      },
+      "DO-20-1138": {
+        "landmarks": 1,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 1.0,
+        "current_complete": 1,
+        "observed_outcome_complete": 0,
+        "raw_window_with_assessment": 0,
+        "raw_window_with_complete_assessment": 0,
+        "raw_window_with_identifiable_assessment": 0,
+        "label_counts": {
+          "2": 1
+        },
+        "reasons": {
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1146": {
+        "landmarks": 16,
+        "animals": 1,
+        "resolved": 15,
+        "fraction": 0.9375,
+        "current_complete": 16,
+        "observed_outcome_complete": 14,
+        "raw_window_with_assessment": 14,
+        "raw_window_with_complete_assessment": 14,
+        "raw_window_with_identifiable_assessment": 14,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 13,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 14,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1147": {
+        "landmarks": 5,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 1.0,
+        "current_complete": 5,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "0": 3,
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 4,
+          "terminal_RE": 1
+        }
+      },
+      "DO-20-1151": {
+        "landmarks": 53,
+        "animals": 1,
+        "resolved": 49,
+        "fraction": 0.9245283018867925,
+        "current_complete": 53,
+        "observed_outcome_complete": 47,
+        "raw_window_with_assessment": 48,
+        "raw_window_with_complete_assessment": 48,
+        "raw_window_with_identifiable_assessment": 48,
+        "label_counts": {
+          "-1": 4,
+          "0": 16,
+          "1": 31,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 47,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 2
+        }
+      },
+      "DO-20-1152": {
+        "landmarks": 53,
+        "animals": 1,
+        "resolved": 49,
+        "fraction": 0.9245283018867925,
+        "current_complete": 53,
+        "observed_outcome_complete": 48,
+        "raw_window_with_assessment": 48,
+        "raw_window_with_complete_assessment": 48,
+        "raw_window_with_identifiable_assessment": 48,
+        "label_counts": {
+          "-1": 4,
+          "0": 2,
+          "1": 46,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 48,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1156": {
+        "landmarks": 41,
+        "animals": 1,
+        "resolved": 37,
+        "fraction": 0.9024390243902439,
+        "current_complete": 41,
+        "observed_outcome_complete": 36,
+        "raw_window_with_assessment": 36,
+        "raw_window_with_complete_assessment": 36,
+        "raw_window_with_identifiable_assessment": 36,
+        "label_counts": {
+          "-1": 4,
+          "0": 20,
+          "1": 16,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 36,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1157": {
+        "landmarks": 38,
+        "animals": 1,
+        "resolved": 35,
+        "fraction": 0.9210526315789473,
+        "current_complete": 38,
+        "observed_outcome_complete": 34,
+        "raw_window_with_assessment": 34,
+        "raw_window_with_complete_assessment": 34,
+        "raw_window_with_identifiable_assessment": 34,
+        "label_counts": {
+          "-1": 3,
+          "0": 10,
+          "1": 24,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 34,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1158": {
+        "landmarks": 21,
+        "animals": 1,
+        "resolved": 20,
+        "fraction": 0.9523809523809523,
+        "current_complete": 21,
+        "observed_outcome_complete": 19,
+        "raw_window_with_assessment": 19,
+        "raw_window_with_complete_assessment": 19,
+        "raw_window_with_identifiable_assessment": 19,
+        "label_counts": {
+          "-1": 1,
+          "1": 19,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 19,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1164": {
+        "landmarks": 2,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 1.0,
+        "current_complete": 2,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "terminal_ES": 1
+        }
+      },
+      "DO-20-1168": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 0.42857142857142855,
+        "current_complete": 7,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 3,
+        "raw_window_with_complete_assessment": 3,
+        "raw_window_with_identifiable_assessment": 3,
+        "label_counts": {
+          "-1": 4,
+          "1": 3
+        },
+        "reasons": {
+          "no_assessment_in_window": 4,
+          "observed_burden": 3
+        }
+      },
+      "DO-20-1170": {
+        "landmarks": 16,
+        "animals": 1,
+        "resolved": 11,
+        "fraction": 0.6875,
+        "current_complete": 16,
+        "observed_outcome_complete": 10,
+        "raw_window_with_assessment": 10,
+        "raw_window_with_complete_assessment": 10,
+        "raw_window_with_identifiable_assessment": 10,
+        "label_counts": {
+          "-1": 5,
+          "1": 10,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 10,
+          "no_assessment_in_window": 5,
+          "terminal_ES": 1
+        }
+      },
+      "DO-20-1178": {
+        "landmarks": 15,
+        "animals": 1,
+        "resolved": 9,
+        "fraction": 0.6,
+        "current_complete": 15,
+        "observed_outcome_complete": 9,
+        "raw_window_with_assessment": 9,
+        "raw_window_with_complete_assessment": 9,
+        "raw_window_with_identifiable_assessment": 9,
+        "label_counts": {
+          "-1": 6,
+          "0": 4,
+          "1": 5
+        },
+        "reasons": {
+          "observed_burden": 9,
+          "no_assessment_in_window": 6
+        }
+      },
+      "DO-20-1179": {
+        "landmarks": 13,
+        "animals": 1,
+        "resolved": 9,
+        "fraction": 0.6923076923076923,
+        "current_complete": 13,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 4,
+          "0": 1,
+          "1": 7,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 4,
+          "terminal_ES": 1
+        }
+      },
+      "DO-20-1183": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.5555555555555556,
+        "current_complete": 9,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 4,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 4,
+          "no_assessment_in_window": 4,
+          "terminal_ES": 1
+        }
+      },
+      "DO-20-1186": {
+        "landmarks": 33,
+        "animals": 1,
+        "resolved": 27,
+        "fraction": 0.8181818181818182,
+        "current_complete": 33,
+        "observed_outcome_complete": 26,
+        "raw_window_with_assessment": 26,
+        "raw_window_with_complete_assessment": 26,
+        "raw_window_with_identifiable_assessment": 26,
+        "label_counts": {
+          "-1": 6,
+          "0": 2,
+          "1": 24,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 26,
+          "no_assessment_in_window": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1188": {
+        "landmarks": 27,
+        "animals": 1,
+        "resolved": 21,
+        "fraction": 0.7777777777777778,
+        "current_complete": 27,
+        "observed_outcome_complete": 20,
+        "raw_window_with_assessment": 20,
+        "raw_window_with_complete_assessment": 20,
+        "raw_window_with_identifiable_assessment": 20,
+        "label_counts": {
+          "-1": 6,
+          "1": 20,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 20,
+          "no_assessment_in_window": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1189": {
+        "landmarks": 5,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 0.6,
+        "current_complete": 5,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 2,
+          "0": 1,
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-20-1190": {
+        "landmarks": 13,
+        "animals": 1,
+        "resolved": 9,
+        "fraction": 0.6923076923076923,
+        "current_complete": 13,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 4,
+          "0": 1,
+          "1": 7,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 4,
+          "terminal_ES": 1
+        }
+      },
+      "DO-2D-4039": {
+        "landmarks": 19,
+        "animals": 1,
+        "resolved": 16,
+        "fraction": 0.8421052631578947,
+        "current_complete": 18,
+        "observed_outcome_complete": 15,
+        "raw_window_with_assessment": 15,
+        "raw_window_with_complete_assessment": 15,
+        "raw_window_with_identifiable_assessment": 15,
+        "label_counts": {
+          "-1": 3,
+          "1": 15,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 15,
+          "no_assessment_in_window": 3,
+          "terminal_ES": 1
+        }
+      },
+      "DO-2D-4043": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 1.0,
+        "current_complete": 2,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "1": 2,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4062": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.625,
+        "current_complete": 7,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 3,
+          "1": 5
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 3
+        }
+      },
+      "DO-2D-4072": {
+        "landmarks": 2,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.5,
+        "current_complete": 1,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 1,
+          "1": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-2D-4079": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.8888888888888888,
+        "current_complete": 8,
+        "observed_outcome_complete": 7,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 6,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4083": {
+        "landmarks": 15,
+        "animals": 1,
+        "resolved": 13,
+        "fraction": 0.8666666666666667,
+        "current_complete": 14,
+        "observed_outcome_complete": 12,
+        "raw_window_with_assessment": 12,
+        "raw_window_with_complete_assessment": 12,
+        "raw_window_with_identifiable_assessment": 12,
+        "label_counts": {
+          "-1": 2,
+          "0": 4,
+          "1": 8,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 12,
+          "no_assessment_in_window": 2,
+          "terminal_ES": 1
+        }
+      },
+      "DO-2D-4084": {
+        "landmarks": 19,
+        "animals": 1,
+        "resolved": 17,
+        "fraction": 0.8947368421052632,
+        "current_complete": 18,
+        "observed_outcome_complete": 16,
+        "raw_window_with_assessment": 16,
+        "raw_window_with_complete_assessment": 16,
+        "raw_window_with_identifiable_assessment": 16,
+        "label_counts": {
+          "-1": 2,
+          "0": 4,
+          "1": 12,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 16,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4092": {
+        "landmarks": 13,
+        "animals": 1,
+        "resolved": 11,
+        "fraction": 0.8461538461538461,
+        "current_complete": 12,
+        "observed_outcome_complete": 10,
+        "raw_window_with_assessment": 10,
+        "raw_window_with_complete_assessment": 10,
+        "raw_window_with_identifiable_assessment": 10,
+        "label_counts": {
+          "-1": 2,
+          "0": 4,
+          "1": 6,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 10,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4097": {
+        "landmarks": 6,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 0.5,
+        "current_complete": 6,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 3,
+          "1": 3
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "no_assessment_in_window": 2,
+          "survival_through_day9_unestablished": 1
+        }
+      },
+      "DO-2D-4099": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.7142857142857143,
+        "current_complete": 7,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 2,
+          "0": 1,
+          "1": 4
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 2
+        }
+      },
+      "DO-2D-4112": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 1.0,
+        "current_complete": 3,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "1": 1,
+          "2": 2
+        },
+        "reasons": {
+          "terminal_FD": 2,
+          "observed_burden": 1
+        }
+      },
+      "DO-2D-4113": {
+        "landmarks": 29,
+        "animals": 1,
+        "resolved": 24,
+        "fraction": 0.8275862068965517,
+        "current_complete": 29,
+        "observed_outcome_complete": 23,
+        "raw_window_with_assessment": 23,
+        "raw_window_with_complete_assessment": 23,
+        "raw_window_with_identifiable_assessment": 23,
+        "label_counts": {
+          "-1": 5,
+          "0": 7,
+          "1": 16,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 23,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4114": {
+        "landmarks": 21,
+        "animals": 1,
+        "resolved": 17,
+        "fraction": 0.8095238095238095,
+        "current_complete": 21,
+        "observed_outcome_complete": 17,
+        "raw_window_with_assessment": 17,
+        "raw_window_with_complete_assessment": 17,
+        "raw_window_with_identifiable_assessment": 17,
+        "label_counts": {
+          "-1": 4,
+          "0": 14,
+          "1": 3
+        },
+        "reasons": {
+          "observed_burden": 17,
+          "no_assessment_in_window": 4
+        }
+      },
+      "DO-2D-4119": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.8888888888888888,
+        "current_complete": 9,
+        "observed_outcome_complete": 7,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "-1": 1,
+          "0": 3,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4122": {
+        "landmarks": 23,
+        "animals": 1,
+        "resolved": 19,
+        "fraction": 0.8260869565217391,
+        "current_complete": 23,
+        "observed_outcome_complete": 18,
+        "raw_window_with_assessment": 18,
+        "raw_window_with_complete_assessment": 18,
+        "raw_window_with_identifiable_assessment": 18,
+        "label_counts": {
+          "-1": 4,
+          "0": 14,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 18,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4123": {
+        "landmarks": 1,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 1.0,
+        "current_complete": 1,
+        "observed_outcome_complete": 0,
+        "raw_window_with_assessment": 0,
+        "raw_window_with_complete_assessment": 0,
+        "raw_window_with_identifiable_assessment": 0,
+        "label_counts": {
+          "2": 1
+        },
+        "reasons": {
+          "terminal_ES": 1
+        }
+      },
+      "DO-2D-4124": {
+        "landmarks": 5,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 0.8,
+        "current_complete": 5,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 3,
+        "raw_window_with_complete_assessment": 3,
+        "raw_window_with_identifiable_assessment": 3,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 2,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4128": {
+        "landmarks": 14,
+        "animals": 1,
+        "resolved": 11,
+        "fraction": 0.7857142857142857,
+        "current_complete": 14,
+        "observed_outcome_complete": 10,
+        "raw_window_with_assessment": 10,
+        "raw_window_with_complete_assessment": 10,
+        "raw_window_with_identifiable_assessment": 10,
+        "label_counts": {
+          "-1": 3,
+          "0": 4,
+          "1": 6,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 10,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4130": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 1.0,
+        "current_complete": 4,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 3,
+        "raw_window_with_complete_assessment": 3,
+        "raw_window_with_identifiable_assessment": 3,
+        "label_counts": {
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4132": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.8888888888888888,
+        "current_complete": 9,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 1,
+          "0": 6,
+          "1": 2
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-2D-4133": {
+        "landmarks": 6,
+        "animals": 1,
+        "resolved": 6,
+        "fraction": 1.0,
+        "current_complete": 6,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4143": {
+        "landmarks": 18,
+        "animals": 1,
+        "resolved": 17,
+        "fraction": 0.9444444444444444,
+        "current_complete": 18,
+        "observed_outcome_complete": 15,
+        "raw_window_with_assessment": 16,
+        "raw_window_with_complete_assessment": 16,
+        "raw_window_with_identifiable_assessment": 16,
+        "label_counts": {
+          "-1": 1,
+          "0": 8,
+          "1": 7,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 15,
+          "terminal_FD": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-2D-4145": {
+        "landmarks": 12,
+        "animals": 1,
+        "resolved": 11,
+        "fraction": 0.9166666666666666,
+        "current_complete": 12,
+        "observed_outcome_complete": 10,
+        "raw_window_with_assessment": 10,
+        "raw_window_with_complete_assessment": 10,
+        "raw_window_with_identifiable_assessment": 10,
+        "label_counts": {
+          "-1": 1,
+          "0": 5,
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 10,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4148": {
+        "landmarks": 25,
+        "animals": 1,
+        "resolved": 22,
+        "fraction": 0.88,
+        "current_complete": 25,
+        "observed_outcome_complete": 22,
+        "raw_window_with_assessment": 22,
+        "raw_window_with_complete_assessment": 22,
+        "raw_window_with_identifiable_assessment": 22,
+        "label_counts": {
+          "-1": 3,
+          "0": 3,
+          "1": 19
+        },
+        "reasons": {
+          "observed_burden": 22,
+          "no_assessment_in_window": 3
+        }
+      },
+      "DO-2D-4149": {
+        "landmarks": 31,
+        "animals": 1,
+        "resolved": 28,
+        "fraction": 0.9032258064516129,
+        "current_complete": 31,
+        "observed_outcome_complete": 27,
+        "raw_window_with_assessment": 27,
+        "raw_window_with_complete_assessment": 27,
+        "raw_window_with_identifiable_assessment": 27,
+        "label_counts": {
+          "-1": 3,
+          "0": 19,
+          "1": 8,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 27,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4150": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 7,
+        "fraction": 0.875,
+        "current_complete": 8,
+        "observed_outcome_complete": 7,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "-1": 1,
+          "1": 7
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-2D-4151": {
+        "landmarks": 23,
+        "animals": 1,
+        "resolved": 20,
+        "fraction": 0.8695652173913043,
+        "current_complete": 23,
+        "observed_outcome_complete": 20,
+        "raw_window_with_assessment": 20,
+        "raw_window_with_complete_assessment": 20,
+        "raw_window_with_identifiable_assessment": 20,
+        "label_counts": {
+          "-1": 3,
+          "0": 4,
+          "1": 16
+        },
+        "reasons": {
+          "observed_burden": 20,
+          "no_assessment_in_window": 2,
+          "other_exit_MSG": 1
+        }
+      },
+      "DO-2D-4157": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 1.0,
+        "current_complete": 8,
+        "observed_outcome_complete": 7,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "0": 1,
+          "1": 6,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4158": {
+        "landmarks": 11,
+        "animals": 1,
+        "resolved": 10,
+        "fraction": 0.9090909090909091,
+        "current_complete": 11,
+        "observed_outcome_complete": 9,
+        "raw_window_with_assessment": 9,
+        "raw_window_with_complete_assessment": 9,
+        "raw_window_with_identifiable_assessment": 9,
+        "label_counts": {
+          "-1": 1,
+          "0": 5,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 9,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4162": {
+        "landmarks": 2,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.5,
+        "current_complete": 2,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 1,
+          "1": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-2D-4165": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.5555555555555556,
+        "current_complete": 9,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 4,
+          "0": 1,
+          "1": 4
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 4
+        }
+      },
+      "DO-2D-4167": {
+        "landmarks": 19,
+        "animals": 1,
+        "resolved": 15,
+        "fraction": 0.7894736842105263,
+        "current_complete": 19,
+        "observed_outcome_complete": 14,
+        "raw_window_with_assessment": 14,
+        "raw_window_with_complete_assessment": 14,
+        "raw_window_with_identifiable_assessment": 14,
+        "label_counts": {
+          "-1": 4,
+          "0": 12,
+          "1": 2,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 14,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4168": {
+        "landmarks": 5,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.2,
+        "current_complete": 5,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 4,
+          "0": 1
+        },
+        "reasons": {
+          "no_assessment_in_window": 3,
+          "observed_burden": 1,
+          "other_exit_MSG": 1
+        }
+      },
+      "DO-2D-4171": {
+        "landmarks": 27,
+        "animals": 1,
+        "resolved": 22,
+        "fraction": 0.8148148148148148,
+        "current_complete": 27,
+        "observed_outcome_complete": 21,
+        "raw_window_with_assessment": 21,
+        "raw_window_with_complete_assessment": 21,
+        "raw_window_with_identifiable_assessment": 21,
+        "label_counts": {
+          "-1": 5,
+          "0": 9,
+          "1": 12,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 21,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4172": {
+        "landmarks": 19,
+        "animals": 1,
+        "resolved": 15,
+        "fraction": 0.7894736842105263,
+        "current_complete": 19,
+        "observed_outcome_complete": 14,
+        "raw_window_with_assessment": 14,
+        "raw_window_with_complete_assessment": 14,
+        "raw_window_with_identifiable_assessment": 14,
+        "label_counts": {
+          "-1": 4,
+          "0": 9,
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 14,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4174": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.6666666666666666,
+        "current_complete": 3,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 1,
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4180": {
+        "landmarks": 10,
+        "animals": 1,
+        "resolved": 6,
+        "fraction": 0.6,
+        "current_complete": 10,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 4,
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4184": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 0.5,
+        "current_complete": 8,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 3,
+        "raw_window_with_complete_assessment": 3,
+        "raw_window_with_identifiable_assessment": 3,
+        "label_counts": {
+          "-1": 4,
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "no_assessment_in_window": 4,
+          "observed_burden": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4186": {
+        "landmarks": 18,
+        "animals": 1,
+        "resolved": 12,
+        "fraction": 0.6666666666666666,
+        "current_complete": 18,
+        "observed_outcome_complete": 11,
+        "raw_window_with_assessment": 11,
+        "raw_window_with_complete_assessment": 11,
+        "raw_window_with_identifiable_assessment": 11,
+        "label_counts": {
+          "-1": 6,
+          "0": 1,
+          "1": 10,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 11,
+          "no_assessment_in_window": 6,
+          "terminal_RE": 1
+        }
+      },
+      "DO-2D-4190": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.5555555555555556,
+        "current_complete": 9,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 4,
+          "0": 2,
+          "1": 2,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 4,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-2D-4192": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.5,
+        "current_complete": 4,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 2,
+          "0": 1,
+          "1": 1
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "no_assessment_in_window": 2
+        }
+      },
+      "DO-40-2016": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 1.0,
+        "current_complete": 7,
+        "observed_outcome_complete": 6,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "1": 6,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 6,
+          "terminal_FD": 2
+        }
+      },
+      "DO-40-2017": {
+        "landmarks": 1,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 1.0,
+        "current_complete": 0,
+        "observed_outcome_complete": 0,
+        "raw_window_with_assessment": 0,
+        "raw_window_with_complete_assessment": 0,
+        "raw_window_with_identifiable_assessment": 0,
+        "label_counts": {
+          "2": 1
+        },
+        "reasons": {
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2024": {
+        "landmarks": 21,
+        "animals": 1,
+        "resolved": 19,
+        "fraction": 0.9047619047619048,
+        "current_complete": 20,
+        "observed_outcome_complete": 18,
+        "raw_window_with_assessment": 18,
+        "raw_window_with_complete_assessment": 18,
+        "raw_window_with_identifiable_assessment": 18,
+        "label_counts": {
+          "-1": 2,
+          "1": 18,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 18,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2028": {
+        "landmarks": 26,
+        "animals": 1,
+        "resolved": 23,
+        "fraction": 0.8846153846153846,
+        "current_complete": 25,
+        "observed_outcome_complete": 22,
+        "raw_window_with_assessment": 22,
+        "raw_window_with_complete_assessment": 22,
+        "raw_window_with_identifiable_assessment": 22,
+        "label_counts": {
+          "-1": 3,
+          "0": 1,
+          "1": 21,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 22,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2039": {
+        "landmarks": 12,
+        "animals": 1,
+        "resolved": 10,
+        "fraction": 0.8333333333333334,
+        "current_complete": 11,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 9,
+        "raw_window_with_complete_assessment": 9,
+        "raw_window_with_identifiable_assessment": 9,
+        "label_counts": {
+          "-1": 2,
+          "1": 8,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 2
+        }
+      },
+      "DO-40-2050": {
+        "landmarks": 33,
+        "animals": 1,
+        "resolved": 28,
+        "fraction": 0.8484848484848485,
+        "current_complete": 32,
+        "observed_outcome_complete": 26,
+        "raw_window_with_assessment": 27,
+        "raw_window_with_complete_assessment": 27,
+        "raw_window_with_identifiable_assessment": 27,
+        "label_counts": {
+          "-1": 5,
+          "1": 26,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 26,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 2
+        }
+      },
+      "DO-40-2056": {
+        "landmarks": 35,
+        "animals": 1,
+        "resolved": 30,
+        "fraction": 0.8571428571428571,
+        "current_complete": 34,
+        "observed_outcome_complete": 28,
+        "raw_window_with_assessment": 29,
+        "raw_window_with_complete_assessment": 29,
+        "raw_window_with_identifiable_assessment": 29,
+        "label_counts": {
+          "-1": 5,
+          "0": 5,
+          "1": 23,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 28,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 2
+        }
+      },
+      "DO-40-2059": {
+        "landmarks": 23,
+        "animals": 1,
+        "resolved": 20,
+        "fraction": 0.8695652173913043,
+        "current_complete": 22,
+        "observed_outcome_complete": 19,
+        "raw_window_with_assessment": 19,
+        "raw_window_with_complete_assessment": 19,
+        "raw_window_with_identifiable_assessment": 19,
+        "label_counts": {
+          "-1": 3,
+          "0": 6,
+          "1": 13,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 19,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2061": {
+        "landmarks": 26,
+        "animals": 1,
+        "resolved": 21,
+        "fraction": 0.8076923076923077,
+        "current_complete": 25,
+        "observed_outcome_complete": 21,
+        "raw_window_with_assessment": 21,
+        "raw_window_with_complete_assessment": 21,
+        "raw_window_with_identifiable_assessment": 21,
+        "label_counts": {
+          "-1": 5,
+          "1": 21
+        },
+        "reasons": {
+          "observed_burden": 21,
+          "no_assessment_in_window": 5
+        }
+      },
+      "DO-40-2065": {
+        "landmarks": 2,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.5,
+        "current_complete": 1,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 1,
+          "1": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-40-2066": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 0.75,
+        "current_complete": 3,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 1,
+          "1": 1,
+          "2": 2
+        },
+        "reasons": {
+          "terminal_FD": 2,
+          "observed_burden": 1,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-40-2067": {
+        "landmarks": 2,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.5,
+        "current_complete": 1,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 1,
+          "1": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-40-2070": {
+        "landmarks": 52,
+        "animals": 1,
+        "resolved": 44,
+        "fraction": 0.8461538461538461,
+        "current_complete": 51,
+        "observed_outcome_complete": 43,
+        "raw_window_with_assessment": 43,
+        "raw_window_with_complete_assessment": 43,
+        "raw_window_with_identifiable_assessment": 43,
+        "label_counts": {
+          "-1": 8,
+          "0": 2,
+          "1": 41,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 43,
+          "no_assessment_in_window": 8,
+          "terminal_ES": 1
+        }
+      },
+      "DO-40-2073": {
+        "landmarks": 27,
+        "animals": 1,
+        "resolved": 23,
+        "fraction": 0.8518518518518519,
+        "current_complete": 26,
+        "observed_outcome_complete": 22,
+        "raw_window_with_assessment": 22,
+        "raw_window_with_complete_assessment": 22,
+        "raw_window_with_identifiable_assessment": 22,
+        "label_counts": {
+          "-1": 4,
+          "0": 5,
+          "1": 17,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 22,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2077": {
+        "landmarks": 25,
+        "animals": 1,
+        "resolved": 21,
+        "fraction": 0.84,
+        "current_complete": 24,
+        "observed_outcome_complete": 20,
+        "raw_window_with_assessment": 20,
+        "raw_window_with_complete_assessment": 20,
+        "raw_window_with_identifiable_assessment": 20,
+        "label_counts": {
+          "-1": 4,
+          "1": 20,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 20,
+          "no_assessment_in_window": 4,
+          "terminal_ES": 1
+        }
+      },
+      "DO-40-2078": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.6666666666666666,
+        "current_complete": 2,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 1,
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2081": {
+        "landmarks": 41,
+        "animals": 1,
+        "resolved": 35,
+        "fraction": 0.8536585365853658,
+        "current_complete": 41,
+        "observed_outcome_complete": 34,
+        "raw_window_with_assessment": 34,
+        "raw_window_with_complete_assessment": 34,
+        "raw_window_with_identifiable_assessment": 34,
+        "label_counts": {
+          "-1": 6,
+          "0": 13,
+          "1": 21,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 34,
+          "no_assessment_in_window": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2087": {
+        "landmarks": 36,
+        "animals": 1,
+        "resolved": 33,
+        "fraction": 0.9166666666666666,
+        "current_complete": 35,
+        "observed_outcome_complete": 32,
+        "raw_window_with_assessment": 32,
+        "raw_window_with_complete_assessment": 32,
+        "raw_window_with_identifiable_assessment": 32,
+        "label_counts": {
+          "-1": 3,
+          "0": 6,
+          "1": 26,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 32,
+          "no_assessment_in_window": 3,
+          "terminal_ES": 1
+        }
+      },
+      "DO-40-2088": {
+        "landmarks": 40,
+        "animals": 1,
+        "resolved": 36,
+        "fraction": 0.9,
+        "current_complete": 39,
+        "observed_outcome_complete": 36,
+        "raw_window_with_assessment": 36,
+        "raw_window_with_complete_assessment": 36,
+        "raw_window_with_identifiable_assessment": 36,
+        "label_counts": {
+          "-1": 4,
+          "0": 2,
+          "1": 34
+        },
+        "reasons": {
+          "observed_burden": 36,
+          "no_assessment_in_window": 4
+        }
+      },
+      "DO-40-2092": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.6666666666666666,
+        "current_complete": 2,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 1,
+          "1": 2
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-40-2094": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.6666666666666666,
+        "current_complete": 2,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 1,
+          "1": 2
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-40-2097": {
+        "landmarks": 6,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 0.5,
+        "current_complete": 6,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 3,
+          "0": 1,
+          "1": 2
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "no_assessment_in_window": 2,
+          "survival_through_day9_unestablished": 1
+        }
+      },
+      "DO-40-2099": {
+        "landmarks": 72,
+        "animals": 1,
+        "resolved": 61,
+        "fraction": 0.8472222222222222,
+        "current_complete": 72,
+        "observed_outcome_complete": 60,
+        "raw_window_with_assessment": 60,
+        "raw_window_with_complete_assessment": 60,
+        "raw_window_with_identifiable_assessment": 60,
+        "label_counts": {
+          "-1": 11,
+          "0": 14,
+          "1": 46,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 60,
+          "no_assessment_in_window": 11,
+          "terminal_ES": 1
+        }
+      },
+      "DO-40-2101": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.6666666666666666,
+        "current_complete": 3,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 1,
+          "1": 2
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-40-2102": {
+        "landmarks": 24,
+        "animals": 1,
+        "resolved": 19,
+        "fraction": 0.7916666666666666,
+        "current_complete": 24,
+        "observed_outcome_complete": 19,
+        "raw_window_with_assessment": 19,
+        "raw_window_with_complete_assessment": 19,
+        "raw_window_with_identifiable_assessment": 19,
+        "label_counts": {
+          "-1": 5,
+          "0": 8,
+          "1": 11
+        },
+        "reasons": {
+          "observed_burden": 19,
+          "no_assessment_in_window": 5
+        }
+      },
+      "DO-40-2107": {
+        "landmarks": 60,
+        "animals": 1,
+        "resolved": 52,
+        "fraction": 0.8666666666666667,
+        "current_complete": 60,
+        "observed_outcome_complete": 51,
+        "raw_window_with_assessment": 51,
+        "raw_window_with_complete_assessment": 51,
+        "raw_window_with_identifiable_assessment": 51,
+        "label_counts": {
+          "-1": 8,
+          "0": 5,
+          "1": 46,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 51,
+          "no_assessment_in_window": 8,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2108": {
+        "landmarks": 6,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 0.5,
+        "current_complete": 6,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 3,
+          "1": 3
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "no_assessment_in_window": 2,
+          "survival_through_day9_unestablished": 1
+        }
+      },
+      "DO-40-2111": {
+        "landmarks": 37,
+        "animals": 1,
+        "resolved": 29,
+        "fraction": 0.7837837837837838,
+        "current_complete": 37,
+        "observed_outcome_complete": 30,
+        "raw_window_with_assessment": 30,
+        "raw_window_with_complete_assessment": 30,
+        "raw_window_with_identifiable_assessment": 30,
+        "label_counts": {
+          "-1": 8,
+          "0": 2,
+          "1": 27
+        },
+        "reasons": {
+          "observed_burden": 29,
+          "no_assessment_in_window": 6,
+          "survival_through_day9_unestablished": 1,
+          "other_exit_MSG": 1
+        }
+      },
+      "DO-40-2113": {
+        "landmarks": 11,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.7272727272727273,
+        "current_complete": 11,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 3,
+          "0": 3,
+          "1": 5
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 3
+        }
+      },
+      "DO-40-2114": {
+        "landmarks": 12,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.6666666666666666,
+        "current_complete": 12,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 4,
+          "0": 3,
+          "1": 5
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 4
+        }
+      },
+      "DO-40-2115": {
+        "landmarks": 60,
+        "animals": 1,
+        "resolved": 49,
+        "fraction": 0.8166666666666667,
+        "current_complete": 60,
+        "observed_outcome_complete": 49,
+        "raw_window_with_assessment": 49,
+        "raw_window_with_complete_assessment": 49,
+        "raw_window_with_identifiable_assessment": 49,
+        "label_counts": {
+          "-1": 11,
+          "0": 4,
+          "1": 45
+        },
+        "reasons": {
+          "observed_burden": 49,
+          "no_assessment_in_window": 11
+        }
+      },
+      "DO-40-2116": {
+        "landmarks": 36,
+        "animals": 1,
+        "resolved": 29,
+        "fraction": 0.8055555555555556,
+        "current_complete": 36,
+        "observed_outcome_complete": 28,
+        "raw_window_with_assessment": 28,
+        "raw_window_with_complete_assessment": 28,
+        "raw_window_with_identifiable_assessment": 28,
+        "label_counts": {
+          "-1": 7,
+          "0": 15,
+          "1": 13,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 28,
+          "no_assessment_in_window": 7,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2117": {
+        "landmarks": 71,
+        "animals": 1,
+        "resolved": 62,
+        "fraction": 0.8732394366197183,
+        "current_complete": 71,
+        "observed_outcome_complete": 61,
+        "raw_window_with_assessment": 61,
+        "raw_window_with_complete_assessment": 61,
+        "raw_window_with_identifiable_assessment": 61,
+        "label_counts": {
+          "-1": 9,
+          "0": 33,
+          "1": 28,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 61,
+          "no_assessment_in_window": 9,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2118": {
+        "landmarks": 63,
+        "animals": 1,
+        "resolved": 54,
+        "fraction": 0.8571428571428571,
+        "current_complete": 63,
+        "observed_outcome_complete": 53,
+        "raw_window_with_assessment": 53,
+        "raw_window_with_complete_assessment": 53,
+        "raw_window_with_identifiable_assessment": 53,
+        "label_counts": {
+          "-1": 9,
+          "0": 15,
+          "1": 38,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 53,
+          "no_assessment_in_window": 9,
+          "terminal_RE": 1
+        }
+      },
+      "DO-40-2123": {
+        "landmarks": 20,
+        "animals": 1,
+        "resolved": 16,
+        "fraction": 0.8,
+        "current_complete": 20,
+        "observed_outcome_complete": 15,
+        "raw_window_with_assessment": 15,
+        "raw_window_with_complete_assessment": 15,
+        "raw_window_with_identifiable_assessment": 15,
+        "label_counts": {
+          "-1": 4,
+          "0": 5,
+          "1": 10,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 15,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2124": {
+        "landmarks": 22,
+        "animals": 1,
+        "resolved": 17,
+        "fraction": 0.7727272727272727,
+        "current_complete": 22,
+        "observed_outcome_complete": 16,
+        "raw_window_with_assessment": 16,
+        "raw_window_with_complete_assessment": 16,
+        "raw_window_with_identifiable_assessment": 16,
+        "label_counts": {
+          "-1": 5,
+          "0": 1,
+          "1": 15,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 16,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2125": {
+        "landmarks": 26,
+        "animals": 1,
+        "resolved": 20,
+        "fraction": 0.7692307692307693,
+        "current_complete": 26,
+        "observed_outcome_complete": 19,
+        "raw_window_with_assessment": 19,
+        "raw_window_with_complete_assessment": 19,
+        "raw_window_with_identifiable_assessment": 19,
+        "label_counts": {
+          "-1": 6,
+          "0": 7,
+          "1": 12,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 19,
+          "no_assessment_in_window": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2126": {
+        "landmarks": 73,
+        "animals": 1,
+        "resolved": 64,
+        "fraction": 0.8767123287671232,
+        "current_complete": 73,
+        "observed_outcome_complete": 62,
+        "raw_window_with_assessment": 63,
+        "raw_window_with_complete_assessment": 63,
+        "raw_window_with_identifiable_assessment": 63,
+        "label_counts": {
+          "-1": 9,
+          "0": 15,
+          "1": 47,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 62,
+          "no_assessment_in_window": 9,
+          "terminal_FD": 2
+        }
+      },
+      "DO-40-2130": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 7,
+        "fraction": 0.7777777777777778,
+        "current_complete": 9,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 2,
+          "1": 7
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "survival_through_day9_unestablished": 1,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-40-2133": {
+        "landmarks": 17,
+        "animals": 1,
+        "resolved": 16,
+        "fraction": 0.9411764705882353,
+        "current_complete": 17,
+        "observed_outcome_complete": 15,
+        "raw_window_with_assessment": 15,
+        "raw_window_with_complete_assessment": 15,
+        "raw_window_with_identifiable_assessment": 15,
+        "label_counts": {
+          "-1": 1,
+          "0": 2,
+          "1": 13,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 15,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2135": {
+        "landmarks": 20,
+        "animals": 1,
+        "resolved": 17,
+        "fraction": 0.85,
+        "current_complete": 20,
+        "observed_outcome_complete": 17,
+        "raw_window_with_assessment": 17,
+        "raw_window_with_complete_assessment": 17,
+        "raw_window_with_identifiable_assessment": 17,
+        "label_counts": {
+          "-1": 3,
+          "0": 5,
+          "1": 12
+        },
+        "reasons": {
+          "observed_burden": 17,
+          "no_assessment_in_window": 3
+        }
+      },
+      "DO-40-2136": {
+        "landmarks": 6,
+        "animals": 1,
+        "resolved": 6,
+        "fraction": 1.0,
+        "current_complete": 6,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2137": {
+        "landmarks": 21,
+        "animals": 1,
+        "resolved": 18,
+        "fraction": 0.8571428571428571,
+        "current_complete": 21,
+        "observed_outcome_complete": 17,
+        "raw_window_with_assessment": 17,
+        "raw_window_with_complete_assessment": 17,
+        "raw_window_with_identifiable_assessment": 17,
+        "label_counts": {
+          "-1": 3,
+          "0": 7,
+          "1": 10,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 17,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2140": {
+        "landmarks": 2,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 1.0,
+        "current_complete": 2,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2141": {
+        "landmarks": 62,
+        "animals": 1,
+        "resolved": 56,
+        "fraction": 0.9032258064516129,
+        "current_complete": 62,
+        "observed_outcome_complete": 55,
+        "raw_window_with_assessment": 55,
+        "raw_window_with_complete_assessment": 55,
+        "raw_window_with_identifiable_assessment": 55,
+        "label_counts": {
+          "-1": 6,
+          "0": 2,
+          "1": 53,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 55,
+          "no_assessment_in_window": 6,
+          "terminal_ES": 1
+        }
+      },
+      "DO-40-2145": {
+        "landmarks": 32,
+        "animals": 1,
+        "resolved": 29,
+        "fraction": 0.90625,
+        "current_complete": 32,
+        "observed_outcome_complete": 28,
+        "raw_window_with_assessment": 28,
+        "raw_window_with_complete_assessment": 28,
+        "raw_window_with_identifiable_assessment": 28,
+        "label_counts": {
+          "-1": 3,
+          "0": 4,
+          "1": 24,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 28,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2146": {
+        "landmarks": 66,
+        "animals": 1,
+        "resolved": 60,
+        "fraction": 0.9090909090909091,
+        "current_complete": 66,
+        "observed_outcome_complete": 59,
+        "raw_window_with_assessment": 59,
+        "raw_window_with_complete_assessment": 59,
+        "raw_window_with_identifiable_assessment": 59,
+        "label_counts": {
+          "-1": 6,
+          "0": 13,
+          "1": 46,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 59,
+          "no_assessment_in_window": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2147": {
+        "landmarks": 6,
+        "animals": 1,
+        "resolved": 6,
+        "fraction": 1.0,
+        "current_complete": 6,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2149": {
+        "landmarks": 22,
+        "animals": 1,
+        "resolved": 19,
+        "fraction": 0.8636363636363636,
+        "current_complete": 22,
+        "observed_outcome_complete": 19,
+        "raw_window_with_assessment": 19,
+        "raw_window_with_complete_assessment": 19,
+        "raw_window_with_identifiable_assessment": 19,
+        "label_counts": {
+          "-1": 3,
+          "0": 1,
+          "1": 18
+        },
+        "reasons": {
+          "observed_burden": 19,
+          "no_assessment_in_window": 3
+        }
+      },
+      "DO-40-2150": {
+        "landmarks": 22,
+        "animals": 1,
+        "resolved": 20,
+        "fraction": 0.9090909090909091,
+        "current_complete": 22,
+        "observed_outcome_complete": 19,
+        "raw_window_with_assessment": 19,
+        "raw_window_with_complete_assessment": 19,
+        "raw_window_with_identifiable_assessment": 19,
+        "label_counts": {
+          "-1": 2,
+          "0": 2,
+          "1": 17,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 19,
+          "no_assessment_in_window": 2,
+          "terminal_ES": 1
+        }
+      },
+      "DO-40-2151": {
+        "landmarks": 25,
+        "animals": 1,
+        "resolved": 22,
+        "fraction": 0.88,
+        "current_complete": 25,
+        "observed_outcome_complete": 21,
+        "raw_window_with_assessment": 21,
+        "raw_window_with_complete_assessment": 21,
+        "raw_window_with_identifiable_assessment": 21,
+        "label_counts": {
+          "-1": 3,
+          "0": 3,
+          "1": 18,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 21,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2152": {
+        "landmarks": 33,
+        "animals": 1,
+        "resolved": 29,
+        "fraction": 0.8787878787878788,
+        "current_complete": 33,
+        "observed_outcome_complete": 28,
+        "raw_window_with_assessment": 28,
+        "raw_window_with_complete_assessment": 28,
+        "raw_window_with_identifiable_assessment": 28,
+        "label_counts": {
+          "-1": 4,
+          "1": 28,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 28,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2153": {
+        "landmarks": 58,
+        "animals": 1,
+        "resolved": 53,
+        "fraction": 0.9137931034482759,
+        "current_complete": 58,
+        "observed_outcome_complete": 52,
+        "raw_window_with_assessment": 52,
+        "raw_window_with_complete_assessment": 52,
+        "raw_window_with_identifiable_assessment": 52,
+        "label_counts": {
+          "-1": 5,
+          "0": 1,
+          "1": 51,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 52,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2156": {
+        "landmarks": 41,
+        "animals": 1,
+        "resolved": 37,
+        "fraction": 0.9024390243902439,
+        "current_complete": 41,
+        "observed_outcome_complete": 36,
+        "raw_window_with_assessment": 36,
+        "raw_window_with_complete_assessment": 36,
+        "raw_window_with_identifiable_assessment": 36,
+        "label_counts": {
+          "-1": 4,
+          "0": 1,
+          "1": 35,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 36,
+          "no_assessment_in_window": 4,
+          "terminal_RE": 1
+        }
+      },
+      "DO-40-2157": {
+        "landmarks": 22,
+        "animals": 1,
+        "resolved": 18,
+        "fraction": 0.8181818181818182,
+        "current_complete": 22,
+        "observed_outcome_complete": 17,
+        "raw_window_with_assessment": 17,
+        "raw_window_with_complete_assessment": 17,
+        "raw_window_with_identifiable_assessment": 17,
+        "label_counts": {
+          "-1": 4,
+          "0": 13,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 17,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2158": {
+        "landmarks": 34,
+        "animals": 1,
+        "resolved": 30,
+        "fraction": 0.8823529411764706,
+        "current_complete": 34,
+        "observed_outcome_complete": 29,
+        "raw_window_with_assessment": 29,
+        "raw_window_with_complete_assessment": 29,
+        "raw_window_with_identifiable_assessment": 29,
+        "label_counts": {
+          "-1": 4,
+          "0": 1,
+          "1": 28,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 29,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2159": {
+        "landmarks": 49,
+        "animals": 1,
+        "resolved": 44,
+        "fraction": 0.8979591836734694,
+        "current_complete": 49,
+        "observed_outcome_complete": 43,
+        "raw_window_with_assessment": 43,
+        "raw_window_with_complete_assessment": 43,
+        "raw_window_with_identifiable_assessment": 43,
+        "label_counts": {
+          "-1": 5,
+          "0": 9,
+          "1": 34,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 43,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2160": {
+        "landmarks": 22,
+        "animals": 1,
+        "resolved": 18,
+        "fraction": 0.8181818181818182,
+        "current_complete": 22,
+        "observed_outcome_complete": 17,
+        "raw_window_with_assessment": 17,
+        "raw_window_with_complete_assessment": 17,
+        "raw_window_with_identifiable_assessment": 17,
+        "label_counts": {
+          "-1": 4,
+          "0": 8,
+          "1": 9,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 17,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2162": {
+        "landmarks": 63,
+        "animals": 1,
+        "resolved": 50,
+        "fraction": 0.7936507936507936,
+        "current_complete": 63,
+        "observed_outcome_complete": 50,
+        "raw_window_with_assessment": 50,
+        "raw_window_with_complete_assessment": 50,
+        "raw_window_with_identifiable_assessment": 50,
+        "label_counts": {
+          "-1": 13,
+          "0": 10,
+          "1": 40
+        },
+        "reasons": {
+          "observed_burden": 50,
+          "no_assessment_in_window": 13
+        }
+      },
+      "DO-40-2164": {
+        "landmarks": 30,
+        "animals": 1,
+        "resolved": 23,
+        "fraction": 0.7666666666666667,
+        "current_complete": 30,
+        "observed_outcome_complete": 22,
+        "raw_window_with_assessment": 22,
+        "raw_window_with_complete_assessment": 22,
+        "raw_window_with_identifiable_assessment": 22,
+        "label_counts": {
+          "-1": 7,
+          "0": 3,
+          "1": 19,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 22,
+          "no_assessment_in_window": 7,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2167": {
+        "landmarks": 44,
+        "animals": 1,
+        "resolved": 35,
+        "fraction": 0.7954545454545454,
+        "current_complete": 44,
+        "observed_outcome_complete": 35,
+        "raw_window_with_assessment": 35,
+        "raw_window_with_complete_assessment": 35,
+        "raw_window_with_identifiable_assessment": 35,
+        "label_counts": {
+          "-1": 9,
+          "0": 11,
+          "1": 24
+        },
+        "reasons": {
+          "observed_burden": 35,
+          "no_assessment_in_window": 9
+        }
+      },
+      "DO-40-2168": {
+        "landmarks": 21,
+        "animals": 1,
+        "resolved": 15,
+        "fraction": 0.7142857142857143,
+        "current_complete": 21,
+        "observed_outcome_complete": 14,
+        "raw_window_with_assessment": 14,
+        "raw_window_with_complete_assessment": 14,
+        "raw_window_with_identifiable_assessment": 14,
+        "label_counts": {
+          "-1": 6,
+          "0": 11,
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 14,
+          "no_assessment_in_window": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2172": {
+        "landmarks": 12,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.6666666666666666,
+        "current_complete": 12,
+        "observed_outcome_complete": 6,
+        "raw_window_with_assessment": 7,
+        "raw_window_with_complete_assessment": 7,
+        "raw_window_with_identifiable_assessment": 7,
+        "label_counts": {
+          "-1": 4,
+          "0": 4,
+          "1": 2,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 6,
+          "no_assessment_in_window": 4,
+          "terminal_ES": 2
+        }
+      },
+      "DO-40-2174": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.25,
+        "current_complete": 4,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 3,
+          "1": 1
+        },
+        "reasons": {
+          "no_assessment_in_window": 3,
+          "observed_burden": 1
+        }
+      },
+      "DO-40-2175": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.25,
+        "current_complete": 4,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 3,
+          "1": 1
+        },
+        "reasons": {
+          "no_assessment_in_window": 3,
+          "observed_burden": 1
+        }
+      },
+      "DO-40-2176": {
+        "landmarks": 8,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 0.5,
+        "current_complete": 8,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "-1": 4,
+          "0": 1,
+          "1": 3
+        },
+        "reasons": {
+          "observed_burden": 4,
+          "no_assessment_in_window": 4
+        }
+      },
+      "DO-40-2178": {
+        "landmarks": 16,
+        "animals": 1,
+        "resolved": 14,
+        "fraction": 0.875,
+        "current_complete": 16,
+        "observed_outcome_complete": 13,
+        "raw_window_with_assessment": 13,
+        "raw_window_with_complete_assessment": 13,
+        "raw_window_with_identifiable_assessment": 13,
+        "label_counts": {
+          "-1": 2,
+          "1": 13,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 13,
+          "no_assessment_in_window": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2179": {
+        "landmarks": 71,
+        "animals": 1,
+        "resolved": 61,
+        "fraction": 0.8591549295774648,
+        "current_complete": 71,
+        "observed_outcome_complete": 61,
+        "raw_window_with_assessment": 61,
+        "raw_window_with_complete_assessment": 61,
+        "raw_window_with_identifiable_assessment": 61,
+        "label_counts": {
+          "-1": 10,
+          "0": 3,
+          "1": 58
+        },
+        "reasons": {
+          "observed_burden": 61,
+          "no_assessment_in_window": 10
+        }
+      },
+      "DO-40-2181": {
+        "landmarks": 70,
+        "animals": 1,
+        "resolved": 61,
+        "fraction": 0.8714285714285714,
+        "current_complete": 70,
+        "observed_outcome_complete": 60,
+        "raw_window_with_assessment": 61,
+        "raw_window_with_complete_assessment": 61,
+        "raw_window_with_identifiable_assessment": 61,
+        "label_counts": {
+          "-1": 9,
+          "0": 8,
+          "1": 52,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 60,
+          "no_assessment_in_window": 9,
+          "terminal_RE": 1
+        }
+      },
+      "DO-40-2182": {
+        "landmarks": 18,
+        "animals": 1,
+        "resolved": 14,
+        "fraction": 0.7777777777777778,
+        "current_complete": 18,
+        "observed_outcome_complete": 14,
+        "raw_window_with_assessment": 14,
+        "raw_window_with_complete_assessment": 14,
+        "raw_window_with_identifiable_assessment": 14,
+        "label_counts": {
+          "-1": 4,
+          "0": 1,
+          "1": 13
+        },
+        "reasons": {
+          "observed_burden": 14,
+          "no_assessment_in_window": 4
+        }
+      },
+      "DO-40-2183": {
+        "landmarks": 32,
+        "animals": 1,
+        "resolved": 28,
+        "fraction": 0.875,
+        "current_complete": 32,
+        "observed_outcome_complete": 27,
+        "raw_window_with_assessment": 27,
+        "raw_window_with_complete_assessment": 27,
+        "raw_window_with_identifiable_assessment": 27,
+        "label_counts": {
+          "-1": 4,
+          "0": 9,
+          "1": 18,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 27,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2184": {
+        "landmarks": 35,
+        "animals": 1,
+        "resolved": 30,
+        "fraction": 0.8571428571428571,
+        "current_complete": 35,
+        "observed_outcome_complete": 29,
+        "raw_window_with_assessment": 29,
+        "raw_window_with_complete_assessment": 29,
+        "raw_window_with_identifiable_assessment": 29,
+        "label_counts": {
+          "-1": 5,
+          "0": 4,
+          "1": 25,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 29,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-40-2186": {
+        "landmarks": 18,
+        "animals": 1,
+        "resolved": 15,
+        "fraction": 0.8333333333333334,
+        "current_complete": 18,
+        "observed_outcome_complete": 13,
+        "raw_window_with_assessment": 14,
+        "raw_window_with_complete_assessment": 14,
+        "raw_window_with_identifiable_assessment": 14,
+        "label_counts": {
+          "-1": 3,
+          "0": 6,
+          "1": 7,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 13,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 2
+        }
+      },
+      "DO-40-2187": {
+        "landmarks": 67,
+        "animals": 1,
+        "resolved": 59,
+        "fraction": 0.8805970149253731,
+        "current_complete": 67,
+        "observed_outcome_complete": 57,
+        "raw_window_with_assessment": 58,
+        "raw_window_with_complete_assessment": 58,
+        "raw_window_with_identifiable_assessment": 58,
+        "label_counts": {
+          "-1": 8,
+          "0": 21,
+          "1": 36,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 57,
+          "no_assessment_in_window": 8,
+          "terminal_ES": 2
+        }
+      },
+      "DO-40-2192": {
+        "landmarks": 36,
+        "animals": 1,
+        "resolved": 33,
+        "fraction": 0.9166666666666666,
+        "current_complete": 36,
+        "observed_outcome_complete": 32,
+        "raw_window_with_assessment": 32,
+        "raw_window_with_complete_assessment": 32,
+        "raw_window_with_identifiable_assessment": 32,
+        "label_counts": {
+          "-1": 3,
+          "0": 12,
+          "1": 20,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 32,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0033": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 1.0,
+        "current_complete": 3,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 3,
+        "raw_window_with_complete_assessment": 3,
+        "raw_window_with_identifiable_assessment": 3,
+        "label_counts": {
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "terminal_ES": 1
+        }
+      },
+      "DO-AL-0043": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 3,
+        "fraction": 1.0,
+        "current_complete": 2,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "1": 2,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0102": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.7142857142857143,
+        "current_complete": 7,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 2,
+          "1": 5
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 2
+        }
+      },
+      "DO-AL-0105": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 0.7142857142857143,
+        "current_complete": 7,
+        "observed_outcome_complete": 5,
+        "raw_window_with_assessment": 5,
+        "raw_window_with_complete_assessment": 5,
+        "raw_window_with_identifiable_assessment": 5,
+        "label_counts": {
+          "-1": 2,
+          "1": 5
+        },
+        "reasons": {
+          "observed_burden": 5,
+          "no_assessment_in_window": 2
+        }
+      },
+      "DO-AL-0112": {
+        "landmarks": 2,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 1.0,
+        "current_complete": 2,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0115": {
+        "landmarks": 3,
+        "animals": 1,
+        "resolved": 2,
+        "fraction": 0.6666666666666666,
+        "current_complete": 3,
+        "observed_outcome_complete": 2,
+        "raw_window_with_assessment": 2,
+        "raw_window_with_complete_assessment": 2,
+        "raw_window_with_identifiable_assessment": 2,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 1
+        },
+        "reasons": {
+          "observed_burden": 2,
+          "no_assessment_in_window": 1
+        }
+      },
+      "DO-AL-0117": {
+        "landmarks": 17,
+        "animals": 1,
+        "resolved": 13,
+        "fraction": 0.7647058823529411,
+        "current_complete": 17,
+        "observed_outcome_complete": 12,
+        "raw_window_with_assessment": 12,
+        "raw_window_with_complete_assessment": 12,
+        "raw_window_with_identifiable_assessment": 12,
+        "label_counts": {
+          "-1": 4,
+          "0": 1,
+          "1": 11,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 12,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0118": {
+        "landmarks": 42,
+        "animals": 1,
+        "resolved": 37,
+        "fraction": 0.8809523809523809,
+        "current_complete": 42,
+        "observed_outcome_complete": 36,
+        "raw_window_with_assessment": 36,
+        "raw_window_with_complete_assessment": 36,
+        "raw_window_with_identifiable_assessment": 36,
+        "label_counts": {
+          "-1": 5,
+          "0": 5,
+          "1": 31,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 36,
+          "no_assessment_in_window": 5,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0119": {
+        "landmarks": 14,
+        "animals": 1,
+        "resolved": 10,
+        "fraction": 0.7142857142857143,
+        "current_complete": 14,
+        "observed_outcome_complete": 9,
+        "raw_window_with_assessment": 9,
+        "raw_window_with_complete_assessment": 9,
+        "raw_window_with_identifiable_assessment": 9,
+        "label_counts": {
+          "-1": 4,
+          "0": 4,
+          "1": 5,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 9,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0125": {
+        "landmarks": 19,
+        "animals": 1,
+        "resolved": 14,
+        "fraction": 0.7368421052631579,
+        "current_complete": 19,
+        "observed_outcome_complete": 14,
+        "raw_window_with_assessment": 14,
+        "raw_window_with_complete_assessment": 14,
+        "raw_window_with_identifiable_assessment": 14,
+        "label_counts": {
+          "-1": 5,
+          "0": 7,
+          "1": 7
+        },
+        "reasons": {
+          "observed_burden": 14,
+          "no_assessment_in_window": 5
+        }
+      },
+      "DO-AL-0128": {
+        "landmarks": 17,
+        "animals": 1,
+        "resolved": 13,
+        "fraction": 0.7647058823529411,
+        "current_complete": 17,
+        "observed_outcome_complete": 12,
+        "raw_window_with_assessment": 12,
+        "raw_window_with_complete_assessment": 12,
+        "raw_window_with_identifiable_assessment": 12,
+        "label_counts": {
+          "-1": 4,
+          "0": 5,
+          "1": 7,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 12,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0136": {
+        "landmarks": 7,
+        "animals": 1,
+        "resolved": 7,
+        "fraction": 1.0,
+        "current_complete": 7,
+        "observed_outcome_complete": 6,
+        "raw_window_with_assessment": 6,
+        "raw_window_with_complete_assessment": 6,
+        "raw_window_with_identifiable_assessment": 6,
+        "label_counts": {
+          "0": 2,
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 6,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0140": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 1.0,
+        "current_complete": 4,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 3,
+        "raw_window_with_complete_assessment": 3,
+        "raw_window_with_identifiable_assessment": 3,
+        "label_counts": {
+          "0": 2,
+          "1": 1,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0141": {
+        "landmarks": 25,
+        "animals": 1,
+        "resolved": 21,
+        "fraction": 0.84,
+        "current_complete": 25,
+        "observed_outcome_complete": 20,
+        "raw_window_with_assessment": 20,
+        "raw_window_with_complete_assessment": 20,
+        "raw_window_with_identifiable_assessment": 20,
+        "label_counts": {
+          "-1": 4,
+          "0": 3,
+          "1": 17,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 20,
+          "no_assessment_in_window": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0142": {
+        "landmarks": 5,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 1.0,
+        "current_complete": 5,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "1": 3,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "terminal_FD": 2
+        }
+      },
+      "DO-AL-0143": {
+        "landmarks": 9,
+        "animals": 1,
+        "resolved": 9,
+        "fraction": 1.0,
+        "current_complete": 9,
+        "observed_outcome_complete": 7,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "0": 4,
+          "1": 3,
+          "2": 2
+        },
+        "reasons": {
+          "observed_burden": 7,
+          "terminal_FD": 2
+        }
+      },
+      "DO-AL-0145": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 4,
+        "fraction": 1.0,
+        "current_complete": 4,
+        "observed_outcome_complete": 3,
+        "raw_window_with_assessment": 3,
+        "raw_window_with_complete_assessment": 3,
+        "raw_window_with_identifiable_assessment": 3,
+        "label_counts": {
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 3,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0147": {
+        "landmarks": 5,
+        "animals": 1,
+        "resolved": 5,
+        "fraction": 1.0,
+        "current_complete": 5,
+        "observed_outcome_complete": 4,
+        "raw_window_with_assessment": 4,
+        "raw_window_with_complete_assessment": 4,
+        "raw_window_with_identifiable_assessment": 4,
+        "label_counts": {
+          "1": 4,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 4,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0157": {
+        "landmarks": 13,
+        "animals": 1,
+        "resolved": 12,
+        "fraction": 0.9230769230769231,
+        "current_complete": 13,
+        "observed_outcome_complete": 11,
+        "raw_window_with_assessment": 11,
+        "raw_window_with_complete_assessment": 11,
+        "raw_window_with_identifiable_assessment": 11,
+        "label_counts": {
+          "-1": 1,
+          "0": 1,
+          "1": 10,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 11,
+          "no_assessment_in_window": 1,
+          "terminal_FD": 1
+        }
+      },
+      "DO-AL-0158": {
+        "landmarks": 10,
+        "animals": 1,
+        "resolved": 8,
+        "fraction": 0.8,
+        "current_complete": 10,
+        "observed_outcome_complete": 8,
+        "raw_window_with_assessment": 8,
+        "raw_window_with_complete_assessment": 8,
+        "raw_window_with_identifiable_assessment": 8,
+        "label_counts": {
+          "-1": 2,
+          "0": 6,
+          "1": 2
+        },
+        "reasons": {
+          "observed_burden": 8,
+          "no_assessment_in_window": 2
+        }
+      },
+      "DO-AL-0172": {
+        "landmarks": 4,
+        "animals": 1,
+        "resolved": 1,
+        "fraction": 0.25,
+        "current_complete": 4,
+        "observed_outcome_complete": 1,
+        "raw_window_with_assessment": 1,
+        "raw_window_with_complete_assessment": 1,
+        "raw_window_with_identifiable_assessment": 1,
+        "label_counts": {
+          "-1": 3,
+          "1": 1
+        },
+        "reasons": {
+          "no_assessment_in_window": 3,
+          "observed_burden": 1
+        }
+      },
+      "DO-AL-0180": {
+        "landmarks": 10,
+        "animals": 1,
+        "resolved": 7,
+        "fraction": 0.7,
+        "current_complete": 10,
+        "observed_outcome_complete": 6,
+        "raw_window_with_assessment": 6,
+        "raw_window_with_complete_assessment": 6,
+        "raw_window_with_identifiable_assessment": 6,
+        "label_counts": {
+          "-1": 3,
+          "0": 3,
+          "1": 3,
+          "2": 1
+        },
+        "reasons": {
+          "observed_burden": 6,
+          "no_assessment_in_window": 3,
+          "terminal_FD": 1
+        }
+      }
+    },
+    "observed_gap_counts": {
+      "5": 191,
+      "6": 503,
+      "7": 2053,
+      "8": 465,
+      "9": 52
+    }
+  },
+  "models": {
+    "transition": {
+      "brier": 0.4751777395737101,
+      "log_loss": 0.82827952893999,
+      "per_fold_brier": {
+        "0": 0.48772203906325506,
+        "1": 0.5392072095932661,
+        "2": 0.4877443194270094,
+        "3": 0.4506658051547268,
+        "4": 0.40493175747294813
+      },
+      "calibration": {
+        "low": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 812,
+            "mean_probability": 0.0716728735258851,
+            "observed_fraction": 0.11636012949187514
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 1616,
+            "mean_probability": 0.13738725481033992,
+            "observed_fraction": 0.12621258309056294
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 231,
+            "mean_probability": 0.23427172758371703,
+            "observed_fraction": 0.1595492055682874
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 251,
+            "mean_probability": 0.34608132922920654,
+            "observed_fraction": 0.4336221454589969
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 350,
+            "mean_probability": 0.4428820801875155,
+            "observed_fraction": 0.39547254713894436
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 89,
+            "mean_probability": 0.5495835467200559,
+            "observed_fraction": 0.36432563236825144
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 91,
+            "mean_probability": 0.6656887820479119,
+            "observed_fraction": 0.6727208176070972
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 5,
+            "mean_probability": 0.7238474186595759,
+            "observed_fraction": 0.4
+          }
+        ],
+        "high": [
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 59,
+            "mean_probability": 0.2595028679937165,
+            "observed_fraction": 0.38874505124435527
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 107,
+            "mean_probability": 0.35027038904022073,
+            "observed_fraction": 0.508804058902071
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 235,
+            "mean_probability": 0.4446236868893352,
+            "observed_fraction": 0.5812771652777514
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 531,
+            "mean_probability": 0.5512291484615951,
+            "observed_fraction": 0.657457946798061
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 736,
+            "mean_probability": 0.6576364184716045,
+            "observed_fraction": 0.6780924428615004
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 639,
+            "mean_probability": 0.7453857559251907,
+            "observed_fraction": 0.6906916855161203
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 1107,
+            "mean_probability": 0.8313914382607629,
+            "observed_fraction": 0.7737356034670343
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 31,
+            "mean_probability": 0.9022857877759923,
+            "observed_fraction": 0.777936713363456
+          }
+        ],
+        "death_or_euthanasia": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 1752,
+            "mean_probability": 0.043482710306152424,
+            "observed_fraction": 0.08929545853940564
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 1015,
+            "mean_probability": 0.1439885668604629,
+            "observed_fraction": 0.1538630785000411
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 522,
+            "mean_probability": 0.24009612614613687,
+            "observed_fraction": 0.14926709092897772
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 150,
+            "mean_probability": 0.32582492737897484,
+            "observed_fraction": 0.06550350641822984
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 6,
+            "mean_probability": 0.4056320214088111,
+            "observed_fraction": 0.0
+          }
+        ]
+      },
+      "recovery_subset": {
+        "animals": 208,
+        "landmarks": 2585,
+        "low_observed_outcomes": 352,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.15001540649514208,
+        "multiclass_brier": 0.5158894346745442,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    },
+    "current": {
+      "brier": 0.43522759671193223,
+      "log_loss": 0.7442298595746643,
+      "per_fold_brier": {
+        "0": 0.43967075421286056,
+        "1": 0.4898950603622562,
+        "2": 0.44917167782198514,
+        "3": 0.42530175686459804,
+        "4": 0.36756719131704885
+      },
+      "calibration": {
+        "low": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 1363,
+            "mean_probability": 0.04201065548351551,
+            "observed_fraction": 0.0535303349128319
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 746,
+            "mean_probability": 0.14829804279474326,
+            "observed_fraction": 0.15058563332359773
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 391,
+            "mean_probability": 0.24458776009281075,
+            "observed_fraction": 0.23401720850475247
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 366,
+            "mean_probability": 0.34730984313403734,
+            "observed_fraction": 0.2851997913860032
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 255,
+            "mean_probability": 0.4453929083002403,
+            "observed_fraction": 0.42472371020597566
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 185,
+            "mean_probability": 0.5483367923176113,
+            "observed_fraction": 0.6198760302439889
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 115,
+            "mean_probability": 0.6498215334040018,
+            "observed_fraction": 0.587076528854601
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 22,
+            "mean_probability": 0.7275253716861639,
+            "observed_fraction": 0.5814278807075285
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 2,
+            "mean_probability": 0.8317789855333428,
+            "observed_fraction": 1.0
+          }
+        ],
+        "high": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 12,
+            "mean_probability": 0.060180201895122985,
+            "observed_fraction": 0.15718706845531663
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 12,
+            "mean_probability": 0.15221334896651617,
+            "observed_fraction": 0.35154608299702506
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 57,
+            "mean_probability": 0.2671675359185911,
+            "observed_fraction": 0.44815137074111316
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 159,
+            "mean_probability": 0.3550128977759813,
+            "observed_fraction": 0.4356718112217322
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 250,
+            "mean_probability": 0.4552249336161275,
+            "observed_fraction": 0.508650019237933
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 387,
+            "mean_probability": 0.5516146103506082,
+            "observed_fraction": 0.5831832163749036
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 511,
+            "mean_probability": 0.6511083221961325,
+            "observed_fraction": 0.6736516278022495
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 724,
+            "mean_probability": 0.7519241255095418,
+            "observed_fraction": 0.7260908790766785
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 1021,
+            "mean_probability": 0.8463218374697483,
+            "observed_fraction": 0.8067788852192348
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 312,
+            "mean_probability": 0.9215394118834633,
+            "observed_fraction": 0.8172532066454207
+          }
+        ],
+        "death_or_euthanasia": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 2638,
+            "mean_probability": 0.03906523487377767,
+            "observed_fraction": 0.07037946830576076
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 446,
+            "mean_probability": 0.1385399521899549,
+            "observed_fraction": 0.1369756251840411
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 157,
+            "mean_probability": 0.2414370408957285,
+            "observed_fraction": 0.16880163739802798
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 67,
+            "mean_probability": 0.35066213247369754,
+            "observed_fraction": 0.3965822651887341
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 34,
+            "mean_probability": 0.4548515430901279,
+            "observed_fraction": 0.35560499305053944
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 31,
+            "mean_probability": 0.542238936707208,
+            "observed_fraction": 0.1804083071117658
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 33,
+            "mean_probability": 0.6561422460724052,
+            "observed_fraction": 0.5383290780850177
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 18,
+            "mean_probability": 0.7643690305392485,
+            "observed_fraction": 0.5728510555161009
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 9,
+            "mean_probability": 0.8496777300562344,
+            "observed_fraction": 0.549145086540463
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 12,
+            "mean_probability": 0.9387842334553651,
+            "observed_fraction": 0.8428129315446833
+          }
+        ]
+      },
+      "recovery_subset": {
+        "animals": 208,
+        "landmarks": 2585,
+        "low_observed_outcomes": 352,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.13051170333804232,
+        "multiclass_brier": 0.46134625990642053,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    },
+    "history": {
+      "brier": 0.44030059629236673,
+      "log_loss": 0.7564577436573637,
+      "per_fold_brier": {
+        "0": 0.4479634964008437,
+        "1": 0.5058122827035727,
+        "2": 0.4681451659765122,
+        "3": 0.40941920596327736,
+        "4": 0.3646957611731743
+      },
+      "calibration": {
+        "low": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 1465,
+            "mean_probability": 0.03819414454057853,
+            "observed_fraction": 0.06083300037864474
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 678,
+            "mean_probability": 0.1429890352107167,
+            "observed_fraction": 0.14889257767724176
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 377,
+            "mean_probability": 0.24957172356908947,
+            "observed_fraction": 0.208684363143025
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 275,
+            "mean_probability": 0.3443669501769293,
+            "observed_fraction": 0.33613135133403593
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 270,
+            "mean_probability": 0.4428254313129078,
+            "observed_fraction": 0.4221391171382148
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 178,
+            "mean_probability": 0.546566526527369,
+            "observed_fraction": 0.4542762909991932
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 133,
+            "mean_probability": 0.6420753334158097,
+            "observed_fraction": 0.6282426829853502
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 57,
+            "mean_probability": 0.7445086152481034,
+            "observed_fraction": 0.6600963265321824
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 12,
+            "mean_probability": 0.834103120883708,
+            "observed_fraction": 0.7269892435690322
+          }
+        ],
+        "high": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 17,
+            "mean_probability": 0.03736491208450594,
+            "observed_fraction": 0.17771585132687542
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 39,
+            "mean_probability": 0.1593365971637857,
+            "observed_fraction": 0.46776571390802996
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 85,
+            "mean_probability": 0.2519724357698774,
+            "observed_fraction": 0.4556911297164045
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 191,
+            "mean_probability": 0.3502701899434774,
+            "observed_fraction": 0.37040979976158706
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 261,
+            "mean_probability": 0.44723762162640174,
+            "observed_fraction": 0.5647182154072254
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 345,
+            "mean_probability": 0.551903854585397,
+            "observed_fraction": 0.6127413859967956
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 427,
+            "mean_probability": 0.6514469581697228,
+            "observed_fraction": 0.6496522347131937
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 558,
+            "mean_probability": 0.748437973941278,
+            "observed_fraction": 0.7574848990203688
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 849,
+            "mean_probability": 0.8535713781406384,
+            "observed_fraction": 0.7828184782652714
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 673,
+            "mean_probability": 0.9331439262319476,
+            "observed_fraction": 0.8090481432449979
+          }
+        ],
+        "death_or_euthanasia": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 2729,
+            "mean_probability": 0.029356469488795122,
+            "observed_fraction": 0.0782736118186389
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 347,
+            "mean_probability": 0.13675621455599357,
+            "observed_fraction": 0.1175374906947123
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 134,
+            "mean_probability": 0.24536906447504395,
+            "observed_fraction": 0.09991694461228108
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 68,
+            "mean_probability": 0.3429070876737489,
+            "observed_fraction": 0.3950547550420772
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 40,
+            "mean_probability": 0.4432865000160548,
+            "observed_fraction": 0.2579020694245736
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 40,
+            "mean_probability": 0.5554933160976343,
+            "observed_fraction": 0.34538570779912214
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 30,
+            "mean_probability": 0.6477423292495915,
+            "observed_fraction": 0.19052112161546492
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 18,
+            "mean_probability": 0.7644578175172296,
+            "observed_fraction": 0.406608246560258
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 22,
+            "mean_probability": 0.842731765627133,
+            "observed_fraction": 0.5857809849546466
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 17,
+            "mean_probability": 0.9612939297874693,
+            "observed_fraction": 0.8222841486731245
+          }
+        ]
+      },
+      "recovery_subset": {
+        "animals": 208,
+        "landmarks": 2585,
+        "low_observed_outcomes": 352,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.12923833085064437,
+        "multiclass_brier": 0.45476082766993814,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    },
+    "duration": {
+      "brier": 0.44007695057596774,
+      "log_loss": 0.7500067303996149,
+      "per_fold_brier": {
+        "0": 0.44230234363565185,
+        "1": 0.5053428760816022,
+        "2": 0.46312466486610987,
+        "3": 0.42566827104222454,
+        "4": 0.35874322204663944
+      },
+      "calibration": {
+        "low": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 1525,
+            "mean_probability": 0.03634473667525745,
+            "observed_fraction": 0.05274769579319128
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 588,
+            "mean_probability": 0.14522989755663904,
+            "observed_fraction": 0.1604428324396508
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 374,
+            "mean_probability": 0.2460899169273748,
+            "observed_fraction": 0.24745543196291286
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 308,
+            "mean_probability": 0.3461147909320096,
+            "observed_fraction": 0.3007440901950412
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 279,
+            "mean_probability": 0.4499938436187915,
+            "observed_fraction": 0.4520325800229736
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 183,
+            "mean_probability": 0.5538721387112744,
+            "observed_fraction": 0.42274485771634474
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 126,
+            "mean_probability": 0.6422702797916889,
+            "observed_fraction": 0.6269898854070991
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 48,
+            "mean_probability": 0.7328657812833691,
+            "observed_fraction": 0.7227046870217478
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 14,
+            "mean_probability": 0.8301223956739127,
+            "observed_fraction": 0.7980762755437448
+          }
+        ],
+        "high": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 19,
+            "mean_probability": 0.05866656639945274,
+            "observed_fraction": 0.24525369088405585
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 37,
+            "mean_probability": 0.14699502927752114,
+            "observed_fraction": 0.48144460592712474
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 79,
+            "mean_probability": 0.25933575440101003,
+            "observed_fraction": 0.4290694096307075
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 175,
+            "mean_probability": 0.35425151889596584,
+            "observed_fraction": 0.38719397924463966
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 262,
+            "mean_probability": 0.44866842877713414,
+            "observed_fraction": 0.5912002795973628
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 353,
+            "mean_probability": 0.5577843953920476,
+            "observed_fraction": 0.5676930372135836
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 459,
+            "mean_probability": 0.6523484690728126,
+            "observed_fraction": 0.6732405088647869
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 518,
+            "mean_probability": 0.7517468054780062,
+            "observed_fraction": 0.7597640188499462
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 760,
+            "mean_probability": 0.8552411148422734,
+            "observed_fraction": 0.7333084042313294
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 783,
+            "mean_probability": 0.9360930927253458,
+            "observed_fraction": 0.8753971071879147
+          }
+        ],
+        "death_or_euthanasia": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 2778,
+            "mean_probability": 0.02927755182959223,
+            "observed_fraction": 0.07783644164501438
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 304,
+            "mean_probability": 0.13691762145782377,
+            "observed_fraction": 0.09805078825352612
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 133,
+            "mean_probability": 0.24961623921456252,
+            "observed_fraction": 0.19142524587464338
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 82,
+            "mean_probability": 0.34252784005098,
+            "observed_fraction": 0.19215652904677002
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 32,
+            "mean_probability": 0.44199346200088857,
+            "observed_fraction": 0.41297930824741275
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 35,
+            "mean_probability": 0.5515883100268258,
+            "observed_fraction": 0.327020724849709
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 20,
+            "mean_probability": 0.6416870553046251,
+            "observed_fraction": 0.49694561766810313
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 25,
+            "mean_probability": 0.7327263190862396,
+            "observed_fraction": 0.29754510516057325
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 18,
+            "mean_probability": 0.8489680622830964,
+            "observed_fraction": 0.3011040534064925
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 18,
+            "mean_probability": 0.9449789830597171,
+            "observed_fraction": 0.8864798494849526
+          }
+        ]
+      },
+      "recovery_subset": {
+        "animals": 208,
+        "landmarks": 2585,
+        "low_observed_outcomes": 352,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.1271047070256443,
+        "multiclass_brier": 0.4485838626093873,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    },
+    "duration_hgb": {
+      "brier": 0.4077093177721199,
+      "log_loss": 0.7075517962700341,
+      "per_fold_brier": {
+        "0": 0.45197850618253155,
+        "1": 0.48076247677916084,
+        "2": 0.39704891799566044,
+        "3": 0.37816920734407083,
+        "4": 0.32190368249921825
+      },
+      "calibration": {
+        "low": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 1589,
+            "mean_probability": 0.041551225035030254,
+            "observed_fraction": 0.05072547616493679
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 583,
+            "mean_probability": 0.1486925644057367,
+            "observed_fraction": 0.16598082521611204
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 364,
+            "mean_probability": 0.24690592125247315,
+            "observed_fraction": 0.24406127368360608
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 280,
+            "mean_probability": 0.3513178737256384,
+            "observed_fraction": 0.3289412479160752
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 231,
+            "mean_probability": 0.4440989228219494,
+            "observed_fraction": 0.402433064028589
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 158,
+            "mean_probability": 0.5467991937917823,
+            "observed_fraction": 0.465900411533411
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 137,
+            "mean_probability": 0.6505653896512009,
+            "observed_fraction": 0.6362232799688464
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 69,
+            "mean_probability": 0.7481675956826346,
+            "observed_fraction": 0.6641143501946541
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 29,
+            "mean_probability": 0.8306901791987823,
+            "observed_fraction": 0.8120962566022691
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 5,
+            "mean_probability": 0.9158017795681137,
+            "observed_fraction": 0.5224564619615032
+          }
+        ],
+        "high": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 17,
+            "mean_probability": 0.06269917615444615,
+            "observed_fraction": 0.19777962108638855
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 58,
+            "mean_probability": 0.15965551159125568,
+            "observed_fraction": 0.16392009810090793
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 103,
+            "mean_probability": 0.2550030239721925,
+            "observed_fraction": 0.34232353465470816
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 173,
+            "mean_probability": 0.3441624517975845,
+            "observed_fraction": 0.39521252346061986
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 186,
+            "mean_probability": 0.44467502092444666,
+            "observed_fraction": 0.5151749428622712
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 312,
+            "mean_probability": 0.5529723337234255,
+            "observed_fraction": 0.5655125671223038
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 376,
+            "mean_probability": 0.6498978702988516,
+            "observed_fraction": 0.6032102831363755
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 464,
+            "mean_probability": 0.7500651974331687,
+            "observed_fraction": 0.7705705891976571
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 808,
+            "mean_probability": 0.8534129946701108,
+            "observed_fraction": 0.7371561372583352
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 948,
+            "mean_probability": 0.940005974294814,
+            "observed_fraction": 0.8779087112894276
+          }
+        ],
+        "death_or_euthanasia": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 2968,
+            "mean_probability": 0.024324517383114516,
+            "observed_fraction": 0.06745368817611423
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 221,
+            "mean_probability": 0.14551331771963397,
+            "observed_fraction": 0.2539834324410832
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 74,
+            "mean_probability": 0.24857372123104457,
+            "observed_fraction": 0.10587457775866096
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 55,
+            "mean_probability": 0.35058451424198595,
+            "observed_fraction": 0.5084091953033845
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 35,
+            "mean_probability": 0.4340443706923614,
+            "observed_fraction": 0.22217598379070677
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 23,
+            "mean_probability": 0.5551887541851775,
+            "observed_fraction": 0.35078405795661655
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 21,
+            "mean_probability": 0.6419836975995484,
+            "observed_fraction": 0.3996681468866702
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 20,
+            "mean_probability": 0.7553457276779517,
+            "observed_fraction": 0.6941612154659071
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 17,
+            "mean_probability": 0.8446126012241232,
+            "observed_fraction": 0.7991548333757799
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 11,
+            "mean_probability": 0.9344957577542373,
+            "observed_fraction": 0.8649013763598731
+          }
+        ]
+      },
+      "recovery_subset": {
+        "animals": 208,
+        "landmarks": 2585,
+        "low_observed_outcomes": 352,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.11959342878480558,
+        "multiclass_brier": 0.4150745292652722,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    },
+    "candidate": {
+      "brier": 0.4085505541968375,
+      "log_loss": 0.7138501618843764,
+      "per_fold_brier": {
+        "0": 0.4303589719002413,
+        "1": 0.5085779670417035,
+        "2": 0.39510329990238047,
+        "3": 0.36773919891143236,
+        "4": 0.3328499844535919
+      },
+      "calibration": {
+        "low": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 1670,
+            "mean_probability": 0.03796186221914901,
+            "observed_fraction": 0.04863808477759246
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 535,
+            "mean_probability": 0.14482431452819586,
+            "observed_fraction": 0.17204954040655748
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 324,
+            "mean_probability": 0.24678150290695416,
+            "observed_fraction": 0.2547650043689799
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 241,
+            "mean_probability": 0.3522710374001561,
+            "observed_fraction": 0.3153228800220565
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 201,
+            "mean_probability": 0.4473686621741205,
+            "observed_fraction": 0.4121402513318984
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 183,
+            "mean_probability": 0.5437149385453952,
+            "observed_fraction": 0.43503767244009595
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 149,
+            "mean_probability": 0.6526011183109911,
+            "observed_fraction": 0.5342243127230215
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 100,
+            "mean_probability": 0.7485652197340875,
+            "observed_fraction": 0.7527938766113704
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 38,
+            "mean_probability": 0.8280448925195659,
+            "observed_fraction": 0.7171947053666512
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 4,
+            "mean_probability": 0.9234561979758172,
+            "observed_fraction": 1.0
+          }
+        ],
+        "high": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 23,
+            "mean_probability": 0.06181805283991498,
+            "observed_fraction": 0.1773985245381973
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 60,
+            "mean_probability": 0.16000260328656715,
+            "observed_fraction": 0.24628194605056042
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 145,
+            "mean_probability": 0.25135703286336536,
+            "observed_fraction": 0.3233213370444491
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 182,
+            "mean_probability": 0.35057667089269395,
+            "observed_fraction": 0.43340708779535936
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 236,
+            "mean_probability": 0.4492185935820159,
+            "observed_fraction": 0.46706446447990047
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 251,
+            "mean_probability": 0.5544310371715945,
+            "observed_fraction": 0.6313988908347373
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 345,
+            "mean_probability": 0.6508400880322891,
+            "observed_fraction": 0.6320871374932088
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 465,
+            "mean_probability": 0.7495225041694085,
+            "observed_fraction": 0.6941384280579965
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 740,
+            "mean_probability": 0.8545478001146648,
+            "observed_fraction": 0.7786620922575996
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 998,
+            "mean_probability": 0.9406902848973824,
+            "observed_fraction": 0.8783731692544963
+          }
+        ],
+        "death_or_euthanasia": [
+          {
+            "left": 0.0,
+            "right": 0.1,
+            "n": 2881,
+            "mean_probability": 0.02253496652557709,
+            "observed_fraction": 0.06510782479316105
+          },
+          {
+            "left": 0.1,
+            "right": 0.2,
+            "n": 263,
+            "mean_probability": 0.1364235633420376,
+            "observed_fraction": 0.2333237770139645
+          },
+          {
+            "left": 0.2,
+            "right": 0.3,
+            "n": 100,
+            "mean_probability": 0.2454560605698923,
+            "observed_fraction": 0.26925716067143857
+          },
+          {
+            "left": 0.3,
+            "right": 0.4,
+            "n": 62,
+            "mean_probability": 0.35204127932687523,
+            "observed_fraction": 0.32181909764406724
+          },
+          {
+            "left": 0.4,
+            "right": 0.5,
+            "n": 39,
+            "mean_probability": 0.4435773419827695,
+            "observed_fraction": 0.1364027501604018
+          },
+          {
+            "left": 0.5,
+            "right": 0.6,
+            "n": 29,
+            "mean_probability": 0.5437647939467876,
+            "observed_fraction": 0.38266431926384364
+          },
+          {
+            "left": 0.6,
+            "right": 0.7,
+            "n": 16,
+            "mean_probability": 0.6545770292811356,
+            "observed_fraction": 0.20233295554447672
+          },
+          {
+            "left": 0.7,
+            "right": 0.8,
+            "n": 24,
+            "mean_probability": 0.749912547033628,
+            "observed_fraction": 0.718167156586494
+          },
+          {
+            "left": 0.8,
+            "right": 0.9,
+            "n": 14,
+            "mean_probability": 0.8429187821382028,
+            "observed_fraction": 0.7467819179275017
+          },
+          {
+            "left": 0.9,
+            "right": 1.0,
+            "n": 17,
+            "mean_probability": 0.9292378606397076,
+            "observed_fraction": 0.794462735707872
+          }
+        ]
+      },
+      "recovery_subset": {
+        "animals": 208,
+        "landmarks": 2585,
+        "low_observed_outcomes": 352,
+        "animals_with_low_observed_outcome": 126,
+        "binary_low_outcome_brier": 0.11824942103792915,
+        "multiclass_brier": 0.408788564479129,
+        "minimum_30_event_animals_met": true,
+        "interpretation": "Descriptive observed-recrossing subset; event count alone is not a formal power analysis or durable-recovery evidence"
+      }
+    }
+  },
+  "best_conventional": "duration_hgb",
+  "relative_improvement": -0.0020633240106320257,
+  "fold_wins_against_each_folds_best_conventional": 3,
+  "paired_animal_bootstrap": {
+    "animals": 214,
+    "mean_absolute_improvement": -0.0008412364247175528,
+    "ci95": [
+      -0.015977537140603047,
+      0.013341098601509001
+    ],
+    "draws": 2000,
+    "seed": 9102026,
+    "conditioning": "Resamples saved out-of-fold animal losses conditional on fitted models and selected comparator; does not refit overlapping folds or include full training/selection uncertainty"
+  },
+  "gate": {
+    "resolution_pass": false,
+    "numeric_gate_pass": false,
+    "overall_pass": false,
+    "pre_design_primary_resolution_failed": true,
+    "interpretation": "No confirmatory primary success can be claimed; selection/observation process remains unresolved"
+  },
+  "comparison_warning": "Best conventional and foldwise best are descriptive evaluation envelopes, not deployable hindsight selectors; model tuning used inner folds only"
+}
