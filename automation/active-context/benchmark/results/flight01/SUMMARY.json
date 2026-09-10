@@ -1,0 +1,80 @@
+{
+  "completed_at": "2026-09-10T09:57:11.479472+00:00",
+  "diagnostic": "30 constructed source continuations; no LLM; not an official upstream benchmark",
+  "gate": {
+    "candidate_total_time_ratio": 1.05255934387933,
+    "cheapest_equally_correct_conventional": "content_dependency",
+    "complete_resolved_diagnostic": true,
+    "identical_selected_checks_to_content_invalidation": true,
+    "passed": false,
+    "rule": "Zero unsupported verification; correctness/coverage at least rerun-all; 20% total measured cost improvement; a check-set tie fails regardless of timing noise."
+  },
+  "limitations": [
+    "Thirty authored continuations across five pure-Python projects are not an official or statistically representative benchmark.",
+    "No language model, agent task success, remote state, undeclared dependency discovery or model-cost improvement is evaluated.",
+    "Dependencies are manually declared and conservative; installed transitive dependencies remain outside the claimed scope.",
+    "One environment and one timing observation per method/episode do not establish a stable production speedup.",
+    "The strong content-invalidation baseline is expected to select the same checks; this diagnostic can establish integration correctness without algorithmic superiority.",
+    "Local receipts and clocks are not cryptographic proof of execution or public issuance."
+  ],
+  "methods": {
+    "active_context": {
+      "capture_seconds": 20.74203080002917,
+      "continuation_seconds": 11.235315499972785,
+      "correct_decisions": 30,
+      "episodes": 30,
+      "executed_checks": 25,
+      "false_verified_claims": 0,
+      "incorrect_decisions": 0,
+      "recorded_timeouts": 0,
+      "selected_checks": 25,
+      "total_seconds": 31.977346300001955,
+      "unresolved_decisions": 0,
+      "unsupported_verified_claims": 0
+    },
+    "content_dependency": {
+      "capture_seconds": 20.74203080002917,
+      "continuation_seconds": 9.638532999961171,
+      "correct_decisions": 30,
+      "episodes": 30,
+      "executed_checks": 25,
+      "false_verified_claims": 0,
+      "incorrect_decisions": 0,
+      "recorded_timeouts": 0,
+      "selected_checks": 25,
+      "total_seconds": 30.38056379999034,
+      "unresolved_decisions": 0,
+      "unsupported_verified_claims": 0
+    },
+    "fixed_freshness": {
+      "capture_seconds": 20.74203080002917,
+      "continuation_seconds": 5.161976200091885,
+      "correct_decisions": 20,
+      "episodes": 30,
+      "executed_checks": 20,
+      "false_verified_claims": 10,
+      "incorrect_decisions": 10,
+      "recorded_timeouts": 0,
+      "selected_checks": 20,
+      "total_seconds": 25.904007000121055,
+      "unresolved_decisions": 0,
+      "unsupported_verified_claims": 10
+    },
+    "rerun_all": {
+      "capture_seconds": 20.74203080002917,
+      "continuation_seconds": 22.235070700058714,
+      "correct_decisions": 30,
+      "episodes": 30,
+      "executed_checks": 90,
+      "false_verified_claims": 0,
+      "incorrect_decisions": 0,
+      "recorded_timeouts": 0,
+      "selected_checks": 90,
+      "total_seconds": 42.97710150008788,
+      "unresolved_decisions": 0,
+      "unsupported_verified_claims": 0
+    }
+  },
+  "schema_version": 1,
+  "status": "completed"
+}
