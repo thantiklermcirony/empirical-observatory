@@ -1,5 +1,5 @@
+/* oxlint-disable next/no-html-link-for-pages -- Native navigation avoids the reproduced vinext production Link runtime failure. */
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import InterestCounter from '@/components/observatory/InterestCounter';
@@ -35,7 +35,7 @@ export default function RootLayout({
         <footer
           style={{ padding: '12px 24px', fontSize: 12, textAlign: 'center' }}
         >
-          <Link href="/privacy">Records and usage counts</Link>
+          <a href="/privacy">Records and usage counts</a>
         </footer>
       </body>
     </html>
