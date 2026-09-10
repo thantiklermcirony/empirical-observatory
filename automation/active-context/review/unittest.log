@@ -1,0 +1,31 @@
+test_changed_argv_cannot_reuse_same_id (test_adversarial.Adversarial.test_changed_argv_cannot_reuse_same_id) ... ok
+test_changed_claim_contract_does_not_inherit_success (test_adversarial.Adversarial.test_changed_claim_contract_does_not_inherit_success) ... ok
+test_corrupt_latest_record_fails_closed (test_adversarial.Adversarial.test_corrupt_latest_record_fails_closed) ... ok
+test_declared_environment_absent_differs_from_empty (test_adversarial.Adversarial.test_declared_environment_absent_differs_from_empty) ... ok
+test_directory_addition_invalidates_prior_success (test_adversarial.Adversarial.test_directory_addition_invalidates_prior_success) ... ok
+test_directory_deletion_invalidates_prior_success (test_adversarial.Adversarial.test_directory_deletion_invalidates_prior_success) ... ok
+test_exact_cover_beats_naive_cheapest_first (test_adversarial.Adversarial.test_exact_cover_beats_naive_cheapest_first) ... ok
+test_fresh_prerequisite_receipt_requires_child_recheck (test_adversarial.Adversarial.test_fresh_prerequisite_receipt_requires_child_recheck) ... ok
+test_identical_second_checkout_does_not_inherit_receipt (test_adversarial.Adversarial.test_identical_second_checkout_does_not_inherit_receipt) ... ok
+test_inspect_and_plan_do_not_execute_commands (test_adversarial.Adversarial.test_inspect_and_plan_do_not_execute_commands) ... ok
+test_invalid_receipt_time_is_rejected (test_adversarial.Adversarial.test_invalid_receipt_time_is_rejected) ... ok
+test_large_output_has_full_digest_and_bounded_display (test_adversarial.Adversarial.test_large_output_has_full_digest_and_bounded_display) ... ok
+test_late_prerequisite_success_cannot_certify_earlier_child (test_adversarial.Adversarial.test_late_prerequisite_success_cannot_certify_earlier_child) ... ok
+test_latest_failure_does_not_resurrect_prior_success (test_adversarial.Adversarial.test_latest_failure_does_not_resurrect_prior_success) ... ok
+test_latest_timeout_does_not_resurrect_prior_success (test_adversarial.Adversarial.test_latest_timeout_does_not_resurrect_prior_success) ... ok
+test_missing_dependency_creation_is_visible (test_adversarial.Adversarial.test_missing_dependency_creation_is_visible) ... ok
+test_missing_output_evidence_is_not_a_valid_receipt (test_adversarial.Adversarial.test_missing_output_evidence_is_not_a_valid_receipt) ... ok
+test_nested_junction_cannot_escape_declared_scope (test_adversarial.Adversarial.test_nested_junction_cannot_escape_declared_scope) ... ok
+test_nonfinite_negative_or_boolean_cost_rejected (test_adversarial.Adversarial.test_nonfinite_negative_or_boolean_cost_rejected) ... ok
+test_prerequisite_cost_is_not_free (test_adversarial.Adversarial.test_prerequisite_cost_is_not_free) ... ok
+test_rename_same_content_invalidates_prior_success (test_adversarial.Adversarial.test_rename_same_content_invalidates_prior_success) ... ok
+test_small_catalogues_match_independent_subset_oracle (test_adversarial.Adversarial.test_small_catalogues_match_independent_subset_oracle) ... ok
+test_success_that_changes_its_input_is_unstable (test_adversarial.Adversarial.test_success_that_changes_its_input_is_unstable) ... ok
+test_unchanged_success_is_reusable (test_adversarial.Adversarial.test_unchanged_success_is_reusable) ... ok
+test_unknown_claim_remains_uncovered (test_adversarial.Adversarial.test_unknown_claim_remains_uncovered) ... ok
+test_unrelated_changed_inputs_do_not_invalidate_success (test_adversarial.Adversarial.test_unrelated_changed_inputs_do_not_invalidate_success) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 2.712s
+
+OK
