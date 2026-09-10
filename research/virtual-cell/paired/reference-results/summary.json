@@ -1,0 +1,137 @@
+{
+  "claim_level": "paired experimental-context pattern audit; fixed conventional baselines only",
+  "rows": [
+    {
+      "direction": "K562_to_RPE1",
+      "feature_view": "primary_all_shared",
+      "macro_gene_mse": 0.012810271866822641,
+      "macro_mse_ratio_to_control": 1.0,
+      "mean_construct_pearson_over_defined": null,
+      "model": "control",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 1977
+    },
+    {
+      "direction": "K562_to_RPE1",
+      "feature_view": "primary_all_shared",
+      "macro_gene_mse": 0.01328524081811209,
+      "macro_mse_ratio_to_control": 1.0370771952560642,
+      "mean_construct_pearson_over_defined": 0.16582667024237926,
+      "model": "same_construct_transfer",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 0
+    },
+    {
+      "direction": "K562_to_RPE1",
+      "feature_view": "primary_all_shared",
+      "macro_gene_mse": 0.015651230415955515,
+      "macro_mse_ratio_to_control": 1.221771916995039,
+      "mean_construct_pearson_over_defined": 0.04958372601634499,
+      "model": "permuted_construct_transfer",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 0
+    },
+    {
+      "direction": "K562_to_RPE1",
+      "feature_view": "secondary_source_control_top1000",
+      "macro_gene_mse": 0.03563044621304151,
+      "macro_mse_ratio_to_control": 1.0,
+      "mean_construct_pearson_over_defined": null,
+      "model": "control",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 1977
+    },
+    {
+      "direction": "K562_to_RPE1",
+      "feature_view": "secondary_source_control_top1000",
+      "macro_gene_mse": 0.032024319170687966,
+      "macro_mse_ratio_to_control": 0.8987908537324569,
+      "mean_construct_pearson_over_defined": 0.23176265279620883,
+      "model": "same_construct_transfer",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 0
+    },
+    {
+      "direction": "K562_to_RPE1",
+      "feature_view": "secondary_source_control_top1000",
+      "macro_gene_mse": 0.04024754597836137,
+      "macro_mse_ratio_to_control": 1.129582990280652,
+      "mean_construct_pearson_over_defined": 0.06331631994393483,
+      "model": "permuted_construct_transfer",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 0
+    },
+    {
+      "direction": "RPE1_to_K562",
+      "feature_view": "primary_all_shared",
+      "macro_gene_mse": 0.003691257272972881,
+      "macro_mse_ratio_to_control": 1.0,
+      "mean_construct_pearson_over_defined": null,
+      "model": "control",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 1977
+    },
+    {
+      "direction": "RPE1_to_K562",
+      "feature_view": "primary_all_shared",
+      "macro_gene_mse": 0.01328524081811209,
+      "macro_mse_ratio_to_control": 3.5991099605507486,
+      "mean_construct_pearson_over_defined": 0.16582667024237926,
+      "model": "same_construct_transfer",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 0
+    },
+    {
+      "direction": "RPE1_to_K562",
+      "feature_view": "primary_all_shared",
+      "macro_gene_mse": 0.015462652666875987,
+      "macro_mse_ratio_to_control": 4.188993484711134,
+      "mean_construct_pearson_over_defined": 0.05087237454247653,
+      "model": "permuted_construct_transfer",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 0
+    },
+    {
+      "direction": "RPE1_to_K562",
+      "feature_view": "secondary_source_control_top1000",
+      "macro_gene_mse": 0.00760371845877138,
+      "macro_mse_ratio_to_control": 1.0,
+      "mean_construct_pearson_over_defined": null,
+      "model": "control",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 1977
+    },
+    {
+      "direction": "RPE1_to_K562",
+      "feature_view": "secondary_source_control_top1000",
+      "macro_gene_mse": 0.03622807326596832,
+      "macro_mse_ratio_to_control": 4.764520604281041,
+      "mean_construct_pearson_over_defined": 0.22725136234829763,
+      "model": "same_construct_transfer",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 0
+    },
+    {
+      "direction": "RPE1_to_K562",
+      "feature_view": "secondary_source_control_top1000",
+      "macro_gene_mse": 0.04370186066822396,
+      "macro_mse_ratio_to_control": 5.747432773212564,
+      "mean_construct_pearson_over_defined": 0.06993521464841428,
+      "model": "permuted_construct_transfer",
+      "n_constructs": 1977,
+      "n_target_genes": 1874,
+      "undefined_correlations": 0
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "audited_at_utc": "2026-09-10T04:14:35.095588+00:00",
+  "files": [
+    {
+      "file": "K562_essential_raw_bulk_01.h5ad",
+      "bytes": 79766954,
+      "md5": "8321d5d3ffc99db2a5c71edca4189735",
+      "sha256": "80de95e54fcbca0e0537d569b43ec92fde6bd0482801505504baebe3118dcadf",
+      "context": "K562",
+      "exposure_days": 6,
+      "effector": "dCas9-KRAB",
+      "shape": [
+        2285,
+        8563
+      ],
+      "matrix_dtype": "float32",
+      "matrix_all_finite": true,
+      "matrix_nonintegral_values": 19438159,
+      "possible_control_row_count": 109,
+      "filtered_count_mean_consistency": {
+        "rows_with_finite_positive_num_cells_filtered": 2273,
+        "all_products_near_integer_within_float32_error": true,
+        "max_absolute_integer_distance": 0.0147705078125,
+        "inference": "X is consistent with per-filtered-cell raw count means; this numerical check does not recover individual cells or replace a complete preprocessing audit."
+      },
+      "license": "CC BY 4.0",
+      "license_evidence": "https://api.figshare.com/v2/articles/20029387"
+    },
+    {
+      "file": "rpe1_raw_bulk_01.h5ad",
+      "bytes": 95350546,
+      "md5": "74765fa87635467a869ea972356ae0e7",
+      "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2",
+      "context": "RPE1",
+      "exposure_days": 7,
+      "effector": "ZIM3 KRAB-dCas9",
+      "shape": [
+        2679,
+        8749
+      ],
+      "matrix_dtype": "float32",
+      "matrix_all_finite": true,
+      "matrix_nonintegral_values": 23073189,
+      "possible_control_row_count": 130,
+      "filtered_count_mean_consistency": {
+        "rows_with_finite_positive_num_cells_filtered": 2662,
+        "all_products_near_integer_within_float32_error": true,
+        "max_absolute_integer_distance": 0.01348876953125,
+        "inference": "X is consistent with per-filtered-cell raw count means; this numerical check does not recover individual cells or replace a complete preprocessing audit."
+      },
+      "license": "CC BY 4.0",
+      "license_evidence": "https://api.figshare.com/v2/articles/20029387"
+    }
+  ],
+  "limitations": [
+    "Publisher globally filtered feature universe inherited",
+    "No individual cell distributions recovered",
+    "Cell identity, effector and time confounded"
+  ]
+}
