@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "phase": "collector_qualification_only",
+  "source": "https://api.carbonintensity.org.uk",
+  "source_docs": "https://carbon-intensity.github.io/api-definitions/",
+  "license": "CC BY 4.0",
+  "terms": "https://github.com/carbon-intensity/terms",
+  "geography": "Great Britain national",
+  "units": "gCO2/kWh",
+  "schedule": {
+    "cadence_seconds": 1800,
+    "proposed_minutes_utc": [5, 35],
+    "collection_start": "first actual invocation, not retroactively specified",
+    "missingness": "unobserved nominal slots from first invocation, using actual run start; no reconstructed scheduler events"
+  },
+  "forecast": {
+    "target_start": "first UTC half-hour start >= body_receipt_at + 86400 seconds",
+    "target_duration_seconds": 1800,
+    "lead_seconds_interval": "[86400,88200)",
+    "issued_at_semantics": "local body receipt time; provider issue time unavailable",
+    "selection": "first valid locally captured vintage per exact target interval",
+    "duplicates": "archive receipt but preserve original forecast record",
+    "numeric_validation": "finite nonnegative int/float; boolean and null rejected",
+    "future_actual": "non-null value causes rejection"
+  },
+  "outcome": {
+    "meaning": "official estimated national average carbon intensity, not final or marginal emissions",
+    "minimum_delay_after_target_end_seconds": 172800,
+    "selection": "first received non-null valid actual at or after maturity",
+    "unresolved_recheck_seconds": 21600,
+    "revision_recheck_seconds": 86400,
+    "monitor_after_maturity_seconds": 604800,
+    "revision_policy": "separate immutable records; first mature resolution never replaced",
+    "missing_policy": "remain unresolved; expire beyond monitoring window; no synthetic labels"
+  },
+  "transport": {
+    "max_requests_per_invocation": 2,
+    "max_actual_batch_days": 1,
+    "max_body_bytes": 1000000,
+    "socket_timeout_seconds": 20,
+    "elapsed_read_deadline_seconds": 30,
+    "read_deadline_caveat": "checked between reads; one pending read can last to socket timeout",
+    "recommended_job_timeout_seconds": 300,
+    "immediate_retry": false,
+    "retry_after": "retained in evidence; scheduled owner must honor longer provider pause"
+  },
+  "evidence": {
+    "raw_sha256": true,
+    "request_and_receipt_time": true,
+    "http_date_is_original_issue_time": false,
+    "source_code_sha256_per_run": true,
+    "local_clock_is_public_commitment": false,
+    "public_commitment": "verify public GitHub commit timestamp separately against target"
+  },
+  "candidate_model": null,
+  "model_evaluation": false,
+  "predictive_superiority_claim": false
+}
