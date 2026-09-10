@@ -6,18 +6,18 @@ import { ArrowLeft, ArrowUpRight, CheckCircle2, Orbit } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Current projects — The Empirical Architecture',
   description:
-    'Inspect our submitted NeuroGym decision cue, Pertpy biological evaluator and Graphiti memory fixes, and explore the next contribution opportunities.',
+    'Inspect our Ray Serve recovery experiment, submitted NeuroGym decision cue, Pertpy biological evaluator and Graphiti memory fixes.',
 };
 
 const github = 'https://github.com/thantiklermcirony';
 const nextMissions = [
   {
     name: '01 / Ray Serve',
-    status: 'FIRST REPRODUCTION',
+    status: 'ACTIVE / RECOVERY CANDIDATE',
     description:
-      'After a controller restarts, can the running service recover the right routes? Test actual response identity, then build on the existing recovery discussion.',
+      'A replacement controller needs a new subscription. Inspect the candidate, actual actor tests and the Linux HTTP experiment.',
     href: 'https://github.com/ray-project/ray/issues/63784',
-    gate: 'CPU / Linux · contributor review offered',
+    gate: 'CPU / Linux · human review before submission',
   },
   {
     name: '02 / Dask',
@@ -113,6 +113,75 @@ export default function Projects() {
       </section>
       <section
         className="graphiti-feature pertpy-feature"
+        id="ray"
+        aria-labelledby="ray-title"
+      >
+        <div className="project-status">
+          <span className="status-light" /> RECOVERY CANDIDATE · NOT SUBMITTED
+        </div>
+        <div className="graphiti-heading">
+          <div>
+            <span className="eyebrow">LATEST PROJECT / AI INFRASTRUCTURE</span>
+            <h2 id="ray-title">
+              Still running.
+              <br />
+              Still listening?
+            </h2>
+          </div>
+          <p>
+            Ray Serve can keep serving old routes after its controller is
+            replaced. Our candidate lets the surviving HAProxy manager find the
+            new controller and reload its state.
+          </p>
+        </div>
+        <div className="graphiti-fixes">
+          <article>
+            <span className="project-number">01 / IDENTITY</span>
+            <h3>The same name can hide a different system.</h3>
+            <p>
+              We replace a real Ray actor while deliberately reusing its
+              snapshot version. The original subscriber stops; the candidate
+              receives the replacement state.
+            </p>
+            <Link
+              href={`${github}/empirical-architecture/tree/main/research/ray-campaign`}
+            >
+              Inspect the patch and evidence <ArrowUpRight size={18} />
+            </Link>
+          </article>
+          <article>
+            <span className="project-number">02 / RECOVERY</span>
+            <h3>Test the response, not just the running process.</h3>
+            <p>
+              In the paired Linux experiment, the original keeps returning the
+              old application. The candidate serves the new route while the same
+              HAProxy manager survives.
+            </p>
+            <Link
+              href={`${github}/empirical-architecture/actions/workflows/ray-recovery.yml`}
+            >
+              Inspect the Linux validation <ArrowUpRight size={18} />
+            </Link>
+          </article>
+        </div>
+        <div className="project-evidence">
+          <CheckCircle2 size={22} />
+          <p>
+            <strong>14 local recovery and shutdown checks pass.</strong> Actual
+            Ray processes test replacement, version reuse and retry behavior. A
+            separate unit test checks orderly HAProxy shutdown.
+          </p>
+        </div>
+        <p className="project-caveat">
+          The HTTP result is from one CPU node; multi-node, GPU and production
+          deployments remain untested. Only HAProxyManager enables replacement
+          discovery. This is a reliability candidate, with no model-quality or
+          compute-saving claim. Ray requires human review and human-run tests
+          before requesting upstream review.
+        </p>
+      </section>
+      <section
+        className="graphiti-feature pertpy-feature"
         id="neurogym"
         aria-labelledby="neurogym-title"
       >
@@ -123,7 +192,7 @@ export default function Projects() {
         <div className="graphiti-heading">
           <div>
             <span className="eyebrow">
-              LATEST PROJECT / OBSERVABLE DECISIONS
+              SUBMITTED PROJECT / OBSERVABLE DECISIONS
             </span>
             <h2 id="neurogym-title">
               Can the agent see
@@ -381,8 +450,9 @@ export default function Projects() {
         <h2 id="next-title">Make silent failures visible.</h2>
         <p>
           Three investigations chosen for useful, testable contributions. These
-          are opportunities we have researched, with reproduction and upstream
-          agreement still ahead. Existing authors keep credit for their work.
+          include the active Ray candidate and two researched opportunities.
+          Upstream agreement remains separate from our experiments. Existing
+          authors keep credit for their work.
         </p>
         <div className="project-grid">
           {nextMissions.map((mission) => (
