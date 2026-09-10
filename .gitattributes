@@ -3,3 +3,7 @@
 integrations/earth/*.json -text
 integrations/earth/fresh-capture/*.json -text
 public/research/oslo-*.json -text
+automation/active-context/** -text
+research/active-context/** -text
+public/research/Active_Context_* -text
+lib/data/active-context-*.json -text

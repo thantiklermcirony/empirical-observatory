@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-09-10T09:37:05.596284+00:00",
+  "scored_results_collected": false,
+  "replaces": "python-humanize/humanize",
+  "reason": "Humanize source archive requires generated hatch-vcs version metadata; no installed build tooling. Preserve archive but exclude before scored execution.",
+  "repositories": [
+    {
+      "repository": "more-itertools/more-itertools",
+      "url": "https://github.com/more-itertools/more-itertools",
+      "commit": "19ddb972845ab0e5b9b7449d3fd5930781407441",
+      "commit_url": "https://github.com/more-itertools/more-itertools/commit/19ddb972845ab0e5b9b7449d3fd5930781407441",
+      "default_branch_at_capture": "master",
+      "license_metadata_unverified": "MIT",
+      "archive_url": "https://codeload.github.com/more-itertools/more-itertools/zip/19ddb972845ab0e5b9b7449d3fd5930781407441",
+      "archive": "archives/more-itertools__more-itertools-19ddb972845ab0e5b9b7449d3fd5930781407441.zip",
+      "archive_sha256": "ad97519f8294dfe626a6c029f70dca0133ebd1ef935aeeb24fc2138ebcdba905",
+      "archive_bytes": 160303,
+      "metadata_sha256": "6cd14cac4ac1a0fd2d09824fec8e666d5bfeb5f719b3e26f99ac1d1693a2af06",
+      "ref_sha256": "fa3ad017af70db8b080a7c33ae41d77c377d58239d4c249b6efe18022b78dac5"
+    }
+  ]
+}

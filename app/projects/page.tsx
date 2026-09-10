@@ -13,10 +13,10 @@ const github = 'https://github.com/thantiklermcirony';
 const nextMissions = [
   {
     name: 'Active Context / the AI tool',
-    status: 'PRODUCT PROPOSAL / BENCHMARK NEXT',
-    description: 'Help an agent resume after its environment changes: recover useful context, identify stale conclusions, and choose the checks needed to continue.',
-    href: '/research/AI_Active_Context_Plan.md',
-    gate: 'SDK not yet implemented · compare with dependency tracking',
+    status: 'LOCAL TOOL / OPEN COMPARISON',
+    description: 'Record actual checks, inspect which results still apply after declared inputs change, and give an agent a relevant recheck plan. Try the recorded replay and local tool.',
+    href: '/active-context',
+    gate: 'Declared dependencies · CLI and read-only AI interface',
   },
   {
     name: 'Recovery Lab / measured history',

@@ -1,0 +1,1939 @@
+{
+  "passed": true,
+  "reviewed_at": "2026-09-10T10:01:30.620775+00:00",
+  "episode_count": 30,
+  "policy_rows": 120,
+  "methods": {
+    "rerun_all": {
+      "episodes": 30,
+      "correct_decisions": 30,
+      "incorrect_decisions": 0,
+      "unresolved_decisions": 0,
+      "false_verified_claims": 0,
+      "unsupported_verified_claims": 0,
+      "selected_checks": 90,
+      "executed_checks": 90,
+      "recorded_timeouts": 0,
+      "capture_seconds": 20.74203080002917,
+      "continuation_seconds": 22.235070700058714,
+      "total_seconds": 42.97710150008788
+    },
+    "content_dependency": {
+      "episodes": 30,
+      "correct_decisions": 30,
+      "incorrect_decisions": 0,
+      "unresolved_decisions": 0,
+      "false_verified_claims": 0,
+      "unsupported_verified_claims": 0,
+      "selected_checks": 25,
+      "executed_checks": 25,
+      "recorded_timeouts": 0,
+      "capture_seconds": 20.74203080002917,
+      "continuation_seconds": 9.638532999961171,
+      "total_seconds": 30.38056379999034
+    },
+    "fixed_freshness": {
+      "episodes": 30,
+      "correct_decisions": 20,
+      "incorrect_decisions": 10,
+      "unresolved_decisions": 0,
+      "false_verified_claims": 10,
+      "unsupported_verified_claims": 10,
+      "selected_checks": 20,
+      "executed_checks": 20,
+      "recorded_timeouts": 0,
+      "capture_seconds": 20.74203080002917,
+      "continuation_seconds": 5.161976200091885,
+      "total_seconds": 25.904007000121055
+    },
+    "active_context": {
+      "episodes": 30,
+      "correct_decisions": 30,
+      "incorrect_decisions": 0,
+      "unresolved_decisions": 0,
+      "false_verified_claims": 0,
+      "unsupported_verified_claims": 0,
+      "selected_checks": 25,
+      "executed_checks": 25,
+      "recorded_timeouts": 0,
+      "capture_seconds": 20.74203080002917,
+      "continuation_seconds": 11.235315499972785,
+      "total_seconds": 31.977346300001955
+    }
+  },
+  "exact_candidate_content_check_sequence_ties": 30,
+  "candidate_total_time_ratio": 1.05255934387933,
+  "gate_passed": false,
+  "frozen_source_files_verified": 14,
+  "frozen_source_sha256": {
+    "benchmark/specs.py": "115b4888be36f66609686d4b9f8d5ac7317b3f5c07075b4cc7168bdb8530db18",
+    "benchmark/source_checker.py": "3f5e53dfa298e61dd62c7a65af4ec7e86fb4696d7510d66b5c02aad82944b7c5",
+    "benchmark/policies.py": "725b24ece6e4be9777b10c0eaf14a558eb463db888923c6b158aef25881acddf",
+    "benchmark/run_diagnostic.py": "2b1884b60b6f3a744d378c37733bf10d4cbf1ce9d62419dbb7572f8b1a09e2e2",
+    "benchmark/protocol.json": "36f457d1b514b3028d8db7ca0edbf9d5566adc391318bd4373090f533bf16797",
+    "benchmark/MANIFEST.json": "6a1e851d791a2c82f2c7b3d768ba69c29aed8e71f18e72e3e7019df5ed18b1b8",
+    "benchmark/upstream/SOURCE_LOCK.json": "c6383198e90b7cbdd0e3ce365b415b7056d02420dd200a2cd38370879b9187c8",
+    "benchmark/upstream/REPLACEMENT_SOURCE_LOCK.json": "371e342bc1a1581185ee002dbcd9d23f6d4cf4c3c828b2e8d1e7040f3f74cceb",
+    "active_context/__init__.py": "dff240fceb9223c2f5cd6d1cd92c2136fb5f1e4e8202f44b81e28e33c9ee399a",
+    "active_context/__main__.py": "13c266829104aad96254a0dffce6354a6fc6aec2df6a475727a64c2a64440bfd",
+    "active_context/core.py": "d0de7fa87bf8b538148e5773a40026d21ba8e7e0912e54f4fb5ed437986a9552",
+    "active_context/mcp.py": "ebab65afb5e9d472af7b1152b35392a6fd8a7f8cfe142b56dba5f853bc0954f7",
+    "INTERFACE.md": "1f125b4bffe4ba714c7cdf50ba212b8bb37b7414d5cd3dedb3e09f1665e03c66",
+    "benchmark/PROTOCOL_DRAFT.md": "c81c76ff4565aec1d40128d0c0b79bdcc4c6fc71f7217bc3a5de909ac38dba74"
+  },
+  "freeze_sha256": "d24343eaf8d8891e09f35de0c82f30a35ec27cf16593e30ea2b5f6d8f3f80bff",
+  "publication_record_commit": "3ae0993c86511f119d6f86cbf1ccb98bf192278b",
+  "decision_write_source_line": 219,
+  "oracle_capture_source_line": 224,
+  "secondary_filesystem_decision_mtimes_before_oracle_start": 120,
+  "chronology_records": [
+    {
+      "episode": "boltons/failed_then_restored",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/failed_then_restored",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/failed_then_restored",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/failed_then_restored",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/fresh_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/fresh_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/fresh_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/fresh_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/new_assertion_member",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/new_assertion_member",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/new_assertion_member",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/new_assertion_member",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/old_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/old_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/old_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/old_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/source_regression",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/source_regression",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/source_regression",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/source_regression",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/unrelated_document",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/unrelated_document",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/unrelated_document",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "boltons/unrelated_document",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/failed_then_restored",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/failed_then_restored",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/failed_then_restored",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/failed_then_restored",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/fresh_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/fresh_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/fresh_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/fresh_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/new_assertion_member",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/new_assertion_member",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/new_assertion_member",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/new_assertion_member",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/old_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/old_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/old_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/old_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/source_regression",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/source_regression",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/source_regression",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/source_regression",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/unrelated_document",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/unrelated_document",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/unrelated_document",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "itsdangerous/unrelated_document",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/failed_then_restored",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/failed_then_restored",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/failed_then_restored",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/failed_then_restored",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/fresh_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/fresh_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/fresh_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/fresh_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/new_assertion_member",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/new_assertion_member",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/new_assertion_member",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/new_assertion_member",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/old_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/old_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/old_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/old_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/source_regression",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/source_regression",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/source_regression",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/source_regression",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/unrelated_document",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/unrelated_document",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/unrelated_document",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "more_itertools/unrelated_document",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/failed_then_restored",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/failed_then_restored",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/failed_then_restored",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/failed_then_restored",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/fresh_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/fresh_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/fresh_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/fresh_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/new_assertion_member",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/new_assertion_member",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/new_assertion_member",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/new_assertion_member",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/old_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/old_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/old_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/old_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/source_regression",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/source_regression",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/source_regression",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/source_regression",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/unrelated_document",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/unrelated_document",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/unrelated_document",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "packaging/unrelated_document",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/failed_then_restored",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/failed_then_restored",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/failed_then_restored",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/failed_then_restored",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/fresh_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/fresh_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/fresh_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/fresh_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/new_assertion_member",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/new_assertion_member",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/new_assertion_member",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/new_assertion_member",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/old_unchanged",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/old_unchanged",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/old_unchanged",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/old_unchanged",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/source_regression",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/source_regression",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/source_regression",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/source_regression",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/unrelated_document",
+      "method": "rerun_all",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/unrelated_document",
+      "method": "content_dependency",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/unrelated_document",
+      "method": "fixed_freshness",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    },
+    {
+      "episode": "schedule/unrelated_document",
+      "method": "active_context",
+      "pre_oracle_document_separate_and_unscored": true,
+      "all_recorded_executions_finish_before_oracle": true
+    }
+  ],
+  "classifications": [
+    {
+      "episode": "boltons/failed_then_restored",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/failed_then_restored",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/failed_then_restored",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/failed_then_restored",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/fresh_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/fresh_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/fresh_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/fresh_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/new_assertion_member",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/new_assertion_member",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/new_assertion_member",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "boltons/new_assertion_member",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/old_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/old_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/old_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/old_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/source_regression",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/source_regression",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/source_regression",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "boltons/source_regression",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/unrelated_document",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/unrelated_document",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/unrelated_document",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "boltons/unrelated_document",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/failed_then_restored",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/failed_then_restored",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/failed_then_restored",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/failed_then_restored",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/fresh_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/fresh_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/fresh_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/fresh_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/new_assertion_member",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/new_assertion_member",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/new_assertion_member",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "itsdangerous/new_assertion_member",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/old_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/old_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/old_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/old_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/source_regression",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/source_regression",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/source_regression",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "itsdangerous/source_regression",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/unrelated_document",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/unrelated_document",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/unrelated_document",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "itsdangerous/unrelated_document",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/failed_then_restored",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/failed_then_restored",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/failed_then_restored",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/failed_then_restored",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/fresh_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/fresh_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/fresh_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/fresh_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/new_assertion_member",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/new_assertion_member",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/new_assertion_member",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "more_itertools/new_assertion_member",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/old_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/old_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/old_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/old_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/source_regression",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/source_regression",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/source_regression",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "more_itertools/source_regression",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/unrelated_document",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/unrelated_document",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/unrelated_document",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "more_itertools/unrelated_document",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/failed_then_restored",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/failed_then_restored",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/failed_then_restored",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/failed_then_restored",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/fresh_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/fresh_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/fresh_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/fresh_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/new_assertion_member",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/new_assertion_member",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/new_assertion_member",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "packaging/new_assertion_member",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/old_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/old_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/old_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/old_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/source_regression",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/source_regression",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/source_regression",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "packaging/source_regression",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/unrelated_document",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/unrelated_document",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/unrelated_document",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "packaging/unrelated_document",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/failed_then_restored",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/failed_then_restored",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/failed_then_restored",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/failed_then_restored",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/fresh_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/fresh_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/fresh_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/fresh_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/new_assertion_member",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/new_assertion_member",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/new_assertion_member",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "schedule/new_assertion_member",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/old_unchanged",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/old_unchanged",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/old_unchanged",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/old_unchanged",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/source_regression",
+      "method": "rerun_all",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/source_regression",
+      "method": "content_dependency",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/source_regression",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "reject",
+      "false_verified_claims": [
+        "10-primary"
+      ],
+      "unsupported_verified_claims": [
+        "10-primary"
+      ]
+    },
+    {
+      "episode": "schedule/source_regression",
+      "method": "active_context",
+      "decision": "reject",
+      "oracle": "reject",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/unrelated_document",
+      "method": "rerun_all",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/unrelated_document",
+      "method": "content_dependency",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/unrelated_document",
+      "method": "fixed_freshness",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    },
+    {
+      "episode": "schedule/unrelated_document",
+      "method": "active_context",
+      "decision": "accept",
+      "oracle": "accept",
+      "false_verified_claims": [],
+      "unsupported_verified_claims": []
+    }
+  ],
+  "input_record_sha256": {
+    "benchmark\\results\\flight01\\RESULTS.json": "3900de3e8f642537164ca79eaf20b0f7d472501378556160c19d83feb2c0a7eb",
+    "benchmark\\results\\flight01\\SUMMARY.json": "7e2d2d581bed92318fb97cfb45799c890309050721e4df38ed3f9b628a800f82",
+    "benchmark\\results\\flight01\\RUN.json": "ccc416b16faa3c055804443705cae8afd1e93d7c7b7db07c77b3e64d4a4c2a4d",
+    "benchmark\\results\\flight01\\episodes\\boltons\\failed_then_restored\\rerun_all-decision.json": "8aeeaaa83997cd536f60a278c740fe18e9533c4c72732600953ccbccbf4bbe8b",
+    "benchmark\\results\\flight01\\episodes\\boltons\\failed_then_restored\\content_dependency-decision.json": "d7bd4b50c2ddc42b18d7de409437fc044107aaa2b683d6d2f1b287831464bbe7",
+    "benchmark\\results\\flight01\\episodes\\boltons\\failed_then_restored\\fixed_freshness-decision.json": "74ffb65297a8b36d198f8de6f9f336fb33f374dc7e6e8485010239712af8676d",
+    "benchmark\\results\\flight01\\episodes\\boltons\\failed_then_restored\\active_context-decision.json": "221d609fb2131e11a8a88319a408f4f8f20d826f0680fc95efb187efd6f801e0",
+    "benchmark\\results\\flight01\\episodes\\boltons\\fresh_unchanged\\rerun_all-decision.json": "faf7a1419e1a4c563fd332dd9a2ac0b5dcf76d2e9929a5a69652f2e5ceeb5d9e",
+    "benchmark\\results\\flight01\\episodes\\boltons\\fresh_unchanged\\content_dependency-decision.json": "3cf8a0e9c4954320ef877e383a0be144690757dad8e5a22a9743fad0f66d81a1",
+    "benchmark\\results\\flight01\\episodes\\boltons\\fresh_unchanged\\fixed_freshness-decision.json": "614d457ef45895daabafb0fcce6ff4fa9a235b1dae7279d729eec555b0d1ee7a",
+    "benchmark\\results\\flight01\\episodes\\boltons\\fresh_unchanged\\active_context-decision.json": "601017bdea077cb235112fce5b62de7b1a8600fcd73a68a80ba5ebbc384c44ff",
+    "benchmark\\results\\flight01\\episodes\\boltons\\new_assertion_member\\rerun_all-decision.json": "a13aada08fcae1be2d4fc26daa7fa229439dec558ea036c30a54bb5ea63b040a",
+    "benchmark\\results\\flight01\\episodes\\boltons\\new_assertion_member\\content_dependency-decision.json": "a6e4e4e434ec110bc47cfb4b7b0f4b9a0640bb2b172bafccfb6c7ea12f5bd3f6",
+    "benchmark\\results\\flight01\\episodes\\boltons\\new_assertion_member\\fixed_freshness-decision.json": "ee9c66a770dc8ad13fb9175918ee1d2d942b81008ff6119be95b569e5da52d24",
+    "benchmark\\results\\flight01\\episodes\\boltons\\new_assertion_member\\active_context-decision.json": "0fca7e02b3358d66da355cce3c028bc9dbe087df93a3cb4f6d241ddd57200163",
+    "benchmark\\results\\flight01\\episodes\\boltons\\old_unchanged\\rerun_all-decision.json": "a4dd9368a0f0a30ca7f3ba914a3d3a3b981e5d8a1be7fceba51acbf96e35e9ab",
+    "benchmark\\results\\flight01\\episodes\\boltons\\old_unchanged\\content_dependency-decision.json": "852437b0297f26d8a0947317256b8c69026ca7aa4914404b1df02a955ee58308",
+    "benchmark\\results\\flight01\\episodes\\boltons\\old_unchanged\\fixed_freshness-decision.json": "ad9fe522e68224da9e9a2e259c5354c36422be58189fb0d0084d9de2e2c57f03",
+    "benchmark\\results\\flight01\\episodes\\boltons\\old_unchanged\\active_context-decision.json": "cff860b7167e9a43b85f4761d264b16e5698bfb7880fd639102688a9d1fda2ad",
+    "benchmark\\results\\flight01\\episodes\\boltons\\source_regression\\rerun_all-decision.json": "05a60d4bbe805470b5f554cecf906220bcbca8661ae26cbdee9c2e6c3e9e0e8b",
+    "benchmark\\results\\flight01\\episodes\\boltons\\source_regression\\content_dependency-decision.json": "87b1287660334a27b5b65da5b0645f18f6cdc015d688fa478345117b30b715c2",
+    "benchmark\\results\\flight01\\episodes\\boltons\\source_regression\\fixed_freshness-decision.json": "c3a52fc4d83505c1d12a3abc5ea74f44d11248487cc703424ca8369b2325614f",
+    "benchmark\\results\\flight01\\episodes\\boltons\\source_regression\\active_context-decision.json": "06a74708b80c0cf1a335e67106f9d1bef05fe8e3c1a81895f20341e7e11569ea",
+    "benchmark\\results\\flight01\\episodes\\boltons\\unrelated_document\\rerun_all-decision.json": "af5e5ffd7d732d4f60642dc34b64d1a7b0700eefbace6970f22b20860962e6a7",
+    "benchmark\\results\\flight01\\episodes\\boltons\\unrelated_document\\content_dependency-decision.json": "b708319e2faac838a94a229b5cf215deff0fa19284291ccf80ed57c84f72d3a5",
+    "benchmark\\results\\flight01\\episodes\\boltons\\unrelated_document\\fixed_freshness-decision.json": "19f7bdfa66b7dd20c3d48c402950102af863fc40b3aa624ee8a27620f1d5266b",
+    "benchmark\\results\\flight01\\episodes\\boltons\\unrelated_document\\active_context-decision.json": "ce5010eea261fe50ca0aef48256fd23d3de0fe03b38b9613b102cc5a7407ea93",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\failed_then_restored\\rerun_all-decision.json": "b3b85deae44547acb5696c6374dd771326e46ccab4a8734b2eb8511a376af18b",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\failed_then_restored\\content_dependency-decision.json": "732fb2cd6d71b66683ce0af9b4b40f30a9798ee44792b65d45826db6b961da6c",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\failed_then_restored\\fixed_freshness-decision.json": "3efaeb95be2835a51bc2efbc1b000186f19abc3ecce167d193f2c224b1b564b3",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\failed_then_restored\\active_context-decision.json": "728a28912e5712fff05ee34bf1cd703a743a699349c696db4433b249d7184836",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\fresh_unchanged\\rerun_all-decision.json": "0c466697b94d64b8f28eb83e91c1443c6ad83ad09d24f1132867b82267e49396",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\fresh_unchanged\\content_dependency-decision.json": "cd348faa265b42233ef675ecd85052d876e883a87b73a59b85ef5506db2f7a7e",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\fresh_unchanged\\fixed_freshness-decision.json": "374138e830e78d9966ab397c3035d2253e4d844f772b9c29d8d8eb7f93caf504",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\fresh_unchanged\\active_context-decision.json": "05553ed82f9143bb54c5c82195b78523e3349953ffd42030c66ef58ff342708d",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\new_assertion_member\\rerun_all-decision.json": "cdd21df7d0870acedc356c79ab16366243114aac40c62dd70f88d2ba68980fb0",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\new_assertion_member\\content_dependency-decision.json": "64012acb0e1daec33de70dba6eb0e517c90f49d3ff0b8d3a59153731e184521f",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\new_assertion_member\\fixed_freshness-decision.json": "e049b527412f5ba300b09327bbaab43d25ce1ac4f567a22632dea6bfe642c068",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\new_assertion_member\\active_context-decision.json": "decbb92e082a25e4e08036e13223f07620cd899cd3e353626be0d0863fe39b9c",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\old_unchanged\\rerun_all-decision.json": "963b5047de7b2b0144760c49911255862b2a125a90ef60d4587d4f35a1387820",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\old_unchanged\\content_dependency-decision.json": "e2ceef4d80278c2ee8dc58a00d415918f4aeb170dab3a54795a49b526a7694cd",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\old_unchanged\\fixed_freshness-decision.json": "9f903078c756b98cdeffe372cd647b861afb021bf793ae1bf9263d2719ce0a70",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\old_unchanged\\active_context-decision.json": "7a44f0d74591e56aff0201d6024d4f3f8d5add703cc491b5a82e5816207eb7e4",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\source_regression\\rerun_all-decision.json": "6a80065d15dab73a95cbbc3f1bd1b7b6d96b3d877c02d482d0ea3a94ae25b800",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\source_regression\\content_dependency-decision.json": "28c949fc744fc56419a0c867a6054143980b69104729e3264452ff87bbdd0e7d",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\source_regression\\fixed_freshness-decision.json": "25d300139b4822068299e2353fbdc7506cdbc3c05ec6e6cd7e06a6f0fab1e050",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\source_regression\\active_context-decision.json": "2b60f1d738f13858378873cce03ad504c6749e40d52d88a8c92dad159c3d836b",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\unrelated_document\\rerun_all-decision.json": "122b0704853e182fd2d24863cf9126a5dcdb359898863bf2dbdeb02a732b8569",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\unrelated_document\\content_dependency-decision.json": "a152fac7a41d7518d83b8706522051dba53c66839f6d3d27cd3006df19faea16",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\unrelated_document\\fixed_freshness-decision.json": "30093bca3ed26eb1418df8f0e77e8e6861e604f9e9160aac563c326f3db0e2c0",
+    "benchmark\\results\\flight01\\episodes\\itsdangerous\\unrelated_document\\active_context-decision.json": "2a06d4db4895896d65de933fe8dc114cb7292e029927912b041b4648bad21beb",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\failed_then_restored\\rerun_all-decision.json": "b01608fd035a1181314befc564bd170bf6890b1e5b281f5fb7c9f4760f2ade5f",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\failed_then_restored\\content_dependency-decision.json": "b342100966f211a3b88e293039d73353a39cd0362448e3d8703f85af7ce474c4",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\failed_then_restored\\fixed_freshness-decision.json": "46cce559942a767bc57447cd975c6c5b68b3e717f9e2abd9fddd90f2572be435",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\failed_then_restored\\active_context-decision.json": "2436407462171ad1e80981bb1755292fe60a240a0c095e1ca7c8165a1778288a",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\fresh_unchanged\\rerun_all-decision.json": "2a346dc6443e5fea773d48e23b22655049ea58f31731b54c2d7aec509d47c4b6",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\fresh_unchanged\\content_dependency-decision.json": "9cfdaa097093298f5c82ad045a26c468e0dd201dec07280d70ccf28cdb95efa3",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\fresh_unchanged\\fixed_freshness-decision.json": "1b5296091485bd1ecb4e060303c07a0a87d1448561e9ca671aeda63a4a156688",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\fresh_unchanged\\active_context-decision.json": "5e402e07f1acdc3e7143a0ed353b303de324f346a42e1f09b6bdbeedae43280d",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\new_assertion_member\\rerun_all-decision.json": "e1608f7f52ccd66dc614f9f70425a2b6aafc24ab11b97cb24fcf8b3bc7725d57",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\new_assertion_member\\content_dependency-decision.json": "5e488dcca4af8da2d08f92a6a68e2f2b1c708c2b5cf1ecea1b54440ac858fd7b",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\new_assertion_member\\fixed_freshness-decision.json": "4f4b45d124ca3c18a4b5b85d3c40b5ce95c93657e42c2488e22fe99f81488ad3",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\new_assertion_member\\active_context-decision.json": "423c92d40edb49d3ccdf6758a95d61b90443164dcd2775f3ab46be390886f29d",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\old_unchanged\\rerun_all-decision.json": "4e2f1fbd0a7880a7820e4036b788481c38bc7d7af9f21406ffdf5854c15a0b7a",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\old_unchanged\\content_dependency-decision.json": "f2e4e0d84e73a48cd71c9a965732b83437d86384440266596f9ef4dec23cb3f4",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\old_unchanged\\fixed_freshness-decision.json": "24fd403994373ab1b009e36c59b631ee2455cab74f20fa4ba6251f28970d8331",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\old_unchanged\\active_context-decision.json": "cc80350aa99dea21a4a3c5d0eb323bd2efe392fb9c6a16104b93be1bb2da9e52",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\source_regression\\rerun_all-decision.json": "495882297f41fd62b244d719bd68391c2577973eeae224e0fc471d393708c03e",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\source_regression\\content_dependency-decision.json": "834532597ee4a9fbb420ff8c121ab1ac719a5d3561cc02257f678ddadad0c750",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\source_regression\\fixed_freshness-decision.json": "482a2fdf9d8be42f8704db8763afa8006b48a816328c01bdab1e8b06a0357850",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\source_regression\\active_context-decision.json": "c96af4770903826c560fc9bb5ef9d3191fa04b7397f7d4bce90e701274b32646",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\unrelated_document\\rerun_all-decision.json": "e7967be2faf0d0cfe19617bc649b188c6090f060c70762e003a49e179b00da0e",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\unrelated_document\\content_dependency-decision.json": "84a5b5504cb6cb62707342c34b7400f47a67452459b49ab5a160f5a1d76a2ed0",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\unrelated_document\\fixed_freshness-decision.json": "89cf644874afc114b5d379d9d34c0665581c0bb033e27540e9dee87e58b70258",
+    "benchmark\\results\\flight01\\episodes\\more_itertools\\unrelated_document\\active_context-decision.json": "47f1e2244562e3c6681627fb172755f4bbcc96a632848ecf0fff41ef52772b1e",
+    "benchmark\\results\\flight01\\episodes\\packaging\\failed_then_restored\\rerun_all-decision.json": "755b76097adf466de6c8c566ff4efd3b0c8b749333ad872685f671a25f49d252",
+    "benchmark\\results\\flight01\\episodes\\packaging\\failed_then_restored\\content_dependency-decision.json": "291906f6c0d3944f2fcf6ab15a3440cc0ead34a7791dc1edc998acf1a826dd73",
+    "benchmark\\results\\flight01\\episodes\\packaging\\failed_then_restored\\fixed_freshness-decision.json": "6a5e04d74e7823250c7d9a1fcaeb5a32ddd7336c1af41cd41f54c1e818cab6c1",
+    "benchmark\\results\\flight01\\episodes\\packaging\\failed_then_restored\\active_context-decision.json": "aa7bd57d86063c181bcb89fc859198e309ec01cae5734270db4e53be8cbe4242",
+    "benchmark\\results\\flight01\\episodes\\packaging\\fresh_unchanged\\rerun_all-decision.json": "8370bc941fa8ad353c077f2e0be36b9304fcc511aa5a344cb2a547b18b506807",
+    "benchmark\\results\\flight01\\episodes\\packaging\\fresh_unchanged\\content_dependency-decision.json": "87715d842cc22070932f2c3e05b44413d55db4439e7185a54c3ecdb2a4f63819",
+    "benchmark\\results\\flight01\\episodes\\packaging\\fresh_unchanged\\fixed_freshness-decision.json": "dd0ed9ee2f86c83b84e77ef77c44a20b12b55ac78f5633a8999ff0e86d6d23f5",
+    "benchmark\\results\\flight01\\episodes\\packaging\\fresh_unchanged\\active_context-decision.json": "184d0cbf2dab132a3298983494f96420ccd69ad6f6d4c3bd78bb8ad8c566e706",
+    "benchmark\\results\\flight01\\episodes\\packaging\\new_assertion_member\\rerun_all-decision.json": "4661c5a28f04a38b9f5db0f67f4e86a7607b3311dcfdd69b78989ef0d99f0b59",
+    "benchmark\\results\\flight01\\episodes\\packaging\\new_assertion_member\\content_dependency-decision.json": "065ddffa62f67d7cff829899dc06a6b750848a8f10e25301ee0fdbc6a66432d8",
+    "benchmark\\results\\flight01\\episodes\\packaging\\new_assertion_member\\fixed_freshness-decision.json": "aa5afa865e2f3bc425001e8a5cf32f06ef28884d376e25f346c33e28dee5e8aa",
+    "benchmark\\results\\flight01\\episodes\\packaging\\new_assertion_member\\active_context-decision.json": "560699a27412e8167009e2342c34f5e938e583cb448766dd442c0628009456bd",
+    "benchmark\\results\\flight01\\episodes\\packaging\\old_unchanged\\rerun_all-decision.json": "3151c2713fd7ee5f77400e76624f03377b9f19f6df2cf584b8aaacf193028252",
+    "benchmark\\results\\flight01\\episodes\\packaging\\old_unchanged\\content_dependency-decision.json": "2db68211ddd305959ff5fac881195028257883566847200133ba6792feb44b58",
+    "benchmark\\results\\flight01\\episodes\\packaging\\old_unchanged\\fixed_freshness-decision.json": "6c0bac1fb4fb4801fdaebc25ececb0624cb75943015c94d8a7bfdc7f084695f0",
+    "benchmark\\results\\flight01\\episodes\\packaging\\old_unchanged\\active_context-decision.json": "b54d0e4acde5af3058cfafb4620748c8264b1bb2f9f8766fb6e4b8f42e258e0c",
+    "benchmark\\results\\flight01\\episodes\\packaging\\source_regression\\rerun_all-decision.json": "9e40d9768ede7a8582034d76c04798ac43a8854a0636824e29493d434afcdde2",
+    "benchmark\\results\\flight01\\episodes\\packaging\\source_regression\\content_dependency-decision.json": "5f07fd81bba001b18fab60605e129fdf767a41d012993422bd931d6d62337d31",
+    "benchmark\\results\\flight01\\episodes\\packaging\\source_regression\\fixed_freshness-decision.json": "dd89d7dd35b03bd832520e2a172ee3901399bc5fb8d80bdadf81476061b33e08",
+    "benchmark\\results\\flight01\\episodes\\packaging\\source_regression\\active_context-decision.json": "67a63c48d29ed7eecbafd097fe2afad05fc7a6aa3a99dd85162f5c5aa5b0c39e",
+    "benchmark\\results\\flight01\\episodes\\packaging\\unrelated_document\\rerun_all-decision.json": "8e572452e1686a9cba1d48b8d19c05999e3ac0636e251488de23482cb0a20d3b",
+    "benchmark\\results\\flight01\\episodes\\packaging\\unrelated_document\\content_dependency-decision.json": "fd74a0e545d524b14efcc73086bc35fcb5a24644561efb1ae415fe3b9f82508d",
+    "benchmark\\results\\flight01\\episodes\\packaging\\unrelated_document\\fixed_freshness-decision.json": "6ed2ab6f1084e54f3a01b4114a88c2620ff0e39d6ab88a044aa8c4fa3b0612be",
+    "benchmark\\results\\flight01\\episodes\\packaging\\unrelated_document\\active_context-decision.json": "b4d8b7cc8a37a95f23ca85ade87d95925d66656848d7331a77ae5117226e47f9",
+    "benchmark\\results\\flight01\\episodes\\schedule\\failed_then_restored\\rerun_all-decision.json": "179d80668976346f1300ebbe98b622b52b23fdd676a77c8c7fc18dbb9529d10d",
+    "benchmark\\results\\flight01\\episodes\\schedule\\failed_then_restored\\content_dependency-decision.json": "30a5a7982778c7ca25ca2fcae6874774460ea0f692236a8bb7fef161b7d66e4c",
+    "benchmark\\results\\flight01\\episodes\\schedule\\failed_then_restored\\fixed_freshness-decision.json": "43964295ec64e800c4694fa104650c70daaca7cb890a936afe71a53b63e05029",
+    "benchmark\\results\\flight01\\episodes\\schedule\\failed_then_restored\\active_context-decision.json": "682463072f04a89dd459bf88f08418c25dbe754737664f2e82a0ee97fcbd282a",
+    "benchmark\\results\\flight01\\episodes\\schedule\\fresh_unchanged\\rerun_all-decision.json": "8741e683fd2b7e5fe2f1cd18e04a7bdf149c293a37b9db26e8583d8a50246fa9",
+    "benchmark\\results\\flight01\\episodes\\schedule\\fresh_unchanged\\content_dependency-decision.json": "0866335bd4c30ced05d42d674f14a951b0c12fdc52de970cfc48c2a52421f012",
+    "benchmark\\results\\flight01\\episodes\\schedule\\fresh_unchanged\\fixed_freshness-decision.json": "4c74f28b0006761c05bfe4bafd8ba0fbc600ed2768921c9118bd4fcf463e4a5a",
+    "benchmark\\results\\flight01\\episodes\\schedule\\fresh_unchanged\\active_context-decision.json": "7416c8b1fd907a8b88abb351863011d73dcea9553dbec99738be762a824a2a2a",
+    "benchmark\\results\\flight01\\episodes\\schedule\\new_assertion_member\\rerun_all-decision.json": "46de904abcbab4fbd192bc592ba4eb246dd83d146cf65daebf63f49c5f590b13",
+    "benchmark\\results\\flight01\\episodes\\schedule\\new_assertion_member\\content_dependency-decision.json": "d2d04f74e76fefdf3b966fe098f42144b32ebee11dbb4a7a71ed7da54f8434d6",
+    "benchmark\\results\\flight01\\episodes\\schedule\\new_assertion_member\\fixed_freshness-decision.json": "af8958769bdea8b95b33ec98ab7475d6e552a6d99705cfcc61c9e507f28d2e88",
+    "benchmark\\results\\flight01\\episodes\\schedule\\new_assertion_member\\active_context-decision.json": "fa284650c2c8404bf23e17597c4c7dcc6cf45f6cfb4846d3395a7b60b0b0c1c8",
+    "benchmark\\results\\flight01\\episodes\\schedule\\old_unchanged\\rerun_all-decision.json": "08fc4eeb60e9924704c2f9378d36a8111e4efdd4bd62d6ee6289182406a45dce",
+    "benchmark\\results\\flight01\\episodes\\schedule\\old_unchanged\\content_dependency-decision.json": "6e624194417800812df4f600e2781b5e5210c39a423f28efdc82067cab22368e",
+    "benchmark\\results\\flight01\\episodes\\schedule\\old_unchanged\\fixed_freshness-decision.json": "7b1e83112f975a0aa7a4b849218b20eea9a4764612433ca8f97dac912a4f73ac",
+    "benchmark\\results\\flight01\\episodes\\schedule\\old_unchanged\\active_context-decision.json": "ebf46676f9a1b3cb3af30929b6167de9dc8af25892aac63ca13a3dc46044d13e",
+    "benchmark\\results\\flight01\\episodes\\schedule\\source_regression\\rerun_all-decision.json": "7781df89e50d90b0d4cba7e6947bfec725690f3eba04fb3c37d0ff94221c065a",
+    "benchmark\\results\\flight01\\episodes\\schedule\\source_regression\\content_dependency-decision.json": "e7addc1d3705b1b3cdb3f5fe39bdb7298d006ea5c4f1d344b876de702fab2f1d",
+    "benchmark\\results\\flight01\\episodes\\schedule\\source_regression\\fixed_freshness-decision.json": "7d1b434dfcec454f8d8829fe4c0dfce5d1823460004ce921361b74717de689c4",
+    "benchmark\\results\\flight01\\episodes\\schedule\\source_regression\\active_context-decision.json": "3c0bc5b80d1ba9dcb96c03ac67d2685d37f0cdc3a06334823f05be658145248f",
+    "benchmark\\results\\flight01\\episodes\\schedule\\unrelated_document\\rerun_all-decision.json": "4e3af84e9d72b1ac279fb10fa10abc5c8de9c8b9ae6c35d829bde081fbc5d7c8",
+    "benchmark\\results\\flight01\\episodes\\schedule\\unrelated_document\\content_dependency-decision.json": "40d38697b6c51206531bc49c604a176c966f8ec4668601da043b3db131819350",
+    "benchmark\\results\\flight01\\episodes\\schedule\\unrelated_document\\fixed_freshness-decision.json": "bbb941312e683f9cc0b6c71998b77dfba617baaa99cd876bc180cd2f2a57b232",
+    "benchmark\\results\\flight01\\episodes\\schedule\\unrelated_document\\active_context-decision.json": "f1fd581275b50dbc8e8f0a87169da2e1911efc5123c90ce8e77846839fc77555"
+  },
+  "boundary": "Saved-record arithmetic/source audit only; no rerun or refit. Frozen source order and local timestamp separation are not cryptographic execution attestation. Filesystem timestamps are secondary and may change when artifacts are copied."
+}

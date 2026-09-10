@@ -1,0 +1,31 @@
+{
+  "completed_at": "2026-09-10T09:41:07.785170+00:00",
+  "command": [
+    "C:\\Users\\madma\\Documents\\Codex\\2026-09-09\\ca\\work\\graphiti-campaign\\python\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "review",
+    "-p",
+    "test_adversarial.py",
+    "-v"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "exit_code": 0,
+  "runtime_seconds": 3.032418599992525,
+  "source_unchanged_during_validation": true,
+  "before_sha256": {
+    "active_context/core.py": "d0de7fa87bf8b538148e5773a40026d21ba8e7e0912e54f4fb5ed437986a9552",
+    "active_context/__main__.py": "13c266829104aad96254a0dffce6354a6fc6aec2df6a475727a64c2a64440bfd",
+    "review/test_adversarial.py": "a365fb6031c4e8bb2b5841518475cf0d15fd7c5e60bd2ea850e0f0c0f758327a"
+  },
+  "after_sha256": {
+    "active_context/core.py": "d0de7fa87bf8b538148e5773a40026d21ba8e7e0912e54f4fb5ed437986a9552",
+    "active_context/__main__.py": "13c266829104aad96254a0dffce6354a6fc6aec2df6a475727a64c2a64440bfd",
+    "review/test_adversarial.py": "a365fb6031c4e8bb2b5841518475cf0d15fd7c5e60bd2ea850e0f0c0f758327a"
+  },
+  "passed": true,
+  "scope": "Independent same-team AI review; disposable local subprocesses and hand-derived/exhaustive planning oracles. No external benchmark or LLM advantage tested."
+}

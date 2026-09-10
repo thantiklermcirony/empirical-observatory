@@ -133,9 +133,9 @@ const programme = [
   {
     name: 'Software & AI',
     detail:
-      'Active Context is a proposed tool that asks what an agent can rely on now and which observation to make next. The evidence ledger is groundwork; improved AI task performance remains to be tested.',
-    href: '/research/AI_Active_Context_Plan.md',
-    link: 'Read the Active Context proposal',
+      'Active Context records actual checks and identifies which results require reassessment when declared dependencies change. Its local tool and replay are available; improved AI task performance remains to be tested.',
+    href: '/active-context',
+    link: 'Try Active Context',
   },
 ];
 

@@ -1,0 +1,76 @@
+{
+  "captured_at": "2026-09-10T09:31:24.826943+00:00",
+  "scored_results_collected": false,
+  "repositories": [
+    {
+      "repository": "pypa/packaging",
+      "url": "https://github.com/pypa/packaging",
+      "commit": "10590c194edb33c82f84a127883d6097c56b7840",
+      "commit_url": "https://github.com/pypa/packaging/commit/10590c194edb33c82f84a127883d6097c56b7840",
+      "default_branch_at_capture": "main",
+      "license_metadata_unverified": "NOASSERTION",
+      "archive_url": "https://codeload.github.com/pypa/packaging/zip/10590c194edb33c82f84a127883d6097c56b7840",
+      "archive": "archives/pypa__packaging-10590c194edb33c82f84a127883d6097c56b7840.zip",
+      "archive_sha256": "35b21b329942d0920f66375ae691f829f1206d0b3d65f370d70f3acdad2456f8",
+      "archive_bytes": 411352,
+      "metadata_sha256": "c42ec821d7ef28b4938191a9d58c268695fb3f0e4c38aa21e72f51ad18635998",
+      "ref_sha256": "f2d1641e7261c46c276bbe2e8a6c3704f1241267562fc6c132b6e47109d134db"
+    },
+    {
+      "repository": "pallets/itsdangerous",
+      "url": "https://github.com/pallets/itsdangerous",
+      "commit": "672971d66a2ef9f85151e53283113f33d642dabd",
+      "commit_url": "https://github.com/pallets/itsdangerous/commit/672971d66a2ef9f85151e53283113f33d642dabd",
+      "default_branch_at_capture": "main",
+      "license_metadata_unverified": "BSD-3-Clause",
+      "archive_url": "https://codeload.github.com/pallets/itsdangerous/zip/672971d66a2ef9f85151e53283113f33d642dabd",
+      "archive": "archives/pallets__itsdangerous-672971d66a2ef9f85151e53283113f33d642dabd.zip",
+      "archive_sha256": "6a4dcbb1acbaf36fa22047f9c0a416897b0714f4e1bf06b28a50a68626d28d16",
+      "archive_bytes": 107048,
+      "metadata_sha256": "7b44b44c28609d7f09c62f682cb9b30758aa8d5d7623601a06d67c1c054f0752",
+      "ref_sha256": "03767ef881fe818c54b6aba41d2bef8b89439e049f4f06cd504ca831b50b6357"
+    },
+    {
+      "repository": "mahmoud/boltons",
+      "url": "https://github.com/mahmoud/boltons",
+      "commit": "961dcff3f42e73b245aef65e377fe82763b257bb",
+      "commit_url": "https://github.com/mahmoud/boltons/commit/961dcff3f42e73b245aef65e377fe82763b257bb",
+      "default_branch_at_capture": "master",
+      "license_metadata_unverified": "NOASSERTION",
+      "archive_url": "https://codeload.github.com/mahmoud/boltons/zip/961dcff3f42e73b245aef65e377fe82763b257bb",
+      "archive": "archives/mahmoud__boltons-961dcff3f42e73b245aef65e377fe82763b257bb.zip",
+      "archive_sha256": "1649017aba6c978229e1f7c85212002856fdc013803ed83fef07bd2965cdcb8d",
+      "archive_bytes": 328685,
+      "metadata_sha256": "11e5450c464815baf02cac31efacb085d15a8f5058dce596100c5c8005c847cb",
+      "ref_sha256": "8d5337f990c553d8d9bce3b1a576c1fd62af4777afd1ea0c31bee2987b904947"
+    },
+    {
+      "repository": "dbader/schedule",
+      "url": "https://github.com/dbader/schedule",
+      "commit": "82a43db1b938d8fdf60103bd41f329e06c8d3651",
+      "commit_url": "https://github.com/dbader/schedule/commit/82a43db1b938d8fdf60103bd41f329e06c8d3651",
+      "default_branch_at_capture": "master",
+      "license_metadata_unverified": "MIT",
+      "archive_url": "https://codeload.github.com/dbader/schedule/zip/82a43db1b938d8fdf60103bd41f329e06c8d3651",
+      "archive": "archives/dbader__schedule-82a43db1b938d8fdf60103bd41f329e06c8d3651.zip",
+      "archive_sha256": "025b3154b72482c9ca682a54266a0aa968b294a3bd588888dd6e3d72a49d3bf1",
+      "archive_bytes": 52800,
+      "metadata_sha256": "1837d94bf8c0a6145b6d024328044dbabce583cab7c8ea7e49813f13673aa8b8",
+      "ref_sha256": "ab8d90d996f5e59b5b51e65e7a64b3b9657356668a287379691002250c44a296"
+    },
+    {
+      "repository": "python-humanize/humanize",
+      "url": "https://github.com/python-humanize/humanize",
+      "commit": "3201e702ed7eae506f793fad0aec204f387aeb4c",
+      "commit_url": "https://github.com/python-humanize/humanize/commit/3201e702ed7eae506f793fad0aec204f387aeb4c",
+      "default_branch_at_capture": "main",
+      "license_metadata_unverified": "MIT",
+      "archive_url": "https://codeload.github.com/python-humanize/humanize/zip/3201e702ed7eae506f793fad0aec204f387aeb4c",
+      "archive": "archives/python-humanize__humanize-3201e702ed7eae506f793fad0aec204f387aeb4c.zip",
+      "archive_sha256": "c77379c294033658f3c2bd8194b918767d778c58cfb04ad0087ef6edfaa975a6",
+      "archive_bytes": 139038,
+      "metadata_sha256": "bd0b394780ce58d6fee45d3ab4579b542b5d5e65206608abf36abd91430dba51",
+      "ref_sha256": "c588ec68d9cef67098896859c75867656e50bb0507f10e5841eda20b86ebbe07"
+    }
+  ]
+}
