@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "rules_version": "1.0.0",
+  "generated_at": "2026-09-10T07:59:13.769010+00:00",
+  "mode": "deterministic evidence triage",
+  "inputs_sha256": "e2d6bc6300036e1044a6f793ec60967502f1478c846c6a2d58c2e4348b1169a9",
+  "checks": [
+    {
+      "id": "recovery-observation-coverage",
+      "passed": false,
+      "observed": 0.8408869395711501,
+      "required": 0.9,
+      "promotion_blocking": true,
+      "scope": "DO next-week assessment-window proxy"
+    }
+  ],
+  "next_actions": [
+    {
+      "id": "recovery-better-followup",
+      "state": "proposal",
+      "title": "Find more complete recovery follow-up",
+      "reason": "3451 of 4104 eligible landmarks resolve; the fixed 90% observation requirement failed.",
+      "acceptance": "Audit a separately sourced longitudinal dataset or prospectively collected measurements, including missing visits and exit reasons; freeze a new protocol before fitting.",
+      "automatic_action": "Preserve the failed gate and descriptive results. Do not broaden the window or promote a model."
+    },
+    {
+      "id": "grid-prospective-evidence",
+      "state": "collecting",
+      "title": "Accumulate prospective forecast evidence",
+      "reason": "0 mature national outcomes recorded.",
+      "acceptance": "Qualify acquisition, missed-slot accounting and outcome revisions; then specify an independent model comparison before fitting a candidate.",
+      "automatic_action": "Collect official forecasts, verify archive integrity and resolve mature estimated actuals. No predictor promotion."
+    }
+  ],
+  "autonomous_model_promotion": false,
+  "claims": "Rules identify follow-up work. They do not establish scientific novelty, causal mechanisms or self-improving predictive performance."
+}
