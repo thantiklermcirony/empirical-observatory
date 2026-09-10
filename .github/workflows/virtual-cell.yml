@@ -10,3 +10,5 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r research/virtual-cell/requirements.txt
       - run: python research/virtual-cell/test_transfer.py
+      - run: python -m unittest discover -s research/virtual-cell-flight02/experiment -p 'test_*.py' -v
+      - run: python research/virtual-cell-flight02/independent-review/check_pipeline.py
