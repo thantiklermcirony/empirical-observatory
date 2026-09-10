@@ -209,7 +209,7 @@ export default function Home() {
                 Current projects <ArrowUpRight size={22} />
               </Link>
               <Link className="latest-project" href="/projects#ray">
-                New: helping AI services recover correctly
+                Submitted: helping AI services recover correctly
               </Link>
             </div>
             <div className="flight-label">
