@@ -1,0 +1,17 @@
+{
+  "review_completed_at_utc": "2026-09-10T06:36:53.395287+00:00",
+  "status": "REVIEW_COMPLETE_NO_CODE_BLOCKER_FOUND",
+  "synthetic_only": true,
+  "real_response_values_read": false,
+  "pipeline_checks_passed": 11,
+  "pipeline_checks_failed": 0,
+  "runner_checks_passed": true,
+  "reviewed_source_sha256": {
+    "pipeline.py": "a39a929a639c2d1621adf889821cfb61c36253a9f8fba7dd0ea686df794a8b71",
+    "dataio.py": "9bc7c2b1e05082324ac8f9924128e6b362692c49b285e4116ae02cedda42d1fb",
+    "run.py": "fe212ed1a72b8f6edaa6ed43305c4fd6738724d1428f4ea12e44fc7ba4c91f28",
+    "protocol.json": "d869dca89429c23cdebeb793f3db4845e5ca13392f9417b5404f339733f812d7"
+  },
+  "production_sources_match_review": true,
+  "remaining_execution_gate": "Parent creates external reviewed freeze before any numeric response decode"
+}
