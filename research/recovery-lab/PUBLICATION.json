@@ -1,0 +1,56 @@
+{
+  "verified_at": "2026-09-10T09:05:32.301588+00:00",
+  "site": "https://empirical-observatory.madmanmuzza.chatgpt.site",
+  "version": 16,
+  "checks": [
+    {
+      "path": "/recovery?analytics=off",
+      "status": 200,
+      "bytes": 317632,
+      "sha256": "e2a0c5cfd951ea46fcefbbd874f5d6f63000b46bc2f2d1b8e5ebc019e04ba53a"
+    },
+    {
+      "path": "/projects?analytics=off",
+      "status": 200,
+      "bytes": 81862,
+      "sha256": "7233b7050adebf3ad6d686eba7be189b00d08840ca4ac7d7aa4036bb9d08c977"
+    },
+    {
+      "path": "/atlas?analytics=off",
+      "status": 200,
+      "bytes": 54984,
+      "sha256": "e3bea31f33904b574c8a3be0a134d57b947c2ff81b5d7a11f86422ff4b4295db"
+    },
+    {
+      "path": "/api/forecast",
+      "status": 200,
+      "bytes": 597,
+      "sha256": "37d3416871d939a81a3d7421cd57692dec55d714a534a4c3d4c1f4acd844dd00"
+    },
+    {
+      "path": "/research/Recovery_Lab_Report.md",
+      "status": 200,
+      "bytes": 5345,
+      "sha256": "af64f43d24aebc83399d7bcff7797de0cb5fd13cca5862a4a016aa24f1bd9400"
+    },
+    {
+      "path": "/research/Recovery_Lab.zip",
+      "status": 200,
+      "bytes": 3387241,
+      "sha256": "a2f07c6e4f8f0613c4b937498708111fe670c4ea800d8bb11ce7fb190a844e3c"
+    },
+    {
+      "path": "/research/Recovery_Admission.json",
+      "status": 200,
+      "bytes": 31863,
+      "sha256": "9254ac30dad71ea77f9f43789c38e27335778c52f17ba18b2e60b7494b19232e"
+    },
+    {
+      "path": "/research/AI_Active_Context_Plan.md",
+      "status": 200,
+      "bytes": 6993,
+      "sha256": "4eccd635d5e17ea949250e7d1b263bc1b14ba5d74868f57aa4623298b81b9523"
+    }
+  ],
+  "live_display_numeric_audit": "214cases/3852probabilities/1785visitpoints; zero mismatches; missing-item and timing labels corrected."
+}
