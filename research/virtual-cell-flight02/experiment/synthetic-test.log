@@ -1,0 +1,36 @@
+Completed fold 0: 2 lines, 0.04s
+Completed fold 1: 2 lines, 0.05s
+Completed fold 2: 2 lines, 0.04s
+Completed fold 3: 2 lines, 0.04s
+Completed fold 4: 2 lines, 0.04s
+Primary gate: False
+
+test_constant_controls_zero_rank_and_ridge_intercept (test_pipeline.NumericalContracts.test_constant_controls_zero_rank_and_ridge_intercept) ... ok
+test_far_destination_kernel_remains_finite (test_pipeline.NumericalContracts.test_far_destination_kernel_remains_finite) ... ok
+test_feature_identity_guard (test_pipeline.NumericalContracts.test_feature_identity_guard) ... ok
+test_loo_arithmetic_and_variance_identity (test_pipeline.NumericalContracts.test_loo_arithmetic_and_variance_identity) ... ok
+test_missing_pairs_do_not_become_zero_truth (test_pipeline.NumericalContracts.test_missing_pairs_do_not_become_zero_truth) ... ok
+test_nonfinite_observed_data_fails (test_pipeline.NumericalContracts.test_nonfinite_observed_data_fails) ... ok
+test_random_permutation_storage_invariant (test_pipeline.NumericalContracts.test_random_permutation_storage_invariant) ... ok
+test_same_mask_zero_and_full_coverage (test_pipeline.NumericalContracts.test_same_mask_zero_and_full_coverage) ... ok
+test_ties_rounding_and_exact_identity (test_pipeline.NumericalContracts.test_ties_rounding_and_exact_identity) ... ok
+test_uniform_and_identical_controls_return_treatment_risk (test_pipeline.NumericalContracts.test_uniform_and_identical_controls_return_treatment_risk) ... ok
+test_unsupported_scored_drug_fails_not_dropped (test_pipeline.NumericalContracts.test_unsupported_scored_drug_fails_not_dropped) ... ok
+test_exact_ties_prefer_uniform (test_pipeline.ProcedureContracts.test_exact_ties_prefer_uniform) ... ok
+test_fit_diagnostics_reports_exact_ties_without_changing_arrays (test_pipeline.ProcedureContracts.test_fit_diagnostics_reports_exact_ties_without_changing_arrays) ... ok
+test_fold_labels_preserved_without_contiguity_assumption (test_pipeline.ProcedureContracts.test_fold_labels_preserved_without_contiguity_assumption) ... ok
+test_gate_counts_fold_envelope_explicitly (test_pipeline.ProcedureContracts.test_gate_counts_fold_envelope_explicitly) ... ok
+test_runner_no_flag_cannot_load_data (test_pipeline.ProcedureContracts.test_runner_no_flag_cannot_load_data) ... usage: run.py [-h] [--execute-real-data] [--freeze-manifest FREEZE_MANIFEST]
+              [--response RESPONSE] [--controls CONTROLS]
+              [--selection SELECTION] [--preflight PREFLIGHT]
+              [--output OUTPUT]
+run.py: error: Real evaluation requires --execute-real-data and every input/output argument after protocol review/freeze
+ok
+test_source_count_and_validation_blocks (test_pipeline.ProcedureContracts.test_source_count_and_validation_blocks) ... ok
+test_synthetic_end_to_end_preserves_artifact_boundary (test_pipeline.ProcedureContracts.test_synthetic_end_to_end_preserves_artifact_boundary) ... ok
+test_unreviewed_freeze_rejected (test_pipeline.ProcedureContracts.test_unreviewed_freeze_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.562s
+
+OK
