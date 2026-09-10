@@ -1,0 +1,8 @@
+{
+  "per_target_rows": 8208,
+  "portable_reproduction_exact": true,
+  "portable_behavioral_tests": 12,
+  "original_model_seconds": 104.844,
+  "portable_model_seconds": 106.609,
+  "protocol_sha256": "d039550f4c31b4825a3361a710c859265f8ad1ca054e3c386d11032905020716"
+}

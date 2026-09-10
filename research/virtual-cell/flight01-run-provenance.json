@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-09-10T04:22:52.089652+00:00",
+  "protocol_sha256": "d039550f4c31b4825a3361a710c859265f8ad1ca054e3c386d11032905020716",
+  "implementation_sha256": "4d84361d480a7e31e8eadef1af711b99f82e4f659d2d771462ec29ec8b90435a",
+  "runner_sha256": "c0cd82d3b4a7aadd4b6f3d6f9350768329a484bb5b809c150a6d694ed1dea143",
+  "data_manifest_sha256": "a0c068a194d04594601cd3c79e2cab348a6c42312544fa29579afcf195128f52",
+  "numpy": "2.5.3",
+  "outputs": {
+    "HepG2-prediction-manifest.json": "94040036aebe95530ed317c1fdd52a345401f3b38495a90d3450c1a895419ffe",
+    "HepG2-predictions.npz": "e4149542e55891638fd32c1c2d19055f2f4a2460eeae0da1726632ca09ef39c7",
+    "independent-arithmetic.json": "cbd1c7bd58628c43a33965d5db553cddc5673d7342bde22df8376fd73f2b7ea5",
+    "Jurkat-prediction-manifest.json": "7ed7627addc14b7c52491158cc474167967a91ec7d63b80f4f0b128a4b0dd825",
+    "Jurkat-predictions.npz": "dbbdd58c4a7947726c43d1765cacf166a23a1de315f37ec85e6b024654605a16",
+    "K562-prediction-manifest.json": "2e268e5584f4339c5bb56ac4ebf880657dae7e07997830447b215c3c3f4a6131",
+    "K562-predictions.npz": "4419921c2bf18e8a23e3499292c564b566ae4084846f337c29ec5996fdfc346b",
+    "per-target.csv": "40be5bc383ef8edd70764dc828892007f38de38c5994c2e79d67a1adb4f52ca6",
+    "risk-curves.json": "2946f19b43832a87a2228a5cf9311f175d6dcec0fd4ae774c573ff6513e29ecf",
+    "RPE1-prediction-manifest.json": "227bb8b2e93f9f8888f5214207d6d1031688de6cb711e9ebfeab345d1ac0bece",
+    "RPE1-predictions.npz": "f36ddd270e1647f663eac82dff3964dc132808310c6868c140370989e62cf90d",
+    "summary.json": "53f76188195198ff439fb49c40ab2b5c3650a9e6e8321b9d8aa4be5301bda0b5"
+  }
+}
