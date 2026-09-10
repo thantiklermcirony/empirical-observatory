@@ -2,7 +2,7 @@
 
 **[CURRENT PROJECTS →](https://empirical-observatory.madmanmuzza.chatgpt.site/projects)** · **[ENTER THE LIVE STATION →](https://empirical-observatory.madmanmuzza.chatgpt.site)**
 
-The projects page features our [submitted Pertpy evaluator](https://github.com/scverse/pertpy/pull/1098), its [real-cell results](public/research/Pertpy_Evaluation_Report.md), the two submitted Graphiti repairs, and the next NeuroGym investigation. It links runnable experiments, source and reproducible evidence. Direct laboratory links work without an API key.
+The projects page features our [submitted NeuroGym decision-cue repair](https://github.com/neurogym/neurogym/pull/295), its [recorded before/after evidence](public/research/NeuroGym_Contribution_Report.md), the submitted Pertpy evaluator and Graphiti repairs, and the [next three investigations](public/research/Next_Big_Three.md). It links runnable experiments, source and reproducible evidence. Direct laboratory links work without an API key.
 
 
 A playable research station for testing what measurements reveal—and what they miss. Part of [The Empirical Architecture](https://github.com/thantiklermcirony/empirical-architecture).
@@ -60,7 +60,8 @@ The [42-repository research scan](research/contribution-scan/Research_Report.md)
 
 - **Submitted / biology:** [Pertpy PR #1098](https://github.com/scverse/pertpy/pull/1098) adds a baseline-aware evaluator. 84 evaluator cases passed on two Python versions; the real-cell demonstration exposes a high-correlation failure. [Results, limits and reproduction](public/research/Pertpy_Evaluation_Report.md). This tests conventional baselines; IDA has not yet been scored.
 - **Submitted / AI memory:** Graphiti temporal-history and timestamp repairs, with [public evidence](public/research/Graphiti.md).
-- **Next / AI environments:** reproduce [NeuroGym issue #279](https://github.com/neurogym/neurogym/issues/279), establish the observable decision-cue contract, and check the original task definition before proposing changes.
+- **Submitted / AI environments:** [NeuroGym PR #295](https://github.com/neurogym/neurogym/pull/295) makes the intended decision window observable. All 132 candidate-suite tests pass on the tested Windows/Python runtime; 240 noisy trials preserve every other input channel, target and timing. [Recorded traces, patch and evidence](public/research/NeuroGym_Contribution_Report.md). No learned-model improvement is claimed.
+- **Next / infrastructure and simulation:** [three focused investigations](public/research/Next_Big_Three.md), with current competing work, resource gates and proposed independent tests.
 - **Later / numerical systems:** python-control's filter/predictor distinction and independent event/held-input tests.
 
 The [reusable scanner](research/contribution-scan/scanner/github_scan.py) has 20 offline tests. [Run or refresh the scan](research/contribution-scan/README.md), [inspect the ranked records](research/contribution-scan/Opportunities.json), or [download the complete research package](research/contribution-scan/Research_and_Scanner.zip). The inventory is bounded and partly incomplete; these are contribution opportunities, not 2,058 validated bugs or proof of framework superiority.
