@@ -1,0 +1,48 @@
+{
+  "validated_at": "2026-09-10T08:17:32.070367+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "syntax_files_checked": 9,
+  "unit_tests_run": 44,
+  "unit_failures": 0,
+  "unit_errors": 0,
+  "unit_skipped": 0,
+  "cli_checks": [
+    {
+      "command": [
+        "demo"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "verify",
+        "--expected-head",
+        "5663444e752b7c0a5215cb52f54af922d9ec800aad7ab7e147e69c454e25dc91"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "export"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": [
+        "demo"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "stderr": "Ledger error: Demo needs a new database path; existing evidence is not overwritten.\n"
+    }
+  ],
+  "passed": true,
+  "scope": "Local stdlib synthetic/unit and CLI checks; no live data, fitting, Linux execution claim or scientific efficacy claim."
+}
