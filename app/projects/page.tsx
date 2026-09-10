@@ -13,11 +13,11 @@ const github = 'https://github.com/thantiklermcirony';
 const nextMissions = [
   {
     name: '01 / Ray Serve',
-    status: 'ACTIVE / RECOVERY CANDIDATE',
+    status: 'SUBMITTED / AWAITING REVIEW',
     description:
       'A replacement controller needs a new subscription. Inspect the candidate, actual actor tests and the Linux HTTP experiment.',
-    href: 'https://github.com/ray-project/ray/issues/63784',
-    gate: 'CPU / Linux · human review before submission',
+    href: 'https://github.com/ray-project/ray/pull/66039',
+    gate: 'CPU / Linux · upstream review pending',
   },
   {
     name: '02 / Dask',
@@ -117,7 +117,8 @@ export default function Projects() {
         aria-labelledby="ray-title"
       >
         <div className="project-status">
-          <span className="status-light" /> RECOVERY CANDIDATE · NOT SUBMITTED
+          <span className="status-light" /> CONTRIBUTION SUBMITTED · AWAITING
+          REVIEW
         </div>
         <div className="graphiti-heading">
           <div>
@@ -143,10 +144,8 @@ export default function Projects() {
               snapshot version. The original subscriber stops; the candidate
               receives the replacement state.
             </p>
-            <Link
-              href={`${github}/empirical-architecture/tree/main/research/ray-campaign`}
-            >
-              Inspect the patch and evidence <ArrowUpRight size={18} />
+            <Link href="https://github.com/ray-project/ray/pull/66039">
+              Review the Ray contribution <ArrowUpRight size={18} />
             </Link>
           </article>
           <article>
@@ -176,8 +175,8 @@ export default function Projects() {
           The HTTP result is from one CPU node; multi-node, GPU and production
           deployments remain untested. Only HAProxyManager enables replacement
           discovery. This is a reliability candidate, with no model-quality or
-          compute-saving claim. Ray requires human review and human-run tests
-          before requesting upstream review.
+          compute-saving claim. The reviewed and tested patch is submitted to
+          Ray; maintainer acceptance and upstream checks remain separate gates.
         </p>
       </section>
       <section
@@ -450,9 +449,9 @@ export default function Projects() {
         <h2 id="next-title">Make silent failures visible.</h2>
         <p>
           Three investigations chosen for useful, testable contributions. These
-          include the active Ray candidate and two researched opportunities.
-          Upstream agreement remains separate from our experiments. Existing
-          authors keep credit for their work.
+          include the submitted Ray recovery fix and two researched
+          opportunities. Upstream agreement remains separate from our
+          experiments. Existing authors keep credit for their work.
         </p>
         <div className="project-grid">
           {nextMissions.map((mission) => (
