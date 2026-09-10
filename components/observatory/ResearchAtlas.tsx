@@ -61,6 +61,9 @@ export default function ResearchAtlas() {
           </span>
         </a>
         <nav>
+          <a href="/recovery">
+            Recovery Lab <ArrowUpRight size={15} />
+          </a>
           <a href="#discovery">
             Run exploration <ArrowUpRight size={15} />
           </a>
