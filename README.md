@@ -1,5 +1,13 @@
 # The Empirical Observatory
 
+**[RECOVERY LAB: EXPLORE REAL HISTORIES AND THE EVIDENCE LOOP](https://empirical-observatory.madmanmuzza.chatgpt.site/recovery)**
+
+Recovery Lab compares six descriptions of the next measured condition in 214 older female mice. The 83.94% follow-up coverage failed its declared prerequisite; model comparisons remain descriptive. The explorer reveals held-out cases, original evidence and the blocked admission record. [Frozen comparison](research/recovery-lab/experiment/README.md) · [Full result](public/research/Recovery_Lab_Report.md).
+
+The shared [evidence engine](automation/README.md) records contracts, source bytes, failures and candidate checks. A scheduled collector captures official GB carbon-intensity forecasts and later estimated actuals on the `observatory-data` branch. It produces a research queue without rewriting failed results or promoting a model. [Operating plan](public/research/Observatory_Operating_Plan.md).
+
+**Next AI product proposal: [Active Context](public/research/AI_Active_Context_Plan.md)**—help an agent determine which earlier conclusions still apply and which check it should perform after its environment changes. The SDK and agent benchmark are not yet implemented. [Independent product critique](public/research/AI_Product_Review.md).
+
 **[RESEARCH ATLAS: EXPLORE THE WHOLE PROGRAMME](https://empirical-observatory.madmanmuzza.chatgpt.site/atlas)**
 
 Rotate the programme in perspective, inspect the evidence attached to each research line, and run a simulation that chooses its next test from the latest observation. [Architecture and current capabilities](public/research/observatory-evolution/Architecture.md) · [Protocol, independent checks and reproduction](public/research/observatory-evolution/README.md).
