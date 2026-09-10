@@ -209,7 +209,10 @@ export default function Home() {
                 Current projects <ArrowUpRight size={22} />
               </Link>
               <Link className="latest-project" href="/cell">
-                New: Virtual Cell — predict, reveal, challenge
+                Virtual Cell — predict, reveal, challenge
+              </Link>
+              <Link className="latest-project" href="/atlas">
+                New: Research Atlas — explore the whole programme
               </Link>
             </div>
             <div className="flight-label">
