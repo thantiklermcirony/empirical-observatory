@@ -1,0 +1,9 @@
+{
+  "scope": "Launcher path fallback only; admission database and existing event timestamps unchanged",
+  "original_launcher_sha256": "24226e6e2e3df3122ad088d3739f648913cd9d8d29137a5e96c0ed0a66168b2e",
+  "current_launcher_sha256": "e2f9c2b2c99ab48f2d792a51ceb3dac2bc7527ab1c69cfd0771fbbd296faaefb",
+  "layouts": [
+    "work/observatory-automation",
+    "automation/ledger"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-09-10T08:20:37.511856+00:00",
+  "files": [
+    {
+      "path": "ledger.sqlite",
+      "sha256": "0ad5ea18ea73b10c7cd745fba26d8c323783aaa7f86b2f21aceeed4539d87fed"
+    },
+    {
+      "path": "admission.json",
+      "sha256": "9254ac30dad71ea77f9f43789c38e27335778c52f17ba18b2e60b7494b19232e"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "9c3433c9f021fc0bf8920ce981b337e3700f7f508729ee01ce8f7051b1cd3d98"
+    },
+    {
+      "path": "integrity-check.json",
+      "sha256": "d56cbf58775c8364d659a375168fd21ab38be39bedafe19027b514a10de34849"
+    },
+    {
+      "path": "create_admission.py",
+      "sha256": "24226e6e2e3df3122ad088d3739f648913cd9d8d29137a5e96c0ed0a66168b2e"
+    }
+  ],
+  "core_files": [
+    {
+      "path": "observatory_ledger/__init__.py",
+      "sha256": "0be723b23a30a67f321d6f03603accab6b8b850c84eb67e0716626554bafbcf5"
+    },
+    {
+      "path": "observatory_ledger/__main__.py",
+      "sha256": "03ddb6a2deff1457658c6ffd127a7c6169562ddd34c8244222b842555e5814ed"
+    },
+    {
+      "path": "observatory_ledger/adapters.py",
+      "sha256": "198cdbefa698137327f48bc258c2d2007ba82888da6f46f20ffbd18b9e62a781"
+    },
+    {
+      "path": "observatory_ledger/demo.py",
+      "sha256": "216b711ef3c2640822d9a69f741973bfffee374c3b14f5538cee0062550ffc70"
+    },
+    {
+      "path": "observatory_ledger/ledger.py",
+      "sha256": "a5da88af28080417432c16b2c8eed5d3ec539b935d56a8eb0553279901a55525"
+    },
+    {
+      "path": "observatory_ledger/recovery.py",
+      "sha256": "6356e69a1981a922483b61a4d0632bee286cce2bf49398ec22a7f89e61df9364"
+    }
+  ]
+}

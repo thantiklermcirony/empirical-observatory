@@ -1,0 +1,114 @@
+{
+  "schema": "observatory-recovery-admission/1",
+  "kind": "evidence_admission",
+  "mode": "retrospective",
+  "status": "blocked",
+  "public_time_attestation": false,
+  "recorded_at": "2026-09-10T08:20:37.508135Z",
+  "public_source_commit": "7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+  "public_source_url": "https://github.com/thantiklermcirony/empirical-observatory/commit/7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+  "protocol_sha256": "3903f4f60182008fe15a864f3660526296d484013ecf84001cb8a5dbb7803325",
+  "final_preflight_sha256": "bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef",
+  "final_resolved": 3445,
+  "eligible_landmarks": 4104,
+  "final_fraction": 0.8394249512670565,
+  "historical_resolved": 3451,
+  "historical_fraction": 0.8408869395711501,
+  "required_fraction": 0.9,
+  "checks": [
+    {
+      "check_id": "overall_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8394249512670565,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.419848Z"
+    },
+    {
+      "check_id": "fold_0_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8433242506811989,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.429270Z"
+    },
+    {
+      "check_id": "fold_1_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8430540827147401,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.433838Z"
+    },
+    {
+      "check_id": "fold_2_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8594080338266384,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.440067Z"
+    },
+    {
+      "check_id": "fold_3_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8208955223880597,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.446776Z"
+    },
+    {
+      "check_id": "fold_4_resolution",
+      "evidence_snapshot_ids": [
+        "recovery-preflight-bdec6c15eb5b60152b4dc041f6937f134f4a6ef6f5a5efb3d959ec8a08574eef"
+      ],
+      "experiment_id": "recovery-lab-v1-feasibility-admission",
+      "observed_value": 0.8239247311827957,
+      "passed": false,
+      "recorded_at": "2026-09-10T08:20:37.453310Z"
+    }
+  ],
+  "assessment": {
+    "candidate_id": "recovery-lab-v1-retrospective-proposal",
+    "checks": [
+      {
+        "check_id": "overall_resolution",
+        "status": "failed"
+      },
+      {
+        "check_id": "fold_0_resolution",
+        "status": "failed"
+      },
+      {
+        "check_id": "fold_1_resolution",
+        "status": "failed"
+      },
+      {
+        "check_id": "fold_2_resolution",
+        "status": "failed"
+      },
+      {
+        "check_id": "fold_3_resolution",
+        "status": "failed"
+      },
+      {
+        "check_id": "fold_4_resolution",
+        "status": "failed"
+      }
+    ],
+    "status": "blocked"
+  },
+  "forecast_rows": 0,
+  "score_rows": 0,
+  "head_sha256": "92da5a417db54d7ecc2c7650dd2730d166f5aa4273a631c127c09aa4d1b9f44c",
+  "statement": "Current-time admission of already observed audit evidence. All six coverage gates failed; no prospective forecast, predictive success, model promotion or public time attestation is claimed."
+}

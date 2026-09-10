@@ -1,0 +1,7 @@
+{
+  "schema": "observatory-ledger/1",
+  "event_count": 16,
+  "head_sha256": "92da5a417db54d7ecc2c7650dd2730d166f5aa4273a631c127c09aa4d1b9f44c",
+  "integrity": "verified_local_chain",
+  "public_time_attestation": false
+}
