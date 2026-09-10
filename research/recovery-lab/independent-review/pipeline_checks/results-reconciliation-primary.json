@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-09-10T08:23:02.332420+00:00",
+  "passed": true,
+  "scope": "Saved predictions, eligibility masks and arithmetic only; no refitting, retuning, new threshold or new hypothesis.",
+  "public_source_commit": "7ed5f4113e3c4d0cb8ccc256627efbb8d40c7269",
+  "modes": {
+    "primary": {
+      "intended_landmarks": 4104,
+      "resolved_landmarks": 3445,
+      "all_methods_identical_mask": true,
+      "all_fits_animal_isolated": true,
+      "recomputed_brier": {
+        "transition": 0.47456138965434136,
+        "current": 0.43382014267379815,
+        "history": 0.439777193196479,
+        "duration": 0.4396176305793119,
+        "duration_hgb": 0.4087748902765672,
+        "candidate": 0.4053359635549259
+      },
+      "best_conventional": "duration_hgb",
+      "relative_improvement": 0.00841276409936681,
+      "fold_wins": 3,
+      "conditional_bootstrap_ci95": [
+        -0.011599223299859015,
+        0.018323274341975913
+      ],
+      "overall_gate": false
+    }
+  },
+  "input_artifacts": [
+    {
+      "path": "results\\primary\\predictions.csv",
+      "sha256": "f5e7069c1018eae68e415f1ecafc5460be8ba7d902829f4d50a7ac27b493ee1b"
+    },
+    {
+      "path": "results\\primary\\summary.json",
+      "sha256": "4af0cccaec2cc0f5546cf0cce14d623aa65e992b653b8d303be924676501beb6"
+    },
+    {
+      "path": "results\\primary\\animal_losses.csv",
+      "sha256": "e50e20f6cf60bf979ff5ec1399a1d3d9c003de1cc1b37d58f9d6528ce65ffc99"
+    },
+    {
+      "path": "results\\primary\\fit_records.json",
+      "sha256": "0c34848f8ad421ea51131c1966d89901f885f5c245e52198deacde1fe44320a9"
+    },
+    {
+      "path": "preflight\\primary_landmarks.csv",
+      "sha256": "a9fe5715b8b3afdaeae6271e7602bb02525506fd47edecd8a822d7091b848e9d"
+    }
+  ]
+}
