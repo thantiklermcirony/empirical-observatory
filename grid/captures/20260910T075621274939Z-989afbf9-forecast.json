@@ -1,0 +1,13 @@
+{
+  "bytes": 467,
+  "headers": {
+    "content-type": "application/json",
+    "date": "Thu, 10 Sep 2026 07:56:22 GMT"
+  },
+  "http_status": 200,
+  "kind": "forecast",
+  "raw_sha256": "fc401901fb4f88ce5dd25fd56b3bf4b51f2ef870e3549eedffda7a9dc251d2e5",
+  "received_at": "2026-09-10T07:56:22.396523Z",
+  "requested_at": "2026-09-10T07:56:21.274939Z",
+  "url": "https://api.carbonintensity.org.uk/intensity/2026-09-11T07:30Z/2026-09-11T09:00Z"
+}
