@@ -1,0 +1,92 @@
+[
+  {
+    "file": "HepG2Essential_Log2FoldChange.csv.gz",
+    "source_url": "https://ndownloader.figshare.com/files/56049065",
+    "source_article": 29498366,
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "bytes": 193282480,
+    "md5": "aa56f1ecf3d48d1121895d1eaa0796ee",
+    "sha256": "a8215750ebc550fd60c280a725df6c711c5613c6bb68b5cbeb762259a85b8aec",
+    "retrieved_at": "2026-09-10T04:02:27.401996+00:00",
+    "elapsed_seconds": 14.547000000005937
+  },
+  {
+    "file": "JurkatEssential_Log2FoldChange.csv.gz",
+    "source_url": "https://ndownloader.figshare.com/files/56049071",
+    "source_article": 29498366,
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "bytes": 178715700,
+    "md5": "844e78051b1721bc27dcb6b6f9f84136",
+    "sha256": "bba06bf962ed10e02138dddc6a5d44cddf9258015da51477909da8caa833a999",
+    "retrieved_at": "2026-09-10T04:02:41.043805+00:00",
+    "elapsed_seconds": 13.625
+  },
+  {
+    "file": "K562Essential_Log2FoldChange.csv.gz",
+    "source_url": "https://ndownloader.figshare.com/files/56049056",
+    "source_article": 29498366,
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "bytes": 148695780,
+    "md5": "72b8deccb64c0f62f7becbd630d02382",
+    "sha256": "ffdbde946c26199653dfcb2420728da15ea8808aabd33f5971343e7c80ed1847",
+    "retrieved_at": "2026-09-10T04:01:59.423394+00:00",
+    "elapsed_seconds": 16.110000000000582
+  },
+  {
+    "file": "K562_essential_raw_bulk_01.h5ad",
+    "source_url": "https://ndownloader.figshare.com/files/35773070",
+    "source_article": 20029387,
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "bytes": 79766954,
+    "md5": "8321d5d3ffc99db2a5c71edca4189735",
+    "sha256": "80de95e54fcbca0e0537d569b43ec92fde6bd0482801505504baebe3118dcadf",
+    "retrieved_at": "2026-09-10T04:01:53.747545+00:00",
+    "elapsed_seconds": 10.921999999991385
+  },
+  {
+    "file": "RPE1Essential_Log2FoldChange.csv.gz",
+    "source_url": "https://ndownloader.figshare.com/files/56049083",
+    "source_article": 29498366,
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "bytes": 175886802,
+    "md5": "83215c46746e34b2319bb316fe51c6db",
+    "sha256": "2e34ba883d64eac0a417e8ffd19779bd18de5d882e6ddd23015e0d53dede82d1",
+    "retrieved_at": "2026-09-10T04:02:12.851653+00:00",
+    "elapsed_seconds": 13.421999999991385
+  },
+  {
+    "file": "rpe1_raw_bulk_01.h5ad",
+    "source_url": "https://ndownloader.figshare.com/files/35775581",
+    "source_article": 20029387,
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "bytes": 95350546,
+    "md5": "74765fa87635467a869ea972356ae0e7",
+    "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2",
+    "retrieved_at": "2026-09-10T04:02:02.144588+00:00",
+    "elapsed_seconds": 8.40700000000652
+  }
+]

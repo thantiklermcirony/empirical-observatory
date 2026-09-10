@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "K562_to_RPE1",
+      "view": "primary_all_shared",
+      "model": "control",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "K562_to_RPE1",
+      "view": "primary_all_shared",
+      "model": "same_construct_transfer",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "K562_to_RPE1",
+      "view": "primary_all_shared",
+      "model": "permuted_construct_transfer",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "K562_to_RPE1",
+      "view": "secondary_source_control_top1000",
+      "model": "control",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "K562_to_RPE1",
+      "view": "secondary_source_control_top1000",
+      "model": "same_construct_transfer",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "K562_to_RPE1",
+      "view": "secondary_source_control_top1000",
+      "model": "permuted_construct_transfer",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "RPE1_to_K562",
+      "view": "primary_all_shared",
+      "model": "control",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "RPE1_to_K562",
+      "view": "primary_all_shared",
+      "model": "same_construct_transfer",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "RPE1_to_K562",
+      "view": "primary_all_shared",
+      "model": "permuted_construct_transfer",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "RPE1_to_K562",
+      "view": "secondary_source_control_top1000",
+      "model": "control",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "RPE1_to_K562",
+      "view": "secondary_source_control_top1000",
+      "model": "same_construct_transfer",
+      "passed": true
+    },
+    {
+      "check": "independent_pandas_gene_macro",
+      "direction": "RPE1_to_K562",
+      "view": "secondary_source_control_top1000",
+      "model": "permuted_construct_transfer",
+      "passed": true
+    },
+    {
+      "check": "absolute_transfer_squared_error_is_symmetric_per_construct",
+      "passed": true
+    },
+    {
+      "check": "all_no_change_correlations_undefined",
+      "passed": true
+    },
+    {
+      "check": "negative_control_is_bijection_with_no_same_gene_match",
+      "passed": true
+    },
+    {
+      "check": "target_gene_excluded_from_primary_scores",
+      "passed": true
+    },
+    {
+      "check": "stdlib_weighted_control_and_normalization",
+      "context": "K562",
+      "passed": true
+    },
+    {
+      "check": "stdlib_weighted_control_and_normalization",
+      "context": "RPE1",
+      "passed": true
+    }
+  ]
+}

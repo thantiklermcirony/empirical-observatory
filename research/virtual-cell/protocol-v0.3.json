@@ -1,0 +1,76 @@
+{
+  "version": "0.3",
+  "frozen_before_matrix_values_inspected": true,
+  "date": "2026-09-10",
+  "task": "Four-context population log2-fold-change transfer, without held-out basal expression",
+  "contexts": [
+    "K562",
+    "RPE1",
+    "HepG2",
+    "Jurkat"
+  ],
+  "panels": "Annotation intersection of all available outcome-gene and target labels; report archive preprocessing and unsupported labels separately",
+  "split": "Leave one whole context out; hyperparameters selected with inner leave-one-training-context-out folds",
+  "scale": "Author-published log2FoldChange; preserve input values without renormalization; do not infer the estimator from a column name",
+  "models": [
+    "zero",
+    "global_template",
+    "target_mean",
+    "global_shrink",
+    "heterogeneity_shrink",
+    "permuted_target_mean"
+  ],
+  "global_template": "Mean across training contexts and available common targets, repeated for every target",
+  "global_shrink_grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "heterogeneity_shrink_grid": [
+    0,
+    0.25,
+    0.5,
+    1,
+    2
+  ],
+  "heterogeneity_shrink": "For each target/gene finite count n_j and mean mu_j. J={genes:n_j>=2}; M=mean_J(mu_j^2), q=mean_J(sample_variance_j/n_j); alpha=max(1-lambda*q/M,0). J empty -> unshrunk mean with undefined disagreement, ranked last; M=0 -> zero prediction. Apply target alpha to every supported coordinate. Conventional heuristic, not calibrated uncertainty.",
+  "tuning": "Choose lowest equal-context mean target-MSE; exact numerical ties choose smallest alpha for global shrink or largest lambda for heterogeneity shrink",
+  "nonfinite_rule": "Infinity fails. NaN stays missing. Per-coordinate source mean uses finite sources; no-source prediction is explicit zero-effect fallback, never truth imputation. Score only finite outer truth with the same target-specific gene mask for every model. Unscorable targets remain in counts.",
+  "negative_control": "Independently permute target identities within each training context using seeded permutations; held-out truth unchanged. Pure context-label permutation is inert for these symmetric predictors.",
+  "permutation_seed": 20260910,
+  "risk_ranking": [
+    "absolute training disagreement V=mean_J sample variance",
+    "relative disagreement V/(M+V), all-zero denominator=1; undefined ranks last",
+    "training effect magnitude M (smallest first)",
+    "mean of50 random rankings with seed20260911"
+  ],
+  "risk_curves": "Fractions0.1,...,1.0 with exact target identities and every model scored on each identical retained set, including zero and global_shrink. Undefined disagreement targets rank last. Risk is conditional on finite author truth.",
+  "primary": "Target macro-MSE over every common outcome gene, reported per context and equally across contexts",
+  "secondary": [
+    "target-level MSE",
+    "cosine direction similarity with zero norms explicitly undefined",
+    "fraction of targets improved",
+    "selected hyperparameters and inner losses",
+    "risk-coverage curves"
+  ],
+  "prospective_advantage_gate": "At least10% MSE improvement over the strongest eligible conventional comparator in at least3/4 outer contexts, no worse overall; engineering gate not significance. Negative findings remain results.",
+  "scope_limits": [
+    "Four selected cell lines and distinct protocols",
+    "No individual-cell prediction or raw-count generation",
+    "No external challenge score",
+    "No held-out context features; cannot identify target-context-specific directions",
+    "Known effects already estimated using each archive's original experimental controls and DE pipeline",
+    "Dataset gene filtering precedes this study and may reflect perturbed outcomes",
+    "No future modification of grids in response to outer results without a new labeled development study"
+  ],
+  "revision_reason": "Before any model fitting/scoring, ingestion revealed author NaNs. Preserve v0.2, retain missing values, score published estimable effects conditionally.",
+  "prior_protocol_sha256": "7df55cda2697a577cb89418c9e0804182f80f218cb34e7f125fdc38c8d84217e",
+  "primary_comparators": [
+    "zero",
+    "global_template",
+    "target_mean",
+    "global_shrink"
+  ]
+}

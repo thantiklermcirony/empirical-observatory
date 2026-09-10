@@ -1,0 +1,414 @@
+{
+  "protocol_sha256": "d039550f4c31b4825a3361a710c859265f8ad1ca054e3c386d11032905020716",
+  "shape": [
+    2052,
+    6642
+  ],
+  "contexts": {
+    "K562": {
+      "configuration": {
+        "global_alpha": 0.25,
+        "heterogeneity_penalty": 1.0,
+        "global_inner_losses": {
+          "0.0": [
+            0.3425933209561106,
+            0.2351119764210383,
+            0.14410135200544513
+          ],
+          "0.25": [
+            0.31830463483685156,
+            0.21450640671052015,
+            0.1417895917853574
+          ],
+          "0.5": [
+            0.30746560724437194,
+            0.2111841033666368,
+            0.16373718672629747
+          ],
+          "0.75": [
+            0.31007623817716545,
+            0.22514506639314838,
+            0.20994413683200164
+          ],
+          "1.0": [
+            0.32613652763975104,
+            0.2563892957787742,
+            0.28041044209126115
+          ]
+        },
+        "heterogeneity_inner_losses": {
+          "0.0": [
+            0.32613652763975104,
+            0.2563892957787742,
+            0.28041044209126115
+          ],
+          "0.25": [
+            0.31099512476933866,
+            0.23077790007146318,
+            0.24139420284342553
+          ],
+          "0.5": [
+            0.30418647168150054,
+            0.2161385802346956,
+            0.2100840402515592
+          ],
+          "1.0": [
+            0.3151748425675242,
+            0.21741092511003737,
+            0.1705655581852604
+          ],
+          "2.0": [
+            0.33877029264558295,
+            0.23199525174680719,
+            0.1491526793948651
+          ]
+        }
+      },
+      "models": {
+        "zero": {
+          "macro_mse": 0.09391828917698919,
+          "mean_cosine_over_defined": null,
+          "undefined_cosine": 2052
+        },
+        "global_template": {
+          "macro_mse": 0.11617526896254715,
+          "mean_cosine_over_defined": 0.06905070327683588,
+          "undefined_cosine": 0
+        },
+        "target_mean": {
+          "macro_mse": 0.1642470845754495,
+          "mean_cosine_over_defined": 0.17508947427541893,
+          "undefined_cosine": 0
+        },
+        "global_shrink": {
+          "macro_mse": 0.08998342218876479,
+          "mean_cosine_over_defined": 0.17508947427541893,
+          "undefined_cosine": 0
+        },
+        "heterogeneity_shrink": {
+          "macro_mse": 0.09709059575994346,
+          "mean_cosine_over_defined": 0.17599413183521395,
+          "undefined_cosine": 16
+        },
+        "permuted_target_mean": {
+          "macro_mse": 0.1809333054256671,
+          "mean_cosine_over_defined": 0.040144709478643854,
+          "undefined_cosine": 0
+        }
+      },
+      "scorable_targets": 2052,
+      "unscorable_targets": 0,
+      "finite_truth_unsupported_in_training": 858,
+      "prediction_sha256": "4419921c2bf18e8a23e3499292c564b566ae4084846f337c29ec5996fdfc346b",
+      "elapsed_seconds": 25.796000000002095
+    },
+    "RPE1": {
+      "configuration": {
+        "global_alpha": 0.25,
+        "heterogeneity_penalty": 1.0,
+        "global_inner_losses": {
+          "0.0": [
+            0.09391828917698919,
+            0.2351119764210383,
+            0.14410135200544513
+          ],
+          "0.25": [
+            0.09005694775303127,
+            0.22746442949680074,
+            0.1386804859627367
+          ],
+          "0.5": [
+            0.09978108660274544,
+            0.22846773159153222,
+            0.1449673145133441
+          ],
+          "0.75": [
+            0.12309070572899095,
+            0.23812188270309742,
+            0.16296183765557387
+          ],
+          "1.0": [
+            0.15998580512319005,
+            0.25642688283790227,
+            0.1926640553945067
+          ]
+        },
+        "heterogeneity_inner_losses": {
+          "0.0": [
+            0.15998580512319005,
+            0.25642688283790227,
+            0.1926640553945067
+          ],
+          "0.25": [
+            0.12982068417106116,
+            0.2414563644217278,
+            0.16824998080762513
+          ],
+          "0.5": [
+            0.10807417956699374,
+            0.23131146541639674,
+            0.1509385911738243
+          ],
+          "1.0": [
+            0.08971091503235161,
+            0.22543701565413932,
+            0.13761259269701123
+          ],
+          "2.0": [
+            0.09282215036568385,
+            0.2322332989430904,
+            0.1430173187546846
+          ]
+        }
+      },
+      "models": {
+        "zero": {
+          "macro_mse": 0.3425933209561106,
+          "mean_cosine_over_defined": null,
+          "undefined_cosine": 2052
+        },
+        "global_template": {
+          "macro_mse": 0.30520616300127845,
+          "mean_cosine_over_defined": 0.41068216585134876,
+          "undefined_cosine": 0
+        },
+        "target_mean": {
+          "macro_mse": 0.3114866790549817,
+          "mean_cosine_over_defined": 0.26229371549196956,
+          "undefined_cosine": 0
+        },
+        "global_shrink": {
+          "macro_mse": 0.32219031780631224,
+          "mean_cosine_over_defined": 0.26229371549196956,
+          "undefined_cosine": 0
+        },
+        "heterogeneity_shrink": {
+          "macro_mse": 0.3129560481754963,
+          "mean_cosine_over_defined": 0.26498237247203504,
+          "undefined_cosine": 30
+        },
+        "permuted_target_mean": {
+          "macro_mse": 0.35386201345622126,
+          "mean_cosine_over_defined": 0.14395028598141862,
+          "undefined_cosine": 0
+        }
+      },
+      "scorable_targets": 2052,
+      "unscorable_targets": 0,
+      "finite_truth_unsupported_in_training": 68,
+      "prediction_sha256": "f36ddd270e1647f663eac82dff3964dc132808310c6868c140370989e62cf90d",
+      "elapsed_seconds": 26.155999999988126
+    },
+    "HepG2": {
+      "configuration": {
+        "global_alpha": 0.25,
+        "heterogeneity_penalty": 1.0,
+        "global_inner_losses": {
+          "0.0": [
+            0.09391828917698919,
+            0.3425933209561106,
+            0.14410135200544513
+          ],
+          "0.25": [
+            0.09167054483728784,
+            0.3329972604059559,
+            0.13867752316337256
+          ],
+          "0.5": [
+            0.10678834481653199,
+            0.3320474505439902,
+            0.14835611370524512
+          ],
+          "0.75": [
+            0.13927168911984314,
+            0.3397438913718035,
+            0.17313712363269884
+          ],
+          "1.0": [
+            0.18912057773185667,
+            0.3560865828846258,
+            0.21302055294082578
+          ]
+        },
+        "heterogeneity_inner_losses": {
+          "0.0": [
+            0.18912057773185667,
+            0.3560865828846258,
+            0.21302055294082578
+          ],
+          "0.25": [
+            0.1489863213680761,
+            0.342910631783312,
+            0.1789914018814024
+          ],
+          "0.5": [
+            0.11987620078970401,
+            0.3345598960658727,
+            0.15515541929627544
+          ],
+          "1.0": [
+            0.09394579588315262,
+            0.3322461840908876,
+            0.13792548379390035
+          ],
+          "2.0": [
+            0.09323277607746647,
+            0.3404668397654031,
+            0.14331515641405645
+          ]
+        }
+      },
+      "models": {
+        "zero": {
+          "macro_mse": 0.2351119764210383,
+          "mean_cosine_over_defined": null,
+          "undefined_cosine": 2052
+        },
+        "global_template": {
+          "macro_mse": 0.21172444404849852,
+          "mean_cosine_over_defined": 0.298805718385068,
+          "undefined_cosine": 0
+        },
+        "target_mean": {
+          "macro_mse": 0.2231844500796272,
+          "mean_cosine_over_defined": 0.2691697764978105,
+          "undefined_cosine": 0
+        },
+        "global_shrink": {
+          "macro_mse": 0.21692085189955232,
+          "mean_cosine_over_defined": 0.2691697764978105,
+          "undefined_cosine": 0
+        },
+        "heterogeneity_shrink": {
+          "macro_mse": 0.21291192230478928,
+          "mean_cosine_over_defined": 0.269389710628454,
+          "undefined_cosine": 70
+        },
+        "permuted_target_mean": {
+          "macro_mse": 0.2640390776077647,
+          "mean_cosine_over_defined": 0.13986679907723198,
+          "undefined_cosine": 0
+        }
+      },
+      "scorable_targets": 2052,
+      "unscorable_targets": 0,
+      "finite_truth_unsupported_in_training": 71,
+      "prediction_sha256": "e4149542e55891638fd32c1c2d19055f2f4a2460eeae0da1726632ca09ef39c7",
+      "elapsed_seconds": 26.0
+    },
+    "Jurkat": {
+      "configuration": {
+        "global_alpha": 0.25,
+        "heterogeneity_penalty": 1.0,
+        "global_inner_losses": {
+          "0.0": [
+            0.09391828917698919,
+            0.3425933209561106,
+            0.2351119764210383
+          ],
+          "0.25": [
+            0.09436074997438135,
+            0.3195135429980143,
+            0.21408991773874034
+          ],
+          "0.5": [
+            0.11907947874320556,
+            0.30804734094440533,
+            0.20811711519088666
+          ],
+          "0.75": [
+            0.16807447548948679,
+            0.30819471479630545,
+            0.21719356877616763
+          ],
+          "1.0": [
+            0.24134574019514993,
+            0.31995566455064905,
+            0.241319278498512
+          ]
+        },
+        "heterogeneity_inner_losses": {
+          "0.0": [
+            0.24134574019514993,
+            0.31995566455064905,
+            0.241319278498512
+          ],
+          "0.25": [
+            0.20045154934632184,
+            0.3079578811890377,
+            0.2197086100571855
+          ],
+          "0.5": [
+            0.16727249134529784,
+            0.3030066522934977,
+            0.2082570610802321
+          ],
+          "1.0": [
+            0.12404773300531435,
+            0.3142078096719633,
+            0.21526036164750986
+          ],
+          "2.0": [
+            0.09897540906388938,
+            0.3395745750367954,
+            0.23364335277827925
+          ]
+        }
+      },
+      "models": {
+        "zero": {
+          "macro_mse": 0.14410135200544513,
+          "mean_cosine_over_defined": null,
+          "undefined_cosine": 2052
+        },
+        "global_template": {
+          "macro_mse": 0.1571887212685795,
+          "mean_cosine_over_defined": 0.11213842568317463,
+          "undefined_cosine": 0
+        },
+        "target_mean": {
+          "macro_mse": 0.19843998186291356,
+          "mean_cosine_over_defined": 0.18141785866732582,
+          "undefined_cosine": 0
+        },
+        "global_shrink": {
+          "macro_mse": 0.1378180969820675,
+          "mean_cosine_over_defined": 0.18141785866732582,
+          "undefined_cosine": 0
+        },
+        "heterogeneity_shrink": {
+          "macro_mse": 0.14311487234946876,
+          "mean_cosine_over_defined": 0.18286836750066104,
+          "undefined_cosine": 23
+        },
+        "permuted_target_mean": {
+          "macro_mse": 0.21662632107843363,
+          "mean_cosine_over_defined": 0.06286663744758728,
+          "undefined_cosine": 0
+        }
+      },
+      "scorable_targets": 2052,
+      "unscorable_targets": 0,
+      "finite_truth_unsupported_in_training": 63,
+      "prediction_sha256": "dbbdd58c4a7947726c43d1765cacf166a23a1de315f37ec85e6b024654605a16",
+      "elapsed_seconds": 26.656000000002678
+    }
+  },
+  "claim": "Conditional published-estimate transfer pilot, not a raw-count challenge score",
+  "overall_macro_mse": {
+    "zero": 0.20393123463989582,
+    "global_template": 0.19757364932022592,
+    "target_mean": 0.22433954889324298,
+    "global_shrink": 0.1917281722191742,
+    "heterogeneity_shrink": 0.19151835964742445,
+    "permuted_target_mean": 0.2538651793920217
+  },
+  "candidate_ratio_to_strongest_conventional_by_context": {
+    "K562": 1.078983143764742,
+    "RPE1": 1.0253922958108332,
+    "HepG2": 1.0056086025476527,
+    "Jurkat": 1.0384330903080925
+  },
+  "prospective_advantage_gate_passed": false,
+  "elapsed_seconds": 104.84399999999732
+}

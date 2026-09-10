@@ -1,0 +1,257 @@
+{
+  "checks": [
+    {
+      "context": "K562",
+      "target": "AAAS",
+      "model": "zero",
+      "absolute_difference": 3.469446951953614e-18,
+      "passed": true
+    },
+    {
+      "context": "K562",
+      "target": "AAAS",
+      "model": "target_mean",
+      "absolute_difference": 6.938893903907228e-18,
+      "passed": true
+    },
+    {
+      "context": "K562",
+      "target": "AAAS",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "K562",
+      "target": "NEPRO",
+      "model": "zero",
+      "absolute_difference": 5.551115123125783e-17,
+      "passed": true
+    },
+    {
+      "context": "K562",
+      "target": "NEPRO",
+      "model": "target_mean",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "K562",
+      "target": "NEPRO",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "context": "K562",
+      "target": "ZWINT",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "K562",
+      "target": "ZWINT",
+      "model": "target_mean",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "K562",
+      "target": "ZWINT",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "AAAS",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "AAAS",
+      "model": "target_mean",
+      "absolute_difference": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "AAAS",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "NEPRO",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "NEPRO",
+      "model": "target_mean",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "NEPRO",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "ZWINT",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "ZWINT",
+      "model": "target_mean",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "RPE1",
+      "target": "ZWINT",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "AAAS",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "AAAS",
+      "model": "target_mean",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "AAAS",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "NEPRO",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "NEPRO",
+      "model": "target_mean",
+      "absolute_difference": 1.1102230246251565e-16,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "NEPRO",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "ZWINT",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "ZWINT",
+      "model": "target_mean",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "HepG2",
+      "target": "ZWINT",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "AAAS",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "AAAS",
+      "model": "target_mean",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "AAAS",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "NEPRO",
+      "model": "zero",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "NEPRO",
+      "model": "target_mean",
+      "absolute_difference": 0.0,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "NEPRO",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 5.551115123125783e-17,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "ZWINT",
+      "model": "zero",
+      "absolute_difference": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "ZWINT",
+      "model": "target_mean",
+      "absolute_difference": 2.7755575615628914e-17,
+      "passed": true
+    },
+    {
+      "context": "Jurkat",
+      "target": "ZWINT",
+      "model": "heterogeneity_shrink",
+      "absolute_difference": 2.7755575615628914e-17,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

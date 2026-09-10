@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import InterestCounter from '@/components/observatory/InterestCounter';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,6 +31,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <InterestCounter />
+        <footer
+          style={{ padding: '12px 24px', fontSize: 12, textAlign: 'center' }}
+        >
+          <Link href="/privacy">Records and usage counts</Link>
+        </footer>
       </body>
     </html>
   );

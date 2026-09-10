@@ -1,0 +1,52 @@
+{
+  "challenge_score": false,
+  "contexts": {
+    "K562": {
+      "days": 6,
+      "effector": "dCas9-KRAB"
+    },
+    "RPE1": {
+      "days": 7,
+      "effector": "ZIM3 KRAB-dCas9"
+    }
+  },
+  "four_context_protocol_executed": false,
+  "ida_biology_engine": false,
+  "input_files": {
+    "K562": {
+      "bytes": 79766954,
+      "filename": "K562_essential_raw_bulk_01.h5ad",
+      "md5": "8321d5d3ffc99db2a5c71edca4189735",
+      "sha256": "80de95e54fcbca0e0537d569b43ec92fde6bd0482801505504baebe3118dcadf"
+    },
+    "RPE1": {
+      "bytes": 95350546,
+      "filename": "rpe1_raw_bulk_01.h5ad",
+      "md5": "74765fa87635467a869ea972356ae0e7",
+      "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2"
+    }
+  },
+  "network_used_by_this_script": false,
+  "operator": "CRISPRi",
+  "packages": {
+    "anndata": "0.13.3.post0",
+    "h5py": "3.16.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "protocol_sha256": "b938f55b7a49212af168ea88c04624551a4779113d446e65702ee2c49d38aec2",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "result_sha256": {
+    "control-vectors.json": "7b2b61cbd9936b9e8c3f2c845d61d793f6cc9a8db485b9a14f57d9775fa8806b",
+    "scores.csv": "102e04cad0bad22b706f16fdfa6914d3696d6b1635ce1f3e0cf27127724b5130",
+    "selectors.json": "bf9892de24b1f6778e75bf658ea8f6689019789e158a1f402485b556a50988be",
+    "summary.json": "b6dd2db1dfdde211a4e6fc2371047b479080260c0c64c7913790e3430975e8e8",
+    "validation.json": "921066932a2dfef42fe20892f305a671d7ef9ae37a0a9024f217b2d55b44a6d2"
+  },
+  "run_at_utc": "2026-09-10T04:12:08.604506+00:00",
+  "runtime_seconds": 16.023065299988957,
+  "script_sha256": "7a9caa5d6edaee2f9c56b4b5ffbde055f82915e816af07d2d76dfda6169b86fa",
+  "single_cell_counts_generated": false,
+  "tunable_parameters": 0
+}

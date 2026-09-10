@@ -1,5 +1,7 @@
 # The Empirical Observatory
 
+**[VIRTUAL CELL: PREDICT → REVEAL → CHALLENGE](https://empirical-observatory.madmanmuzza.chatgpt.site/cell)**
+
 **[CURRENT PROJECTS →](https://empirical-observatory.madmanmuzza.chatgpt.site/projects)** · **[ENTER THE LIVE STATION →](https://empirical-observatory.madmanmuzza.chatgpt.site)**
 
 The projects page features our [submitted Ray recovery contribution — PR #66039](https://github.com/ray-project/ray/pull/66039), its [measured Linux evidence](https://github.com/thantiklermcirony/empirical-architecture/blob/main/research/ray-campaign/Ray_Contribution_Report.md), and our [submitted NeuroGym decision-cue repair](https://github.com/neurogym/neurogym/pull/295), its [recorded before/after evidence](public/research/NeuroGym_Contribution_Report.md), the submitted Pertpy evaluator and Graphiti repairs, and the [next three investigations](public/research/Next_Big_Three.md). It links runnable experiments, source and reproducible evidence. Direct laboratory links work without an API key.
@@ -21,6 +23,14 @@ A playable research station for testing what measurements reveal—and what they
 | Logbook | Export/import records and rerun their analysis | Versioned configurations, actions and evidence |
 
 This release is a research prototype. It does not establish biological universality, quantum advantage, consciousness measurement or AI cost savings. It makes concrete experiments possible and preserves their limitations.
+
+## Flagship: Virtual Cell / Flight 01
+
+Can a gene-response prediction survive a change of cell context? [Open the explorer](https://empirical-observatory.madmanmuzza.chatgpt.site/cell), reveal real measurements and move a slider to distinguish prediction size from direction. The recorded benchmark spans **4 held-out contexts, 2,052 target genes and 6,642 measured genes**.
+
+The first disagreement adjustment failed its frozen success threshold. Its aggregate error was about 0.11% below global shrinkage, and it lost to the strongest conventional method in every context. Keeping that failure visible is part of the experiment. [Code, all results and CPU reproduction](research/virtual-cell/README.md) · [Report](public/research/Cell_Flight01_Report.md) · [Download](public/research/Virtual_Cell_Flight01.zip).
+
+The next test needs destination-context baseline measurements and fresh independent validation. Contributions that reproduce a result, expose an assumption, add a licensed data adapter or beat the baselines under the same information budget are welcome.
 
 ## Run
 
@@ -50,6 +60,8 @@ The quantum game uses established quantum mechanics and Bayesian experimental de
 
 ## Records and privacy
 
+The hosted site counts daily page views, project views, lab opens and GitHub link clicks with broad referral categories. These are activity counts, not unique people. No visitor identifiers, cookies, IP addresses, raw URLs or experiment records are stored by this counter. It respects Do Not Track, Global Privacy Control and the opt-out on `/privacy`. Aggregate rows expire after 90 days when the next event arrives; deployment checks have a separate counter. Counts are available only through the owner's Sites database viewer.
+
 No experiment records are uploaded by the app. The browser retains the latest 30 records; export important results because browser storage can be cleared or become full. Imports are untrusted and validated. A valid file is not an attested human or hardware measurement. Simulation replay recomputes evidence; behaviour is reanalysed rather than physically replayed. Seeded runs are repeatable under the declared engine version.
 
 The optional WebMCP tools expose a station summary and navigation only. They cannot start a human experiment, read raw response/signal records, connect hardware or execute cloud jobs.
@@ -58,7 +70,8 @@ The optional WebMCP tools expose a station summary and navigation only. They can
 
 The [42-repository research scan](research/contribution-scan/Research_Report.md) collected 2,058 open-issue leads and selected 12 priorities, with 21 detailed opportunity records. Start with a current-code reproduction, identify existing fixes, and test a concrete state, measurement or timing contract.
 
-- **Submitted / biology:** [Pertpy PR #1098](https://github.com/scverse/pertpy/pull/1098) adds a baseline-aware evaluator. 84 evaluator cases passed on two Python versions; the real-cell demonstration exposes a high-correlation failure. [Results, limits and reproduction](public/research/Pertpy_Evaluation_Report.md). This tests conventional baselines; IDA has not yet been scored.
+- **Submitted / AI infrastructure:** [Ray PR #66039](https://github.com/ray-project/ray/pull/66039) repairs replacement-controller discovery; reviewed recovery and shutdown tests and Linux HTTP evidence are public.
+- **Submitted / biology:** [Pertpy PR #1098](https://github.com/scverse/pertpy/pull/1098) adds a baseline-aware evaluator. 71 maintained evaluator tests pass on Python 3.12 and 3.14 with 99.11% measured line coverage; the real-cell demonstration exposes a high-correlation failure. [Results, limits and reproduction](public/research/Pertpy_Evaluation_Report.md). This tests conventional baselines; IDA has not yet been scored.
 - **Submitted / AI memory:** Graphiti temporal-history and timestamp repairs, with [public evidence](public/research/Graphiti.md).
 - **Submitted / AI environments:** [NeuroGym PR #295](https://github.com/neurogym/neurogym/pull/295) makes the intended decision window observable. All 132 candidate-suite tests pass on the tested Windows/Python runtime; 240 noisy trials preserve every other input channel, target and timing. [Recorded traces, patch and evidence](public/research/NeuroGym_Contribution_Report.md). No learned-model improvement is claimed.
 - **Next / infrastructure and simulation:** [three focused investigations](public/research/Next_Big_Three.md), with current competing work, resource gates and proposed independent tests.
