@@ -341,12 +341,15 @@ export default function Projects() {
           <CheckCircle2 size={22} />
           <p>
             <strong>
-              84 evaluator cases pass on both tested Python versions.
+              71 maintained evaluator tests pass on Python 3.12 and 3.14.
             </strong>{' '}
-            Independent calculations reproduce the real-data results. The full
-            type check and documentation build also pass.{' '}
+            The latest test update raises measured line coverage from 90.67% to
+            99.11%, with no failures or skips.{' '}
+            <Link href="https://github.com/thantiklermcirony/pertpy/actions/runs/34429620981">
+              Inspect the test results.
+            </Link>{' '}
             <Link href="https://github.com/thantiklermcirony/pertpy/actions/runs/34415474373">
-              Inspect the validation.
+              Inspect the earlier real-data validation.
             </Link>
           </p>
         </div>
