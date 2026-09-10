@@ -1,0 +1,804 @@
+{
+  "audited_at_utc": "2026-09-10T06:47:21.164682+00:00",
+  "status": "PASS_ARITHMETIC_AND_PROVENANCE_AUDIT",
+  "no_refit_or_retuning": true,
+  "actual_numeric_outcomes_read_under_parent_authorization": true,
+  "production_module_imported": false,
+  "github_frozen_commit": "ee0a2ab0ce697e2ced11e57564cc23bd95b696af",
+  "frozen_at_utc": "2026-09-10T06:37:09.730021+00:00",
+  "publication_verified_at_utc": "2026-09-10T06:38:36.542061+00:00",
+  "run_completed_at_utc": "2026-09-10T06:39:27.074947+00:00",
+  "source_sha256": {
+    "pipeline.py": "a39a929a639c2d1621adf889821cfb61c36253a9f8fba7dd0ea686df794a8b71",
+    "dataio.py": "9bc7c2b1e05082324ac8f9924128e6b362692c49b285e4116ae02cedda42d1fb",
+    "run.py": "fe212ed1a72b8f6edaa6ed43305c4fd6738724d1428f4ea12e44fc7ba4c91f28",
+    "protocol.json": "144dbce0843283375f80124fe23c493064041a1be271943335634275a056d121"
+  },
+  "all_output_hashes_checked": 15,
+  "all_input_hashes_checked": 4,
+  "frozen_review_hashes_checked": 6,
+  "raw_observed_pairs": 4443,
+  "missing_pairs": 157,
+  "raw_expression_values_checked_finite": 8886000,
+  "archive_numeric_values_checked_finite": 10143460,
+  "per_pair_rows_verified": 4443,
+  "retained_mask_records_recomputed": 20800,
+  "all_retained_id_orderings_reconstructed": true,
+  "all_line_fold_overall_summaries_recomputed": true,
+  "same_mask_zero_and_ridge_verified": true,
+  "full_coverage_equality_all_predictors_all_rankers": true,
+  "max_absolute_pair_loss_difference": 0.0,
+  "max_absolute_mask_loss_difference": 5.204170427930421e-18,
+  "primary": {
+    "candidate_75_mean_mse": 0.0006687143300411206,
+    "best_conventional": "disagreement",
+    "best_conventional_75_mean_mse": 0.0006696071958788379,
+    "absolute_mse_reduction": 8.92865837717337e-07,
+    "relative_improvement_pct": 0.13334173276700056,
+    "required_improvement_pct": 10,
+    "wins_against_each_fold_best": 1,
+    "required_fold_wins": 4,
+    "gate_passed": false,
+    "statistical_significance_test_performed": false
+  },
+  "same_mask_prediction_comparisons": {
+    "candidate": {
+      "1.0": {
+        "mean": 0.0018237712767568037,
+        "zero": 0.0019003302911117022,
+        "ridge_descriptive": 0.0018105507306740507,
+        "mean_improvement_over_zero_pct": 4.028721465578022,
+        "ridge_improvement_over_zero_pct": 4.72441874223507,
+        "ridge_improvement_over_mean_pct": 0.724901540628653
+      },
+      "0.9": {
+        "mean": 0.0007302125974528564,
+        "zero": 0.0008240264872384477,
+        "ridge_descriptive": 0.0006945048750875698,
+        "mean_improvement_over_zero_pct": 11.384814837686697,
+        "ridge_improvement_over_zero_pct": 15.718136996414088,
+        "ridge_improvement_over_mean_pct": 4.890044692442053
+      },
+      "0.75": {
+        "mean": 0.0006687143300411206,
+        "zero": 0.0007500533824757908,
+        "ridge_descriptive": 0.0006373509083831964,
+        "mean_improvement_over_zero_pct": 10.844435120895623,
+        "ridge_improvement_over_zero_pct": 15.025927050763222,
+        "ridge_improvement_over_mean_pct": 4.690107606337001
+      },
+      "0.5": {
+        "mean": 0.000641805705605088,
+        "zero": 0.0007171878148681587,
+        "ridge_descriptive": 0.0006146170804557078,
+        "mean_improvement_over_zero_pct": 10.510790576793095,
+        "ridge_improvement_over_zero_pct": 14.30179546919751,
+        "ridge_improvement_over_mean_pct": 4.23627040269875
+      }
+    },
+    "disagreement": {
+      "1.0": {
+        "mean": 0.0018237712767568037,
+        "zero": 0.0019003302911117022,
+        "ridge_descriptive": 0.0018105507306740507,
+        "mean_improvement_over_zero_pct": 4.028721465578022,
+        "ridge_improvement_over_zero_pct": 4.72441874223507,
+        "ridge_improvement_over_mean_pct": 0.724901540628653
+      },
+      "0.9": {
+        "mean": 0.0007324392225134197,
+        "zero": 0.0008266978822748493,
+        "ridge_descriptive": 0.0006966551271328363,
+        "mean_improvement_over_zero_pct": 11.401826686921613,
+        "ridge_improvement_over_zero_pct": 15.730384452439916,
+        "ridge_improvement_over_mean_pct": 4.885606106372564
+      },
+      "0.75": {
+        "mean": 0.0006696071958788379,
+        "zero": 0.0007517245103120196,
+        "ridge_descriptive": 0.0006378508511736556,
+        "mean_improvement_over_zero_pct": 10.923857517842151,
+        "ridge_improvement_over_zero_pct": 15.148323298797095,
+        "ridge_improvement_over_mean_pct": 4.742533368910884
+      },
+      "0.5": {
+        "mean": 0.000646291336399541,
+        "zero": 0.0007236365592091753,
+        "ridge_descriptive": 0.0006182317327303737,
+        "mean_improvement_over_zero_pct": 10.688407298569992,
+        "ridge_improvement_over_zero_pct": 14.565989672217928,
+        "ridge_improvement_over_mean_pct": 4.34163388689165
+      }
+    },
+    "treatment_risk": {
+      "1.0": {
+        "mean": 0.0018237712767568037,
+        "zero": 0.0019003302911117022,
+        "ridge_descriptive": 0.0018105507306740507,
+        "mean_improvement_over_zero_pct": 4.028721465578022,
+        "ridge_improvement_over_zero_pct": 4.72441874223507,
+        "ridge_improvement_over_mean_pct": 0.724901540628653
+      },
+      "0.9": {
+        "mean": 0.0007324392225134197,
+        "zero": 0.0008266978822748493,
+        "ridge_descriptive": 0.0006966551271328363,
+        "mean_improvement_over_zero_pct": 11.401826686921613,
+        "ridge_improvement_over_zero_pct": 15.730384452439916,
+        "ridge_improvement_over_mean_pct": 4.885606106372564
+      },
+      "0.75": {
+        "mean": 0.0006696071958788379,
+        "zero": 0.0007517245103120196,
+        "ridge_descriptive": 0.0006378508511736556,
+        "mean_improvement_over_zero_pct": 10.923857517842151,
+        "ridge_improvement_over_zero_pct": 15.148323298797095,
+        "ridge_improvement_over_mean_pct": 4.742533368910884
+      },
+      "0.5": {
+        "mean": 0.000646291336399541,
+        "zero": 0.0007236365592091753,
+        "ridge_descriptive": 0.0006182317327303737,
+        "mean_improvement_over_zero_pct": 10.688407298569992,
+        "ridge_improvement_over_zero_pct": 14.565989672217928,
+        "ridge_improvement_over_mean_pct": 4.34163388689165
+      }
+    },
+    "magnitude": {
+      "1.0": {
+        "mean": 0.0018237712767568037,
+        "zero": 0.0019003302911117022,
+        "ridge_descriptive": 0.0018105507306740507,
+        "mean_improvement_over_zero_pct": 4.028721465578022,
+        "ridge_improvement_over_zero_pct": 4.72441874223507,
+        "ridge_improvement_over_mean_pct": 0.724901540628653
+      },
+      "0.9": {
+        "mean": 0.0007688110545639007,
+        "zero": 0.0008575956580738227,
+        "ridge_descriptive": 0.0007353440356605915,
+        "mean_improvement_over_zero_pct": 10.35273472691478,
+        "ridge_improvement_over_zero_pct": 14.255158740869888,
+        "ridge_improvement_over_mean_pct": 4.353087628571228
+      },
+      "0.75": {
+        "mean": 0.0006793627628955131,
+        "zero": 0.0007574935681255182,
+        "ridge_descriptive": 0.0006483506982498692,
+        "mean_improvement_over_zero_pct": 10.314385298788265,
+        "ridge_improvement_over_zero_pct": 14.408421994358623,
+        "ridge_improvement_over_mean_pct": 4.564875548001391
+      },
+      "0.5": {
+        "mean": 0.0006549679226215525,
+        "zero": 0.0007233584861075034,
+        "ridge_descriptive": 0.0006261544938756762,
+        "mean_improvement_over_zero_pct": 9.454587842602146,
+        "ridge_improvement_over_zero_pct": 13.43787265908719,
+        "ridge_improvement_over_mean_pct": 4.399212198140734
+      }
+    },
+    "random": {
+      "1.0": {
+        "mean": 0.0018237712767568037,
+        "zero": 0.0019003302911117022,
+        "ridge_descriptive": 0.0018105507306740507,
+        "mean_improvement_over_zero_pct": 4.028721465578022,
+        "ridge_improvement_over_zero_pct": 4.72441874223507,
+        "ridge_improvement_over_mean_pct": 0.724901540628653
+      },
+      "0.9": {
+        "mean": 0.0018259961694252328,
+        "zero": 0.001902653129332666,
+        "ridge_descriptive": 0.0018128412670226969,
+        "mean_improvement_over_zero_pct": 4.028950875261206,
+        "ridge_improvement_over_zero_pct": 4.720348702838417,
+        "ridge_improvement_over_mean_pct": 0.720423329621589
+      },
+      "0.75": {
+        "mean": 0.0018243148315500236,
+        "zero": 0.0019013343091588066,
+        "ridge_descriptive": 0.0018109808965454397,
+        "mean_improvement_over_zero_pct": 4.050811960725531,
+        "ridge_improvement_over_zero_pct": 4.752105517589977,
+        "ridge_improvement_over_mean_pct": 0.7309009812333067
+      },
+      "0.5": {
+        "mean": 0.001817149471598794,
+        "zero": 0.001894313284737719,
+        "ridge_descriptive": 0.001803567268044517,
+        "mean_improvement_over_zero_pct": 4.073445177237877,
+        "ridge_improvement_over_zero_pct": 4.790443979057368,
+        "ridge_improvement_over_mean_pct": 0.7474455880795983
+      }
+    }
+  },
+  "per_fold_75_predictor_risks": {
+    "0": {
+      "candidate": {
+        "mean": 0.00044578771101630834,
+        "zero": 0.0005162249813417427,
+        "ridge_descriptive": 0.00041899383181052974
+      },
+      "disagreement": {
+        "mean": 0.0004448371316158737,
+        "zero": 0.0005156834029202359,
+        "ridge_descriptive": 0.0004179751779240807
+      },
+      "treatment_risk": {
+        "mean": 0.0004448371316158737,
+        "zero": 0.0005156834029202359,
+        "ridge_descriptive": 0.0004179751779240807
+      },
+      "magnitude": {
+        "mean": 0.00044724416275512114,
+        "zero": 0.0005147357249995026,
+        "ridge_descriptive": 0.00042015493106805594
+      },
+      "random": {
+        "mean": 0.0015125784827301632,
+        "zero": 0.0015778313351992967,
+        "ridge_descriptive": 0.0015064149081088077
+      }
+    },
+    "1": {
+      "candidate": {
+        "mean": 0.00035683318773839073,
+        "zero": 0.0004207678944866851,
+        "ridge_descriptive": 0.0003331795990159834
+      },
+      "disagreement": {
+        "mean": 0.0003566974469739864,
+        "zero": 0.0004219083284660695,
+        "ridge_descriptive": 0.0003331647076415
+      },
+      "treatment_risk": {
+        "mean": 0.0003566974469739864,
+        "zero": 0.0004219083284660695,
+        "ridge_descriptive": 0.0003331647076415
+      },
+      "magnitude": {
+        "mean": 0.00035531788062691407,
+        "zero": 0.00041601005455446145,
+        "ridge_descriptive": 0.0003324410288688352
+      },
+      "random": {
+        "mean": 0.001542588048848595,
+        "zero": 0.00159610988280269,
+        "ridge_descriptive": 0.0015358873300086709
+      }
+    },
+    "2": {
+      "candidate": {
+        "mean": 0.0007060359272967914,
+        "zero": 0.0007921096890889298,
+        "ridge_descriptive": 0.000679080345192671
+      },
+      "disagreement": {
+        "mean": 0.0007060359272967914,
+        "zero": 0.0007921096890889298,
+        "ridge_descriptive": 0.000679080345192671
+      },
+      "treatment_risk": {
+        "mean": 0.0007060359272967914,
+        "zero": 0.0007921096890889298,
+        "ridge_descriptive": 0.000679080345192671
+      },
+      "magnitude": {
+        "mean": 0.0007059150739280229,
+        "zero": 0.0007896714512723023,
+        "ridge_descriptive": 0.0006800593021984403
+      },
+      "random": {
+        "mean": 0.0017428076581689224,
+        "zero": 0.0018260534983322752,
+        "ridge_descriptive": 0.0017265281155088024
+      }
+    },
+    "3": {
+      "candidate": {
+        "mean": 0.001268033996224609,
+        "zero": 0.0013669067958953828,
+        "ridge_descriptive": 0.0012350323085224004
+      },
+      "disagreement": {
+        "mean": 0.001268131731148022,
+        "zero": 0.001366811443519485,
+        "ridge_descriptive": 0.0012352260304146594
+      },
+      "treatment_risk": {
+        "mean": 0.001268131731148022,
+        "zero": 0.001366811443519485,
+        "ridge_descriptive": 0.0012352260304146594
+      },
+      "magnitude": {
+        "mean": 0.001323901559303644,
+        "zero": 0.0014187881401355545,
+        "ridge_descriptive": 0.0012911031481292977
+      },
+      "random": {
+        "mean": 0.0023467459751141647,
+        "zero": 0.002447663707440511,
+        "ridge_descriptive": 0.0023297124000016324
+      }
+    },
+    "4": {
+      "candidate": {
+        "mean": 0.0005668808279295028,
+        "zero": 0.0006542575515662137,
+        "ridge_descriptive": 0.0005204684573743979
+      },
+      "disagreement": {
+        "mean": 0.000572333742359516,
+        "zero": 0.0006621096875653778,
+        "ridge_descriptive": 0.0005238079946953669
+      },
+      "treatment_risk": {
+        "mean": 0.000572333742359516,
+        "zero": 0.0006621096875653778,
+        "ridge_descriptive": 0.0005238079946953669
+      },
+      "magnitude": {
+        "mean": 0.0005644351378638643,
+        "zero": 0.00064826246966577,
+        "ridge_descriptive": 0.0005179950809847166
+      },
+      "random": {
+        "mean": 0.001976853992888272,
+        "zero": 0.0020590131220192607,
+        "ridge_descriptive": 0.0019563617290992846
+      }
+    }
+  },
+  "exploratory_descriptive_patterns": {
+    "selected_setting_by_fold": {
+      "0": "b0.5_k0",
+      "1": "b0.5_k4",
+      "2": "uniform",
+      "3": "b1_k16",
+      "4": "b0.5_k0"
+    },
+    "candidate_and_best_conventional_identical_masks_lines_by_coverage": {
+      "1.0": 50,
+      "0.9": 45,
+      "0.75": 19,
+      "0.5": 10
+    },
+    "disagreement_and_treatment_loo_masks_identical_for_all_lines_coverages": true,
+    "candidate_75_line_wins_ties_losses_vs_global_best": {
+      "wins": 20,
+      "ties_within_1e_minus16": 19,
+      "losses": 11
+    },
+    "changed_75_masks": [
+      {
+        "context": "CVCL_0069",
+        "fold": 1,
+        "candidate_only": [
+          "[('Ipatasertib', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Dabrafenib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 2.1956421477073245e-06
+      },
+      {
+        "context": "CVCL_0131",
+        "fold": 0,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Belumosudil (mesylate)', 0.05, 'uM')]",
+          "[('Pralsetinib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -9.760269401575038e-06
+      },
+      {
+        "context": "CVCL_0152",
+        "fold": 4,
+        "candidate_only": [
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bimiralisib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -1.1044107745632821e-05
+      },
+      {
+        "context": "CVCL_0179",
+        "fold": 1,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bentamapimod', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -5.83402974299737e-06
+      },
+      {
+        "context": "CVCL_0292",
+        "fold": 3,
+        "candidate_only": [
+          "[('palbociclib', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Trametinib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -7.058281280159103e-08
+      },
+      {
+        "context": "CVCL_0293",
+        "fold": 0,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('HI-TOPK-032', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bentamapimod', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 1.8883272079504789e-07
+      },
+      {
+        "context": "CVCL_0320",
+        "fold": 0,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('HI-TOPK-032', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bentamapimod', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -3.6402032027776964e-06
+      },
+      {
+        "context": "CVCL_0332",
+        "fold": 4,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]",
+          "[('HI-TOPK-032', 0.05, 'uM')]",
+          "[('Trametinib', 0.05, 'uM')]",
+          "[('vincristine', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Belumosudil (mesylate)', 0.05, 'uM')]",
+          "[('Bimiralisib', 0.05, 'uM')]",
+          "[('Pimitespib', 0.05, 'uM')]",
+          "[('Pralsetinib', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -1.9302499157349473e-05
+      },
+      {
+        "context": "CVCL_0366",
+        "fold": 4,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('HI-TOPK-032', 0.05, 'uM')]",
+          "[('Trametinib', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Belumosudil (mesylate)', 0.05, 'uM')]",
+          "[('Bimiralisib', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -3.6522430316547356e-06
+      },
+      {
+        "context": "CVCL_0371",
+        "fold": 4,
+        "candidate_only": [
+          "[('DT-061', 0.05, 'uM')]",
+          "[('Minodronic acid', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bentamapimod', 0.05, 'uM')]",
+          "[('Ipatasertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -8.407803227370781e-06
+      },
+      {
+        "context": "CVCL_0397",
+        "fold": 4,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]",
+          "[('HI-TOPK-032', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bentamapimod', 0.05, 'uM')]",
+          "[('Bimiralisib', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -1.832548449256751e-05
+      },
+      {
+        "context": "CVCL_0428",
+        "fold": 0,
+        "candidate_only": [
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Ipatasertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -4.394144933349677e-06
+      },
+      {
+        "context": "CVCL_0459",
+        "fold": 1,
+        "candidate_only": [
+          "[('Trametinib', 0.05, 'uM')]",
+          "[('ULK-101', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('DT-061', 0.05, 'uM')]",
+          "[('Minodronic acid', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 1.8846221627355888e-05
+      },
+      {
+        "context": "CVCL_0480",
+        "fold": 1,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Belumosudil (mesylate)', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -2.239134063774476e-06
+      },
+      {
+        "context": "CVCL_0504",
+        "fold": 4,
+        "candidate_only": [
+          "[('Trametinib', 0.05, 'uM')]",
+          "[('ULK-101', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('DT-061', 0.05, 'uM')]",
+          "[('Minodronic acid', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 3.471527158586973e-06
+      },
+      {
+        "context": "CVCL_1055",
+        "fold": 0,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Afatinib', 0.05, 'uM')]",
+          "[('Ipatasertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -1.0470625595654977e-06
+      },
+      {
+        "context": "CVCL_1094",
+        "fold": 1,
+        "candidate_only": [
+          "[('Bimiralisib', 0.05, 'uM')]",
+          "[('LJI308', 0.05, 'uM')]",
+          "[('ULK-101', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Celecoxib', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]",
+          "[('Minodronic acid', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 8.739257912773453e-06
+      },
+      {
+        "context": "CVCL_1098",
+        "fold": 0,
+        "candidate_only": [
+          "[('ULK-101', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Minodronic acid', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 5.105063210447658e-06
+      },
+      {
+        "context": "CVCL_1119",
+        "fold": 4,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]",
+          "[('HI-TOPK-032', 0.05, 'uM')]",
+          "[('Minodronic acid', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Afatinib', 0.05, 'uM')]",
+          "[('Bentamapimod', 0.05, 'uM')]",
+          "[('Bimiralisib', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -2.3169427429329907e-05
+      },
+      {
+        "context": "CVCL_1125",
+        "fold": 0,
+        "candidate_only": [
+          "[('Bimiralisib', 0.05, 'uM')]",
+          "[('LJI308', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]",
+          "[('ULK-101', 0.05, 'uM')]",
+          "[('venetoclax', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Celecoxib', 0.05, 'uM')]",
+          "[('Minodronic acid', 0.05, 'uM')]",
+          "[('Oleic acid', 0.05, 'uM')]",
+          "[('Pemigatinib', 0.05, 'uM')]",
+          "[('RMC-6236', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 2.4596502796807654e-05
+      },
+      {
+        "context": "CVCL_1239",
+        "fold": 1,
+        "candidate_only": [
+          "[('Trametinib', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bimiralisib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -1.4783164312631518e-06
+      },
+      {
+        "context": "CVCL_1285",
+        "fold": 3,
+        "candidate_only": [
+          "[('palbociclib', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Trametinib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -2.78663471616153e-06
+      },
+      {
+        "context": "CVCL_1381",
+        "fold": 0,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -2.3253672424543986e-06
+      },
+      {
+        "context": "CVCL_1478",
+        "fold": 1,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bentamapimod', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -1.3459456446843817e-05
+      },
+      {
+        "context": "CVCL_1517",
+        "fold": 0,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('Ixazomib', 0.05, 'uM')]",
+          "[('vincristine', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bimiralisib', 0.05, 'uM')]",
+          "[('Ipatasertib', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 7.824426160177376e-07
+      },
+      {
+        "context": "CVCL_1547",
+        "fold": 1,
+        "candidate_only": [
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Dabrafenib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -7.060682833425521e-07
+      },
+      {
+        "context": "CVCL_1577",
+        "fold": 4,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]",
+          "[('HI-TOPK-032', 0.05, 'uM')]",
+          "[('Minodronic acid', 0.05, 'uM')]",
+          "[('RMC-6236', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Afatinib', 0.05, 'uM')]",
+          "[('Capmatinib', 0.05, 'uM')]",
+          "[('Infigratinib', 0.05, 'uM')]",
+          "[('NG25', 0.05, 'uM')]",
+          "[('Pralsetinib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 1.0788419130483866e-05
+      },
+      {
+        "context": "CVCL_1635",
+        "fold": 1,
+        "candidate_only": [
+          "[('9-ING-41', 0.05, 'uM')]",
+          "[('DT-061', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Bentamapimod', 0.05, 'uM')]",
+          "[('Sapanisertib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -4.706709075572122e-06
+      },
+      {
+        "context": "CVCL_1693",
+        "fold": 4,
+        "candidate_only": [
+          "[('LJI308', 0.05, 'uM')]",
+          "[('ULK-101', 0.05, 'uM')]",
+          "[('venetoclax', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Celecoxib', 0.05, 'uM')]",
+          "[('Minodronic acid', 0.05, 'uM')]",
+          "[('Oleic acid', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 1.511247449470152e-05
+      },
+      {
+        "context": "CVCL_1717",
+        "fold": 3,
+        "candidate_only": [
+          "[('palbociclib', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Afatinib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": -5.076629760207216e-07
+      },
+      {
+        "context": "CVCL_C466",
+        "fold": 3,
+        "candidate_only": [
+          "[('palbociclib', 0.05, 'uM')]"
+        ],
+        "conventional_only": [
+          "[('Trametinib', 0.05, 'uM')]"
+        ],
+        "candidate_minus_conventional_mean_risk": 2.3875312708557207e-06
+      }
+    ],
+    "observed_treatments_per_line": {
+      "min": 83,
+      "max": 92
+    },
+    "mean_actual_coverage_at_75": 0.7542366374285503,
+    "tie_boundary_75_counts_by_strategy": {
+      "candidate": 0,
+      "disagreement": 0,
+      "treatment_risk": 0,
+      "magnitude": 0
+    },
+    "no_model_or_threshold_changes_from_patterns": true
+  },
+  "disclosure_correction": "The frozen manifest's incidental plate-10 preview row count was not established. Use 'a default plate-10 PDEx preview'; the frozen file is preserved. It was outside the plate-1 data and not used to design/select the experiment.",
+  "interpretation": "The predeclared practical improvement gate failed. A 0.1333% aggregate improvement is not a significance finding. Conventional source disagreement already captures almost all observed selective-risk reduction; model, measurement and single-plate limitations remain.",
+  "elapsed_seconds": 16.699096800002735
+}

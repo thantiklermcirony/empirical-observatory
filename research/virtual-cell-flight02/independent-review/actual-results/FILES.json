@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "path": "AUDIT.json",
+      "bytes": 27837,
+      "sha256": "9cd7433712caa918c9cb7570529f28f180f0e2f95d7a88cecc6fe681cbe5f28c"
+    },
+    {
+      "path": "audit_actual.py",
+      "bytes": 18568,
+      "sha256": "bed8e00fc809464a881e2e33db97905c64f9e8ce9428e45bbab46637ee9e9e00"
+    },
+    {
+      "path": "line-comparisons.json",
+      "bytes": 229174,
+      "sha256": "7fa5a1fef85d3331978c59fdef65307f70c6535656c850124d66efdcbfb19c77"
+    },
+    {
+      "path": "RESULTS_REVIEW.md",
+      "bytes": 8247,
+      "sha256": "c3fb83c1d3d3be7b0dba36393d8534862d37137a76b4855711f17b69f9855f25"
+    }
+  ],
+  "raw_inputs_or_predictions_included": false,
+  "frozen_prior_review_modified": false
+}
