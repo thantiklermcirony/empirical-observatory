@@ -1,0 +1,16 @@
+{
+  "commit": "3ae0993c86511f119d6f86cbf1ccb98bf192278b",
+  "url": "https://github.com/thantiklermcirony/empirical-observatory/commit/3ae0993c86511f119d6f86cbf1ccb98bf192278b",
+  "verified_before_scored_run_at": "2026-09-10T09:55:39.485680+00:00",
+  "exact_public_bytes": true,
+  "files": [
+    {
+      "path": "research/active-context/FROZEN.json",
+      "sha256": "d24343eaf8d8891e09f35de0c82f30a35ec27cf16593e30ea2b5f6d8f3f80bff"
+    },
+    {
+      "path": "research/active-context/Active_Context_Freeze_01.zip",
+      "sha256": "49f72f7bfce776997bef39e364ac1e75990ea181271d8614a36509b34cce9fa9"
+    }
+  ]
+}

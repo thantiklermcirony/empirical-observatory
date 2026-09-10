@@ -1,0 +1,16 @@
+# Active Context 0.1 interface freeze candidate
+
+Python standard library. Root owns `active_context/`, `tests/`, CLI/docs/packaging. Benchmark agent owns `benchmark/`; independent reviewer owns `review/`; adoption agent owns `adoption/`.
+
+Configuration: `{"schema_version":1,"checks":[{"id":"unit","claims":["parser-behavior"],"argv":["{python}","tests/check_parser.py"],"scopes":["src","tests/check_parser.py","pyproject.toml"],"env":[],"depends_on":[],"cost":1.0}]}`. Every policy receives these same declared scopes; no hidden dependency oracle. Missing scopes are fingerprinted as missing, so subsequent creation changes the fingerprint. Directory membership, file bytes and executable bits are captured. Symlinks are rejected. `.git` and Python bytecode caches are excluded. External services, undeclared environment, installed-package contents and transient changes remain unknown unless brought into the declared contract; no automatic complete dependency discovery claim.
+
+API from `active_context.core`:
+
+- `run_check(config: dict, check_id: str, repo: Path, ledger: Path, timeout: float=60) -> dict`: explicitly execute one configured argv, record before/after input fingerprints, output hashes/text and latest dependencies. No shell. Return receipt with `exit_code`, `timed_out`, `stable`, `duration_seconds`, `event_hash`, `check_id`.
+- `inspect(config: dict, repo: Path, ledger: Path) -> dict`: return `checks` mapping ID to `{status, reusable, reasons, receipt_hash, claims, duration_seconds}`. Status is `missing`, `changed`, `unstable`, `failed`, `blocked`, or `reusable_within_declared_scope`. Latest attempt including failure governs. Changed definition, scopes, runtime, watched env or prerequisite receipt invalidates reuse. `reusable` means the recorded successful check still applies within declared coverage; it is not a universal correctness assertion.
+- `plan(config: dict, repo: Path, ledger: Path, claims: list[str], budget: float|None=None) -> dict`: explicit finite minimum-cost check cover, prerequisite closure and budget. Return `selected_checks` topologically ordered, `estimated_cost`, `uncovered_claims`, `reused_claims`, `complete`, `basis`. Does not execute. Declared cost units; not measured savings or learned information value. At most 20 check definitions.
+- `verify_ledger(ledger: Path) -> dict`: verify local hash-chain, fail closed on invalid lines. No public timestamp or authentic-execution attestation.
+
+CLI: `python -m active_context run|inspect|plan --repo PATH --config PATH --ledger PATH`; run also `--check ID [--timeout SECONDS]`; plan also `--claim NAME` repeated and `--budget NUMBER`; verify `python -m active_context verify --ledger PATH`. JSON output, errors nonzero. Execution failures are recorded and return nonzero. The ledger must be outside declared scopes to prevent tracking its own writes.
+
+Evaluation boundary: an engineered dependency/check planner with source receipts. Benchmark examples are constructed integrations with pinned real third-party code, not upstream bugs, official benchmark tasks, learned discoveries or evidence of LLM superiority. A tie with dependency invalidation fails the proposed 20% superiority gate and must be reported.

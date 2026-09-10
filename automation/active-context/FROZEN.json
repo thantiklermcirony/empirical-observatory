@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "frozen_at": "2026-09-10T09:53:21.124858+00:00",
+  "purpose": "First scored constructed continuation diagnostic; no scored policy run before this freeze",
+  "files": {
+    "benchmark/specs.py": "115b4888be36f66609686d4b9f8d5ac7317b3f5c07075b4cc7168bdb8530db18",
+    "benchmark/source_checker.py": "3f5e53dfa298e61dd62c7a65af4ec7e86fb4696d7510d66b5c02aad82944b7c5",
+    "benchmark/policies.py": "725b24ece6e4be9777b10c0eaf14a558eb463db888923c6b158aef25881acddf",
+    "benchmark/run_diagnostic.py": "2b1884b60b6f3a744d378c37733bf10d4cbf1ce9d62419dbb7572f8b1a09e2e2",
+    "benchmark/protocol.json": "36f457d1b514b3028d8db7ca0edbf9d5566adc391318bd4373090f533bf16797",
+    "benchmark/MANIFEST.json": "6a1e851d791a2c82f2c7b3d768ba69c29aed8e71f18e72e3e7019df5ed18b1b8",
+    "benchmark/upstream/SOURCE_LOCK.json": "c6383198e90b7cbdd0e3ce365b415b7056d02420dd200a2cd38370879b9187c8",
+    "benchmark/upstream/REPLACEMENT_SOURCE_LOCK.json": "371e342bc1a1581185ee002dbcd9d23f6d4cf4c3c828b2e8d1e7040f3f74cceb",
+    "active_context/__init__.py": "dff240fceb9223c2f5cd6d1cd92c2136fb5f1e4e8202f44b81e28e33c9ee399a",
+    "active_context/__main__.py": "13c266829104aad96254a0dffce6354a6fc6aec2df6a475727a64c2a64440bfd",
+    "active_context/core.py": "d0de7fa87bf8b538148e5773a40026d21ba8e7e0912e54f4fb5ed437986a9552",
+    "active_context/mcp.py": "ebab65afb5e9d472af7b1152b35392a6fd8a7f8cfe142b56dba5f853bc0954f7",
+    "INTERFACE.md": "1f125b4bffe4ba714c7cdf50ba212b8bb37b7414d5cd3dedb3e09f1665e03c66",
+    "benchmark/PROTOCOL_DRAFT.md": "c81c76ff4565aec1d40128d0c0b79bdcc4c6fc71f7217bc3a5de909ac38dba74"
+  }
+}
