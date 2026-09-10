@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "download_inputs.py",
+      "bytes": 3340,
+      "sha256": "745ed3d6425f456ef7b40a99d6577a7f19098189dde503768e14fe4d8935d64f"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1317,
+      "sha256": "e5648eed8053dda2e79b11a526d24d8c6958fca05654cb49eda4b8cf8dfd3cec"
+    },
+    {
+      "path": "paired_paths.py",
+      "bytes": 1347,
+      "sha256": "54709339ffe798e8221097133e58b3cf64cd5b2805a8106e7497355653b11660"
+    },
+    {
+      "path": "PORTABILITY.patch",
+      "bytes": 4782,
+      "sha256": "2d4e715e2ac8bebbec90284289ef18314edc489ed0eee9b7ebc6f6708c1eda64"
+    },
+    {
+      "path": "PROTOCOL.json",
+      "bytes": 3134,
+      "sha256": "b938f55b7a49212af168ea88c04624551a4779113d446e65702ee2c49d38aec2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10221,
+      "sha256": "91a51842cef3b8b8ae7c7f7e5813c88e46f13b622fa985fbbe981b0b9783398a"
+    },
+    {
+      "path": "reference-results/independent-verification.json",
+      "bytes": 3167,
+      "sha256": "4d3a80044069eb112c6948d9e03d1bde4115d5acbf5097652705010f16406947"
+    },
+    {
+      "path": "reference-results/input-audit.json",
+      "bytes": 2368,
+      "sha256": "0cf42df7d2b246efa9193be7f9e44111b851e9e72332f623cf49cf2d037c5fec"
+    },
+    {
+      "path": "reference-results/portable-verification.json",
+      "bytes": 3167,
+      "sha256": "4d3a80044069eb112c6948d9e03d1bde4115d5acbf5097652705010f16406947"
+    },
+    {
+      "path": "reference-results/provenance.json",
+      "bytes": 1915,
+      "sha256": "e2267779e422c039745acbd8007c6471aa26631fef879f38b5eb85afb1146c08"
+    },
+    {
+      "path": "reference-results/summary.json",
+      "bytes": 4897,
+      "sha256": "b6dd2db1dfdde211a4e6fc2371047b479080260c0c64c7913790e3430975e8e8"
+    },
+    {
+      "path": "reference-results/validation.json",
+      "bytes": 24747,
+      "sha256": "921066932a2dfef42fe20892f305a671d7ef9ae37a0a9024f217b2d55b44a6d2"
+    },
+    {
+      "path": "RELEASE_VALIDATION.json",
+      "bytes": 918,
+      "sha256": "a37479d2efaf2ebf94609a41a57fa24f2d4fc50d4a64ba350c28d3bd73f3dd1c"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 225,
+      "sha256": "a37ef35aa9d1715b4b042d30311f6a1a9f42b412550fbec58a6ecc1946d429cc"
+    },
+    {
+      "path": "run_paired.py",
+      "bytes": 11855,
+      "sha256": "91c1a1ee8d61eb743f3116c179639c3406a242205dc0ecf437c0f1b539083b1e"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 1191,
+      "sha256": "f3a83336696c9e56df0f7124508d5834db0fdc29a4dbc518e5f4e271ab60d38e"
+    },
+    {
+      "path": "verify_paired.py",
+      "bytes": 4381,
+      "sha256": "7c25ef393b8f55b051ec84d0a82349be8812bf61b619e026742695b66597dd7c"
+    }
+  ]
+}

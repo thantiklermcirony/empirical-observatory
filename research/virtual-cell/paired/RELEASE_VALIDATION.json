@@ -1,0 +1,26 @@
+{
+  "syntax_compilation_passed": [
+    "download_inputs.py",
+    "paired_paths.py",
+    "run_paired.py",
+    "verify_paired.py"
+  ],
+  "all_analysis_helper_functions_AST_unchanged": true,
+  "analysis_helper_functions": [
+    "digest",
+    "save_json",
+    "control_pool",
+    "transform",
+    "make_predictions",
+    "pearson"
+  ],
+  "portable_verifier_passed": true,
+  "portable_verifier_check_count": 18,
+  "large_analysis_rerun": false,
+  "download_network_tested": false,
+  "existing_download_inputs_reverified": true,
+  "analysis_changes": "CLI and path resolution only; see PORTABILITY.patch",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "original_analysis_script_sha256": "7a9caa5d6edaee2f9c56b4b5ffbde055f82915e816af07d2d76dfda6169b86fa",
+  "portable_analysis_script_sha256": "91c1a1ee8d61eb743f3116c179639c3406a242205dc0ecf437c0f1b539083b1e"
+}

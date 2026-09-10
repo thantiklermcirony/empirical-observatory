@@ -1,0 +1,30 @@
+{
+  "version": "0.1",
+  "date": "2026-09-10",
+  "status": "Frozen local pattern-audit protocol before running predictive comparisons; not externally preregistered",
+  "question": "Does the measured response of an identical CRISPRi construct in one experimental context predict its response in the other better than a no-change baseline?",
+  "scope": "K562 day6 dCas9-KRAB versus RPE1 day7 ZIM3-KRAB; factors are confounded",
+  "sources": ["https://ndownloader.figshare.com/files/35773070", "https://ndownloader.figshare.com/files/35775581"],
+  "license": "CC BY 4.0; publisher Figshare article20029387 version1",
+  "directions": ["K562 to RPE1", "RPE1 to K562"],
+  "target_selector": "Exact construct ID present in both archives, valid terminal Ensembl ID, >=20 num_cells_filtered in both; no energy/DE/knockdown/effect threshold",
+  "control_selector": "Publisher core_control true and non-targeting label, finite positive num_cells_filtered",
+  "control_pooling": "Weighted mean of raw pseudobulk construct means using num_cells_filtered before normalization",
+  "feature_universe": "Shared measured Ensembl IDs, sorted lexically. This inherits each publisher archive's >0.01 UMI/cell all-population gene filter",
+  "transform": "Natural log1p of 10000 times each raw pseudobulk gene mean divided by that row's sum over the shared measured gene universe; not mean(log1p(single-cell counts))",
+  "feature_views": {
+    "primary": "All shared measured genes, excluding the perturbed gene from each scored vector",
+    "secondary": "Top1000 shared genes by source-context pooled control abundance only, tie by Ensembl ID; exclude perturbed gene"
+  },
+  "predictions": {
+    "control": "Zero response relative to target-context control",
+    "same_construct_transfer": "Source-context normalized construct vector minus source-context control; add target control only if representing endpoint mean",
+    "permuted_construct_transfer": "Identical method after a fixed seed20260910 permutation rejecting any same-gene matches; diagnostic negative control"
+  },
+  "fit_boundary": "Predictor receives source responses and target control only; no target perturbed expression is used to select features or change predictions",
+  "tunable_parameters": 0,
+  "metrics": ["Per-construct response MSE", "Per-construct response Pearson with undefined retained", "MSE averaged across constructs within gene, then equally across target genes", "Macro-MSE ratio to no-change, undefined for zero denominator"],
+  "uncertainty": "No inferential confidence interval or broad context-generalization claim from two confounded contexts; construct/pseudobulk rows are not independent biological contexts",
+  "success_or_failure": "Report both directions and every prespecified feature view; transfer failing to beat zero response shows this fixed cross-context response transfer is inadequate in that direction. It does not establish or refute IDA or a causal network",
+  "not_this_experiment": ["Four-context admission-rule experiment", "PCA on individual control cells", "IDA biology engine", "Single-cell distribution prediction", "Arc challenge score"]
+}

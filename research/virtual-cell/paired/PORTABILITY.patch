@@ -1,0 +1,87 @@
+--- original/run_paired.py
++++ portable/run_paired.py
+@@ -13,9 +13,9 @@
+ 
+ import anndata as ad
+ import numpy as np
++from paired_paths import resolve_paths
+ 
+ HERE = Path(__file__).resolve().parent
+-DATA = HERE.parent / "data"
+ FILES = {
+     "K562": ("K562_essential_raw_bulk_01.h5ad", 79766954, "8321d5d3ffc99db2a5c71edca4189735"),
+     "RPE1": ("rpe1_raw_bulk_01.h5ad", 95350546, "74765fa87635467a869ea972356ae0e7"),
+@@ -69,11 +69,12 @@
+     return None if denominator == 0 else float(np.dot(u, v) / denominator)
+ 
+ 
+-def main():
++def main(argv=None):
++    args = resolve_paths(argv, description=__doc__)
+     started = time.perf_counter()
+     contexts, input_records = {}, {}
+     for context, (name, expected_size, md5) in FILES.items():
+-        path = DATA / name
++        path = args.data_dir / name
+         if path.stat().st_size != expected_size or digest(path, "md5") != md5:
+             raise ValueError(f"Publisher checksum mismatch for {name}")
+         contexts[context] = ad.read_h5ad(path)
+@@ -162,7 +163,7 @@
+     for check in integrity_checks:
+         if not (check["poison_truth_does_not_change_predictions"] and check["poison_changes_error"]):
+             raise AssertionError("Boundary check failed")
+-    output = HERE / "results"
++    output = args.results_dir
+     output.mkdir(parents=True, exist_ok=True)
+     save_json(output / "summary.json", {"claim_level": "paired experimental-context pattern audit; fixed conventional baselines only", "rows": summaries})
+     save_json(output / "selectors.json", {"shared_feature_ids": common_features, "constructs": construct_labels,
+--- original/verify_paired.py
++++ portable/verify_paired.py
+@@ -6,15 +6,17 @@
+ import anndata as ad
+ import numpy as np
+ import pandas as pd
++from paired_paths import resolve_paths
+ 
+ HERE = Path(__file__).resolve().parent
+-RESULTS = HERE / "results"
+ 
+ 
+-def main():
+-    scores = pd.read_csv(RESULTS / "scores.csv")
+-    summaries = json.loads((RESULTS / "summary.json").read_text())["rows"]
+-    selectors = json.loads((RESULTS / "selectors.json").read_text())
++def main(argv=None):
++    args = resolve_paths(argv, description=__doc__, verification=True)
++    results = args.results_dir
++    scores = pd.read_csv(results / "scores.csv")
++    summaries = json.loads((results / "summary.json").read_text())["rows"]
++    selectors = json.loads((results / "selectors.json").read_text())
+     checks = []
+     gene_means = scores.groupby(["direction", "feature_view", "model", "target_gene"], sort=True).response_mse.mean()
+     macro = gene_means.groupby(level=[0, 1, 2]).mean()
+@@ -40,7 +42,7 @@
+     checks.append({"check": "target_gene_excluded_from_primary_scores",
+                    "passed": all(int(row.n_features) == expected_sizes[row.construct] for row in primary.itertuples())})
+     for context, filename in (("K562", "K562_essential_raw_bulk_01.h5ad"), ("RPE1", "rpe1_raw_bulk_01.h5ad")):
+-        data = ad.read_h5ad(HERE.parent / "data" / filename)
++        data = ad.read_h5ad(args.data_dir / filename)
+         mask = np.asarray(data.obs.core_control, dtype=bool)
+         weight = list(map(float, data.obs.loc[mask, "num_cells_filtered"]))
+         columns = data.var_names.get_indexer(genes)
+@@ -50,11 +52,13 @@
+         matrix = np.asarray(data.X[mask][:, columns], dtype=float)
+         denominator = math.fsum(math.fsum(float(v) * w for v, w in zip(matrix[:, j], weight)) for j in range(len(genes)))
+         expected = [math.log1p(10000 * math.fsum(float(v) * w for v, w in zip(matrix[:, j], weight)) / denominator) for j in checked_columns]
+-        saved = json.loads((RESULTS / "control-vectors.json").read_text())["directions"][f"{context}_to_{'RPE1' if context == 'K562' else 'K562'}"]["source_control"]
++        saved = json.loads((results / "control-vectors.json").read_text())["directions"][f"{context}_to_{'RPE1' if context == 'K562' else 'K562'}"]["source_control"]
+         checks.append({"check": "stdlib_weighted_control_and_normalization", "context": context,
+                        "passed": all(math.isclose(value, saved[j], rel_tol=1e-12, abs_tol=1e-12) for j, value in zip(checked_columns, expected))})
+     result = {"passed": all(c["passed"] for c in checks), "checks": checks}
+-    (RESULTS / "independent-verification.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
++    verification_output = args.verification_output or results / "independent-verification.json"
++    verification_output.parent.mkdir(parents=True, exist_ok=True)
++    verification_output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+     print(json.dumps(result, indent=2))
+     raise SystemExit(0 if result["passed"] else 1)
+ 

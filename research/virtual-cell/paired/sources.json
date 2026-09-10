@@ -1,0 +1,33 @@
+{
+  "dataset_title": "\"Mapping information-rich genotype-phenotype landscapes with genome-scale Perturb-seq\" Replogle et al. 2022 processed Perturb-seq datasets",
+  "dataset_authors": [
+    "Joseph Replogle",
+    "Jonathan Weissman"
+  ],
+  "dataset_doi": "10.25452/figshare.plus.20029387.v1",
+  "metadata_url": "https://api.figshare.com/v2/articles/20029387",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "study_doi": "10.1016/j.cell.2022.05.013",
+  "files": [
+    {
+      "bytes": 79766954,
+      "filename": "K562_essential_raw_bulk_01.h5ad",
+      "md5": "8321d5d3ffc99db2a5c71edca4189735",
+      "sha256": "80de95e54fcbca0e0537d569b43ec92fde6bd0482801505504baebe3118dcadf",
+      "context": "K562",
+      "url": "https://ndownloader.figshare.com/files/35773070"
+    },
+    {
+      "bytes": 95350546,
+      "filename": "rpe1_raw_bulk_01.h5ad",
+      "md5": "74765fa87635467a869ea972356ae0e7",
+      "sha256": "603c655f1cfa41d649baf3ae63fca224cc11f297e40d4ed59d390b1e8d2e2db2",
+      "context": "RPE1",
+      "url": "https://ndownloader.figshare.com/files/35775581"
+    }
+  ]
+}
