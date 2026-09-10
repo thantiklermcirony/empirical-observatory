@@ -1,0 +1,31 @@
+name: Verify Active Context
+on:
+  push:
+    branches-ignore: [observatory-data]
+    paths: ['automation/active-context/**', '.github/workflows/active-context.yml']
+  pull_request:
+    paths: ['automation/active-context/**', '.github/workflows/active-context.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  local-tool:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 6
+    defaults:
+      run:
+        working-directory: automation/active-context
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Command-line and read-only MCP contracts
+        run: python -B -m unittest discover -s tests -v
+      - name: Independent adversarial checks
+        run: python -B -m unittest discover -s review -p 'test_*.py' -v
+      - name: Run the disposable local demonstration
+        run: python -B demo.py --output demo-check.json
