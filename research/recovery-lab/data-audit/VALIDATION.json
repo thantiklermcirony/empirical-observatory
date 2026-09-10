@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-10",
+  "python": "3.12.14",
+  "adapter_dependencies": "Python standard library only",
+  "synthetic_tests": {"command": "python -m unittest -v test_adapter.py", "passed": 13, "failed": 0},
+  "real_data_adapter": {"animals": 289, "visits": 6317, "published_included_animals": 270, "published_included_visits": 5957, "matches_published_dimensions": true},
+  "performance_evaluation": "None: data quality and endpoint eligibility only",
+  "source_script_map": {
+    "fragility_vecs.R": "index_names declares30ordinalitems; physicalweight/temperature excluded",
+    "fragility_funs.R::df_process": "Author ID correction, dermatitis collapse, observed-item mean, severe sum ignoringNA, exit inclusion",
+    "04_fragility_fig4.R": "First observed score_sum>=4 defines published healthspan endpoint"
+  }
+}

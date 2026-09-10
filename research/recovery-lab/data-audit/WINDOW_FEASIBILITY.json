@@ -1,0 +1,17 @@
+{
+  "disclosure": "Pre-design endpoint availability inspected before any model fit, tuning or score. Window choices were based only on label availability, not predictive performance.",
+  "population": "DO animals with coherent chronology; landmark has at least30days observed history and at least3prior assessments; same-day exit excluded",
+  "eligible_landmarks": 4104,
+  "windows_examined": [
+    {"target_day": 7, "window": [5,9], "observed": 3270, "terminal": 181, "other_exit": 3, "no_followup": 650, "resolved": 3451, "fraction": 0.8408869395711501},
+    {"target_day": 7, "window": [5,10], "observed": 3319, "terminal": 208, "other_exit": 3, "no_followup": 574, "resolved": 3527, "fraction": 0.8594054580896686},
+    {"target_day": 7, "window": [4,10], "observed": 3319, "terminal": 208, "other_exit": 3, "no_followup": 574, "resolved": 3527, "fraction": 0.8594054580896686},
+    {"target_day": 7, "window": [5,15], "observed": 3605, "terminal": 332, "other_exit": 8, "no_followup": 159, "resolved": 3937, "fraction": 0.959307992202729, "rejected": "Too wide around day7; not selected merely to pass coverage"},
+    {"target_day": 14, "window": [12,16], "observed": 3166, "terminal": 353, "other_exit": 9, "no_followup": 576, "resolved": 3519, "fraction": 0.8574561403508771},
+    {"target_day": 14, "window": [10,18], "observed": 3162, "terminal": 391, "other_exit": 13, "no_followup": 538, "resolved": 3553, "fraction": 0.8657407407407407}
+  ],
+  "terminal_definition": "FD/ES/RE in (landmark,window_end]; event has precedence over a visit; other exits unresolved",
+  "survival_evidence": "Exit date or later observed attendance beyond window end; information used for label adjudication only",
+  "decision": "Retain original5–9day proxy and reportFAILED90percent resolution gate; model comparison is descriptive only regardless of numerical improvement",
+  "further_window_search": false
+}
