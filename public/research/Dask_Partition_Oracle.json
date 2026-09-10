@@ -1,0 +1,80 @@
+{
+  "utc": "2026-09-10T00:34:19.425910+00:00",
+  "stage": "independent_pandas_only_diagnostic",
+  "python": "3.12.14",
+  "pandas": "3.0.5",
+  "issue": "https://github.com/dask/dask/issues/12564",
+  "whole_merge": {
+    "columns": [
+      "id",
+      "value"
+    ],
+    "index": [
+      "AAA",
+      "BBB",
+      null
+    ],
+    "data": [
+      [
+        "A",
+        1.0
+      ],
+      [
+        "B",
+        2.0
+      ],
+      [
+        "C",
+        null
+      ]
+    ]
+  },
+  "unmatched_partition_merge": {
+    "columns": [
+      "id",
+      "value"
+    ],
+    "index": [
+      "C"
+    ],
+    "data": [
+      [
+        "C",
+        null
+      ]
+    ]
+  },
+  "composed_partition_merges": {
+    "columns": [
+      "id",
+      "value"
+    ],
+    "index": [
+      "AAA",
+      "BBB",
+      "C"
+    ],
+    "data": [
+      [
+        "A",
+        1.0
+      ],
+      [
+        "B",
+        2.0
+      ],
+      [
+        "C",
+        null
+      ]
+    ]
+  },
+  "values_equal": true,
+  "indices_equal": false,
+  "limits": [
+    "Dask is not installed or executed by this diagnostic.",
+    "Partition arrangement is manually supplied; this does not prove the current Dask execution plan selects it.",
+    "Current pandas output is a differential oracle, not maintainer approval of the desired Dask contract."
+  ],
+  "publication_note": "Machine-specific pandas module path omitted; measured data unchanged."
+}

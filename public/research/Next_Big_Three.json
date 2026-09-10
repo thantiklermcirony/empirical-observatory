@@ -1,0 +1,66 @@
+{
+  "snapshot_date": "2026-09-10",
+  "screened_repositories_including_context": 31,
+  "candidate_repositories_reproduced": 0,
+  "research_report": "Next_Big_Three.md",
+  "prior_pr_status": "All four prior PRs submitted, open and unmerged at the snapshot.",
+  "candidates": [
+    {
+      "rank": 1,
+      "repository": "ray-project/ray",
+      "issue": "https://github.com/ray-project/ray/issues/63784",
+      "status": "reproduction required",
+      "objective": "Recover long-poll subscriptions after controller replacement",
+      "gate": "Current source and companion PR63785 scope check; real actor and HAProxy integration",
+      "hardware": "Linux CPU; no model weights"
+    },
+    {
+      "rank": 2,
+      "repository": "dask/dask",
+      "issue": "https://github.com/dask/dask/issues/12564",
+      "status": "contract and current-Dask reproduction required",
+      "objective": "Preserve agreed merge index semantics across empty partitions",
+      "gate": "Needs triage; coordinate with existing volunteer; pandas-only oracle is not a Dask reproduction",
+      "hardware": "CPU Python"
+    },
+    {
+      "rank": 3,
+      "repository": "nasa/fprime",
+      "issue": "https://github.com/nasa/fprime/issues/5845",
+      "status": "conditional design investigation",
+      "objective": "Decode recorded communication data products on the ground",
+      "gate": "CCB approval, decoder ownership and draft writer PR5844 format agreement",
+      "hardware": "Offline fixtures and native reference build"
+    }
+  ],
+  "occupied_or_conditional_reserves": [
+    {
+      "repository": "teslamotors/vehicle-command",
+      "issue": 468,
+      "existing_pr": 470,
+      "reason": "Closed unmerged exact implementation; unexplained closure"
+    },
+    {
+      "repository": "google-deepmind/mujoco",
+      "issue": 3559,
+      "existing_pr": 3560,
+      "reason": "Open fix and existing independent audit; possible extra hinge/COM validation only"
+    },
+    {
+      "repository": "isaac-sim/IsaacLab",
+      "issue": 7676,
+      "existing_pr": 7691,
+      "reason": "Open fix; additional validation requires GPU renderer"
+    },
+    {
+      "repository": "duckdb/duckdb-python",
+      "issue": 70,
+      "existing_pr": 307,
+      "reason": "Relevant changes merged; no remaining gap reproduced"
+    },
+    {
+      "repository": "r-spacex/SpaceX-API",
+      "reason": "Explicitly unaffiliated and archived"
+    }
+  ]
+}
