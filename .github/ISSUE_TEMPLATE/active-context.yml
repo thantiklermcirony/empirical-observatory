@@ -1,0 +1,28 @@
+name: Active Context continuation case
+description: Report an incorrect reuse decision, missed dependency or unnecessary recheck.
+title: '[Active Context] '
+body:
+  - type: markdown
+    attributes:
+      value: 'A small reproducible example helps test the tool. Omit secrets, private paths and private command output. This is for the local Active Context tool, not a claim that an upstream AI client is integrated.'
+  - type: textarea
+    id: task
+    attributes:
+      label: What were you trying to resume?
+      description: Describe the check, the project change and the decision you needed to make.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Provide a public fixture, the declared configuration, tool version, Python/OS version and steps.
+    validations:
+      required: true
+  - type: textarea
+    id: difference
+    attributes:
+      label: Expected and actual behavior
+      description: Include the relevant inspect/plan output after removing private details. Explain whether your comparison is measured or estimated.
+    validations:
+      required: true
