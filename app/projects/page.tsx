@@ -6,13 +6,21 @@ import { ArrowLeft, ArrowUpRight, CheckCircle2, Orbit } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Current projects — The Empirical Architecture',
   description:
-    'Inspect our Ray Serve recovery experiment, submitted NeuroGym decision cue, Pertpy biological evaluator and Graphiti memory fixes.',
+    'Explore Virtual Cell: real gene-response predictions, transparent baselines and reproducible results. Inspect our submitted Ray, NeuroGym, Pertpy and Graphiti contributions.',
 };
 
 const github = 'https://github.com/thantiklermcirony';
 const nextMissions = [
   {
-    name: '01 / Ray Serve',
+    name: '01 / Virtual Cell',
+    status: 'FIRST FLIGHT COMPLETE / NEXT TEST OPEN',
+    description:
+      'Give a transferred gene response a destination: test whether baseline cell measurements explain when transfer succeeds, using a new independent validation context.',
+    href: '/cell',
+    gate: 'CPU prototype · basal-data access and fresh validation required',
+  },
+  {
+    name: '02 / Ray Serve',
     status: 'SUBMITTED / AWAITING REVIEW',
     description:
       'A replacement controller needs a new subscription. Inspect the candidate, actual actor tests and the Linux HTTP experiment.',
@@ -20,7 +28,7 @@ const nextMissions = [
     gate: 'CPU / Linux · upstream review pending',
   },
   {
-    name: '02 / Dask',
+    name: '03 / Dask',
     status: 'CONTRACT & REPRODUCTION',
     description:
       'Should moving empty data partitions change a merge result? Compare row identity with pandas and coordinate with the contributor already investigating.',
@@ -28,7 +36,7 @@ const nextMissions = [
     gate: 'CPU · issue still awaiting triage',
   },
   {
-    name: '03 / NASA F Prime',
+    name: '04 / NASA F Prime',
     status: 'CONDITIONAL / DESIGN AGREEMENT',
     description:
       'Turn delayed communication records into inspectable ground data. Build a decoder only after the format, ownership and required upstream approval are settled.',
@@ -103,13 +111,64 @@ export default function Projects() {
           project.
         </p>
         <div className="project-links">
-          <Link href="/#tao">
-            Try an experiment <ArrowUpRight size={18} />
+          <Link href="/cell">
+            Enter Virtual Cell <ArrowUpRight size={18} />
           </Link>
           <Link href={`${github}/empirical-architecture`}>
             Read the programme <ArrowUpRight size={18} />
           </Link>
         </div>
+      </section>
+      <section
+        className="graphiti-feature pertpy-feature"
+        id="cell"
+        aria-labelledby="cell-title"
+      >
+        <div className="project-status">
+          <span className="status-light" /> REAL DATA · REPRODUCIBLE FIRST
+          FLIGHT
+        </div>
+        <div className="graphiti-heading">
+          <div>
+            <span className="eyebrow">FLAGSHIP / VIRTUAL CELL</span>
+            <h2 id="cell-title">
+              Predict.
+              <br />
+              Reveal. Challenge.
+            </h2>
+          </div>
+          <p>
+            Move a gene-response prediction into a different cell context.
+            Reveal the published measurement, compare simple alternatives, and
+            see how a smaller error can conceal an unchanged direction.
+          </p>
+        </div>
+        <div className="project-links">
+          <Link href="/cell">
+            Launch the interactive explorer <ArrowUpRight size={18} />
+          </Link>
+          <Link href="/research/Virtual_Cell_Flight01.zip">
+            Download code and evidence <ArrowUpRight size={18} />
+          </Link>
+        </div>
+        <div className="project-evidence">
+          <CheckCircle2 size={22} />
+          <p>
+            <strong>
+              4 held-out contexts · 2,052 target genes · 6,642 measured genes.
+            </strong>{' '}
+            The first adjustment failed its success threshold. Every baseline,
+            failed comparison and missing-data rule stays visible.
+          </p>
+        </div>
+        <p className="project-caveat">
+          This is a replay of recorded author estimates, with CPU reproduction
+          code. It establishes a tested evaluation workflow; a biological
+          prediction advantage remains unproven.{' '}
+          <Link href="/research/Cell_Flight01_Report.md">
+            Read the complete result.
+          </Link>
+        </p>
       </section>
       <section
         className="graphiti-feature pertpy-feature"
@@ -122,7 +181,9 @@ export default function Projects() {
         </div>
         <div className="graphiti-heading">
           <div>
-            <span className="eyebrow">LATEST PROJECT / AI INFRASTRUCTURE</span>
+            <span className="eyebrow">
+              SUBMITTED PROJECT / AI INFRASTRUCTURE
+            </span>
             <h2 id="ray-title">
               Still running.
               <br />
@@ -166,7 +227,7 @@ export default function Projects() {
         <div className="project-evidence">
           <CheckCircle2 size={22} />
           <p>
-            <strong>14 local recovery and shutdown checks pass.</strong> Actual
+            <strong>16 local recovery and shutdown checks pass.</strong> Actual
             Ray processes test replacement, version reuse and retry behavior. A
             separate unit test checks orderly HAProxy shutdown.
           </p>
@@ -451,10 +512,10 @@ export default function Projects() {
         <span className="eyebrow">NEXT MISSIONS / RESEARCH SHORTLIST</span>
         <h2 id="next-title">Make silent failures visible.</h2>
         <p>
-          Three investigations chosen for useful, testable contributions. These
-          include the submitted Ray recovery fix and two researched
-          opportunities. Upstream agreement remains separate from our
-          experiments. Existing authors keep credit for their work.
+          The flagship now tests biological transfer on real data. The submitted
+          Ray recovery fix and two researched opportunities remain visible.
+          Upstream agreement remains separate from our experiments. Existing
+          authors keep credit for their work.
         </p>
         <div className="project-grid">
           {nextMissions.map((mission) => (
