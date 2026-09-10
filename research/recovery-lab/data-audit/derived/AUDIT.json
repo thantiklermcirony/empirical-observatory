@@ -1,0 +1,748 @@
+{
+  "disclosure": "PRE-DESIGN DATA ELIGIBILITY INSPECTION: aggregate observation/score/transition availability was inspected before choosing a predictive protocol; no predictive model was fitted, tuned or evaluated.",
+  "animals": 289,
+  "unique_source_ids": 289,
+  "unique_canonical_ids": 289,
+  "actual_visits": 6317,
+  "published_included_animals": 270,
+  "published_included_visits": 5957,
+  "visits_per_animal": {
+    "n": 289,
+    "min": 1,
+    "q25": 9.0,
+    "median": 18.0,
+    "q75": 30.0,
+    "max": 78
+  },
+  "spacing_days": {
+    "n": 6028,
+    "min": 5,
+    "q25": 7.0,
+    "median": 7.0,
+    "q75": 8.0,
+    "max": 43
+  },
+  "spacing_counts": {
+    "10": 107,
+    "12": 5,
+    "13": 65,
+    "14": 320,
+    "15": 75,
+    "16": 4,
+    "19": 4,
+    "20": 10,
+    "21": 70,
+    "22": 23,
+    "23": 1,
+    "27": 6,
+    "28": 10,
+    "29": 4,
+    "35": 1,
+    "36": 2,
+    "37": 1,
+    "42": 10,
+    "43": 1,
+    "5": 276,
+    "6": 783,
+    "7": 3449,
+    "8": 748,
+    "9": 53
+  },
+  "exit_reasons": {
+    "DC": 1,
+    "ES": 38,
+    "FD": 226,
+    "FTR": 5,
+    "MISSING": 3,
+    "MSG": 10,
+    "RE": 6
+  },
+  "cohorts": [
+    {
+      "strain": "C57BL/6J",
+      "sex": "f",
+      "diet": "AL",
+      "animals": 15,
+      "visits": 287,
+      "entry_age_days": {
+        "n": 15,
+        "min": 690,
+        "q25": 730.0,
+        "median": 730.0,
+        "q75": 828.0,
+        "max": 834
+      },
+      "exit_reasons": {
+        "DC": 1,
+        "ES": 2,
+        "FD": 10,
+        "MISSING": 1,
+        "MSG": 1
+      }
+    },
+    {
+      "strain": "C57BL/6J",
+      "sex": "m",
+      "diet": "AL",
+      "animals": 28,
+      "visits": 797,
+      "entry_age_days": {
+        "n": 28,
+        "min": 690,
+        "q25": 694.0,
+        "median": 694.0,
+        "q75": 694.0,
+        "max": 787
+      },
+      "exit_reasons": {
+        "ES": 1,
+        "FD": 22,
+        "MISSING": 1,
+        "MSG": 3,
+        "RE": 1
+      }
+    },
+    {
+      "strain": "J:DO",
+      "sex": "f",
+      "diet": "AL",
+      "animals": 26,
+      "visits": 350,
+      "entry_age_days": {
+        "n": 26,
+        "min": 918,
+        "q25": 939.0,
+        "median": 940.0,
+        "q75": 960.0,
+        "max": 1190
+      },
+      "exit_reasons": {
+        "ES": 5,
+        "FD": 20,
+        "MISSING": 1
+      }
+    },
+    {
+      "strain": "J:DO",
+      "sex": "f",
+      "diet": "CR20",
+      "animals": 56,
+      "visits": 1213,
+      "entry_age_days": {
+        "n": 56,
+        "min": 918,
+        "q25": 939.75,
+        "median": 952.0,
+        "q75": 1067.5,
+        "max": 1302
+      },
+      "exit_reasons": {
+        "ES": 11,
+        "FD": 43,
+        "MSG": 1,
+        "RE": 1
+      }
+    },
+    {
+      "strain": "J:DO",
+      "sex": "f",
+      "diet": "CR40",
+      "animals": 79,
+      "visits": 2520,
+      "entry_age_days": {
+        "n": 79,
+        "min": 918,
+        "q25": 939.5,
+        "median": 960.0,
+        "q75": 1064.0,
+        "max": 1302
+      },
+      "exit_reasons": {
+        "ES": 11,
+        "FD": 59,
+        "FTR": 3,
+        "MSG": 3,
+        "RE": 3
+      }
+    },
+    {
+      "strain": "J:DO",
+      "sex": "f",
+      "diet": "IF1",
+      "animals": 34,
+      "visits": 434,
+      "entry_age_days": {
+        "n": 34,
+        "min": 918,
+        "q25": 939.0,
+        "median": 952.0,
+        "q75": 972.0,
+        "max": 1078
+      },
+      "exit_reasons": {
+        "ES": 4,
+        "FD": 29,
+        "FTR": 1
+      }
+    },
+    {
+      "strain": "J:DO",
+      "sex": "f",
+      "diet": "IF2",
+      "animals": 51,
+      "visits": 716,
+      "entry_age_days": {
+        "n": 51,
+        "min": 918,
+        "q25": 939.0,
+        "median": 952.0,
+        "q75": 1014.5,
+        "max": 1281
+      },
+      "exit_reasons": {
+        "ES": 4,
+        "FD": 43,
+        "FTR": 1,
+        "MSG": 2,
+        "RE": 1
+      }
+    }
+  ],
+  "assessors": {
+    "A": 157,
+    "B": 105,
+    "C": 4200,
+    "D": 1855
+  },
+  "missing_by_field": {
+    "body_weight": 0,
+    "temperature": 5,
+    "breathing_rate_depth": 0,
+    "coat_condition": 0,
+    "piloerection": 0,
+    "dermatitis": 0,
+    "pallor_and_or_cyanosis": 0,
+    "kyphosis": 0,
+    "hunched": 0,
+    "body_condition": 0,
+    "eye_discharge_eyelid_inflammation": 0,
+    "changes_to_the_globe": 0,
+    "response_to_analgesic": 0,
+    "peri_retro_orbital_swelling": 0,
+    "nasal_discharge": 0,
+    "rectal_prolapse": 0,
+    "vaginal_uterine_prolapse": 0,
+    "diarrhea": 0,
+    "tail_stiffening": 0,
+    "vestibular_disturbance": 0,
+    "gait_disorders": 0,
+    "tremor": 0,
+    "activity": 0,
+    "response_to_external_stimuli": 0,
+    "paralysis": 0,
+    "tumors": 0,
+    "distended_abdomen": 0,
+    "urine": 0,
+    "dehydration_reduced_skin_turgor": 0,
+    "malocclusions": 0,
+    "head_piloerection": 299,
+    "thoracic_mass": 299
+  },
+  "ordinal_missing_counts": {
+    "0": 6018,
+    "2": 299
+  },
+  "certain_state_counts": {
+    "MISSING": 65,
+    "below_threshold": 2053,
+    "impaired": 4199
+  },
+  "complete_state_counts": {
+    "MISSING": 299,
+    "below_threshold": 2038,
+    "impaired": 3980
+  },
+  "consecutive_complete_transitions": {
+    "below_threshold -> below_threshold": 1175,
+    "below_threshold -> impaired": 825,
+    "impaired -> below_threshold": 745,
+    "impaired -> impaired": 2996
+  },
+  "consecutive_pairs": 6028,
+  "consecutive_complete_pairs": 5741,
+  "distinct_animals_with_observed_complete_recovery": 205,
+  "landmarks_with_30day_observed_history": 4994,
+  "horizon_eligibility": {
+    "7": {
+      "window_days": [
+        5,
+        9
+      ],
+      "counts": {
+        "assessment_in_window_complete": 5096,
+        "assessment_in_window_incomplete": 209,
+        "exact_horizon_visit": 3449,
+        "exit_discarded": 1,
+        "exit_euthanized_sick": 26,
+        "exit_found_dead": 151,
+        "exit_missing": 4,
+        "exit_requested_euthanasia": 6,
+        "exit_unknown": 1,
+        "impaired_complete_landmark_and_target": 3295,
+        "no_assessment_in_window_no_exit_by_horizon": 823,
+        "observed_threshold_recrossings": 641,
+        "same_day_exit_landmarks_order_unknown": 6,
+        "window_available_total": 5309,
+        "window_with_30day_history": 4084
+      },
+      "strata_status_counts": {
+        "C57BL/6J/f/AL": {
+          "assessment_in_window_complete": 258,
+          "exit_discarded": 1,
+          "exit_euthanized_sick": 1,
+          "exit_found_dead": 6,
+          "no_assessment_in_window_no_exit_by_horizon": 21
+        },
+        "C57BL/6J/m/AL": {
+          "assessment_in_window_complete": 721,
+          "exit_euthanized_sick": 1,
+          "exit_found_dead": 14,
+          "exit_missing": 1,
+          "exit_requested_euthanasia": 2,
+          "exit_unknown": 1,
+          "no_assessment_in_window_no_exit_by_horizon": 57
+        },
+        "J:DO/f/AL": {
+          "assessment_in_window_complete": 280,
+          "assessment_in_window_incomplete": 6,
+          "exit_euthanized_sick": 2,
+          "exit_found_dead": 13,
+          "no_assessment_in_window_no_exit_by_horizon": 49
+        },
+        "J:DO/f/CR20": {
+          "assessment_in_window_complete": 943,
+          "assessment_in_window_incomplete": 66,
+          "exit_euthanized_sick": 6,
+          "exit_found_dead": 29,
+          "exit_requested_euthanasia": 1,
+          "no_assessment_in_window_no_exit_by_horizon": 168
+        },
+        "J:DO/f/CR40": {
+          "assessment_in_window_complete": 2030,
+          "assessment_in_window_incomplete": 84,
+          "exit_euthanized_sick": 10,
+          "exit_found_dead": 37,
+          "exit_missing": 1,
+          "exit_requested_euthanasia": 2,
+          "no_assessment_in_window_no_exit_by_horizon": 356
+        },
+        "J:DO/f/IF1": {
+          "assessment_in_window_complete": 329,
+          "assessment_in_window_incomplete": 19,
+          "exit_euthanized_sick": 4,
+          "exit_found_dead": 23,
+          "no_assessment_in_window_no_exit_by_horizon": 59
+        },
+        "J:DO/f/IF2": {
+          "assessment_in_window_complete": 535,
+          "assessment_in_window_incomplete": 34,
+          "exit_euthanized_sick": 2,
+          "exit_found_dead": 29,
+          "exit_missing": 2,
+          "exit_requested_euthanasia": 1,
+          "no_assessment_in_window_no_exit_by_horizon": 113
+        }
+      },
+      "warning": "Descriptive pre-design availability, not fixed-horizon labels: window observations are not exact horizon states; missing visits/exit mechanisms must be handled explicitly. No future date is a predictor."
+    },
+    "30": {
+      "window_days": [
+        27,
+        33
+      ],
+      "counts": {
+        "assessment_in_window_complete": 4418,
+        "assessment_in_window_incomplete": 85,
+        "exact_horizon_visit": 148,
+        "exit_discarded": 5,
+        "exit_euthanized_sick": 135,
+        "exit_failed_to_recover": 16,
+        "exit_found_dead": 751,
+        "exit_missing": 23,
+        "exit_requested_euthanasia": 25,
+        "exit_unknown": 7,
+        "impaired_complete_landmark_and_target": 2782,
+        "no_assessment_in_window_no_exit_by_horizon": 852,
+        "observed_threshold_recrossings": 553,
+        "same_day_exit_landmarks_order_unknown": 6,
+        "window_available_total": 4536,
+        "window_with_30day_history": 3526
+      },
+      "strata_status_counts": {
+        "C57BL/6J/f/AL": {
+          "assessment_in_window_complete": 214,
+          "exit_discarded": 5,
+          "exit_euthanized_sick": 9,
+          "exit_found_dead": 38,
+          "exit_missing": 2,
+          "exit_unknown": 1,
+          "no_assessment_in_window_no_exit_by_horizon": 18
+        },
+        "C57BL/6J/m/AL": {
+          "assessment_in_window_complete": 647,
+          "exit_euthanized_sick": 4,
+          "exit_found_dead": 79,
+          "exit_missing": 7,
+          "exit_requested_euthanasia": 5,
+          "exit_unknown": 4,
+          "no_assessment_in_window_no_exit_by_horizon": 51
+        },
+        "J:DO/f/AL": {
+          "assessment_in_window_complete": 220,
+          "assessment_in_window_incomplete": 2,
+          "exit_euthanized_sick": 14,
+          "exit_found_dead": 75,
+          "exit_unknown": 2,
+          "no_assessment_in_window_no_exit_by_horizon": 37
+        },
+        "J:DO/f/CR20": {
+          "assessment_in_window_complete": 825,
+          "assessment_in_window_incomplete": 26,
+          "exit_euthanized_sick": 43,
+          "exit_found_dead": 152,
+          "exit_missing": 2,
+          "exit_requested_euthanasia": 4,
+          "no_assessment_in_window_no_exit_by_horizon": 161
+        },
+        "J:DO/f/CR40": {
+          "assessment_in_window_complete": 1839,
+          "assessment_in_window_incomplete": 35,
+          "exit_euthanized_sick": 31,
+          "exit_failed_to_recover": 9,
+          "exit_found_dead": 184,
+          "exit_missing": 7,
+          "exit_requested_euthanasia": 13,
+          "no_assessment_in_window_no_exit_by_horizon": 402
+        },
+        "J:DO/f/IF1": {
+          "assessment_in_window_complete": 247,
+          "assessment_in_window_incomplete": 8,
+          "exit_euthanized_sick": 18,
+          "exit_failed_to_recover": 4,
+          "exit_found_dead": 92,
+          "no_assessment_in_window_no_exit_by_horizon": 65
+        },
+        "J:DO/f/IF2": {
+          "assessment_in_window_complete": 426,
+          "assessment_in_window_incomplete": 14,
+          "exit_euthanized_sick": 16,
+          "exit_failed_to_recover": 3,
+          "exit_found_dead": 131,
+          "exit_missing": 5,
+          "exit_requested_euthanasia": 3,
+          "no_assessment_in_window_no_exit_by_horizon": 118
+        }
+      },
+      "warning": "Descriptive pre-design availability, not fixed-horizon labels: window observations are not exact horizon states; missing visits/exit mechanisms must be handled explicitly. No future date is a predictor."
+    }
+  },
+  "quality": {
+    "empty_slots": 16225,
+    "planned_only_slots": 0,
+    "dated_empty_assessments": [],
+    "duplicate_dates": [],
+    "nonincreasing_slot_dates": [],
+    "assessments_after_exit": [
+      [
+        "AgedB6-0689",
+        1,
+        "2019-10-30"
+      ],
+      [
+        "AgedB6-0689",
+        2,
+        "2019-11-05"
+      ],
+      [
+        "AgedB6-0689",
+        3,
+        "2019-11-12"
+      ],
+      [
+        "AgedB6-0689",
+        4,
+        "2019-11-19"
+      ],
+      [
+        "AgedB6-0689",
+        5,
+        "2019-11-25"
+      ],
+      [
+        "AgedB6-0689",
+        6,
+        "2019-12-03"
+      ],
+      [
+        "AgedB6-0689",
+        7,
+        "2019-12-10"
+      ],
+      [
+        "AgedB6-0689",
+        8,
+        "2019-12-23"
+      ],
+      [
+        "AgedB6-0689",
+        9,
+        "2020-01-02"
+      ],
+      [
+        "AgedB6-0689",
+        10,
+        "2020-01-14"
+      ],
+      [
+        "AgedB6-0689",
+        11,
+        "2020-02-10"
+      ],
+      [
+        "DO-40-2062",
+        8,
+        "2019-11-13"
+      ],
+      [
+        "DO-40-2062",
+        9,
+        "2019-11-20"
+      ]
+    ],
+    "invalid_physical_values": [],
+    "identity_corrections": [
+      {
+        "source_id": "DO-AL-0097",
+        "animal_id": "DO-AL-0105"
+      }
+    ],
+    "assessment_slots_per_animal_schema": 78,
+    "undated_measurement_count": 0
+  },
+  "limitations": [
+    "No cage identifier in released schema",
+    "Observation begins late in life: delayed entry and survivor selection",
+    "DO females with diets versus B6 both sexes with AL is a confounded cross-cohort comparison",
+    "Clinical treatment details are incomplete; no causal recovery attribution",
+    "Published mean and severe sum ignore missing items; strict and bounded states added separately",
+    "True change times between visits are unobserved; threshold recrossing is not demonstrated biological rejuvenation"
+  ],
+  "chronology_quarantine": {
+    "animal_ids": [
+      "AgedB6-0689",
+      "DO-40-2062"
+    ],
+    "visits_removed_for_endpoint_planning": 20,
+    "reason": "Conservative whole-animal quarantine; preserve source dates and all raw exports. This is not a correction of author data."
+  },
+  "chronology_valid_subset": {
+    "animals": 287,
+    "actual_visits": 6297,
+    "exit_reasons": {
+      "DC": 1,
+      "ES": 38,
+      "FD": 226,
+      "FTR": 5,
+      "MISSING": 3,
+      "MSG": 8,
+      "RE": 6
+    },
+    "complete_state_counts": {
+      "MISSING": 293,
+      "below_threshold": 2030,
+      "impaired": 3974
+    },
+    "consecutive_complete_transitions": {
+      "below_threshold -> below_threshold": 1170,
+      "below_threshold -> impaired": 822,
+      "impaired -> below_threshold": 743,
+      "impaired -> impaired": 2994
+    },
+    "distinct_animals_with_observed_complete_recovery": 204,
+    "landmarks_with_30day_observed_history": 4984,
+    "horizon_eligibility": {
+      "7": {
+        "window_days": [
+          5,
+          9
+        ],
+        "counts": {
+          "assessment_in_window_complete": 5089,
+          "assessment_in_window_incomplete": 204,
+          "exact_horizon_visit": 3440,
+          "exit_discarded": 1,
+          "exit_euthanized_sick": 26,
+          "exit_found_dead": 151,
+          "exit_missing": 4,
+          "exit_requested_euthanasia": 6,
+          "exit_unknown": 1,
+          "impaired_complete_landmark_and_target": 3292,
+          "no_assessment_in_window_no_exit_by_horizon": 815,
+          "observed_threshold_recrossings": 639,
+          "same_day_exit_landmarks_order_unknown": 6,
+          "window_available_total": 5297,
+          "window_with_30day_history": 4082
+        },
+        "strata_status_counts": {
+          "C57BL/6J/f/AL": {
+            "assessment_in_window_complete": 258,
+            "exit_discarded": 1,
+            "exit_euthanized_sick": 1,
+            "exit_found_dead": 6,
+            "no_assessment_in_window_no_exit_by_horizon": 21
+          },
+          "C57BL/6J/m/AL": {
+            "assessment_in_window_complete": 715,
+            "exit_euthanized_sick": 1,
+            "exit_found_dead": 14,
+            "exit_missing": 1,
+            "exit_requested_euthanasia": 2,
+            "exit_unknown": 1,
+            "no_assessment_in_window_no_exit_by_horizon": 52
+          },
+          "J:DO/f/AL": {
+            "assessment_in_window_complete": 280,
+            "assessment_in_window_incomplete": 6,
+            "exit_euthanized_sick": 2,
+            "exit_found_dead": 13,
+            "no_assessment_in_window_no_exit_by_horizon": 49
+          },
+          "J:DO/f/CR20": {
+            "assessment_in_window_complete": 943,
+            "assessment_in_window_incomplete": 66,
+            "exit_euthanized_sick": 6,
+            "exit_found_dead": 29,
+            "exit_requested_euthanasia": 1,
+            "no_assessment_in_window_no_exit_by_horizon": 168
+          },
+          "J:DO/f/CR40": {
+            "assessment_in_window_complete": 2029,
+            "assessment_in_window_incomplete": 79,
+            "exit_euthanized_sick": 10,
+            "exit_found_dead": 37,
+            "exit_missing": 1,
+            "exit_requested_euthanasia": 2,
+            "no_assessment_in_window_no_exit_by_horizon": 353
+          },
+          "J:DO/f/IF1": {
+            "assessment_in_window_complete": 329,
+            "assessment_in_window_incomplete": 19,
+            "exit_euthanized_sick": 4,
+            "exit_found_dead": 23,
+            "no_assessment_in_window_no_exit_by_horizon": 59
+          },
+          "J:DO/f/IF2": {
+            "assessment_in_window_complete": 535,
+            "assessment_in_window_incomplete": 34,
+            "exit_euthanized_sick": 2,
+            "exit_found_dead": 29,
+            "exit_missing": 2,
+            "exit_requested_euthanasia": 1,
+            "no_assessment_in_window_no_exit_by_horizon": 113
+          }
+        },
+        "warning": "Descriptive pre-design availability, not fixed-horizon labels: window observations are not exact horizon states; missing visits/exit mechanisms must be handled explicitly. No future date is a predictor."
+      },
+      "30": {
+        "window_days": [
+          27,
+          33
+        ],
+        "counts": {
+          "assessment_in_window_complete": 4412,
+          "assessment_in_window_incomplete": 83,
+          "exact_horizon_visit": 147,
+          "exit_discarded": 5,
+          "exit_euthanized_sick": 135,
+          "exit_failed_to_recover": 16,
+          "exit_found_dead": 751,
+          "exit_missing": 21,
+          "exit_requested_euthanasia": 25,
+          "exit_unknown": 7,
+          "impaired_complete_landmark_and_target": 2779,
+          "no_assessment_in_window_no_exit_by_horizon": 842,
+          "observed_threshold_recrossings": 551,
+          "same_day_exit_landmarks_order_unknown": 6,
+          "window_available_total": 4527,
+          "window_with_30day_history": 3523
+        },
+        "strata_status_counts": {
+          "C57BL/6J/f/AL": {
+            "assessment_in_window_complete": 214,
+            "exit_discarded": 5,
+            "exit_euthanized_sick": 9,
+            "exit_found_dead": 38,
+            "exit_missing": 2,
+            "exit_unknown": 1,
+            "no_assessment_in_window_no_exit_by_horizon": 18
+          },
+          "C57BL/6J/m/AL": {
+            "assessment_in_window_complete": 642,
+            "exit_euthanized_sick": 4,
+            "exit_found_dead": 79,
+            "exit_missing": 7,
+            "exit_requested_euthanasia": 5,
+            "exit_unknown": 4,
+            "no_assessment_in_window_no_exit_by_horizon": 45
+          },
+          "J:DO/f/AL": {
+            "assessment_in_window_complete": 220,
+            "assessment_in_window_incomplete": 2,
+            "exit_euthanized_sick": 14,
+            "exit_found_dead": 75,
+            "exit_unknown": 2,
+            "no_assessment_in_window_no_exit_by_horizon": 37
+          },
+          "J:DO/f/CR20": {
+            "assessment_in_window_complete": 825,
+            "assessment_in_window_incomplete": 26,
+            "exit_euthanized_sick": 43,
+            "exit_found_dead": 152,
+            "exit_missing": 2,
+            "exit_requested_euthanasia": 4,
+            "no_assessment_in_window_no_exit_by_horizon": 161
+          },
+          "J:DO/f/CR40": {
+            "assessment_in_window_complete": 1838,
+            "assessment_in_window_incomplete": 33,
+            "exit_euthanized_sick": 31,
+            "exit_failed_to_recover": 9,
+            "exit_found_dead": 184,
+            "exit_missing": 5,
+            "exit_requested_euthanasia": 13,
+            "no_assessment_in_window_no_exit_by_horizon": 398
+          },
+          "J:DO/f/IF1": {
+            "assessment_in_window_complete": 247,
+            "assessment_in_window_incomplete": 8,
+            "exit_euthanized_sick": 18,
+            "exit_failed_to_recover": 4,
+            "exit_found_dead": 92,
+            "no_assessment_in_window_no_exit_by_horizon": 65
+          },
+          "J:DO/f/IF2": {
+            "assessment_in_window_complete": 426,
+            "assessment_in_window_incomplete": 14,
+            "exit_euthanized_sick": 16,
+            "exit_failed_to_recover": 3,
+            "exit_found_dead": 131,
+            "exit_missing": 5,
+            "exit_requested_euthanasia": 3,
+            "no_assessment_in_window_no_exit_by_horizon": 118
+          }
+        },
+        "warning": "Descriptive pre-design availability, not fixed-horizon labels: window observations are not exact horizon states; missing visits/exit mechanisms must be handled explicitly. No future date is a predictor."
+      }
+    }
+  }
+}

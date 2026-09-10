@@ -1,0 +1,33 @@
+{
+  "source_doi": "10.6084/m9.figshare.25125587.v1",
+  "source_url": "https://ndownloader.figshare.com/files/44351708",
+  "source_license": "CC BY4.0",
+  "source_bytes": 102305,
+  "source_md5": "df606cae4bf3bc65cb64f85cda2f6c96",
+  "source_sha256": "902ed570ff62bc76cb4838cf8ca5cba0ab0ee5af9091b06bb9f1af6316045477",
+  "csv_member": "data/fragility_longitudinal_mpd.csv",
+  "csv_sha256": "b44bac6a156873e20423c98b6fef01345d79102136e5116fa31ba22786a887e2",
+  "codebook_sha256": "ff4b7d3406f9d3938c6c2017f9257e246117032fb03e270cdd2d47fd339d1e87",
+  "source_readme_sha256": "76c85684edf48e7d3ee8e1fbbbd09ca2f9d211f0ac7f54381daecca291b889df",
+  "adapter_sha256": "8bb49e4cb89a0883c0b05c6e97a8474f3bc7acc627201d250a8c3cd6f0e573f4",
+  "published_scoring_reference": "Original scripts.zip / scripts/fragility_vecs.R + fragility_funs.R df_process(); MD5b424fc781b51bdd86319d39f298b2a63",
+  "outputs": {
+    "animals.csv": {
+      "bytes": 34353,
+      "sha256": "80bf2cfbf73c3272b45766b9e6d124998c90aec0defd70009b2f1fe9932cde73"
+    },
+    "AUDIT.json": {
+      "bytes": 22210,
+      "sha256": "c512faa08835b5f5a8c512049bfa53bbc6e63064f6e5b9437271241dd2060a8a"
+    },
+    "undated_measurements.csv": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "visits.csv": {
+      "bytes": 1638605,
+      "sha256": "4c66aff2424a9fdceeb2a08dca76d69a42c1220265591beedc91581acf009991"
+    }
+  },
+  "no_prediction": true
+}
