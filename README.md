@@ -2,7 +2,7 @@
 
 **[CURRENT PROJECTS →](https://empirical-observatory.madmanmuzza.chatgpt.site/projects)** · **[ENTER THE LIVE STATION →](https://empirical-observatory.madmanmuzza.chatgpt.site)**
 
-The projects page features our [submitted NeuroGym decision-cue repair](https://github.com/neurogym/neurogym/pull/295), its [recorded before/after evidence](public/research/NeuroGym_Contribution_Report.md), the submitted Pertpy evaluator and Graphiti repairs, and the [next three investigations](public/research/Next_Big_Three.md). It links runnable experiments, source and reproducible evidence. Direct laboratory links work without an API key.
+The projects page features our [submitted Ray recovery contribution — PR #66039](https://github.com/ray-project/ray/pull/66039), its [measured Linux evidence](https://github.com/thantiklermcirony/empirical-architecture/blob/main/research/ray-campaign/Ray_Contribution_Report.md), and our [submitted NeuroGym decision-cue repair](https://github.com/neurogym/neurogym/pull/295), its [recorded before/after evidence](public/research/NeuroGym_Contribution_Report.md), the submitted Pertpy evaluator and Graphiti repairs, and the [next three investigations](public/research/Next_Big_Three.md). It links runnable experiments, source and reproducible evidence. Direct laboratory links work without an API key.
 
 
 A playable research station for testing what measurements reveal—and what they miss. Part of [The Empirical Architecture](https://github.com/thantiklermcirony/empirical-architecture).
