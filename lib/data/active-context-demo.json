@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-10T09:43:41.303889+00:00",
+  "kind": "recorded_local_demo",
+  "not_a_benchmark": true,
+  "config": {
+    "schema_version": 1,
+    "checks": [
+      {
+        "id": "sum-check",
+        "claims": [
+          "sum-contract"
+        ],
+        "argv": [
+          "{python}",
+          "check.py"
+        ],
+        "scopes": [
+          "app.py",
+          "check.py"
+        ],
+        "cost": 1
+      }
+    ]
+  },
+  "frames": [
+    {
+      "id": "new",
+      "title": "No evidence yet",
+      "description": "The project has a sum check, but it has not run.",
+      "status": "missing",
+      "reusable": false,
+      "reasons": [
+        "No recorded attempt"
+      ],
+      "receipt_hash": null,
+      "selected_checks": [
+        "sum-check"
+      ],
+      "estimated_cost": 1.0,
+      "uncovered_claims": []
+    },
+    {
+      "id": "passed",
+      "title": "Check passed",
+      "description": "The recorded command passed with these declared inputs.",
+      "status": "reusable_within_declared_scope",
+      "reusable": true,
+      "reasons": [],
+      "receipt_hash": "21b30a23fc21e9719d3030bde83492ef597f2e296cd54a62130a9acf99e71c64",
+      "selected_checks": [],
+      "estimated_cost": 0.0,
+      "uncovered_claims": []
+    },
+    {
+      "id": "docs",
+      "title": "Documentation changed",
+      "description": "Declared inputs are unchanged. This example explicitly excludes README from the check.",
+      "status": "reusable_within_declared_scope",
+      "reusable": true,
+      "reasons": [],
+      "receipt_hash": "21b30a23fc21e9719d3030bde83492ef597f2e296cd54a62130a9acf99e71c64",
+      "selected_checks": [],
+      "estimated_cost": 0.0,
+      "uncovered_claims": []
+    },
+    {
+      "id": "changed",
+      "title": "Code changed",
+      "description": "The old passing result no longer applies to the changed code.",
+      "status": "changed",
+      "reusable": false,
+      "reasons": [
+        "Declared inputs, environment, repository or runtime changed"
+      ],
+      "receipt_hash": "21b30a23fc21e9719d3030bde83492ef597f2e296cd54a62130a9acf99e71c64",
+      "selected_checks": [
+        "sum-check"
+      ],
+      "estimated_cost": 1.0,
+      "uncovered_claims": []
+    },
+    {
+      "id": "failed",
+      "title": "Recheck failed",
+      "description": "The latest command failed. The older pass is retained, but cannot be reused.",
+      "status": "failed",
+      "reusable": false,
+      "reasons": [
+        "Latest attempt timed out or did not pass"
+      ],
+      "receipt_hash": "84f6a808756aa6550325e05fd1e324fdb038c29a031bb3a46aa84619b1c5a195",
+      "selected_checks": [
+        "sum-check"
+      ],
+      "estimated_cost": 1.0,
+      "uncovered_claims": []
+    },
+    {
+      "id": "repaired",
+      "title": "Repair checked",
+      "description": "The repair passed a fresh execution. Its receipt is distinct from the original pass.",
+      "status": "reusable_within_declared_scope",
+      "reusable": true,
+      "reasons": [],
+      "receipt_hash": "cb40e8b65b4034b6403f04331515b222f322e00a7a66d117cc9443b951e398da",
+      "selected_checks": [],
+      "estimated_cost": 0.0,
+      "uncovered_claims": []
+    }
+  ],
+  "receipts": [
+    {
+      "event_hash": "21b30a23fc21e9719d3030bde83492ef597f2e296cd54a62130a9acf99e71c64",
+      "exit_code": 0,
+      "stable": true,
+      "timed_out": false,
+      "duration_seconds": 0.05033909998019226,
+      "stdout": {
+        "sha256": "b0c95514948d3cd41b018e59e09fe0c797b1d605af22ecb81eee404d4372b366",
+        "bytes": 22,
+        "prefix_base64": "dG90YWwoWzIsIDNdKSBwYXNzZWQNCg==",
+        "text": "total([2, 3]) passed\r\n",
+        "truncated": false
+      },
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "event_hash": "84f6a808756aa6550325e05fd1e324fdb038c29a031bb3a46aa84619b1c5a195",
+      "exit_code": 1,
+      "stable": true,
+      "timed_out": false,
+      "duration_seconds": 0.06020599999465048,
+      "stdout": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "prefix_base64": "",
+        "text": "",
+        "truncated": false
+      },
+      "stderr_sha256": "d0917c241617d89580ede16f8dd64b2e9e0d9a1f9fb7c2577b7be5c6b070fb2a"
+    },
+    {
+      "event_hash": "cb40e8b65b4034b6403f04331515b222f322e00a7a66d117cc9443b951e398da",
+      "exit_code": 0,
+      "stable": true,
+      "timed_out": false,
+      "duration_seconds": 0.04110250002122484,
+      "stdout": {
+        "sha256": "b0c95514948d3cd41b018e59e09fe0c797b1d605af22ecb81eee404d4372b366",
+        "bytes": 22,
+        "prefix_base64": "dG90YWwoWzIsIDNdKSBwYXNzZWQNCg==",
+        "text": "total([2, 3]) passed\r\n",
+        "truncated": false
+      },
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "verification": {
+    "valid": true,
+    "records": 3,
+    "head": "cb40e8b65b4034b6403f04331515b222f322e00a7a66d117cc9443b951e398da",
+    "boundary": "Reuse concerns successful checks within declared inputs only. Undeclared files, installed dependencies, environment and external services may change. Before/after snapshots cannot detect a transient change followed by a revert. Local hashes and clocks do not authenticate execution or public issuance."
+  },
+  "boundary": "A constructed demonstration with declared dependencies. No learned discovery or AI performance result; original transient local store is not distributed."
+}
