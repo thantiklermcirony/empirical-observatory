@@ -40,3 +40,5 @@ __pycache__/
 *.pyc
 .venv/
 *.tsbuildinfo
+# Generated prediction arrays are linked from the public GitHub evidence release.
+research/virtual-cell-flight02/results/*.npz
