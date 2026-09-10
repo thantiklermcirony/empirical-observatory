@@ -1,0 +1,457 @@
+{
+  "created_at_utc": "2026-09-10T00:27:38.793597+00:00",
+  "upstream_base": "a32cfa759ced1edbf3d1d7b207260e45a8f8c2d9",
+  "local_candidate_commit": "279e434a62a82fd7ef2765f00976aad41fa6fd57",
+  "upstream_issue": "https://github.com/neurogym/neurogym/issues/279",
+  "submission_status": "Submitted upstream; open and awaiting maintainer review. Not merged.",
+  "upstream_pr": "https://github.com/neurogym/neurogym/pull/295",
+  "submitted_branch_commit": "4109acb28faa75919096a8765879289304ce9417",
+  "submitted_git_blobs_match_local_commit": true,
+  "changed_files": [
+    "neurogym/envs/native/contextdecisionmaking.py",
+    "tests/envs/test_contextdecisionmaking_go_cue.py"
+  ],
+  "source_sha256": {
+    "neurogym/envs/native/contextdecisionmaking.py": "df2c9aa2b80a0d9e5604dbb4f6af5b8f9819db85857e235bfcc5d92c57d31f57",
+    "tests/envs/test_contextdecisionmaking_go_cue.py": "541ce2a1aec3fe5e393b0eec74df138a37dc5057dc5928d6757c660c268c89c7"
+  },
+  "patch_sha256": "41fa1e5ee77d06f685f735ddf52f79471eed1774f35211269a4fe631fb39ba12",
+  "baseline_regression": {
+    "tests": 32,
+    "failures": 20,
+    "errors": 0,
+    "skipped": 0
+  },
+  "candidate_regression": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "candidate_full_pytest_suite": {
+    "tests": 132,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "mypy_source_files": 103,
+  "formatted_files": 104,
+  "invariance": {
+    "trials": 240,
+    "non_fixation_observations_byte_identical": true,
+    "trial_draws_targets_and_timings_identical": true,
+    "only_expected_fixation_values_changed": true
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "neurogym": "2.3.1",
+    "sb3_optional_path_enabled": true,
+    "core_and_rl_requirements": [
+      {
+        "requirement": "pydantic-settings",
+        "installed": "2.15.0",
+        "satisfied": true
+      },
+      {
+        "requirement": "loguru",
+        "installed": "0.7.3",
+        "satisfied": true
+      },
+      {
+        "requirement": "tqdm",
+        "installed": "4.70.0",
+        "satisfied": true
+      },
+      {
+        "requirement": "tomlkit",
+        "installed": "0.15.1",
+        "satisfied": true
+      },
+      {
+        "requirement": "numpy==2.2.*",
+        "installed": "2.2.6",
+        "satisfied": true
+      },
+      {
+        "requirement": "gymnasium==0.29.*",
+        "installed": "0.29.1",
+        "satisfied": true
+      },
+      {
+        "requirement": "matplotlib==3.10.*",
+        "installed": "3.10.9",
+        "satisfied": true
+      },
+      {
+        "requirement": "scipy",
+        "installed": "1.18.1",
+        "satisfied": true
+      },
+      {
+        "requirement": "natsort",
+        "installed": "8.4.0",
+        "satisfied": true
+      },
+      {
+        "requirement": "stable-baselines3>=2.3.2",
+        "installed": "2.9.0",
+        "satisfied": true
+      },
+      {
+        "requirement": "sb3-contrib",
+        "installed": "2.9.0",
+        "satisfied": true
+      }
+    ],
+    "installed_distributions": [
+      {
+        "name": "absl-py",
+        "version": "2.5.0"
+      },
+      {
+        "name": "alphagenome",
+        "version": "0.9.0"
+      },
+      {
+        "name": "anndata",
+        "version": "0.13.3.post0"
+      },
+      {
+        "name": "annotated-types",
+        "version": "0.8.0"
+      },
+      {
+        "name": "array-api-compat",
+        "version": "1.15.0"
+      },
+      {
+        "name": "ast_serialize",
+        "version": "0.11.1"
+      },
+      {
+        "name": "build",
+        "version": "1.6.0"
+      },
+      {
+        "name": "cloudpickle",
+        "version": "3.1.2"
+      },
+      {
+        "name": "colorama",
+        "version": "0.4.6"
+      },
+      {
+        "name": "contourpy",
+        "version": "1.3.3"
+      },
+      {
+        "name": "cycler",
+        "version": "0.12.1"
+      },
+      {
+        "name": "donfig",
+        "version": "0.8.1.post1"
+      },
+      {
+        "name": "Farama-Notifications",
+        "version": "0.0.6"
+      },
+      {
+        "name": "filelock",
+        "version": "3.32.6"
+      },
+      {
+        "name": "fonttools",
+        "version": "4.64.0"
+      },
+      {
+        "name": "fsspec",
+        "version": "2026.7.0"
+      },
+      {
+        "name": "google-crc32c",
+        "version": "1.8.0"
+      },
+      {
+        "name": "grpcio",
+        "version": "1.83.1"
+      },
+      {
+        "name": "gymnasium",
+        "version": "0.29.1"
+      },
+      {
+        "name": "h5py",
+        "version": "3.16.0"
+      },
+      {
+        "name": "immutabledict",
+        "version": "4.3.1"
+      },
+      {
+        "name": "iniconfig",
+        "version": "2.3.0"
+      },
+      {
+        "name": "jaxtyping",
+        "version": "0.3.11"
+      },
+      {
+        "name": "Jinja2",
+        "version": "3.1.6"
+      },
+      {
+        "name": "kiwisolver",
+        "version": "1.5.1"
+      },
+      {
+        "name": "legacy-api-wrap",
+        "version": "1.5"
+      },
+      {
+        "name": "librt",
+        "version": "0.15.0"
+      },
+      {
+        "name": "loguru",
+        "version": "0.7.3"
+      },
+      {
+        "name": "MarkupSafe",
+        "version": "3.0.3"
+      },
+      {
+        "name": "matplotlib",
+        "version": "3.10.9"
+      },
+      {
+        "name": "ml_dtypes",
+        "version": "0.6.0"
+      },
+      {
+        "name": "mpmath",
+        "version": "1.3.0"
+      },
+      {
+        "name": "mypy",
+        "version": "2.3.1"
+      },
+      {
+        "name": "mypy_extensions",
+        "version": "1.1.0"
+      },
+      {
+        "name": "natsort",
+        "version": "8.4.0"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "neurogym",
+        "version": "2.3.1"
+      },
+      {
+        "name": "numcodecs",
+        "version": "0.16.5"
+      },
+      {
+        "name": "numpy",
+        "version": "2.2.6"
+      },
+      {
+        "name": "optype",
+        "version": "0.17.1"
+      },
+      {
+        "name": "packaging",
+        "version": "26.3"
+      },
+      {
+        "name": "pandas",
+        "version": "3.0.5"
+      },
+      {
+        "name": "pathspec",
+        "version": "1.1.1"
+      },
+      {
+        "name": "pillow",
+        "version": "12.3.0"
+      },
+      {
+        "name": "pip",
+        "version": "25.0.1"
+      },
+      {
+        "name": "pluggy",
+        "version": "1.6.0"
+      },
+      {
+        "name": "protobuf",
+        "version": "7.36.1"
+      },
+      {
+        "name": "pyarrow",
+        "version": "25.0.1"
+      },
+      {
+        "name": "pydantic",
+        "version": "2.13.5"
+      },
+      {
+        "name": "pydantic-settings",
+        "version": "2.15.0"
+      },
+      {
+        "name": "pydantic_core",
+        "version": "2.46.5"
+      },
+      {
+        "name": "pyfaidx",
+        "version": "0.9.0.4"
+      },
+      {
+        "name": "Pygments",
+        "version": "2.21.0"
+      },
+      {
+        "name": "pyparsing",
+        "version": "3.3.2"
+      },
+      {
+        "name": "pyproject_hooks",
+        "version": "1.2.0"
+      },
+      {
+        "name": "pytest",
+        "version": "9.1.1"
+      },
+      {
+        "name": "python-dateutil",
+        "version": "2.9.0.post0"
+      },
+      {
+        "name": "python-dotenv",
+        "version": "1.2.3"
+      },
+      {
+        "name": "PyYAML",
+        "version": "6.0.3"
+      },
+      {
+        "name": "ruff",
+        "version": "0.11.13"
+      },
+      {
+        "name": "sb3_contrib",
+        "version": "2.9.0"
+      },
+      {
+        "name": "scipy",
+        "version": "1.18.1"
+      },
+      {
+        "name": "scipy-stubs",
+        "version": "1.17.1.5"
+      },
+      {
+        "name": "scverse-misc",
+        "version": "0.1.5"
+      },
+      {
+        "name": "seaborn",
+        "version": "0.13.2"
+      },
+      {
+        "name": "session-info2",
+        "version": "0.4.2"
+      },
+      {
+        "name": "setuptools",
+        "version": "84.0.0"
+      },
+      {
+        "name": "setuptools-scm",
+        "version": "10.2.3"
+      },
+      {
+        "name": "six",
+        "version": "1.17.0"
+      },
+      {
+        "name": "stable_baselines3",
+        "version": "2.9.0"
+      },
+      {
+        "name": "sympy",
+        "version": "1.14.0"
+      },
+      {
+        "name": "tomlkit",
+        "version": "0.15.1"
+      },
+      {
+        "name": "torch",
+        "version": "2.14.0+cpu"
+      },
+      {
+        "name": "tqdm",
+        "version": "4.70.0"
+      },
+      {
+        "name": "typeguard",
+        "version": "4.6.0"
+      },
+      {
+        "name": "types-docutils",
+        "version": "0.23.0.20260827"
+      },
+      {
+        "name": "typing-inspection",
+        "version": "0.4.4"
+      },
+      {
+        "name": "typing_extensions",
+        "version": "4.16.0"
+      },
+      {
+        "name": "tzdata",
+        "version": "2026.3"
+      },
+      {
+        "name": "vcs-versioning",
+        "version": "2.3.4"
+      },
+      {
+        "name": "wadler_lindig",
+        "version": "0.1.7"
+      },
+      {
+        "name": "wheel",
+        "version": "0.48.0"
+      },
+      {
+        "name": "win32_setctime",
+        "version": "1.2.0"
+      },
+      {
+        "name": "zarr",
+        "version": "3.3.0"
+      },
+      {
+        "name": "zstandard",
+        "version": "0.25.0"
+      }
+    ],
+    "type_check_target": "Python 3.11, as configured by NeuroGym; compatible scipy-stubs 1.17.1.5 and optype 0.17.1."
+  },
+  "limitations": [
+    "One Windows/Python 3.12 runtime; no Linux or multi-version claim.",
+    "Cue semantics change for existing policies; maintainer release/compatibility decision remains.",
+    "Existing ignored early-action rewards are preserved; the cue enables waiting but does not enforce it.",
+    "No trained-model improvement, new learning algorithm or framework superiority demonstrated."
+  ]
+}
