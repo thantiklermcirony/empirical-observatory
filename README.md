@@ -1,5 +1,9 @@
 # The Empirical Observatory
 
+**[CURRENT PROGRAMME: mathematical atlas, quantum mechanisms and cellular adaptation](PROGRAMME_STATUS.md)**
+
+12 September: published a tested quantum-input repair; three independently reviewed research workstreams are being connected through one inquiry framework. [What is published, what is still local, and what comes next](PROGRAMME_STATUS.md).
+
 **[ACTIVE CONTEXT: RESUME WITH EVIDENCE](https://empirical-observatory.madmanmuzza.chatgpt.site/active-context)**
 
 A local tool for coding agents: record actual checks, inspect whether their declared dependencies changed, and propose relevant rechecks. Try the interactive recorded replay, then run the zero-dependency Python tool on a disposable example. [Source and setup](automation/active-context/README.md) · [Complete diagnostic results](public/research/Active_Context_Results.md) · [Download](public/research/Active_Context_0.1.zip). Explicit dependency checking is implemented; automatic dependency discovery and improved AI task performance remain unproven.
