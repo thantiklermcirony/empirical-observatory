@@ -73,13 +73,17 @@ export function measure(
 }
 export const entropy = (p: number[]) =>
   -p.reduce((s, x) => s + (x > 0 ? x * Math.log2(x) : 0), 0);
-export function updatePrior(prior: number[], m: Measurement) {
+function validatePrior(prior: number[]) {
   if (
+    !Array.isArray(prior) ||
     prior.length !== 6 ||
-    prior.some((p) => !Number.isFinite(p) || p < 0) ||
+    Array.from(prior).some((p) => !Number.isFinite(p) || p < 0) ||
     Math.abs(prior.reduce((a, b) => a + b, 0) - 1) > 1e-8
   )
     throw new Error('Six prior probabilities must sum to one.');
+}
+export function updatePrior(prior: number[], m: Measurement) {
+  validatePrior(prior);
   finite(m.shots, 'Shots', 1, 4096);
   finite(m.plus, 'Plus count', 0, m.shots);
   if (!Number.isInteger(m.plus) || !Number.isInteger(m.shots))
@@ -105,6 +109,7 @@ function binomial(n: number, k: number, p: number) {
   return choose * p ** k * (1 - p) ** (n - k);
 }
 export function suggestBasis(prior: number[], noise = 0.12, shots = 8) {
+  validatePrior(prior);
   finite(shots, 'Planning shots', 1, 32);
   if (!Number.isInteger(shots)) throw new Error('Shots must be an integer.');
   return (['X', 'Y', 'Z'] as Basis[])
