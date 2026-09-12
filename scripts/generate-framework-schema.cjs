@@ -1,0 +1,2 @@
+/* oxlint-disable typescript/no-require-imports -- CommonJS CLI bootstrap patches the Node os module before Drizzle loads. */
+const os=require('node:os');const original=os.userInfo;os.userInfo=function(...args){try{return original.apply(os,args);}catch(error){if(error?.info?.syscall!=='uv_os_get_passwd')throw error;return{username:'observatory-schema',uid:-1,gid:-1,shell:null,homedir:os.homedir()};}};require('../node_modules/drizzle-kit/bin.cjs');

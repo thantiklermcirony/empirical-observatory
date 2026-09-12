@@ -2,6 +2,8 @@
 /* oxlint-disable next/no-html-link-for-pages -- Native navigation preserves the verified production link contract. */
 import { useEffect, useMemo, useState } from 'react';
 import TemporalStateLab from './TemporalStateLab';
+import {resolveAnatomySystem} from '@/lib/science-registry';
+import AnatomyMechanisms from './AnatomyMechanisms';
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -156,7 +158,7 @@ export default function HumanConditionLab() {
   const [worldLens, setWorldLens] = useState<'history' | 'complexity' | 'lifecourse'>('history');
   const worldOptions = worldLens === 'history' ? historicalWorlds : worldLens === 'complexity' ? complexityWorlds : lifeCourseWorlds;
   const world = worldOptions[Math.min(worldIndex, worldOptions.length - 1)];
-  const focus = nodes.find((node) => node.id === selected) ?? nodes[0];
+  const focus = nodes.find((node) => node.id === selected) ?? {...nodes[0],id:'unmapped',label:'No selected connection',short:'GAP',value:'unmapped',unit:'',description:'Select a graph node explicitly. The anatomical selection has no mapped connection.',source:{label:'Living framework',href:'/framework'},system:'unmapped'};
   const state = humanState(hour);
   const visibleEdges = useMemo(() => edges.filter((edge) =>
     (activePath === 'all' || edge.path.includes(activePath)) &&
@@ -164,12 +166,14 @@ export default function HumanConditionLab() {
   const activeIds = new Set(visibleEdges.flatMap((edge) => [edge.from, edge.to]));
   const linked = visibleEdges.filter((edge) => edge.from === focus.id || edge.to === focus.id);
   useEffect(() => {
-    const systemNode: Record<string,string> = {cardiac:'heart',respiratory:'lung',digestive:'gut',nervous:'brain',sensory:'retina',immune:'immune',lymphatic:'immune',integumentary:'weather'};
+    const systemNode: Record<string,string> = {cardiac:'heart',arterial:'heart',venous:'heart',respiratory:'lung',digestive:'gut',nervous:'brain',sensory:'retina',immune:'immune',lymphatic:'immune',integumentary:'weather'};
     const receive = (event: MessageEvent) => {
-      if (event.origin !== window.location.origin || event.data?.type !== 'observatory:anatomy-select') return;
-      const next = {id:String(event.data.id),name:String(event.data.name),system:String(event.data.system)};
+      if (event.origin !== window.location.origin || event.source !== document.querySelector<HTMLIFrameElement>('iframe[title="Exploded 3D Human Atlas"]')?.contentWindow) return;
+      if(event.data?.type==='observatory:anatomy-clear'){setAnatomySelection(null);setSelected('');return;}
+      if(event.data?.type!=='observatory:anatomy-select')return;
+      const next = {systems:Array.isArray(event.data.systems)?event.data.systems:[],meshIds:Array.isArray(event.data.meshIds)?event.data.meshIds:[],id:String(event.data.id),name:String(event.data.name),system:resolveAnatomySystem(String(event.data.id),Array.isArray(event.data.systems)?event.data.systems:[],String(event.data.system))};
       setAnatomySelection(next);
-      if (systemNode[next.system]) setSelected(systemNode[next.system]);
+      setSelected(systemNode[next.system] ?? '');
     };
     window.addEventListener('message', receive);
     return () => window.removeEventListener('message', receive);
@@ -198,7 +202,8 @@ export default function HumanConditionLab() {
         <section className="anatomy-frame" aria-label="Exploded three-dimensional human anatomy">
           <div className="anatomy-frame-head"><span><b>ANATOMICAL COORDINATE SYSTEM</b>2,234 selectable structures · 15 systems · adult male reference</span><span>Drag · zoom · isolate · explode</span></div>
           <iframe title="Exploded 3D Human Atlas" src="/anatomy/index.html" allow="fullscreen" />
-          {anatomySelection && <button className="anatomy-port" onClick={() => setViewMode('connections')}><small>SELECTED STRUCTURE / {anatomySelection.id}</small><b>{anatomySelection.name}</b><span>Trace its {anatomySelection.system} connections <ArrowUpRight size={14}/></span></button>}
+          {anatomySelection && <div className="anatomy-port"><small>SELECTED STRUCTURE / {anatomySelection.id}</small><b>{anatomySelection.name}</b><span>Inspect its mapped mechanisms below</span></div>}
+          <AnatomyMechanisms selection={anatomySelection}/>
           <div className="anatomy-credit">BodyParts3D 4.0 © Database Center for Life Science, CC BY 4.0. Viewer adapted from <a href="https://github.com/ashemag/human-atlas" target="_blank" rel="noreferrer">Human Atlas</a>, MIT. Educational reference; not diagnostic or surgical.</div>
         </section>
       ) : viewMode === 'time' ? <TemporalStateLab/> : viewMode === 'worldline' ? (
@@ -224,6 +229,7 @@ export default function HumanConditionLab() {
         </section>
       ) : (
       <section className="human-console" aria-label="Interactive human systems explorer">
+        {!selected&&<div className="sf-empty" role="status"><b>No connection mapped for this selection.</b><p>The graph below is the general programme map. Choose a node to inspect that node explicitly.</p></div>}
         <aside className="human-controls">
           <div className="console-title"><Filter size={16}/><span>PATH FILTER</span></div>
           <div className="path-list">{paths.map((path) => <button key={path.id} className={activePath === path.id ? 'active' : ''} onClick={() => setActivePath(path.id)}>{path.label}<ArrowUpRight size={14}/></button>)}</div>

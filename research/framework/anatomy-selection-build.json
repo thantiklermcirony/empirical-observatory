@@ -1,0 +1,10 @@
+{
+  "purpose": "Preserved anatomy UI source with complete selection/clear bridge. Geometry unchanged.",
+  "build": "node node_modules/vite/bin/vite.js build --configLoader runner",
+  "sourceArchiveSha256": "9f6edb66ce44c81c7b394d99ab928fef94d5931b54d22c5c93b672f3c067bc84",
+  "assets": {
+    "index-A30yAhSQ.css": "d7571a9768abc265dbb793b3cccea963cb0aae8bf4eccdfd2e885f177bf22446",
+    "index-CwHXi6gh.js": "bcf9df25c2a04b9917049744bfd89c6240a3007f330b7b793966d3a74f5b4844"
+  },
+  "indexSha256": "a0e29704f3bea9748a1e25ded923adedf36d84ca19273d22b1e40ba50c4274ad"
+}

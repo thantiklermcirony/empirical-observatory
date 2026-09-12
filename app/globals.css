@@ -15,6 +15,7 @@
 @import './observatory-office.css';
 @import './observatory-labs.css';
 @import './science-rooms.css';
+@import './framework.css';
 @custom-variant dark (&:is(.dark *));
 @theme inline {
   --color-background: var(--background);
