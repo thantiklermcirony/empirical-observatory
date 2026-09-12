@@ -2,10 +2,14 @@
 
 [![Laboratory — enter the Observatory](https://img.shields.io/badge/LABORATORY-ENTER_THE_OBSERVATORY-87e6a1?style=for-the-badge&labelColor=10231a)](https://empirical-observatory.madmanmuzza.chatgpt.site/)
 
-Ask a declared-model question and collect a traceable laboratory printout. The terminal shows the current hosted AI connection status.
+**[ENTER THE CENTRAL DESK](https://empirical-observatory.madmanmuzza.chatgpt.site/question)** · **[OPEN AI INTERFACE](https://empirical-observatory.madmanmuzza.chatgpt.site/agents)** · **[LIVING ENCYCLOPEDIA](https://empirical-observatory.madmanmuzza.chatgpt.site/encyclopedia)**
+
+The central desk turns a declared question into typed quantities and ordered operations, runs its applicable fixed models, and prints branch results, assumptions and gaps. It now has a shared 30-day private printout store: each laboratory and the encyclopedia can read the same saved record. Other AIs can call the HTTP interface without a model key. The desk has an optional shared hosted language interpreter, gated by a securely configured API account and a 200-call daily allowance. Until connected, complete documented templates and fourteen-field structured inquiries work; other prose returns explicit missing requirements. Connection readiness is reported by `/api/inquiry/interpret`.
+
+[All ten final laboratory source releases](https://github.com/thantiklermcirony/empirical-observatory/releases/tag/laboratory-sources-2026-09-12) preserve exact archives, reconstruction, notices, review history and candidate/held distinctions. The public library is a finite set of source-pinned research cases, not an automatically certified encyclopedia of science. [Integration scope and reproduction](CENTRAL_DESK.md).
 
 
-**[Temporal Grammar: the shared inquiry routing spine](automation/temporal-grammar/README.md)** — working local routing across mathematics, resource geometry and the quantum reference. It preserves action order, state, measurement context and premises; changed inputs update scoped conclusions or expose missing connections. Includes runnable source, 50 tests and independent correction review. The hosted desk and shared findings-store connection remain pending.
+**[Temporal Grammar: the shared inquiry routing spine](automation/temporal-grammar/README.md)** — working local routing across mathematics, resource geometry and the quantum reference. It preserves action order, state, measurement context and premises; changed inputs update scoped conclusions or expose missing connections. Includes runnable source, 50 tests and independent correction review. The reviewed fixed operations now also have a hosted TypeScript adapter and explicit private printout storage; scientific admission and general language interpretation remain separate.
 
 [Mathematics: all source releases, capability mappings and reviews](research/mathematics/README.md). Includes the Integration Companion, Recovery Challenge Lab and corrected Discovery Garden review. Candidate review and live deployment status are stated separately.
 
@@ -16,6 +20,8 @@ Ask a declared-model question and collect a traceable laboratory printout. The t
 
 
 12 September: the [mathematical theory atlas](https://github.com/thantiklermcirony/empirical-architecture/tree/main/research/theory-atlas-v0.1), [biology redox inquiry](research/biology-redox-v0.1.1/README.md) and [Geometry Discovery Lab with offline explorer](research/geometry-discovery-v0.2.1/README.md) are public. Five coordinated workstreams are connecting reviewed mathematics, mechanisms and visual explanations. [Release status, open corrections and the next connected laboratories](PROGRAMME_STATUS.md).
+
+**Two-family world / version 0.1:** The `/families` route runs a bounded agent world with online sigmoid learning, coined operational language, adaptive relationship attention, word rings, personal journals and resumable checkpoints. [Methods and complete results](research/two-family-world/README.md) · [Standalone runnable package](public/research/Two_Family_World_0.1.zip). Nonlinear prediction improved on the synthetic holdout, but learned control failed to beat random and adaptive relationship weights showed no consistent benefit. Source/version saving does not itself publish this route.
 
 
 
@@ -183,11 +189,11 @@ The hosted site counts daily page views, project views, lab opens and GitHub lin
 
 
 
-No experiment records are uploaded by the app. The browser retains the latest 30 records; export important results because browser storage can be cleared or become full. Imports are untrusted and validated. A valid file is not an attested human or hardware measurement. Simulation replay recomputes evidence; behaviour is reanalysed rather than physically replayed. Seeded runs are repeatable under the declared engine version.
+The central desk sends requests for computation; its explicit Save action stores a private 30-day printout as described in /privacy. Other legacy experiments retain their existing local-record behavior. The browser retains the latest 30 records; export important results because browser storage can be cleared or become full. Imports are untrusted and validated. A valid file is not an attested human or hardware measurement. Simulation replay recomputes evidence; behaviour is reanalysed rather than physically replayed. Seeded runs are repeatable under the declared engine version.
 
 
 
-The optional WebMCP tools expose a station summary and navigation only. They cannot start a human experiment, read raw response/signal records, connect hardware or execute cloud jobs.
+The optional WebMCP station tools expose summary and navigation; the central desk additionally exposes declared inquiry execution and its current scoped printout. They cannot start a human experiment, read raw response/signal records, connect hardware or execute cloud jobs.
 
 
 

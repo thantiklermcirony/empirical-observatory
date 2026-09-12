@@ -6,6 +6,12 @@
 @import './atlas.css';
 @import './recovery.css';
 @import './active-context.css';
+@import './human.css';
+@import './human-atlas.css';
+@import './question.css';
+@import './question-room.css';
+@import './central-desk.css';
+@import './observatory-office.css';
 @custom-variant dark (&:is(.dark *));
 @theme inline {
   --color-background: var(--background);

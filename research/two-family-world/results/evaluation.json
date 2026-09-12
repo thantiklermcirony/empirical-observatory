@@ -1,0 +1,1099 @@
+{
+  "version": "two-family-world/0.1.0",
+  "source": "synthetic authored simulator; 0.1 development, not consciousness evidence",
+  "development": false,
+  "seeds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012
+  ],
+  "sourceHashes": {
+    "lib/engine/family-world.ts": "9357ac06f410ed6841cbc6a116358fb5d04b4aeb0459a103e4fa3c11786c30fe",
+    "lib/engine/family-language.ts": "f430797320c9b4abe981058681ba80ba160e4538f18e35d558c1a30d983a0de4",
+    "scripts/family-world-research.ts": "1bbcf5b400d4fee1457bf0bdf1db6a05d9102df024c2257a69a8b41a362bac95",
+    "research/two-family-world/PROTOCOL.md": "177feaa0f69de228a34f0f1a8eaa89d91036d5a2eb7b05d755b2900a46d41356"
+  },
+  "language": {
+    "type": "finite compositional protocol check; no general language claim",
+    "unknownBlocked": true,
+    "trainingMessages": [
+      {
+        "dialect": "a0",
+        "order": "SVO",
+        "words": [
+          "zefa",
+          "zoda",
+          "zada"
+        ]
+      },
+      {
+        "dialect": "a0",
+        "order": "SVO",
+        "words": [
+          "ziba",
+          "xiro",
+          "xupo"
+        ]
+      },
+      {
+        "dialect": "a0",
+        "order": "SVO",
+        "words": [
+          "zefa",
+          "xepo",
+          "xono"
+        ]
+      }
+    ],
+    "heldout": [
+      {
+        "meaning": {
+          "subject": "agent:1",
+          "verb": "verb:forage",
+          "object": "noun:food"
+        },
+        "message": {
+          "dialect": "a0",
+          "order": "SVO",
+          "words": [
+            "ziba",
+            "zoda",
+            "zada"
+          ]
+        },
+        "decoded": {
+          "subject": "agent:1",
+          "verb": "verb:forage",
+          "object": "noun:food"
+        },
+        "correct": true
+      },
+      {
+        "meaning": {
+          "subject": "agent:0",
+          "verb": "verb:drink",
+          "object": "noun:water"
+        },
+        "message": {
+          "dialect": "a0",
+          "order": "SVO",
+          "words": [
+            "zefa",
+            "xiro",
+            "xupo"
+          ]
+        },
+        "decoded": {
+          "subject": "agent:0",
+          "verb": "verb:drink",
+          "object": "noun:water"
+        },
+        "correct": true
+      },
+      {
+        "meaning": {
+          "subject": "agent:1",
+          "verb": "verb:rest",
+          "object": "noun:body"
+        },
+        "message": {
+          "dialect": "a0",
+          "order": "SVO",
+          "words": [
+            "ziba",
+            "xepo",
+            "xono"
+          ]
+        },
+        "decoded": {
+          "subject": "agent:1",
+          "verb": "verb:rest",
+          "object": "noun:body"
+        },
+        "correct": true
+      }
+    ],
+    "correct": 3,
+    "total": 3,
+    "speaker": {
+      "dialect": "a0",
+      "order": "SVO",
+      "grammarReviews": 0,
+      "words": [
+        {
+          "word": "zefa",
+          "meaning": "agent:0"
+        },
+        {
+          "word": "zoda",
+          "meaning": "verb:forage"
+        },
+        {
+          "word": "zada",
+          "meaning": "noun:food"
+        },
+        {
+          "word": "ziba",
+          "meaning": "agent:1"
+        },
+        {
+          "word": "xiro",
+          "meaning": "verb:drink"
+        },
+        {
+          "word": "xupo",
+          "meaning": "noun:water"
+        },
+        {
+          "word": "xepo",
+          "meaning": "verb:rest"
+        },
+        {
+          "word": "xono",
+          "meaning": "noun:body"
+        }
+      ],
+      "translations": 8
+    },
+    "listener": {
+      "dialect": "a1",
+      "order": "SVO",
+      "grammarReviews": 0,
+      "words": [],
+      "translations": 8
+    }
+  },
+  "architectures": {
+    "stackedSigmoid": {
+      "dimensions": [
+        34,
+        20,
+        12,
+        4
+      ],
+      "parameters": 1004,
+      "multiplyAddsPerPrediction": 968
+    },
+    "linearSigmoid": {
+      "dimensions": [
+        34,
+        4
+      ],
+      "parameters": 140,
+      "multiplyAddsPerPrediction": 136
+    },
+    "note": "Parameter and matrix multiply-add counts only; not tokens, energy, dollars or equivalent general intelligence."
+  },
+  "summary": {
+    "predictionLearned": {
+      "mean": 0.005906470853512102,
+      "ci95": [
+        0.0056517768609680415,
+        0.006156651150516845
+      ]
+    },
+    "predictionInitial": {
+      "mean": 0.01859422375466402,
+      "ci95": [
+        0.01785725035945777,
+        0.019378679363235157
+      ]
+    },
+    "predictionConstant": {
+      "mean": 0.010263485080428562,
+      "ci95": [
+        0.01008522253947526,
+        0.01046520264626747
+      ]
+    },
+    "predictionLinear": {
+      "mean": 0.011423739771470631,
+      "ci95": [
+        0.01072475901346541,
+        0.01222505563710359
+      ]
+    },
+    "predictionDeltaVsConstant": {
+      "mean": -0.00435701422691646,
+      "ci95": [
+        -0.004712963361285235,
+        -0.004014347440756265
+      ]
+    },
+    "deficitLearned": {
+      "mean": 0.1273788345024924,
+      "ci95": [
+        0.10101284930852938,
+        0.15125165926844478
+      ]
+    },
+    "deficitRandom": {
+      "mean": 0.05963362546751311,
+      "ci95": [
+        0.05265238191550844,
+        0.06577766685297137
+      ]
+    },
+    "deficitNeedFirst": {
+      "mean": 0.23048122066400512,
+      "ci95": [
+        0.22819578184623523,
+        0.23404990588587163
+      ]
+    },
+    "deficitDeltaVsRandom": {
+      "mean": 0.06774520903497933,
+      "ci95": [
+        0.04248039158148486,
+        0.09057434958865368
+      ]
+    },
+    "deficitDeltaVsNeedFirst": {
+      "mean": -0.10310238616151272,
+      "ci95": [
+        -0.1296222536684812,
+        -0.07858596950677606
+      ]
+    },
+    "deficitLinear": {
+      "mean": 0.06664939061683522,
+      "ci95": [
+        0.044423999935236734,
+        0.09156703976108356
+      ]
+    },
+    "deficitFixedAttention": {
+      "mean": 0.12200392882880247,
+      "ci95": [
+        0.09527141196073208,
+        0.14860906352318315
+      ]
+    },
+    "deficitDeltaVsFixedAttention": {
+      "mean": 0.005374905673689948,
+      "ci95": [
+        -0.008333191217281799,
+        0.019867269107844778
+      ]
+    },
+    "partnerBrierRemembered": {
+      "mean": 0.12665030735673197,
+      "ci95": [
+        0.11815313305572066,
+        0.13346544715447153
+      ]
+    },
+    "partnerBrierErased": {
+      "mean": 0.2481975562668294,
+      "ci95": [
+        0.2475156861250827,
+        0.24886056495452888
+      ]
+    },
+    "partnerDelta": {
+      "mean": -0.12154724891009742,
+      "ci95": [
+        -0.12994471111918732,
+        -0.11482144044754174
+      ]
+    },
+    "equalPartnerDelta": {
+      "mean": 0.0005686944850120668,
+      "ci95": [
+        -0.00018096537888739883,
+        0.0014430961555655906
+      ]
+    }
+  },
+  "rows": [
+    {
+      "seed": 1001,
+      "prediction": {
+        "learned": 0.006002073506135863,
+        "initial": 0.01994124005168412,
+        "constant": 0.010020627643165069,
+        "linear": 0.01011107646279364,
+        "observations": 1951
+      },
+      "control": {
+        "learned": 0.15449442250329345,
+        "random": 0.04631517203563104,
+        "needFirst": 0.22944276402627758,
+        "linear": 0.062251786481778586,
+        "fixedAttention": 0.11819591650163179
+      },
+      "partners": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.8780487804878049,
+          0.14634146341463414
+        ],
+        "brierRemembered": 0.14411957168352177,
+        "brierErased": 0.24805365035817611,
+        "preference": 0.9971388276053765,
+        "requestValue": 0.27121951219512197,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5365853658536586,
+          0.4878048780487805
+        ],
+        "brierRemembered": 0.24982897085068456,
+        "brierErased": 0.24811537875323794,
+        "preference": 0.5963414124644856,
+        "requestValue": 0.13463414634146342,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.8780487804878049,
+          0.14634146341463414
+        ],
+        "brierRemembered": 0.14411957168352177,
+        "brierErased": 0.24805365035817611,
+        "preference": 0.9971388276053765,
+        "requestValue": -0.04878048780487804,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1002,
+      "prediction": {
+        "learned": 0.0062797182301889435,
+        "initial": 0.017155333950615834,
+        "constant": 0.01050113812308585,
+        "linear": 0.011879077587462565,
+        "observations": 1927
+      },
+      "control": {
+        "learned": 0.13889706627445486,
+        "random": 0.06462878930157111,
+        "needFirst": 0.22787355660146513,
+        "linear": 0.0014512561548953792,
+        "fixedAttention": 0.08226834293890625
+      },
+      "partners": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.8048780487804879,
+          0.1951219512195122
+        ],
+        "brierRemembered": 0.1188652587745386,
+        "brierErased": 0.25,
+        "preference": 0.9924456506478901,
+        "requestValue": 0.24195121951219517,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.6219512195121951,
+          0.5975609756097561
+        ],
+        "brierRemembered": 0.2407317073170735,
+        "brierErased": 0.2406790123456797,
+        "preference": 0.5486263082112246,
+        "requestValue": 0.16878048780487803,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.8048780487804879,
+          0.1951219512195122
+        ],
+        "brierRemembered": 0.1188652587745386,
+        "brierErased": 0.25,
+        "preference": 0.9924456506478901,
+        "requestValue": -0.07804878048780484,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1003,
+      "prediction": {
+        "learned": 0.005773468815921677,
+        "initial": 0.020890892758478417,
+        "constant": 0.01040596533726144,
+        "linear": 0.01093675411708073,
+        "observations": 1902
+      },
+      "control": {
+        "learned": 0.11913331686390854,
+        "random": 0.052758474804917375,
+        "needFirst": 0.24839126087692864,
+        "linear": 0.06399232071763007,
+        "fixedAttention": 0.1485188691413499
+      },
+      "partners": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.18292682926829268,
+          0.9024390243902439
+        ],
+        "brierRemembered": 0.12112433075550211,
+        "brierErased": 0.2471140070111278,
+        "preference": 0.9968465431037435,
+        "requestValue": 0.2809756097560976,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.573170731707317,
+          0.6341463414634146
+        ],
+        "brierRemembered": 0.25429654967281495,
+        "brierErased": 0.255240435909161,
+        "preference": 0.3804108184566538,
+        "requestValue": 0.1492682926829268,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.18292682926829268,
+          0.9024390243902439
+        ],
+        "brierRemembered": 0.12112433075550211,
+        "brierErased": 0.2471140070111278,
+        "preference": 0.9968465431037435,
+        "requestValue": -0.03902439024390242,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1004,
+      "prediction": {
+        "learned": 0.005211190635065327,
+        "initial": 0.017364772235562473,
+        "constant": 0.010385194235176958,
+        "linear": 0.010113327799957177,
+        "observations": 1933
+      },
+      "control": {
+        "learned": 0.05467869698292378,
+        "random": 0.06915226642473189,
+        "needFirst": 0.2299071674136689,
+        "linear": 0.09849512737190036,
+        "fixedAttention": 0.054211110667909825
+      },
+      "partners": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.23170731707317074,
+          0.926829268292683
+        ],
+        "brierRemembered": 0.12665526472337907,
+        "brierErased": 0.24921734491693484,
+        "preference": 0.9961697042516209,
+        "requestValue": 0.2907317073170732,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5609756097560976,
+          0.5365853658536586
+        ],
+        "brierRemembered": 0.24460142772159515,
+        "brierErased": 0.2445374180765124,
+        "preference": 0.5486263082112246,
+        "requestValue": 0.14439024390243904,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.23170731707317074,
+          0.926829268292683
+        ],
+        "brierRemembered": 0.12665526472337907,
+        "brierErased": 0.24921734491693484,
+        "preference": 0.9961697042516209,
+        "requestValue": -0.0292682926829268,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1005,
+      "prediction": {
+        "learned": 0.005984969990813882,
+        "initial": 0.019198469150606877,
+        "constant": 0.010096357177945478,
+        "linear": 0.01446036917395784,
+        "observations": 1903
+      },
+      "control": {
+        "learned": 0.05124147968281978,
+        "random": 0.03075639767045064,
+        "needFirst": 0.2287518068045267,
+        "linear": 0.17285726244287536,
+        "fixedAttention": 0.05190210964404443
+      },
+      "partners": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.8536585365853658,
+          0.2073170731707317
+        ],
+        "brierRemembered": 0.12610053539559757,
+        "brierErased": 0.24786617893613788,
+        "preference": 0.9943516739130752,
+        "requestValue": 0.26146341463414635,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5487804878048781,
+          0.5609756097560976
+        ],
+        "brierRemembered": 0.24896341463414765,
+        "brierErased": 0.24919753086419824,
+        "preference": 0.47562908352270866,
+        "requestValue": 0.13951219512195123,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.8536585365853658,
+          0.2073170731707317
+        ],
+        "brierRemembered": 0.12610053539559757,
+        "brierErased": 0.24786617893613788,
+        "preference": 0.9943516739130752,
+        "requestValue": -0.058536585365853655,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1006,
+      "prediction": {
+        "learned": 0.0053338387951246055,
+        "initial": 0.01812651084533724,
+        "constant": 0.009878826180474967,
+        "linear": 0.011405425910105852,
+        "observations": 1932
+      },
+      "control": {
+        "learned": 0.16742497264687578,
+        "random": 0.05713667371370855,
+        "needFirst": 0.23256378868310768,
+        "linear": 0.07371393272915389,
+        "fixedAttention": 0.1669071578472895
+      },
+      "partners": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.9024390243902439,
+          0.14634146341463414
+        ],
+        "brierRemembered": 0.0896743010113024,
+        "brierErased": 0.24727632982777123,
+        "preference": 0.9976448207619625,
+        "requestValue": 0.2809756097560976,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5121951219512195,
+          0.5
+        ],
+        "brierRemembered": 0.2490377751338488,
+        "brierErased": 0.24932822740435884,
+        "preference": 0.5243709164772913,
+        "requestValue": 0.12487804878048782,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.9024390243902439,
+          0.14634146341463414
+        ],
+        "brierRemembered": 0.0896743010113024,
+        "brierErased": 0.24727632982777123,
+        "preference": 0.9976448207619625,
+        "requestValue": -0.03902439024390242,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1007,
+      "prediction": {
+        "learned": 0.005452569528309435,
+        "initial": 0.017197381718636724,
+        "constant": 0.010845215729451511,
+        "linear": 0.010379992294551367,
+        "observations": 1917
+      },
+      "control": {
+        "learned": 0.13631813539072996,
+        "random": 0.06947075127441799,
+        "needFirst": 0.2286042235622471,
+        "linear": 0.01116821307646752,
+        "fixedAttention": 0.12891033102969268
+      },
+      "partners": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.2073170731707317,
+          0.9634146341463414
+        ],
+        "brierRemembered": 0.13313503866745946,
+        "brierErased": 0.24925849718030743,
+        "preference": 0.9976448207619625,
+        "requestValue": 0.3053658536585366,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5609756097560976,
+          0.5
+        ],
+        "brierRemembered": 0.2497248661511012,
+        "brierErased": 0.2483291418991007,
+        "preference": 0.6195891815433462,
+        "requestValue": 0.14439024390243904,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.2073170731707317,
+          0.9634146341463414
+        ],
+        "brierRemembered": 0.13313503866745946,
+        "brierErased": 0.24925849718030743,
+        "preference": 0.9976448207619625,
+        "requestValue": -0.014634146341463428,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1008,
+      "prediction": {
+        "learned": 0.0065934698399512095,
+        "initial": 0.017230908828194856,
+        "constant": 0.010117378662184566,
+        "linear": 0.012875669707001738,
+        "observations": 1906
+      },
+      "control": {
+        "learned": 0.14585186412089424,
+        "random": 0.06743055197879248,
+        "needFirst": 0.22708111249786322,
+        "linear": 0.07177786296842456,
+        "fixedAttention": 0.14800416005809602
+      },
+      "partners": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.9146341463414634,
+          0.23170731707317074
+        ],
+        "brierRemembered": 0.11865853658536633,
+        "brierErased": 0.24622770919067186,
+        "preference": 0.9957788375671149,
+        "requestValue": 0.2858536585365854,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5853658536585366,
+          0.5975609756097561
+        ],
+        "brierRemembered": 0.24681737061273135,
+        "brierErased": 0.24699931412894396,
+        "preference": 0.47562908352270866,
+        "requestValue": 0.1541463414634146,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.9146341463414634,
+          0.23170731707317074
+        ],
+        "brierRemembered": 0.11865853658536633,
+        "brierErased": 0.24622770919067186,
+        "preference": 0.9957788375671149,
+        "requestValue": -0.03414634146341461,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1009,
+      "prediction": {
+        "learned": 0.0061144126024755725,
+        "initial": 0.020255349185098727,
+        "constant": 0.01092900177250782,
+        "linear": 0.010280940918774076,
+        "observations": 1906
+      },
+      "control": {
+        "learned": 0.15489989613105193,
+        "random": 0.07278979993946977,
+        "needFirst": 0.22674534567218418,
+        "linear": 0.032690326847113746,
+        "fixedAttention": 0.15289094888725818
+      },
+      "partners": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.24390243902439024,
+          0.9024390243902439
+        ],
+        "brierRemembered": 0.13072278405710833,
+        "brierErased": 0.24956104252400532,
+        "preference": 0.9948740112953391,
+        "requestValue": 0.2809756097560976,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5,
+          0.6097560975609756
+        ],
+        "brierRemembered": 0.2543768590124935,
+        "brierErased": 0.2505864197530871,
+        "preference": 0.2935822826399926,
+        "requestValue": 0.12000000000000001,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.24390243902439024,
+          0.9024390243902439
+        ],
+        "brierRemembered": 0.13072278405710833,
+        "brierErased": 0.24956104252400532,
+        "preference": 0.9948740112953391,
+        "requestValue": -0.03902439024390242,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1010,
+      "prediction": {
+        "learned": 0.006406336760343913,
+        "initial": 0.018231141218495034,
+        "constant": 0.009894251936794942,
+        "linear": 0.013227075154791244,
+        "observations": 1940
+      },
+      "control": {
+        "learned": 0.16404250081644864,
+        "random": 0.05308242880393142,
+        "needFirst": 0.23037460331230136,
+        "linear": 0.05849042469518856,
+        "fixedAttention": 0.2033356253950241
+      },
+      "partners": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.18292682926829268,
+          0.926829268292683
+        ],
+        "brierRemembered": 0.13556662700773323,
+        "brierErased": 0.2464197530864204,
+        "preference": 0.9974040916776518,
+        "requestValue": 0.2907317073170732,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.573170731707317,
+          0.5121951219512195
+        ],
+        "brierRemembered": 0.24537328970850705,
+        "brierErased": 0.24624980948026362,
+        "preference": 0.619589181543346,
+        "requestValue": 0.1492682926829268,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.18292682926829268,
+          0.926829268292683
+        ],
+        "brierRemembered": 0.13556662700773323,
+        "brierErased": 0.2464197530864204,
+        "preference": 0.9974040916776518,
+        "requestValue": -0.0292682926829268,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1011,
+      "prediction": {
+        "learned": 0.006376907937453132,
+        "initial": 0.017313502973933227,
+        "constant": 0.009915580691544027,
+        "linear": 0.010801057773601706,
+        "observations": 1906
+      },
+      "control": {
+        "learned": 0.057680580369749386,
+        "random": 0.06215291416732189,
+        "needFirst": 0.22736852797787765,
+        "linear": 0.06849588333442855,
+        "fixedAttention": 0.05508958196057482
+      },
+      "partners": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.25609756097560976,
+          0.9146341463414634
+        ],
+        "brierRemembered": 0.13448542534205896,
+        "brierErased": 0.2483942996494431,
+        "preference": 0.9948740112953391,
+        "requestValue": 0.2858536585365854,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.6341463414634146,
+          0.6219512195121951
+        ],
+        "brierRemembered": 0.26826293872694895,
+        "brierErased": 0.2687482853223589,
+        "preference": 0.5243709164772913,
+        "requestValue": 0.17365853658536584,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.25609756097560976,
+          0.9146341463414634
+        ],
+        "brierRemembered": 0.13448542534205896,
+        "brierErased": 0.2483942996494431,
+        "preference": 0.9948740112953391,
+        "requestValue": -0.03414634146341461,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 1012,
+      "prediction": {
+        "learned": 0.005348693600361669,
+        "initial": 0.020225182139324692,
+        "constant": 0.010172283475550124,
+        "linear": 0.01061411035756963,
+        "observations": 1917
+      },
+      "control": {
+        "learned": 0.1838830822467587,
+        "random": 0.06992928549521299,
+        "needFirst": 0.2286704905396134,
+        "linear": 0.08440829058216602,
+        "fixedAttention": 0.1538129918738522
+      },
+      "partners": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.8536585365853658,
+          0.24390243902439024
+        ],
+        "brierRemembered": 0.14069601427721595,
+        "brierErased": 0.24898186252095678,
+        "preference": 0.9924456506478901,
+        "requestValue": 0.26146341463414635,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5121951219512195,
+          0.6097560975609756
+        ],
+        "brierRemembered": 0.2529268292682936,
+        "brierErased": 0.25010669105319305,
+        "preference": 0.3142147624658178,
+        "requestValue": 0.12487804878048782,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.8536585365853658,
+          0.24390243902439024
+        ],
+        "brierRemembered": 0.14069601427721595,
+        "brierErased": 0.24898186252095678,
+        "preference": 0.9924456506478901,
+        "requestValue": -0.058536585365853655,
+        "request": false,
+        "cost": 0.4
+      }
+    }
+  ]
+}

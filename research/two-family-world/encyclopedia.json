@@ -1,0 +1,82 @@
+[
+  {
+    "id": "reading-example-0",
+    "noun": "food",
+    "verb": "forage",
+    "text": "Foraging may replenish nutrition. Availability and gardens may matter.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-1",
+    "noun": "water",
+    "verb": "drink",
+    "text": "Drinking may restore hydration. Drought may reduce available water.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-2",
+    "noun": "body",
+    "verb": "rest",
+    "text": "Rest may restore energy; shelter may improve its effect.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-3",
+    "noun": "timber",
+    "verb": "gather",
+    "text": "Gathering may supply materials for a household.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-4",
+    "noun": "shelter",
+    "verb": "build",
+    "text": "Building consumes materials and may reduce exposure.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-5",
+    "noun": "garden",
+    "verb": "plant",
+    "text": "Planting consumes materials and may supply food over time.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-6",
+    "noun": "encyclopedia",
+    "verb": "study",
+    "text": "Studying adds a noun–verb packet to remembered vocabulary.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-7",
+    "noun": "companion",
+    "verb": "help",
+    "text": "Helping transfers nutrition at a cost to the giver. Observe who benefited.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-8",
+    "noun": "experience",
+    "verb": "teach",
+    "text": "Teaching can pass one observed transition to another learner.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  },
+  {
+    "id": "reading-example-9",
+    "noun": "household",
+    "verb": "welcome",
+    "text": "A provisioned household can add one novice with a fresh network.",
+    "source": "Authored miniature-world encyclopedia v1; not external evidence",
+    "status": "hypothesis"
+  }
+]

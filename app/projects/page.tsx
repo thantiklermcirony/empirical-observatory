@@ -12,6 +12,27 @@ export const metadata: Metadata = {
 const github = 'https://github.com/thantiklermcirony';
 const nextMissions = [
   {
+    name: 'Two-family world / learning and language',
+    status: 'RUNNABLE PROTOTYPE / CONTROL GATE FAILED',
+    description: 'Run two households with bounded learners, invented operational words and personal journals. Inspect complexity-dependent relationship attention, save their world, and compare both sigmoid architectures against the recorded failures.',
+    href: '/families',
+    gate: '140 or 1,004 parameters per agent · 12-seed synthetic comparison',
+  },
+  {
+    name: 'Central Desk / the shared inquiry spine',
+    status: 'FOUR EXECUTABLE MODELS / OPEN AGENT API',
+    description: 'Run a declared prompt or structured inquiry through fixed scientific operations. Read graphical branch results, save one shared printout, and inspect its relationship to the encyclopedia. General-purpose AI interpretation is not yet connected.',
+    href: '/question',
+    gate: 'Typed temporal grammar · private saved printouts · public HTTP interface',
+  },
+  {
+    name: 'Human Condition Laboratory',
+    status: 'INTERACTIVE SYSTEM MAP / BETA',
+    description: 'Place a real human inside Earth systems. Trace light, air, nerves, heart, gut, microbes, cells and experience through typed, graded connections.',
+    href: '/human',
+    gate: 'One-day reference model · personal-data and causal tests next',
+  },
+  {
     name: 'Active Context / the AI tool',
     status: 'LOCAL TOOL / OPEN COMPARISON',
     description: 'Record actual checks, inspect which results still apply after declared inputs change, and give an agent a relevant recheck plan. Try the recorded replay and local tool.',
@@ -125,6 +146,9 @@ export default function Projects() {
           project.
         </p>
         <div className="project-links">
+          <a href="/human">
+            Enter the Human Condition Lab <ArrowUpRight size={18} />
+          </a>
           <a href="/atlas">
             Explore the Research Atlas <ArrowUpRight size={18} />
           </a>

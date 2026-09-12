@@ -13,6 +13,15 @@ export type AtlasNode = {
 const programme = 'https://github.com/thantiklermcirony/empirical-architecture';
 export const atlasNodes: AtlasNode[] = [
   {
+    id: 'question-desk', title: 'Question Desk', family: 'experiment',
+    position: [1.2, 1.1, 2.2],
+    question: 'What does a question become when its entities, operations and assumptions are explicit?',
+    evidence: 'A bounded runner executes four declared model adapters and returns calculations, follow-up questions and stopping reasons through the same browser and agent contract.',
+    limit: 'Vocabulary matching is not general language understanding. Conclusions apply to declared model assumptions, not automatically to the real-world referent of the prompt.',
+    next: 'Use external agents to propose reviewed structured questions and add independently checked model adapters.',
+    source: '/question', sourceLabel: 'Open the investigation desk',
+  },
+  {
     id: 'recovery-lab', title: 'Recovery Lab', family: 'experiment',
     position: [-4.2, 1.1, 3.4],
     question: 'Does observed recovery history improve next-week prediction?',

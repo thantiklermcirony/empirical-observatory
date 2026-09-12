@@ -1,4 +1,4 @@
-import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
+import { integer, sqliteTable, text, index } from 'drizzle-orm/sqlite-core';
 
 export const dailyInterest = sqliteTable('daily_interest', {
   day: text('day').primaryKey(),
@@ -12,4 +12,17 @@ export const dailyInterest = sqliteTable('daily_interest', {
   otherEntries: integer('other_entries').notNull().default(0),
   directEntries: integer('direct_entries').notNull().default(0),
   verificationEvents: integer('verification_events').notNull().default(0),
+});
+
+export const labPrintouts = sqliteTable('lab_printouts', {
+  id: text('id').primaryKey(),
+  tokenHash: text('token_hash').notNull(),
+  createdDay: text('created_day').notNull(),
+  expiresAt: text('expires_at').notNull(),
+  printoutJson: text('printout_json').notNull(),
+}, table => [index('lab_printouts_created_day').on(table.createdDay), index('lab_printouts_expiry').on(table.expiresAt)]);
+
+export const aiDailyCalls = sqliteTable('ai_daily_calls', {
+  day: text('day').primaryKey(),
+  calls: integer('calls').notNull().default(0),
 });
