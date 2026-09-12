@@ -27,20 +27,20 @@ jobs:
         run: |
           python - <<'PY'
           import hashlib, io, json, pathlib, subprocess, urllib.request, zipfile
-          url = 'https://github.com/thantiklermcirony/empirical-observatory/releases/download/laboratory-sources-2026-09-12/Observatory_AI_Source_Integration_20260912_v4.zip'
+          url = 'https://github.com/thantiklermcirony/empirical-observatory/releases/download/laboratory-sources-2026-09-12/Observatory_AI_Source_Integration_20260912_v5.zip'
           with urllib.request.urlopen(url, timeout=120) as response:
               data = response.read(80000001)
-          assert len(data) == 20709
-          assert hashlib.sha256(data).hexdigest() == 'ca1232d33bc7960639462fcf8f9bc571cd665344b484f05b6fd6d036bde2aa56'
+          assert len(data) == 28309
+          assert hashlib.sha256(data).hexdigest() == '9296ba7129780a8c796d90bd53c6f4daf2a5e2daed31eecc6a5caf8e11b5ee52'
           archive = zipfile.ZipFile(io.BytesIO(data))
           manifest = json.loads(archive.read('INTEGRATION_MANIFEST.json'))
-          assert manifest['site_commit'] == '9c208ad34afb08b4622fa75a1600cb9ec729459d'
+          assert manifest['site_commit'] == 'a164b86f765e6f3ea343ede2580570d340244974'
           assert manifest['site_previous_commit'] == '3e4a3b7c7b923a9ee73ee3a23062e20a3d2bdc2e'
           assert manifest['base_commit'] == '80881526561d5742ea8dfe013b0eeeb3dbaa83e7'
           subprocess.run(['git','merge-base','--is-ancestor',manifest['base_commit'],'HEAD'],check=True)
           assert manifest['integration_id'] == 'observatory-ai-20260912'
           entries = manifest['entries']
-          assert len(entries) == 4
+          assert len(entries) == 5
           names = {e['path'] for e in entries}
           assert len(names) == len(entries)
           assert set(archive.namelist()) == names | {'INTEGRATION_MANIFEST.json'}
@@ -74,7 +74,7 @@ jobs:
           receipt = root/'research/ai-integration-2026-09-12/INTEGRATION_MANIFEST.json'
           receipt.parent.mkdir(parents=True,exist_ok=True)
           receipt.write_text(json.dumps(manifest,indent=2)+'\n')
-          print('Verified and imported 4 files. Existing public-only research and workflows retained.')
+          print('Verified and imported 5 files. Existing public-only research and workflows retained.')
           PY
       - uses: actions/setup-node@v4
         with:
