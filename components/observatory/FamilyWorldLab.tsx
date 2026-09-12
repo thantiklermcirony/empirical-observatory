@@ -7,12 +7,15 @@ import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { FamilyWorld, partnerProbe, type WorldSnapshot } from '@/lib/engine/family-world';
 
+import {useInstrumentActivity} from '@/lib/instrument-activity';
 const pct = (n: number) => `${Math.round(n * 100)}%`;
 const savedWorldKey = 'observatory-two-family-world-v1';
 export default function FamilyWorldLab() {
+  const instrumentActive=useInstrumentActivity();
   const engine = useRef<FamilyWorld | null>(null);
   const [snapshot, setSnapshot] = useState<WorldSnapshot | null>(null);
   const [running, setRunning] = useState(false), [selected, setSelected] = useState(0), [notice, setNotice] = useState('');
+  useEffect(()=>{if(!instrumentActive)setRunning(false);},[instrumentActive]);
   const [probe, setProbe] = useState<ReturnType<typeof partnerProbe> | null>(null);
   const [description, setDescription] = useState<ReturnType<FamilyWorld['describeAgent']> | null>(null);
   const [savedAt, setSavedAt] = useState<number | null>(null);

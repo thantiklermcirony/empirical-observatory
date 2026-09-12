@@ -1,0 +1,22 @@
+{
+  "outputs": [
+    {
+      "file": "ida-observation-v1-order-A.mp4",
+      "bytes": 4308365,
+      "duration_s": 600,
+      "sha256": "c1173e7ce4e98806c74955e95752f84768c39d2608a197db5c90116033cc218f"
+    },
+    {
+      "file": "ida-observation-v1-order-B.mp4",
+      "bytes": 4310782,
+      "duration_s": 600,
+      "sha256": "9d9fb7e9b6bbb68030cd7a30bf254ecb2fcb30510dc721080ca2eb2e5b16fcc9"
+    }
+  ],
+  "audio_peak_dbfs": {
+    "ordered": -18.851301578824376,
+    "regular": -20.74895409781619,
+    "irregular": -18.57248823396646
+  },
+  "generator_sha256": "a8ae188c92d0cd450c4ac4a74239c85b077521049832e03cb2115c4b19370b42"
+}

@@ -1,0 +1,757 @@
+{
+  "schema": "ida-stimulus/1",
+  "id": "ida-real-world-journey-v2-web",
+  "version": 2,
+  "duration_s": 433,
+  "fps": 24,
+  "projection": "flat",
+  "status": "Editorial research prototype; no validation of induced emotion",
+  "media_sha256": "82e2576a9647ccedb0e18f6b7df463f6462051e262f4a9a9c482da3617eb95e9",
+  "timeline": [
+    {
+      "id": "journey-00",
+      "kind": "real_scene",
+      "onset_s": 0,
+      "offset_s": 60,
+      "duration_s": 60,
+      "source_id": "shore",
+      "source_start_s": 2,
+      "source_end_s": 62,
+      "label": "Surf across sand, Imperial Beach",
+      "transition_in_s": 0
+    },
+    {
+      "id": "journey-01",
+      "kind": "real_scene",
+      "onset_s": 59,
+      "offset_s": 77,
+      "duration_s": 18,
+      "source_id": "falls",
+      "source_start_s": 1,
+      "source_end_s": 19,
+      "label": "Niagara Falls",
+      "transition_in_s": 1
+    },
+    {
+      "id": "journey-02",
+      "kind": "real_scene",
+      "onset_s": 76,
+      "offset_s": 108,
+      "duration_s": 32,
+      "source_id": "city",
+      "source_start_s": 1,
+      "source_end_s": 33,
+      "label": "Street traffic, San Francisco",
+      "transition_in_s": 1
+    },
+    {
+      "id": "journey-03",
+      "kind": "real_scene",
+      "onset_s": 107,
+      "offset_s": 212,
+      "duration_s": 105,
+      "source_id": "hindenburg",
+      "source_start_s": 50,
+      "source_end_s": 155,
+      "label": "Hindenburg disaster, May 1937",
+      "transition_in_s": 1
+    },
+    {
+      "id": "journey-04",
+      "kind": "real_scene",
+      "onset_s": 211,
+      "offset_s": 301,
+      "duration_s": 90,
+      "source_id": "groundzero",
+      "source_start_s": 12,
+      "source_end_s": 102,
+      "label": "Ground Zero, September 14, 2001",
+      "transition_in_s": 1
+    },
+    {
+      "id": "journey-05",
+      "kind": "real_scene",
+      "onset_s": 300,
+      "offset_s": 320,
+      "duration_s": 20,
+      "source_id": "march",
+      "source_start_s": 1655,
+      "source_end_s": 1675,
+      "label": "Martin Luther King Jr. at the March on Washington; source audio redacted",
+      "transition_in_s": 1
+    },
+    {
+      "id": "journey-06",
+      "kind": "real_scene",
+      "onset_s": 319,
+      "offset_s": 374,
+      "duration_s": 55,
+      "source_id": "march",
+      "source_start_s": 1785,
+      "source_end_s": 1840,
+      "label": "March on Washington: applause and collective singing",
+      "transition_in_s": 1
+    },
+    {
+      "id": "journey-07",
+      "kind": "real_scene",
+      "onset_s": 373,
+      "offset_s": 433,
+      "duration_s": 60,
+      "source_id": "shore",
+      "source_start_s": 2,
+      "source_end_s": 62,
+      "label": "Return to surf; opening footage repeated",
+      "transition_in_s": 1
+    }
+  ],
+  "transitions": "One-second audiovisual cross-dissolves; adjacent scene intervals overlap",
+  "content_note": "Historical fatal disaster, fire, aftermath and political speech; no graphic injury closeups intentionally selected",
+  "audio": "Original source sound with loudness normalization and crossfades; King source speech remains redacted",
+  "license": "CC BY-SA 4.0 adaptation; public-domain portions retain public-domain status",
+  "sources": {
+    "shore": {
+      "id": "shore",
+      "title": "Sand of Imperial Beach 2019c.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Sand_of_Imperial_Beach_2019c.webm",
+      "page": "https://commons.wikimedia.org/wiki/File:Sand_of_Imperial_Beach_2019c.webm",
+      "license": "CC BY-SA 4.0",
+      "metadata": {
+        "DateTime": {
+          "value": "2025-11-15 03:43:36",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Sand of Imperial Beach 2019c",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "Black sand|Sand in California|Self-published work|White sand|Files with coordinates missing SDC location of creation|Media by Antony-22|Videos of beaches|Imperial Beach",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "GPSLatitude": {
+          "value": "32.576658",
+          "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+          "value": "-117.132895",
+          "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+          "value": "WGS-84",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Interesting sand color patterns in Imperial Beach, California in 2019",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "2019-08-27",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Antony-22\" title=\"User:Antony-22\">Antony-22</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "CC BY-SA 4.0",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Creative Commons Attribution-Share Alike 4.0",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "true",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseUrl": {
+          "value": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+          "value": "True",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "cc-by-sa-4.0",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "path": "work\\journey-sources\\shore.webm",
+      "bytes": 73618712,
+      "sha256": "45478d8d76e405888e3fc40800a5af285bc82061ccd379894f70ed2fb28343a4"
+    },
+    "falls": {
+      "id": "falls",
+      "title": "Niagara American and Bridal Veil Falls.ogv",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Niagara_American_and_Bridal_Veil_Falls.ogv",
+      "page": "https://commons.wikimedia.org/wiki/File:Niagara_American_and_Bridal_Veil_Falls.ogv",
+      "license": "CC BY-SA 4.0",
+      "metadata": {
+        "DateTime": {
+          "value": "2017-11-02 10:53:28",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Niagara American and Bridal Veil Falls",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "GFDL|American Falls|Views of the American Falls from the Niagara Gorge|License migration redundant|CC-BY-SA-4.0,3.0,2.5,2.0,1.0|September 2017 in New York (state)|Self-published work|Uploaded with Commonist|Videos by Pierre André Leclercq|Files by User:Pierre André Leclercq|Le Canada by PIERRE ANDRE LECLERCQ|Videos of 2017 from the United States|Files with coordinates missing SDC location of creation|Videos of waterfalls",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "GPSLatitude": {
+          "value": "43.088167",
+          "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+          "value": "-79.074167",
+          "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+          "value": "WGS-84",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "A \"Maid of the Mist\" tour boat passes in front of the American and Bridal Veil waterfalls at Niagara Falls.",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "2017-09-30 18:42:55",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span><div style=\"display:table;width:;vertical-align:middle;direction:ltr;float:left;line-height:22px;height:24px;font-size:.96em;margin:0px;padding:2px 4px 2px 6px;color:var(--color-base,#000);background:var(--background-color-neutral-subtle,#F8F9FA);border:1px solid #BAB;border-collapse:separate;border-spacing:0px;\"><span typeof=\"mw:File\"><a href=\"//commons.wikimedia.org/wiki/File:Commonist.svg\" class=\"mw-file-description\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Commonist.svg/40px-Commonist.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"22\" height=\"22\" class=\"mw-file-element\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Commonist.svg/60px-Commonist.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"512\" data-file-height=\"512\"></a></span> This   file was uploaded  with <a href=\"//commons.wikimedia.org/wiki/Commons:Commonist\" title=\"Commons:Commonist\">Commonist</a>.</div>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Pierre_Andr%C3%A9_Leclercq\" title=\"User:Pierre André Leclercq\">Pierre André</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "CC BY-SA 4.0",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Creative Commons Attribution-Share Alike 4.0",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "true",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseUrl": {
+          "value": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+          "value": "True",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "cc-by-sa-4.0",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "path": "work\\journey-sources\\falls.ogv",
+      "sha256": "a3339805d962e24c16f7e8f93067aa42a010b0902e651e78cdc63c92da46ef44",
+      "bytes": 11710132
+    },
+    "city": {
+      "id": "city",
+      "title": "Street traffic.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Street_traffic.webm",
+      "page": "https://commons.wikimedia.org/wiki/File:Street_traffic.webm",
+      "license": "CC BY 3.0",
+      "metadata": {
+        "DateTime": {
+          "value": "2013-02-02 12:30:36",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Street traffic",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "WebM videos|Market Street (San Francisco)|Files from external sources with reviewed licenses|Videos from YouTube|Uploaded with youtube2mediawiki|Videos from San Francisco|Video display resolution 1920 x 1080|Videos of 2011 from the United States|Files with coordinates missing SDC location of creation|Videos of road transport in the United States|Videos of buses",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "GPSLatitude": {
+          "value": "37.794560",
+          "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+          "value": "-122.394670",
+          "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+          "value": "WGS-84",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Street traffic in San Francisco",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "2011-05-28",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<bdi lang=\"en\" dir=\"ltr\"><a href=\"//commons.wikimedia.org/wiki/Commons:YouTube_files\" title=\"Commons:YouTube files\">YouTube</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/watch?v=_7sCYyxw4Ic\"><bdi lang=\"\">https://www.youtube.com/watch?v=_7sCYyxw4Ic</bdi></a> – View/save archived versions on <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/*/https://www.youtube.com/watch?v=_7sCYyxw4Ic\">archive.org</a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.youtube.com/user/Editor\">https://www.youtube.com/user/Editor</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "CC BY 3.0",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Creative Commons Attribution 3.0",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "true",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Attribution": {
+          "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.youtube.com/user/Editor\">https://www.youtube.com/user/Editor</a>",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseUrl": {
+          "value": "https://creativecommons.org/licenses/by/3.0",
+          "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+          "value": "True",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "cc-by-3.0",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "path": "work\\journey-sources\\city.webm",
+      "sha256": "e5facb24baf755f0c1193999d823e99f6032661ad2bdef5cc28cc1cbbfde03e2",
+      "bytes": 26490572
+    },
+    "hindenburg": {
+      "id": "hindenburg",
+      "title": "1937-05-10 Special Release - Zeppelin Explodes Scores Dead.ogv",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/1937-05-10_Special_Release_-_Zeppelin_Explodes_Scores_Dead.ogv",
+      "page": "https://commons.wikimedia.org/wiki/File:1937-05-10_Special_Release_-_Zeppelin_Explodes_Scores_Dead.ogv",
+      "license": "Public domain",
+      "metadata": {
+        "DateTime": {
+          "value": "2016-05-03 06:38:44",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "1937-05-10 Special Release - Zeppelin Explodes Scores Dead",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "Hindenburg disaster|1937-05-10|Media of the day|PD-copyright holder|Ogv videos|Files with closed captioning in English|Videos of aircraft accidents|Videos of 1937 from the United States|Universal Newsreel|Universal Newsreel, 1937|Files with closed captioning in German|Files with closed captioning in Spanish|Video display resolution 960 x 720|Files with closed captioning in Chinese|Files with closed captioning in Romanian|Files with closed captioning in Vietnamese|Files with closed captioning in Hungarian|Files with closed captioning in Japanese|Files with closed captioning in Latvian|Videos of airships",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Hindenburg disaster.",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "1937-05-10",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/watch?v=uSK9p3HRp30\">YouTube</a>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "Universal Newsreel",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Public domain",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "false",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "pd",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "path": "work\\journey-sources\\hindenburg.ogv",
+      "bytes": 96922212,
+      "sha256": "c2d4feafd89c0df96646c3254f2605abdea874d9be870c98b348f9e54e1aa555"
+    },
+    "groundzero": {
+      "id": "groundzero",
+      "title": "Remarks from Ground Zero September 14, 2001.webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Remarks_from_Ground_Zero_September_14%2C_2001.webm",
+      "page": "https://commons.wikimedia.org/wiki/File:Remarks_from_Ground_Zero_September_14,_2001.webm",
+      "license": "Public domain",
+      "metadata": {
+        "DateTime": {
+          "value": "2018-09-06 00:08:23",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Remarks from Ground Zero September 14, 2001",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "Media from YouTube|PD US Government|2001-09-14|Bob Beckwith|CC-PD-Mark|Uploaded with video2commons|George W. Bush at Ground Zero in September 2001|Videos of 2001 from the United States|License reviewed by YouTubeReviewBot|Videos related to the September 11 attacks|Videos taken on 2001-09-14|Video files of speeches by George W. Bush in 2001",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Remarks by President George W. Bush to first responders, September 14, 2001, Murray and West streets, New York City.\n<p>Reference Unit: George W. Bush Presidential Library and Museum\n</p>\nCreator: White House Communications Agency",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "Taken on 14 September 2001",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<bdi lang=\"en\" dir=\"ltr\"><a href=\"//commons.wikimedia.org/wiki/Commons:YouTube_files\" title=\"Commons:YouTube files\">YouTube</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/watch?v=U_Yoq5PVcqI\"><bdi lang=\"\">Remarks from Ground Zero September 14, 2001</bdi></a> – View/save archived versions on <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/*/https://www.youtube.com/watch?v=U_Yoq5PVcqI\">archive.org</a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "White House Communications Agency, <a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/user/usnationalarchives\">US National Archives</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Public domain",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "false",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "pd",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "path": "work\\journey-sources\\groundzero.webm",
+      "bytes": 15624174,
+      "sha256": "245e57327280980a19004e301284b576c6e048c76fe3c1a53015193c2430427c"
+    },
+    "march": {
+      "id": "march",
+      "title": "The March (1964 film).webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/The_March_%281964_film%29.webm",
+      "page": "https://commons.wikimedia.org/wiki/File:The_March_(1964_film).webm",
+      "license": "Public domain",
+      "metadata": {
+        "DateTime": {
+          "value": "2020-02-12 05:27:30",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "The March (1964 film)",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "PD US Government|Videos from YouTube|Media of the day|Files with closed captioning in English|CC-PD-Mark|Videos of 2013|Uploaded with video2commons|License reviewed by YouTubeReviewBot",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Preserving THE MARCH (1963) - The Motion Picture Preservation Lab preserved James Blue's monumental film, <i><a href=\"https://en.wikipedia.org/wiki/The_March_(1964_film)\" class=\"extiw\" title=\"w:The March (1964 film)\">The March</a></i>, in 2008.  To mark the 50th anniversary of the The March for Jobs and Freedom we have completed a full digital restoration of the film.  The original negatives assembled by James Blue were scanned and three months were spent restoring defects in the image and enhancing the audio track.  For more information please visit the National Archives Unwritten Record Blog - <a rel=\"nofollow\" class=\"external free\" href=\"https://unwritten-record.blogs.archives.gov/2013/08/22/preservationrestorationthemarch/\">https://unwritten-record.blogs.archives.gov/2013/08/22/preservationrestorationthemarch/</a>\n<p>National Archives Identifier: 47526\n<a rel=\"nofollow\" class=\"external free\" href=\"https://catalog.archives.gov/id/47526\">https://catalog.archives.gov/id/47526</a>\n</p>\n<ul><li>The audio from 23:13 to 29:44 in this film has been redacted due to a copyright restriction by <a href=\"https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.\" class=\"extiw\" title=\"w:Martin Luther King Jr.\">Dr. King</a>'s family.*</li></ul>",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "2013-09-06",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<bdi lang=\"en\" dir=\"ltr\"><a href=\"//commons.wikimedia.org/wiki/Commons:YouTube_files\" title=\"Commons:YouTube files\">YouTube</a>: <a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/watch?v=DQYzHIIQ1O4\"><bdi lang=\"\">The March (1963, restored)</bdi></a> – View/save archived versions on <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/*/https://www.youtube.com/watch?v=DQYzHIIQ1O4\">archive.org</a></bdi>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<a href=\"https://en.wikipedia.org/wiki/James_Blue\" class=\"extiw\" title=\"w:James Blue\">James Blue</a>, director, for the <a href=\"https://en.wikipedia.org/wiki/United_States_Information_Agency\" class=\"extiw\" title=\"w:United States Information Agency\">United States Information Agency</a> via <a rel=\"nofollow\" class=\"external text\" href=\"https://www.youtube.com/user/usnationalarchives\">US National Archives</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "Public domain",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Public domain",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "false",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Copyrighted": {
+          "value": "False",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "pd",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      },
+      "path": "work\\journey-sources\\march.webm",
+      "bytes": 467255410,
+      "sha256": "da7c8e67fc7d0db2fcf2f89eef5c9fe939bbfbcb09616001175aca28ca200b89"
+    }
+  },
+  "delivery": {
+    "kind": "lossy browser rendition of the complete original edit",
+    "filename": "ida-real-world-journey-v2-web.mp4",
+    "bytes": 22785761,
+    "sha256": "82e2576a9647ccedb0e18f6b7df463f6462051e262f4a9a9c482da3617eb95e9",
+    "original_filename": "ida-real-world-journey-v2.mp4",
+    "original_bytes": 83690695,
+    "original_sha256": "f2cbf855eef8ffd1f19a877b5d48363a66d6ff492272be177b5f0a561670cb8b",
+    "original_manifest_sha256": "0e47467b055f2919f5b19ac4d053b0baed7a58d139f04888685a3d62c79e3775",
+    "video": {
+      "codec": "H.264 High",
+      "pixel_format": "yuv420p",
+      "width": 768,
+      "height": 432,
+      "fps": 24,
+      "target_bitrate": 300000,
+      "rate_control": "two-pass",
+      "preset": "slow"
+    },
+    "audio": {
+      "mode": "stream copy, no re-encoding",
+      "compressed_audio_sha256": "ea015c05216edbce410a3421c6d99d6143e964410e75128d49008a7f7f5ba3e9"
+    },
+    "timing": {
+      "container": {
+        "timescale": 1000,
+        "duration_units": 433133,
+        "duration_s": 433.133
+      },
+      "tracks": [
+        {
+          "type": "vide",
+          "timescale": 12288,
+          "duration_units": 5320704,
+          "duration_s": 433.0
+        },
+        {
+          "type": "soun",
+          "timescale": 48000,
+          "duration_units": 20791408,
+          "duration_s": 433.15433333333334
+        }
+      ],
+      "faststart": true
+    },
+    "original_timing": {
+      "container": {
+        "timescale": 1000,
+        "duration_units": 433133,
+        "duration_s": 433.133
+      },
+      "tracks": [
+        {
+          "type": "vide",
+          "timescale": 15360,
+          "duration_units": 6650880,
+          "duration_s": 433.0
+        },
+        {
+          "type": "soun",
+          "timescale": 48000,
+          "duration_units": 20791408,
+          "duration_s": 433.15433333333334
+        }
+      ],
+      "faststart": true
+    },
+    "timeline_unchanged": true,
+    "changes": "Spatial downsample to 768x432; frame resample 30 to 24 fps; H.264 yuv420p two-pass 300 kb/s. Complete edit, original AAC and cue timeline retained. Inherited MP4 global metadata removed; faststart enabled.",
+    "license": "CC BY-SA 4.0 adaptation; public-domain portions retain public-domain status",
+    "credits": "journey-credits.md",
+    "publication_note": "Retain and publish the original movie and source package separately. This rendition is an additional adaptation, not the archival original.",
+    "validation": {
+      "full_video_audio_decode": "pass",
+      "compressed_audio_identical": true,
+      "source_preserved": true,
+      "size_below_24000000": true,
+      "ssim_against_scaled_24fps_source": {
+        "Y": 0.955471,
+        "U": 0.987024,
+        "V": 0.989034,
+        "All": 0.966324
+      },
+      "sampled_frame_times_s": [
+        15,
+        65,
+        90,
+        140,
+        240,
+        308,
+        340,
+        400
+      ],
+      "visual_review": "Passed agent visual comparison of all eight side-by-side sampled frames at 15, 65, 90, 140, 240, 308, 340 and 400 seconds. Composition and visible scene content retained; expected reduced fine detail and some water/crowd texture compression. Does not establish perceptual or scientific equivalence.",
+      "browser_playback": "not performed by this script",
+      "hardware_vr": "not tested",
+      "timing_review": "Original and rendition container durations both 433.133 s; video track durations both 433.000 s; audio track durations and compressed payload identical. All eight scene intervals and crossfades retained verbatim in manifest. 30-to-24 fps conversion changes frame cadence.",
+      "scientific_limit": "Lossy rendition is a distinct stimulus identity. Do not pool its session results with the archival source as an identical visual stimulus without checking delivery conditions."
+    },
+    "encoder_build": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers"
+  }
+}

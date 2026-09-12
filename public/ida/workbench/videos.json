@@ -1,0 +1,39 @@
+{
+  "schema": "ida-video-library/1",
+  "items": [
+    {
+      "id": "ida-real-world-journey-v2-web",
+      "title": "Real-world journey \u00b7 browser edition",
+      "url": "./media/ida-real-world-journey-v2-web.mp4",
+      "manifest": "./media/ida-real-world-journey-v2-web.json",
+      "projection": "flat",
+      "duration_s": 433,
+      "version": 2,
+      "license": "CC BY-SA 4.0 adaptation; public-domain portions retain public-domain status",
+      "status": "Editorial research prototype; no validation of induced emotion"
+    },
+    {
+      "id": "ida-observation-v1-order-A",
+      "title": "Observation pilot - 10 minutes - Order A",
+      "url": "./media/ida-observation-v1-order-A.mp4",
+      "manifest": "./media/ida-observation-v1-order-A.json",
+      "projection": "flat",
+      "duration_s": 600,
+      "version": 1,
+      "status": "Unvalidated feasibility stimulus",
+      "license": "Original procedural visuals and synthesized audio created for this project"
+    },
+    {
+      "id": "ida-observation-v1-order-B",
+      "title": "Observation pilot - 10 minutes - Order B",
+      "url": "./media/ida-observation-v1-order-B.mp4",
+      "manifest": "./media/ida-observation-v1-order-B.json",
+      "projection": "flat",
+      "duration_s": 600,
+      "version": 1,
+      "status": "Unvalidated feasibility stimulus",
+      "license": "Original procedural visuals and synthesized audio created for this project"
+    }
+  ],
+  "note": "Flat cinema presentation in VR. Not a 360 video."
+}

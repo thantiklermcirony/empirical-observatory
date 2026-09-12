@@ -1,3 +1,11 @@
+# Rooms and instruments — 12 September 2026
+
+The room itself is now the branch entrance. Eleven distinctive rooms and 32 permanent device identities organise the existing programme, with physical hotspots, quick controls, working tools, construction notes and source cross-references. The complete IDA browser application is integrated with its numerical tests, local recording boundary, video credits and separately identified browser rendition. Read [the room and admission contract](research/Observatory_Room_Architecture.md).
+
+The central calculations, private printouts and shared 200-provider-call daily limit remain intact. Secure hosted AI credentials remain absent from the production configuration checked for this release; no live-provider acceptance is claimed. Software integration does not execute the next scientific experiment. Specialist pause instructions remain in force.
+
+---
+
 # Current investigation flow — 12 September 2026
 
 The ordinary-language terminal now uses `POST /api/inquiry/research`: a shared AI planner assigns relevant branch work, fixed engines calculate, and a second AI call explains the actual returned evidence in plain language. It returns a plan, cited answer, exact model cases, graphs, specific missing observations and encyclopedia connections. The advanced structured endpoint is unchanged.

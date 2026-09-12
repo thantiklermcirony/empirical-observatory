@@ -1,0 +1,101 @@
+{
+  "kind": "lossy browser rendition of the complete original edit",
+  "filename": "ida-real-world-journey-v2-web.mp4",
+  "bytes": 22785761,
+  "sha256": "82e2576a9647ccedb0e18f6b7df463f6462051e262f4a9a9c482da3617eb95e9",
+  "original_filename": "ida-real-world-journey-v2.mp4",
+  "original_bytes": 83690695,
+  "original_sha256": "f2cbf855eef8ffd1f19a877b5d48363a66d6ff492272be177b5f0a561670cb8b",
+  "original_manifest_sha256": "0e47467b055f2919f5b19ac4d053b0baed7a58d139f04888685a3d62c79e3775",
+  "video": {
+    "codec": "H.264 High",
+    "pixel_format": "yuv420p",
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "target_bitrate": 300000,
+    "rate_control": "two-pass",
+    "preset": "slow"
+  },
+  "audio": {
+    "mode": "stream copy, no re-encoding",
+    "compressed_audio_sha256": "ea015c05216edbce410a3421c6d99d6143e964410e75128d49008a7f7f5ba3e9"
+  },
+  "timing": {
+    "container": {
+      "timescale": 1000,
+      "duration_units": 433133,
+      "duration_s": 433.133
+    },
+    "tracks": [
+      {
+        "type": "vide",
+        "timescale": 12288,
+        "duration_units": 5320704,
+        "duration_s": 433.0
+      },
+      {
+        "type": "soun",
+        "timescale": 48000,
+        "duration_units": 20791408,
+        "duration_s": 433.15433333333334
+      }
+    ],
+    "faststart": true
+  },
+  "original_timing": {
+    "container": {
+      "timescale": 1000,
+      "duration_units": 433133,
+      "duration_s": 433.133
+    },
+    "tracks": [
+      {
+        "type": "vide",
+        "timescale": 15360,
+        "duration_units": 6650880,
+        "duration_s": 433.0
+      },
+      {
+        "type": "soun",
+        "timescale": 48000,
+        "duration_units": 20791408,
+        "duration_s": 433.15433333333334
+      }
+    ],
+    "faststart": true
+  },
+  "timeline_unchanged": true,
+  "changes": "Spatial downsample to 768x432; frame resample 30 to 24 fps; H.264 yuv420p two-pass 300 kb/s. Complete edit, original AAC and cue timeline retained. Inherited MP4 global metadata removed; faststart enabled.",
+  "license": "CC BY-SA 4.0 adaptation; public-domain portions retain public-domain status",
+  "credits": "journey-credits.md",
+  "publication_note": "Retain and publish the original movie and source package separately. This rendition is an additional adaptation, not the archival original.",
+  "validation": {
+    "full_video_audio_decode": "pass",
+    "compressed_audio_identical": true,
+    "source_preserved": true,
+    "size_below_24000000": true,
+    "ssim_against_scaled_24fps_source": {
+      "Y": 0.955471,
+      "U": 0.987024,
+      "V": 0.989034,
+      "All": 0.966324
+    },
+    "sampled_frame_times_s": [
+      15,
+      65,
+      90,
+      140,
+      240,
+      308,
+      340,
+      400
+    ],
+    "visual_review": "Passed agent visual comparison of all eight side-by-side sampled frames at 15, 65, 90, 140, 240, 308, 340 and 400 seconds. Composition and visible scene content retained; expected reduced fine detail and some water/crowd texture compression. Does not establish perceptual or scientific equivalence.",
+    "browser_playback": "not performed by this script",
+    "hardware_vr": "not tested",
+    "timing_review": "Original and rendition container durations both 433.133 s; video track durations both 433.000 s; audio track durations and compressed payload identical. All eight scene intervals and crossfades retained verbatim in manifest. 30-to-24 fps conversion changes frame cadence.",
+    "scientific_limit": "Lossy rendition is a distinct stimulus identity. Do not pool its session results with the archival source as an identical visual stimulus without checking delivery conditions."
+  },
+  "encoder_build": "ffmpeg version 7.1-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers"
+}

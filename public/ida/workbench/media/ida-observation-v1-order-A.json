@@ -1,0 +1,457 @@
+{
+  "schema": "ida-stimulus/1",
+  "id": "ida-observation-v1-order-A",
+  "version": 1,
+  "duration_s": 600,
+  "fps": 30,
+  "width": 1280,
+  "height": 720,
+  "projection": "flat",
+  "language": "en",
+  "status": "unvalidated feasibility stimulus",
+  "media_sha256": "c1173e7ce4e98806c74955e95752f84768c39d2608a197db5c90116033cc218f",
+  "order": "A",
+  "timeline": [
+    {
+      "id": "A-000",
+      "onset_s": 0,
+      "offset_s": 10,
+      "duration_s": 10,
+      "kind": "instruction"
+    },
+    {
+      "id": "A-001",
+      "onset_s": 10,
+      "offset_s": 20,
+      "duration_s": 10,
+      "kind": "instruction"
+    },
+    {
+      "id": "A-002",
+      "onset_s": 20,
+      "offset_s": 30,
+      "duration_s": 10,
+      "kind": "instruction"
+    },
+    {
+      "id": "A-003",
+      "onset_s": 30,
+      "offset_s": 90,
+      "duration_s": 60,
+      "kind": "baseline",
+      "analysis_start_s": 45,
+      "analysis_end_s": 90
+    },
+    {
+      "id": "A-004",
+      "onset_s": 90,
+      "offset_s": 92,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "desk",
+      "category": "neutral"
+    },
+    {
+      "id": "A-005",
+      "onset_s": 92,
+      "offset_s": 100,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "desk"
+    },
+    {
+      "id": "A-006",
+      "onset_s": 100,
+      "offset_s": 102,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "hope",
+      "category": "positive"
+    },
+    {
+      "id": "A-007",
+      "onset_s": 102,
+      "offset_s": 110,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "hope"
+    },
+    {
+      "id": "A-008",
+      "onset_s": 110,
+      "offset_s": 112,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "fear",
+      "category": "negative"
+    },
+    {
+      "id": "A-009",
+      "onset_s": 112,
+      "offset_s": 120,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "fear"
+    },
+    {
+      "id": "A-010",
+      "onset_s": 120,
+      "offset_s": 122,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "fork",
+      "category": "neutral"
+    },
+    {
+      "id": "A-011",
+      "onset_s": 122,
+      "offset_s": 130,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "fork"
+    },
+    {
+      "id": "A-012",
+      "onset_s": 130,
+      "offset_s": 132,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "love",
+      "category": "positive"
+    },
+    {
+      "id": "A-013",
+      "onset_s": 132,
+      "offset_s": 140,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "love"
+    },
+    {
+      "id": "A-014",
+      "onset_s": 140,
+      "offset_s": 142,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "loss",
+      "category": "negative"
+    },
+    {
+      "id": "A-015",
+      "onset_s": 142,
+      "offset_s": 150,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "loss"
+    },
+    {
+      "id": "A-016",
+      "onset_s": 150,
+      "offset_s": 152,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "tile",
+      "category": "neutral"
+    },
+    {
+      "id": "A-017",
+      "onset_s": 152,
+      "offset_s": 160,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "tile"
+    },
+    {
+      "id": "A-018",
+      "onset_s": 160,
+      "offset_s": 162,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "safe",
+      "category": "positive"
+    },
+    {
+      "id": "A-019",
+      "onset_s": 162,
+      "offset_s": 170,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "safe"
+    },
+    {
+      "id": "A-020",
+      "onset_s": 170,
+      "offset_s": 172,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "pain",
+      "category": "negative"
+    },
+    {
+      "id": "A-021",
+      "onset_s": 172,
+      "offset_s": 180,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "pain"
+    },
+    {
+      "id": "A-022",
+      "onset_s": 180,
+      "offset_s": 182,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "gate",
+      "category": "neutral"
+    },
+    {
+      "id": "A-023",
+      "onset_s": 182,
+      "offset_s": 190,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "gate"
+    },
+    {
+      "id": "A-024",
+      "onset_s": 190,
+      "offset_s": 192,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "calm",
+      "category": "positive"
+    },
+    {
+      "id": "A-025",
+      "onset_s": 192,
+      "offset_s": 200,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "calm"
+    },
+    {
+      "id": "A-026",
+      "onset_s": 200,
+      "offset_s": 202,
+      "duration_s": 2,
+      "kind": "word",
+      "word": "hate",
+      "category": "negative"
+    },
+    {
+      "id": "A-027",
+      "onset_s": 202,
+      "offset_s": 210,
+      "duration_s": 8,
+      "kind": "word_interval",
+      "after_word": "hate"
+    },
+    {
+      "id": "A-028",
+      "onset_s": 210,
+      "offset_s": 215,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "pleasantness",
+      "section": "words"
+    },
+    {
+      "id": "A-029",
+      "onset_s": 215,
+      "offset_s": 220,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "arousal",
+      "section": "words"
+    },
+    {
+      "id": "A-030",
+      "onset_s": 220,
+      "offset_s": 225,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "discomfort",
+      "section": "words"
+    },
+    {
+      "id": "A-031",
+      "onset_s": 225,
+      "offset_s": 270,
+      "duration_s": 45,
+      "kind": "recovery",
+      "section": "words"
+    },
+    {
+      "id": "A-032",
+      "onset_s": 270,
+      "offset_s": 315,
+      "duration_s": 45,
+      "kind": "audiovisual",
+      "condition": "ordered",
+      "fade_in_s": 5,
+      "fade_out_s": 5
+    },
+    {
+      "id": "A-033",
+      "onset_s": 315,
+      "offset_s": 345,
+      "duration_s": 30,
+      "kind": "recovery",
+      "section": "ordered"
+    },
+    {
+      "id": "A-034",
+      "onset_s": 345,
+      "offset_s": 350,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "pleasantness",
+      "section": "ordered"
+    },
+    {
+      "id": "A-035",
+      "onset_s": 350,
+      "offset_s": 355,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "arousal",
+      "section": "ordered"
+    },
+    {
+      "id": "A-036",
+      "onset_s": 355,
+      "offset_s": 360,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "discomfort",
+      "section": "ordered"
+    },
+    {
+      "id": "A-037",
+      "onset_s": 360,
+      "offset_s": 405,
+      "duration_s": 45,
+      "kind": "audiovisual",
+      "condition": "regular",
+      "fade_in_s": 5,
+      "fade_out_s": 5
+    },
+    {
+      "id": "A-038",
+      "onset_s": 405,
+      "offset_s": 435,
+      "duration_s": 30,
+      "kind": "recovery",
+      "section": "regular"
+    },
+    {
+      "id": "A-039",
+      "onset_s": 435,
+      "offset_s": 440,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "pleasantness",
+      "section": "regular"
+    },
+    {
+      "id": "A-040",
+      "onset_s": 440,
+      "offset_s": 445,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "arousal",
+      "section": "regular"
+    },
+    {
+      "id": "A-041",
+      "onset_s": 445,
+      "offset_s": 450,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "discomfort",
+      "section": "regular"
+    },
+    {
+      "id": "A-042",
+      "onset_s": 450,
+      "offset_s": 495,
+      "duration_s": 45,
+      "kind": "audiovisual",
+      "condition": "irregular",
+      "fade_in_s": 5,
+      "fade_out_s": 5
+    },
+    {
+      "id": "A-043",
+      "onset_s": 495,
+      "offset_s": 525,
+      "duration_s": 30,
+      "kind": "recovery",
+      "section": "irregular"
+    },
+    {
+      "id": "A-044",
+      "onset_s": 525,
+      "offset_s": 530,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "pleasantness",
+      "section": "irregular"
+    },
+    {
+      "id": "A-045",
+      "onset_s": 530,
+      "offset_s": 535,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "arousal",
+      "section": "irregular"
+    },
+    {
+      "id": "A-046",
+      "onset_s": 535,
+      "offset_s": 540,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "discomfort",
+      "section": "irregular"
+    },
+    {
+      "id": "A-047",
+      "onset_s": 540,
+      "offset_s": 585,
+      "duration_s": 45,
+      "kind": "final_observation"
+    },
+    {
+      "id": "A-048",
+      "onset_s": 585,
+      "offset_s": 590,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "pleasantness",
+      "section": "final quiet observation"
+    },
+    {
+      "id": "A-049",
+      "onset_s": 590,
+      "offset_s": 595,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "arousal",
+      "section": "final quiet observation"
+    },
+    {
+      "id": "A-050",
+      "onset_s": 595,
+      "offset_s": 600,
+      "duration_s": 5,
+      "kind": "rating",
+      "question": "discomfort",
+      "section": "final quiet observation"
+    }
+  ],
+  "word_categories": "Author grouping; published norm values documented separately; not arousal/frequency matched",
+  "sound": "Original tones, mono, approximately -27 dBFS RMS during each 45 s scene; not an SPL calibration",
+  "interpretation": "Only four words per category and one scene per condition; no individual diagnostic inference"
+}

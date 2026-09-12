@@ -1,0 +1,11 @@
+{
+  "duration_seconds": 433.13,
+  "bytes": 83690695,
+  "sha256": "f2cbf855eef8ffd1f19a877b5d48363a66d6ff492272be177b5f0a561670cb8b",
+  "full_audio_video_decode": "passed",
+  "manifest_hash": "passed",
+  "timeline_duration": "passed",
+  "browser_and_headset_validation": "not performed",
+  "subjective_audio_review": "not performed",
+  "sampled_frame_review": "see work/journey-edit/final-contact.jpg"
+}

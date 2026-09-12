@@ -1,0 +1,7 @@
+participant_code,session_code,order,section,pleasantness_1_to_9,arousal_1_to_9,discomfort_1_to_9,sleepiness_optional_1_to_9,stopped_or_missing_reason
+,,,before_video,,,,,
+,,,words,,,,,
+,,,scene_1,,,,,
+,,,scene_2,,,,,
+,,,scene_3,,,,,
+,,,final_quiet,,,,,

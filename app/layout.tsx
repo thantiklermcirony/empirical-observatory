@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import InterestCounter from '@/components/observatory/InterestCounter';
+import EmbeddedInstrument from '@/components/observatory/EmbeddedInstrument';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <EmbeddedInstrument />
         <InterestCounter />
         <footer
           style={{ padding: '12px 24px', fontSize: 12, textAlign: 'center' }}
