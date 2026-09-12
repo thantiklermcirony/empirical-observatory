@@ -1,0 +1,32 @@
+[
+  {
+    "file": "muse-js.bundle.mjs",
+    "source": "https://esm.sh/muse-js@3.3.0/es2022/muse-js.bundle.mjs",
+    "sha256": "5885c0a80511eb3c5199b87c663896f9911cb46b736789aeac83d2468fc9040f"
+  },
+  {
+    "file": "three.module.js",
+    "source": "https://registry.npmjs.org/three/-/three-0.186.0.tgz#package/build/three.module.js",
+    "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+  },
+  {
+    "file": "three.core.js",
+    "source": "https://registry.npmjs.org/three/-/three-0.186.0.tgz#package/build/three.core.js",
+    "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+  },
+  {
+    "file": "THREE-LICENSE.txt",
+    "source": "https://registry.npmjs.org/three/-/three-0.186.0.tgz#package/LICENSE",
+    "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+  },
+  {
+    "file": "MUSE-JS-LICENSE.txt",
+    "source": "https://registry.npmjs.org/muse-js/-/muse-js-3.3.0.tgz#package/LICENSE",
+    "sha256": "d14d90bb198a45f15dc9a61f889bc166074d35da3e60091a9415e5351889d388"
+  },
+  {
+    "file": "RXJS-LICENSE.txt",
+    "source": "https://registry.npmjs.org/rxjs/-/rxjs-6.6.7.tgz#package/LICENSE.txt",
+    "sha256": "81c407ac717813b0e3795402960e04003c7bba8ba59b621624707028531c9ade"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "checks": [
+    {
+      "file": "ida-observation-v1-order-A.mp4",
+      "full_audio_video_decode": "passed",
+      "timeline_continuity": "passed",
+      "sha256": "passed"
+    },
+    {
+      "file": "ida-observation-v1-order-B.mp4",
+      "full_audio_video_decode": "passed",
+      "timeline_continuity": "passed",
+      "sha256": "passed"
+    }
+  ],
+  "visual_checks": "Six decoded frames sampled; see decoded-verification.jpg",
+  "limits": [
+    "No human response validation",
+    "No physical Muse/VR test",
+    "No acoustic SPL calibration",
+    "No full subjective audio review"
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "integration_id": "observatory-rooms-20260912",
+  "site_commit": "3e4a3b7c7b923a9ee73ee3a23062e20a3d2bdc2e",
+  "site_previous_commit": "b87439452092ffb58462a5b8ca8f7eb8e7ebfaf7",
+  "base_commit": "903a735a06e54d21f63053e77032826203587835",
+  "frozen_sha256": {
+    "lib/engine/temporal-router.ts": "e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29",
+    "lib/engine/quantum-reference.ts": "3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc",
+    "lib/strict-json.ts": "9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c"
+  },
+  "entries": [
+    {
+      "path": "CENTRAL_DESK.md",
+      "before_blob": "cad99344d7326476bcdf7eb31e15b8c96f4a18f9",
+      "sha256": "7d69ac82e072725a83449f988f6919010239ddb02157de8b8d71955506bd2e97",
+      "bytes": 8154
+    },
+    {
+      "path": "PROGRAMME_STATUS.md",
+      "before_blob": "e006afb687cf093b33ec31768edb0ad2e0860359",
+      "sha256": "80fc68b43d1d8263462e844a4af5ca2790cc660cb4a52fb2959e7556191cf3df",
+      "bytes": 12652
+    },
+    {
+      "path": "README.md",
+      "before_blob": "4d965dccfb100cbfe634645c95ea66079bde95e9",
+      "sha256": "57f6377d5890615c997a036961bb34c622602e0d91ef490898157d0dd3c49144",
+      "bytes": 20085
+    },
+    {
+      "path": "app/agents/page.tsx",
+      "before_blob": "f6e3425d78a306fa9a6d22225acc8f2f670f64ec",
+      "sha256": "8ee959423d4b145945c527f0c7aebb27b7b258a5bd37bfdd911de44b37f3e676",
+      "bytes": 6370
+    },
+    {
+      "path": "app/api/catalogue/route.ts",
+      "before_blob": null,
+      "sha256": "e27ae8feb19b44885b9268c41b9fd9931fe12ace774643f71a681d4e9ac5c485",
+      "bytes": 749
+    },
+    {
+      "path": "app/catalogue/page.tsx",
+      "before_blob": null,
+      "sha256": "739bde4889ed463ff183c1bfd3c0729c9912e582474533be7b7307880ebf255a",
+      "bytes": 311
+    },
+    {
+      "path": "app/devices/[device]/page.tsx",
+      "before_blob": null,
+      "sha256": "48177eaecfaa1cdc402889ca3bca9d94608fecffa220769c6a4081377d0ca87e",
+      "bytes": 642
+    },
+    {
+      "path": "app/globals.css",
+      "before_blob": "61a1803fec911a553cf999c76fe3cf36f80f714c",
+      "sha256": "fbf6436e99870972c892e9f20a67126ab825c4bb9e1daf41b9c735f7d6c41f5b",
+      "bytes": 14959
+    },
+    {
+      "path": "app/ida/page.tsx",
+      "before_blob": null,
+      "sha256": "e574c46adfe34833e7a1af0674693bdc74006fe75eb77c1d880cb8df6e94c62e",
+      "bytes": 279
+    },
+    {
+      "path": "app/labs/[branch]/page.tsx",
+      "before_blob": "d1c71668d9ba3b293dbfd0bd4b221b1c3c1c9a63",
+      "sha256": "106a913cfdee3283ec47f08063a332db29ded07dd2b7e79a1221404e860bdf30",
+      "bytes": 726
+    },
+    {
+      "path": "app/layout.tsx",
+      "before_blob": "de2c4748fa232d9d656dd41429ce1d10ce8a3e1b",
+      "sha256": "f5e8f5d336e2a003cf9440bab4d1d2504a8b30c0a6ed4dbf912b35367ef21967",
+      "bytes": 1392
+    },
+    {
+      "path": "app/observatory-labs.css",
+      "before_blob": "e0ace70b206b33c57e7b435ed714cedd18f23fef",
+      "sha256": "eeff45d898e2e2bd751eba6b0f5a41c4f7bb925e46bd744b245d8e4b57da0456",
+      "bytes": 16103
+    },
+    {
+      "path": "app/page.tsx",
+      "before_blob": "50f29b6c2f12f5c500a6e05f16e02fe8b3733f88",
+      "sha256": "2aac1128ae705474e56e119c01fed2dfbabb31452b8729fafde8a0cce5b86cc4",
+      "bytes": 7409
+    },
+    {
+      "path": "app/question/papers/page.tsx",
+      "before_blob": "7734d3f087eede0a41bb23c3f2cf5de1bc3a3977",
+      "sha256": "bbede0599340e527aff8afe6cf13bde18407955a34242461936b182d1efcd0cd",
+      "bytes": 272
+    },
+    {
+      "path": "app/science-rooms.css",
+      "before_blob": null,
+      "sha256": "91672f9d54f618d1f8c510b715d8205ace50a451db2b0a387e53cc7726fbc1fe",
+      "bytes": 16267
+    },
+    {
+      "path": "app/workbenches/[kind]/page.tsx",
+      "before_blob": null,
+      "sha256": "9cf57863d5fe90cb41fbd10476fd6de0a14c201c6608ff2ad866f5995dbbdb84",
+      "bytes": 383
+    },
+    {
+      "path": "components/observatory/CatalogueInspector.tsx",
+      "before_blob": null,
+      "sha256": "3c10235a29a573b9b36db72fbd1301c8dd3dc407843ecb68b025fb47b54d95cc",
+      "bytes": 3391
+    },
+    {
+      "path": "components/observatory/CentralDesk.tsx",
+      "before_blob": "ea8296565e94793a6541161720c9ee65f4a21a3a",
+      "sha256": "71f6869bc2afa5a1a3b1aa65e261eb9f270bc2565247232f9ed63bbbdedebe26",
+      "bytes": 21072
+    },
+    {
+      "path": "components/observatory/DataExplorer.tsx",
+      "before_blob": "f0265861794531a2f9d0beb6c4226a91ba18c09b",
+      "sha256": "7c16e947c528ebb2946704ba5983069a5a55374def6a83072078d1389741d2ce",
+      "bytes": 4437
+    },
+    {
+      "path": "components/observatory/EmbeddedInstrument.tsx",
+      "before_blob": null,
+      "sha256": "7cecfb75f23cf9b401fad5824bde605e1d92c504489558fb56ff217bc529a073",
+      "bytes": 350
+    },
+    {
+      "path": "components/observatory/Expeditions.tsx",
+      "before_blob": "23367d97276e243858febdf271226e2e7decf6b3",
+      "sha256": "6d143b79b5cfb165b38cbfd27ef4d465e3261dcec69eb6b676d073e1d5449bdc",
+      "bytes": 20361
+    },
+    {
+      "path": "components/observatory/FamilyWorldLab.tsx",
+      "before_blob": "8fa745f41330b7db5517bae2eff347a65e31b2e0",
+      "sha256": "aff667319269ec69909f149296227426a71a503a454c3eb3151393ed0405d960",
+      "bytes": 18039
+    },
+    {
+      "path": "components/observatory/LaboratoryDirectory.tsx",
+      "before_blob": "19e63b885ef0d8699191c20ec6baa6bae15f0eb3",
+      "sha256": "37aa6c87a132e6845f7c3129230b7f9c15611ee663d1e6fffe2d81d9dd4dcb75",
+      "bytes": 423
+    },
+    {
+      "path": "components/observatory/ObservatoryOffice.tsx",
+      "before_blob": "c422747a7844731c02410fd9d6a96f26584ab5f7",
+      "sha256": "3b319a6b8bc21f3f665ff05fe2c26fec98c7f5b8a6a2748dac42d19eb3e95f4e",
+      "bytes": 8141
+    },
+    {
+      "path": "components/observatory/RoomEntrance.tsx",
+      "before_blob": null,
+      "sha256": "d13854f93d4079cdf13c680539e6168ebc6fd44bf43daf49b68215bb253770d5",
+      "bytes": 681
+    },
+    {
+      "path": "components/observatory/ScienceRoom.tsx",
+      "before_blob": null,
+      "sha256": "7e97aa5bf4428836f72251aa11b12d3633d2b8295797461f1e9af9275a4f116a",
+      "bytes": 7719
+    },
+    {
+      "path": "components/observatory/StandaloneWorkbench.tsx",
+      "before_blob": null,
+      "sha256": "1f472051f54a74ee822ec3d72ceb4ed15ffd2feb64cd11b612dd378a5209fff6",
+      "bytes": 1254
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "before_blob": "019e0eb85b7a311fb9d7fab8e616912823020245",
+      "sha256": "67df0d98e5dfb09b8ded485f900445f19e6a7beb81bac0b9cd818f9c771fb3aa",
+      "bytes": 4161
+    },
+    {
+      "path": "lib/instrument-activity.ts",
+      "before_blob": null,
+      "sha256": "dfe7e6f2388429908a34e3a4e0e8d2268f91471406b55d956e9e1cf4cd268e92",
+      "bytes": 923
+    },
+    {
+      "path": "lib/local-records.ts",
+      "before_blob": null,
+      "sha256": "933c58e6656e75d58bfcbd5e60d0ff5f1ff817c2a0ec69fb948a40e21cfda4ac",
+      "bytes": 1218
+    },
+    {
+      "path": "lib/observatory-catalogue.ts",
+      "before_blob": null,
+      "sha256": "c8ab280e005a8e73ee5ae16437db3f6708b6ae1391f493e63ce6a722f6b61171",
+      "bytes": 15387
+    },
+    {
+      "path": "lib/observatory-rooms.ts",
+      "before_blob": null,
+      "sha256": "b59a71e3d6bea0543e928b37f02a0f728d03294b98454530d40eee3a7be2bacb",
+      "bytes": 220
+    },
+    {
+      "path": "lib/research-knowledge.ts",
+      "before_blob": "dc048b270913d346e71f1c022ea554f0f68d8114",
+      "sha256": "0b3d29fada192a3eac65452b137a5176aa2d8df6960d97d87e85c089c31a445d",
+      "bytes": 6215
+    },
+    {
+      "path": "package.json",
+      "before_blob": "ef29a17ed76d7ee0e8e2a2c623a522af27abc67e",
+      "sha256": "a214af273e57f55facfbb7d2044d0c0c3ca6c25fde7ffac242ad872bd6802326",
+      "bytes": 2538
+    },
+    {
+      "path": "public/ida/docs/README.md",
+      "before_blob": null,
+      "sha256": "0c9cfb6ef3fc8dee9e671f5ea5cee13364a873740a35d8d23136f1c6b0f15469",
+      "bytes": 7008
+    },
+    {
+      "path": "public/ida/docs/affect-protocols.md",
+      "before_blob": null,
+      "sha256": "62a6caec1ddfe2c798ee3c1b51a9d3e74690e9816edb721a93b87e9ac43721f7",
+      "bytes": 5771
+    },
+    {
+      "path": "public/ida/docs/ida-eeg-equations.md",
+      "before_blob": null,
+      "sha256": "e8cc615923e52ec9573992eeb55f67d8a3e1b7be6f64723fde1d7b03c711cec7",
+      "bytes": 27478
+    },
+    {
+      "path": "public/ida/docs/journey-credits.md",
+      "before_blob": null,
+      "sha256": "341db1a1cc88c993d33366bf3c4aaf6209e5f9251ff32256abbd51b157688743",
+      "bytes": 4242
+    },
+    {
+      "path": "public/ida/docs/journey-verification.json",
+      "before_blob": null,
+      "sha256": "a067e4fa973c09d322d7232bf8465f83fa2c0603ceb19ac675f22b36d0af163f",
+      "bytes": 402
+    },
+    {
+      "path": "public/ida/docs/original-source-sha256.json",
+      "before_blob": null,
+      "sha256": "0eedaa4ff7ce60804ec1df11bea3343d92d27a5e71f59733ce3cd3ea59dd2391",
+      "bytes": 4642
+    },
+    {
+      "path": "public/ida/docs/package.json",
+      "before_blob": null,
+      "sha256": "6bd70f5c34ff9467c9a8036dd7806dc6abf3fbed64e392520d4222ecb7856d1d",
+      "bytes": 149
+    },
+    {
+      "path": "public/ida/docs/ratings-worksheet.csv",
+      "before_blob": null,
+      "sha256": "8695603180293ccfe06e554e07be8feae50eeef0944f4ec020c73f30c9ce4eea",
+      "bytes": 253
+    },
+    {
+      "path": "public/ida/docs/stimulus-protocol.md",
+      "before_blob": null,
+      "sha256": "50f450bcae50fba757866f7d64ef293a641224a3bacab451424d7031096c44f8",
+      "bytes": 20189
+    },
+    {
+      "path": "public/ida/workbench/app.js",
+      "before_blob": null,
+      "sha256": "6efb99b7293c35a1ba954c06941a2822244ff838abf448d3c9dc7226a5ca0a77",
+      "bytes": 30883
+    },
+    {
+      "path": "public/ida/workbench/archive.js",
+      "before_blob": null,
+      "sha256": "1780dc9b42e53d7169709b6d1a813a33f819c4f557e65f49e5b787ce262f6d43",
+      "bytes": 2120
+    },
+    {
+      "path": "public/ida/workbench/bridge.js",
+      "before_blob": null,
+      "sha256": "cc5c994444e585e0240d923a553ca438006cd49ce857bfa53d290c4be95cd46f",
+      "bytes": 2508
+    },
+    {
+      "path": "public/ida/workbench/core.js",
+      "before_blob": null,
+      "sha256": "bb298562982d9c69ab297f1149e2a70064c6a8c9322ffaafc13c6277f24a92e6",
+      "bytes": 9858
+    },
+    {
+      "path": "public/ida/workbench/csv.js",
+      "before_blob": null,
+      "sha256": "d2e5af5de715533a8dc75dcc7a0e0d79266db82983af42c7ef75f23c0dd55c3f",
+      "bytes": 2525
+    },
+    {
+      "path": "public/ida/workbench/cues.js",
+      "before_blob": null,
+      "sha256": "bbdf253d19adb42a04f59c7712e84c1c1cae7a3b95e6cce00845e0003350bbb5",
+      "bytes": 290
+    },
+    {
+      "path": "public/ida/workbench/engine.worker.js",
+      "before_blob": null,
+      "sha256": "92f68a328ecd4e6ed3993205368d0fa64b130d8a47ef74a6175cdd151005d5f3",
+      "bytes": 2561
+    },
+    {
+      "path": "public/ida/workbench/experiments.json",
+      "before_blob": null,
+      "sha256": "3ca287414800f0ed08ef6db0563aedcad3efeb58fcf447ced5b5b908b7cc0272",
+      "bytes": 1548
+    },
+    {
+      "path": "public/ida/workbench/index.html",
+      "before_blob": null,
+      "sha256": "9a9255394c6f4b507d77ec9f33581febe184627d03fd5de31456f8d1f4cff7d2",
+      "bytes": 13232
+    },
+    {
+      "path": "public/ida/workbench/media/build-manifest.json",
+      "before_blob": null,
+      "sha256": "45965f2c8e7e7f322a97f454a9889d551b95c8dd1a1c7f9d82ef9ec11423d536",
+      "bytes": 632
+    },
+    {
+      "path": "public/ida/workbench/media/decoded-verification.jpg",
+      "before_blob": null,
+      "sha256": "5957dd2268a0e51ce0fe28cdd6932e2ac45d4c1cfa63f56c358843f4c85675c8",
+      "bytes": 31683
+    },
+    {
+      "path": "public/ida/workbench/media/delivery-verification.json",
+      "before_blob": null,
+      "sha256": "4d6075573ad9fb5c0f05108cb8ec042e6d756219dfc1006676af8fc82f7679c0",
+      "bytes": 3770
+    },
+    {
+      "path": "public/ida/workbench/media/ida-observation-v1-order-A-events.csv",
+      "before_blob": null,
+      "sha256": "55863b682d972d301d6f948a8639f76c0881e4d9bd8a99915722466700ed2c65",
+      "bytes": 2105
+    },
+    {
+      "path": "public/ida/workbench/media/ida-observation-v1-order-A.json",
+      "before_blob": null,
+      "sha256": "614e93f6db286a3d34f88da84ae24ac9d61721257d46740b29ddc8164e2584de",
+      "bytes": 9492
+    },
+    {
+      "path": "public/ida/workbench/media/ida-observation-v1-order-A.mp4",
+      "before_blob": null,
+      "sha256": "c1173e7ce4e98806c74955e95752f84768c39d2608a197db5c90116033cc218f",
+      "bytes": 4308365
+    },
+    {
+      "path": "public/ida/workbench/media/ida-observation-v1-order-B-events.csv",
+      "before_blob": null,
+      "sha256": "09e0bf699105e58423b6529a9102715f1c1f4b7e9abe0da0d6d6c4742cc1a810",
+      "bytes": 2105
+    },
+    {
+      "path": "public/ida/workbench/media/ida-observation-v1-order-B.json",
+      "before_blob": null,
+      "sha256": "537a35c1999ab4d567d17b6e0569b2e220a3522dc374b377cd9557d57403ec2e",
+      "bytes": 9492
+    },
+    {
+      "path": "public/ida/workbench/media/ida-observation-v1-order-B.mp4",
+      "before_blob": null,
+      "sha256": "9d9fb7e9b6bbb68030cd7a30bf254ecb2fcb30510dc721080ca2eb2e5b16fcc9",
+      "bytes": 4310782
+    },
+    {
+      "path": "public/ida/workbench/media/ida-real-world-journey-v2-web.json",
+      "before_blob": null,
+      "sha256": "22abd21ea8bca4b15e12467e8d93750933a0eb25d69f8703d3f37186bbf57c0e",
+      "bytes": 30657
+    },
+    {
+      "path": "public/ida/workbench/media/ida-real-world-journey-v2-web.mp4",
+      "before_blob": null,
+      "sha256": "82e2576a9647ccedb0e18f6b7df463f6462051e262f4a9a9c482da3617eb95e9",
+      "bytes": 22785761
+    },
+    {
+      "path": "public/ida/workbench/media/ida-real-world-journey-v2.json",
+      "before_blob": null,
+      "sha256": "79e8b6089b80e933d75922b569f2f0161d9e9d9705899f9093d74ff591beee02",
+      "bytes": 26700
+    },
+    {
+      "path": "public/ida/workbench/media/storyboard.jpg",
+      "before_blob": null,
+      "sha256": "17f281fe7237360bdaf0f74e857e2915bb901f9a31e2587ca42d6aab7d9301ea",
+      "bytes": 42397
+    },
+    {
+      "path": "public/ida/workbench/media/verification.json",
+      "before_blob": null,
+      "sha256": "454489208696450bf74c29dc021856165754b04fac8c759d0e5e8332bdbd577f",
+      "bytes": 595
+    },
+    {
+      "path": "public/ida/workbench/styles.css",
+      "before_blob": null,
+      "sha256": "8144c8f05cf45a7b49dc6bbb8bee088418e1cd8057f9127c411f910882374b50",
+      "bytes": 11711
+    },
+    {
+      "path": "public/ida/workbench/vendor/MUSE-JS-LICENSE.txt",
+      "before_blob": null,
+      "sha256": "d14d90bb198a45f15dc9a61f889bc166074d35da3e60091a9415e5351889d388",
+      "bytes": 1094
+    },
+    {
+      "path": "public/ida/workbench/vendor/RXJS-LICENSE.txt",
+      "before_blob": null,
+      "sha256": "81c407ac717813b0e3795402960e04003c7bba8ba59b621624707028531c9ade",
+      "bytes": 11064
+    },
+    {
+      "path": "public/ida/workbench/vendor/THREE-LICENSE.txt",
+      "before_blob": null,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    {
+      "path": "public/ida/workbench/vendor/manifest.json",
+      "before_blob": null,
+      "sha256": "35b4c925abfe3d08097cddfaf569713b4f02c33d8f71a172b77f3ce7f2646c4f",
+      "bytes": 1266
+    },
+    {
+      "path": "public/ida/workbench/vendor/muse-js.bundle.mjs",
+      "before_blob": null,
+      "sha256": "5885c0a80511eb3c5199b87c663896f9911cb46b736789aeac83d2468fc9040f",
+      "bytes": 191980
+    },
+    {
+      "path": "public/ida/workbench/vendor/three.core.js",
+      "before_blob": null,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+      "bytes": 1458113
+    },
+    {
+      "path": "public/ida/workbench/vendor/three.module.js",
+      "before_blob": null,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+      "bytes": 662772
+    },
+    {
+      "path": "public/ida/workbench/videos.json",
+      "before_blob": null,
+      "sha256": "933dfe9e76cc38162b65d2e73ca67ea412c2c7716deba0713ad764d284205bc9",
+      "bytes": 1505
+    },
+    {
+      "path": "public/ida/workbench/vr.js",
+      "before_blob": null,
+      "sha256": "6200fdc97465e29f719165a69b251d33a6b9ae4a6dcd5575d28b4088a9dac52a",
+      "bytes": 7151
+    },
+    {
+      "path": "public/images/biology-surgery-room.png",
+      "before_blob": null,
+      "sha256": "092a59cc723e2983cf927ba9c73638f02b9b02a4a13c2ed81c7c79428951ec52",
+      "bytes": 2346777
+    },
+    {
+      "path": "public/images/ida-distance-and-residue.png",
+      "before_blob": null,
+      "sha256": "564364869baa8b2712d8abc4a27263819fbac494db4e3c79c040e548f33b61cb",
+      "bytes": 142649
+    },
+    {
+      "path": "public/images/observatory-exterior.png",
+      "before_blob": null,
+      "sha256": "6fdb74a2debc35aa156d9680f78fdf26a94fe973ac6c3299995af779f0c9d4a2",
+      "bytes": 2909403
+    },
+    {
+      "path": "public/images/quantum-chamber.png",
+      "before_blob": null,
+      "sha256": "31b286e143d69dd40210d69dd1eb4451e8595de53f73c9ff4e59f82b6e157eda",
+      "bytes": 2037630
+    },
+    {
+      "path": "public/images/room-archive.png",
+      "before_blob": null,
+      "sha256": "e009cc4ef8f689b0ae647c6f40478c6f7c9371ebdb3d0ee67410d208547269ed",
+      "bytes": 2540752
+    },
+    {
+      "path": "public/images/room-astronomy.png",
+      "before_blob": null,
+      "sha256": "b1e74774fa13bc33cb577ddf1b1991a5c210bb1e5e9367b158abe8c9ec82ef02",
+      "bytes": 2489661
+    },
+    {
+      "path": "public/images/room-chemistry.png",
+      "before_blob": null,
+      "sha256": "9a700aca4e386941642b2a2577ce7cedcbfb58179d7554184ad9085c4d4bffc3",
+      "bytes": 2615502
+    },
+    {
+      "path": "public/images/room-computing.png",
+      "before_blob": null,
+      "sha256": "cc0d90ee98754438bdd2308dfe86d622d4e95a7c10dec5970352ab1549c175c7",
+      "bytes": 2196983
+    },
+    {
+      "path": "public/images/room-earth.png",
+      "before_blob": null,
+      "sha256": "8427ec5119816c14437f7384d5d480d98c05d31078a918010c312f0d5e7973be",
+      "bytes": 2816557
+    },
+    {
+      "path": "public/images/room-engineering.png",
+      "before_blob": null,
+      "sha256": "0b1c66b6620c285c6e2bebaceb8824645b9628901adbd6d65c9f726924ea569d",
+      "bytes": 2554276
+    },
+    {
+      "path": "public/images/room-psychology.png",
+      "before_blob": null,
+      "sha256": "a43cd54bde0fda4d2fb7e99064d823e20ffb7544660299b743fabaab0cf8ffe1",
+      "bytes": 2221801
+    },
+    {
+      "path": "public/images/room-social.png",
+      "before_blob": null,
+      "sha256": "3d7e05a700021321e2350a5509d196145efc83a2ed21797723a1a0a6017731a5",
+      "bytes": 2404349
+    },
+    {
+      "path": "public/research/Observatory_Programme_Assessment.md",
+      "before_blob": null,
+      "sha256": "ce31d4b153685094d29758debeabfbd669e96b85bbe49c61b753cc8dad587208",
+      "bytes": 14090
+    },
+    {
+      "path": "public/research/Observatory_Room_Architecture.md",
+      "before_blob": null,
+      "sha256": "372123c8c87e64d0b584b68a1b78e7f1e6d5e430ebc977f4fdb2b68a5381254e",
+      "bytes": 8200
+    },
+    {
+      "path": "public/research/ida-eeg-equations.md",
+      "before_blob": null,
+      "sha256": "e8cc615923e52ec9573992eeb55f67d8a3e1b7be6f64723fde1d7b03c711cec7",
+      "bytes": 27478
+    },
+    {
+      "path": "research/Observatory_Programme_Assessment.md",
+      "before_blob": null,
+      "sha256": "ce31d4b153685094d29758debeabfbd669e96b85bbe49c61b753cc8dad587208",
+      "bytes": 14090
+    },
+    {
+      "path": "research/Observatory_Room_Architecture.md",
+      "before_blob": null,
+      "sha256": "372123c8c87e64d0b584b68a1b78e7f1e6d5e430ebc977f4fdb2b68a5381254e",
+      "bytes": 8200
+    },
+    {
+      "path": "tests/catalogue.test.ts",
+      "before_blob": null,
+      "sha256": "f8dc1630c6a015ec43c7fa5f596217adbe1376166db5b9e327cdce8e6bc453bf",
+      "bytes": 2779
+    },
+    {
+      "path": "tests/ida/core.test.mjs",
+      "before_blob": null,
+      "sha256": "f55368bbe91aba5dafc9489b6e9dcc7b47b7e1e3abb8b80b5fe1a6eb2975a616",
+      "bytes": 3309
+    },
+    {
+      "path": "tests/ida/cues.test.mjs",
+      "before_blob": null,
+      "sha256": "95839e2fc36cde8f60346760241e059165ea480cf64a559c41bdb613d93f2611",
+      "bytes": 669
+    },
+    {
+      "path": "tests/ida/worker.test.mjs",
+      "before_blob": null,
+      "sha256": "1f368f9cbf2239cfad7a90630dc0c43b8b909e06d69637a7f75ad70da4227f83",
+      "bytes": 1172
+    },
+    {
+      "path": "tests/local-records.test.ts",
+      "before_blob": null,
+      "sha256": "8413ded8d6cc9d4189db84ea701b6c46aa474c10dc63bf82e77127f9e017cae8",
+      "bytes": 1945
+    }
+  ]
+}

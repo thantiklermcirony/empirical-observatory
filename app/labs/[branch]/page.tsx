@@ -1,13 +1,14 @@
-import CentralDesk from '@/components/observatory/CentralDesk';
+import RoomEntrance from '@/components/observatory/RoomEntrance';
 import { notFound } from 'next/navigation';
-import { LAB_IDENTITIES } from '@/lib/lab-presentation';
+import { resolveRoom } from '@/lib/observatory-catalogue';
 export async function generateMetadata({ params }: { params: Promise<{ branch: string }> }) {
   const { branch } = await params;
-  const lab = LAB_IDENTITIES[branch];
-  return { title: lab ? lab.title + ' — Empirical Observatory' : 'Laboratory — Empirical Observatory', description: lab?.description };
+  const room = resolveRoom(branch);
+  return { title: room ? room.title + ' — Empirical Observatory' : 'Laboratory — Empirical Observatory', description: room?.description };
 }
 export default async function Laboratory({ params }: { params: Promise<{ branch: string }> }) {
   const { branch } = await params;
-  if (!['mathematics', 'biology', 'quantum', 'dynamics', 'temporal', 'encyclopedia'].includes(branch)) notFound();
-  return <CentralDesk initialBranch={branch} />;
+  const room=resolveRoom(branch);
+  if (!room) notFound();
+  return <RoomEntrance room={room} branch={branch} />;
 }

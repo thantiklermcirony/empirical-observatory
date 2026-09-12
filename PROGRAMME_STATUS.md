@@ -1,3 +1,11 @@
+# Rooms and instruments — 12 September 2026
+
+The room itself is now the branch entrance. Eleven distinctive rooms and 32 permanent device identities organise the existing programme, with physical hotspots, quick controls, working tools, construction notes and source cross-references. The complete IDA browser application is integrated with its numerical tests, local recording boundary, video credits and separately identified browser rendition. Read [the room and admission contract](research/Observatory_Room_Architecture.md).
+
+The central calculations, private printouts and shared 200-provider-call daily limit remain intact. Secure hosted AI credentials remain absent from the production configuration checked for this release; no live-provider acceptance is claimed. Software integration does not execute the next scientific experiment. Specialist pause instructions remain in force.
+
+---
+
 # Question-to-evidence explanation — 12 September 2026
 
 The central terminal now connects ordinary language to a branch investigation plan, actual fixed-engine calculations and an evidence-linked lay explanation. The report contains source classes, computed graphs, missing measurements and next steps. A clearly labelled source brief remains useful while the secure hosted AI credential is absent. The two AI stages share the existing 200-call daily cap; no autonomous scientific-code or public-claim changes are enabled. [Current design and limits](research/Investigation_Pipeline.md).

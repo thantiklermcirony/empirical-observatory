@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {cueAt} from '../../public/ida/workbench/cues.js';
+test('cue intervals are half-open; seeks resolve current cue',()=>{const m={timeline:[{id:'a',onset_s:0,offset_s:2},{id:'b',onset_s:2,offset_s:10}]};assert.equal(cueAt(m,1.99).id,'a');assert.equal(cueAt(m,2).id,'b');assert.equal(cueAt(m,10),null);assert.equal(cueAt(m,.1).id,'a');assert.equal(cueAt(null,0),null)});
+test('dissolves mark incoming scene at its actual timeline onset',()=>{const m={timeline:[{id:'a',onset_s:0,offset_s:60},{id:'b',onset_s:59,offset_s:77}]};assert.equal(cueAt(m,58.9).id,'a');assert.equal(cueAt(m,59).id,'b')});

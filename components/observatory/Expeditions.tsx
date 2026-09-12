@@ -1,5 +1,6 @@
+/* oxlint-disable react/react-compiler -- Synchronize browser-only URL state after hydration; React Compiler is not enabled. */
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Globe2,
   Dna,
@@ -544,9 +545,11 @@ function Genome() {
   );
 }
 export default function Expeditions() {
+  const [expedition,setExpedition]=useState('earth');
+  useEffect(()=>{const p=new URLSearchParams(location.search).get('expedition');if(p&&['earth','memory','genome'].includes(p))setExpedition(p);},[]);
   return (
     <div className="lab-content">
-      <Tabs defaultValue="earth">
+      <Tabs value={expedition} onValueChange={setExpedition}>
         <TabsList className="lab-tabs">
           <TabsTrigger value="earth">
             <Globe2 />
