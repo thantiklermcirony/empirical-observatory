@@ -8,12 +8,12 @@ export async function reserveAiCall(database: D1Database, limit: number, now = n
   if (!reserved) throw new TemporalInputError('ai_daily_limit', 'The shared daily AI allowance is used. The laboratory results remain available.');
 }
 
-export async function researchModelCall(config: AiConfig, instructions: string, input: unknown, schema: object, reserve: () => Promise<void>, transport: typeof fetch = fetch) {
+export async function researchModelCall(config: AiConfig, instructions: string, input: unknown, schema: object, reserve: () => Promise<void>, transport: typeof fetch = fetch, options: { webSearch?: boolean; onSources?: (sources: { title: string; url: string }[]) => void } = {}) {
   if (!aiStatus(config).ready) throw new TemporalInputError('ai_not_configured', 'Hosted AI is not connected.');
   const encoded = JSON.stringify(input);
   if (encoded.length > 85000) throw new TemporalInputError('ai_input_limit', 'This investigation is too large for the shared explanation service.');
   await reserve();
-  const response = await transport('https://api.openai.com/v1/responses', { method: 'POST', redirect: 'error', signal: AbortSignal.timeout(25000), headers: { Authorization: `Bearer ${config.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ model: config.model, store: false, max_output_tokens: 3600, instructions, input: encoded, text: { format: { type: 'json_schema', name: 'observatory_research', strict: true, schema } } }) });
+  const response = await transport('https://api.openai.com/v1/responses', { method: 'POST', redirect: 'manual', signal: AbortSignal.timeout(options.webSearch ? 45000 : 25000), headers: { Authorization: `Bearer ${config.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ model: config.model, store: false, max_output_tokens: 3600, instructions, input: encoded, ...(options.webSearch ? { tools: [{ type: 'web_search', search_context_size: 'low' }], tool_choice: 'required', max_tool_calls: 3, include: ['web_search_call.action.sources'] } : {}), text: { format: { type: 'json_schema', name: 'observatory_research', strict: true, schema } } }) });
   if (!response.ok) throw new TemporalInputError('ai_provider_unavailable', 'The AI service did not complete this step. Calculated results remain available.');
   const reader = response.body?.getReader();
   if (!reader) throw new TemporalInputError('ai_response', 'The AI returned no response.');
@@ -22,9 +22,16 @@ export async function researchModelCall(config: AiConfig, instructions: string, 
     for (;;) { const chunk = await reader.read(); if (chunk.done) break; bytes += chunk.value.byteLength; if (bytes > 131072) throw new TemporalInputError('ai_response_limit', 'The AI response exceeded the allowed size.'); raw += decoder.decode(chunk.value, { stream: true }); }
   } catch (error) { await reader.cancel().catch(() => {}); throw error; }
   raw += decoder.decode();
-  const body = parseStrictJson(raw) as { status?: string; output?: { type: string; content?: { type: string; text?: string }[] }[] };
+  const body = parseStrictJson(raw) as { status?: string; output?: { type: string; action?: { sources?: { title?: string; url?: string }[] }; content?: { type: string; text?: string }[] }[] };
   if (body.status !== 'completed' || !Array.isArray(body.output)) throw new TemporalInputError('ai_incomplete', 'The AI explanation was incomplete.');
   const content = body.output.flatMap(item => item.type === 'message' ? item.content ?? [] : []);
   if (content.some(item => item.type === 'refusal')) throw new TemporalInputError('ai_refused', 'The AI could not complete this investigation.');
+  if (options.onSources) {
+    const sources: { title: string; url: string }[] = [];
+    for (const item of body.output) if (item.type === 'web_search_call') for (const source of item.action?.sources ?? []) {
+      try { const url = new URL(source.url ?? ''); if (url.protocol === 'https:' && !url.username && !url.password && !sources.some(s => s.url === url.href)) sources.push({ title: (source.title || url.hostname).slice(0, 240), url: url.href }); } catch { /* Invalid provider links are not displayed. */ }
+    }
+    options.onSources(sources.slice(0, 15));
+  }
   return parseStrictJson(content.filter(item => item.type === 'output_text').map(item => item.text ?? '').join(''));
 }

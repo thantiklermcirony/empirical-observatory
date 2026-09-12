@@ -1,0 +1,144 @@
+{
+  "site_commit": "eefcb08473f90a80abf140a595a564e7d9ff05af",
+  "site_previous_commit": "97cc71b26b9525243b3ad16931161b11d56d1269",
+  "base_commit": "0968c3d882643b05e376ce89a7bd73863a191449",
+  "frozen_sha256": {
+    "lib/engine/temporal-router.ts": "e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29",
+    "lib/engine/quantum-reference.ts": "3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc",
+    "lib/strict-json.ts": "9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c"
+  },
+  "entries": [
+    {
+      "path": "app/agents/page.tsx",
+      "before_blob": "8dc1456cd503de5bbe750503acd61752d79f0849",
+      "sha256": "ef18f002e3a8d9f8ee44fdd51468d397bc17df4d6e6f28daf765216e2c194090",
+      "bytes": 5987
+    },
+    {
+      "path": "app/api/inquiry/data/route.ts",
+      "before_blob": null,
+      "sha256": "cc3e41ba51606b8f336049f38b613f8f7d19fd58fa3e95f7e5213cf8046639a0",
+      "bytes": 885
+    },
+    {
+      "path": "app/api/inquiry/openapi/route.ts",
+      "before_blob": "a704fd545ec891c0fba624dc48e7fde4663b70e0",
+      "sha256": "2f66fed54a128b64825b5f103b0e6563db6d2748838e31cb99bb20b73d930c60",
+      "bytes": 5772
+    },
+    {
+      "path": "app/llms.txt/route.ts",
+      "before_blob": "639116d14cc99bf80ada1945a3307bdc82e3b3ad",
+      "sha256": "96bfc7073ffcf39dc84d98b66fc6b80d8fa572bdfde580e8c0529b10c95add54",
+      "bytes": 2175
+    },
+    {
+      "path": "app/observatory-research.css",
+      "before_blob": "53c4c9dc5154c3a63658a4d14f9c3d2aa6e76b80",
+      "sha256": "b561d9cfeb4437f62ffae7ee92d302d9416be68ff919540c64eff6031cacdf58",
+      "bytes": 6325
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "before_blob": "7284ee4d79f2b9c6ba512885d1b715e60c9210cf",
+      "sha256": "0100a911f8294251d9204e3c14faebb25f6dbb5f830eb75e6524890f5e7fafb1",
+      "bytes": 4421
+    },
+    {
+      "path": "components/observatory/CentralDesk.tsx",
+      "before_blob": "de5b9327ebdd932375083869c37f72aeb699a025",
+      "sha256": "9381b6b61b5a148a1c466fa0d8ca2495c6aa2a2fb64e851c5f176c9f9b46d134",
+      "bytes": 19291
+    },
+    {
+      "path": "components/observatory/DataExplorer.tsx",
+      "before_blob": null,
+      "sha256": "9129b4bf0e7ef79936f9f6564a79d46cdbe4c130dd3ee7c6bfaa63a951753136",
+      "bytes": 4335
+    },
+    {
+      "path": "components/observatory/DataStudyView.tsx",
+      "before_blob": null,
+      "sha256": "05276baece17c067d936e2841cb0efa22af811012199fc52d9a079d6a5032ddb",
+      "bytes": 5240
+    },
+    {
+      "path": "components/observatory/ResearchAnswerView.tsx",
+      "before_blob": "8ba1ab7fbde2f32b38caf49c919f6c8231009118",
+      "sha256": "100267871654998c265668f490001d90ae144172c6201187501ab666f884b56c",
+      "bytes": 4289
+    },
+    {
+      "path": "lib/ai-interpreter.ts",
+      "before_blob": "52702dbc5481cd44fc43b29db31df12c3d359db1",
+      "sha256": "896f14000d37664b13202afed0fe624c5e5d6ba816a4253b96850acab9566e01",
+      "bytes": 7424
+    },
+    {
+      "path": "lib/ai-research-transport.ts",
+      "before_blob": "f2f5a9dfa220896369c6ff4b706bbe9e1f924ae7",
+      "sha256": "2d18c2584cc73fe85582e346484b582eaba7d7b341554381138f0cebda57a3fc",
+      "bytes": 4144
+    },
+    {
+      "path": "lib/correlation.ts",
+      "before_blob": null,
+      "sha256": "b54d23cd16b85b8b418516b8c658afdc341879737c76b555d2279c76f03f3675",
+      "bytes": 5777
+    },
+    {
+      "path": "lib/data-investigation.ts",
+      "before_blob": null,
+      "sha256": "13590c08627d1d5bfe1ca193a987c12500c51c54c2d9861f12767c3e064e70db",
+      "bytes": 16061
+    },
+    {
+      "path": "lib/research-contract.ts",
+      "before_blob": "6421dddcc2cc8571393fea81fa3d77425fc2c890",
+      "sha256": "b02790903322a61df058d4a6c0acffd7015496fbeb3f4edd36c5194334a941b7",
+      "bytes": 1368
+    },
+    {
+      "path": "lib/research-engine.ts",
+      "before_blob": "93b856953bbefc4ec79accda77b659ca11a2d6d3",
+      "sha256": "ce7e775bbd4e01396c956f4fa7c94fc024f028100a08c3f4203ac646dda36ac1",
+      "bytes": 29030
+    },
+    {
+      "path": "lib/world-bank.ts",
+      "before_blob": null,
+      "sha256": "3e802419d5749086ed289dd2ad2737abb6f9475cbcd14f569582c44fd1eef552",
+      "bytes": 11904
+    },
+    {
+      "path": "package.json",
+      "before_blob": "b328a4a7d7f1fdf5c3d546ca54e13cfb9dbadabd",
+      "sha256": "c04f8474543249fba27fb7b7ad0b2e845b8cf311e0e5d1fd9291565e77abeb3e",
+      "bytes": 2412
+    },
+    {
+      "path": "research/Public_Data_Investigation.md",
+      "before_blob": null,
+      "sha256": "0a00a078810288d52669d3468a94add2d721f0cfef28be187caa5310ebc8daa1",
+      "bytes": 6138
+    },
+    {
+      "path": "tests/gateway/ai-interpreter.test.mjs",
+      "before_blob": "47fd72063b7c3a3afe80e6a5003a01a91c92967c",
+      "sha256": "f9060cef0a0e0932f013e68af37b97b42edf80c1e6d22d9385ca94f003d90629",
+      "bytes": 6541
+    },
+    {
+      "path": "tests/gateway/data-investigation.test.mjs",
+      "before_blob": null,
+      "sha256": "38003dee7ba12638c6e17131a100a157fcd4a969bd482ae651de05927ca11ae3",
+      "bytes": 11177
+    },
+    {
+      "path": "tests/gateway/research.test.mjs",
+      "before_blob": "15476adb875c56cfe6b5a366c244e1598dfa5b48",
+      "sha256": "7d3fd3d5e93ae786cdffcad4784482c72becb8ad34318f937350ff5c5a7f1186",
+      "bytes": 10761
+    }
+  ]
+}
