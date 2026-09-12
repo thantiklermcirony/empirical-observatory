@@ -1,0 +1,29 @@
+{
+  "caseId": "BIO-PD-001",
+  "revision": 2,
+  "dataSha256": "6ceeff09a8652bfb716088a4bf9fbe7618e1b89a7bb94ffc2e15d3fc45657ce5",
+  "dataHref": "/research-cases/paired-damage/data.json",
+  "sourceFiles": [
+    {
+      "file": "Cell info wt (Figure 1e).csv",
+      "sha256": "11d5cfdcffa2306bcd66ecf3c8281ba1a328c99b16a4072a77892fed819d0ce8",
+      "bytes": 11124,
+      "href": "/research-cases/paired-damage/Cell info wt (Figure 1e).csv"
+    },
+    {
+      "file": "Figure 3g time-to-die.csv",
+      "sha256": "83d153797a1d25780a8109b3d168b8144d9bea86286a5e4e163a8a0d9171ec2b",
+      "bytes": 162733,
+      "href": "/research-cases/paired-damage/Figure 3g time-to-die.csv"
+    },
+    {
+      "file": "readme.txt",
+      "sha256": "568e14251273cf97ae3b54f63f626d2d8b2df67f67c8790d0d331e3308c8c163",
+      "bytes": 2286,
+      "href": "/research-cases/paired-damage/readme.txt"
+    }
+  ],
+  "sourceArticle": "https://www.nature.com/articles/s41467-023-37930-x",
+  "sourceRepository": "https://github.com/y1fanyang/coliDamageDynamics",
+  "builderSha256": "a0d751bca2678cf96715364df480e79ff911ac16ce7738bec0646e527317ba7b"
+}

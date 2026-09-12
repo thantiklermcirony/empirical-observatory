@@ -1,3 +1,11 @@
+# Shared Biology case — 13 September 2026
+
+BIO-PD-001 revision 2 is integrated as a Biology specimen dossier, replayable source-data check and shared case contract. The central visitor guide and editor workshop receive the same record; the encyclopedia preserves its exploratory admission status. See [case integration and scientific corrections](research/Paired_Damage_Case_Integration.md). The existing server AI connection, 200-attempt daily limit, scientific engines and specialist pauses are preserved.
+
+This checkpoint supersedes historical AI-absent and old-terminal descriptions below: the main computer is a programme guide; the scientific inquiry workbench remains separately available. Publication does not establish a discovery.
+
+---
+
 # Rooms and instruments — 12 September 2026
 
 The room itself is now the branch entrance. Eleven distinctive rooms and 32 permanent device identities organise the existing programme, with physical hotspots, quick controls, working tools, construction notes and source cross-references. The complete IDA browser application is integrated with its numerical tests, local recording boundary, video credits and separately identified browser rendition. Read [the room and admission contract](research/Observatory_Room_Architecture.md).

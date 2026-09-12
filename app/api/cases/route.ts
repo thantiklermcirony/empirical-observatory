@@ -1,0 +1,2 @@
+import {RESEARCH_CASES} from '@/lib/research-cases';
+export function GET(){return Response.json({schema:'observatory-case-index/1',scope:'Shared versioned research records; relationships do not transfer empirical validity.',cases:RESEARCH_CASES.map(c=>({id:c.id,revision:c.revision,title:c.title,owner:c.owner,deviceId:c.deviceId,href:c.href,classification:c.classification,admission:c.admission,record:`/api/cases/${c.id}`,replay:`/api/cases/${c.id}/replay`,data:c.provenance.dataHref,rooms:c.connections.map(x=>x.room)}))});}

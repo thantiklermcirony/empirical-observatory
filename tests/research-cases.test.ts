@@ -1,0 +1,14 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import data from '../public/research-cases/paired-damage/data.json' with {type:'json'};
+import {PAIRED_DAMAGE_CASE as c,casesForRoom} from '../lib/research-cases.ts';
+import {replayPairedDamage} from '../lib/paired-damage.ts';
+import {DEVICES,SCIENCE_ROOMS,roomForDevice} from '../lib/observatory-catalogue.ts';
+import {observatoryGuide} from '../lib/observatory-guide.ts';
+void test('recorded counts match an independent Python reconstruction at all ages and margins',()=>{for(const lead of [0,3.5,7])assert.deepEqual(replayPairedDamage(data.rows,lead),data.referenceSummaries[String(lead) as keyof typeof data.referenceSummaries]);assert.equal(replayPairedDamage(data.rows,7).find(x=>x.age===66.5)?.k,63);assert.equal(replayPairedDamage(data.rows,7).find(x=>x.age===66.5)?.n,88);});
+void test('endpoint eligibility is strict, ties are excluded and sign direction is correct',()=>{const row={pair:'a',h:'aH',t:'aT',age:10,damageH:1,damageT:2,endH:20,endT:17};const got=replayPairedDamage([row,{...row,pair:'b',endT:18},{...row,pair:'c',damageH:2}],7)[0];assert.deepEqual(got,{age:10,joined:3,ties:1,excludedByLead:1,n:1,k:1,fraction:1});assert.throws(()=>replayPairedDamage([row,row],7));assert.throws(()=>replayPairedDamage([{...row,damageH:NaN}],7));assert.throws(()=>replayPairedDamage([row],-1));});
+void test('case and every cross-lab destination exist and retain a single Biology home',()=>{assert.equal(roomForDevice(c.deviceId)?.id,'biology');for(const link of c.connections){assert.ok(SCIENCE_ROOMS.some(r=>r.id===link.room));assert.ok(DEVICES.some(d=>d.id===link.device));assert.ok(casesForRoom(link.room).some(r=>r.id===c.id));assert.ok(link.requires.length>0);}assert.equal(c.admission,'candidate_requires_independent_validation');});
+void test('published bytes match the provenance record',()=>{const sha=(p:string)=>createHash('sha256').update(readFileSync(p)).digest('hex');assert.equal(sha('public'+c.provenance.dataHref),c.provenance.dataSha256);for(const s of c.provenance.sourceFiles)assert.equal(sha('public'+s.href),s.sha256);});
+void test('offline guide answers about this case without pretending to run its calculations',async()=>{const result=await observatoryGuide('What did the paired cell damage case show?',{},async()=>{throw new Error('Unexpected AI reservation');});assert.equal(result.research?.aiCalls,0);assert.equal(result.inquiries.length,0);assert.match(result.research!.answer.answer,/63\/88/);assert.ok(result.research!.sources.some(s=>s.id==='S-PAIRED-DAMAGE'));});
