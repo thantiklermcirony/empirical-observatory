@@ -1,0 +1,106 @@
+name: Import reviewed observatory science rooms and IDA integration
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: import-observatory-rooms-20260912
+  cancel-in-progress: false
+jobs:
+  import-reviewed-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Refuse reuse of the single-use review branch
+        run: |
+          if git ls-remote --exit-code --heads origin refs/heads/import/observatory-rooms-20260912; then
+            echo "This integration branch already exists; do not rerun this workflow."
+            exit 1
+          else
+            status=$?
+            if [ "$status" -ne 2 ]; then exit "$status"; fi
+          fi
+      - name: Verify pinned release and existing source before import
+        run: |
+          python - <<'PY'
+          import hashlib, io, json, pathlib, subprocess, urllib.request, zipfile
+          url = 'https://github.com/thantiklermcirony/empirical-observatory/releases/download/laboratory-sources-2026-09-12/Observatory_Rooms_Source_Integration_20260912.zip'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              data = response.read(80000001)
+          assert len(data) == 55554992
+          assert hashlib.sha256(data).hexdigest() == 'cb502817168fe3f2f30fac58e0a8619529e5f346413363d84a7b81e0a8d34888'
+          archive = zipfile.ZipFile(io.BytesIO(data))
+          manifest = json.loads(archive.read('INTEGRATION_MANIFEST.json'))
+          assert manifest['site_commit'] == '3e4a3b7c7b923a9ee73ee3a23062e20a3d2bdc2e'
+          assert manifest['site_previous_commit'] == 'b87439452092ffb58462a5b8ca8f7eb8e7ebfaf7'
+          assert manifest['base_commit'] == '903a735a06e54d21f63053e77032826203587835'
+          subprocess.run(['git','merge-base','--is-ancestor',manifest['base_commit'],'HEAD'],check=True)
+          assert manifest['integration_id'] == 'observatory-rooms-20260912'
+          entries = manifest['entries']
+          assert len(entries) == 98
+          names = {e['path'] for e in entries}
+          assert len(names) == len(entries)
+          assert set(archive.namelist()) == names | {'INTEGRATION_MANIFEST.json'}
+          root = pathlib.Path.cwd().resolve()
+          allowed = {'README.md', 'CENTRAL_DESK.md', 'PROGRAMME_STATUS.md', 'package.json', 'lib/lab-presentation.ts', 'lib/observatory-rooms.ts', 'lib/observatory-catalogue.ts', 'lib/instrument-activity.ts', 'lib/local-records.ts', 'lib/research-knowledge.ts', 'components/ui/dialog.tsx'}
+          prefixes = ('app/', 'components/observatory/', 'public/images/', 'public/ida/', 'public/research/', 'research/', 'tests/')
+          validated = []
+          for entry in entries:
+              name = entry['path']
+              path = pathlib.PurePosixPath(name)
+              assert not path.is_absolute() and '..' not in path.parts and '\\' not in name
+              assert name in allowed or name.startswith(prefixes)
+              assert not name.startswith('app/api/') or name == 'app/api/catalogue/route.ts'
+              assert str(path) == name
+              assert not any(p in {'.git','.github','.openai'} or p.startswith('.env') for p in path.parts)
+              target = root.joinpath(*path.parts)
+              target.resolve().relative_to(root)
+              current = subprocess.run(['git','rev-parse','--verify',f'HEAD:{name}'], capture_output=True, text=True)
+              if entry['before_blob'] is None:
+                  assert current.returncode != 0 and not target.exists(), name
+              else:
+                  assert current.returncode == 0 and current.stdout.strip() == entry['before_blob'], name
+              content = archive.read(name)
+              assert len(content) == entry['bytes']
+              assert hashlib.sha256(content).hexdigest() == entry['sha256'], name
+              validated.append((target,content))
+          # All paths and preimages pass before any repository file is changed.
+          for target,content in validated:
+              target.parent.mkdir(parents=True,exist_ok=True)
+              target.write_bytes(content)
+          receipt = root/'research/rooms-integration-2026-09-12/INTEGRATION_MANIFEST.json'
+          receipt.parent.mkdir(parents=True,exist_ok=True)
+          receipt.write_text(json.dumps(manifest,indent=2)+'\n')
+          print('Verified and imported 98 files. Existing public-only research and workflows retained.')
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm build
+      - name: Check frozen engine identities
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib
+          expected={'lib/engine/temporal-router.ts':'e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29','lib/engine/quantum-reference.ts':'3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc','lib/strict-json.ts':'9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c'}
+          for name,digest in expected.items():
+              assert hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest()==digest,name
+          PY
+      - name: Publish a review branch
+        run: |
+          git config user.name 'Observatory source integration'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c import/observatory-rooms-20260912
+          git add .gitattributes CENTRAL_DESK.md PROGRAMME_STATUS.md README.md package.json tsconfig.json app components db drizzle lib public research scripts tests
+          git diff --cached --stat
+          git commit -m 'Organize science rooms and integrate the complete IDA workbench'
+          git push origin HEAD:refs/heads/import/observatory-rooms-20260912
