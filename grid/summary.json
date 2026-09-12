@@ -10,7 +10,7 @@
     "units": "gCO2/kWh"
   },
   "candidate_model": null,
-  "capturedAt": "2026-09-12T04:52:16.296721Z",
+  "capturedAt": "2026-09-12T09:02:50.986507Z",
   "detail": "Collecting NESO forecasts for the first half-hour starting at least 24 hours after receipt. Actuals resolve no earlier than 48 hours after target end. Issued time is our receipt time; no candidate predictor is being evaluated. Missed counts are unobserved nominal run slots, not verified scheduler failures.",
   "evidence": "Local capture records; GitHub publication time must be established separately",
   "forecast_records": [
@@ -253,32 +253,48 @@
       "target_end": "2026-09-13T05:30:00.000000Z",
       "target_start": "2026-09-13T05:00:00.000000Z",
       "value": 103
+    },
+    {
+      "actual": null,
+      "actual_raw_sha256": null,
+      "exact_lead_seconds": 88029.013493,
+      "forecast_id": "20260913T0930Z",
+      "issued_at": "2026-09-12T09:02:50.986507Z",
+      "matures_at": "2026-09-15T10:00:00.000000Z",
+      "raw_sha256": "5b429184642279819d7fd9634bc175831338985585672ac907736b8532e69e11",
+      "received_at": "2026-09-12T09:02:50.986507Z",
+      "resolved_at": null,
+      "revision_count": 0,
+      "status": "pending",
+      "target_end": "2026-09-13T10:00:00.000000Z",
+      "target_start": "2026-09-13T09:30:00.000000Z",
+      "value": 120
     }
   ],
-  "generated_at": "2026-09-12T04:52:16.298891Z",
+  "generated_at": "2026-09-12T09:02:50.988766Z",
   "geography": "Great Britain national",
   "health": {
     "error_count": 0,
-    "expected_run_slots": 91,
-    "forecast_count": 15,
+    "expected_run_slots": 99,
+    "forecast_count": 16,
     "last_run": {
       "collector_sha256": "c8647f54dc8351c99e7a4cf2382aad46f7f0a71efc59682782dd8543a7e6551f",
-      "completed_at": "2026-09-12T04:52:16.298891Z",
+      "completed_at": "2026-09-12T09:02:50.988766Z",
       "errors": [],
       "forecast_status": "captured",
       "mature_checked": 0,
       "mature_missing": 0,
       "new_resolutions": 0,
       "new_revisions": 0,
-      "nominal_slot": "2026-09-12T04:35:00.000000Z",
-      "run_id": "20260912T045215743052Z-03b11b92",
-      "started_at": "2026-09-12T04:52:15.743052Z",
-      "target_id": "20260913T0500Z"
+      "nominal_slot": "2026-09-12T08:35:00.000000Z",
+      "run_id": "20260912T090250476213Z-608ed5ca",
+      "started_at": "2026-09-12T09:02:50.476213Z",
+      "target_id": "20260913T0930Z"
     },
     "mature_missing_checks": 0,
     "mature_unresolved_count": 0,
-    "observed_run_slots": 15,
-    "pending_count": 15,
+    "observed_run_slots": 16,
+    "pending_count": 16,
     "recent_unobserved_slots": [
       "2026-09-10T08:05:00.000000Z",
       "2026-09-10T08:35:00.000000Z",
@@ -355,17 +371,24 @@
       "2026-09-12T02:35:00.000000Z",
       "2026-09-12T03:05:00.000000Z",
       "2026-09-12T03:35:00.000000Z",
-      "2026-09-12T04:05:00.000000Z"
+      "2026-09-12T04:05:00.000000Z",
+      "2026-09-12T05:05:00.000000Z",
+      "2026-09-12T05:35:00.000000Z",
+      "2026-09-12T06:05:00.000000Z",
+      "2026-09-12T06:35:00.000000Z",
+      "2026-09-12T07:05:00.000000Z",
+      "2026-09-12T07:35:00.000000Z",
+      "2026-09-12T08:05:00.000000Z"
     ],
     "resolved_count": 0,
     "revision_count": 0,
-    "run_count": 15,
+    "run_count": 16,
     "slot_interpretation": "Latest nominal UTC slot at actual run start; queued scheduler event times are not reconstructed",
-    "unobserved_run_slots": 76
+    "unobserved_run_slots": 83
   },
-  "last_capture": "2026-09-12T04:52:16.296721Z",
+  "last_capture": "2026-09-12T09:02:50.986507Z",
   "maturity_rule": "first observed non-null national actual at least 48h after target end",
-  "missed": 76,
+  "missed": 83,
   "phase": "collector_only",
   "predictive_superiority_claim": false,
   "provenance": "Local capture records; GitHub publication time must be established separately",
@@ -489,6 +512,14 @@
       "issuedAt": "2026-09-12T04:52:16.296721Z",
       "leadHours": 24.128806466388887,
       "start": "2026-09-13T05:00:00.000000Z"
+    },
+    {
+      "actual": null,
+      "end": "2026-09-13T10:00:00.000000Z",
+      "forecast": 120,
+      "issuedAt": "2026-09-12T09:02:50.986507Z",
+      "leadHours": 24.45250374805556,
+      "start": "2026-09-13T09:30:00.000000Z"
     }
   ],
   "resolved": 0,
