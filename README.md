@@ -1,5 +1,7 @@
 # The Empirical Observatory
 
+[Mathematics: all source releases, capability mappings and reviews](research/mathematics/README.md). Includes the Integration Companion, Recovery Challenge Lab and corrected Discovery Garden review. Candidate review and live deployment status are stated separately.
+
 
 
 **[CURRENT PROGRAMME: mathematical atlas, quantum mechanisms and cellular adaptation](PROGRAMME_STATUS.md)**
