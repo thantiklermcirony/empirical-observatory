@@ -1,5 +1,7 @@
 # The Empirical Observatory
 
+**[Temporal Grammar: the shared inquiry routing spine](automation/temporal-grammar/README.md)** — working local routing across mathematics, resource geometry and the quantum reference. It preserves action order, state, measurement context and premises; changed inputs update scoped conclusions or expose missing connections. Includes runnable source, 50 tests and independent correction review. The hosted desk and shared findings-store connection remain pending.
+
 [Mathematics: all source releases, capability mappings and reviews](research/mathematics/README.md). Includes the Integration Companion, Recovery Challenge Lab and corrected Discovery Garden review. Candidate review and live deployment status are stated separately.
 
 

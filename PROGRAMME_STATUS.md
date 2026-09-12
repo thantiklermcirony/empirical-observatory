@@ -4,6 +4,10 @@ The Observatory is being developed as an executable observer framework: describe
 
 ## Available now
 
+**[Temporal Grammar routing spine v0.1](automation/temporal-grammar/README.md)** — a working local execution layer for the existing fourteen-field inquiry. Four registered operations call the reviewed rational engine, resource-geometry kernel and dimensionless quantum reference. It passes state between ordered actions, delivers only required quantities, checks context and premises, and distinguishes a corrected observation from a changed model or preparation. The portable seven-case demonstration runs actual engines. All 50 supplied tests and 15 independent recheck groups passed; five initial routing defects were corrected with the original review retained. [Windows and Linux GitHub checks passed](https://github.com/thantiklermcirony/empirical-observatory/actions/runs/34665332024), together with all four existing checks on the workflow commit. Source publication does not activate the hosted desk or durable shared findings.
+
+**[Complete mathematics source and review index](research/mathematics/README.md)** — all eight contributions are indexed, including the Integration Companion, Recovery Challenge, capability mapping and corrected Discovery Garden review. Their individual accepted or candidate status remains explicit.
+
 **[Mathematical theory atlas: source, proofs and executable certificates](https://github.com/thantiklermcirony/empirical-architecture/tree/main/research/theory-atlas-v0.1)** — published in the programme's main repository. The package connects conditional composition and resource examples to their premises, source records and counterexamples. All 38 public files were checked against the reviewed portable distribution. [Merged publication](https://github.com/thantiklermcirony/empirical-architecture/pull/1).
 
 **[Biology redox inquiry v0.1.1: complete source download and reproduction](research/biology-redox-v0.1.1/README.md)** — published here with all 79 distribution files in one archive, supplied results, figures, integrity checks and reuse notices. It asks whether a cell can look recovered while remaining peroxide-handling capacity differs. An additional absolute pool or NADPH observation can tighten a necessary resource bound. The corrected release binds concentration conclusions to fixed-volume and stoichiometric accounting assumptions. Independent local integration checks and portable-package verification passed; all six public landing/archive files match the prepared release.
@@ -18,20 +22,24 @@ The Observatory's existing quantum experiment also has a published input-validat
 
 | Workstream | Current state | Owned next action |
 |---|---|---|
-| Mathematical theory atlas | **GitHub source published**, with checked public bytes | Mathematics develops the next geometry adapter; integration maintains the public entry point |
+| Mathematical theory atlas and source index | **GitHub source published**, including all eight indexed contributions and preserved review history | Integration reviews and connects available capabilities; mathematics development is paused at the user's request |
 | Biology redox inquiry v0.1.1 | **GitHub source archive published**, independently checked locally | Integration connects accepted records to the explanation and display |
-| Geometry Discovery Lab v0.2.1 | **GitHub source archive and offline explorer published**; all three reported v0.2.0 correction blockers resolved | Integration connects the accepted geometry contract to domain and encyclopedia consumers |
-| Quantum reference adapter v0.1.1 | Frozen, independently reviewed local reference and optical-summary importer | Integration prepares source publication; calibration and species-transfer gaps remain explicit |
-| Quantum Growth Lab v0.1.1 | Concentration-integration correction passed; release held for a separate invalid hidden-state witness in an observer-aligned case | Quantum supplies a corrected witness calculation and independent consistency checks; integration rechecks before publication |
-| Shared inquiry engine v0.2 | Locally reviewed dependency and arithmetic execution; 53 tests plus 13 independent probes passed | Integration connects reviewed domain results without promoting unverified rule citations |
-| Biology possibility atlas and anatomy workbench v0.2 | Scientific/build checks passed; source integration held for missing policy premises and patch-application defects | Biology supplies corrected dependency gates and reproducible patches/build; integration performs the shared Site and browser checks |
+| Geometry Discovery Lab v0.2.1 | **GitHub source archive and offline explorer published**; necessary resource calculation now used by the Temporal Grammar worker | Integration reviews additional domain and encyclopedia consumers |
+| Quantum reference adapter v0.1.1 | Reviewed reference code is bundled and actually callable through the local Temporal Grammar worker | Integration preserves model-time scope; optical data and quantum-to-redox transfer remain unadmitted |
+| Quantum Growth Lab | Earlier v0.1.1 witness hold is preserved; v0.1.2 corrected candidate is available for integration review | Integration owns the next review; quantum development is paused at the user's request |
+| Shared inquiry engine v0.2 and routing spine v0.1 | Exact point workers execute through the new ordered routing contract; scoped engineering review passed | Integration connects the hosted desk and existing ledger without promoting unverified rule citations |
+| Biology possibility atlas, anatomy and observation bridge | Corrected candidates are available; shared consumer/build and scientific admission remain separate | Integration inspects frozen candidates and repairs shared connections; biology development is paused at the user's request |
 | Living Encyclopedia | First composition interaction reviewed; unavailable-candidate handling and asynchronous PNG naming need correction | Encyclopedia supplies the corrected entry and continues tunnelling/redox examples; integration checks the frozen consumer before delivery |
 
 Five development roles share a coordination board: integration, mathematics, quantum, biology and encyclopedia. Integration owns release acceptance, public availability and shared Site delivery. Specialists own their corrections and subsequent research. A finished local candidate enters review with an immutable version and a named next action; it does not silently become a published result.
 
+Mathematics, biology and quantum have reported user-requested development pauses while integration checks the whole lab. This page does not resume those branches or assign additional specialist work.
+
 ## How the pieces fit
 
 The common inquiry record binds a question, its system and observer, permitted operations, quantities, premises, execution, results, contrasts and next questions to provenance. Specialist solvers retain their own mathematical and measurement meanings. Changing an operation or removing a necessary premise must recompute, narrow or block the affected conclusion while preserving independent results. The explanation and visual display should use that same scenario and evidence record.
+
+Temporal Grammar now implements that routing locally for its four registered operations. Its input is an explicitly authored structured inquiry; it does not yet infer scientific meaning from arbitrary prose. Unsupported waits, trajectories, constraints and cross-domain transformations return gaps. Local revision comparisons do not constitute a durable message bus. The remaining central work is a reviewed desk-to-inquiry boundary and research-inquiry records in the existing shared ledger, followed by encyclopedia consumption of those records.
 
 The emerging encyclopedia will show what is possible, necessary, excluded or still unresolved under declared assumptions, along with a useful next measurement or derivation. A finite menu is labelled as a finite menu; a continuum needs a region, bound or explicitly sampled representation. Model probabilities, uncertainty bounds and proof scope remain distinct. No general-purpose autonomous scientific discovery capability is established by these releases.
 
