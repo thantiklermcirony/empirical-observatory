@@ -1,3 +1,15 @@
+# Central desk integration — 12 September 2026
+
+One entry now joins the temporal grammar router, exact bounded actions, synthetic resource ceiling, dimensionless quantum reference and existing controller comparison to branch printouts and a source-pinned encyclopedia. The public AI interface uses the same fixed engines. Private saved printouts are shared across these views for 30 days.
+
+The hosted interpreter adapter is implemented behind one atomic 200-request UTC daily quota shared by every visitor and branch. A secure API credential and a live provider check are still required before calling it connected. The office supports a green-screen terminal, project dossiers, a printer/report interaction and an archival Sagan television. [All ten final source releases are published](https://github.com/thantiklermcirony/empirical-observatory/releases/tag/laboratory-sources-2026-09-12); candidate and held status remain explicit. Arbitrary model synthesis, autonomous code changes and automatic public-claim promotion remain outside the active runtime.
+
+The [next experiment protocol](research/Next_Observatory_Experiment.md) fixes a calibration/observation challenge, a conventional resource-ledger baseline, equal assay cost and pass/fail criteria before scientific expansion. All four specialist branches remain paused at the user's request.
+
+See [CENTRAL_DESK.md](CENTRAL_DESK.md) for the current contract and validation. Earlier release history follows; historical pending statements below describe their dated stage.
+
+---
+
 # Programme status — 12 September 2026
 
 The Observatory is being developed as an executable observer framework: describe a system and its environment, state the permitted operations and constraints, run an appropriate model, and inspect what follows when an assumption or measurement changes. The programme connects UHL/composition, time and dynamics, adaptive resources, observation and evidence. The aim is a shared way to explore these connections while preserving each model's assumptions and experimental meaning.

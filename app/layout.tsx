@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'The Empirical Observatory — First Contact',
+  title: 'The Empirical Observatory — Question Desk',
   description:
-    'Explore an orbital research station. Run reproducible experiments in adaptive control, learning and quantum measurement.',
+    'Step into an old observatory. Turn a question into an inspectable model, run reproducible checks and see what a change of perspective reveals.',
 };
 
 export default function RootLayout({

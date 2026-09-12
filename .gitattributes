@@ -7,3 +7,10 @@ automation/active-context/** -text
 research/active-context/** -text
 public/research/Active_Context_* -text
 lib/data/active-context-*.json -text
+
+# Frozen numerical ports and differential fixtures retain reviewed source bytes.
+lib/engine/temporal-router.ts -text
+lib/engine/quantum-reference.ts -text
+lib/strict-json.ts -text
+tests/temporal-router/fixtures/** -text
+public/research-index/** -text

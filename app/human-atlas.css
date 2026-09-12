@@ -1,0 +1,21 @@
+.human-mode { max-width: 1540px; margin: 0 auto 14px; padding: 0 4px; display: flex; gap: 7px; }
+.human-mode button { min-height: 44px; padding: 10px 18px; border: 1px solid #304d57; background: #091720; color: #8ba4ad; font: 10px var(--font-geist-mono), monospace; letter-spacing: .11em; }
+.human-mode button.active, .human-mode button:hover { border-color: #79e6d5; color: #dffff8; background: #12312f; }
+.anatomy-frame { max-width: 1540px; height: min(76vh, 850px); min-height: 620px; margin: 0 auto 50px; border: 1px solid #33515c; background: #060d13; position: relative; display: flex; flex-direction: column; }
+.anatomy-frame-head, .anatomy-credit { min-height: 42px; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #091820; border-bottom: 1px solid #294650; color: #829ba5; font: 9px var(--font-geist-mono), monospace; letter-spacing: .08em; }
+.anatomy-frame-head b { color: #9cf3e3; margin-right: 12px; }
+.anatomy-frame iframe { width: 100%; flex: 1; border: 0; background: #071018; }
+.anatomy-credit { border-top: 1px solid #294650; border-bottom: 0; justify-content: flex-start; letter-spacing: .02em; line-height: 1.5; }
+.anatomy-credit a { color: #9cf3e3; }
+.anatomy-port { position: absolute; right: 18px; bottom: 58px; width: min(320px, calc(100% - 36px)); padding: 13px 15px; border: 1px solid #79e6d5; background: #0a211fee; color: #dffff8; text-align: left; box-shadow: 0 0 30px #79e6d52b; }
+.anatomy-port small, .anatomy-port b, .anatomy-port span { display: block; }
+.anatomy-port small { color: #78aaa1; font: 8px var(--font-geist-mono), monospace; letter-spacing: .08em; }
+.anatomy-port b { margin: 5px 0; font-size: 13px; }
+.anatomy-port span { display: flex; align-items: center; gap: 7px; color: #9cebdd; font-size: 11px; }
+@media (max-width: 760px) {
+  .human-mode { margin-left: 14px; margin-right: 14px; }
+  .human-mode button { flex: 1; padding: 9px; }
+  .anatomy-frame { margin: 0 14px 40px; height: 72vh; min-height: 560px; }
+  .anatomy-frame-head { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .anatomy-credit { font-size: 8px; }
+}

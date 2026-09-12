@@ -1,0 +1,948 @@
+{
+  "site_commit": "3951e06622c871485222bf237fc93cb27cde33ff",
+  "base_commit": "fd3b723f612bbd1effab3a7f9714407e58055279",
+  "entries": [
+    {
+      "path": ".gitattributes",
+      "before_blob": "d45c0b22243b10fc78c48faf474f251a5d7d77e1",
+      "sha256": "508b6b3715437dcafcf6df226928cc3d0d83747c90c7f7bb2f7960de2be150ba",
+      "bytes": 606
+    },
+    {
+      "path": "CENTRAL_DESK.md",
+      "before_blob": null,
+      "sha256": "579221af8ef6a47ba2994e4e22244526ef96e7daf316093e9f7210d782097449",
+      "bytes": 5902
+    },
+    {
+      "path": "PROGRAMME_STATUS.md",
+      "before_blob": "26fc566f38f43c9d731a7b4bc9816e26b8f65255",
+      "sha256": "8e30c1ad106f150f1f57b930cb1e72ec57ac396c76c6437e637329a35890cf72",
+      "bytes": 10881
+    },
+    {
+      "path": "README.md",
+      "before_blob": "3631312ca3f8d7f8390d6ce2327f218d228dbab9",
+      "sha256": "905e41fe2aeca01d4a4433156611397807314c0d96d8a7ca513535695ecf3b63",
+      "bytes": 18919
+    },
+    {
+      "path": "app/agents/page.tsx",
+      "before_blob": null,
+      "sha256": "a27c556aae74bf1e93dd6f80543d16c61dc79a5fe4dd90c0681a3a030707aa86",
+      "bytes": 4321
+    },
+    {
+      "path": "app/api/inquiry/[id]/route.ts",
+      "before_blob": null,
+      "sha256": "c637e88e1c459a3c3f1cd90dc0641783311a98cda268022bc39165f6e76f1916",
+      "bytes": 1124
+    },
+    {
+      "path": "app/api/inquiry/interpret/route.ts",
+      "before_blob": null,
+      "sha256": "cac02f9a38f2f303c65dbfb9e30eb13ab7afcd9d16d85e5da8b9d209c5c31bd4",
+      "bytes": 1743
+    },
+    {
+      "path": "app/api/inquiry/openapi/route.ts",
+      "before_blob": null,
+      "sha256": "453e78297797bec73512e0e6f7e163584fea366434fdbf440a7786d26e420059",
+      "bytes": 3742
+    },
+    {
+      "path": "app/api/inquiry/route.ts",
+      "before_blob": null,
+      "sha256": "e60f85d6ef69b7e4f9176f2d3a7b5d27cb3661fba3c6ffb2f024947235d91500",
+      "bytes": 490
+    },
+    {
+      "path": "app/api/inquiry/save/route.ts",
+      "before_blob": null,
+      "sha256": "e9fc97b15fb8516bdd03084e573bda949477130241a8a48fba3d036d098c1d4b",
+      "bytes": 472
+    },
+    {
+      "path": "app/api/question/route.ts",
+      "before_blob": null,
+      "sha256": "57a2e7aa60cad2bcc21b22b0ed6d4b9e978d2c11842150c0a52227a7ff9aee86",
+      "bytes": 2042
+    },
+    {
+      "path": "app/central-desk.css",
+      "before_blob": null,
+      "sha256": "eae5ed6133c8eb10cee0fb6617df5a513f287b67d2ba42e7e9fba2a0a69025b6",
+      "bytes": 12800
+    },
+    {
+      "path": "app/encyclopedia/page.tsx",
+      "before_blob": null,
+      "sha256": "c80d5414fa2bcff1866ef346f56122139c2c4291d9b92711474caa977bff60ae",
+      "bytes": 290
+    },
+    {
+      "path": "app/families/families.css",
+      "before_blob": null,
+      "sha256": "df6b8a34e2b2d06db2a2884ca2a5c6b9b390c4a81c30d51d49796db980a2e0e7",
+      "bytes": 7769
+    },
+    {
+      "path": "app/families/page.tsx",
+      "before_blob": null,
+      "sha256": "66289bd5f9bcd9e50e6269e03c80819580ef6d53eaa9c14f4f4fea52003db7a3",
+      "bytes": 473
+    },
+    {
+      "path": "app/globals.css",
+      "before_blob": "f903f654ac84e1b6120b81c7c5d91ae264fd3d29",
+      "sha256": "f480d008480bf5be38a4b836dbaa07b618ee3b85763a0e87e954f965395ab998",
+      "bytes": 14856
+    },
+    {
+      "path": "app/human-atlas.css",
+      "before_blob": null,
+      "sha256": "530a4d628eef32ba66a2175d756d440c81a57432a7ba3677804c3d86f0bd363a",
+      "bytes": 2145
+    },
+    {
+      "path": "app/human.css",
+      "before_blob": null,
+      "sha256": "a041a9c16d78abceb16341c4b08688d0f517beab8e206b23331b398c1cbb1e74",
+      "bytes": 10106
+    },
+    {
+      "path": "app/human/page.tsx",
+      "before_blob": null,
+      "sha256": "0da846441c8d98fc5d3392d79dfd567df27278490e2e5468be8f19cea28d83f5",
+      "bytes": 546
+    },
+    {
+      "path": "app/labs/[branch]/page.tsx",
+      "before_blob": null,
+      "sha256": "1d52f91a7f6b585cea50097dc630e95fde286f867bd02b8de155611a7dc07322",
+      "bytes": 393
+    },
+    {
+      "path": "app/layout.tsx",
+      "before_blob": "a023213cdfa86da918ad3300d192b86babffc210",
+      "sha256": "85b8e0337d464120f8e7387fba454fd6c6f6a8bad71bf18c64c9ed7549dd5c32",
+      "bytes": 1264
+    },
+    {
+      "path": "app/llms.txt/route.ts",
+      "before_blob": null,
+      "sha256": "721736d6c31b6659c3e2956a875780e5c7804c373ef386e2c42210682056d708",
+      "bytes": 1101
+    },
+    {
+      "path": "app/observatory-office.css",
+      "before_blob": null,
+      "sha256": "0e9eed2aac114bbc6dc6b010b3ec138f5e1e1ab36321a8d76693e45a791d8186",
+      "bytes": 9990
+    },
+    {
+      "path": "app/page.tsx",
+      "before_blob": "ec813cc60146996ff5ac5cf161a072fa21007ab0",
+      "sha256": "582f62eb24dd61515a9a2b1738f4452ddc5494cee55551d8a396dfb9c1ea5fc7",
+      "bytes": 11866
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "before_blob": "0312e506e2856a1093fd759aa829c21b9657cf7a",
+      "sha256": "a7612e15eda604ea373c7086d79c2b2d72e1095a5f2b8268cfb811094bc0499b",
+      "bytes": 3031
+    },
+    {
+      "path": "app/projects/page.tsx",
+      "before_blob": "0d195f5c937d6e01d868f811a4483f9c1f641edb",
+      "sha256": "d8dd570df92e594c6da73a6cf97ca8ecdea078ea65a45e9a1e9a68aef722d1cc",
+      "bytes": 27115
+    },
+    {
+      "path": "app/question-room.css",
+      "before_blob": null,
+      "sha256": "46bd183d6d32b1d2ca4ee16d652302064048e46b210dcef151f6a0918d28aee2",
+      "bytes": 11431
+    },
+    {
+      "path": "app/question.css",
+      "before_blob": null,
+      "sha256": "9cd268f60ffc9e97ba4f9ef1a0f0954500ae71c91bde160a778cf2be468dfcae",
+      "bytes": 20003
+    },
+    {
+      "path": "app/question/page.tsx",
+      "before_blob": null,
+      "sha256": "3a04592c956e12f58bb480f72eff6c10bdae0256eb6f28dd0dbe87322858375f",
+      "bytes": 460
+    },
+    {
+      "path": "app/question/papers/page.tsx",
+      "before_blob": null,
+      "sha256": "e333b7c980dd263060c8b38deeb10006ef4cdce14481228deb850a48d03fba88",
+      "bytes": 216
+    },
+    {
+      "path": "app/reasoning.css",
+      "before_blob": null,
+      "sha256": "99605de4f74301a9e2807f5d49dde09592a4a068b3a14b22629d8be11299e8ed",
+      "bytes": 5431
+    },
+    {
+      "path": "app/temporal-state.css",
+      "before_blob": null,
+      "sha256": "348c78f5f83c7a0f78848a54d4555f517ecc6ec45db6bd69a73d864566f607da",
+      "bytes": 3922
+    },
+    {
+      "path": "app/worldline-complexity.css",
+      "before_blob": null,
+      "sha256": "9aa1bb425649d550b6f634457a9575a6eb08e17481e1f9a756f9d6c0b427206a",
+      "bytes": 1383
+    },
+    {
+      "path": "app/worldline.css",
+      "before_blob": null,
+      "sha256": "6a67081f6b97d3d97be31aa5c2f2f452051b7278f93f06b3af954fcff3d95b26",
+      "bytes": 4818
+    },
+    {
+      "path": "components/observatory/ArchiveRadio.tsx",
+      "before_blob": null,
+      "sha256": "5081889c43935062055990ea673088f2efa8f565dff380cb662ad9722ffab163",
+      "bytes": 2813
+    },
+    {
+      "path": "components/observatory/CentralDesk.tsx",
+      "before_blob": null,
+      "sha256": "c0cf0b136b9f2315b4e2a27d7df8721730c80b1fd507e3b46d11dda895f407c6",
+      "bytes": 18572
+    },
+    {
+      "path": "components/observatory/Encyclopedia.tsx",
+      "before_blob": null,
+      "sha256": "4712096d7a940d63f68a178e44514f500066ea7332eb7996765c97a09ec953dd",
+      "bytes": 3899
+    },
+    {
+      "path": "components/observatory/FamilyWorldLab.tsx",
+      "before_blob": null,
+      "sha256": "f7cc336f2bfa692ad1810e25a90bb870224aa5648fc127e0d2b4ee34616a8b39",
+      "bytes": 17845
+    },
+    {
+      "path": "components/observatory/HumanConditionLab.tsx",
+      "before_blob": null,
+      "sha256": "20fb63a2e4685fd982f87c24db0bf738626ea8ac9bd3a288bbc44688608b2aa4",
+      "bytes": 36029
+    },
+    {
+      "path": "components/observatory/InquiryVisual.tsx",
+      "before_blob": null,
+      "sha256": "523380fd63869ae5df6968f76afcf4dde05f04fbbbf0236333e820d6f8e496ec",
+      "bytes": 4497
+    },
+    {
+      "path": "components/observatory/LearningWorkspace.tsx",
+      "before_blob": null,
+      "sha256": "8767ffa407bdfa8016c304ad3a5a446ef1e4605fce23754519b4791096f3a83b",
+      "bytes": 13781
+    },
+    {
+      "path": "components/observatory/ObservatoryOffice.tsx",
+      "before_blob": null,
+      "sha256": "6cd2f869507477cd170d3e53394571bf1f02801ac18fb13069553a5a9d3b54d0",
+      "bytes": 7404
+    },
+    {
+      "path": "components/observatory/PaperChallenges.tsx",
+      "before_blob": null,
+      "sha256": "90ba0a6855cbae76b9450a2ddd7e4a422e6e51dbd29f208b42aada6cbbe35c2e",
+      "bytes": 11398
+    },
+    {
+      "path": "components/observatory/QuestionDesk.tsx",
+      "before_blob": null,
+      "sha256": "a112a7107a0f5396c68f3d0bf2277eecab1c72ee3838fe10802000aaf7deb98c",
+      "bytes": 27748
+    },
+    {
+      "path": "components/observatory/QuestionMedia.tsx",
+      "before_blob": null,
+      "sha256": "c5669e55960cce7d4ced2c2977f2f05d6b1db2fa9dba37d6a6f5f1a7f682009d",
+      "bytes": 5905
+    },
+    {
+      "path": "components/observatory/QuestionRoom.tsx",
+      "before_blob": null,
+      "sha256": "c9d47414448c64b2e3a4d0215a9b8d732a0a8fe7a7e2f98214edd557125664f8",
+      "bytes": 12149
+    },
+    {
+      "path": "components/observatory/ReasoningWorkspace.tsx",
+      "before_blob": null,
+      "sha256": "886a5b1bc6eecedb8af29e0f01705330102f675f3ec351b23854153c0c1f8631",
+      "bytes": 7430
+    },
+    {
+      "path": "components/observatory/TemporalStateLab.tsx",
+      "before_blob": null,
+      "sha256": "7b3ea8f079bfdfa08049dc0696330b323b9b64fe340d6b01f8cacf4be932ec03",
+      "bytes": 5362
+    },
+    {
+      "path": "db/schema.ts",
+      "before_blob": "5e6d44439aa44846cdd197856171ca9e5dba70c4",
+      "sha256": "c355e531c9b3b694eeef312e5a3859a1b8b8ff1949a660cfb5bfd1e896c44d99",
+      "bytes": 1352
+    },
+    {
+      "path": "drizzle/0001_giant_living_lightning.sql",
+      "before_blob": null,
+      "sha256": "fa4dcc8927382eb8d93c94b25dbb9fb76f0bc84c7ef4869140a9ac73a9c2e97d",
+      "bytes": 382
+    },
+    {
+      "path": "drizzle/0002_chunky_adam_destine.sql",
+      "before_blob": null,
+      "sha256": "ef1acef0680497a97e8ea905a425257383be9198ab104ee0eaf4f0b22b1836f1",
+      "bytes": 105
+    },
+    {
+      "path": "drizzle/meta/0001_snapshot.json",
+      "before_blob": null,
+      "sha256": "8bff05cd24a61bba67176dcc909e4d5cd0916176e87e532c0c007c88243374f0",
+      "bytes": 4386
+    },
+    {
+      "path": "drizzle/meta/0002_snapshot.json",
+      "before_blob": null,
+      "sha256": "fee34c293d05f43250bcbd1a8d46e8a9f31b3a16b435b07c846c90ba621fff38",
+      "bytes": 4986
+    },
+    {
+      "path": "drizzle/meta/_journal.json",
+      "before_blob": "f444856e7cf08a2f202fc8f2723f9e1e01ab2c51",
+      "sha256": "a489e678b3dd88996b2a257e69f9c0621b073c8c846beed03cc2e1582c09ff62",
+      "bytes": 501
+    },
+    {
+      "path": "lib/ai-interpreter.ts",
+      "before_blob": null,
+      "sha256": "931ea90044914bba43976c5e78f5761ee3ccc59acd57c62cfd776083bed01523",
+      "bytes": 7101
+    },
+    {
+      "path": "lib/atlas.ts",
+      "before_blob": "358ae452cdcc234c025a20dec9feb443984a7b66",
+      "sha256": "6c7e69e8c3ba8e0aa43abaa182c6a43a4945599c1eea67444b1e4c155ac2b864",
+      "bytes": 14622
+    },
+    {
+      "path": "lib/engine/family-language.ts",
+      "before_blob": null,
+      "sha256": "affa6b65f0b71e1418bb1fc2e32d3929be747396eb4315b2a60624315397e280",
+      "bytes": 8433
+    },
+    {
+      "path": "lib/engine/family-world.ts",
+      "before_blob": null,
+      "sha256": "9357ac06f410ed6841cbc6a116358fb5d04b4aeb0459a103e4fa3c11786c30fe",
+      "bytes": 31865
+    },
+    {
+      "path": "lib/engine/learning-session.ts",
+      "before_blob": null,
+      "sha256": "b7bb44538315d1caabd5da41090408b3ead55a6c026bff34eaacbbcf6c2d09b5",
+      "bytes": 12711
+    },
+    {
+      "path": "lib/engine/paper-checks.ts",
+      "before_blob": null,
+      "sha256": "cc1a62ba55cf226314dbe144dd52c29a9a830227edfd6040d265f41e08b073ac",
+      "bytes": 4465
+    },
+    {
+      "path": "lib/engine/quantum-reference.ts",
+      "before_blob": null,
+      "sha256": "3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc",
+      "bytes": 18684
+    },
+    {
+      "path": "lib/engine/question-media.ts",
+      "before_blob": null,
+      "sha256": "20c6e6123730ce81566c1bdce167baa072dc6e983d0286e573151f79fe3db51f",
+      "bytes": 3972
+    },
+    {
+      "path": "lib/engine/question.ts",
+      "before_blob": null,
+      "sha256": "864914ae833acb3867e08bc022aee602ae1dcaedea74a0daf85fed0b26589a72",
+      "bytes": 26402
+    },
+    {
+      "path": "lib/engine/reasoning-examples.ts",
+      "before_blob": null,
+      "sha256": "1859c2c9bd5acdc568669ed39bf17e849bf8d26330c9335c5dec586cc3b89e91",
+      "bytes": 1963
+    },
+    {
+      "path": "lib/engine/reasoning.ts",
+      "before_blob": null,
+      "sha256": "f6ab28d611cf1ed7fc424ae8ffe22bec3bb34e41b0593cc4bbec37fc44f8f670",
+      "bytes": 12169
+    },
+    {
+      "path": "lib/engine/temporal-router.ts",
+      "before_blob": null,
+      "sha256": "e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29",
+      "bytes": 47790
+    },
+    {
+      "path": "lib/engine/temporal-state.ts",
+      "before_blob": null,
+      "sha256": "95b4a114aaafb65c16fa1e52c8eec17b1ef1c7976142bc0b9188ecaaf9adc944",
+      "bytes": 6458
+    },
+    {
+      "path": "lib/lab-contract.ts",
+      "before_blob": null,
+      "sha256": "568b98443dd3ff49e3dd56c3dbf4da783a7b0e2b052bc500a440156500419820",
+      "bytes": 1968
+    },
+    {
+      "path": "lib/lab-engine.ts",
+      "before_blob": null,
+      "sha256": "90ae0f20e9a26e564a2fe7127a4ce562560b26f8cd3d80e6f9de8ba57c458b5a",
+      "bytes": 14672
+    },
+    {
+      "path": "lib/lab-http.ts",
+      "before_blob": null,
+      "sha256": "8ba387ec78714d5c74f1961b89228482f1bbe974ebb1ef99dee278a29b8d3ed9",
+      "bytes": 1904
+    },
+    {
+      "path": "lib/lab-storage.ts",
+      "before_blob": null,
+      "sha256": "0a3d03ee51525d471eef7ea0ee0e11e847b4f21b8f062cc9ee6eeed61078ab3f",
+      "bytes": 3046
+    },
+    {
+      "path": "lib/paper-challenges.ts",
+      "before_blob": null,
+      "sha256": "b19e763173ab379fdcc793399840171a7a9d05dad464804ed517ea19ea0cc5f1",
+      "bytes": 14869
+    },
+    {
+      "path": "lib/printer-audio.ts",
+      "before_blob": null,
+      "sha256": "f059f1fb5d93d5ff6b6cb24650f06580511d3a3bd1c210abd6adf43833ad0f5f",
+      "bytes": 1241
+    },
+    {
+      "path": "lib/strict-json.ts",
+      "before_blob": null,
+      "sha256": "9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c",
+      "bytes": 4462
+    },
+    {
+      "path": "package.json",
+      "before_blob": "961e7bed0ab45d1e571c207452d70be59e6cd4d9",
+      "sha256": "ed5768d452b66f8f995ec5bdd6d02cb756f05fe454771240751bc75ab84481ad",
+      "bytes": 2338
+    },
+    {
+      "path": "public/anatomy/ATTRIBUTION.md",
+      "before_blob": null,
+      "sha256": "40e5a3d5ce2a9bc942972daafa2da63c9ee8135216858dccf358d3dd85bde501",
+      "bytes": 2985
+    },
+    {
+      "path": "public/anatomy/LICENSE.txt",
+      "before_blob": null,
+      "sha256": "db7a953239922e6e6460885afcbd47834fcb89f069b0b8c30f338cd76b322ded",
+      "bytes": 1064
+    },
+    {
+      "path": "public/anatomy/assets/index-BrOR5V5d.js",
+      "before_blob": null,
+      "sha256": "0e4f429a61b87bfb210c4078576be60dff54fd4922db7d2a085045139dc0c99a",
+      "bytes": 916531
+    },
+    {
+      "path": "public/anatomy/assets/index-CuleG88Z.js",
+      "before_blob": null,
+      "sha256": "72dc950888b4f04930dc9e85b916970853ba417892da3c80d6c568e4638f9748",
+      "bytes": 916378
+    },
+    {
+      "path": "public/anatomy/assets/index-excBUMy1.css",
+      "before_blob": null,
+      "sha256": "60ca25122d40ab83a456774cde0de06f8845cc66bb7052a1a2164087b468007f",
+      "bytes": 196589
+    },
+    {
+      "path": "public/anatomy/favicon.svg",
+      "before_blob": null,
+      "sha256": "fbedb30d2c3437145476a3eaeaf3e5a863d1aafb5d6692da694e97599cfd624a",
+      "bytes": 227
+    },
+    {
+      "path": "public/anatomy/index.html",
+      "before_blob": null,
+      "sha256": "036825d6151a89d786d93dcbf8ae643de7cde47cb167ea099e200077669cfad2",
+      "bytes": 650
+    },
+    {
+      "path": "public/anatomy/models/atlas.json",
+      "before_blob": null,
+      "sha256": "5678bd299e47533ee60939f379169c5f8bd38316ee55d124929cf743f3117c81",
+      "bytes": 1335511
+    },
+    {
+      "path": "public/anatomy/models/body-0.bin",
+      "before_blob": null,
+      "sha256": "b33b2b5aac20f35fbf6871f916607bf3c4d386321c8c0fdadcca6b5d24e3641e",
+      "bytes": 4019496
+    },
+    {
+      "path": "public/anatomy/models/body-0.bin.gz",
+      "before_blob": null,
+      "sha256": "9dcd239ed44bf5b28cad64d2dc5c02a475570ee5706051f383c7c68d6fbc8b1c",
+      "bytes": 2257262
+    },
+    {
+      "path": "public/anatomy/models/body-1.bin",
+      "before_blob": null,
+      "sha256": "aa077a4675f0d0dd3c9b0af39dc8cf6bcb348c3bf7d283478d4206ce30a5a0de",
+      "bytes": 4526484
+    },
+    {
+      "path": "public/anatomy/models/body-1.bin.gz",
+      "before_blob": null,
+      "sha256": "0382260e39b6b294f52a77f1d28b5d2493b93bfd665f6d1fd01926ef27473a40",
+      "bytes": 2299850
+    },
+    {
+      "path": "public/anatomy/models/body-10.bin",
+      "before_blob": null,
+      "sha256": "4a959d998acd35cf88518a0f2f8ab99b42d9f69c7ce0d6a814df315eeac807ac",
+      "bytes": 4046108
+    },
+    {
+      "path": "public/anatomy/models/body-10.bin.gz",
+      "before_blob": null,
+      "sha256": "24d533fa1da7b52583fd6912722b47130ebff1f505449dee276df0b7107aa5aa",
+      "bytes": 2249282
+    },
+    {
+      "path": "public/anatomy/models/body-11.bin",
+      "before_blob": null,
+      "sha256": "e8c1afe7f30fe710ad164ec9cd2287a32881606e7eb590af47d76b3f84405027",
+      "bytes": 4037528
+    },
+    {
+      "path": "public/anatomy/models/body-11.bin.gz",
+      "before_blob": null,
+      "sha256": "be228aec4eaae7f9ad1b8eb461ed06d6c8e813e9fe64ff894ba48409f25ff878",
+      "bytes": 2319620
+    },
+    {
+      "path": "public/anatomy/models/body-12.bin",
+      "before_blob": null,
+      "sha256": "61a6c8da89bb20df50c575964ac81aa4090eabfc2cb27ad2155aea325f31c6c0",
+      "bytes": 4000292
+    },
+    {
+      "path": "public/anatomy/models/body-12.bin.gz",
+      "before_blob": null,
+      "sha256": "80eefe006f2372bc79d8ca2388b4f2785a14bff2621d99f4a7b422d63f9eb556",
+      "bytes": 2268977
+    },
+    {
+      "path": "public/anatomy/models/body-13.bin",
+      "before_blob": null,
+      "sha256": "4c51b6be85d5b705d2b52b79b9ad1cdae0b65ad03c9402a2f2673c7633fd94f3",
+      "bytes": 4004548
+    },
+    {
+      "path": "public/anatomy/models/body-13.bin.gz",
+      "before_blob": null,
+      "sha256": "37fd7a4cd62fb6031eb300a4b947c80c7b00d2751d78ff464147fb444e1a0307",
+      "bytes": 2165080
+    },
+    {
+      "path": "public/anatomy/models/body-14.bin",
+      "before_blob": null,
+      "sha256": "58604526a0cd9e7dca4d8587cd9a42f9dd03ec6c4ebbc22a9bf017b31246f7e7",
+      "bytes": 2300452
+    },
+    {
+      "path": "public/anatomy/models/body-14.bin.gz",
+      "before_blob": null,
+      "sha256": "3968d6e0a1d14f8c39e5ffb1f618c72023f429c41592f6793f0030e60ab3d8b6",
+      "bytes": 1344908
+    },
+    {
+      "path": "public/anatomy/models/body-2.bin",
+      "before_blob": null,
+      "sha256": "4b3acfc35b91e4427eaca0e3be897d33f144354342ae0e52a2328b582ca8bdbe",
+      "bytes": 4438056
+    },
+    {
+      "path": "public/anatomy/models/body-2.bin.gz",
+      "before_blob": null,
+      "sha256": "603773ea025f556e520ac79cd84f07bede9035d786e196a0e6ed2ca73bb15301",
+      "bytes": 2312911
+    },
+    {
+      "path": "public/anatomy/models/body-3.bin",
+      "before_blob": null,
+      "sha256": "6febb76b50423331f66802a63bb43f04f99ce08129837015910eed43d0719268",
+      "bytes": 4041436
+    },
+    {
+      "path": "public/anatomy/models/body-3.bin.gz",
+      "before_blob": null,
+      "sha256": "3d7bccd225de90ba4aef4e33f08b6430dc58c929f8dc250217f6fbe2f11e7d53",
+      "bytes": 2079806
+    },
+    {
+      "path": "public/anatomy/models/body-4.bin",
+      "before_blob": null,
+      "sha256": "0509e6c996fe5b935ace770a5dbf2d83a474330b7e541a844052a080bbf814bb",
+      "bytes": 4020544
+    },
+    {
+      "path": "public/anatomy/models/body-4.bin.gz",
+      "before_blob": null,
+      "sha256": "01be154bea1460e7b6c02729640e40824aa926e4ec5cd76cca2a922694fa9a30",
+      "bytes": 2075177
+    },
+    {
+      "path": "public/anatomy/models/body-5.bin",
+      "before_blob": null,
+      "sha256": "32a967198ffed45839968228898f3d246c67f86fb26892c3ae270be30e2f1149",
+      "bytes": 4022564
+    },
+    {
+      "path": "public/anatomy/models/body-5.bin.gz",
+      "before_blob": null,
+      "sha256": "a1810356e610ad38170c440e5c4fd4e99434152ab76c743616098e1f4ac71624",
+      "bytes": 2176648
+    },
+    {
+      "path": "public/anatomy/models/body-6.bin",
+      "before_blob": null,
+      "sha256": "1c98dae807210cc51a4abc806134727c9544155cad0cc328cf2e1ae1f954d3ff",
+      "bytes": 4035584
+    },
+    {
+      "path": "public/anatomy/models/body-6.bin.gz",
+      "before_blob": null,
+      "sha256": "d4ef94ced66b8b61cf640b5b3c206b63bf7cd6c8af9823f8674117d025d0f1bf",
+      "bytes": 2378951
+    },
+    {
+      "path": "public/anatomy/models/body-7.bin",
+      "before_blob": null,
+      "sha256": "06340f48478eb989cec117a558290c0cd54eeead9641b565cbb8aab255b4e56b",
+      "bytes": 4006940
+    },
+    {
+      "path": "public/anatomy/models/body-7.bin.gz",
+      "before_blob": null,
+      "sha256": "5efdc3ed4d57335f2631a8563ca810d94e9aa70a9081ca55ce41c912be97c3d4",
+      "bytes": 2385857
+    },
+    {
+      "path": "public/anatomy/models/body-8.bin",
+      "before_blob": null,
+      "sha256": "18beacfdeadc8ad483d692672aae165f4323704cd7a9bfcbebbd703f5e268e25",
+      "bytes": 4028452
+    },
+    {
+      "path": "public/anatomy/models/body-8.bin.gz",
+      "before_blob": null,
+      "sha256": "4a8c163c3d4029125c551d9299d96aec511c8269ed33c3109f4461ae658c0622",
+      "bytes": 2382534
+    },
+    {
+      "path": "public/anatomy/models/body-9.bin",
+      "before_blob": null,
+      "sha256": "0aa8aa09a379a2d759872659a2ef68fc4510ee37e435c4ebc63ee679722a4547",
+      "bytes": 4018260
+    },
+    {
+      "path": "public/anatomy/models/body-9.bin.gz",
+      "before_blob": null,
+      "sha256": "1babeeb1464594a4e6d4689d2d73338d3e3b38fecb8a2f406820308950935e37",
+      "bytes": 2259266
+    },
+    {
+      "path": "public/images/observatory-1980s.png",
+      "before_blob": null,
+      "sha256": "e91e35fd3bc041721ff9a5cae364afa926476012f32e29eff760b55deb45334a",
+      "bytes": 2549456
+    },
+    {
+      "path": "public/research-index/entries.json",
+      "before_blob": null,
+      "sha256": "faa2acf3d1d05ebffe11d524e13964c59fe90fb644b0c0cf4876c74baf7227c2",
+      "bytes": 6143
+    },
+    {
+      "path": "public/research-index/releases.json",
+      "before_blob": null,
+      "sha256": "0c759bf8f51091699c23dbfe42c461e630b6fda54efb59ac0b3074d86c79d304",
+      "bytes": 33591
+    },
+    {
+      "path": "public/research/Question_Desk.md",
+      "before_blob": null,
+      "sha256": "f691bd1d854c1e58f754026b8d7448fbb01717f7ba08271b2d2b6d5b1ab8436a",
+      "bytes": 8290
+    },
+    {
+      "path": "public/research/Two_Family_World_0.1.zip",
+      "before_blob": null,
+      "sha256": "2694b984996622781449e27befbdcb629b6f135644a7793dac26c61349e6d4ed",
+      "bytes": 575995
+    },
+    {
+      "path": "public/research/question-papers/Applications.md",
+      "before_blob": null,
+      "sha256": "d2df0a57f52ea79e87e786f7c616b3f4e5ee3bf08230f8b617dca435e7d36009",
+      "bytes": 23746
+    },
+    {
+      "path": "public/research/question-papers/Foundations.md",
+      "before_blob": null,
+      "sha256": "677143db94772272932d845ee3774a44d122d2a43693db2e4d953511c051d4f8",
+      "bytes": 14726
+    },
+    {
+      "path": "public/research/two-family-world/Open_world.html",
+      "before_blob": null,
+      "sha256": "da4f75e0be4657222ad2d65df21f6f0ff54ae18d69176582faf8beb8f0aeef70",
+      "bytes": 295922
+    },
+    {
+      "path": "public/research/two-family-world/PROTOCOL.md",
+      "before_blob": null,
+      "sha256": "177feaa0f69de228a34f0f1a8eaa89d91036d5a2eb7b05d755b2900a46d41356",
+      "bytes": 5364
+    },
+    {
+      "path": "public/research/two-family-world/README.md",
+      "before_blob": null,
+      "sha256": "593137ea9a052ba599a097babfd159a4832d5928f2f00bad9de60a4794d3251b",
+      "bytes": 14270
+    },
+    {
+      "path": "public/research/two-family-world/encyclopedia.json",
+      "before_blob": null,
+      "sha256": "7b939576c61ed117a9eb01072b8c53f76b5a1a75de467a547e3c4112cf481e79",
+      "bytes": 2695
+    },
+    {
+      "path": "public/research/two-family-world/results/demo.json",
+      "before_blob": null,
+      "sha256": "5487a2a8b053437cc058c7ccb3e645d084aef8b9eff19d1ec850df44020f862c",
+      "bytes": 5572561
+    },
+    {
+      "path": "public/research/two-family-world/results/evaluation.json",
+      "before_blob": null,
+      "sha256": "68513ed720f82d5dd8814fdeb2c4b708806a3b52c96b34cdfe4167f20751341f",
+      "bytes": 27706
+    },
+    {
+      "path": "research/Next_Observatory_Experiment.md",
+      "before_blob": null,
+      "sha256": "054ca4d5704e789ac8e68a6bdb229119337fefdc1e24a1e4a95bd7aad9ee0581",
+      "bytes": 6462
+    },
+    {
+      "path": "research/two-family-world/PROTOCOL.md",
+      "before_blob": null,
+      "sha256": "177feaa0f69de228a34f0f1a8eaa89d91036d5a2eb7b05d755b2900a46d41356",
+      "bytes": 5364
+    },
+    {
+      "path": "research/two-family-world/README.md",
+      "before_blob": null,
+      "sha256": "593137ea9a052ba599a097babfd159a4832d5928f2f00bad9de60a4794d3251b",
+      "bytes": 14270
+    },
+    {
+      "path": "research/two-family-world/encyclopedia.json",
+      "before_blob": null,
+      "sha256": "7b939576c61ed117a9eb01072b8c53f76b5a1a75de467a547e3c4112cf481e79",
+      "bytes": 2695
+    },
+    {
+      "path": "research/two-family-world/results/demo.json",
+      "before_blob": null,
+      "sha256": "5487a2a8b053437cc058c7ccb3e645d084aef8b9eff19d1ec850df44020f862c",
+      "bytes": 5572561
+    },
+    {
+      "path": "research/two-family-world/results/development-v1.log",
+      "before_blob": null,
+      "sha256": "6933bbe23d8723f1123edba35448a3a69c3f07f5e17747fa81e1c62847fa231d",
+      "bytes": 5099
+    },
+    {
+      "path": "research/two-family-world/results/development-v2.log",
+      "before_blob": null,
+      "sha256": "c1da9e46d91d46ee6c16c7f9eda9b248948871b1cf090ccc874b4f7ee4a21f05",
+      "bytes": 5097
+    },
+    {
+      "path": "research/two-family-world/results/development-v3.log",
+      "before_blob": null,
+      "sha256": "98d8d82c378745e7c19a728e34dce7ca80fd50bd73c2c4df9dc2a5003c4e5ece",
+      "bytes": 5099
+    },
+    {
+      "path": "research/two-family-world/results/development-v4.log",
+      "before_blob": null,
+      "sha256": "94ce5456ff81e97ac3aa4d5b5e8c54ed123cf5528defc8e683f05c29e566121c",
+      "bytes": 5716
+    },
+    {
+      "path": "research/two-family-world/results/development.json",
+      "before_blob": null,
+      "sha256": "862ae1143dd199c05e01871d1e5923aa4dd2042d635ef5a7675f8439ba66c5fe",
+      "bytes": 8511
+    },
+    {
+      "path": "research/two-family-world/results/evaluation.json",
+      "before_blob": null,
+      "sha256": "68513ed720f82d5dd8814fdeb2c4b708806a3b52c96b34cdfe4167f20751341f",
+      "bytes": 27706
+    },
+    {
+      "path": "research/two-family-world/results/evaluation.log",
+      "before_blob": null,
+      "sha256": "fe2f2ac946945261dcd76a20dc1924e2c6f51e22ff45a5ad6503ee8ee7f3fa5e",
+      "bytes": 15786
+    },
+    {
+      "path": "research/two-family-world/results/test-report.log",
+      "before_blob": null,
+      "sha256": "fe0a3f1d808210abebb9fa7042dc08a8f71c92a6ec4123ea8911759bbc1ea356",
+      "bytes": 9110
+    },
+    {
+      "path": "scripts/family-world-offline.tsx",
+      "before_blob": null,
+      "sha256": "1b55d4e2e91d4d62efec333769914d961440d33fbc6e7fa35e5090c746f3c3f4",
+      "bytes": 844
+    },
+    {
+      "path": "scripts/family-world-research.ts",
+      "before_blob": null,
+      "sha256": "1bbcf5b400d4fee1457bf0bdf1db6a05d9102df024c2257a69a8b41a362bac95",
+      "bytes": 7490
+    },
+    {
+      "path": "scripts/package-family-world.mjs",
+      "before_blob": null,
+      "sha256": "4d58f409097f20730ef5678a8b2fa70515356a69c4256cde57af57447b92877f",
+      "bytes": 2733
+    },
+    {
+      "path": "scripts/reasoning-audit.ts",
+      "before_blob": null,
+      "sha256": "fa7900ddcc4f7c337fe3863e8ebd0cc9ce746718a738e3f27d3c6f4466a84d2d",
+      "bytes": 1166
+    },
+    {
+      "path": "tests/family-language.test.ts",
+      "before_blob": null,
+      "sha256": "330a8e712beecf7f0e520965500b3ca7675477cabca7993d17ddc62d0c7b6b9b",
+      "bytes": 2299
+    },
+    {
+      "path": "tests/family-world.test.ts",
+      "before_blob": null,
+      "sha256": "e3756b7d5b96d505b70a0455bae13d3375ecb6b64389eb8d69a58d29911176de",
+      "bytes": 7237
+    },
+    {
+      "path": "tests/gateway/ai-interpreter.test.mjs",
+      "before_blob": null,
+      "sha256": "533a841052b3c91eca5df890fcdbf84cfea997d168b1f041f8770adbf73fc00f",
+      "bytes": 6540
+    },
+    {
+      "path": "tests/gateway/cloudflare-binding.mjs",
+      "before_blob": null,
+      "sha256": "0735ab99b96587895016a52e5e4c1b0b3992cea8a88de5b7d616ead7e6fce0b4",
+      "bytes": 120
+    },
+    {
+      "path": "tests/gateway/gateway-engine.test.mjs",
+      "before_blob": null,
+      "sha256": "ccd7da5118e048e33b3890223610a9996e6562a0708160bd472a153abc9688a4",
+      "bytes": 6994
+    },
+    {
+      "path": "tests/gateway/gateway-storage.test.mjs",
+      "before_blob": null,
+      "sha256": "5a6cf7828995fcb4991a9dfb6cbf23f937c5dc7c5144f5d615e683fc38cb9c47",
+      "bytes": 9039
+    },
+    {
+      "path": "tests/gateway/strict-json.test.mjs",
+      "before_blob": null,
+      "sha256": "ec07336643a149cddda56cd661d75b3b82686fb7be661c37ff34c9d3091142c8",
+      "bytes": 4213
+    },
+    {
+      "path": "tests/paper-checks.test.ts",
+      "before_blob": null,
+      "sha256": "f178bd5e8c450d0282676b5de6904afe3389968af31d5772c5ca0c16e04d67d1",
+      "bytes": 5471
+    },
+    {
+      "path": "tests/question.test.ts",
+      "before_blob": null,
+      "sha256": "aec12a027d5b666caaddd677ebf7bc5ff56f307bfc76f3753e94d01abca313eb",
+      "bytes": 8155
+    },
+    {
+      "path": "tests/reasoning.test.ts",
+      "before_blob": null,
+      "sha256": "974514be895288cdd41ac8918c19ab9ced1ab803ac801ddbf0907330f45497ee",
+      "bytes": 6107
+    },
+    {
+      "path": "tests/temporal-router/fixtures/python-cases.json",
+      "before_blob": null,
+      "sha256": "8898c053110cbfa9df90fec9f18957e95f1ef0d4e9cd4d70921e389ef36a396a",
+      "bytes": 229031
+    },
+    {
+      "path": "tests/temporal-router/temporal-router.test.ts",
+      "before_blob": null,
+      "sha256": "d11230ed76e090f34782b760cc0b76d785ea4579bcb31051e87410d87b2119e7",
+      "bytes": 14113
+    },
+    {
+      "path": "tests/temporal-state.test.ts",
+      "before_blob": null,
+      "sha256": "35fc31bad98428df236a7cd3e8166204b783a21ea8e630bc678cedf20f03d8d8",
+      "bytes": 2180
+    },
+    {
+      "path": "tsconfig.json",
+      "before_blob": "d93746f46a0508696fd09277db9638b7baca605c",
+      "sha256": "088797726aea8d8e0c557d43f5a971f002d7095901f39df8f922b14ef239eeb9",
+      "bytes": 719
+    }
+  ]
+}

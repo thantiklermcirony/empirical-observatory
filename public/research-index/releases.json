@@ -1,0 +1,738 @@
+{
+  "schema": "observatory-final-source-collection/1",
+  "captured_at_utc": "2026-09-12T02:02:51.132837+00:00",
+  "authority": "Coordinator source collection and review-status record; never an execution allowlist or scientific admission service.",
+  "collections": [
+    {
+      "id": "living-encyclopedia",
+      "owner": "encyclopedia",
+      "version": "0.1.0",
+      "collection": "collections/living-encyclopedia-v0.1.0",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Living_Encyclopedia_v0.1.0.zip",
+        "sha256": "e09df77c8c3e0b6cae70d6a917cda26d2d4e82ab2ab2c67f233083e6cb739f68",
+        "bytes": 4407985,
+        "zip_member_count": 271,
+        "manifest_entries": 270,
+        "storage": {
+          "kind": "file",
+          "path": "Living_Encyclopedia_v0.1.0.zip",
+          "bytes": 4407985,
+          "sha256": "e09df77c8c3e0b6cae70d6a917cda26d2d4e82ab2ab2c67f233083e6cb739f68"
+        }
+      },
+      "admission": "candidate",
+      "review_scope": "Frozen predecessor; E01 alias correction has bounded domain recheck; whole consumer not centrally accepted",
+      "history": "Frozen historical edition; new Garden and Finding consumer are separate successors.",
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "explorer.py: loopback server and fixed E01/E03/E04 dispatch",
+        "domain_worker.py: pinned domain execution"
+      ],
+      "activation_gate": "Publish source as historical edition if desired; prefer Garden/Finding successor for new UI. Review current source/status/export bindings before activation.",
+      "source_ui_paths": [
+        "dist",
+        "media",
+        "HANDOFF.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/living-encyclopedia-v0.1.0/evidence/01-REVIEW.md",
+          "bytes": 845,
+          "sha256": "79a3eadd2f0635e3c4608ce8c644287d05653f7c9fc426b54f9dd2aa66263f0e"
+        },
+        {
+          "path": "collections/living-encyclopedia-v0.1.0/evidence/02-REVIEW.md",
+          "bytes": 5756,
+          "sha256": "7ac329e4d88f301d6b65504fbed230159bcb9312d938c27367c2db372ec5ea7c"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/living-encyclopedia-v0.1.0/notices/inputs/biology-v0.1.1/NOTICES.md",
+          "bytes": 2672,
+          "sha256": "02461f5ee56978a9da2106dfec24b6964dae832e9f3d5f7fb9132a5361a15c6e"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "discovery-garden",
+      "owner": "encyclopedia",
+      "version": "0.2.1",
+      "collection": "collections/discovery-garden-v0.2.1",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Discovery_Garden_v0.2.1.zip",
+        "sha256": "602ffae7f1f501897e8d7e6898dbade6f66e698b873bcd415ce4bad660657af0",
+        "bytes": 5265599,
+        "zip_member_count": 403,
+        "manifest_entries": 402,
+        "storage": {
+          "kind": "file",
+          "path": "Discovery_Garden_v0.2.1.zip",
+          "bytes": 5265599,
+          "sha256": "602ffae7f1f501897e8d7e6898dbade6f66e698b873bcd415ce4bad660657af0"
+        }
+      },
+      "admission": "candidate",
+      "review_scope": "Corrected frozen candidate. Targeted E04 model-withdrawal finding CLOSED by eight-case mathematics successor recheck; full app/event/export acceptance pending",
+      "history": "0.2.0 specific E04 model-withdrawal blocker closed by 0.2.1 targeted successor review; whole consumer review pending.",
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "python -X utf8 -B server.py --port 3067",
+        "garden.py: evaluate(packet)",
+        "campaign.py plan / evaluate; generate_responses.py builds pinned response catalogue"
+      ],
+      "activation_gate": "Review consumer source/provenance, correction/retraction and capture/export behavior. Preserve continuous N versus finite menus and synthetic campaign scope. Current runtime evaluates precomputed response catalogue; not fresh central domain dispatch.",
+      "source_ui_paths": [
+        "dist",
+        "media",
+        "RESEARCH_QUEUE.json",
+        "entries",
+        "INTEGRATION.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/discovery-garden-v0.2.1/evidence/01-REVIEW.md",
+          "bytes": 1307,
+          "sha256": "8d47accd736c97b6c30f7732c78660e364476243e6b3a5376a6fb7fac50de128"
+        },
+        {
+          "path": "collections/discovery-garden-v0.2.1/evidence/02-UPGRADE_REVIEW_RECORD.md",
+          "bytes": 2729,
+          "sha256": "aa9f1f5bb46ea4a64d3fa7937d9b71ef57ca41344f2b31d61d81689f9d8592a5"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/discovery-garden-v0.2.1/notices/inputs/encyclopedia-v0.1.0/inputs/biology-v0.1.1/NOTICES.md",
+          "bytes": 2672,
+          "sha256": "02461f5ee56978a9da2106dfec24b6964dae832e9f3d5f7fb9132a5361a15c6e"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "finding-projection",
+      "owner": "encyclopedia",
+      "version": "0.1.0",
+      "collection": "collections/finding-projection-v0.1.0",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Finding_Projection_v0.1.0.zip",
+        "sha256": "43b3f944c4b052b1ebbe4d942c0e2df4dd52c7d2dcecb2c089c5bf5e2193825d",
+        "bytes": 560051,
+        "zip_member_count": 86,
+        "manifest_entries": 85,
+        "storage": {
+          "kind": "file",
+          "path": "Finding_Projection_v0.1.0.zip",
+          "bytes": 560051,
+          "sha256": "43b3f944c4b052b1ebbe4d942c0e2df4dd52c7d2dcecb2c089c5bf5e2193825d"
+        }
+      },
+      "admission": "candidate",
+      "review_scope": "Frozen consumer candidate; parent companion accepted, new consumer not automatically admitted",
+      "history": null,
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "dist/consumer.mjs: FindingConsumer and projectFinding",
+        "inject source.capture({investigation_id}) or window.OBSERVATORY_FINDING_SOURCE",
+        "server.py: explicit local fixture replay"
+      ],
+      "activation_gate": "Thin reviewed central projection required: specific resource-ceiling result, units, conditional fixture value, source_current, six dependencies and lineage. Review asynchronous stale capture/export/request retraction. Native N retraction and ledger hold are explicitly reconstructed fixtures, not a real central event implementation.",
+      "source_ui_paths": [
+        "dist/consumer.mjs",
+        "dist/render.mjs",
+        "dist/app.mjs",
+        "dist/style.css",
+        "media",
+        "CONSUMER_CONTRACT.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/finding-projection-v0.1.0/evidence/01-CONSUMER_CONTRACT.md",
+          "bytes": 7006,
+          "sha256": "5ca8b6d9308e89fe01621259468a1c24f1dd325ba7b2bd2e750894150c897534"
+        },
+        {
+          "path": "collections/finding-projection-v0.1.0/evidence/02-UPGRADE_REVIEW_RECORD.md",
+          "bytes": 2729,
+          "sha256": "aa9f1f5bb46ea4a64d3fa7937d9b71ef57ca41344f2b31d61d81689f9d8592a5"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/finding-projection-v0.1.0/notices/inputs/companion-v0.1/vendor/LICENSE",
+          "bytes": 1081,
+          "sha256": "617da21bb847c5ace21b93aaf57c72393e980fe97d29384996653fee653371a2"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "biology-observation-bridge",
+      "owner": "biology",
+      "version": "0.1.0",
+      "collection": "collections/biology-observation-bridge-v0.1.0",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Biology_Observation_Bridge_v0.1.0.zip",
+        "sha256": "219594efb5a1c5b92dfb79f9887148956f5ba0e70fa48f2a3262ac38439b673c",
+        "bytes": 1976270,
+        "zip_member_count": 109,
+        "manifest_entries": 108,
+        "storage": {
+          "kind": "file",
+          "path": "Biology_Observation_Bridge_v0.1.0.zip",
+          "bytes": 1976270,
+          "sha256": "219594efb5a1c5b92dfb79f9887148956f5ba0e70fa48f2a3262ac38439b673c"
+        }
+      },
+      "admission": "candidate",
+      "review_scope": "Frozen local candidate; producer tests pass, independent central/domain acceptance pending",
+      "history": null,
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "resource_port.py: normalize_observation(event,context,active_signal_id=None), resource_result(q,total,n,premises)",
+        "bridge.py; server.py loopback presentation; run_all.py owned replay"
+      ],
+      "activation_gate": "Review exact observation/error conversion and named correction; retain time0 companion versus time30 E04 distinction and rejected-family recommendation gate. Actual empirical extraction/calibration/replicate/GPx endpoint assumptions remain missing. Review anatomy route alias separately.",
+      "source_ui_paths": [
+        "web",
+        "figures",
+        "presentation.py",
+        "integration/resource-seam.json",
+        "integration/ANATOMY.md",
+        "THEOREM_USE_REVIEW.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/biology-observation-bridge-v0.1.0/evidence/01-HANDOFF.md",
+          "bytes": 4314,
+          "sha256": "f5ad9eb2d82e2b9eb4ee2b7021dae66b5508db3e18fd41d87ab4ed99ec5f1f16"
+        },
+        {
+          "path": "collections/biology-observation-bridge-v0.1.0/evidence/02-ANATOMY.md",
+          "bytes": 2263,
+          "sha256": "55e302eb2825377fc25a04898843f4ab5356c0255d331497ec84213efad46d9d"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/biology-observation-bridge-v0.1.0/notices/THIRD_PARTY_NOTICES.md",
+          "bytes": 1190,
+          "sha256": "1120846eeb40e36ce92727c6afad693ed6acaba70a1d73756e46075199573d25"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "biology-possibility-atlas",
+      "owner": "biology",
+      "version": "0.2.1",
+      "collection": "collections/biology-possibility-atlas-v0.2.1",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Biology_Possibility_Atlas_v0.2.1.zip",
+        "sha256": "c0b5d6fa6913b1f5bf5314997dffba9930ee3cee15831d1758b7bb0e47fc68ca",
+        "bytes": 134170266,
+        "zip_member_count": 251,
+        "manifest_entries": 250,
+        "storage": {
+          "kind": "ordered_chunks",
+          "parts": [
+            {
+              "path": "Biology_Possibility_Atlas_v0.2.1.zip.part001",
+              "bytes": 19000000,
+              "sha256": "854d5242c66cd3e21bb3dd3f4b6ed916013ae2fbb28fc0ebbb11714ad9b1a5de"
+            },
+            {
+              "path": "Biology_Possibility_Atlas_v0.2.1.zip.part002",
+              "bytes": 19000000,
+              "sha256": "4103c9ce396cc3451aa774379da6a6a27d2820654fa0035533d5ac178f4654e3"
+            },
+            {
+              "path": "Biology_Possibility_Atlas_v0.2.1.zip.part003",
+              "bytes": 19000000,
+              "sha256": "8f97e7ec3e8b1e7451b91b304365692b94d49c0a9009622c5dddeb0bb20c8028"
+            },
+            {
+              "path": "Biology_Possibility_Atlas_v0.2.1.zip.part004",
+              "bytes": 19000000,
+              "sha256": "d589ca365c30e2017f9c9f9fe882623e996abc69f957a7d81c3dac7f27bd233b"
+            },
+            {
+              "path": "Biology_Possibility_Atlas_v0.2.1.zip.part005",
+              "bytes": 19000000,
+              "sha256": "927dc0009743a5ac7906819ba589f1f2b02f32a027518cc52b30334d79919eeb"
+            },
+            {
+              "path": "Biology_Possibility_Atlas_v0.2.1.zip.part006",
+              "bytes": 19000000,
+              "sha256": "b211e6a3f02a087db8eae6ad12da392c971ea2e481d710cc6dbd909815ac77c9"
+            },
+            {
+              "path": "Biology_Possibility_Atlas_v0.2.1.zip.part007",
+              "bytes": 19000000,
+              "sha256": "509364ee1ddcc4b7798e3c3d34537f23967c12c1bb4c15fd6bf95453049a256d"
+            },
+            {
+              "path": "Biology_Possibility_Atlas_v0.2.1.zip.part008",
+              "bytes": 1170266,
+              "sha256": "a991468c86e592938efb8d7c308ceca984125c3c0d950c70dc264d9c46bcd52a"
+            }
+          ],
+          "instruction": "Concatenate parts in this exact order without transformations."
+        }
+      },
+      "admission": "candidate",
+      "review_scope": "Frozen correction candidate beyond held0.2.0; producer policy/patch/build replay passes, renewed central acceptance pending",
+      "history": "0.2.0 held for policy dependency and patch/base/target defects; 0.2.1 is the submitted correction, not yet independently accepted.",
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "python -B run_all.py (owned copy)",
+        "anatomy-platform: supplied React/Vite source and controlled build",
+        "integration: exact base/target patch receipts"
+      ],
+      "activation_gate": "Recheck policy withdrawal, exact patch bases/targets and controlled build. Fix route /models/* versus /anatomy/models/* in root-owned integration; inherited display encoding documented. Old mathematics/quantum snapshots are not rebound. Large134170266-byte source archive needs deliberate distribution planning; do not duplicate unchanged anatomy assets.",
+      "source_ui_paths": [
+        "anatomy-platform/app",
+        "anatomy-platform/dist",
+        "integration",
+        "INTEGRATION.md",
+        "CORRECTION.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/biology-possibility-atlas-v0.2.1/evidence/01-HANDOFF.md",
+          "bytes": 1903,
+          "sha256": "38b01cdb5316b7ab7724186c502c20b654681d32c1aed5ac03df093c7acadb9c"
+        },
+        {
+          "path": "collections/biology-possibility-atlas-v0.2.1/evidence/02-REVIEW.md",
+          "bytes": 8801,
+          "sha256": "f376ab398d422a3062a4579d1079e7036a5dec57fd51fa2a675eb72260f1cfef"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/biology-possibility-atlas-v0.2.1/notices/anatomy-platform/dist/ATTRIBUTION.md",
+          "bytes": 3014,
+          "sha256": "97b6d2b32f6a168a100abc798d2db892bb2836033af03a0a2cf984183f03b1af"
+        },
+        {
+          "path": "collections/biology-possibility-atlas-v0.2.1/notices/anatomy-platform/LICENSE",
+          "bytes": 1085,
+          "sha256": "02a6f033642baf528ef835709c6ea1b2305a8e207e115fbddd344cdaf14bda61"
+        },
+        {
+          "path": "collections/biology-possibility-atlas-v0.2.1/notices/anatomy-platform/public/ATTRIBUTION.md",
+          "bytes": 3014,
+          "sha256": "97b6d2b32f6a168a100abc798d2db892bb2836033af03a0a2cf984183f03b1af"
+        },
+        {
+          "path": "collections/biology-possibility-atlas-v0.2.1/notices/NOTICES.md",
+          "bytes": 2573,
+          "sha256": "bf85d7ec8826863b517550b985d54850a1df276c16fe220857e7b506f91eefba"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "quantum-growth",
+      "owner": "quantum",
+      "version": "0.1.2",
+      "collection": "collections/quantum-growth-v0.1.2",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Quantum_Growth_Lab_v0.1.2.zip",
+        "sha256": "2ac08da0798f62e63c96154a4fde462b5250140d6be038089781bc8761cc5445",
+        "bytes": 1523882,
+        "zip_member_count": 62,
+        "manifest_entries": 61,
+        "storage": {
+          "kind": "file",
+          "path": "Quantum_Growth_Lab_v0.1.2.zip",
+          "bytes": 1523882,
+          "sha256": "2ac08da0798f62e63c96154a4fde462b5250140d6be038089781bc8761cc5445"
+        }
+      },
+      "admission": "candidate",
+      "review_scope": "Corrected frozen candidate; held0.1.0/0.1.1 histories preserved; accepted GDL parent does not admit this solver",
+      "history": "0.1.0 causal-flux defect; 0.1.1 flux fix passed but witness defect held; 0.1.2 correction awaits renewed independent acceptance.",
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "python -B run.py run examples/pulsed.json --output my-inquiry.json",
+        "python -B run.py verify examples/pulsed.json my-inquiry.json",
+        "python -B check_release.py"
+      ],
+      "activation_gate": "Independently replay corrected witness validity/conditioning/precision and retained causal flux/alias fixes before activation. Keep synthetic clock/birth-rate and chemical-map premises; no whole protein or biological mechanism inference.",
+      "source_ui_paths": [
+        "results/figures",
+        "results/campaign/connections.json",
+        "results/campaign/next_questions.json",
+        "INTERFACE.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/quantum-growth-v0.1.2/evidence/01-CORRECTION.md",
+          "bytes": 3834,
+          "sha256": "4a607fbf028eead8940e9d2ada35ecdb901890d4703c5bedaa60c3f16e958a75"
+        },
+        {
+          "path": "collections/quantum-growth-v0.1.2/evidence/02-review.md",
+          "bytes": 6681,
+          "sha256": "c08988961789ea4a0de6bab2c2f7580b487ab72ef622bbc94a1caf9369af50b9"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/quantum-growth-v0.1.2/notices/LICENSE",
+          "bytes": 1075,
+          "sha256": "846f07478355c7855312c86f54d9bf62e9669e503b0ae15f790f44418a5af45f"
+        },
+        {
+          "path": "collections/quantum-growth-v0.1.2/notices/THIRD_PARTY_NOTICES.md",
+          "bytes": 1341,
+          "sha256": "33067e4b18fd30b7d5e4b81e634a5dd81fdc3c29a0e85aa2998576df03b19ed8"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "quantum-discrimination",
+      "owner": "quantum",
+      "version": "0.1",
+      "collection": "collections/quantum-discrimination-v0.1",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Quantum_Discrimination_Lab_v0.1.zip",
+        "sha256": "77a929c4549601b9c9f55aced74d42f658beac2a2dad7ace6da304ae28b68a5e",
+        "bytes": 525197,
+        "zip_member_count": 50,
+        "manifest_entries": 49,
+        "storage": {
+          "kind": "file",
+          "path": "Quantum_Discrimination_Lab_v0.1.zip",
+          "bytes": 525197,
+          "sha256": "77a929c4549601b9c9f55aced74d42f658beac2a2dad7ace6da304ae28b68a5e"
+        }
+      },
+      "admission": "candidate",
+      "review_scope": "Frozen candidate; bounded mathematical envelope/countermodel review passes, whole adapter/empirical acceptance pending",
+      "history": null,
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "run.py plan; run; verify; audit-optical",
+        "check_release.py"
+      ],
+      "activation_gate": "Retain all calibration/independence/multiplicity premises and constructive classical hidden-label countermodel. Exclusion applies to specified population family, not all classical mechanisms.",
+      "source_ui_paths": [
+        "results/figures",
+        "README.md",
+        "view.json"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/quantum-discrimination-v0.1/evidence/01-REVIEW.md",
+          "bytes": 3455,
+          "sha256": "7a79bc9581573db7e60fca1f3c6a02ba544f81a58719807d61935df5b735037f"
+        },
+        {
+          "path": "collections/quantum-discrimination-v0.1/evidence/02-README.md",
+          "bytes": 7368,
+          "sha256": "ad9e6439fcf1f8dd863175e6cc4f62a41fc00357f2a23f6edf03655772e4aaf1"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/quantum-discrimination-v0.1/notices/LICENSE",
+          "bytes": 1075,
+          "sha256": "846f07478355c7855312c86f54d9bf62e9669e503b0ae15f790f44418a5af45f"
+        },
+        {
+          "path": "collections/quantum-discrimination-v0.1/notices/THIRD_PARTY_NOTICES.md",
+          "bytes": 1170,
+          "sha256": "8a40e3d73a484ddb01d7c640482467cd2ee0e0ae206825f42a2d693d3779e0e9"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "quantum-optical-evidence",
+      "owner": "quantum",
+      "version": "0.1",
+      "collection": "collections/quantum-optical-evidence-v0.1",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Quantum_Optical_Evidence_Lab_v0.1.zip",
+        "sha256": "5f20e37245cd7d91a64b054bae930f698bab84046da83a6ef6517faba3a683d2",
+        "bytes": 13582914,
+        "zip_member_count": 79,
+        "manifest_entries": 78,
+        "storage": {
+          "kind": "file",
+          "path": "Quantum_Optical_Evidence_Lab_v0.1.zip",
+          "bytes": 13582914,
+          "sha256": "5f20e37245cd7d91a64b054bae930f698bab84046da83a6ef6517faba3a683d2"
+        }
+      },
+      "admission": "held_candidate",
+      "review_scope": "Frozen real-source descriptive replay candidate, held by default in mapping; independent acceptance pending",
+      "history": null,
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "python -B run.py run examples/reference.json --output my-inquiry.json",
+        "run.py verify; view; check_release.py"
+      ],
+      "activation_gate": "Review eight unchanged source files/CC BY4.0 notices, array pairing and frequency-index correction, preserved feature null uncertainty and unknown specimen identities. No calibrated likelihood, independent validation or cellular flux claim. Source arrays are not asserted raw camera frames.",
+      "source_ui_paths": [
+        "results/figures",
+        "METHODS.md",
+        "SOURCE_AUDIT.md",
+        "SUPPLEMENT_AUDIT.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/quantum-optical-evidence-v0.1/evidence/01-Quantum_Optical_Evidence_Lab_Status.md",
+          "bytes": 3098,
+          "sha256": "27d918eb9c3c38f248344e91057c10a71f09de800191eed5120fa2f6d54e06d0"
+        },
+        {
+          "path": "collections/quantum-optical-evidence-v0.1/evidence/02-README.md",
+          "bytes": 5374,
+          "sha256": "042fb5b6cae3fd715934c5d44023a49928ea0dffbc2206e07bda53ea1c15dde8"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/quantum-optical-evidence-v0.1/notices/LICENSE",
+          "bytes": 1075,
+          "sha256": "846f07478355c7855312c86f54d9bf62e9669e503b0ae15f790f44418a5af45f"
+        },
+        {
+          "path": "collections/quantum-optical-evidence-v0.1/notices/THIRD_PARTY_NOTICES.md",
+          "bytes": 1196,
+          "sha256": "cd26305e104a155f10f9f3d95135058c3e11f10ae01f83da3e5ea699a8e4feac"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "quantum-capability-mapping",
+      "owner": "quantum",
+      "version": "0.1",
+      "collection": "collections/quantum-capability-mapping-v0.1",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Quantum_Capability_Mapping_v0.1.zip",
+        "sha256": "374d1a3756bb8efe546f3c79e691aca6102cd9e8740885b56176ecede4f868e3",
+        "bytes": 327073,
+        "zip_member_count": 52,
+        "manifest_entries": 51,
+        "storage": {
+          "kind": "file",
+          "path": "Quantum_Capability_Mapping_v0.1.zip",
+          "bytes": 327073,
+          "sha256": "374d1a3756bb8efe546f3c79e691aca6102cd9e8740885b56176ecede4f868e3"
+        }
+      },
+      "admission": "accepted_local_scoped",
+      "review_scope": "Reviewed as bounded local integration reference (63 combined checks/11 calls); accepted reference sector wired into root spine, optical remains held",
+      "history": null,
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "bridge.py run <14-field-request> --reference-root <pinned-source> --outdir <fresh>",
+        "bridge.py verify; feature_worker.py"
+      ],
+      "activation_gate": "Reuse already reviewed reference route. Keep optical --review-candidate privileged and unavailable to ordinary desk input. Full package source may be published without activating held routes; missing six redox transfer maps remain gaps.",
+      "source_ui_paths": [
+        "README.md",
+        "capabilities.json",
+        "fixtures",
+        "inputs/reference-acceptance.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/quantum-capability-mapping-v0.1/evidence/01-REVIEW.md",
+          "bytes": 9951,
+          "sha256": "f1e4fe7281a849f8e59173cfd160cd3ad14301a83960e8b5e2bcee5b5ab7f168"
+        }
+      ],
+      "notices": [
+        {
+          "path": "collections/quantum-capability-mapping-v0.1/notices/LICENSE",
+          "bytes": 1075,
+          "sha256": "846f07478355c7855312c86f54d9bf62e9669e503b0ae15f790f44418a5af45f"
+        }
+      ],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": null
+    },
+    {
+      "id": "quantum-reference",
+      "owner": "quantum",
+      "version": "0.1.1",
+      "collection": "collections/quantum-reference-v0.1.1",
+      "archive": {
+        "schema": "exact-archive-collection/1",
+        "filename": "Quantum_Adapter_v0.1.1.zip",
+        "sha256": "832f3eac93799ba6ec27677f2fd13e7264880180226af273f773b6c2a17d10d9",
+        "bytes": 607722,
+        "zip_member_count": 32,
+        "manifest_entries": 31,
+        "storage": {
+          "kind": "file",
+          "path": "Quantum_Adapter_v0.1.1.zip",
+          "bytes": 607722,
+          "sha256": "832f3eac93799ba6ec27677f2fd13e7264880180226af273f773b6c2a17d10d9"
+        }
+      },
+      "admission": "accepted_local_scoped",
+      "review_scope": "Accepted for bounded local integration; selected unchanged sources already public within temporal-spine vendor, entire release publication not established by inspected receipts",
+      "history": null,
+      "runtime_admission_change": false,
+      "empirical_admission": "none granted by source publication",
+      "native_entrypoints": [
+        "src/observatory_quantum/cli.py",
+        "validate.py; cli_checks.py"
+      ],
+      "activation_gate": "Reuse accepted reference capability through the reviewed fresh-process gateway. Publish full source if consolidating final packages; it does not admit Growth, optical measurements or biological transfer.",
+      "source_ui_paths": [
+        "results/quantum-adapter.png",
+        "results/publisher-curves.png",
+        "DATA_ADMISSION.md",
+        "PUBLIC_FILES.md"
+      ],
+      "review_evidence": [
+        {
+          "path": "collections/quantum-reference-v0.1.1/evidence/01-review.md",
+          "bytes": 7138,
+          "sha256": "f19e0bc3231f311b0576d77b8592e842f4143fdb3a214680eb304d6fc1d71d56"
+        },
+        {
+          "path": "collections/quantum-reference-v0.1.1/evidence/02-review-receipt.json",
+          "bytes": 1652,
+          "sha256": "d5a11c7379aac88f150ff908cf20130d648b405c64e397e7c8455964c698f891"
+        }
+      ],
+      "notices": [],
+      "publication_state": "prepared_for_root_publication",
+      "prior_whole_archive_publication_verified": false,
+      "prior_partial_source_note": "Selected accepted reference source already in public temporal-spine dependencies."
+    }
+  ],
+  "already_public": [
+    {
+      "id": "theory-atlas",
+      "version": {
+        "scientific": "0.1.0",
+        "distribution": "0.1.1"
+      },
+      "commit": "e97067547acde077f32237bac2803e4e66189bbd",
+      "url": "https://github.com/thantiklermcirony/empirical-architecture/tree/e97067547acde077f32237bac2803e4e66189bbd/research/theory-atlas-v0.1",
+      "action": "Link existing exact source; no duplicate archive in this collection."
+    },
+    {
+      "id": "biology-redox",
+      "version": "0.1.1",
+      "commit": "10e63b81e5b83c13eecbeb933adc7e3e0f0dc96b",
+      "url": "https://github.com/thantiklermcirony/empirical-observatory/tree/10e63b81e5b83c13eecbeb933adc7e3e0f0dc96b/research/biology-redox-v0.1.1",
+      "action": "Link existing exact source; no duplicate archive in this collection."
+    },
+    {
+      "id": "geometry-discovery",
+      "version": "0.2.1",
+      "commit": "bf002744364057e50a02ad6ede9ba1985c8e1b31",
+      "url": "https://github.com/thantiklermcirony/empirical-observatory/tree/bf002744364057e50a02ad6ede9ba1985c8e1b31/research/geometry-discovery-v0.2.1",
+      "action": "Link existing exact source; no duplicate archive in this collection."
+    },
+    {
+      "id": "temporal-grammar-spine",
+      "version": "0.1",
+      "commit": "3335f547d025cafe1956fdb2e35bb6ba9ddc1c37",
+      "url": "https://github.com/thantiklermcirony/empirical-observatory/tree/3335f547d025cafe1956fdb2e35bb6ba9ddc1c37/automation/temporal-grammar",
+      "action": "Link existing exact source; no duplicate archive in this collection."
+    },
+    {
+      "id": "mathematics-complete-index",
+      "version": "0.1",
+      "commit": "2cf87d48451a0632c7acb8024680c664478a8995",
+      "url": "https://github.com/thantiklermcirony/empirical-observatory/tree/2cf87d48451a0632c7acb8024680c664478a8995/research/mathematics",
+      "action": "Existing full mathematics index and Garden targeted-review evidence."
+    },
+    {
+      "id": "mathematics-integration",
+      "version": "0.1",
+      "commit": "5775fc734b86de7e81c3c1ecae14528cbb0dc08d",
+      "url": "https://github.com/thantiklermcirony/empirical-observatory/tree/5775fc734b86de7e81c3c1ecae14528cbb0dc08d/research/mathematics-integration-v0.1",
+      "action": "Existing mapping/project archives include accepted companion and candidate Recovery; no scientific promotion or duplicate copy."
+    }
+  ],
+  "original_publication_receipts": [
+    {
+      "path": "prior-publication-receipts/01-math-public-verification.json",
+      "bytes": 1731,
+      "sha256": "dbf966e5cc00f7d7a9f6b4afee934815936a38db48e92afc01d2a09ad3d47141"
+    },
+    {
+      "path": "prior-publication-receipts/02-Mathematics_GitHub_Update_Receipt.json",
+      "bytes": 1706,
+      "sha256": "110754c0a7473383bafad24494567cc4e363905cdcf55f4a9db7d40010220262"
+    },
+    {
+      "path": "prior-publication-receipts/03-runtime-public-verification.json",
+      "bytes": 3970,
+      "sha256": "64d023b953b93c4584c413c728e7d2672fe4942f4188b97db9a0a222239b5e4b"
+    },
+    {
+      "path": "prior-publication-receipts/04-status-public-verification.json",
+      "bytes": 590,
+      "sha256": "29968738706bc14a04db0ff5f479f006ab38982fe05b1172d9da2331e0cbdca4"
+    },
+    {
+      "path": "prior-publication-receipts/biology-public-verification.json",
+      "bytes": 1374,
+      "sha256": "00f6aff39216564b9766fb288235029f0404258ac548d47f4d93e3d2b947521c"
+    },
+    {
+      "path": "prior-publication-receipts/geometry-public-verification.json",
+      "bytes": 1561,
+      "sha256": "18d84d74d7bd861c7bb765983ea70ba3153f2dc3d42cdab8270fa7851b4ffa9b"
+    }
+  ],
+  "publication_verification": "Existing dated exact-byte receipts; fresh API verification was unavailable during intake. New collections are staged, not asserted public.",
+  "all_specialists_paused": true,
+  "original_archive_bytes_total": 162946959,
+  "largest_stored_archive_piece_bytes": 19000000,
+  "duplication_policy": "Each original archive stored exactly once, as original file or raw chunks. No additional full anatomy ZIP, extracted model tree, or duplicate existing mathematics/GDL/redox archive."
+}

@@ -1,0 +1,349 @@
+{
+  "version": "two-family-world/0.1.0",
+  "source": "synthetic authored simulator; 0.1 development, not consciousness evidence",
+  "development": true,
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "architectures": {
+    "stackedSigmoid": {
+      "dimensions": [
+        34,
+        20,
+        12,
+        4
+      ],
+      "parameters": 1004,
+      "multiplyAddsPerPrediction": 968
+    },
+    "linearSigmoid": {
+      "dimensions": [
+        34,
+        4
+      ],
+      "parameters": 140,
+      "multiplyAddsPerPrediction": 136
+    },
+    "note": "Parameter and matrix multiply-add counts only; not tokens, energy, dollars or equivalent general intelligence."
+  },
+  "summary": {
+    "predictionLearned": {
+      "mean": 0.006013822706161658,
+      "ci95": [
+        0.004919972554521575,
+        0.0071449213844206735
+      ]
+    },
+    "predictionInitial": {
+      "mean": 0.01746026928289973,
+      "ci95": [
+        0.015326865158959526,
+        0.020542138134708194
+      ]
+    },
+    "predictionConstant": {
+      "mean": 0.010271583217804884,
+      "ci95": [
+        0.010062855959830658,
+        0.010602222587731329
+      ]
+    },
+    "predictionLinear": {
+      "mean": 0.011650644634465369,
+      "ci95": [
+        0.010058439879291725,
+        0.014245029281437097
+      ]
+    },
+    "predictionDeltaVsConstant": {
+      "mean": -0.004257760511643226,
+      "ci95": [
+        -0.005142883405309083,
+        -0.0034573012033106546
+      ]
+    },
+    "deficitLearned": {
+      "mean": 0.17447578176231107,
+      "ci95": [
+        0.1230288523738969,
+        0.21490797665342742
+      ]
+    },
+    "deficitRandom": {
+      "mean": 0.06207060647342134,
+      "ci95": [
+        0.05129247271732118,
+        0.07209150525615528
+      ]
+    },
+    "deficitNeedFirst": {
+      "mean": 0.23420856803032367,
+      "ci95": [
+        0.22190809419645777,
+        0.249927997934134
+      ]
+    },
+    "deficitDeltaVsRandom": {
+      "mean": 0.11240517528888976,
+      "ci95": [
+        0.06020101092710933,
+        0.14281647139727216
+      ]
+    },
+    "deficitDeltaVsNeedFirst": {
+      "mean": -0.05973278626801257,
+      "ci95": [
+        -0.10776075958648233,
+        -0.03502002128070658
+      ]
+    },
+    "deficitLinear": {
+      "mean": 0.06624053356460859,
+      "ci95": [
+        0.044853499912173,
+        0.09875520567592037
+      ]
+    },
+    "deficitFixedAttention": {
+      "mean": 0.16738578034028184,
+      "ci95": [
+        0.1277465317152315,
+        0.18931533357311434
+      ]
+    },
+    "deficitDeltaVsFixedAttention": {
+      "mean": 0.007090001422029234,
+      "ci95": [
+        -0.004717679341334616,
+        0.025592643080313088
+      ]
+    },
+    "partnerBrierRemembered": {
+      "mean": 0.12535098155859603,
+      "ci95": [
+        0.12042831647828757,
+        0.13280190362879152
+      ]
+    },
+    "partnerBrierErased": {
+      "mean": 0.24863575166387344,
+      "ci95": [
+        0.24669753086419824,
+        0.2508222831885398
+      ]
+    },
+    "partnerDelta": {
+      "mean": -0.12328477010527744,
+      "ci95": [
+        -0.13039396671025222,
+        -0.11558553731009086
+      ]
+    },
+    "equalPartnerDelta": {
+      "mean": 0.0031248807126571057,
+      "ci95": [
+        0.00033972083338984493,
+        0.007859072923929844
+      ]
+    }
+  },
+  "rows": [
+    {
+      "seed": 101,
+      "prediction": {
+        "learned": 0.0071449213844206735,
+        "initial": 0.020542138134708194,
+        "constant": 0.010602222587731329,
+        "linear": 0.014245029281437097,
+        "observations": 1867
+      },
+      "control": {
+        "learned": 0.1230288523738969,
+        "random": 0.06282784144678756,
+        "needFirst": 0.23078961196037923,
+        "linear": 0.044853499912173,
+        "fixedAttention": 0.1277465317152315
+      },
+      "partners": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.18292682926829268,
+          0.8658536585365854
+        ],
+        "brierRemembered": 0.13280190362879152,
+        "brierErased": 0.24838744093888238,
+        "preference": 0.9957788375671149,
+        "requestValue": 0.26634146341463416,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.4878048780487805,
+          0.524390243902439
+        ],
+        "brierRemembered": 0.24988399762046462,
+        "brierErased": 0.24954427678707478,
+        "preference": 0.4273471694017482,
+        "requestValue": 0.1151219512195122,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.18292682926829268,
+          0.8658536585365854
+        ],
+        "brierRemembered": 0.13280190362879152,
+        "brierErased": 0.24838744093888238,
+        "preference": 0.9957788375671149,
+        "requestValue": -0.053658536585365846,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 102,
+      "prediction": {
+        "learned": 0.004919972554521575,
+        "initial": 0.015326865158959526,
+        "constant": 0.010062855959830658,
+        "linear": 0.010648464742667282,
+        "observations": 1947
+      },
+      "control": {
+        "learned": 0.21490797665342742,
+        "random": 0.07209150525615528,
+        "needFirst": 0.249927997934134,
+        "linear": 0.09875520567592037,
+        "fixedAttention": 0.18931533357311434
+      },
+      "partners": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.926829268292683,
+          0.18292682926829268
+        ],
+        "brierRemembered": 0.12282272456870899,
+        "brierErased": 0.24669753086419824,
+        "preference": 0.9974040916776518,
+        "requestValue": 0.2907317073170732,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.5,
+          0.5853658536585366
+        ],
+        "brierRemembered": 0.24980220107079176,
+        "brierErased": 0.24862635269014013,
+        "preference": 0.3356083779984784,
+        "requestValue": 0.12000000000000001,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.9,
+          0.2
+        ],
+        "estimates": [
+          0.926829268292683,
+          0.18292682926829268
+        ],
+        "brierRemembered": 0.12282272456870899,
+        "brierErased": 0.24669753086419824,
+        "preference": 0.9974040916776518,
+        "requestValue": -0.0292682926829268,
+        "request": false,
+        "cost": 0.4
+      }
+    },
+    {
+      "seed": 103,
+      "prediction": {
+        "learned": 0.0059765741795427246,
+        "initial": 0.01651180455503146,
+        "constant": 0.010149671105852666,
+        "linear": 0.010058439879291725,
+        "observations": 1943
+      },
+      "control": {
+        "learned": 0.18549051625960897,
+        "random": 0.05129247271732118,
+        "needFirst": 0.22190809419645777,
+        "linear": 0.05511289510573238,
+        "fixedAttention": 0.18509547573249974
+      },
+      "partners": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.2682926829268293,
+          0.8902439024390244
+        ],
+        "brierRemembered": 0.12042831647828757,
+        "brierErased": 0.2508222831885398,
+        "preference": 0.9931430348851755,
+        "requestValue": 0.2760975609756098,
+        "request": true,
+        "cost": 0.08
+      },
+      "equalPartners": {
+        "trueReliability": [
+          0.55,
+          0.55
+        ],
+        "estimates": [
+          0.573170731707317,
+          0.43902439024390244
+        ],
+        "brierRemembered": 0.2572798929208813,
+        "brierErased": 0.24942081999695148,
+        "preference": 0.7451994335354529,
+        "requestValue": 0.1492682926829268,
+        "request": true,
+        "cost": 0.08
+      },
+      "highCost": {
+        "trueReliability": [
+          0.2,
+          0.9
+        ],
+        "estimates": [
+          0.2682926829268293,
+          0.8902439024390244
+        ],
+        "brierRemembered": 0.12042831647828757,
+        "brierErased": 0.2508222831885398,
+        "preference": 0.9931430348851755,
+        "requestValue": -0.04390243902439023,
+        "request": false,
+        "cost": 0.4
+      }
+    }
+  ]
+}

@@ -18,6 +18,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import Station from '@/components/observatory/Station';
+import CentralDesk from '@/components/observatory/CentralDesk';
 import TaoLab from '@/components/observatory/TaoLab';
 import QuantumLab from '@/components/observatory/QuantumLab';
 import BehaviourLab from '@/components/observatory/BehaviourLab';
@@ -55,7 +56,7 @@ const rooms = [
 ];
 export default function Home() {
   const [selected, setSelected] = useState('tao'),
-    [view, setView] = useState('deck'),
+    [view, setView] = useState('question'),
     [records, setRecords] = useState<ExperimentRecord[]>([]),
     [motion, setMotion] = useState(false),
     [ready, setReady] = useState(false),
@@ -65,6 +66,7 @@ export default function Home() {
     const restoreView = () => {
       const target = window.location.hash.slice(1);
       const allowed = [
+        'question',
         'deck',
         'tao',
         'behaviour',
@@ -73,7 +75,7 @@ export default function Home() {
         'expeditions',
         'logbook',
       ];
-      const next = allowed.includes(target) ? target : 'deck';
+      const next = allowed.includes(target) ? target : 'question';
       setView(next);
       if (rooms.some((r) => r.id === next)) setSelected(next);
     };
@@ -123,7 +125,7 @@ export default function Home() {
   const navigate = useCallback((v: string) => {
     setView(v);
     if (rooms.some((r) => r.id === v)) setSelected(v);
-    window.location.hash = v === 'deck' ? '' : v;
+    window.location.hash = v;
   }, []);
   useStationTools({ view, records, navigate });
   const completeRooms = new Set(
@@ -133,6 +135,7 @@ export default function Home() {
       )
       .map((r) => r.room),
   );
+  if (view === 'question') return <CentralDesk />;
   return (
     <main className="observatory">
       <header className="station-header">
@@ -208,11 +211,17 @@ export default function Home() {
               <a className="projects-cta" href="/projects">
                 Current projects <ArrowUpRight size={22} />
               </a>
+              <a className="latest-project human-entry" href="/question">
+                Question Desk — turn a question into a visible investigation
+              </a>
               <a className="latest-project" href="/active-context">
                 Active Context — help your agent resume with evidence
               </a>
               <a className="latest-project" href="/atlas">
                 New: Research Atlas — explore the whole programme
+              </a>
+              <a className="latest-project human-entry" href="/human">
+                Enter the Human Condition Lab — body, mind and Earth
               </a>
             </div>
             <div className="flight-label">

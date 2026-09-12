@@ -1,0 +1,117 @@
+{
+  "schema": "observatory-entry-index/1",
+  "derived_from_actual_sources": true,
+  "scope": "Three actual Garden entries and one distinct finding-consumer investigation. No E02 or uncreated entry invented.",
+  "entries": [
+    {
+      "id": "E01",
+      "title": "Bounded operations",
+      "question": "Which interior probe separates laws with the same current readout?",
+      "question_from_response_table": "Which interior probe separates laws with the same current readout?",
+      "owner": "mathematics",
+      "source_version": "0.2.1",
+      "status": "candidate_requires_coordinator_acceptance",
+      "computed_statuses": [
+        {
+          "id": "DG-E01-observation-family",
+          "status": "established_in_scope",
+          "admission": "candidate_requires_coordinator_acceptance"
+        }
+      ],
+      "scope": "Complete three-map comparison menu at fixed u=1/3, v=1/2; not all bounded maps or physical mechanisms.",
+      "evidence_class": "synthetic",
+      "source": {
+        "collection": "collections/discovery-garden-v0.2.1",
+        "archive_sha256": "602ffae7f1f501897e8d7e6898dbade6f66e698b873bcd415ce4bad660657af0",
+        "path_in_archive": "entries/E01/0.2.1/inquiry.json",
+        "file_sha256": "d791bf80ac38f074e354debc0a56d44a7e5711de63555d82f927068ac4d1c6d7",
+        "extracted_excerpt": "entry-sources/E01-inquiry.json",
+        "title_path_in_archive": "data/responses.json",
+        "title_source_sha256": "06f7792a255ebeab1eb4848e28105682b9632816a5063406ba2d49111401f6ea"
+      },
+      "ui_operation": "Open a captured candidate inquiry or its scoped laboratory; do not infer runtime dispatch from this entry."
+    },
+    {
+      "id": "E03",
+      "title": "Hidden quantum phase",
+      "question": "Which added gap distinguishes phases with the same transmission?",
+      "question_from_response_table": "Which added gap distinguishes phases with the same transmission?",
+      "owner": "quantum",
+      "source_version": "0.2.1",
+      "status": "candidate_requires_coordinator_acceptance",
+      "computed_statuses": [
+        {
+          "id": "DG-E03-observation-family",
+          "status": "established_in_scope",
+          "admission": "candidate_requires_coordinator_acceptance"
+        }
+      ],
+      "scope": "Six phase hypotheses and six controlled-gap choices; not the full phase continuum or all scattering models. T has period π; full amplitudes retain additional phase.",
+      "evidence_class": "synthetic",
+      "source": {
+        "collection": "collections/discovery-garden-v0.2.1",
+        "archive_sha256": "602ffae7f1f501897e8d7e6898dbade6f66e698b873bcd415ce4bad660657af0",
+        "path_in_archive": "entries/E03/0.2.1/inquiry.json",
+        "file_sha256": "5964574aec2863228966e129ef5eb63cb95a2424ba2fb400a5325c67fa4980bb",
+        "extracted_excerpt": "entry-sources/E03-inquiry.json",
+        "title_path_in_archive": "data/responses.json",
+        "title_source_sha256": "06f7792a255ebeab1eb4848e28105682b9632816a5063406ba2d49111401f6ea"
+      },
+      "ui_operation": "Open a captured candidate inquiry or its scoped laboratory; do not infer runtime dispatch from this entry."
+    },
+    {
+      "id": "E04",
+      "title": "Recovery and reserve",
+      "question": "What concentration observation can change the resource conclusion?",
+      "question_from_response_table": "What concentration observation can change the resource conclusion?",
+      "owner": "biology",
+      "source_version": "0.2.1",
+      "status": "candidate_requires_coordinator_acceptance",
+      "computed_statuses": [
+        {
+          "id": "DG-E04-observation-family",
+          "status": "established_in_scope",
+          "admission": "candidate_requires_coordinator_acceptance"
+        }
+      ],
+      "scope": "Continuous N ∈ [0,0.08] mM. Five displayed markers are witnesses, not an exhaustive candidate list. All other budget inputs are fixed stipulated values.",
+      "evidence_class": "synthetic",
+      "source": {
+        "collection": "collections/discovery-garden-v0.2.1",
+        "archive_sha256": "602ffae7f1f501897e8d7e6898dbade6f66e698b873bcd415ce4bad660657af0",
+        "path_in_archive": "entries/E04/0.2.1/inquiry.json",
+        "file_sha256": "4d786af92fc61f2da269ce31bca999c38ff5fc6294391c2780056ac3909d5b47",
+        "extracted_excerpt": "entry-sources/E04-inquiry.json",
+        "title_path_in_archive": "data/responses.json",
+        "title_source_sha256": "06f7792a255ebeab1eb4848e28105682b9632816a5063406ba2d49111401f6ea"
+      },
+      "ui_operation": "Open a captured candidate inquiry or its scoped laboratory; do not infer runtime dispatch from this entry."
+    },
+    {
+      "id": "RESOURCE-INQUIRY-001",
+      "title": "Revisioned Finding Consumer 0.1",
+      "question": "Can a 0.60 mM reaction-extent target be excluded by the declared resource model, and which observation changes the answer?",
+      "owner": "encyclopedia",
+      "source_version": "0.1.0",
+      "status": "consumer_candidate",
+      "computed_statuses": [
+        {
+          "revision": 3,
+          "status": "conditional_synthetic"
+        }
+      ],
+      "scope": "Reviewed synthetic fixed-volume resource/geometry companion; necessary ceilings only",
+      "evidence_class": "synthetic",
+      "source": {
+        "collection": "collections/finding-projection-v0.1.0",
+        "archive_sha256": "43b3f944c4b052b1ebbe4d942c0e2df4dd52c7d2dcecb2c089c5bf5e2193825d",
+        "path_in_archive": "media/RESOURCE-INQUIRY-001-r3-projection-1f064e8ef613d068fc57.json",
+        "file_sha256": "ce0957dadb16e6b67fc52f9eea4a5c658b58dd36d460b3a976e8ccb21d8e39fe",
+        "extracted_excerpt": "entry-sources/RESOURCE-INQUIRY-001-r3.json",
+        "title_path_in_archive": "README.md",
+        "title_source_sha256": "6cc364035ad6f3fda27768d1bfda0425b8f32797df69613c15a2ddfa7e9ee323"
+      },
+      "ui_operation": "Use reviewed projection mapping, then inject source.capture; revision3 is a historical synthetic capture, not a current live finding."
+    }
+  ]
+}
