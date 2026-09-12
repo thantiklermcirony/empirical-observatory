@@ -11,7 +11,7 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint app components/observatory lib tests scripts",
     "format": "oxfmt",
-    "test": "node --experimental-strip-types --test tests/engine.test.ts tests/interest.test.ts tests/discovery.test.ts tests/forecast-feed.test.ts tests/temporal-state.test.ts tests/question.test.ts tests/reasoning.test.ts tests/paper-checks.test.ts integrations/earth/earth.test.mjs tests/temporal-router/temporal-router.test.ts tests/gateway/gateway-engine.test.mjs tests/gateway/gateway-storage.test.mjs tests/gateway/strict-json.test.mjs tests/quantum-contract.test.ts tests/family-world.test.ts tests/family-language.test.ts tests/gateway/ai-interpreter.test.mjs",
+    "test": "node --experimental-strip-types --test tests/engine.test.ts tests/interest.test.ts tests/discovery.test.ts tests/forecast-feed.test.ts tests/temporal-state.test.ts tests/question.test.ts tests/reasoning.test.ts tests/paper-checks.test.ts integrations/earth/earth.test.mjs tests/temporal-router/temporal-router.test.ts tests/gateway/gateway-engine.test.mjs tests/gateway/gateway-storage.test.mjs tests/gateway/strict-json.test.mjs tests/quantum-contract.test.ts tests/family-world.test.ts tests/family-language.test.ts tests/gateway/ai-interpreter.test.mjs tests/gateway/research.test.mjs",
     "typecheck": "tsc --noEmit",
     "research": "node --experimental-strip-types scripts/research.ts"
   },

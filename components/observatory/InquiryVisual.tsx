@@ -3,6 +3,14 @@ import type { TemporalReport } from '@/lib/engine/temporal-router';
 function number(value: unknown): number { if (typeof value === 'number') return value; if (typeof value !== 'string') return NaN; const [a, b] = value.split('/').map(Number); return b === undefined ? a : a / b; }
 function Bar({ label, value, max = 1, detail }: { label: string; value: number; max?: number; detail?: string }) { return <div className="cd-result-bar"><span>{label}</span><div><i style={{ width: `${Math.min(100, Math.max(0, value / max * 100))}%` }} /></div><strong>{detail ?? Number(value.toPrecision(5))}</strong></div>; }
 export default function InquiryVisual({ report }: { report: LabPrintout }) {
+  if (report.interpretation.profile === 'control') {
+    const comparisons = report.branches.find(b => b.id === 'dynamics')?.results.flatMap(r => {
+      const v = r.value as { answer?: string; values?: Record<string, unknown> } | null;
+      return v && typeof v === 'object' && v.values && typeof v.values['tao MAE'] === 'number' ? [{ label: r.label, answer: v.answer, values: v.values }] : [];
+    }) ?? [];
+    const labels: Record<string, string> = { linear: 'Clipped linear', pi: 'Anti-windup PI', sigmoid: 'Sigmoid', tao: 'TAO' };
+    return <section className="cd-result-visual"><span className="cd-label">CONTROLLER COMPARISON · SEEDED SIMULATION</span><h3>Does the proposed controller beat the baseline?</h3>{comparisons.map((v, i) => <section key={i}><h4>{v.label}</h4><p>{v.answer}</p>{Object.entries(labels).map(([id, label]) => <Bar key={id} label={label} value={Number(v.values[`${id} MAE`])} max={Math.max(...Object.keys(labels).map(k => Number(v.values[`${k} MAE`]))) * 1.15} detail={Number(v.values[`${id} MAE`]).toPrecision(5)} />)}<p>Mean absolute tracking error; lower is better. Effort is a separate objective: {Object.entries(labels).map(([id, label]) => `${label} ${Number(v.values[`${id} effort`]).toPrecision(4)}`).join(' · ')}.</p></section>)}<p>Equal gain, seeded disturbance, identical observation and action limits. These fixture comparisons are not biological observations or optimally tuned controller benchmarks.</p></section>;
+  }
   const inquiries = report.inquiries as unknown as TemporalReport[];
   if (report.interpretation.profile === 'order' && inquiries.length === 2 && inquiries.every(q => q.results.at(-1)?.status === 'established_in_scope')) {
     const a = inquiries[0].results.at(-1)!, b = inquiries[1].results.at(-1)!; if (typeof a.value !== 'string' || typeof b.value !== 'string') return null;

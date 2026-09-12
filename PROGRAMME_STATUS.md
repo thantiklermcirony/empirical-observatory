@@ -1,3 +1,11 @@
+# Question-to-evidence explanation — 12 September 2026
+
+The central terminal now connects ordinary language to a branch investigation plan, actual fixed-engine calculations and an evidence-linked lay explanation. The report contains source classes, computed graphs, missing measurements and next steps. A clearly labelled source brief remains useful while the secure hosted AI credential is absent. The two AI stages share the existing 200-call daily cap; no autonomous scientific-code or public-claim changes are enabled. [Current design and limits](research/Investigation_Pipeline.md).
+
+The office source integration is merged in [PR #8](https://github.com/thantiklermcirony/empirical-observatory/pull/8). All specialist pause instructions and the prospective calibration experiment remain in force. Implementation and publication are not scientific validation.
+
+---
+
 # Central desk integration — 12 September 2026
 
 One entry now joins the temporal grammar router, exact bounded actions, synthetic resource ceiling, dimensionless quantum reference and existing controller comparison to branch printouts and a source-pinned encyclopedia. The public AI interface uses the same fixed engines. Private saved printouts are shared across these views for 30 days.

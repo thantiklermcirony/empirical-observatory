@@ -1,3 +1,13 @@
+# Current investigation flow — 12 September 2026
+
+The ordinary-language terminal now uses `POST /api/inquiry/research`: a shared AI planner assigns relevant branch work, fixed engines calculate, and a second AI call explains the actual returned evidence in plain language. It returns a plan, cited answer, exact model cases, graphs, specific missing observations and encyclopedia connections. The advanced structured endpoint is unchanged.
+
+This service shares the existing atomic 200-provider-call UTC daily allowance; it uses at most two calls per investigation, counts failed attempts and never retries automatically. Without a configured credential, it returns an explicitly source-guided explanation and illustrative computations. Hosted AI is not yet verified live.
+
+Save accepts either an original request (recalculated) or the server-issued `signedReport` envelope (verified and preserved exactly, without another AI call). The receipt expires after one hour; saved private records retain their existing 30-day access-token protection. Save has a separate 1,050,000-byte envelope limit. See [Investigation_Pipeline.md](research/Investigation_Pipeline.md) for the current contract and tests. The earlier fixed-gateway description below is retained as implementation history; its prose-only and save-only restrictions are superseded here.
+
+---
+
 # Central desk: one question, scoped branch printouts
 
 The front door is `/` or `/question`. A complete documented model prompt or explicit fourteen-field inquiry goes to `POST /api/inquiry`. The host binds the reviewed temporal router and quantum reference; client input cannot supply runtime adapters, code, URLs or source identities.
