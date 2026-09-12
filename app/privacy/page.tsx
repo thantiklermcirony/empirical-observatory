@@ -51,8 +51,8 @@ export default function Privacy() {
         retrieval records. Public-source requests do not consume the AI call allowance.</p>
       <p>
         The office television embeds an original Carl Sagan recording through
-        YouTube’s privacy-enhanced player. It starts muted; enabling sound is
-        your choice. YouTube receives requests when the player loads.
+        YouTube’s privacy-enhanced player. It loads when you choose the Sagan
+        archive and may play with sound. YouTube receives requests when the player loads.
         The optional archive radio loads a NASA recording from Wikimedia only
         when you press play. Wikimedia receives that media request. The radio
         starts silent and can be paused or switched off at any time.

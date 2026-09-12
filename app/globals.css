@@ -13,6 +13,7 @@
 @import './question-room.css';
 @import './central-desk.css';
 @import './observatory-office.css';
+@import './observatory-labs.css';
 @custom-variant dark (&:is(.dark *));
 @theme inline {
   --color-background: var(--background);
@@ -39,12 +40,12 @@
 }
 :root,
 .dark {
-  --background: #071018;
-  --foreground: #e3ecee;
-  --card: #101e28;
-  --popover: #111f29;
-  --primary: #79e6d5;
-  --primary-foreground: #061c1b;
+  --background: #0b1215;
+  --foreground: #eae8da;
+  --card: #162320;
+  --popover: #17241f;
+  --primary: #c3d3a5;
+  --primary-foreground: #152015;
   --secondary: #20323d;
   --muted: #1a2a35;
   --muted-foreground: #a0b2bd;

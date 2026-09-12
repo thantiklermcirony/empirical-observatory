@@ -5,19 +5,17 @@ import { useCallback, useEffect, useState } from 'react';
 import {
   Activity,
   ArrowLeft,
-  ArrowUpRight,
   Atom,
   BookOpen,
   Cable,
-  CheckCircle2,
   Orbit,
   Radio,
-  ShieldCheck,
-  Globe2,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
-import Station from '@/components/observatory/Station';
+import LaboratoryIdentity, { ObservatoryHeader } from '@/components/observatory/LaboratoryIdentity';
+import LaboratoryDirectory from '@/components/observatory/LaboratoryDirectory';
+import { LAB_IDENTITIES } from '@/lib/lab-presentation';
 import CentralDesk from '@/components/observatory/CentralDesk';
 import TaoLab from '@/components/observatory/TaoLab';
 import QuantumLab from '@/components/observatory/QuantumLab';
@@ -135,217 +133,26 @@ export default function Home() {
       )
       .map((r) => r.room),
   );
-  if (view === 'question') return <CentralDesk />;
-  return (
-    <main className="observatory">
-      <header className="station-header">
-        <button
-          className="brand"
-          onClick={() => navigate('deck')}
-          aria-label="Return to station deck"
-        >
-          <Orbit size={30} />
-          <div>
-            <span className="eyebrow">THE EMPIRICAL ARCHITECTURE</span>
-            <strong>OBSERVATORY</strong>
-          </div>
-        </button>
-        <div className="station-status">
-          <span className="status-light" /> EXPEDITION 001{' '}
-          <span className="muted">/ FIRST CONTACT</span>
-        </div>
-        <div className="header-actions">
-          <a className="projects-link" href="/projects">
-            Current projects <ArrowUpRight size={18} />
-          </a>
-          <Button
-            variant="ghost"
-            className={view === 'expeditions' ? 'nav-active' : ''}
-            onClick={() => navigate('expeditions')}
-          >
-            <Globe2 />
-            <span>Expeditions</span>
-          </Button>
-          <Button
-            variant="ghost"
-            className={view === 'instrument' ? 'nav-active' : ''}
-            onClick={() => navigate('instrument')}
-          >
-            <Cable />
-            <span>Instruments</span>
-          </Button>
-          <Button
-            variant="ghost"
-            className={view === 'logbook' ? 'nav-active' : ''}
-            onClick={() => navigate('logbook')}
-          >
-            <BookOpen />
-            <span>Logbook</span>
-            <b>{records.length}</b>
-          </Button>
-        </div>
-      </header>
-      {view === 'deck' && (
-        <>
-          <section
-            className="station-viewport"
-            aria-label="Orbital research station"
-          >
-            <Station
-              selected={selected}
-              onSelect={setSelected}
-              reducedMotion={motion}
-            />
-            <div className="viewport-title">
-              <span className="eyebrow">RESEARCH DECK / 3 LABORATORIES</span>
-              <h1>
-                Your next discovery
-                <br />
-                starts here.
-              </h1>
-              <p>
-                Enter a laboratory. Make a prediction.
-                <br />
-                Find out what your instruments missed.
-              </p>
-              <a className="projects-cta" href="/projects">
-                Current projects <ArrowUpRight size={22} />
-              </a>
-              <a className="latest-project human-entry" href="/question">
-                Question Desk — turn a question into a visible investigation
-              </a>
-              <a className="latest-project" href="/active-context">
-                Active Context — help your agent resume with evidence
-              </a>
-              <a className="latest-project" href="/atlas">
-                New: Research Atlas — explore the whole programme
-              </a>
-              <a className="latest-project human-entry" href="/human">
-                Enter the Human Condition Lab — body, mind and Earth
-              </a>
-            </div>
-            <div className="flight-label">
-              <span className="status-light" /> {completeRooms.size}/3
-              LABORATORIES INVESTIGATED
-              <br />
-              <span className="muted">Drag to orbit · select a laboratory</span>
-            </div>
-            <aside
-              className="mission-card"
-              style={{ '--room-color': current.color } as React.CSSProperties}
-            >
-              <span className="eyebrow">MISSION {current.number}</span>
-              <current.icon size={32} />
-              <h2>{current.name}</h2>
-              <p>{current.subtitle}</p>
-              <div className="mission-rule">
-                <ShieldCheck size={18} />
-                <span>Every experiment keeps its evidence.</span>
-              </div>
-              <Button
-                className="launch-button"
-                onClick={() => navigate(selected)}
-              >
-                Enter laboratory <ArrowUpRight />
-              </Button>
-            </aside>
-          </section>
-          <nav className="room-dock" aria-label="Laboratories">
-            {rooms.map((r) => (
-              <button
-                key={r.id}
-                className={`room-button ${selected === r.id ? 'selected' : ''}`}
-                onClick={() => {
-                  if (selected === r.id) navigate(r.id);
-                  else setSelected(r.id);
-                }}
-                style={{ '--room-color': r.color } as React.CSSProperties}
-              >
-                <span className="room-number">{r.number}</span>
-                <r.icon size={24} />
-                <span>
-                  <strong>
-                    {r.name}{' '}
-                    {completeRooms.has(r.id as ExperimentRecord['room']) && (
-                      <CheckCircle2 size={14} />
-                    )}
-                  </strong>
-                  <small>{r.subtitle}</small>
-                </span>
-                <ArrowUpRight className="dock-arrow" size={20} />
-              </button>
-            ))}
-          </nav>
-        </>
-      )}
-      {view !== 'deck' && (
-        <nav className="lab-navigation" aria-label="Station navigation">
-          <Button variant="ghost" onClick={() => navigate('deck')}>
-            <ArrowLeft />
-            Research deck
-          </Button>
-          <span className="eyebrow">
-            {rooms.find((r) => r.id === view)?.name ??
-              (view === 'logbook'
-                ? 'EXPEDITION LOGBOOK'
-                : view === 'expeditions'
-                  ? 'EARTH · AI · GENOME'
-                  : 'INSTRUMENT DOCK')}
-          </span>
-          <span className="eyebrow">FIRST CONTACT / 0.2</span>
-        </nav>
-      )}
-      <div hidden={view !== 'tao'}>
-        <TaoLab onRecord={onRecord} active={view === 'tao'} />
-      </div>
-      <div hidden={view !== 'behaviour'}>
-        <BehaviourLab onRecord={onRecord} active={view === 'behaviour'} />
-      </div>
-      <div hidden={view !== 'quantum'}>
-        <QuantumLab onRecord={onRecord} />
-      </div>
-      <div hidden={view !== 'instrument'}>
-        <InstrumentDock onRecord={onRecord} active={view === 'instrument'} />
-      </div>
+  return <>
+    <div hidden={view !== 'question'}><CentralDesk active={view === 'question'} /></div>
+    <main hidden={view === 'question'} className={`observatory vintage-observatory ${motion ? 'reduce-motion' : ''}`} data-selected={selected} style={{'--lab-accent':current.color} as React.CSSProperties}>
+      <ObservatoryHeader />
+      <nav className="lab-navigation" aria-label="Station navigation">
+        <Button variant="ghost" onClick={() => navigate('question')}><ArrowLeft />Night office</Button>
+        <Button variant="ghost" onClick={() => navigate('deck')}>All laboratories</Button>
+        <Button variant="ghost" onClick={() => navigate('logbook')}><BookOpen />Logbook <span>{records.length}</span></Button>
+        <Button variant="ghost" onClick={() => navigate('instrument')}><Cable />Instruments</Button>
+      </nav>
+      {view === 'deck' && <LaboratoryDirectory />}
+      {view !== 'deck' && view !== 'question' && <LaboratoryIdentity lab={LAB_IDENTITIES[view === 'quantum' ? 'beacon' : view] ?? LAB_IDENTITIES.tao} compact />}
+      <div hidden={view !== 'tao'}><TaoLab onRecord={onRecord} active={view === 'tao'} /></div>
+      <div hidden={view !== 'behaviour'}><BehaviourLab onRecord={onRecord} active={view === 'behaviour'} /></div>
+      <div hidden={view !== 'quantum'}><QuantumLab onRecord={onRecord} /></div>
+      <div hidden={view !== 'instrument'}><InstrumentDock onRecord={onRecord} active={view === 'instrument'} /></div>
       {view === 'logbook' && <Logbook records={records} onRecord={onRecord} />}
       {view === 'expeditions' && <Expeditions />}
-      <footer className="station-footer">
-        <span>
-          <Radio size={16} /> LOCAL EXPERIMENT RECORDS
-        </span>
-        <label className="motion-toggle" htmlFor="reduce-motion">
-          <Switch
-            id="reduce-motion"
-            checked={motion}
-            onCheckedChange={(v) => setMotion(Boolean(v))}
-            aria-label="Reduce station motion"
-          />
-          Reduce motion
-        </label>
-        <a
-          className="text-link"
-          href="https://github.com/thantiklermcirony/empirical-architecture"
-          target="_blank"
-          rel="noreferrer"
-        >
-          The programme <ArrowUpRight size={14} />
-        </a>
-        <a className="text-link" href="/projects">
-          Current projects <ArrowUpRight size={14} />
-        </a>
-      </footer>
-      {notice && (
-        <div className="save-notice" role="status">
-          <span>{notice}</span>
-          <Button
-            variant="ghost"
-            onClick={() => setNotice('')}
-            aria-label="Dismiss status"
-          >
-            ×
-          </Button>
-        </div>
-      )}
+      <footer className="station-footer"><span><Radio size={16} />{completeRooms.size} primary laboratories in your local record</span><label className="motion-toggle" htmlFor="reduce-motion"><Switch id="reduce-motion" checked={motion} onCheckedChange={v=>setMotion(Boolean(v))} aria-label="Reduce station motion" />Reduce motion</label><a href="/projects">All projects ↗</a></footer>
+      {notice && <div className="save-notice" role="status"><span>{notice}</span><Button variant="ghost" onClick={()=>setNotice('')} aria-label="Dismiss status">×</Button></div>}
     </main>
-  );
+  </>;
 }
