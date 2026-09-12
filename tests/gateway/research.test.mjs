@@ -6,7 +6,7 @@ import { pathToFileURL } from 'node:url';
 import { readFileSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
 import { env } from './cloudflare-binding.mjs';
-import { runResearchQuestion, sourceResearchBrief, sourcePlan } from '../../lib/research-engine.ts';
+import { runResearchQuestion, sourceResearchBrief, sourcePlan, validateResearchPlan } from '../../lib/research-engine.ts';
 import { signPrintout, verifySignedPrintout } from '../../lib/report-signature.ts';
 import { reserveAiCall } from '../../lib/ai-research-transport.ts';
 import { createTemporalExample, hashTemporalJson } from '../../lib/engine/temporal-router.ts';
@@ -23,6 +23,45 @@ const question = 'is biology bounded and adaptive, prove it';
 const response = value => Response.json({ status: 'completed', output: [{ type: 'message', content: [{ type: 'output_text', text: JSON.stringify(value) }] }] });
 const answer = { headline: 'A resource limit is conditional; adaptation needs a comparison.', answer: 'The declared resource example excludes its target. It does not prove that every biological system adapts.', sections: [{ heading: 'Resource evidence', body: 'The ceiling excludes the declared target, under its assumptions.', evidenceIds: ['S-BIO', 'R2'] }], missingEvidence: ['Matched absolute pools, calibration and a response measured against a baseline.'], nextSteps: ['Measure reserves and recovery after a declared challenge.'] };
 const request = body => new Request('https://example.test/api/inquiry/research', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+
+test('the visitor cancer question exposes the capability gap without unrelated evidence or substitute experiments', async () => {
+  const prompt = 'Can we solve cancer? what is stopping us, what does this project suggest is the likely path to doing so and why';
+  const r = await runResearchQuestion(prompt, {}, () => {throw new Error('no quota');}, () => {throw new Error('no provider');});
+  assert.equal(r.research.cases.length, 0);
+  assert.deepEqual(r.research.sources, []);
+  assert.ok(r.research.answer.sections.every(section => section.evidenceIds.length === 0));
+  assert.ok(r.branches.every(branch => branch.sources.length === 0));
+  assert.match(r.summary, /not been investigated/);
+  assert.match(r.research.connectionMessage, /no external literature search/i);
+  assert.ok(r.research.sourceAttempts.some(attempt => /0 declared/.test(attempt)));
+  const { receiptSha256, ...content } = r; assert.equal(await hashTemporalJson(content), receiptSha256);
+});
+
+test('a connected key with unavailable API credit reports the billing blocker without leaking provider text', async () => {
+  let calls = 0;
+  const r = await runResearchQuestion('Can we solve cancer?', config, async () => {calls++;}, async () => Response.json({error:{code:'insufficient_quota',message:'private provider detail'}},{status:429}));
+  assert.equal(calls, 1);
+  assert.equal(r.research.aiCalls, 1);
+  assert.match(r.research.connectionMessage, /API account has no available credit/);
+  assert.ok(!JSON.stringify(r).includes('private provider detail'));
+  assert.equal(r.research.cases.length, 0);
+  assert.deepEqual(r.research.sources, []);
+});
+
+test('several biological subquestions remain in one investigation without substituting examples', async () => {
+  const plan = {title:'Cancer research',interpretation:'Distinct subquestions in one scientific branch.',tasks:[
+    {branch:'biology',question:'Which mechanisms cause resistance?',approach:'Review resistance mechanisms.',exampleIds:[],inquiryJson:null,missing:['Tumour and treatment identity.']},
+    {branch:'biology',question:'What would predict recurrence?',approach:'Review longitudinal outcome evidence.',exampleIds:[],inquiryJson:null,missing:['Matched follow-up outcomes.']},
+  ]};
+  assert.deepEqual(validateResearchPlan(plan), plan);
+  let calls = 0;
+  const r = await runResearchQuestion('Can we solve cancer?',config,async()=>{},async()=>response(++calls===1?plan:{...answer,sections:[{heading:'Research gaps',body:'A tumour-specific model and longitudinal outcomes are needed before calculation.',evidenceIds:[]}]}));
+  assert.equal(r.research.mode,'ai_synthesis');
+  const bio=r.branches.find(branch=>branch.id==='biology');
+  assert.ok(bio.obligations.includes('Tumour and treatment identity.'));
+  assert.ok(bio.obligations.includes('Matched follow-up outcomes.'));
+  assert.equal(r.research.cases.length,0);
+});
 class Database {
   constructor() { this.sql = new DatabaseSync(':memory:'); for (const name of ['0001_giant_living_lightning.sql', '0002_chunky_adam_destine.sql']) this.sql.exec(readFileSync(resolve('drizzle', name), 'utf8')); }
   prepare(sql) { const db = this.sql; return { args: [], bind(...args) { return { ...this, args }; }, async first() { return db.prepare(sql).get(...this.args) ?? null; }, async run() { return { meta: { changes: Number(db.prepare(sql).run(...this.args).changes) } }; } }; }
@@ -45,7 +84,7 @@ test('two-stage AI actually receives executed laboratory values before explainin
   let calls = 0, reservations = 0;
   const r = await runResearchQuestion(question, config, async () => { reservations++; }, async (url, options) => {
     calls++; assert.equal(url, 'https://api.openai.com/v1/responses'); assert.equal(options.redirect, 'manual');
-    const body = JSON.parse(options.body); assert.equal(body.store, false); if (calls === 1) { assert.equal(body.tools?.[0]?.type, 'web_search'); assert.equal(body.max_tool_calls, 3); } else assert.equal(body.tools, undefined);
+    const body = JSON.parse(options.body); assert.equal(body.store, false); if (calls === 1) { assert.equal(body.tools?.[0]?.type, 'web_search'); assert.equal(body.max_tool_calls, 3); } else { assert.equal(body.tools?.[0]?.type, 'web_search'); assert.equal(body.tool_choice, 'required'); assert.match(body.instructions, /title, URL or planner statement is not supporting source content/); }
     const input = JSON.parse(body.input); assert.equal(input.question, question);
     if (calls === 1) return response(sourcePlan(question));
     assert.equal(input.laboratoryResults.length, 3);
@@ -58,6 +97,23 @@ test('two-stage AI actually receives executed laboratory values before explainin
   assert.equal(calls, 2); assert.equal(reservations, 2); assert.equal(r.research.aiCalls, 2);
   assert.equal(r.research.mode, 'ai_synthesis'); assert.deepEqual(r.research.answer, answer);
 });
+test('answer generation constrains citations and text lengths before validation; empty items get precise diagnostics', async () => {
+  let calls = 0;
+  const r = await runResearchQuestion(question, config, async () => {}, async (_url, options) => {
+    if (++calls === 1) return response(sourcePlan(question));
+    const schema = JSON.parse(options.body).text.format.schema;
+    assert.equal(schema.properties.answer.maxLength, 12000);
+    assert.equal(schema.properties.missingEvidence.items.minLength, 1);
+    const ids = schema.properties.sections.items.properties.evidenceIds.items.enum;
+    assert.ok(ids.includes('R2') && ids.includes('S-BIO'));
+    assert.ok(!ids.includes('invented') && !ids.some(id => id.startsWith('https:')));
+    return response({ ...answer, missingEvidence: [''] });
+  });
+  assert.equal(r.research.mode, 'partial_ai');
+  assert.match(r.research.connectionMessage, /missingEvidence\[0\].*0 characters/);
+  assert.ok(r.research.cases.length > 0);
+});
+
 test('exact supported quantities override an AI attempt to substitute example defaults', async () => {
   const prompt = LAB_EXAMPLES[0].prompt.replace('x=1/4', 'x=1/2');
   let calls = 0;
