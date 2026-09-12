@@ -40,6 +40,7 @@ const transport = async(url, init) => {
   assert.equal(request.max_tool_calls,3);
   assert.equal(request.tool_choice,'required');
   assert.equal(request.max_output_tokens,3600);
+  const ids=request.text.format.schema.properties.sourceIds.items.enum;assert.deepEqual(ids,registry.FRAMEWORK_SOURCES.map(s=>s.id));
   if(state.providerFailure) return Response.json({error:{code:'temporary_failure'}},{status:503});
   return Response.json({status:'completed',output:[{type:'web_search_call',action:{sources:[{title:'Unverified primary-source lead',url:'https://example.invalid/primary-study'},{title:'Unsafe URL',url:'javascript:alert(1)'}]}},{type:'message',content:[{type:'output_text',text:JSON.stringify(draft())}]}]});
 };
