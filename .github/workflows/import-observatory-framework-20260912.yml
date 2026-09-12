@@ -1,0 +1,105 @@
+name: Import reviewed living science framework
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: import-observatory-framework-20260912
+  cancel-in-progress: false
+jobs:
+  import-reviewed-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Refuse reuse of the single-use review branch
+        run: |
+          if git ls-remote --exit-code --heads origin refs/heads/import/observatory-framework-20260912; then
+            echo "This integration branch already exists; do not rerun this workflow."
+            exit 1
+          else
+            status=$?
+            if [ "$status" -ne 2 ]; then exit "$status"; fi
+          fi
+      - name: Verify pinned release and existing source before import
+        run: |
+          python - <<'PY'
+          import hashlib, io, json, pathlib, subprocess, urllib.request, zipfile
+          url = 'https://github.com/thantiklermcirony/empirical-observatory/releases/download/laboratory-sources-2026-09-12/Observatory_Framework_Source_Integration_20260912_v6.zip'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              data = response.read(80000001)
+          assert len(data) == 567160
+          assert hashlib.sha256(data).hexdigest() == '380ff2d3a8396e08b3e547a7ab36a6c09eb0ef6f5fce958e8cf08682a59962aa'
+          archive = zipfile.ZipFile(io.BytesIO(data))
+          manifest = json.loads(archive.read('INTEGRATION_MANIFEST.json'))
+          assert manifest['site_commit'] == '94923f2b094b8d813c76fdca2c614fc4880b1b73'
+          assert manifest['site_previous_commit'] == 'a164b86f765e6f3ea343ede2580570d340244974'
+          assert manifest['base_commit'] == '2e8acc838ff8151c56fc3328d2982d5d4c7983e5'
+          subprocess.run(['git','merge-base','--is-ancestor',manifest['base_commit'],'HEAD'],check=True)
+          assert manifest['integration_id'] == 'observatory-framework-20260912'
+          entries = manifest['entries']
+          assert len(entries) == 42
+          names = {e['path'] for e in entries}
+          assert len(names) == len(entries)
+          assert set(archive.namelist()) == names | {'INTEGRATION_MANIFEST.json'}
+          root = pathlib.Path.cwd().resolve()
+          allowed = {'public/anatomy/assets/index-CwHXi6gh.js', 'lib/framework-proposals.ts', 'components/observatory/ObservatoryOffice.tsx', 'app/privacy/page.tsx', 'components/observatory/FrameworkWorkshop.tsx', 'app/api/observatory/guide/route.ts', 'package.json', 'app/api/framework/route.ts', 'lib/science-registry.ts', 'app/api/framework/access/route.ts', 'app/framework/work/page.tsx', 'drizzle/meta/0003_snapshot.json', 'scripts/generate-framework-schema.cjs', 'lib/research-contract.ts', 'lib/framework-tests.ts', 'research/framework/anatomy-selection-build.json', 'README.md', 'components/observatory/ScienceFramework.tsx', 'research/framework/README.md', 'app/framework.css', 'app/chatgpt-auth.ts', 'lib/observatory-catalogue.ts', 'components/observatory/AnatomyMechanisms.tsx', 'components/observatory/HumanConditionLab.tsx', 'research/framework/anatomy-selection-source.zip', 'tests/framework.test.mjs', 'app/api/framework/proposals/route.ts', 'drizzle/0003_skinny_lord_hawal.sql', 'components/observatory/CentralDesk.tsx', 'components/observatory/LaboratoryIdentity.tsx', 'components/observatory/FrameworkGrowth.tsx', 'public/anatomy/assets/index-A30yAhSQ.css', 'components/observatory/ResearchAnswerView.tsx', 'app/globals.css', 'app/workbenches/inquiry/page.tsx', 'lib/observatory-guide.ts', 'db/schema.ts', 'app/question/page.tsx', 'app/layout.tsx', 'drizzle/meta/_journal.json', 'public/anatomy/index.html', 'app/framework/page.tsx'}
+          prefixes = ()
+          validated = []
+          for entry in entries:
+              name = entry['path']
+              path = pathlib.PurePosixPath(name)
+              assert not path.is_absolute() and '..' not in path.parts and '\\' not in name
+              assert name in allowed or name.startswith(prefixes)
+              assert str(path) == name
+              assert not any(p in {'.git','.github','.openai'} or p.startswith('.env') for p in path.parts)
+              target = root.joinpath(*path.parts)
+              target.resolve().relative_to(root)
+              current = subprocess.run(['git','rev-parse','--verify',f'HEAD:{name}'], capture_output=True, text=True)
+              if entry['before_blob'] is None:
+                  assert current.returncode != 0 and not target.exists(), name
+              else:
+                  assert current.returncode == 0 and current.stdout.strip() == entry['before_blob'], name
+              content = archive.read(name)
+              assert len(content) == entry['bytes']
+              assert hashlib.sha256(content).hexdigest() == entry['sha256'], name
+              validated.append((target,content))
+          # All paths and preimages pass before any repository file is changed.
+          for target,content in validated:
+              target.parent.mkdir(parents=True,exist_ok=True)
+              target.write_bytes(content)
+          receipt = root/'research/framework-integration-2026-09-12/INTEGRATION_MANIFEST.json'
+          receipt.parent.mkdir(parents=True,exist_ok=True)
+          receipt.write_text(json.dumps(manifest,indent=2)+'\n')
+          print('Verified and imported 42 files. Existing public-only research and workflows retained.')
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm build
+      - name: Check frozen engine identities
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib
+          expected={'lib/engine/temporal-router.ts':'e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29','lib/engine/quantum-reference.ts':'3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc','lib/strict-json.ts':'9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c'}
+          for name,digest in expected.items():
+              assert hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest()==digest,name
+          PY
+      - name: Publish a review branch
+        run: |
+          git config user.name 'Observatory source integration'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c import/observatory-framework-20260912
+          git add .gitattributes CENTRAL_DESK.md PROGRAMME_STATUS.md README.md package.json tsconfig.json app components db drizzle lib public research scripts tests
+          git diff --cached --stat
+          git commit -m 'Add living science registry and authenticated research workshop'
+          git push origin HEAD:refs/heads/import/observatory-framework-20260912
