@@ -1,5 +1,10 @@
 # The Empirical Observatory
 
+[![Laboratory — enter the Observatory](https://img.shields.io/badge/LABORATORY-ENTER_THE_OBSERVATORY-87e6a1?style=for-the-badge&labelColor=10231a)](https://empirical-observatory.madmanmuzza.chatgpt.site/)
+
+Ask a declared-model question and collect a traceable laboratory printout. The terminal shows the current hosted AI connection status.
+
+
 **[Temporal Grammar: the shared inquiry routing spine](automation/temporal-grammar/README.md)** — working local routing across mathematics, resource geometry and the quantum reference. It preserves action order, state, measurement context and premises; changed inputs update scoped conclusions or expose missing connections. Includes runnable source, 50 tests and independent correction review. The hosted desk and shared findings-store connection remain pending.
 
 [Mathematics: all source releases, capability mappings and reviews](research/mathematics/README.md). Includes the Integration Companion, Recovery Challenge Lab and corrected Discovery Garden review. Candidate review and live deployment status are stated separately.
