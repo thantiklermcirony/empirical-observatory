@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'The Empirical Observatory — Question Desk',
+  title: 'The Empirical Observatory — The Night Office',
   description:
-    'Step into an old observatory. Turn a question into an inspectable model, run reproducible checks and see what a change of perspective reveals.',
+    'Take a seat in the night observatory. Ask a question, explore the laboratories, and follow real calculations and sourced observations into a traceable report.',
 };
 
 export default function RootLayout({

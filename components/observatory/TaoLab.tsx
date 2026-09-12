@@ -254,7 +254,7 @@ export default function TaoLab({
                   value={tail?.fallback ? 'FALLBACK' : 'AVAILABLE'}
                 />
               </div>
-              {active && (
+              {samples.length > 0 && (
                 <Trace
                   data={
                     (samples.length

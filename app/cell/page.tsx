@@ -1,3 +1,4 @@
+import { LabEnvironment } from '@/components/observatory/LaboratoryIdentity';
 import type { Metadata } from 'next';
 import CellExplorer from '@/components/observatory/CellExplorer';
 
@@ -21,5 +22,5 @@ export const metadata: Metadata = {
 };
 
 export default function CellPage() {
-  return <CellExplorer />;
+  return <LabEnvironment id="cell"><CellExplorer /></LabEnvironment>;
 }

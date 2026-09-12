@@ -1,3 +1,4 @@
+import { LabEnvironment } from '@/components/observatory/LaboratoryIdentity';
 import type { Metadata } from 'next';
 import HumanConditionLab from '@/components/observatory/HumanConditionLab';
 import '../worldline.css';
@@ -11,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function HumanPage() {
-  return <HumanConditionLab />;
+  return <LabEnvironment id="human"><HumanConditionLab /></LabEnvironment>;
 }

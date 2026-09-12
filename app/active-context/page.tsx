@@ -1,3 +1,4 @@
+import { LabEnvironment } from '@/components/observatory/LaboratoryIdentity';
 import type { Metadata } from 'next';
 import ActiveContext from '@/components/observatory/ActiveContext';
 import demo from '@/lib/data/active-context-demo.json';
@@ -10,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function ActiveContextPage() {
-  return <ActiveContext demo={demo} result={result} />;
+  return <LabEnvironment id="context"><ActiveContext demo={demo} result={result} /></LabEnvironment>;
 }

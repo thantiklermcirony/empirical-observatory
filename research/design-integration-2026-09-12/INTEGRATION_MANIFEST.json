@@ -1,0 +1,151 @@
+{
+  "integration_id": "observatory-design-20260912",
+  "site_commit": "b87439452092ffb58462a5b8ca8f7eb8e7ebfaf7",
+  "site_previous_commit": "eefcb08473f90a80abf140a595a564e7d9ff05af",
+  "base_commit": "009024068bbcbd94f14b1f51505c765e928a5a8e",
+  "frozen_sha256": {
+    "lib/engine/temporal-router.ts": "e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29",
+    "lib/engine/quantum-reference.ts": "3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc",
+    "lib/strict-json.ts": "9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c"
+  },
+  "entries": [
+    {
+      "path": "app/active-context/page.tsx",
+      "before_blob": "6827299ec2955549d81da27a758546288cba0626",
+      "sha256": "4f5d53c2b17df7604d66f8ffb092c538e4555a9a1946c9283b57557c8bafad62",
+      "bytes": 726
+    },
+    {
+      "path": "app/atlas/page.tsx",
+      "before_blob": "2ab4407e6fe66480af31a4942d1fd140493c14cf",
+      "sha256": "f77d5f25954d6331f480d90ffa8380cdc261737bb01ec088a429f6e1c8936c6c",
+      "bytes": 512
+    },
+    {
+      "path": "app/cell/page.tsx",
+      "before_blob": "f10cd384153a500cc3f63c47c477ebfb1510cf03",
+      "sha256": "c77af4a87b95bef2c6aa53e5199e93951d68814ab0c773fa7961611c5c6295b5",
+      "bytes": 1051
+    },
+    {
+      "path": "app/encyclopedia/page.tsx",
+      "before_blob": "c743681f080357accc89f710a26de5735bea50c3",
+      "sha256": "f3feb73ac7d83f299f4c0c9101ab6cd8d96e26d4d32dce10601a704ac938d6ce",
+      "bytes": 419
+    },
+    {
+      "path": "app/families/page.tsx",
+      "before_blob": "377c00a4797bdd8bff1475f34d6f32540ee83954",
+      "sha256": "893aa5373ce86d319c490c2ff0953ac5984512fb242ec8f33b32cd9db5633dda",
+      "bytes": 598
+    },
+    {
+      "path": "app/globals.css",
+      "before_blob": "e7364f14d04bb46005c730e2f57c8bf6d07cc72b",
+      "sha256": "5e94a83fad99c1c854807c5ea64d34b59a001595a8b06a1b3560dd17cd293713",
+      "bytes": 14928
+    },
+    {
+      "path": "app/human/page.tsx",
+      "before_blob": "0734aaaecb750c5f83f17d39e4a4f3ed9bccae02",
+      "sha256": "466a5137dccd6485f49426015636f62897621aca5be1a346a06d765cba1bf312",
+      "bytes": 668
+    },
+    {
+      "path": "app/labs/[branch]/page.tsx",
+      "before_blob": "2ab3c0a9d7fb539487980ba9720c75a117fcd73e",
+      "sha256": "73ac7b7e32025ffc6273e8047af1cfdf056af9a16e835ba6841aad66290adb9d",
+      "bytes": 771
+    },
+    {
+      "path": "app/layout.tsx",
+      "before_blob": "b349ea4f69fc72444cb005f40102816a7796c9c0",
+      "sha256": "4cbe1a2b312ae42e001db91b2b12cca95baabad459624a018933723bbd168734",
+      "bytes": 1283
+    },
+    {
+      "path": "app/observatory-labs.css",
+      "before_blob": null,
+      "sha256": "f533a5402f98a0b6333eed3338a4369d3e83d7d1f2ab8e98f9f083a2cda03c40",
+      "bytes": 13238
+    },
+    {
+      "path": "app/observatory-office.css",
+      "before_blob": "2db61a8abbe5cda9ea0892716e1b460965cd887f",
+      "sha256": "92aa1f8f13921b2861304759223926db51a956df336775d208933f4ed3b50d74",
+      "bytes": 18495
+    },
+    {
+      "path": "app/page.tsx",
+      "before_blob": "706639fc7a8016fe0742f3534a9d3abe7f058e27",
+      "sha256": "a16350d183cf30c8896f279fbb6a5c94b668a3e39ef01d8a703be68c90c3fedb",
+      "bytes": 6548
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "before_blob": "67318ea59f812672e9daf1791bb6cbc4bc084602",
+      "sha256": "873305c81b5b9afa7ba7c87c2054b2696c168ddb40975016d3bb900b230d2bfa",
+      "bytes": 4441
+    },
+    {
+      "path": "app/recovery/page.tsx",
+      "before_blob": "a2a2aba1b3e20e5e0b8b4db20f239a98d9de703d",
+      "sha256": "5913992df9e0839c79694eb772e74322986452a6aa76535f99a44bfc5720d0ba",
+      "bytes": 600
+    },
+    {
+      "path": "components/observatory/CentralDesk.tsx",
+      "before_blob": "d45562d828a41de724675a69929c1e375a8695fc",
+      "sha256": "9812d5f77a3262a0a2016854d4a10fd2deea9f9311afef7d1670c9ef67c867e3",
+      "bytes": 20474
+    },
+    {
+      "path": "components/observatory/LaboratoryDirectory.tsx",
+      "before_blob": null,
+      "sha256": "dea58614a464022f744c4dcda222c5becbb62ced38ee6df00013908fdaba090e",
+      "bytes": 1890
+    },
+    {
+      "path": "components/observatory/LaboratoryIdentity.tsx",
+      "before_blob": null,
+      "sha256": "69a79b4d227da5f23dad574b17aeb18b9d876a475f623afb9884a70328de3109",
+      "bytes": 1913
+    },
+    {
+      "path": "components/observatory/ObservatoryOffice.tsx",
+      "before_blob": "95a0f8ecb88bd5c3abd7f6ef897c8cea1fcdd279",
+      "sha256": "606631395c23fd72a3a465da57e87dfc940a21b8305a4b892307e59322d05ff4",
+      "bytes": 11838
+    },
+    {
+      "path": "components/observatory/TaoLab.tsx",
+      "before_blob": "14f35497278157cbfd7e1a9d38c75329619f0e19",
+      "sha256": "15de7d5c9e825cb78bffab1883cb3b3d263d8200e16050145ca70fbe61fd7db7",
+      "bytes": 17483
+    },
+    {
+      "path": "lib/lab-presentation.ts",
+      "before_blob": null,
+      "sha256": "7e221be39886f8547c1f9edf72cb8e16d030d5801c7f299ab5c8beff1c981560",
+      "bytes": 6294
+    },
+    {
+      "path": "public/images/life-workbench.webp",
+      "before_blob": null,
+      "sha256": "e4f1d0b8761ca735a41d0f36187327d276b2a5b8b0033e150547a73836f91cad",
+      "bytes": 275624
+    },
+    {
+      "path": "public/images/office-night.webp",
+      "before_blob": null,
+      "sha256": "a80c52b79c9cda473a6727fcea46da122a9a51c3f864d7816ee3fe912bf63221",
+      "bytes": 198622
+    },
+    {
+      "path": "public/images/precision-workbench.webp",
+      "before_blob": null,
+      "sha256": "a0072908b7425f56c7d40ac45a9fcbba25c9ee25b1eb81f472d7b2060d2c2a67",
+      "bytes": 229356
+    }
+  ]
+}
