@@ -1,0 +1,225 @@
+{
+  "version": "temporal-grammar-spine/0.1",
+  "authority": "Documentary export of configure.catalogue; local runtime uses operator-owned configuration.",
+  "capabilities": [
+    {
+      "id": "math.projective.action",
+      "verb": "align",
+      "kind": "action",
+      "jurisdictions": [
+        "bounded_scalar_model"
+      ],
+      "owner": "mathematics",
+      "enabled": true,
+      "inputs": {
+        "state": {
+          "meaning": "bounded_scalar_state",
+          "role": "state",
+          "units": [
+            "1"
+          ],
+          "shape": "scalar",
+          "contextual": false
+        },
+        "parameter": {
+          "meaning": "action_parameter",
+          "role": "parameter",
+          "units": [
+            "1"
+          ],
+          "shape": "scalar",
+          "contextual": false
+        }
+      },
+      "output": {
+        "meaning": "bounded_scalar_state",
+        "role": "state",
+        "unit": "1",
+        "shape": "scalar"
+      },
+      "premises": [
+        "DECLARED-PROJECTIVE",
+        "FIXED-CALIBRATION"
+      ],
+      "clock": {
+        "kind": "action_index",
+        "unit": "1"
+      },
+      "scope": "Exact action at a supplied point in a declared bounded scalar model; no physical dynamics inferred.",
+      "result_kind": "formal_under_premises",
+      "source_groups": [
+        "engine"
+      ]
+    },
+    {
+      "id": "math.contraction.action",
+      "verb": "contract",
+      "kind": "action",
+      "jurisdictions": [
+        "bounded_scalar_model"
+      ],
+      "owner": "mathematics",
+      "enabled": true,
+      "inputs": {
+        "state": {
+          "meaning": "bounded_scalar_state",
+          "role": "state",
+          "units": [
+            "1"
+          ],
+          "shape": "scalar",
+          "contextual": false
+        },
+        "parameter": {
+          "meaning": "contraction_factor",
+          "role": "parameter",
+          "units": [
+            "1"
+          ],
+          "shape": "scalar",
+          "contextual": false
+        }
+      },
+      "output": {
+        "meaning": "bounded_scalar_state",
+        "role": "state",
+        "unit": "1",
+        "shape": "scalar"
+      },
+      "premises": [
+        "DECLARED-CONTRACTION",
+        "FIXED-CALIBRATION"
+      ],
+      "clock": {
+        "kind": "action_index",
+        "unit": "1"
+      },
+      "scope": "Exact action at a supplied point in a declared bounded scalar model; no physical dynamics inferred.",
+      "result_kind": "formal_under_premises",
+      "source_groups": [
+        "engine"
+      ]
+    },
+    {
+      "id": "biology.resource.ceiling",
+      "verb": "bound_resource",
+      "kind": "derive",
+      "jurisdictions": [
+        "synthetic_redox_resource_model"
+      ],
+      "owner": "biology+mathematics",
+      "enabled": true,
+      "inputs": {
+        "fraction": {
+          "meaning": "reduced_fraction_q",
+          "role": "observable",
+          "units": [
+            "1"
+          ],
+          "shape": "scalar",
+          "contextual": true
+        },
+        "total_pool": {
+          "meaning": "glutathione_total_pool",
+          "role": "resource",
+          "units": [
+            "mM"
+          ],
+          "shape": "interval",
+          "contextual": true
+        },
+        "nadph": {
+          "meaning": "nadph_reserve",
+          "role": "resource",
+          "units": [
+            "mM",
+            "uM"
+          ],
+          "shape": "interval",
+          "contextual": true
+        },
+        "target": {
+          "meaning": "gpx_extent_target",
+          "role": "parameter",
+          "units": [
+            "mM"
+          ],
+          "shape": "scalar",
+          "contextual": false
+        }
+      },
+      "output": {
+        "meaning": "gpx_necessary_resource_ceiling",
+        "role": "bound",
+        "unit": "mM",
+        "shape": "object"
+      },
+      "premises": [
+        "BIO-VOLUME",
+        "BIO-LEDGER",
+        "BIO-NONNEG",
+        "BIO-SUPPLY",
+        "BIO-UNIT-MAP",
+        "BIO-MATCHED-UNIT",
+        "BIO-ASSAY-CALIBRATION"
+      ],
+      "clock": {
+        "kind": "physical",
+        "unit": "min"
+      },
+      "observation_time": {
+        "value": "0",
+        "unit": "min"
+      },
+      "scope": "Stipulated time-zero stocks, fixed volume and source ceiling0.003mM/min over20min; possible necessary ceilings, not achieved extent.",
+      "result_kind": "formal_under_premises",
+      "source_groups": [
+        "geometry"
+      ]
+    },
+    {
+      "id": "quantum.reference.evolve",
+      "verb": "predict_yields",
+      "kind": "derive",
+      "jurisdictions": [
+        "quantum_reference_model"
+      ],
+      "owner": "quantum",
+      "enabled": true,
+      "allow_observation_time": false,
+      "inputs": {
+        "protocol": {
+          "meaning": "four_level_reference_protocol",
+          "role": "mechanism",
+          "units": [
+            "model_time"
+          ],
+          "shape": "object",
+          "contextual": false
+        }
+      },
+      "output": {
+        "meaning": "reference_product_yields",
+        "role": "prediction",
+        "unit": "1",
+        "shape": "object"
+      },
+      "premises": [
+        "P-H",
+        "P-E",
+        "P-R",
+        "P-I"
+      ],
+      "clock": {
+        "kind": "model",
+        "unit": "model_time"
+      },
+      "scope": "Declared dimensionless four-level reference ensembles, no intermediate measurement or physical calibration.",
+      "result_kind": "model_prediction",
+      "source_groups": [
+        "quantum",
+        "reference"
+      ]
+    }
+  ]
+}

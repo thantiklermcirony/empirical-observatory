@@ -1,0 +1,34 @@
+{
+  "version": "temporal-grammar-spine/0.1",
+  "date": "2026-09-12",
+  "basis": {
+    "title": "Predictive Closure: State, action, and the experimental compression of history",
+    "version": "V4 / 0.4.1",
+    "catalogue": "current-10",
+    "ssrn_id": "7427098",
+    "local_reviewed_tex_sha256": "9835b0512705cd21fecfa3d6bba45d21903ac5c477753e35d352e55a5c3a8726",
+    "review": "Local manuscript review, not a claim of independently verified universal physical validity."
+  },
+  "preserved_principles": [
+    "typed actions in a declared jurisdiction",
+    "ordered state composition",
+    "waiting is an action",
+    "no count/pair compression without appropriate closure",
+    "context and premises remain attached"
+  ],
+  "integration_scope": "New routing interface around previously reviewed scoped computations; no new scientific theorem or empirical discovery.",
+  "dependencies": "See DEPENDENCIES.json; original source bytes retained.",
+  "not_implemented": [
+    "free-text semantic inference",
+    "durable shared scientific event bus",
+    "hosted Python worker",
+    "automatic scientific admission",
+    "optical-to-redox calibration",
+    "general AI self-improvement"
+  ],
+  "tested_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  }
+}

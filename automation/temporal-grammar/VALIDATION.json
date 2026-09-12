@@ -1,0 +1,25 @@
+{
+  "status": "accepted_scoped_local_routing",
+  "date": "2026-09-12",
+  "supplied_tests": 50,
+  "independent_recheck_groups": 15,
+  "initial_findings": 5,
+  "initial_findings_cleared": 5,
+  "review_receipt_sha256": "5dc3283e9a75eab20a5f71fec29f451ff5a558d67db868089baeebda7b945399",
+  "portable_check_sha256": "6cb66d7745a118dceb1ac623783933ccc80098f3a092f84f7cad312b2d9d1364",
+  "review_archive_sha256": "910be2ce44635871e5319bd83d25547fb42fb411487cb44ec10c39812d3ee2bf",
+  "tested_source_files": {
+    "configure.py": "13d2d1f448a790c36d66bde78a1e508156b84d912bf73eecb56d532072b0dd9f",
+    "demo.py": "8af772900124d4848bcc058d2fb7118a694f41374756208155e99ae06c922a33",
+    "examples.py": "0fe63be523c8d8f5d480231a98654942f00c5e6e16e3122c8ded74ffd0f0df3b",
+    "grammar.py": "62db5bb854b52667969f1a18407d32591640af2fb191c36c7a27472dfb3d852e",
+    "io_utils.py": "dfe4a53fd7f41fb9bc8e2ba3056cfe46448e6c336591c1655d2c8150ffce7d07",
+    "run.py": "e76b5774505d71a2d450a815e8b30ee34e956bc844e04d8991eb3738eb6ed368",
+    "test_grammar.py": "ca3149acc5374ef52d93c78e12c5a02eada047a9fa51b73c839e0909ff751fd3",
+    "test_integration.py": "8a9f9d3b19396fc76a1c6fa5d294c2086301f0e171b41a08e0fe39a54890675f",
+    "worker.py": "751574fe5724d5b2ec785ca89c4d2232b2e2f88e2454e82832a9a004e6253180"
+  },
+  "portable_demo_summary_sha256": "2a7cf79785f388f4a54b21bc2fe2fb574ab2f58842ae03aba82403255d200319",
+  "github_ci": "Not yet run at packaging; see the separate repository workflow.",
+  "scope": "Windows/Python3.12.14 scoped engineering checks; no hosted execution or new empirical result."
+}

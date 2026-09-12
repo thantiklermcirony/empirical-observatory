@@ -1,0 +1,25 @@
+{
+  "version": "temporal-grammar-spine/0.1",
+  "files": {
+    ".gitignore": "4e2eeca75e674e8d978a5a3e64ebe41c4c785f04b761565424b00cf91f5413db",
+    "CAPABILITIES.json": "54a42a9c3655d4d497a0773d220bf2beeab326e3c77e1e2ac3716847d753b6c8",
+    "configure.py": "13d2d1f448a790c36d66bde78a1e508156b84d912bf73eecb56d532072b0dd9f",
+    "demo.py": "8af772900124d4848bcc058d2fb7118a694f41374756208155e99ae06c922a33",
+    "DEPENDENCIES.json": "f9df0a1359c20df47798742c61622cd82ace0ab09870aa4c32f87ffd49c11cce",
+    "dependencies.zip": "b04ecb2573440ed1801b45de9504e6ada346a2606ac24a9cb103036590eaddcd",
+    "examples.py": "0fe63be523c8d8f5d480231a98654942f00c5e6e16e3122c8ded74ffd0f0df3b",
+    "grammar.py": "62db5bb854b52667969f1a18407d32591640af2fb191c36c7a27472dfb3d852e",
+    "io_utils.py": "dfe4a53fd7f41fb9bc8e2ba3056cfe46448e6c336591c1655d2c8150ffce7d07",
+    "LICENSE": "846f07478355c7855312c86f54d9bf62e9669e503b0ae15f790f44418a5af45f",
+    "PROVENANCE.json": "6ac0312826975eff9b70bca24af64f6e1eb32720d4d09f9baccb360e61522b7e",
+    "README.md": "afb538d2c96eb018572a0f070fa07ecbe82a6d964f637af57196b107bdc557d4",
+    "requirements.txt": "dcd7f2c62898ad93f1929a9b4f00b68f05837a4d9fe12692652a9710915ebe15",
+    "review-evidence.zip": "910be2ce44635871e5319bd83d25547fb42fb411487cb44ec10c39812d3ee2bf",
+    "REVIEW.md": "744b7752c573f7adf413ef7894ce9e207ddffae5a6f3f99fba396edd60be7bc6",
+    "run.py": "e76b5774505d71a2d450a815e8b30ee34e956bc844e04d8991eb3738eb6ed368",
+    "test_grammar.py": "ca3149acc5374ef52d93c78e12c5a02eada047a9fa51b73c839e0909ff751fd3",
+    "test_integration.py": "8a9f9d3b19396fc76a1c6fa5d294c2086301f0e171b41a08e0fe39a54890675f",
+    "VALIDATION.json": "e59452a92f5ab3be4a37c23aee8e3e8be3952794a404be5e6219fe608e741def",
+    "worker.py": "751574fe5724d5b2ec785ca89c4d2232b2e2f88e2454e82832a9a004e6253180"
+  }
+}

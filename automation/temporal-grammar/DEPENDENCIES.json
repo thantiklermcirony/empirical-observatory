@@ -1,0 +1,27 @@
+{
+  "scope": "Minimal unchanged original project code required for local routing; optical candidate code/data not bundled or admitted.",
+  "archive_sha256": "b04ecb2573440ed1801b45de9504e6ada346a2606ac24a9cb103036590eaddcd",
+  "files": {
+    "LICENSE": "846f07478355c7855312c86f54d9bf62e9669e503b0ae15f790f44418a5af45f",
+    "math/inputs/companion/vendor/geometry.py": "04ff1dff72e2f4c0b4f094a1a988e60ba74712e92959d661a070eae9f65e3407",
+    "math/inputs/engine/algebra.py": "ded785815328fb8b8e133364568918037bbc3b327c2daf0d7845bf87e02c0378",
+    "math/inputs/engine/engine.py": "2d0324723a97cb5ac40ecd9dfbd6bf7c45505b8d532642ea9e4499b2d4cacb62",
+    "quantum/bridge.py": "4196435edd9b77af75d50ea5e34442d9241db520ba00f17b44d8431151b5bce8",
+    "quantum/capabilities.json": "755f77d843693f32789895f4e33028e3abcd9d692a9107cb3378d691d37d4142",
+    "quantum/feature_worker.py": "1a35907373896972195677c228ec9adfa91e63c41bfeba187b5c6c624930f092",
+    "quantum/fixtures/reference.json": "71ead139ab66b79739eb21b0245a1e6248d26820d516705390c196a17b40434e",
+    "quantum/pins.json": "303f74eb03b1925303c5e312acee105783e8b55b1921c3b5b9cc641a1302e7f0",
+    "reference/src/observatory_quantum/__init__.py": "14ae1c48087f7f6f7f9ff961f84857e4c73547ea44796a897c93c81dfb730fd5",
+    "reference/src/observatory_quantum/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "reference/src/observatory_quantum/cli.py": "a64d033602e65015ecef9568a16fc7ce3ebcfbc99ce75088caf834e8892777ed",
+    "reference/src/observatory_quantum/cryptochrome.py": "6d6547b80021d873e7dd3a535993158aa367cccc675cb4a4a1b78d8358341fe6",
+    "reference/src/observatory_quantum/inquiry.py": "56fea569958b4e46af82d702ad2a44d8a23bacd335373c1a6839f3657c597162",
+    "reference/src/observatory_quantum/model.py": "0933bc7249a9477dbc9ac9c0e489b1fcb58b6e9fdb84305b6146a38af820eec4",
+    "reference/src/observatory_quantum/solver.py": "51d75cd066381ffee1ed3335adc3fac1053e403d3e69665c20a0778dd1a61dfe"
+  },
+  "parents": {
+    "mathematics_mapping_archive_sha256": "879cabed4bdc2096b056bedd44170f9fac1fe409f43a0b3b0fe4a70266fc149f",
+    "quantum_mapping_archive_sha256": "374d1a3756bb8efe546f3c79e691aca6102cd9e8740885b56176ecede4f868e3",
+    "quantum_reference_archive_sha256": "832f3eac93799ba6ec27677f2fd13e7264880180226af273f773b6c2a17d10d9"
+  }
+}
