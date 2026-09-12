@@ -1,0 +1,200 @@
+{
+  "integration_id": "observatory-paired-damage-20260913",
+  "site_commit": "0b0f524592b66949b330cfd6a7fd05fe4f6d62c1",
+  "site_previous_commit": "5a584041eb564bfccd95d97f6093dbba0b6e6f50",
+  "base_commit": "5649bf2a6d16810d790cda545cc417d87ab29185",
+  "entries": [
+    {
+      "path": ".gitattributes",
+      "before_blob": "a32f5edcbf2d874289247daa5b857a08586fb9d6",
+      "sha256": "724ddf17cdb627ac25567249af7ea84720b4b12e4b5cb9924b68ba8c2f9fcc87",
+      "bytes": 651
+    },
+    {
+      "path": "CENTRAL_DESK.md",
+      "before_blob": "1a1cb7ea15ca626ae3725aa07a477b8f87dc0e3a",
+      "sha256": "b235e252fd76f29ca5c39a9e47b113c9f31f914ea9118ff31651569bd916d3ca",
+      "bytes": 8903
+    },
+    {
+      "path": "PROGRAMME_STATUS.md",
+      "before_blob": "6613976f1e505157cd21a3f4629039bf01655c9e",
+      "sha256": "8b07c764466d19234848daf8d9c5918d3322e8cbdc182ed188cb0c469a5f3c95",
+      "bytes": 13401
+    },
+    {
+      "path": "app/agents/page.tsx",
+      "before_blob": "64ecc3c04443f0aff5099830c3ed7af55ceb966d",
+      "sha256": "a8ce2c68f78be80385504956fe4cd15d4cc57a3dbd3e5dce611244a3122dbea2",
+      "bytes": 6813
+    },
+    {
+      "path": "app/api/cases/[id]/replay/route.ts",
+      "before_blob": null,
+      "sha256": "21245f1f27034b4060a8fa4bc561eae7a7dc2078c6841f1820a42976f6549ea5",
+      "bytes": 1466
+    },
+    {
+      "path": "app/api/cases/[id]/route.ts",
+      "before_blob": null,
+      "sha256": "4bff7d131858e4b484b46350643e5680d0f37526d8c93052cbf259783feb2b7a",
+      "bytes": 298
+    },
+    {
+      "path": "app/api/cases/route.ts",
+      "before_blob": null,
+      "sha256": "688078a34b9f61707ff3ed0f38c47310e2624fe5e8287ad223eef9c3af5a2c98",
+      "bytes": 528
+    },
+    {
+      "path": "app/api/catalogue/route.ts",
+      "before_blob": "fae372c5d687e93aaf3ba49f803f04fb861380de",
+      "sha256": "1546cdce69e322e9afde4d0effa584d619efa01ffcc4301566ff705593d059b6",
+      "bytes": 883
+    },
+    {
+      "path": "app/cases/paired-damage/case.css",
+      "before_blob": null,
+      "sha256": "fa30618651ba693f27f056537967714d1f6bd26541144b3e63b106e2c569a669",
+      "bytes": 4557
+    },
+    {
+      "path": "app/cases/paired-damage/page.tsx",
+      "before_blob": null,
+      "sha256": "cab405dd5013c8b4e1168b214645699c3d5cd66682627094dc08d1d588da8e6e",
+      "bytes": 485
+    },
+    {
+      "path": "app/llms.txt/route.ts",
+      "before_blob": "bde35737291b2c03c5e1000d1f19aaa8bbc5905d",
+      "sha256": "acf562a75dec50c8c71052e0fa73ab8635032910d88903fcc12940ce542de54e",
+      "bytes": 2461
+    },
+    {
+      "path": "components/observatory/CaseWorkbench.tsx",
+      "before_blob": null,
+      "sha256": "edc17afc579893b468bd0d4481cdbcf6af9bf0a98d1874e2914855336affdd58",
+      "bytes": 9306
+    },
+    {
+      "path": "components/observatory/Encyclopedia.tsx",
+      "before_blob": "65f8a70a397e427ebcb6ff4952cf5d6a88019c51",
+      "sha256": "5d37671adca6ab01e215f2039e26b8bbb8dd0577f2f124730686735d73cb2f8b",
+      "bytes": 4460
+    },
+    {
+      "path": "components/observatory/ScienceRoom.tsx",
+      "before_blob": "90e47f07fcf681eb65c8b44609a56211a8e7780f",
+      "sha256": "b48f6ccfdafc28fbb75ce68136158528030594c42c26985acdccc1762e547dca",
+      "bytes": 7939
+    },
+    {
+      "path": "lib/observatory-catalogue.ts",
+      "before_blob": "f5f90386b0cd959ffabac23bacbe92c53ec66028",
+      "sha256": "bb30ebba7262393544bef3130f1d75f1778bc97f9081dd029df3086d22f171ab",
+      "bytes": 16154
+    },
+    {
+      "path": "lib/observatory-guide.ts",
+      "before_blob": "fcdb08ffe37814884d420c0fe4edd4a43848d272",
+      "sha256": "27739a5504106eea868f3a7fc7b4aefc4243cdbd8fb77c4f01a304433bf03377",
+      "bytes": 7792
+    },
+    {
+      "path": "lib/paired-damage.ts",
+      "before_blob": null,
+      "sha256": "c6205fe937540e3478923c76517e4bf340ec607ee8308b2b47dc4e7a87cee263",
+      "bytes": 1137
+    },
+    {
+      "path": "lib/research-cases.ts",
+      "before_blob": null,
+      "sha256": "c7ce45c028336d6ddef5f9e98e9deafe27bba1d1495a8c90a0455780c4d0cc16",
+      "bytes": 8594
+    },
+    {
+      "path": "lib/research-knowledge.ts",
+      "before_blob": "7be89354c5e30ccd9cf06145d650863925652e71",
+      "sha256": "cb00a2a02686b1ed9353a9ba1f67bf318f9da2802425433de281c95abf98ae68",
+      "bytes": 6295
+    },
+    {
+      "path": "lib/science-registry.ts",
+      "before_blob": "f63772e19d3429cb86bf6bd969f0c85d3a8cd4c1",
+      "sha256": "a110c33ef74f418c4a852dd078300c081ae7bcb992d8f4956ebd8cf5ae379281",
+      "bytes": 17278
+    },
+    {
+      "path": "package.json",
+      "before_blob": "3f0b6c02050d15493b8848c280778bfaeceeb6fc",
+      "sha256": "8bc995d825dae6a5275efd0cd305e6beca79844d9bb46f2bd711bb00ccb1c815",
+      "bytes": 2627
+    },
+    {
+      "path": "public/research-cases/paired-damage/Cell info wt (Figure 1e).csv",
+      "before_blob": null,
+      "sha256": "11d5cfdcffa2306bcd66ecf3c8281ba1a328c99b16a4072a77892fed819d0ce8",
+      "bytes": 11124
+    },
+    {
+      "path": "public/research-cases/paired-damage/Figure 3g time-to-die.csv",
+      "before_blob": null,
+      "sha256": "83d153797a1d25780a8109b3d168b8144d9bea86286a5e4e163a8a0d9171ec2b",
+      "bytes": 162733
+    },
+    {
+      "path": "public/research-cases/paired-damage/data.json",
+      "before_blob": null,
+      "sha256": "6ceeff09a8652bfb716088a4bf9fbe7618e1b89a7bb94ffc2e15d3fc45657ce5",
+      "bytes": 193412
+    },
+    {
+      "path": "public/research-cases/paired-damage/manifest.json",
+      "before_blob": null,
+      "sha256": "2ac07cf3444a69c9c6c900e35dca14b74fea62aee9f2bf23a5d8ff887137c3e7",
+      "bytes": 1150
+    },
+    {
+      "path": "public/research-cases/paired-damage/paired-damage.ts.txt",
+      "before_blob": null,
+      "sha256": "c6205fe937540e3478923c76517e4bf340ec607ee8308b2b47dc4e7a87cee263",
+      "bytes": 1137
+    },
+    {
+      "path": "public/research-cases/paired-damage/publish_biology_case.py",
+      "before_blob": null,
+      "sha256": "a0d751bca2678cf96715364df480e79ff911ac16ce7738bec0646e527317ba7b",
+      "bytes": 4132
+    },
+    {
+      "path": "public/research-cases/paired-damage/readme.txt",
+      "before_blob": null,
+      "sha256": "568e14251273cf97ae3b54f63f626d2d8b2df67f67c8790d0d331e3308c8c163",
+      "bytes": 2286
+    },
+    {
+      "path": "public/research-cases/paired-damage/reproduce.py",
+      "before_blob": null,
+      "sha256": "607fb480a0a15aa6d4099d0f2a52c5185410f8853c8616f1745d249eb222d14f",
+      "bytes": 2681
+    },
+    {
+      "path": "public/research-cases/paired-damage/research-cases.ts.txt",
+      "before_blob": null,
+      "sha256": "c7ce45c028336d6ddef5f9e98e9deafe27bba1d1495a8c90a0455780c4d0cc16",
+      "bytes": 8594
+    },
+    {
+      "path": "research/Paired_Damage_Case_Integration.md",
+      "before_blob": null,
+      "sha256": "cbe3a5365e4d373003b454b4fba3d0313ed829bcacc32c8945a92b884b7be430",
+      "bytes": 4581
+    },
+    {
+      "path": "tests/research-cases.test.ts",
+      "before_blob": null,
+      "sha256": "5a141ddd0a812da9bacac1b24925b5c4b019abc2fe23e46e243e89cf14c98655",
+      "bytes": 2657
+    }
+  ]
+}
