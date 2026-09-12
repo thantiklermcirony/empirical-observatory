@@ -1,0 +1,57 @@
+{
+  "kind": "portable mathematics project source index; not execution or admission registry",
+  "publication_owner": "integration",
+  "published_by_this_intake": false,
+  "hosted_capability_deployed": false,
+  "packages": [
+    {
+      "id": "math-capability-mapping",
+      "version": "0.1",
+      "archive": "Math_Capability_Mapping_v0.1.zip",
+      "sha256": "879cabed4bdc2096b056bedd44170f9fac1fe409f43a0b3b0fe4a70266fc149f",
+      "status": "candidate_wrapper_pending_independent_review",
+      "purpose": "Eleven 14-field examples binding accepted geometry, resource companion and UHL engine inputs; Recovery not dispatched"
+    },
+    {
+      "id": "mathematics-project-update",
+      "version": "0.1",
+      "archive": "Mathematics_Project_Update_v0.1.zip",
+      "sha256": "7feef867fc7bb8fb1a07cae4127a0405fec15ff239c5919b702ad5c1027cc633",
+      "status": "source_index_and_review_history",
+      "contains": [
+        {
+          "id": "integration-companion",
+          "version": "0.1.0",
+          "archive_path": "releases/Observatory_Integration_v0.1.zip",
+          "sha256": "37f6f13bc90cdd02ccee79b1fe4e56b1e354a29fe7f70783021d55f17e9b86a7",
+          "status": "accepted_local_operational_reference"
+        },
+        {
+          "id": "recovery-challenge",
+          "version": "0.1.0",
+          "archive_path": "releases/Recovery_Challenge_Lab_v0.1.zip",
+          "sha256": "b56b27296b31fc77a9424adaa51fa1e678711e01feb106610dd45bc25b922b12",
+          "status": "candidate_requires_independent_review"
+        }
+      ]
+    }
+  ],
+  "existing_public_sources": [
+    {
+      "id": "theory-atlas",
+      "version": "science 0.1.0 / public distribution 0.1.1",
+      "url": "https://github.com/thantiklermcirony/empirical-architecture/tree/e97067547acde077f32237bac2803e4e66189bbd/research/theory-atlas-v0.1",
+      "status": "accepted_and_public",
+      "included_again": false
+    },
+    {
+      "id": "geometry-discovery",
+      "version": "0.2.1",
+      "url": "https://github.com/thantiklermcirony/empirical-observatory/tree/bf002744364057e50a02ad6ede9ba1985c8e1b31/research/geometry-discovery-v0.2.1",
+      "status": "accepted_and_public_conditional",
+      "included_again": false
+    }
+  ],
+  "integrity_receipt": "INTAKE_RECEIPT.json",
+  "license": "LICENSE"
+}

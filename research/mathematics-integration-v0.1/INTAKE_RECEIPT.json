@@ -1,0 +1,111 @@
+{
+  "kind": "independent mathematics public-source intake; integrity not scientific admission",
+  "checked_at_utc": "2026-09-12T01:11:50.524043+00:00",
+  "archives": [
+    {
+      "archive": "Math_Capability_Mapping_v0.1.zip",
+      "bytes": 139800,
+      "sha256": "879cabed4bdc2096b056bedd44170f9fac1fe409f43a0b3b0fe4a70266fc149f",
+      "files": 47,
+      "manifest": "MANIFEST.json",
+      "manifest_sha256": "6f9a883eb1b83c997663253996d5a01cacbad1f9334b2683a01bfbded32cafe1",
+      "manifest_entries": 46,
+      "all_manifest_hashes_match": true,
+      "manifest_covers_all_files": true,
+      "safe_unique_paths": true,
+      "crc": "pass",
+      "source_directory_bytes_match": true,
+      "input_binding_count": 29,
+      "all_input_bindings_match": true,
+      "licence_notice_paths": [
+        "inputs/companion/vendor/LICENSE"
+      ],
+      "nested_archives": []
+    },
+    {
+      "archive": "Mathematics_Project_Update_v0.1.zip",
+      "bytes": 751341,
+      "sha256": "7feef867fc7bb8fb1a07cae4127a0405fec15ff239c5919b702ad5c1027cc633",
+      "files": 28,
+      "manifest": "MANIFEST.json",
+      "manifest_sha256": "6fb837b18dc6a9b0bcca046dee9c1fdf90e7e0da981f91db62198c1bc7147a0e",
+      "manifest_entries": 27,
+      "all_manifest_hashes_match": true,
+      "manifest_covers_all_files": true,
+      "safe_unique_paths": true,
+      "crc": "pass",
+      "source_directory_bytes_match": true,
+      "input_binding_count": 0,
+      "all_input_bindings_match": null,
+      "licence_notice_paths": [],
+      "nested_archives": [
+        {
+          "archive": "Mathematics_Project_Update_v0.1.zip!/releases/Observatory_Integration_v0.1.zip",
+          "bytes": 32956,
+          "sha256": "37f6f13bc90cdd02ccee79b1fe4e56b1e354a29fe7f70783021d55f17e9b86a7",
+          "files": 17,
+          "manifest": "manifest.json",
+          "manifest_sha256": "4867cf131aecbfe4b26b97a6139365d33e14c0e32d06c74125f2df8feb393588",
+          "manifest_entries": 16,
+          "all_manifest_hashes_match": true,
+          "manifest_covers_all_files": true,
+          "safe_unique_paths": true,
+          "crc": "pass",
+          "source_directory_bytes_match": null,
+          "input_binding_count": 0,
+          "all_input_bindings_match": null,
+          "licence_notice_paths": [
+            "vendor/LICENSE"
+          ],
+          "nested_archives": []
+        },
+        {
+          "archive": "Mathematics_Project_Update_v0.1.zip!/releases/Recovery_Challenge_Lab_v0.1.zip",
+          "bytes": 401488,
+          "sha256": "b56b27296b31fc77a9424adaa51fa1e678711e01feb106610dd45bc25b922b12",
+          "files": 32,
+          "manifest": "MANIFEST.json",
+          "manifest_sha256": "0cd31ed36d2ab4abe777165a65322abfe333aea45dba4847367cff0980ff7611",
+          "manifest_entries": 31,
+          "all_manifest_hashes_match": true,
+          "manifest_covers_all_files": true,
+          "safe_unique_paths": true,
+          "crc": "pass",
+          "source_directory_bytes_match": null,
+          "input_binding_count": 0,
+          "all_input_bindings_match": null,
+          "licence_notice_paths": [
+            "LICENSE"
+          ],
+          "nested_archives": []
+        }
+      ]
+    }
+  ],
+  "checks_not_run": [
+    "Mapping reproduction and adversarial scientific validation",
+    "Recovery scientific solver validation",
+    "GitHub publication or hosted deployment"
+  ],
+  "publication_status": "prepared locally; root owns publication",
+  "licensing": {
+    "outer_scope": "Newly authored original project, mapping and index work; Copyright (c) 2026 Daniel John Murray; MIT by project-owner instruction",
+    "immutable_archives_unchanged": true,
+    "upstream_notices_preserved": true,
+    "observed_third_party_licence_conflict": null
+  },
+  "content_inspection": {
+    "observed_data": "Authored synthetic/model examples and review/provenance records; no external experimental dataset found in inspected inventory",
+    "credential_pattern_hits": [],
+    "credential_scan_scope": "Private-key headers and common GitHub/AWS key patterns in archive contents, including nested archives; not a comprehensive credential assurance",
+    "workstation_locator_files": 5,
+    "workstation_locator_meaning": "Dated local-path provenance retained in immutable packages; landing navigation uses portable links",
+    "status": "No concrete confidential experimental data or licence conflict identified"
+  },
+  "scientific_status": {
+    "math_mapping": "new adapter candidate; accepted parent capabilities do not admit the wrapper",
+    "integration_companion": "accepted local operational reference for fixed synthetic resource case",
+    "recovery_challenge": "candidate pending independent review; no empirical validation",
+    "review_notes": "E01 and Quantum Discrimination included reviews establish only their named bounded scopes"
+  }
+}
