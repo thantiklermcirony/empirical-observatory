@@ -27,14 +27,14 @@ jobs:
         run: |
           python - <<'PY'
           import hashlib, io, json, pathlib, subprocess, urllib.request, zipfile
-          url = 'https://github.com/thantiklermcirony/empirical-observatory/releases/download/laboratory-sources-2026-09-12/Observatory_AI_Source_Integration_20260912_v3.zip'
+          url = 'https://github.com/thantiklermcirony/empirical-observatory/releases/download/laboratory-sources-2026-09-12/Observatory_AI_Source_Integration_20260912_v4.zip'
           with urllib.request.urlopen(url, timeout=120) as response:
               data = response.read(80000001)
-          assert len(data) == 20066
-          assert hashlib.sha256(data).hexdigest() == '66eb85a1f9c5835f0632cfba755ecf1cfe8a72ae46989f1e68a6ac412d1353b9'
+          assert len(data) == 20709
+          assert hashlib.sha256(data).hexdigest() == 'ca1232d33bc7960639462fcf8f9bc571cd665344b484f05b6fd6d036bde2aa56'
           archive = zipfile.ZipFile(io.BytesIO(data))
           manifest = json.loads(archive.read('INTEGRATION_MANIFEST.json'))
-          assert manifest['site_commit'] == 'aff046bb2df5927ecd714fd957059825625f04c6'
+          assert manifest['site_commit'] == '9c208ad34afb08b4622fa75a1600cb9ec729459d'
           assert manifest['site_previous_commit'] == '3e4a3b7c7b923a9ee73ee3a23062e20a3d2bdc2e'
           assert manifest['base_commit'] == '80881526561d5742ea8dfe013b0eeeb3dbaa83e7'
           subprocess.run(['git','merge-base','--is-ancestor',manifest['base_commit'],'HEAD'],check=True)
