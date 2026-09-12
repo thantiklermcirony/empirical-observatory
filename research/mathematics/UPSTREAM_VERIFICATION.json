@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-09-12T01:23:19.924435+00:00",
+  "repository": "thantiklermcirony/empirical-observatory",
+  "commit": "5775fc734b86de7e81c3c1ecae14528cbb0dc08d",
+  "path": "research/mathematics-integration-v0.1",
+  "checks": [
+    {
+      "file": "INDEX.json",
+      "bytes": 2350,
+      "sha256": "0fd343cfe06b35fa1ddc7323c7083c196c1603d3fd15768704566cf2cba576b6",
+      "matches": true
+    },
+    {
+      "file": "INTAKE_RECEIPT.json",
+      "bytes": 4954,
+      "sha256": "971c9ab5e7fe814d27d5f4edc72ad899f86b1eb3e64d91235c67aa3060342bff",
+      "matches": true
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 1075,
+      "sha256": "846f07478355c7855312c86f54d9bf62e9669e503b0ae15f790f44418a5af45f",
+      "matches": true
+    },
+    {
+      "file": "Math_Capability_Mapping_v0.1.zip",
+      "bytes": 139800,
+      "sha256": "879cabed4bdc2096b056bedd44170f9fac1fe409f43a0b3b0fe4a70266fc149f",
+      "matches": true
+    },
+    {
+      "file": "Mathematics_Project_Update_v0.1.zip",
+      "bytes": 751341,
+      "sha256": "7feef867fc7bb8fb1a07cae4127a0405fec15ff239c5919b702ad5c1027cc633",
+      "matches": true
+    },
+    {
+      "file": "PUBLIC_MANIFEST.json",
+      "bytes": 1099,
+      "sha256": "9814000ba582c5344ba1058cf896bd4668aaaa432014be5d424b256c9fca7ec5",
+      "matches": true
+    },
+    {
+      "file": "README.md",
+      "bytes": 4896,
+      "sha256": "59cf246f582c196465aaae54eb933cc7cb29efcafe36849a8f065f08134f3b6f",
+      "matches": true
+    },
+    {
+      "file": "SHA256SUMS.txt",
+      "bytes": 201,
+      "sha256": "61003c1476d793845bac6ab3e026493eb218df3fa17664503bc0992a7d583335",
+      "matches": true
+    }
+  ],
+  "all_match": true
+}

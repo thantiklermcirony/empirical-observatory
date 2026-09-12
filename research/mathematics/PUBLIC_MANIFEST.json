@@ -1,0 +1,21 @@
+{
+  "files": {
+    "Discovery_Garden_Math_Reviews.zip": {
+      "sha256": "2d1141182eeca61ab4aa8a0e2044a83e09083b277e53d8d555f9df9c175f32ac",
+      "bytes": 14162
+    },
+    "LICENSE": {
+      "sha256": "846f07478355c7855312c86f54d9bf62e9669e503b0ae15f790f44418a5af45f",
+      "bytes": 1075
+    },
+    "README.md": {
+      "sha256": "b11300c33648e06e86916105d05d27a248ef8a62d3b1627f0d62c3fea3c5dc0f",
+      "bytes": 5595
+    },
+    "UPSTREAM_VERIFICATION.json": {
+      "sha256": "dbf966e5cc00f7d7a9f6b4afee934815936a38db48e92afc01d2a09ad3d47141",
+      "bytes": 1731
+    }
+  },
+  "scope": "Source index and bounded review records; no runtime admission"
+}
