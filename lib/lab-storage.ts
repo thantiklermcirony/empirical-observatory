@@ -1,4 +1,6 @@
 import { evaluateLabRequest } from './lab-engine.ts';
+import { verifySignedPrintout } from './report-signature.ts';
+import type { LabPrintout, LabRequest } from './lab-contract.ts';
 import { hashTemporalJson, TemporalInputError } from './engine/temporal-router.ts';
 export const PRINT_RETENTION_MS = 30 * 86400000;
 type StoredRow = { printout_json: string; expires_at: string };
@@ -20,6 +22,14 @@ export async function savePrintout(database: D1Database, body: unknown, now = ne
   if (!body || typeof body !== 'object' || Array.isArray(body) || Object.keys(body).length !== 1 || !Object.hasOwn(body, 'request')) throw new TemporalInputError('invalid_save', 'Save accepts only the original request. Submitted result objects are never admitted.');
   // Always calculate again on this server. Never trust a client-generated seal or finding.
   const printout = await evaluateLabRequest((body as { request: unknown }).request);
+  return persistPrintout(database, printout, now);
+}
+export async function saveSignedPrintout(database: D1Database, body: unknown, secret: string | undefined, now = new Date()) {
+  if (!body || typeof body !== 'object' || Array.isArray(body) || Object.keys(body).join(',') !== 'signedReport') throw new TemporalInputError('invalid_save', 'Send one server-issued save receipt.');
+  const printout = await verifySignedPrintout((body as { signedReport: unknown }).signedReport, secret, now);
+  return persistPrintout(database, printout, now);
+}
+async function persistPrintout(database: D1Database, printout: LabPrintout & { request: LabRequest }, now: Date) {
   const json = JSON.stringify(printout);
   if (new TextEncoder().encode(json).byteLength > 1000000) throw new TemporalInputError('record_limit', 'This printout exceeds the storage limit; download it instead.');
   const token = Array.from(crypto.getRandomValues(new Uint8Array(32)), b => b.toString(16).padStart(2, '0')).join('');

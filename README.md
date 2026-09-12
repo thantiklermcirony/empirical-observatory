@@ -1,3 +1,15 @@
+<p align="center"><strong>THE EMPIRICAL OBSERVATORY</strong></p>
+<h1 align="center">Every question leaves a trace.</h1>
+<p align="center">Enter the night office. Ask the terminal. Follow the evidence.</p>
+<p align="center"><a href="https://empirical-observatory.madmanmuzza.chatgpt.site/"><img src="https://img.shields.io/badge/LABORATORY-ENTER_THE_OBSERVATORY-80ffac?style=for-the-badge&amp;labelColor=071510" alt="Laboratory — enter the Observatory" /></a></p>
+<a href="https://empirical-observatory.madmanmuzza.chatgpt.site/"><img src="public/images/observatory-1980s.png" alt="A moonlit observatory office: a green computer terminal, research files and a waiting printer." /></a>
+<p align="center"><em>Boundedness · time · adaptation · biology · dynamics · quantum mechanisms</em></p>
+
+Questions become scoped calculations, illustrated reports and the next observation to make. The [investigation contract](research/Investigation_Pipeline.md) distinguishes source-guided reports from hosted AI, and mathematical models from empirical discoveries.
+
+<details>
+<summary><strong>Explore the programme, source and scientific record</strong></summary>
+
 # The Empirical Observatory
 
 [![Laboratory — enter the Observatory](https://img.shields.io/badge/LABORATORY-ENTER_THE_OBSERVATORY-87e6a1?style=for-the-badge&labelColor=10231a)](https://empirical-observatory.madmanmuzza.chatgpt.site/)
@@ -253,3 +265,6 @@ Original project code is MIT. Dependency code, provider data and manuscript mate
 
 The [hosted Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site) is public. Experiment history stays in each visitor's own browser. Optional hardware and provider adapters still need local setup; they are not advertised as cloud services.
 
+
+
+</details>

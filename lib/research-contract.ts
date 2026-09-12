@@ -1,0 +1,10 @@
+import type { LabPrintout, LabRequest } from './lab-contract.ts';
+import type { ResearchBranchId } from './research-knowledge.ts';
+export type ResearchTask = { branch: ResearchBranchId; question: string; approach: string; exampleIds: string[]; inquiryJson: string | null; missing: string[] };
+export type ResearchPlan = { title: string; interpretation: string; tasks: ResearchTask[] };
+export type ResearchCase = { id: string; label: string; purpose: string; illustrative: boolean; printout: LabPrintout };
+export type ResearchSection = { heading: string; body: string; evidenceIds: string[] };
+export type ResearchAnswer = { headline: string; answer: string; sections: ResearchSection[]; missingEvidence: string[]; nextSteps: string[] };
+export type ResearchContent = { mode: 'ai_synthesis' | 'source_brief' | 'partial_ai'; connectionMessage: string; model: string | null; plan: ResearchPlan; answer: ResearchAnswer; cases: ResearchCase[]; sources: { id: string; title: string; evidence: string; href: string; finding: string }[]; aiCalls: number };
+export type ResearchPrintout = LabPrintout & { request: LabRequest; research: ResearchContent };
+export type SignedPrintout = { printout: LabPrintout & { request: LabRequest }; expiresAt: string; signature: string };

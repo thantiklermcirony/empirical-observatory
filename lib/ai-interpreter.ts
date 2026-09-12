@@ -7,7 +7,8 @@ export type AiInterpretation = { status: 'proposal' | 'needs_input'; explanation
 export function aiStatus(config: AiConfig) {
   const limit = Number(config.dailyCallLimit ?? 0);
   const ready = Boolean(config.apiKey?.trim() && config.model?.trim() && Number.isInteger(limit) && limit > 0 && limit <= 200);
-  return { ready, provider: 'OpenAI', model: ready ? config.model : null, dailyCallLimit: ready ? limit : 0, message: ready ? 'Shared AI interpretation is available. Proposed models remain conditional and checked by the scientific router.' : 'Hosted AI awaits an API credential, model selection and an explicit daily call limit. Fixed-model calculations remain available.' };
+  const missing = [!config.apiKey?.trim() && 'a server API credential', !config.model?.trim() && 'a model selection', !(Number.isInteger(limit) && limit > 0 && limit <= 200) && 'a daily call limit of 1–200'].filter(Boolean);
+  return { ready, provider: 'OpenAI', model: config.model?.trim() || null, dailyCallLimit: Number.isInteger(limit) && limit > 0 && limit <= 200 ? limit : 0, message: ready ? `AI plans investigations and explains laboratory results. Shared allowance: ${limit} AI calls per UTC day; an investigation uses up to two. Model assumptions remain explicit.` : `Hosted AI awaits ${missing.join(', ')}. Source-guided explanations and declared-model calculations are available.` };
 }
 const schema = { type: 'object', additionalProperties: false, required: ['status', 'explanation', 'questions', 'inquiry_json'], properties: { status: { type: 'string', enum: ['proposal', 'needs_input'] }, explanation: { type: 'string' }, questions: { type: 'array', items: { type: 'string' } }, inquiry_json: { type: ['string', 'null'] } } };
 export async function interpretQuestion(prompt: string, config: AiConfig, transport: typeof fetch = fetch): Promise<AiInterpretation> {

@@ -13,10 +13,13 @@ export default function Privacy() {
     >
       <a href="/">← Back to the Observatory</a>
       <h1>Records and usage counts</h1>
-      <p>When the shared AI connection is available, free-form questions outside
-        the four supplied examples are sent to OpenAI to propose a structured
-        inquiry. The proposal is checked before calculation and remains an
-        unverified interpretation. Requests use store: false; the applicable OpenAI
+      <p>When the shared AI connection is available, ordinary-language questions
+        are sent to OpenAI to plan an investigation. The relevant source briefs,
+        proposed plan and returned laboratory results are then sent for a
+        plain-language explanation. This uses up to two calls from a shared
+        allowance of 200 provider requests per UTC day. Proposals are checked
+        before calculation and remain unverified interpretations. Requests use
+        store: false; the applicable OpenAI
         API data-retention policies still apply. The daily AI allowance stores
         only a UTC date and call count, not question text. Failed provider calls
         count toward the allowance. Saving a resulting printout also saves its
@@ -24,7 +27,9 @@ export default function Privacy() {
       <p>
         The central terminal sends your prompt or structured inquiry to the
         Observatory server for a bounded calculation. Running a question does
-        not save it. “Save private printout” repeats the calculation and stores
+        not save it. “Save private printout” verifies a server-issued receipt for
+        an AI report, preserving the exact explanation without another AI call.
+        Reports made without hosted AI are recalculated on save. Saving stores
         its request, assumptions, results and content receipt in our database.
         Saved records expire after 30 days and expired rows are removed on the
         next save. Anyone with the complete private link can read or delete that
@@ -36,6 +41,9 @@ export default function Privacy() {
         ordinary request logs; avoid entering sensitive personal information.
       </p>
       <p>
+        The office television embeds an original Carl Sagan recording through
+        YouTube’s privacy-enhanced player. It starts muted; enabling sound is
+        your choice. YouTube receives requests when the player loads.
         The optional archive radio loads a NASA recording from Wikimedia only
         when you press play. Wikimedia receives that media request. The radio
         starts silent and can be paused or switched off at any time.

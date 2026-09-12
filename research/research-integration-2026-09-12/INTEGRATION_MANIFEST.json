@@ -1,0 +1,168 @@
+{
+  "site_commit": "97cc71b26b9525243b3ad16931161b11d56d1269",
+  "base_commit": "0d61f3d1298104456197316c298fe1781bbfd6e9",
+  "entries": [
+    {
+      "path": "CENTRAL_DESK.md",
+      "before_blob": "9acbd05be869dc23fb2afa2b221462cc42f0841a",
+      "sha256": "a269209c169cceb10beb17e017af6f9f666333feea378f382a38cc85d193a2bc",
+      "bytes": 7255
+    },
+    {
+      "path": "PROGRAMME_STATUS.md",
+      "before_blob": "cc9f2a9acadc804d19d67ffeafef2a672ae8a076",
+      "sha256": "07a8670476e176a52e6fe50a5ada9ca4040ab30da4b3a2b74b4a9780c5aec1f5",
+      "bytes": 11753
+    },
+    {
+      "path": "README.md",
+      "before_blob": "49ec940eae52615a5e270165e37b252aac3e1085",
+      "sha256": "511b6f6ef58e4189527a3c57f363e3e30e6c2f6b3cc18040c34a52cea01b7eae",
+      "bytes": 20090
+    },
+    {
+      "path": "app/agents/page.tsx",
+      "before_blob": "855a64b413ea4c226dbc99ad1cbec964880e8961",
+      "sha256": "18002387f92d24443f57b7de4705fed7ed4e17d30e105455ca514ac67e7ffc71",
+      "bytes": 4935
+    },
+    {
+      "path": "app/api/inquiry/openapi/route.ts",
+      "before_blob": "1e3c34422d8160556abfe14abc30e9c22a355767",
+      "sha256": "47cf8fb45fc42a0802f768f69c807ee6d73fe31e0cabf43354fda13f5a14b5c5",
+      "bytes": 5089
+    },
+    {
+      "path": "app/api/inquiry/research/route.ts",
+      "before_blob": null,
+      "sha256": "669bfa10c7f2cc9e3dd1f702001a356d9a4aa9353a6392228ac10598bf8c65d2",
+      "bytes": 1319
+    },
+    {
+      "path": "app/api/inquiry/save/route.ts",
+      "before_blob": "1046c662704cf8ce666b0ca34c30e4646b1891db",
+      "sha256": "e0085f9ce92c1d09c86df4eb284818301ed93d156ca7b0142842909ef279cbc3",
+      "bytes": 777
+    },
+    {
+      "path": "app/globals.css",
+      "before_blob": "9c685489c338d45d3d4bbc260276f1b77d84e52b",
+      "sha256": "4274ad021d6a21a7ef63833a7b3edd44f07042f3d428aef2256eba2a60a1c9d2",
+      "bytes": 14894
+    },
+    {
+      "path": "app/llms.txt/route.ts",
+      "before_blob": "56f988eb18e97882522bcd54293dd333dce1179f",
+      "sha256": "db4d0407693dfef7a4711aabfa824143a923e0e3fceeca4fc982745f3e12fa48",
+      "bytes": 1479
+    },
+    {
+      "path": "app/observatory-research.css",
+      "before_blob": null,
+      "sha256": "fbe2169ad7416d4c77378c4e875ad9df4b7c6ad99bb868bd29cbf3895a3b8aa4",
+      "bytes": 3574
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "before_blob": "3d7cac8a28e8c6e44bdba2ef08a7e889a6f01afb",
+      "sha256": "af4976eef4078d6d5dd55bf730b9881c40f9395caf68e901931d605c1e5d0b43",
+      "bytes": 3615
+    },
+    {
+      "path": "components/observatory/CentralDesk.tsx",
+      "before_blob": "a3c28686def13dcd566ee98292b0f4421dfd80d5",
+      "sha256": "147e2752ea6a9b3b79881a6b1ba8d9108db21a7b3fabdd95c489d1f9b6cbded0",
+      "bytes": 18229
+    },
+    {
+      "path": "components/observatory/InquiryVisual.tsx",
+      "before_blob": "5001c83ea5bd444765243848603bc6e926881f7e",
+      "sha256": "76ada4005e0605ee79a08327c32597471009da17b5d315afc5e80709281fa4bf",
+      "bytes": 5964
+    },
+    {
+      "path": "components/observatory/ResearchAnswerView.tsx",
+      "before_blob": null,
+      "sha256": "8d0f766a6c0b33f7849edb7a4e46326f6d85ec98af6159966e819bcee4d8b998",
+      "bytes": 3977
+    },
+    {
+      "path": "lib/ai-interpreter.ts",
+      "before_blob": "6af988f9dabc57650391db1467fe8ca624a4fbb2",
+      "sha256": "d14332739de0d9542eade98821d79445b64b5b155c47665ba19f7a3be23b2b60",
+      "bytes": 7423
+    },
+    {
+      "path": "lib/ai-research-transport.ts",
+      "before_blob": null,
+      "sha256": "fc81424d226c3fd956e76c544d29a64b0d16883b516559850ceb296381a67c2b",
+      "bytes": 3200
+    },
+    {
+      "path": "lib/lab-contract.ts",
+      "before_blob": "26c419c54bfbe19a61e3f68301a69babf9a54ddb",
+      "sha256": "76e7ef90f4c9451d1c45b8765a3a8d37d0561038d1f106b390f83ebef27ccd72",
+      "bytes": 2064
+    },
+    {
+      "path": "lib/lab-engine.ts",
+      "before_blob": "5bcc9aa0e903e303befc4ba8fe6558b8bc3004e3",
+      "sha256": "bfa6cbaa5ce2ff624b029261cd4747b6f78df786bb714dcb107235dd76c4078a",
+      "bytes": 14963
+    },
+    {
+      "path": "lib/lab-http.ts",
+      "before_blob": "78c51ea7f447746577d581dc82afba3e297df795",
+      "sha256": "80f4e38610ded7368b40dbfa3be71de66cabf7e21368ba2d1d1a32e9f7965e66",
+      "bytes": 1945
+    },
+    {
+      "path": "lib/lab-storage.ts",
+      "before_blob": "d544b04f2dcba63f8e8d9f33e8fb1e0c60766d13",
+      "sha256": "e09e1b9c94ea25ec678d97723f3a0a98b4a2b2bffc702d605cd5a8c98f87a579",
+      "bytes": 3831
+    },
+    {
+      "path": "lib/report-signature.ts",
+      "before_blob": null,
+      "sha256": "2d134b0906c73c2321a29185ec5b8bd1107d19e757209a1ff73100c97f696680",
+      "bytes": 2606
+    },
+    {
+      "path": "lib/research-contract.ts",
+      "before_blob": null,
+      "sha256": "ae6a493bfdd6ecf8fa50fd27bb0e53d1f2cd5f216a7b7d3faa39aa0ab266d9d7",
+      "bytes": 1268
+    },
+    {
+      "path": "lib/research-engine.ts",
+      "before_blob": null,
+      "sha256": "8a62f420ba27492b97a0effd3775c7024eb3d821b56e3c31ebda7ccd266cfadb",
+      "bytes": 23403
+    },
+    {
+      "path": "lib/research-knowledge.ts",
+      "before_blob": null,
+      "sha256": "4c0ea7400928b3e8d7f3e8a9b176991b509b81bcd3ddd6a2baa1eaf6b71eda42",
+      "bytes": 5387
+    },
+    {
+      "path": "package.json",
+      "before_blob": "be99c58d738bbdc80f3ea676836e82f6c5dc7c8f",
+      "sha256": "82389db9bf7107d0e996eeaffc8abac37db5655f15704ff44681b1cbac559d33",
+      "bytes": 2370
+    },
+    {
+      "path": "research/Investigation_Pipeline.md",
+      "before_blob": null,
+      "sha256": "a4075f96e07a235221460ead78fe11bde096d28c7933d22bc8632245326d9d81",
+      "bytes": 4588
+    },
+    {
+      "path": "tests/gateway/research.test.mjs",
+      "before_blob": null,
+      "sha256": "617721dc975d5c6417a512d2d07ab15b8cd843df66a69e087e7371385e23c71c",
+      "bytes": 10645
+    }
+  ]
+}
