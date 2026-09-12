@@ -31,7 +31,7 @@ test('missing input cannot silently become a fabricated result', async () => {
   let called = 0;
   const result = await interpretQuestion('What is the actual effect?', config, async (url, options) => {
     called++; assert.equal(url, 'https://api.openai.com/v1/responses');
-    assert.equal(options.redirect, 'error');
+    assert.equal(options.redirect, 'manual');
     const request = JSON.parse(options.body);
     assert.equal(request.store, false); assert.equal(request.max_output_tokens, 2200);
     assert.equal(request.text.format.strict, true); assert.equal(request.input, 'What is the actual effect?');

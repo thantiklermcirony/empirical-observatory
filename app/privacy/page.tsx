@@ -14,7 +14,9 @@ export default function Privacy() {
       <a href="/">← Back to the Observatory</a>
       <h1>Records and usage counts</h1>
       <p>When the shared AI connection is available, ordinary-language questions
-        are sent to OpenAI to plan an investigation. The relevant source briefs,
+        are sent to OpenAI to plan an investigation. Planning may use hosted web
+        search, sending relevant search terms to that service and consulting public sources.
+        Each planning request allows at most three search tool calls. The relevant source briefs,
         proposed plan and returned laboratory results are then sent for a
         plain-language explanation. This uses up to two calls from a shared
         allowance of 200 provider requests per UTC day. Proposals are checked
@@ -29,7 +31,9 @@ export default function Privacy() {
         Observatory server for a bounded calculation. Running a question does
         not save it. “Save private printout” verifies a server-issued receipt for
         an AI report, preserving the exact explanation without another AI call.
-        Reports made without hosted AI are recalculated on save. Saving stores
+        Reports made without hosted AI are recalculated on save. Public-data reports
+        retrieve a fresh snapshot during that recalculation; source revisions may change it.
+        Download JSON to retain the exact preceding run. Saving stores
         its request, assumptions, results and content receipt in our database.
         Saved records expire after 30 days and expired rows are removed on the
         next save. Anyone with the complete private link can read or delete that
@@ -40,6 +44,11 @@ export default function Privacy() {
         Hosting infrastructure may process
         ordinary request logs; avoid entering sensitive personal information.
       </p>
+      <p>Statistics searches and selected public series are requested from the World Bank
+        by the Observatory server. The source receives indicator codes, country and date
+        parameters, not your complete question. The search catalogue may be cached for
+        one hour. Reports retain the returned observations, definitions, footnotes and
+        retrieval records. Public-source requests do not consume the AI call allowance.</p>
       <p>
         The office television embeds an original Carl Sagan recording through
         YouTube’s privacy-enhanced player. It starts muted; enabling sound is

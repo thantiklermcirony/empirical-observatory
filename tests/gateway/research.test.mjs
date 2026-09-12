@@ -44,8 +44,8 @@ test('the visitor biology question produces scoped calculations, actual numbers,
 test('two-stage AI actually receives executed laboratory values before explaining the original question', async () => {
   let calls = 0, reservations = 0;
   const r = await runResearchQuestion(question, config, async () => { reservations++; }, async (url, options) => {
-    calls++; assert.equal(url, 'https://api.openai.com/v1/responses'); assert.equal(options.redirect, 'error');
-    const body = JSON.parse(options.body); assert.equal(body.store, false); assert.equal(body.tools, undefined);
+    calls++; assert.equal(url, 'https://api.openai.com/v1/responses'); assert.equal(options.redirect, 'manual');
+    const body = JSON.parse(options.body); assert.equal(body.store, false); if (calls === 1) { assert.equal(body.tools?.[0]?.type, 'web_search'); assert.equal(body.max_tool_calls, 3); } else assert.equal(body.tools, undefined);
     const input = JSON.parse(body.input); assert.equal(input.question, question);
     if (calls === 1) return response(sourcePlan(question));
     assert.equal(input.laboratoryResults.length, 3);
