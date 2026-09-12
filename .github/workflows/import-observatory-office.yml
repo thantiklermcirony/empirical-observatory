@@ -1,0 +1,92 @@
+name: Import reviewed Observatory office source
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: import-observatory-office-20260912
+  cancel-in-progress: false
+jobs:
+  import-reviewed-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify pinned release and existing source before import
+        run: |
+          python - <<'PY'
+          import hashlib, io, json, pathlib, subprocess, urllib.request, zipfile
+          url = 'https://github.com/thantiklermcirony/empirical-observatory/releases/download/laboratory-sources-2026-09-12/Observatory_Office_Source_Integration.zip'
+          with urllib.request.urlopen(url, timeout=120) as response:
+              data = response.read(80000001)
+          assert len(data) == 71268518
+          assert hashlib.sha256(data).hexdigest() == '9a013dc1d7a49d584139e950138191c43583f6c4542658e0e440829450bca404'
+          archive = zipfile.ZipFile(io.BytesIO(data))
+          manifest = json.loads(archive.read('INTEGRATION_MANIFEST.json'))
+          assert manifest['site_commit'] == '3951e06622c871485222bf237fc93cb27cde33ff'
+          assert manifest['base_commit'] == 'fd3b723f612bbd1effab3a7f9714407e58055279'
+          entries = manifest['entries']
+          assert len(entries) == 157
+          names = {e['path'] for e in entries}
+          assert len(names) == len(entries)
+          assert set(archive.namelist()) == names | {'INTEGRATION_MANIFEST.json'}
+          root = pathlib.Path.cwd().resolve()
+          allowed = {'.gitattributes','CENTRAL_DESK.md','PROGRAMME_STATUS.md','README.md','package.json','tsconfig.json'}
+          prefixes = ('app/','components/','db/','drizzle/','lib/','public/','research/','scripts/','tests/')
+          validated = []
+          for entry in entries:
+              name = entry['path']
+              path = pathlib.PurePosixPath(name)
+              assert not path.is_absolute() and '..' not in path.parts and '\\' not in name
+              assert name in allowed or name.startswith(prefixes)
+              assert not any(p in {'.git','.github','.openai'} or p.startswith('.env') for p in path.parts)
+              target = root.joinpath(*path.parts)
+              target.resolve().relative_to(root)
+              current = subprocess.run(['git','rev-parse','--verify',f'HEAD:{name}'], capture_output=True, text=True)
+              if entry['before_blob'] is None:
+                  assert current.returncode != 0 and not target.exists(), name
+              else:
+                  assert current.returncode == 0 and current.stdout.strip() == entry['before_blob'], name
+              content = archive.read(name)
+              assert len(content) == entry['bytes']
+              assert hashlib.sha256(content).hexdigest() == entry['sha256'], name
+              validated.append((target,content))
+          # All paths and preimages pass before any repository file is changed.
+          for target,content in validated:
+              target.parent.mkdir(parents=True,exist_ok=True)
+              target.write_bytes(content)
+          receipt = root/'research/source-integration-2026-09-12/INTEGRATION_MANIFEST.json'
+          receipt.parent.mkdir(parents=True,exist_ok=True)
+          receipt.write_text(json.dumps(manifest,indent=2)+'\n')
+          print('Verified and imported 157 files. Existing public-only research and workflows retained.')
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm build
+      - name: Check frozen engine identities
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib
+          expected={'lib/engine/temporal-router.ts':'e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29','lib/engine/quantum-reference.ts':'3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc','lib/strict-json.ts':'9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c'}
+          for name,digest in expected.items():
+              assert hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest()==digest,name
+          PY
+      - name: Publish a review branch
+        run: |
+          git config user.name 'Observatory source integration'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c import/observatory-office-20260912
+          git add .gitattributes CENTRAL_DESK.md PROGRAMME_STATUS.md README.md package.json tsconfig.json app components db drizzle lib public research scripts tests
+          git diff --cached --stat
+          git commit -m 'Integrate the working Observatory office, scientific router and shared AI gateway'
+          git push origin HEAD:refs/heads/import/observatory-office-20260912
