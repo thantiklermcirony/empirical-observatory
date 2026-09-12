@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import CentralDesk from '@/components/observatory/CentralDesk';
 import '../reasoning.css';
 export const metadata: Metadata = {
-  title: 'Question Desk — The Empirical Observatory',
+  title: 'Visitor Computer — The Empirical Observatory',
   description:
-    'Turn a question into a visible, reproducible investigation. Inspect entities, actions, model assumptions, calculations and the next unanswered question.',
+    'Ask about the Observatory, its projects, evidence, living body and growing scientific framework.',
 };
 export default function Page() {
   return <CentralDesk />;

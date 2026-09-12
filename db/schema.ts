@@ -26,3 +26,22 @@ export const aiDailyCalls = sqliteTable('ai_daily_calls', {
   day: text('day').primaryKey(),
   calls: integer('calls').notNull().default(0),
 });
+
+export const frameworkProposals = sqliteTable('framework_proposals', {
+  id: text('id').primaryKey(),
+  ownerId: text('owner_id').notNull(),
+  createdAt: text('created_at').notNull(),
+  updatedAt: text('updated_at').notNull(),
+  status: text('status').notNull().default('generating'),
+  prompt: text('prompt').notNull(),
+  bodyJson: text('body_json'),
+  error: text('error'),
+}, table => [index('framework_proposals_status_created').on(table.status, table.createdAt)]);
+export const frameworkEvents = sqliteTable('framework_events', {
+  id: text('id').primaryKey(),
+  proposalId: text('proposal_id').notNull(),
+  actorId: text('actor_id').notNull(),
+  createdAt: text('created_at').notNull(),
+  action: text('action').notNull(),
+  receipt: text('receipt'),
+}, table => [index('framework_events_proposal_created').on(table.proposalId, table.createdAt)]);

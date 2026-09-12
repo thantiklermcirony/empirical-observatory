@@ -1,0 +1,260 @@
+{
+  "integration_id": "observatory-framework-20260912",
+  "site_commit": "94923f2b094b8d813c76fdca2c614fc4880b1b73",
+  "site_previous_commit": "a164b86f765e6f3ea343ede2580570d340244974",
+  "base_commit": "2e8acc838ff8151c56fc3328d2982d5d4c7983e5",
+  "entries": [
+    {
+      "path": "README.md",
+      "before_blob": "334713e1e8bdd31796f274cd3200f32dd2198203",
+      "sha256": "79495d42e6fd1a4d733fb1775ce0debccb341930c6b8424f935a72163c94226a",
+      "bytes": 20561
+    },
+    {
+      "path": "app/api/framework/access/route.ts",
+      "before_blob": null,
+      "sha256": "be581fe8549e88217894b44ef7a2e7f199aa0407ab987d62e39b6846d8307f78",
+      "bytes": 537
+    },
+    {
+      "path": "app/api/framework/proposals/route.ts",
+      "before_blob": null,
+      "sha256": "7d9d1777401997169ad60cd5d9e7cadd16d5ed57f221a6658a1a1af9373df608",
+      "bytes": 5875
+    },
+    {
+      "path": "app/api/framework/route.ts",
+      "before_blob": null,
+      "sha256": "36ca3dc52eb4a3c803fbb62857c2698589e7126ab4f1c4f9e3d1db3578f338de",
+      "bytes": 506
+    },
+    {
+      "path": "app/api/observatory/guide/route.ts",
+      "before_blob": null,
+      "sha256": "013d7f19b6f2fcc5a9c88b88451e9df445f411fdee0bd813e555f4310da98ef2",
+      "bytes": 1046
+    },
+    {
+      "path": "app/chatgpt-auth.ts",
+      "before_blob": null,
+      "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
+      "bytes": 2550
+    },
+    {
+      "path": "app/framework.css",
+      "before_blob": null,
+      "sha256": "0a6758dc7d0a08a54a190682bbde2a78b1c6d152acb5f333da224694bc6980c7",
+      "bytes": 4861
+    },
+    {
+      "path": "app/framework/page.tsx",
+      "before_blob": null,
+      "sha256": "07e420cd97b9a553f217d18534ff0f30c276cc68be59f471f12f6ffd686eb875",
+      "bytes": 316
+    },
+    {
+      "path": "app/framework/work/page.tsx",
+      "before_blob": null,
+      "sha256": "ae06b95dd27fdb3c702acc45bf3c3e456855cfc3de3bc881bdabd22d8f709fc5",
+      "bytes": 214
+    },
+    {
+      "path": "app/globals.css",
+      "before_blob": "05bf82b960b659cf25732e1ec63c0c0a3d058406",
+      "sha256": "a194978ba9bfe7ae2d2479aee6549a8e83477934bacac814a8fe48da14d02eee",
+      "bytes": 14986
+    },
+    {
+      "path": "app/layout.tsx",
+      "before_blob": "ea3c8bf3d1679017672efd483d69ab275427680c",
+      "sha256": "ac3fdf2fcb4b652e8a4f476b9a15cf29252c5fedc48b9612510512065ede3926",
+      "bytes": 1372
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "before_blob": "99813efdb5d3bf02e63ed06f797784c06961fbca",
+      "sha256": "957ee7a84e2e82a0265ee82705708256e7c8396888a52769b265daa70ae6ec2b",
+      "bytes": 5375
+    },
+    {
+      "path": "app/question/page.tsx",
+      "before_blob": "8b30fc091a7cb0f1f5cbbcd05bf28d06bf558b00",
+      "sha256": "ac85938f0740fd66085b341cdddf440b2117c949f021fa9a8c1dc38bbfdc3341",
+      "bytes": 407
+    },
+    {
+      "path": "app/workbenches/inquiry/page.tsx",
+      "before_blob": null,
+      "sha256": "bdbd63991cc4ebecdfea9de38b4a26a2f79bf761a8abc026a780cfaf98f60bbb",
+      "bytes": 236
+    },
+    {
+      "path": "components/observatory/AnatomyMechanisms.tsx",
+      "before_blob": null,
+      "sha256": "80c6cfbb71226986422e44d6caad81cf2819ef0498f0789cec41cd6e81f245ad",
+      "bytes": 2911
+    },
+    {
+      "path": "components/observatory/CentralDesk.tsx",
+      "before_blob": "2aa4c2e46ea580e035acbfe5e25f4581e4f26653",
+      "sha256": "be4159c8500f66decb69f8a5e18238449dbbe96bc3a8a1fba50a9fd76178279e",
+      "bytes": 22251
+    },
+    {
+      "path": "components/observatory/FrameworkGrowth.tsx",
+      "before_blob": null,
+      "sha256": "6ca035e07690ca4fd175899e5e48ba1c38fbc971b2788851ee5b3fb98d9b9c60",
+      "bytes": 1008
+    },
+    {
+      "path": "components/observatory/FrameworkWorkshop.tsx",
+      "before_blob": null,
+      "sha256": "005d7d7a5657b8743efb8f844e4246db7fd7682644f9202e3c0aa8a9174c9649",
+      "bytes": 9292
+    },
+    {
+      "path": "components/observatory/HumanConditionLab.tsx",
+      "before_blob": "f99f2d55ba77a1a997ff94f4e70568926956761c",
+      "sha256": "abf90e925c54ed9f00fc4c08227dafa2e5b4ea63f01337f0a1ce134b08a10bf6",
+      "bytes": 37061
+    },
+    {
+      "path": "components/observatory/LaboratoryIdentity.tsx",
+      "before_blob": "0db559c2b094106ba44c131492b3fe7ab9fe3ca0",
+      "sha256": "2de9b09448e8062f8d69ef31b464cc92c08976562f6368a912bf0f1bae0cb9d6",
+      "bytes": 1919
+    },
+    {
+      "path": "components/observatory/ObservatoryOffice.tsx",
+      "before_blob": "2a3e86470550069daab0d94defb429e71f666d17",
+      "sha256": "16276a23096dac8e5e9332a3752ab0219a198347c5a8c7b6ebfcac296deb426a",
+      "bytes": 8150
+    },
+    {
+      "path": "components/observatory/ResearchAnswerView.tsx",
+      "before_blob": "952eb4174ab14740452fe2f4a93a42af9473f209",
+      "sha256": "5dd6c22662f373ce0ca6015380d41f46cb115220f321773a11b91d117003953b",
+      "bytes": 4746
+    },
+    {
+      "path": "components/observatory/ScienceFramework.tsx",
+      "before_blob": null,
+      "sha256": "ecf67c202db4479da629c58ccd03328d447c210cf2ab0803645e452803a9c65a",
+      "bytes": 6048
+    },
+    {
+      "path": "db/schema.ts",
+      "before_blob": "2e136eca004cac73ec9e3c047be9bd294d497bb3",
+      "sha256": "f093a84bcdf8095a0597a9c302de0e397873de3004e4f47d92a9f922c0fcf925",
+      "bytes": 2207
+    },
+    {
+      "path": "drizzle/0003_skinny_lord_hawal.sql",
+      "before_blob": null,
+      "sha256": "9fe37fd9587d2d87be736a039c1b00b14effdfb7bb156555c0f2f8c57aef77c6",
+      "bytes": 733
+    },
+    {
+      "path": "drizzle/meta/0003_snapshot.json",
+      "before_blob": null,
+      "sha256": "b2557104340eb81ea492df5ca53b1a6562bba9eaf5ec94c2a7db237c5c70237f",
+      "bytes": 8461
+    },
+    {
+      "path": "drizzle/meta/_journal.json",
+      "before_blob": "bdbb549469bdb0284ea58b835cbcd7102c945297",
+      "sha256": "358a3d5015b3f6e03cabd340d772abf337f2d2c1296c4901e039f13380fd8e80",
+      "bytes": 646
+    },
+    {
+      "path": "lib/framework-proposals.ts",
+      "before_blob": null,
+      "sha256": "e88ed55c236ec13d5a891d02404b702756d79127e4ffd1d597076e1698fe4d10",
+      "bytes": 6939
+    },
+    {
+      "path": "lib/framework-tests.ts",
+      "before_blob": null,
+      "sha256": "9bc7915ee6dee2f4c9226e907ab699d7150408dbf8a916bcf07cd9acc1a26fe0",
+      "bytes": 4551
+    },
+    {
+      "path": "lib/observatory-catalogue.ts",
+      "before_blob": "046d840fab67576e2048de8a201cacc163d75971",
+      "sha256": "e4b5322772a414970f40660a11208331d28f28f655d750f793cebde87b2d9cfa",
+      "bytes": 15717
+    },
+    {
+      "path": "lib/observatory-guide.ts",
+      "before_blob": null,
+      "sha256": "306bd61981409de0f3ec1d9fabccc08c3c110bdc987fb5dae43372d299bf6b05",
+      "bytes": 6857
+    },
+    {
+      "path": "lib/research-contract.ts",
+      "before_blob": "7811c481894dae8d5c461e030f53bbb6048b1c99",
+      "sha256": "37cf707228d6d57663738aab87829c386fcc85b7e680f7313ccf5322cbd7e4cf",
+      "bytes": 1385
+    },
+    {
+      "path": "lib/science-registry.ts",
+      "before_blob": null,
+      "sha256": "2bce5f0ae5b8720f76763d3245fca5db4ac4f5c0241b64fa52f65228f739cb78",
+      "bytes": 16260
+    },
+    {
+      "path": "package.json",
+      "before_blob": "2107ffad923e643202f9988cd07f42d7755b4e8a",
+      "sha256": "76e70fe0f0c6c87e1b96aef80e1b473f8ce67a45e0d8e67a5022f3254f0639a4",
+      "bytes": 2598
+    },
+    {
+      "path": "public/anatomy/assets/index-A30yAhSQ.css",
+      "before_blob": null,
+      "sha256": "d7571a9768abc265dbb793b3cccea963cb0aae8bf4eccdfd2e885f177bf22446",
+      "bytes": 206805
+    },
+    {
+      "path": "public/anatomy/assets/index-CwHXi6gh.js",
+      "before_blob": null,
+      "sha256": "bcf9df25c2a04b9917049744bfd89c6240a3007f330b7b793966d3a74f5b4844",
+      "bytes": 916849
+    },
+    {
+      "path": "public/anatomy/index.html",
+      "before_blob": "1746bd2a2bbddf963490621dde15305ed707c053",
+      "sha256": "15b6e83c5a0c2fd6ad5ab888d4a2c62709eed078bebe414bbb378908e650cc5e",
+      "bytes": 642
+    },
+    {
+      "path": "research/framework/README.md",
+      "before_blob": null,
+      "sha256": "f07b017b405a2471d15f33e03f059b091cdf1277e8b82cc4c4a9c18709fd41be",
+      "bytes": 6384
+    },
+    {
+      "path": "research/framework/anatomy-selection-build.json",
+      "before_blob": null,
+      "sha256": "4eb80752ebf5d0397778fcb417a18e4c9baa0bc7c0ae8045f7b6342a8f74051a",
+      "bytes": 565
+    },
+    {
+      "path": "research/framework/anatomy-selection-source.zip",
+      "before_blob": null,
+      "sha256": "9f6edb66ce44c81c7b394d99ab928fef94d5931b54d22c5c93b672f3c067bc84",
+      "bytes": 180616
+    },
+    {
+      "path": "scripts/generate-framework-schema.cjs",
+      "before_blob": null,
+      "sha256": "e4c5da13cc5c1846d200a6b4eceb5eac83b6d4302e13c90ecf1e64397d395472",
+      "bytes": 452
+    },
+    {
+      "path": "tests/framework.test.mjs",
+      "before_blob": null,
+      "sha256": "e1a235a7857806c8d99270f3eeb29f0ec4f150305f16664a2e28bf9eb09e25ac",
+      "bytes": 20111
+    }
+  ]
+}

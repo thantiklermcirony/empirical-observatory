@@ -13,7 +13,18 @@ export default function Privacy() {
     >
       <a href="/">← Back to the Observatory</a>
       <h1>Records and usage counts</h1>
-      <p>When the shared AI connection is available, ordinary-language questions
+      <p>The visitor computer sends your project question and the current programme
+        registry to OpenAI for one guide response. It runs no laboratory calculation.
+        The internal research workshop requires an approved ChatGPT editor identity.
+        Each new workshop instruction uses at most one shared AI call, with source search
+        and relevant registered model checks. Instructions, proposals, status and audit
+        events are saved persistently in the editor ledger. Drafts are private to approved
+        editors. Publishing explicitly makes the instruction, proposal, sources and checks
+        public as an unvalidated candidate; retraction retains its history. This ledger
+        does not use the private-printout 30-day expiry. A pending instruction is also
+        retained in your browser until its outcome is confirmed, to recover interrupted
+        requests without another provider attempt.</p>
+      <p>In the separate scientific inquiry instruments, ordinary-language questions
         are sent to OpenAI to plan an investigation. Planning may use hosted web
         search, sending relevant search terms to that service and consulting public sources.
         Each planning request allows at most three search tool calls. The relevant source briefs,
@@ -27,8 +38,8 @@ export default function Privacy() {
         count toward the allowance. Saving a resulting printout also saves its
         proposed model and interpretation provenance.</p>
       <p>
-        The central terminal sends your prompt or structured inquiry to the
-        Observatory server for a bounded calculation. Running a question does
+        The visitor computer and scientific instruments send requests to the
+        Observatory server. Running a visitor or scientific question does
         not save it. “Save private printout” verifies a server-issued receipt for
         an AI report, preserving the exact explanation without another AI call.
         Reports made without hosted AI are recalculated on save. Public-data reports

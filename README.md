@@ -1,7 +1,9 @@
 <p align="center"><strong>THE EMPIRICAL OBSERVATORY</strong></p>
-<h1 align="center">Every question leaves a trace.</h1>
-<p align="center">Enter the night office. Ask the terminal. Follow the evidence.</p>
+<h1 align="center">A growing map of reality.</h1>
+<p align="center">Enter the night office. Meet the projects. Build the next connection.</p>
 <a href="https://empirical-observatory.madmanmuzza.chatgpt.site/"><img width="100%" src="public/images/observatory-exterior.png" alt="Enter the Observatory — a lighted doorway beneath the night dome" /></a>
+
+**[Living science framework](https://empirical-observatory.madmanmuzza.chatgpt.site/framework)** — established references, conditional models, hypotheses and gaps, linked to anatomy, sources and executable checks. [Editor workshop](https://empirical-observatory.madmanmuzza.chatgpt.site/framework/work) · [Architecture and next experiment](research/framework/README.md). The central computer is now the visitor guide; scientific instruments remain available separately.
 <p align="center"><em>Boundedness · time · adaptation · biology · dynamics · quantum mechanisms</em></p>
 
 Questions become scoped calculations, illustrated reports and the next observation to make. The [investigation contract](research/Investigation_Pipeline.md) distinguishes source-guided reports from hosted AI, and mathematical models from empirical discoveries.
