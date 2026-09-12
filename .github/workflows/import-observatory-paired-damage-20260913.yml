@@ -26,10 +26,8 @@ jobs:
       - name: Verify pinned release and existing source before import
         run: |
           python - <<'PY'
-          import hashlib, io, json, pathlib, subprocess, urllib.request, zipfile
-          url = 'https://empirical-observatory.madmanmuzza.chatgpt.site/research-cases/paired-damage/Observatory_Paired_Damage_Integration_20260913.zip'
-          with urllib.request.urlopen(url, timeout=120) as response:
-              data = response.read(80000001)
+          import hashlib, io, json, pathlib, subprocess, zipfile
+          data = pathlib.Path('research/paired-damage-integration-2026-09-13/Observatory_Paired_Damage_Integration_20260913.zip').read_bytes()
           assert len(data) == 155566
           assert hashlib.sha256(data).hexdigest() == 'e02f724fd23dbc4e2dfc1c548656c4c3082412335e16c52eaaade4cf06083291'
           archive = zipfile.ZipFile(io.BytesIO(data))
