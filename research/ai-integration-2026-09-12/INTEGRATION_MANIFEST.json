@@ -1,0 +1,43 @@
+{
+  "integration_id": "observatory-ai-20260912",
+  "site_commit": "a164b86f765e6f3ea343ede2580570d340244974",
+  "site_previous_commit": "3e4a3b7c7b923a9ee73ee3a23062e20a3d2bdc2e",
+  "base_commit": "80881526561d5742ea8dfe013b0eeeb3dbaa83e7",
+  "frozen_sha256": {
+    "lib/engine/temporal-router.ts": "e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29",
+    "lib/engine/quantum-reference.ts": "3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc",
+    "lib/strict-json.ts": "9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c"
+  },
+  "entries": [
+    {
+      "path": "components/observatory/CentralDesk.tsx",
+      "before_blob": "8b86498dd191d4a0b2cd2a50c7abbfad01c6b151",
+      "sha256": "7f3f5e36d2529cfa8f03e1301a58e19b52a4835c56b5b6c680401a5e607f07aa",
+      "bytes": 21109
+    },
+    {
+      "path": "components/observatory/ResearchAnswerView.tsx",
+      "before_blob": "2d11b5dab24f3a89956f9365e93f1cee8b6d19fb",
+      "sha256": "9d8e3aab237308737d61f8720530ecac15a8e622ff32d5c3247fd14d8d60f29e",
+      "bytes": 4609
+    },
+    {
+      "path": "lib/ai-research-transport.ts",
+      "before_blob": "4deba3edc6484d00cadba995c1b08762cede70f3",
+      "sha256": "9bcf6975bc65d3eb19296d2575348c2f8b9d9872030f5abf5e35b4aab88ed451",
+      "bytes": 5105
+    },
+    {
+      "path": "lib/research-engine.ts",
+      "before_blob": "5b8b4d13a410f4171e0eff6b676e09aff9faf263",
+      "sha256": "5b4562623024746f7bba0e5e746e26277641b7a6af243bda43ef17c6c91596eb",
+      "bytes": 33721
+    },
+    {
+      "path": "tests/gateway/research.test.mjs",
+      "before_blob": "b4b0e0095734e4bbf2b5ae9aea73f6499bf28d95",
+      "sha256": "8234a0ec0e6e1e502c3cae02edea51b94529b31242c554e40bb26b2512f9bf34",
+      "bytes": 14796
+    }
+  ]
+}

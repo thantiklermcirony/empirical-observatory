@@ -13,8 +13,15 @@ export async function researchModelCall(config: AiConfig, instructions: string, 
   const encoded = JSON.stringify(input);
   if (encoded.length > 85000) throw new TemporalInputError('ai_input_limit', 'This investigation is too large for the shared explanation service.');
   await reserve();
-  const response = await transport('https://api.openai.com/v1/responses', { method: 'POST', redirect: 'manual', signal: AbortSignal.timeout(options.webSearch ? 45000 : 25000), headers: { Authorization: `Bearer ${config.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ model: config.model, store: false, max_output_tokens: 3600, instructions, input: encoded, ...(options.webSearch ? { tools: [{ type: 'web_search', search_context_size: 'low' }], tool_choice: 'required', max_tool_calls: 3, include: ['web_search_call.action.sources'] } : {}), text: { format: { type: 'json_schema', name: 'observatory_research', strict: true, schema } } }) });
-  if (!response.ok) throw new TemporalInputError('ai_provider_unavailable', 'The AI service did not complete this step. Calculated results remain available.');
+  const response = await transport('https://api.openai.com/v1/responses', { method: 'POST', redirect: 'manual', signal: AbortSignal.timeout(options.webSearch ? 90000 : 45000), headers: { Authorization: `Bearer ${config.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ model: config.model, store: false, max_output_tokens: 3600, instructions, input: encoded, ...(options.webSearch ? { tools: [{ type: 'web_search', search_context_size: 'low' }], tool_choice: 'required', max_tool_calls: 3, include: ['web_search_call.action.sources'] } : {}), text: { format: { type: 'json_schema', name: 'observatory_research', strict: true, schema } } }) });
+  if (!response.ok) {
+    const failure = await response.json().catch(() => null) as { error?: { code?: string } } | null;
+    if (failure?.error?.code === 'insufficient_quota') throw new TemporalInputError('ai_provider_credit', 'The server API key is connected, but the OpenAI API account has no available credit or has reached its billing limit. The site owner must resolve API billing.');
+    if (response.status === 401) throw new TemporalInputError('ai_provider_auth', 'The hosted API key was rejected. The site owner must check the server secret.');
+    if (response.status === 403) throw new TemporalInputError('ai_provider_permission', 'The hosted API key lacks permission for this model or operation. The site owner must check its project access.');
+    if (failure?.error?.code === 'model_not_found') throw new TemporalInputError('ai_provider_model', 'The configured AI model is unavailable to this API project. The site owner must select an accessible model.');
+    throw new TemporalInputError('ai_provider_unavailable', 'The AI service did not complete this step. Calculated results remain available.');
+  }
   const reader = response.body?.getReader();
   if (!reader) throw new TemporalInputError('ai_response', 'The AI returned no response.');
   const decoder = new TextDecoder('utf-8', { fatal: true }); let raw = '', bytes = 0;
