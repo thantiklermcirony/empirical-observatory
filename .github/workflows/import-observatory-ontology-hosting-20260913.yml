@@ -28,22 +28,22 @@ jobs:
           python - <<'PY'
           import hashlib, io, json, pathlib, subprocess, zipfile
           data = pathlib.Path('research/ontology-hosting-integration-2026-09-13/Observatory_Ontology_Hosting_20260913.zip').read_bytes()
-          assert len(data) == 67841
-          assert hashlib.sha256(data).hexdigest() == '8761ffd550af7ab53be36d533e8524e037f429da4fd960973a34f6e3c261b8b1'
+          assert len(data) == 85275
+          assert hashlib.sha256(data).hexdigest() == '4e241c8054bd599418fc60af40a707945770b1b99fd1b58fcaf9ca62b006c40d'
           archive = zipfile.ZipFile(io.BytesIO(data))
           manifest = json.loads(archive.read('INTEGRATION_MANIFEST.json'))
-          assert manifest['site_commit'] == '5b903868f7a08806b8a78493cae2d37cb9c2c928'
+          assert manifest['site_commit'] == '68732bc787ad530b9e132917abeea168bd1b4f79'
           assert manifest['site_previous_commit'] == 'ff8b9466da80389e4fb6c35baf7cd593fcf6ce1a'
           assert manifest['base_commit'] == '081430c987e5f39ce659f86a1cb2840dd1546c30'
           subprocess.run(['git','merge-base','--is-ancestor',manifest['base_commit'],'HEAD'],check=True)
           assert manifest['integration_id'] == 'observatory-ontology-hosting-20260913'
           entries = manifest['entries']
-          assert len(entries) == 8
+          assert len(entries) == 10
           names = {e['path'] for e in entries}
           assert len(names) == len(entries)
           assert set(archive.namelist()) == names | {'INTEGRATION_MANIFEST.json'}
           root = pathlib.Path.cwd().resolve()
-          allowed = {'components/observatory/OntologyLedger.tsx', 'scripts/ontology/prepare-hosted.mjs', 'package.json', 'lib/ontology-distribution.json', 'tests/ontology-ledger.test.ts', 'research/Ontology_Ledger_Protocol.md', 'lib/ontology-browser.ts', 'app/ledger-data/[...path]/route.ts'}
+          allowed = {'tests/ontology-ledger.test.ts', 'components/observatory/OntologyLedger.tsx', 'public/ledger-data/manifest.json', 'public/ledger-data/quality.json', 'research/Ontology_Ledger_Protocol.md', 'scripts/ontology/prepare-hosted.mjs', 'lib/ontology-distribution.json', 'scripts/ontology/pin-captures.mjs', 'lib/ontology-browser.ts', 'package.json'}
           prefixes = ()
           validated = []
           for entry in entries:
@@ -71,7 +71,7 @@ jobs:
           receipt = root/'research/ontology-hosting-integration-2026-09-13/INTEGRATION_MANIFEST.json'
           receipt.parent.mkdir(parents=True,exist_ok=True)
           receipt.write_text(json.dumps(manifest,indent=2)+'\n')
-          print('Verified and imported 8 files. Existing public-only research and workflows retained.')
+          print('Verified and imported 10 files. Existing public-only research and workflows retained.')
           PY
       - uses: actions/setup-node@v4
         with:
