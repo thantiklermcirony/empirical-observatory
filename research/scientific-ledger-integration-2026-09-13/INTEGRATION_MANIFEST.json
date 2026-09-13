@@ -1,0 +1,158 @@
+{
+  "integration_id": "observatory-scientific-ledger-20260913",
+  "site_commit": "d8b81f91370a062971086554cd08ab39512a8377",
+  "site_previous_commit": "311bde285e671fe677a5ea6e11300b200fefb99d",
+  "base_commit": "4aa9ad92c4cbf663146a500feb88396ace884b5b",
+  "entries": [
+    {
+      "path": "app/api/catalogue/route.ts",
+      "before_blob": "a3a8f5ac47c1216a4f580cfad654215254bd642d",
+      "sha256": "856849dd626103b5ce47d2afdcd46c64a3ca952f095384abdd85a90de74ff349",
+      "bytes": 1069
+    },
+    {
+      "path": "app/api/ledger/resolve/route.ts",
+      "before_blob": null,
+      "sha256": "69d870c2a8bd2a7b751155d413781d58b2a661a923a354a59d381f87e9ea8530",
+      "bytes": 395
+    },
+    {
+      "path": "app/api/ledger/route.ts",
+      "before_blob": null,
+      "sha256": "89a39a4763a59ce90b67bade3487d4409e174741a1bd762b12dcda78d1d131bc",
+      "bytes": 172
+    },
+    {
+      "path": "app/api/ledger/run/route.ts",
+      "before_blob": null,
+      "sha256": "f902438a7397d5de3216792183e425b9ca78ade4939b48443be02d3f9f0fdfbc",
+      "bytes": 855
+    },
+    {
+      "path": "app/llms.txt/route.ts",
+      "before_blob": "ab31f55a45ef58bbc5026dee2ad81fe9dc400296",
+      "sha256": "dc4d22ff4918fcca86efdca8c4eed23019d47c5bcf65c7bdcbe89db6ef915c59",
+      "bytes": 2769
+    },
+    {
+      "path": "app/schematic/page.tsx",
+      "before_blob": null,
+      "sha256": "1d71b2a102066f85a914e565c010ee749b46452580c0fbab781811cd7a35e61e",
+      "bytes": 581
+    },
+    {
+      "path": "components/observatory/LaboratoryIdentity.tsx",
+      "before_blob": "baf52eec10fa93eab754c92ca223a0a73f2e8cff",
+      "sha256": "856911a9c3e58bdd4517e19ab098720d8c8b24492098d31f61392c7deb9af4bd",
+      "bytes": 1991
+    },
+    {
+      "path": "components/observatory/LedgerReceipt.tsx",
+      "before_blob": null,
+      "sha256": "a858bafc9c85067f8344085606c7d89274efc18c3f5e123313c89f80a01a8b06",
+      "bytes": 874
+    },
+    {
+      "path": "components/observatory/ScienceRoom.tsx",
+      "before_blob": "96e438595f8aa647375f970159b593036a90c198",
+      "sha256": "48572224e269ba09c964262743a8ee379274ae6ea467e5c64b017f8a2990698e",
+      "bytes": 8060
+    },
+    {
+      "path": "components/observatory/ScientificSchematic.tsx",
+      "before_blob": null,
+      "sha256": "d8aad5e8e91d25f960dddd2ab5d20da96e14bf49bc884e848424f23f1296dba5",
+      "bytes": 10547
+    },
+    {
+      "path": "components/observatory/scientific-schematic.css",
+      "before_blob": null,
+      "sha256": "907205beee1e26ada9c40e8b37b4a358162f03aff72b18205d855b28df1e8548",
+      "bytes": 8380
+    },
+    {
+      "path": "lib/lab-engine.ts",
+      "before_blob": "023da315e3069fcfe72637ecc3ea21251b4d1e7b",
+      "sha256": "db145c3e76e9a13694f59a55d62d5d53c70a375597c4f60e9a6cf5bf1e55ace6",
+      "bytes": 14604
+    },
+    {
+      "path": "lib/ledger-revision.ts",
+      "before_blob": null,
+      "sha256": "ecaf9dcc579e94b2be486557c8333f0392ce74ae68d1482791def583d1d61693",
+      "bytes": 3109
+    },
+    {
+      "path": "lib/ledger-runtime.ts",
+      "before_blob": null,
+      "sha256": "e7a7d952e561f1cde5b5968bc323db2e874a8d7e7ce9146b14bade5eeafa06c8",
+      "bytes": 717
+    },
+    {
+      "path": "lib/observatory-catalogue.ts",
+      "before_blob": "ab6a107c363c6a98d92d28592eea67d2a4815fdf",
+      "sha256": "e3a401603d27b5fe1315c17fe4f926eee9b86849e75f3027dbab4069636b7f1b",
+      "bytes": 19535
+    },
+    {
+      "path": "lib/observatory-guide.ts",
+      "before_blob": "b168219d2088fa3beeb0b4d37dc0982b1fa9af78",
+      "sha256": "8e57256ef9695bbeb3c16338be0ce284d7b7b9249b25333117683d9a9baf7e1c",
+      "bytes": 9440
+    },
+    {
+      "path": "lib/science-fields.ts",
+      "before_blob": null,
+      "sha256": "9d73abf3ba75c943f746e7f3b944944cf3e08a5025ae150468ef076417f8a4e3",
+      "bytes": 4960
+    },
+    {
+      "path": "lib/scientific-ledger.ts",
+      "before_blob": null,
+      "sha256": "c7d7ea669d70ba7009b3bb90de9b59dd2bae39f127469dcaa5b9759ddbd37167",
+      "bytes": 5794
+    },
+    {
+      "path": "lib/scientific-vocabulary.ts",
+      "before_blob": null,
+      "sha256": "128f689b14c157974418943e320e1daf079a66f54cd5fb65d55dcb98b54536b7",
+      "bytes": 14995
+    },
+    {
+      "path": "package.json",
+      "before_blob": "a065bbc4330df835ea9f578fa0da5d65957279a0",
+      "sha256": "ee25fcb926fd43b8b7ba561eee5335a9a56ef24d49d8a8390291bef9997a6d6c",
+      "bytes": 2690
+    },
+    {
+      "path": "public/images/room-agriculture-blueprint.svg",
+      "before_blob": null,
+      "sha256": "de16d85378557d7a525b24ae237b8e7e1902e23b36c9974e261488bf5dcdce62",
+      "bytes": 1458
+    },
+    {
+      "path": "public/images/room-language-blueprint.svg",
+      "before_blob": null,
+      "sha256": "7f8faa951d84b8fb402c456ca37a50109ee14a3d2981a4b7355044782265afef",
+      "bytes": 1545
+    },
+    {
+      "path": "public/images/room-medicine-blueprint.svg",
+      "before_blob": null,
+      "sha256": "e5e741fbf5e0e0c862adfa890a49a42743beddd6607ab9624879c0714dc7fc0e",
+      "bytes": 1505
+    },
+    {
+      "path": "research/Scientific_Ledger_Protocol.md",
+      "before_blob": null,
+      "sha256": "a5fc66a7e5dd69efc2436fb9529baa73275685f593a921f286f6b10242f79e20",
+      "bytes": 4327
+    },
+    {
+      "path": "tests/scientific-ledger.test.ts",
+      "before_blob": null,
+      "sha256": "f4045caa9041e641188606a7bd6599317cff41ec23f0e203bb1957adf7c41c97",
+      "bytes": 4246
+    }
+  ]
+}

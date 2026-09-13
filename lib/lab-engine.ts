@@ -1,17 +1,14 @@
 import { createTemporalExample, runTemporalInquiry, temporalCatalogue, hashTemporalJson, TemporalInputError } from './engine/temporal-router.ts';
-import type { Inquiry, TemporalReport, TemporalRuntimeOptions } from './engine/temporal-router.ts';
-import { evaluateQuantumReference } from './engine/quantum-reference.ts';
+import type { Inquiry, TemporalReport } from './engine/temporal-router.ts';
+import { LEDGER_RUNTIME } from './ledger-runtime.ts';
 import { investigate } from './engine/question.ts';
 import { LAB_EXAMPLES } from './lab-contract.ts';
 import type { LabPrintout, LabBranch, LabRequest, LabTerm } from './lab-contract.ts';
 
-export const RUNTIME: TemporalRuntimeOptions = {
-  implementationIdentity: { id: 'temporal-router-ts/0.1.0', source_sha256: 'e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29' },
-  quantumReference: { execute: evaluateQuantumReference, identity: { id: 'quantum-reference-ts/0.1.0', source_sha256: '3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc' } },
-};
+export const RUNTIME = LEDGER_RUNTIME;
 const SOURCE = 'https://github.com/thantiklermcirony/empirical-observatory';
 export function labCatalogue() {
-  return { version: 'observatory-inquiry/1', input: 'Exactly one of {prompt} or {inquiry, previous?}. previous is an untrusted comparison snapshot, not authenticated history.', capabilities: temporalCatalogue(RUNTIME),
+  return { version: 'observatory-inquiry/1', scientificLedger: '/api/ledger', input: 'Exactly one of {prompt} or {inquiry, previous?}. previous is an untrusted comparison snapshot, not authenticated history.', capabilities: temporalCatalogue(RUNTIME),
     examples: LAB_EXAMPLES, structuredExamples: Object.fromEntries(['actions-ab', 'actions-ba', 'resource', 'resource-corrected', 'quantum'].map(kind => [kind, createTemporalExample(kind as Parameters<typeof createTemporalExample>[0])])),
     limits: { requestBytes: 65536, promptCharacters: 2000, storageDays: 30 },
     scope: 'Declared-model calculations and explicit gaps. Human prose uses exact documented templates; arbitrary prose is not silently converted into a model. No automatic theorem admission or autonomous code changes.' };
