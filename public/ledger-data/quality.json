@@ -1,0 +1,181 @@
+{
+  "schema": "observatory-vocabulary-audit/1",
+  "generatedAt": "2026-09-13T02:08:29.214Z",
+  "scope": {
+    "collections": 32,
+    "distinctIris": 306635,
+    "sourceRecords": 396236,
+    "sourceRelationships": 1100637,
+    "selection": "Purposive first collection of reusable scientific ontologies and thesauri, chosen for cross-disciplinary coverage and inspectable licensing. Not an exhaustive search or a random sample.",
+    "exhaustive": false
+  },
+  "inputs": {
+    "manifestSha256": "9cdae80acddb0ddda1a36bc3c4e670d2cc8492925e2aacb10b937eeca9b845f7",
+    "integritySha256": "a5b9e7c513913b597a93685d42a417779840a06a059501c8109b1c5ad28d1280"
+  },
+  "method": {
+    "implementation": "scripts/ontology/audit.mjs",
+    "independentOf": "Python compiler collision-count implementation",
+    "unit": "One normalized text string with two or more distinct IRIs, counted once across the captured collections.",
+    "normalization": "Unicode NFKC, lowercase, whitespace collapse and trim.",
+    "included": "All supplied labels and synonyms, identifier fallback labels, all supplied languages, and obsolete terms. Repeated use of one IRI across sources counts as one identifier.",
+    "notEstablished": [
+      "That each different IRI represents a different meaning.",
+      "That each candidate is a scientific error or contradiction.",
+      "That imported assertions are empirically true.",
+      "That every scientific entity, law, operation, unit or source has been collected.",
+      "That a matching dimension or label permits physical transfer."
+    ]
+  },
+  "checks": {
+    "independentRecount": "pass",
+    "iriHashes": "pass",
+    "compiledShardHashes": "pass",
+    "sourceAndRelationCounts": "pass"
+  },
+  "counts": {
+    "reportedLexicalCollisionGroups": 42717,
+    "sourceAuthoredLabelsAndSynonymsOnly": 42658,
+    "preferredLabelsOnly": 15117,
+    "nonDeprecatedAssertionsOnly": 39626,
+    "withinLanguageOrUntaggedGroups": {
+      "untagged": 13018,
+      "en": 4569,
+      "de": 960,
+      "ru": 136,
+      "lb": 6,
+      "et": 43,
+      "is": 40,
+      "sl": 37,
+      "sk": 32,
+      "ca": 47,
+      "es": 85,
+      "gl": 45,
+      "nb": 42,
+      "nn": 40,
+      "fi": 40,
+      "sv": 46,
+      "eu": 77,
+      "it": 59,
+      "mt": 14,
+      "pt": 51,
+      "lt": 46,
+      "ro": 49,
+      "hu": 46,
+      "lv": 28,
+      "hr": 25,
+      "pl": 50,
+      "da": 48,
+      "fr": 56,
+      "cs": 53,
+      "nl": 50,
+      "el": 38,
+      "bg": 26,
+      "mk": 33,
+      "sr": 44,
+      "uk": 42,
+      "be": 26,
+      "he": 36,
+      "sq": 22,
+      "ga": 15,
+      "ja": 5,
+      "ar": 6,
+      "ms": 5,
+      "tr": 5,
+      "fa": 6,
+      "hi": 8,
+      "zh": 9,
+      "en-US": 4,
+      "jp": 3,
+      "en-us": 1,
+      "ge": 1,
+      "pyn": 1
+    }
+  },
+  "review": {
+    "semanticPairsReviewed": 0,
+    "confirmedScientificErrors": 0,
+    "verifiedDistinctMeanings": 0,
+    "status": "Candidates awaiting semantic review. Zero here means none established by this audit, not that none exist."
+  },
+  "examples": [
+    {
+      "label": "entropy",
+      "iris": [
+        "http://qudt.org/vocab/quantitykind/Entropy",
+        "http://sweetontology.net/propEnergy/Entropy",
+        "http://zbw.eu/stw/descriptor/15033-3",
+        "https://doi.org/10.29172/5cbf417b-4973-4970-94eb-b0f2f418dc74"
+      ],
+      "preferredLabelIdentifiers": 4,
+      "nonDeprecatedIdentifiers": 4
+    },
+    {
+      "label": "state",
+      "iris": [
+        "http://purl.obolibrary.org/obo/ENVO_00000009",
+        "http://sweetontology.net/humanJurisdiction/State",
+        "http://sweetontology.net/state/State",
+        "http://zbw.eu/stw/descriptor/13420-6"
+      ],
+      "preferredLabelIdentifiers": 3,
+      "nonDeprecatedIdentifiers": 4
+    },
+    {
+      "label": "force",
+      "iris": [
+        "http://purl.obolibrary.org/obo/ENVO_00000040",
+        "http://purl.obolibrary.org/obo/PATO_0001035",
+        "http://qudt.org/vocab/quantitykind/Force",
+        "http://sweetontology.net/proc/Force",
+        "http://sweetontology.net/propQuantity/Force"
+      ],
+      "preferredLabelIdentifiers": 4,
+      "nonDeprecatedIdentifiers": 5
+    },
+    {
+      "label": "selection",
+      "iris": [
+        "http://purl.obolibrary.org/obo/OBI_0001928",
+        "http://sweetontology.net/phenEcology/Selection",
+        "http://zbw.eu/stw/descriptor/29001-4"
+      ],
+      "preferredLabelIdentifiers": 3,
+      "nonDeprecatedIdentifiers": 3
+    },
+    {
+      "label": "cell",
+      "iris": [
+        "http://purl.obolibrary.org/obo/CL_0000000",
+        "http://sweetontology.net/phenFluidDynamics/Cell",
+        "http://sweetontology.net/reprDataModel/Cell"
+      ],
+      "preferredLabelIdentifiers": 3,
+      "nonDeprecatedIdentifiers": 3
+    }
+  ],
+  "candidates": {
+    "url": "/ledger-data/collision-candidates.json.gz",
+    "groups": 42717,
+    "sha256": "38b8e311351aeaa2ed23e68821c714bfda7944e61024fd796dcb39cac42dfcff",
+    "expandedSha256": "744129a4f041f17d2985492bda3e6bba89ea292e19a69b45db54d29affeba87d",
+    "bytes": 855515
+  },
+  "coverageGaps": [
+    "No completeness criterion defining every scientific concept or operation.",
+    "Uneven depth: biomedical sources dominate this first capture.",
+    "Scientific claims, equations, experimental observations and executable contracts require separate admission.",
+    "Source ontology versions, provenance, language tagging, aliases and deprecated terms need ongoing review.",
+    "Some external targets and complex OWL expressions remain outside the browser projection."
+  ],
+  "certification": {
+    "claim": "Reproducible audit receipt for this captured dataset.",
+    "not": "Third-party certification, a signed authenticity certificate, a proof of scientific truth or a completeness certificate.",
+    "nextGates": [
+      "Review candidate pairs for shared identity, different meanings, language differences, historical replacements and actual contradictions.",
+      "Define scope and coverage targets for each scientific field.",
+      "Validate reviewed mappings against source axioms and negative transfer tests.",
+      "Seek independent domain review and publish disagreements and corrections."
+    ]
+  }
+}

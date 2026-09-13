@@ -1,0 +1,715 @@
+{
+  "schema": "observatory-ontology-ledger/1",
+  "totals": {
+    "sources": 32,
+    "distinctIris": 306635,
+    "sourceRecords": 396236,
+    "relations": 1100637,
+    "restrictions": 154168,
+    "ambiguousLabels": 42717,
+    "sharedIris": 38251,
+    "newExecutableOperations": 0
+  },
+  "sources": [
+    {
+      "id": "bfo",
+      "title": "Basic Formal Ontology",
+      "rooms": [
+        "archive",
+        "mathematics"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 0,
+        "identifierLabels": 8,
+        "records": 58,
+        "relations": 175,
+        "restrictions": 0,
+        "withoutDefinition": 48
+      },
+      "homepage": "http://ifomis.org/bfo/"
+    },
+    {
+      "id": "ro",
+      "title": "Relation Ontology",
+      "rooms": [
+        "archive",
+        "biology"
+      ],
+      "license": {
+        "label": "CC0 1.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "counts": {
+        "deprecated": 18,
+        "identifierLabels": 42,
+        "records": 1056,
+        "relations": 943,
+        "restrictions": 0,
+        "withoutDefinition": 271
+      },
+      "homepage": "https://oborel.github.io/"
+    },
+    {
+      "id": "iao",
+      "title": "Information Artifact Ontology",
+      "rooms": [
+        "archive",
+        "computing"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 24,
+        "identifierLabels": 38,
+        "records": 441,
+        "relations": 1276,
+        "restrictions": 74,
+        "withoutDefinition": 98
+      },
+      "homepage": "https://github.com/information-artifact-ontology/IAO/"
+    },
+    {
+      "id": "obi",
+      "title": "Ontology for Biomedical Investigations",
+      "rooms": [
+        "biology",
+        "medicine",
+        "archive"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 120,
+        "identifierLabels": 24,
+        "records": 5737,
+        "relations": 17919,
+        "restrictions": 1619,
+        "withoutDefinition": 291
+      },
+      "homepage": "http://obi-ontology.org"
+    },
+    {
+      "id": "go",
+      "title": "Gene Ontology",
+      "rooms": [
+        "biology"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 13894,
+        "identifierLabels": 3684,
+        "records": 52057,
+        "relations": 73638,
+        "restrictions": 0,
+        "withoutDefinition": 3717
+      },
+      "homepage": "http://geneontology.org/"
+    },
+    {
+      "id": "cl",
+      "title": "Cell Ontology",
+      "rooms": [
+        "biology",
+        "medicine"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 289,
+        "identifierLabels": 437,
+        "records": 19855,
+        "relations": 50852,
+        "restrictions": 0,
+        "withoutDefinition": 2731
+      },
+      "homepage": "https://obophenotype.github.io/cell-ontology/"
+    },
+    {
+      "id": "uberon",
+      "title": "Uberon multi-species anatomy ontology",
+      "rooms": [
+        "biology",
+        "medicine"
+      ],
+      "license": {
+        "label": "CC BY 3.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/3.0/"
+      },
+      "counts": {
+        "deprecated": 1392,
+        "identifierLabels": 505,
+        "records": 27250,
+        "relations": 111541,
+        "restrictions": 42492,
+        "withoutDefinition": 4881
+      },
+      "homepage": "http://uberon.org"
+    },
+    {
+      "id": "envo",
+      "title": "Environment Ontology",
+      "rooms": [
+        "earth",
+        "biology"
+      ],
+      "license": {
+        "label": "CC0 1.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "counts": {
+        "deprecated": 460,
+        "identifierLabels": 77,
+        "records": 7258,
+        "relations": 11094,
+        "restrictions": 0,
+        "withoutDefinition": 2020
+      },
+      "homepage": "http://environmentontology.org/"
+    },
+    {
+      "id": "pato",
+      "title": "Phenotype And Trait Ontology",
+      "rooms": [
+        "biology"
+      ],
+      "license": {
+        "label": "CC BY 3.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/3.0/"
+      },
+      "counts": {
+        "deprecated": 1003,
+        "identifierLabels": 213,
+        "records": 8981,
+        "relations": 19216,
+        "restrictions": 0,
+        "withoutDefinition": 1428
+      },
+      "homepage": "https://github.com/pato-ontology/pato/"
+    },
+    {
+      "id": "stato",
+      "title": "The Statistical Methods Ontology",
+      "rooms": [
+        "mathematics",
+        "social"
+      ],
+      "license": {
+        "label": "CC BY 3.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/3.0/"
+      },
+      "counts": {
+        "deprecated": 0,
+        "identifierLabels": 15,
+        "records": 1184,
+        "relations": 4141,
+        "restrictions": 846,
+        "withoutDefinition": 65
+      },
+      "homepage": "http://stato-ontology.org/"
+    },
+    {
+      "id": "agro",
+      "title": "Agronomy Ontology",
+      "rooms": [
+        "agriculture"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 50,
+        "identifierLabels": 396,
+        "records": 4764,
+        "relations": 11583,
+        "restrictions": 1510,
+        "withoutDefinition": 1732
+      },
+      "homepage": "https://github.com/AgriculturalSemantics/agro"
+    },
+    {
+      "id": "po",
+      "title": "Plant Ontology",
+      "rooms": [
+        "agriculture",
+        "biology"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 337,
+        "identifierLabels": 236,
+        "records": 2065,
+        "relations": 5409,
+        "restrictions": 1008,
+        "withoutDefinition": 269
+      },
+      "homepage": "http://browser.planteome.org/amigo"
+    },
+    {
+      "id": "doid",
+      "title": "Human Disease Ontology",
+      "rooms": [
+        "medicine"
+      ],
+      "license": {
+        "label": "CC0 1.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "counts": {
+        "deprecated": 2515,
+        "identifierLabels": 3,
+        "records": 14866,
+        "relations": 43335,
+        "restrictions": 9353,
+        "withoutDefinition": 4199
+      },
+      "homepage": "https://disease-ontology.org"
+    },
+    {
+      "id": "mf",
+      "title": "Mental Functioning Ontology",
+      "rooms": [
+        "psychology"
+      ],
+      "license": {
+        "label": "CC BY 3.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/3.0/"
+      },
+      "counts": {
+        "deprecated": 1,
+        "identifierLabels": 41,
+        "records": 510,
+        "relations": 1322,
+        "restrictions": 17,
+        "withoutDefinition": 115
+      },
+      "homepage": "https://github.com/jannahastings/mental-functioning-ontology"
+    },
+    {
+      "id": "chmo",
+      "title": "Chemical Methods Ontology",
+      "rooms": [
+        "chemistry"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 43,
+        "identifierLabels": 92,
+        "records": 3571,
+        "relations": 7743,
+        "restrictions": 355,
+        "withoutDefinition": 251
+      },
+      "homepage": "https://github.com/rsc-ontologies/rsc-cmo"
+    },
+    {
+      "id": "fobi",
+      "title": "Food-Biomarker Ontology",
+      "rooms": [
+        "biology",
+        "chemistry"
+      ],
+      "license": {
+        "label": "CC BY 3.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/3.0/"
+      },
+      "counts": {
+        "deprecated": 0,
+        "identifierLabels": 463,
+        "records": 1356,
+        "relations": 2697,
+        "restrictions": 5474,
+        "withoutDefinition": 1356
+      },
+      "homepage": "https://github.com/pcastellanoescuder/FoodBiomarkerOntology"
+    },
+    {
+      "id": "foodon",
+      "title": "Food Ontology",
+      "rooms": [
+        "agriculture",
+        "biology"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 607,
+        "identifierLabels": 68,
+        "records": 39895,
+        "relations": 153200,
+        "restrictions": 9384,
+        "withoutDefinition": 20298
+      },
+      "homepage": "https://foodon.org/"
+    },
+    {
+      "id": "so",
+      "title": "Sequence types and features ontology",
+      "rooms": [
+        "biology",
+        "computing"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 343,
+        "identifierLabels": 146,
+        "records": 2845,
+        "relations": 6137,
+        "restrictions": 630,
+        "withoutDefinition": 304
+      },
+      "homepage": "http://www.sequenceontology.org/"
+    },
+    {
+      "id": "eco",
+      "title": "Evidence and Conclusion Ontology",
+      "rooms": [
+        "archive",
+        "biology"
+      ],
+      "license": {
+        "label": "CC0 1.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "counts": {
+        "deprecated": 37,
+        "identifierLabels": 8,
+        "records": 3471,
+        "relations": 9037,
+        "restrictions": 879,
+        "withoutDefinition": 614
+      },
+      "homepage": "https://www.evidenceontology.org"
+    },
+    {
+      "id": "sepio",
+      "title": "Scientific Evidence and Provenance Information Ontology",
+      "rooms": [
+        "archive"
+      ],
+      "license": {
+        "label": "CC BY 3.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      "counts": {
+        "deprecated": 16,
+        "identifierLabels": 77,
+        "records": 485,
+        "relations": 1374,
+        "restrictions": 44,
+        "withoutDefinition": 206
+      },
+      "homepage": "https://github.com/monarch-initiative/SEPIO-ontology"
+    },
+    {
+      "id": "qudt",
+      "title": "Quantities, Units, Dimensions and Data Types",
+      "rooms": [
+        "physics",
+        "engineering",
+        "mathematics",
+        "chemistry"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 0,
+        "identifierLabels": 40,
+        "records": 5835,
+        "relations": 52975,
+        "restrictions": 381,
+        "withoutDefinition": 5835
+      },
+      "homepage": "https://qudt.org/"
+    },
+    {
+      "id": "sweet",
+      "title": "Semantic Web for Earth and Environmental Terminology",
+      "rooms": [
+        "earth",
+        "physics",
+        "chemistry",
+        "engineering"
+      ],
+      "license": {
+        "label": "CC0 1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "counts": {
+        "deprecated": 9,
+        "identifierLabels": 32,
+        "records": 13015,
+        "relations": 35196,
+        "restrictions": 1007,
+        "withoutDefinition": 13013
+      },
+      "homepage": "https://github.com/ESIPFed/sweet"
+    },
+    {
+      "id": "uat",
+      "title": "Unified Astronomy Thesaurus",
+      "rooms": [
+        "astronomy"
+      ],
+      "license": {
+        "label": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "counts": {
+        "deprecated": 99,
+        "identifierLabels": 1,
+        "records": 2412,
+        "relations": 10770,
+        "restrictions": 0,
+        "withoutDefinition": 1553
+      },
+      "homepage": "https://astrothesaurus.org/"
+    },
+    {
+      "id": "lexinfo",
+      "title": "LexInfo linguistic data categories",
+      "rooms": [
+        "language"
+      ],
+      "license": {
+        "label": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "counts": {
+        "deprecated": 0,
+        "identifierLabels": 4,
+        "records": 762,
+        "relations": 2240,
+        "restrictions": 123,
+        "withoutDefinition": 762
+      },
+      "homepage": "https://lexinfo.net/"
+    },
+    {
+      "id": "stw",
+      "title": "STW Thesaurus for Economics",
+      "rooms": [
+        "social"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 1149,
+        "identifierLabels": 1,
+        "records": 7905,
+        "relations": 68027,
+        "restrictions": 0,
+        "withoutDefinition": 7847
+      },
+      "homepage": "https://zbw.eu/stw/version/about.en.html"
+    },
+    {
+      "id": "mondo",
+      "title": "Mondo Disease Ontology",
+      "rooms": [
+        "medicine"
+      ],
+      "license": {
+        "label": "CC BY 4.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "counts": {
+        "deprecated": 4693,
+        "identifierLabels": 427,
+        "records": 63962,
+        "relations": 114305,
+        "restrictions": 0,
+        "withoutDefinition": 41095
+      },
+      "homepage": "https://monarch-initiative.github.io/mondo"
+    },
+    {
+      "id": "nbo",
+      "title": "Neuro Behavior Ontology",
+      "rooms": [
+        "psychology",
+        "biology"
+      ],
+      "license": {
+        "label": "CC BY 3.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+        "url": "http://creativecommons.org/licenses/by/3.0/"
+      },
+      "counts": {
+        "deprecated": 4,
+        "identifierLabels": 143,
+        "records": 4898,
+        "relations": 12753,
+        "restrictions": 4554,
+        "withoutDefinition": 3644
+      },
+      "homepage": "https://github.com/obo-behavior/behavior-ontology/"
+    },
+    {
+      "id": "cmo",
+      "title": "Clinical measurement ontology",
+      "rooms": [
+        "medicine"
+      ],
+      "license": {
+        "label": "CC0 1.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "counts": {
+        "deprecated": 67,
+        "identifierLabels": 14,
+        "records": 4181,
+        "relations": 9126,
+        "restrictions": 73,
+        "withoutDefinition": 371
+      },
+      "homepage": "http://rgd.mcw.edu/rgdweb/ontology/search.html"
+    },
+    {
+      "id": "oba",
+      "title": "Ontology of Biological Attributes",
+      "rooms": [
+        "biology"
+      ],
+      "license": {
+        "label": "CC0 1.0",
+        "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "counts": {
+        "deprecated": 81,
+        "identifierLabels": 235,
+        "records": 84191,
+        "relations": 220647,
+        "restrictions": 72525,
+        "withoutDefinition": 54508
+      },
+      "homepage": "https://github.com/obophenotype/bio-attribute-ontology"
+    },
+    {
+      "id": "edam",
+      "title": "EDAM data analysis and management ontology",
+      "rooms": [
+        "computing",
+        "biology",
+        "archive"
+      ],
+      "license": {
+        "label": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "counts": {
+        "records": 3615,
+        "relations": 18445,
+        "restrictions": 608,
+        "withoutDefinition": 3615,
+        "deprecated": 1120,
+        "identifierLabels": 43
+      },
+      "homepage": "https://edamontology.org/"
+    },
+    {
+      "id": "physh",
+      "title": "APS physics subject headings",
+      "rooms": [
+        "physics",
+        "astronomy",
+        "engineering"
+      ],
+      "license": {
+        "label": "CC0 1.0",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "counts": {
+        "records": 3910,
+        "relations": 15302,
+        "restrictions": 0,
+        "withoutDefinition": 3910,
+        "deprecated": 9,
+        "identifierLabels": 19
+      },
+      "homepage": "https://physh.aps.org/"
+    },
+    {
+      "id": "ontomath",
+      "title": "OntoMathPRO mathematical ontology, version 2 branch",
+      "rooms": [
+        "mathematics"
+      ],
+      "license": {
+        "label": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      },
+      "counts": {
+        "records": 3845,
+        "relations": 8219,
+        "restrictions": 1212,
+        "withoutDefinition": 3845,
+        "deprecated": 0,
+        "identifierLabels": 13
+      },
+      "homepage": "https://github.com/CLLKazan/OntoMathPro/tree/v.2"
+    }
+  ],
+  "manifest": "/ledger-data/manifest.json",
+  "audit": "/ledger-data/audit.json",
+  "boundary": "Imported scientific vocabulary and source assertions. Not complete science, a theorem proof, an observation or a new executable operation. Raw captures preserve omitted OWL axioms.",
+  "relationDirectory": "/ledger-data/relations.json",
+  "kindCounts": {
+    "class-or-concept": 379794,
+    "other-named-resource": 5684,
+    "unit": 2933,
+    "relation-property": 6601,
+    "quantity-kind": 1224
+  }
+}
