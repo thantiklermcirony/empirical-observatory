@@ -1,0 +1,14 @@
+{
+  "collector_sha256": "c8647f54dc8351c99e7a4cf2382aad46f7f0a71efc59682782dd8543a7e6551f",
+  "completed_at": "2026-09-13T17:56:43.311454Z",
+  "errors": [],
+  "forecast_status": "captured",
+  "mature_checked": 0,
+  "mature_missing": 0,
+  "new_resolutions": 0,
+  "new_revisions": 0,
+  "nominal_slot": "2026-09-13T17:35:00.000000Z",
+  "run_id": "20260913T175642749577Z-97f4ec3e",
+  "started_at": "2026-09-13T17:56:42.749577Z",
+  "target_id": "20260914T1800Z"
+}
