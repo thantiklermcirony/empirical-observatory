@@ -1,0 +1,218 @@
+[
+  {
+    "name": "mu",
+    "value": 0.0029,
+    "unit": "1/min",
+    "meaning": "specific growth rate (4h mass doubling time)",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "At",
+    "value": 1.0,
+    "unit": "AU/AV",
+    "meaning": "total antagonist concentration",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "CdTh",
+    "value": 0.2,
+    "unit": "AU/AV",
+    "meaning": "cell division threshold (if M falls below CdTh cell division ensues)",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kSySk",
+    "value": 0.002,
+    "unit": "AU/(AV*min)",
+    "meaning": "starter kinase synthesis",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kDeSk",
+    "value": 0.002,
+    "unit": "1/min",
+    "meaning": "constitutive starter kinase degradation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kDeSkLi",
+    "value": 0.038,
+    "unit": "1/min",
+    "meaning": "light-dependent starter kinase degradation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kSyTf",
+    "value": 0.06,
+    "unit": "AU/(AV*min)",
+    "meaning": "transcription factor synthesis",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kDeTf",
+    "value": 0.06,
+    "unit": "1/min",
+    "meaning": "transcription factor degradation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kSyIn",
+    "value": 6.1,
+    "unit": "AU/min",
+    "meaning": "inhibitor synthesis",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kDeIn",
+    "value": 0.5,
+    "unit": "1/min",
+    "meaning": "inhibitor degradation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kAsTfIn",
+    "value": 500.0,
+    "unit": "AV/(AU*min)",
+    "meaning": "association of transcription factor and inhibitor",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kDsTfIn",
+    "value": 0.1,
+    "unit": "1/min",
+    "meaning": "dissociation of transcription factor-inhibitor complexes",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kPhInSk",
+    "value": 5.6,
+    "unit": "AV/(AU*min)",
+    "meaning": "inhibitor phosphorylation by starter kinase",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kPhInFk",
+    "value": 65.0,
+    "unit": "AV/(AU*min)",
+    "meaning": "inhibitor phosphorylation by feedback kinase",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kDpIn",
+    "value": 2.0,
+    "unit": "1/min",
+    "meaning": "inhibitor dephosphorylation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kSySTf",
+    "value": 0.25,
+    "unit": "1/min",
+    "meaning": "transcription factor-dependent synthesis of S",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "jInSM",
+    "value": 0.125,
+    "unit": "AU/AV",
+    "meaning": "half-saturation constant for inhibition of S by M",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "nInSM",
+    "value": 4.0,
+    "unit": "-",
+    "meaning": "hill exponent for inhibition of S by M",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": true
+  },
+  {
+    "name": "kDeS",
+    "value": 0.1,
+    "unit": "1/min",
+    "meaning": "constitutive S degradation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kSyMS",
+    "value": 0.2,
+    "unit": "1/min",
+    "meaning": "synthesis of M promoted by S",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kSyMM",
+    "value": 0.06,
+    "unit": "1/min",
+    "meaning": "synthesis of M promoted by M",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kDeM",
+    "value": 0.1,
+    "unit": "1/min",
+    "meaning": "constitutive M degradation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kDeMA",
+    "value": 10.0,
+    "unit": "AV/(AU*min)",
+    "meaning": "antagonist-mediated degradation of M",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kPhAS",
+    "value": 25.0,
+    "unit": "AV^n/(AU^n*min)",
+    "meaning": "phosphorylation of antagonist by S",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "kPhAM",
+    "value": 2000.0,
+    "unit": "AV^n/(AU^n*min)",
+    "meaning": "phosphorylation of antagonist by M",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  },
+  {
+    "name": "nPhA",
+    "value": 2.0,
+    "unit": "-",
+    "meaning": "hill exponent for antagonist phosphorylation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": true
+  },
+  {
+    "name": "kDpA",
+    "value": 2.0,
+    "unit": "1/min",
+    "meaning": "antagonist dephosphorylation",
+    "status": "published model parameter, not a calibrated organism-wide constant",
+    "structural_dial": false
+  }
+]

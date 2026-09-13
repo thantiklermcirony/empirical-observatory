@@ -1,0 +1,5 @@
+{
+  "status": "not-run",
+  "reason": "Chromium executable unavailable; attempted browser download timed out. No visual/browser verification claimed.",
+  "error": "browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell"
+}

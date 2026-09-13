@@ -1,4 +1,5 @@
 import manifest from '../public/research-cases/paired-damage/manifest.json' with {type:'json'};
+import {CHLAMYDOMONAS_CASE} from './chlamydomonas-case.ts';
 
 /** One evidence record, many laboratory questions. Links never grant evidential transfer. */
 export const PAIRED_DAMAGE_CASE = {
@@ -47,6 +48,6 @@ export const PAIRED_DAMAGE_CASE = {
     beforeFitting:'Freeze horizon, label and censoring rule, cohort eligibility, model formulas, tuning budget, split, power/sample size and bootstrap procedure before new empirical fitting. Do not retune on this explored dataset.',
   },
 } as const;
-export const RESEARCH_CASES = [PAIRED_DAMAGE_CASE];
+export const RESEARCH_CASES = [PAIRED_DAMAGE_CASE,CHLAMYDOMONAS_CASE];
 export function casesForRoom(room:string){return RESEARCH_CASES.filter(c=>c.connections.some(x=>x.room===room));}
 export const PAIRED_DAMAGE_BRIEF={id:'S-PAIRED-DAMAGE',branch:'biology',title:PAIRED_DAMAGE_CASE.title,evidence:'Exploratory published-data reanalysis; corrected revision 2; no new law admitted',href:PAIRED_DAMAGE_CASE.href,finding:PAIRED_DAMAGE_CASE.finding+' '+PAIRED_DAMAGE_CASE.limits[3]+' '+PAIRED_DAMAGE_CASE.limits[4]+' The case has a deterministic replay endpoint and cross-laboratory obligations. Reading this brief does not execute that replay.'};

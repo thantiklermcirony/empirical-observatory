@@ -1,0 +1,473 @@
+{
+  "scope": "Observational prediction of at least one division; not mechanistic parameter fitting.",
+  "source_commit": "ab87e1314e27239d763e9cab188291e01b153574",
+  "audit": [
+    {
+      "file": "Fig4_Data_LD12.dat",
+      "raw_rows": 695,
+      "eligible_rows": 695
+    },
+    {
+      "file": "Fig4_Data_LD18.dat",
+      "raw_rows": 1157,
+      "eligible_rows": 1157
+    },
+    {
+      "file": "Fig4_Data_LD24.dat",
+      "raw_rows": 870,
+      "eligible_rows": 870
+    },
+    {
+      "file": "Fig4_data_LD30.dat",
+      "raw_rows": 957,
+      "eligible_rows": 957
+    }
+  ],
+  "total_eligible": 3679,
+  "features": {
+    "baseline": [
+      "log area after light",
+      "dark duration"
+    ],
+    "added_dial": "log area growth per hour during light"
+  },
+  "protocol": "Leave one complete Fig4 experiment out, polynomial logistic regression degree 2, C=1; fixed before scores were inspected.",
+  "folds": [
+    {
+      "held_out_experiment_hours": 12,
+      "prevalence": {
+        "n": 695,
+        "division_fraction": 0.015827338129496403,
+        "brier": 0.062265734853700024,
+        "log_loss": 0.2827946106032467,
+        "auc": 0.5
+      },
+      "size_time": {
+        "n": 695,
+        "division_fraction": 0.015827338129496403,
+        "brier": 0.014602160725176689,
+        "log_loss": 0.08439254412110316,
+        "auc": 0.7956539074960127
+      },
+      "size_time_history": {
+        "n": 695,
+        "division_fraction": 0.015827338129496403,
+        "brier": 0.013775865271298527,
+        "log_loss": 0.08149494785004194,
+        "auc": 0.7921318447634236
+      },
+      "history_brier_improvement": 0.0008262954538781619
+    },
+    {
+      "held_out_experiment_hours": 18,
+      "prevalence": {
+        "n": 1157,
+        "division_fraction": 0.09680207433016422,
+        "brier": 0.10634751603137486,
+        "log_loss": 0.3816256893102749,
+        "auc": 0.5
+      },
+      "size_time": {
+        "n": 1157,
+        "division_fraction": 0.09680207433016422,
+        "brier": 0.05014081458718711,
+        "log_loss": 0.17109040389758404,
+        "auc": 0.9419856459330144
+      },
+      "size_time_history": {
+        "n": 1157,
+        "division_fraction": 0.09680207433016422,
+        "brier": 0.055991547844796645,
+        "log_loss": 0.19374324626733644,
+        "auc": 0.903955912508544
+      },
+      "history_brier_improvement": -0.005850733257609535
+    },
+    {
+      "held_out_experiment_hours": 24,
+      "prevalence": {
+        "n": 870,
+        "division_fraction": 0.24597701149425288,
+        "brier": 0.19064102653579032,
+        "log_loss": 0.5742377241561794,
+        "auc": 0.5
+      },
+      "size_time": {
+        "n": 870,
+        "division_fraction": 0.24597701149425288,
+        "brier": 0.12035474841689679,
+        "log_loss": 0.3765407381800985,
+        "auc": 0.8692621666286755
+      },
+      "size_time_history": {
+        "n": 870,
+        "division_fraction": 0.24597701149425288,
+        "brier": 0.1186144800218566,
+        "log_loss": 0.3722924074918431,
+        "auc": 0.8713956006382494
+      },
+      "history_brier_improvement": 0.0017402683950401981
+    },
+    {
+      "held_out_experiment_hours": 30,
+      "prevalence": {
+        "n": 957,
+        "division_fraction": 0.3824451410658307,
+        "brier": 0.30307504750978365,
+        "log_loss": 0.8805637664167121,
+        "auc": 0.5
+      },
+      "size_time": {
+        "n": 957,
+        "division_fraction": 0.3824451410658307,
+        "brier": 0.20703192305742876,
+        "log_loss": 0.6420111062504265,
+        "auc": 0.8376212402799738
+      },
+      "size_time_history": {
+        "n": 957,
+        "division_fraction": 0.3824451410658307,
+        "brier": 0.21493948938309668,
+        "log_loss": 0.6940215255637371,
+        "auc": 0.8216739249026842
+      },
+      "history_brier_improvement": -0.007907566325667914
+    }
+  ],
+  "overall": {
+    "prevalence": {
+      "n": 3679,
+      "division_fraction": 0.19108453384071758,
+      "brier": 0.16912728331737506,
+      "log_loss": 0.5382901661804604,
+      "auc": 0.28539840774560643
+    },
+    "size_time": {
+      "n": 3679,
+      "division_fraction": 0.19108453384071758,
+      "brier": 0.10084251309324078,
+      "log_loss": 0.325794913392774,
+      "auc": 0.8887771207115434
+    },
+    "size_time_history": {
+      "n": 3679,
+      "division_fraction": 0.19108453384071758,
+      "brier": 0.10417182282648027,
+      "log_loss": 0.3448961454660199,
+      "auc": 0.8707340086266233
+    }
+  },
+  "brier_improvement": -0.0033293097332394994,
+  "conditional_cell_bootstrap_95": [
+    -0.006025487601590845,
+    -0.0007001497021588807
+  ],
+  "independent_experiments": 4,
+  "external_protocol": {
+    "protocol": "6 h dark, 6 h light, predict division in next 12 h dark",
+    "raw_rows": 450,
+    "eligible_rows": 277,
+    "size_time": {
+      "n": 277,
+      "division_fraction": 0.1552346570397112,
+      "brier": 0.09100641377752262,
+      "log_loss": 0.32188729372527136,
+      "auc": 0.9158715961041543
+    },
+    "size_time_history": {
+      "n": 277,
+      "division_fraction": 0.1552346570397112,
+      "brier": 0.09012523266472856,
+      "log_loss": 0.3520832406064815,
+      "auc": 0.9138342277877163
+    },
+    "history_brier_improvement": 0.0008811811127940712,
+    "caveat": "Different protocol, same published study. Pixel-area calibration across files is not independently verified. Not a new laboratory validation."
+  },
+  "plot_bins": [
+    {
+      "hours": 12,
+      "n": 87,
+      "area4": 625.4942528735633,
+      "observed_division_fraction": 0.011494252873563218,
+      "size_prediction": 1.1409383828196118e-05,
+      "history_prediction": 1.800702676116047e-05
+    },
+    {
+      "hours": 12,
+      "n": 87,
+      "area4": 733.1149425287356,
+      "observed_division_fraction": 0.0,
+      "size_prediction": 8.954602229008736e-05,
+      "history_prediction": 0.0001694698082955317
+    },
+    {
+      "hours": 12,
+      "n": 87,
+      "area4": 798.0114942528736,
+      "observed_division_fraction": 0.011494252873563218,
+      "size_prediction": 0.00032885734007414815,
+      "history_prediction": 0.0005038799549915593
+    },
+    {
+      "hours": 12,
+      "n": 87,
+      "area4": 854.2873563218391,
+      "observed_division_fraction": 0.011494252873563218,
+      "size_prediction": 0.0009530681699791639,
+      "history_prediction": 0.0013256092896517671
+    },
+    {
+      "hours": 12,
+      "n": 87,
+      "area4": 922.3563218390805,
+      "observed_division_fraction": 0.0,
+      "size_prediction": 0.0029749727381301397,
+      "history_prediction": 0.0035743740603209158
+    },
+    {
+      "hours": 12,
+      "n": 87,
+      "area4": 997.551724137931,
+      "observed_division_fraction": 0.0,
+      "size_prediction": 0.009323181379190002,
+      "history_prediction": 0.010334106705745699
+    },
+    {
+      "hours": 12,
+      "n": 87,
+      "area4": 1078.9080459770114,
+      "observed_division_fraction": 0.0,
+      "size_prediction": 0.027576617896670045,
+      "history_prediction": 0.02851339364725754
+    },
+    {
+      "hours": 12,
+      "n": 86,
+      "area4": 1320.9651162790697,
+      "observed_division_fraction": 0.09302325581395349,
+      "size_prediction": 0.2862462652107853,
+      "history_prediction": 0.2760468247167315
+    },
+    {
+      "hours": 18,
+      "n": 145,
+      "area4": 577.8275862068965,
+      "observed_division_fraction": 0.0,
+      "size_prediction": 0.0017173661105008963,
+      "history_prediction": 0.002298139794116383
+    },
+    {
+      "hours": 18,
+      "n": 145,
+      "area4": 680.448275862069,
+      "observed_division_fraction": 0.006896551724137931,
+      "size_prediction": 0.005194046818318023,
+      "history_prediction": 0.006647042578768953
+    },
+    {
+      "hours": 18,
+      "n": 145,
+      "area4": 737.4137931034483,
+      "observed_division_fraction": 0.0,
+      "size_prediction": 0.009732191561453413,
+      "history_prediction": 0.013642391733320021
+    },
+    {
+      "hours": 18,
+      "n": 145,
+      "area4": 795.7724137931034,
+      "observed_division_fraction": 0.013793103448275862,
+      "size_prediction": 0.017602296352997218,
+      "history_prediction": 0.021891704801978572
+    },
+    {
+      "hours": 18,
+      "n": 145,
+      "area4": 849.7172413793104,
+      "observed_division_fraction": 0.006896551724137931,
+      "size_prediction": 0.02921955165704261,
+      "history_prediction": 0.04246020873273121
+    },
+    {
+      "hours": 18,
+      "n": 144,
+      "area4": 917.7916666666666,
+      "observed_division_fraction": 0.05555555555555555,
+      "size_prediction": 0.05286750938487614,
+      "history_prediction": 0.07170358126857296
+    },
+    {
+      "hours": 18,
+      "n": 144,
+      "area4": 1017.7152777777778,
+      "observed_division_fraction": 0.10416666666666667,
+      "size_prediction": 0.11327189538520904,
+      "history_prediction": 0.15577183222611338
+    },
+    {
+      "hours": 18,
+      "n": 144,
+      "area4": 1277.1805555555557,
+      "observed_division_fraction": 0.5902777777777778,
+      "size_prediction": 0.39434273307872414,
+      "history_prediction": 0.43437088127578527
+    },
+    {
+      "hours": 24,
+      "n": 109,
+      "area4": 555.9357798165138,
+      "observed_division_fraction": 0.0,
+      "size_prediction": 0.010490691844783311,
+      "history_prediction": 0.010373866621329294
+    },
+    {
+      "hours": 24,
+      "n": 109,
+      "area4": 665.4954128440367,
+      "observed_division_fraction": 0.045871559633027525,
+      "size_prediction": 0.04258762110896365,
+      "history_prediction": 0.043684864647637864
+    },
+    {
+      "hours": 24,
+      "n": 109,
+      "area4": 727.440366972477,
+      "observed_division_fraction": 0.045871559633027525,
+      "size_prediction": 0.09038088101577887,
+      "history_prediction": 0.08932192105159947
+    },
+    {
+      "hours": 24,
+      "n": 109,
+      "area4": 778.9174311926605,
+      "observed_division_fraction": 0.13761467889908258,
+      "size_prediction": 0.1546365557855328,
+      "history_prediction": 0.15475321166659683
+    },
+    {
+      "hours": 24,
+      "n": 109,
+      "area4": 832.8807339449542,
+      "observed_division_fraction": 0.21100917431192662,
+      "size_prediction": 0.24769473124790017,
+      "history_prediction": 0.24915311680847282
+    },
+    {
+      "hours": 24,
+      "n": 109,
+      "area4": 898.7339449541284,
+      "observed_division_fraction": 0.23853211009174313,
+      "size_prediction": 0.3871725912376382,
+      "history_prediction": 0.3876383042537853
+    },
+    {
+      "hours": 24,
+      "n": 108,
+      "area4": 996.7314814814815,
+      "observed_division_fraction": 0.49074074074074076,
+      "size_prediction": 0.5965479678720832,
+      "history_prediction": 0.5959054305869159
+    },
+    {
+      "hours": 24,
+      "n": 108,
+      "area4": 1206.111111111111,
+      "observed_division_fraction": 0.8055555555555556,
+      "size_prediction": 0.8423771506538272,
+      "history_prediction": 0.8469588142071365
+    },
+    {
+      "hours": 30,
+      "n": 120,
+      "area4": 502.73333333333335,
+      "observed_division_fraction": 0.016666666666666666,
+      "size_prediction": 0.00684913214335585,
+      "history_prediction": 0.006061176435697558
+    },
+    {
+      "hours": 30,
+      "n": 120,
+      "area4": 592.525,
+      "observed_division_fraction": 0.06666666666666667,
+      "size_prediction": 0.018276495815006552,
+      "history_prediction": 0.01897280620239261
+    },
+    {
+      "hours": 30,
+      "n": 120,
+      "area4": 646.9333333333333,
+      "observed_division_fraction": 0.20833333333333334,
+      "size_prediction": 0.034623968649067235,
+      "history_prediction": 0.037871706398395294
+    },
+    {
+      "hours": 30,
+      "n": 120,
+      "area4": 698.05,
+      "observed_division_fraction": 0.2833333333333333,
+      "size_prediction": 0.06319648098404675,
+      "history_prediction": 0.06557308186466863
+    },
+    {
+      "hours": 30,
+      "n": 120,
+      "area4": 751.425,
+      "observed_division_fraction": 0.4083333333333333,
+      "size_prediction": 0.11479544353705642,
+      "history_prediction": 0.13514148223393857
+    },
+    {
+      "hours": 30,
+      "n": 119,
+      "area4": 814.8571428571429,
+      "observed_division_fraction": 0.5462184873949579,
+      "size_prediction": 0.21704772141482373,
+      "history_prediction": 0.2157941828510432
+    },
+    {
+      "hours": 30,
+      "n": 119,
+      "area4": 888.3613445378152,
+      "observed_division_fraction": 0.680672268907563,
+      "size_prediction": 0.3957349696133786,
+      "history_prediction": 0.3778660845598851
+    },
+    {
+      "hours": 30,
+      "n": 119,
+      "area4": 1069.1176470588234,
+      "observed_division_fraction": 0.8571428571428571,
+      "size_prediction": 0.7536588390536142,
+      "history_prediction": 0.6840166855281394
+    }
+  ],
+  "excluded_predictors": [
+    "end-of-experiment size",
+    "xID",
+    "yID",
+    "future divisions"
+  ],
+  "raw_files": [
+    {
+      "path": "upstream/data/Fig4_Data_LD12.dat",
+      "sha256": "e3e61c8833077e188a6bd69e692b4c027d7861e2952bafe013b24550ec1fa6de"
+    },
+    {
+      "path": "upstream/data/Fig4_Data_LD18.dat",
+      "sha256": "5733d9df04e7e106a7527c370998b98495fd019461828b28e710fddaf2bfc2f8"
+    },
+    {
+      "path": "upstream/data/Fig4_Data_LD24.dat",
+      "sha256": "19298dfd0afd3bf75d83778151511acf0c7b978b73f1dc73194cec335ea03565"
+    },
+    {
+      "path": "upstream/data/Fig4_data_LD30.dat",
+      "sha256": "63e2e68faf70bf485d11916321c7935686114d1366e644e91fd254a5ca14fbb2"
+    },
+    {
+      "path": "upstream/data/FigS4_Data.dat",
+      "sha256": "a52f6a004148b3fc1a649c522ac198a0d37ac780d6d2c50df35343a5476e4606"
+    }
+  ]
+}

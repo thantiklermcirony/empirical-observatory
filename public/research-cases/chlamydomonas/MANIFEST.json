@@ -1,0 +1,236 @@
+{
+  "version": "0.1",
+  "source_commit": "ab87e1314e27239d763e9cab188291e01b153574",
+  "files": [
+    {
+      "path": "AUDIT.md",
+      "sha256": "12fac2004df4cc3a3a0294d709948ef834cd84b78463275150bd798fd19f0c2c",
+      "bytes": 1682
+    },
+    {
+      "path": "BDF_REFERENCE.json",
+      "sha256": "f8ad64864204f81d7e5fa27a3f5f57971adeed828d8f54588c7dcbd53de339cd",
+      "bytes": 3251
+    },
+    {
+      "path": "BROWSER_TESTS.json",
+      "sha256": "8752cebc54a1df4069377bfb5714478c7d3ecb551aa1e96bba91d14c62ff409a",
+      "bytes": 321
+    },
+    {
+      "path": "CAMPAIGN_RESULTS.json",
+      "sha256": "0f9decfbce26f40beda58cb8839773eb970592a0f0ac8a8de771e56154d3c6b1",
+      "bytes": 725213
+    },
+    {
+      "path": "CONNECTOR_TESTS.json",
+      "sha256": "79e21833a79a86027828f88047b60593e420cf8a7b7e0cb2faa6ce182a5a9d9a",
+      "bytes": 1292
+    },
+    {
+      "path": "Chlamydomonas_Observatory.html",
+      "sha256": "1ff3a8034c03f40b117c2a42314ac572c7a0902574fbce546792f1031a08cc20",
+      "bytes": 158973
+    },
+    {
+      "path": "EMPIRICAL_RESULTS.json",
+      "sha256": "60d19180c2a501cf5e7fd8169b766b63a5ef843d86af6a1fb3944d41eea9647c",
+      "bytes": 13629
+    },
+    {
+      "path": "EVIDENCE_LEDGER.json",
+      "sha256": "abc7ce9a45eb8eb60050b9c1c1c3094d60b664143d068d9a8f57c7ddd3d3c96a",
+      "bytes": 2853
+    },
+    {
+      "path": "FINDINGS.md",
+      "sha256": "aaf9a5fa4566636f1a6b709eb5a95c63a0d58f8af0e8ef8c605031073c1be324",
+      "bytes": 10663
+    },
+    {
+      "path": "HELD_OUT_PREDICTIONS.json",
+      "sha256": "c3d0c8472e38724a3dc64c4ffdfb3b92bcc5dace0f63c7bc54e0b9f9a3e6c5b1",
+      "bytes": 632470
+    },
+    {
+      "path": "INDEPENDENT_FINDING_CHECKS.json",
+      "sha256": "42af8dc0c7901da800b6a772cb1ecf66ef72f6f9a551a79497281626afade136",
+      "bytes": 59660
+    },
+    {
+      "path": "JS_REFERENCE.json",
+      "sha256": "1373bcadb98a5c9b4ca9e72ea7cd794669a4fb9f8f6048a8a8961ac835b682f6",
+      "bytes": 12690
+    },
+    {
+      "path": "MODEL_CONTRACT.json",
+      "sha256": "1731f14fa4539e36d66375c56089c1d07b56cabb0a4dcc466d664e365ffb5672",
+      "bytes": 4470
+    },
+    {
+      "path": "NUMERICAL_VALIDATION.json",
+      "sha256": "af321223b2f66008fb39bc28183552944653d9456b6bea6734e5f85374413f0e",
+      "bytes": 4934
+    },
+    {
+      "path": "PARAMETER_LEDGER.json",
+      "sha256": "b3e24832a30b8406004301a487d5cfd0c3f15e1ab1c455d25e6b1094a136bc76",
+      "bytes": 6483
+    },
+    {
+      "path": "README.md",
+      "sha256": "fa59f488bbda563022da811428e7dd66b2f5b90620d146a9856b9508e573b03d",
+      "bytes": 3306
+    },
+    {
+      "path": "REFERENCE_CASES.json",
+      "sha256": "00dbec8ef7579b8ae26abd7d192558f16c9c8c008b325fdf2bd4b2135a4256a5",
+      "bytes": 10972
+    },
+    {
+      "path": "REFINEMENT_RESULTS.json",
+      "sha256": "ea8f6255f6925675c4477cf4b6facba9dab47ea4f47b178c58217f8f8186aab2",
+      "bytes": 236144
+    },
+    {
+      "path": "REGRESSION_TESTS.json",
+      "sha256": "d6ed7fd41bd91f376da1e56e76be07cf51e72969d05f29feffe779c4ed3f6de9",
+      "bytes": 1743
+    },
+    {
+      "path": "THEOREM_PORTS.md",
+      "sha256": "d05b29fa008e7e866afb6af513d553464b323d56c681d6c4cc652bbd49db9e2c",
+      "bytes": 4647
+    },
+    {
+      "path": "UI_LOGIC_TESTS.json",
+      "sha256": "40478b1f7edb1346ee62f27f68ef88edf117ac2d3df3718a74cfd272485f33f3",
+      "bytes": 720
+    },
+    {
+      "path": "app.js",
+      "sha256": "9faa25119cccdc3ebdd1de7e7df150593ed0cbce051447efc6b8ff799168eca3",
+      "bytes": 20419
+    },
+    {
+      "path": "browser_test.js",
+      "sha256": "f074e63b592ba40862e272284437c423c0d2ed0a3e4593d092067900992ef864",
+      "bytes": 2346
+    },
+    {
+      "path": "build.py",
+      "sha256": "44371e5bae19a747f8b1a6cbf3d5a424bada48d8bf4c9d5884003612167a489f",
+      "bytes": 19267
+    },
+    {
+      "path": "campaign.js",
+      "sha256": "4f75c86e3ea4a71deb34ea357bdf5c0eb8e559cbc66a7ff8b4a9db254a7e1807",
+      "bytes": 6771
+    },
+    {
+      "path": "confirm_findings.py",
+      "sha256": "16e233ebdb770530a394ee0167fa88d6c7f49db5670075ff0d51dfd803af5aca",
+      "bytes": 1510
+    },
+    {
+      "path": "connector_tests.js",
+      "sha256": "3d10cbdead27d49675c30e295537fc5ee186829545110df5d0fd086d724d0b00",
+      "bytes": 2421
+    },
+    {
+      "path": "connectors.js",
+      "sha256": "39d57dfeb1d8ff3f579f10a4d1b667fd0d97907b0cfaa40d5eceda6e2e906e14",
+      "bytes": 4044
+    },
+    {
+      "path": "empirical.py",
+      "sha256": "d0d31d65aefaadfda7a294ca68240a71106cf6f849b4690265675ab417565b4f",
+      "bytes": 5872
+    },
+    {
+      "path": "engine.js",
+      "sha256": "f370d4e2b0b9a6a78c6f94c54e6ad7b38630ee6fb3e1bd88c3635d444a0a258f",
+      "bytes": 8532
+    },
+    {
+      "path": "lab.template.html",
+      "sha256": "e6c5cb007d581acc99334d5f388b20309bed8e7b5398e96331864cce0b541d11",
+      "bytes": 18561
+    },
+    {
+      "path": "reference.py",
+      "sha256": "abcd195365a65cfdf96b854f35065bb060162f0773ad772c39b978b6c41d4d8a",
+      "bytes": 2688
+    },
+    {
+      "path": "refine.js",
+      "sha256": "fd5073198e0c8a342db36d71bb6d967f33a3b5c956652922517f9ed0649800a4",
+      "bytes": 1078
+    },
+    {
+      "path": "tests.js",
+      "sha256": "4af9ed4949affcef7158799f538230dbeafcea685bc9130c3ee60b19f6bd2fcd",
+      "bytes": 5315
+    },
+    {
+      "path": "ui_logic_test.js",
+      "sha256": "77d15a153a8c93ec2309a790a7973e5a30b53b6a9711154ca0f3ea72847b41bf",
+      "bytes": 7710
+    },
+    {
+      "path": "upstream/LICENSE",
+      "sha256": "e57f1c320b8cf8798a7d2ff83a6f9e06a33a03585f6e065fea97f1d86db84052",
+      "bytes": 35150
+    },
+    {
+      "path": "upstream/README.md",
+      "sha256": "0720060c7b803e088eb7eb60d4bc8a78c7480890cf8b4973ce7b2848483f1b94",
+      "bytes": 584
+    },
+    {
+      "path": "upstream/data/Fig4_Data_LD12.dat",
+      "sha256": "e3e61c8833077e188a6bd69e692b4c027d7861e2952bafe013b24550ec1fa6de",
+      "bytes": 16801
+    },
+    {
+      "path": "upstream/data/Fig4_Data_LD18.dat",
+      "sha256": "5733d9df04e7e106a7527c370998b98495fd019461828b28e710fddaf2bfc2f8",
+      "bytes": 27564
+    },
+    {
+      "path": "upstream/data/Fig4_Data_LD24.dat",
+      "sha256": "19298dfd0afd3bf75d83778151511acf0c7b978b73f1dc73194cec335ea03565",
+      "bytes": 20632
+    },
+    {
+      "path": "upstream/data/Fig4_data_LD30.dat",
+      "sha256": "63e2e68faf70bf485d11916321c7935686114d1366e644e91fd254a5ca14fbb2",
+      "bytes": 22185
+    },
+    {
+      "path": "upstream/data/FigS4_Data.dat",
+      "sha256": "a52f6a004148b3fc1a649c522ac198a0d37ac780d6d2c50df35343a5476e4606",
+      "bytes": 28085
+    },
+    {
+      "path": "upstream/data/README.md",
+      "sha256": "0de1371f7c695aed5d15c3eb61519f62dd2beb81316a93c0e0f05d3d0802c89e",
+      "bytes": 1711
+    },
+    {
+      "path": "upstream/models/Heldt2019_ChlamydomonasMultipleFission.ode",
+      "sha256": "0ed530829b6afb79a959964c9d0856f1e011a3f06cca6cbb57422bdcc1bff398",
+      "bytes": 2920
+    },
+    {
+      "path": "upstream/models/Heldt2019_ChlamydomonasMultipleFission.txt",
+      "sha256": "0ac8c103ababe69774c7df826c4cb45e010e1f2db5a473e800f27f05fdb4928d",
+      "bytes": 4750
+    },
+    {
+      "path": "upstream/models/README.md",
+      "sha256": "98edf0c1f4320877a31f55930e7d643fc0cef1fe1b6b6362bb542ac30761d8b1",
+      "bytes": 1380
+    }
+  ]
+}

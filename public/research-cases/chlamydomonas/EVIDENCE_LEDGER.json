@@ -1,0 +1,60 @@
+[
+  {
+    "id": "F01",
+    "title": "Equal light time, different division outcome",
+    "status": "simulation-only; independently integrated",
+    "result": "At 48 h, 1 versus 8 descendants; both lineage volumes are 6.051571 AV.",
+    "intervention": "Initial volume 0.75 AV, growth rate 0.00145 /min; 15 min light/15 min dark versus 12 h light/12 h dark.",
+    "mechanism": "Light is used by both the growth equation and starter-kinase degradation. Equal light duration fixes total lineage volume here, but not the regulatory path.",
+    "limit": "Finite 48 h endpoint, not permanent arrest. At 96 h the independent model predicts 8 versus 64 descendants. Light is binary, not an energy accounting system.",
+    "evidence": [
+      "INDEPENDENT_FINDING_CHECKS.json",
+      "CAMPAIGN_RESULTS.json",
+      "engine.js"
+    ]
+  },
+  {
+    "id": "F02",
+    "title": "Pulse schedule shifts first division",
+    "status": "published-model reproduction",
+    "result": "Hourly flashes: 21.4275 h; 12 h day/night: 12.0379 h to first division.",
+    "limit": "Default model parameters. The underlying light-sensitive mechanism is existing prior work, not our discovery.",
+    "evidence": [
+      "BDF_REFERENCE.json"
+    ]
+  },
+  {
+    "id": "F03",
+    "title": "Growth and light sensing are distinct controls",
+    "status": "simulation-only parameter intervention",
+    "result": "Halving the light-dependent starter-kinase degradation rate advances first division by 32.291 min under day/night forcing.",
+    "limit": "No calibrated genetic manipulation or nutrient-dose interpretation is supplied.",
+    "evidence": [
+      "REFERENCE_CASES.json",
+      "BDF_REFERENCE.json"
+    ]
+  },
+  {
+    "id": "F04",
+    "title": "A hidden-state discovery disappears",
+    "status": "rejected numerical artifact",
+    "result": "A coarse 0.125-minute integration suggested a 72.680-minute effect of redistributing a complex. Independent BDF gives a first-division difference of 1.19e-06 min.",
+    "limit": "These are synthetic initial-state preparations, not wet-lab data. The negative result concerns this outcome and protocol, not every transient or all hidden state.",
+    "evidence": [
+      "CONNECTOR_TESTS.json",
+      "INDEPENDENT_FINDING_CHECKS.json"
+    ]
+  },
+  {
+    "id": "F05",
+    "title": "Growth history does not earn admission here",
+    "status": "negative held-out observational result",
+    "result": "For 3679 cells, the Brier score changes from 0.100843 to 0.104172 when growth history is added (worse).",
+    "limit": "Two of four held-out experiments improve and two worsen. This is a fixed polynomial logistic model, not proof that no use of history can help. The 277-cell different-protocol test is mixed across metrics.",
+    "evidence": [
+      "EMPIRICAL_RESULTS.json",
+      "HELD_OUT_PREDICTIONS.json",
+      "empirical.py"
+    ]
+  }
+]

@@ -6,6 +6,7 @@ import {SCIENCE_FIELDS,FIELD_GROUPS,FIELD_SOURCE} from './science-fields.ts';
 import {registeredScientificOperations} from './ledger-runtime.ts';
 import {SCIENCE_CLAIMS,FRAMEWORK_SOURCES} from './science-registry.ts';
 import {CONTRIBUTIONS} from './discovery-ledger.ts';
+import {CHLAMYDOMONAS_CASE} from './chlamydomonas-case.ts';
 export const LEDGER_VERSION='scientific-ledger/2';
 const bindings:Record<string,string[]>={
  'ordered-model':['math.projective.action','math.contraction.action'],
@@ -29,6 +30,7 @@ export function scientificLedger(){
   rooms:SCIENCE_ROOMS.map(r=>({...r,fieldIds:SCIENCE_FIELDS.filter(f=>f.room===r.id||(r.id==='astronomy'&&f.id==='1.3')).map(f=>f.id)})),devices,terms:SCIENTIFIC_TERMS,units:UNIT_REGISTRY,operations,quantityContracts:quantities,
   contributions:CONTRIBUTIONS.map(c=>({id:c.id,title:c.title,class:c.class,premises:c.premises,source:c.source,limit:c.limit})),
   claimRecords:SCIENCE_CLAIMS,claimSources:FRAMEWORK_SOURCES,
+  caseEngines:[{id:CHLAMYDOMONAS_CASE.id,href:CHLAMYDOMONAS_CASE.href,record:'/api/cases/'+CHLAMYDOMONAS_CASE.id,stateLedger:CHLAMYDOMONAS_CASE.stateLedger,execution:CHLAMYDOMONAS_CASE.execution,scope:'Separate registered case adapter; does not add an operation to the four-operation central inquiry runtime.'}],
   evidence:{claims:'/framework',claimSource:'lib/science-registry.ts',cases:'/api/cases',caseSource:'lib/research-cases.ts',corpus:'/api/discoveries',proposalWorkflow:'/framework',admission:'Editor-reviewed source revisions. AI proposals and test success cannot promote themselves to established laws.'},
   execution:{inquiry:'/api/inquiry',catalogue:'/api/inquiry',demonstration:'/api/ledger/run',runtimeSource:'lib/ledger-runtime.ts',engineSource:'lib/engine/temporal-router.ts',scope:'Four operations use shared runtime contracts. Other instruments retain existing reviewed engines; their complete contract migration is unfinished.'},
   language:{resolver:'/api/ledger/resolve',policy:'Exact controlled labels with explicit ambiguity; no keyword inference. Definitions are authored operational scopes, not imported authoritative ontology equivalences.',inspiration:['https://www.w3.org/TR/skos-reference/','https://jcgm.bipm.org/vim/en/2.3.html','https://obofoundry.org/principles/fp-006-textual-definitions.html','https://www.w3.org/TR/prov-o/']},

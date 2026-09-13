@@ -1,0 +1,87 @@
+********** MODEL NAME
+Heldt2019 - Chlamydomonas multiple-fission cycles
+
+********** MODEL NOTES
+This model is described in the article:
+A single light-responsive sizer can control multiple-fission cycles in Chlamydomonas
+Frank S. Heldt, John J. Tyson, Frederick R. Cross, Bela Novak
+
+Abstract:
+Most eukaryotic cells execute binary division after each mass doubling, in order to maintain size homeostasis by coordinating cell growth and division. By contrast, the photosynthetic green alga Chlamydomonas can grow more than eight-fold during daytime before undergoing rapid cycles of DNA replication, mitosis and cell division at night, which produce up to 16 daughter cells. Here, we propose a mechanistic model for multiple-fission cycles and cell-size control in Chlamydomonas. The model comprises a light-sensitive and size-dependent biochemical toggle switch that acts as a sizer, guarding transitions into and exit from a phase of cell-division cycle oscillations. This simple 'sizer-oscillator' arrangement reproduces the experimentally observed features of multiple-fission cycles and the response of Chlamydomonas cells to different light-dark regimes. Our model also makes specific predictions about the size dependence of the time of onset of cell division after cells are transferred from light to dark conditions, and we confirm these predictions by single-cell experiments. Collectively, our results provide a new perspective on the concept of a 'commitment point' during the growth of Chlamydomonas cells and hint at intriguing similarities of cell-size control in different eukaryotic lineages.
+
+********** MODEL STATES
+d/dt(V) = mu*V*Light
+
+d/dt(SK) = kSySk*V - (kDeSk + kDeSkLi*Light)*SK
+
+d/dt(TF) = kSyTf*V - kAsTfIn/V*IN*TF + (kDsTfIn + rPhIn + kDeIn)*INTF - kDeTf*TF
+d/dt(IN) = kSyIn   - kAsTfIn/V*IN*TF + (kDsTfIn         + kDeTf)*INTF - (rPhIn + kDeIn)*IN + kDpIn*IP
+
+d/dt(INTF) = kAsTfIn/V*IN*TF - (kDsTfIn + rPhIn + kDeIn + kDeTf)*INTF
+d/dt(IP)   = rPhIn*(IN+INTF) - (kDpIn + kDeIn)*IP
+
+d/dt(S) = kSySTf*TF*jInSM^nInSM/(jInSM^nInSM + (M/V)^nInSM) - kDeS*S
+d/dt(M) = kSyMS*S + kSyMM*M - (kDeM + kDeMA*A/V)*M
+
+V(0)  = 1
+SK(0) = 1
+
+IN(0)   = 2.6
+INTF(0) = 1
+IP(0)   = 8.6
+
+********** MODEL PARAMETERS
+Light = 1           %-  binary variable indicating the presence of light
+
+mu   = 0.0029       %1/min  specific growth rate (4h mass doubling time)
+At   = 1            %AU/AV  total antagonist concentration
+CdTh = 0.2          %AU/AV  cell division threshold (if M falls below CdTh cell division ensues)
+
+kSySk   = 0.002     %AU/(AV*min)  starter kinase synthesis
+kDeSk   = 0.002     %1/min  constitutive starter kinase degradation
+kDeSkLi = 0.038     %1/min  light-dependent starter kinase degradation
+
+kSyTf = 0.06        %AU/(AV*min)  transcription factor synthesis
+kDeTf = 0.06        %1/min  transcription factor degradation
+kSyIn = 6.1         %AU/min  inhibitor synthesis
+kDeIn = 0.5         %1/min  inhibitor degradation
+
+kAsTfIn = 500       %AV/(AU*min)  association of transcription factor and inhibitor
+kDsTfIn = 0.1       %1/min  dissociation of transcription factor-inhibitor complexes
+kPhInSk = 5.6       %AV/(AU*min)  inhibitor phosphorylation by starter kinase
+kPhInFk = 65        %AV/(AU*min)  inhibitor phosphorylation by feedback kinase
+kDpIn   = 2         %1/min  inhibitor dephosphorylation
+
+kSySTf = 0.25       %1/min  transcription factor-dependent synthesis of S
+jInSM  = 0.125      %AU/AV  half-saturation constant for inhibition of S by M
+nInSM  = 4          %-  hill exponent for inhibition of S by M
+kDeS   = 0.1        %1/min  constitutive S degradation
+
+kSyMS = 0.2         %1/min  synthesis of M promoted by S
+kSyMM = 0.06        %1/min  synthesis of M promoted by M
+kDeM  = 0.1         %1/min  constitutive M degradation
+kDeMA = 10          %AV/(AU*min)  antagonist-mediated degradation of M
+
+kPhAS = 25          %AV^n/(AU^n*min)  phosphorylation of antagonist by S
+kPhAM = 2000        %AV^n/(AU^n*min)  phosphorylation of antagonist by M
+nPhA  = 2           %-  hill exponent for antagonist phosphorylation
+kDpA  = 2           %1/min  antagonist dephosphorylation
+
+********** MODEL VARIABLES
+FK = TF                 %AU  level of feedback kinase
+
+TFt = TF + INTF         %AU  total transcription factor
+INt = IN + INTF + IP    %AU  total inhibitor
+
+A = At*V*kDpA/(kDpA + kPhAS*(S/V)^nPhA + kPhAM*(M/V)^nPhA)  %AU  active antagonist
+
+********** MODEL REACTIONS
+rPhIn = (kPhInSk*SK + kPhInFk*FK)/V     %1/min  inhibitor phosphorylation rate
+
+********** MODEL FUNCTIONS
+
+********** MODEL EVENTS
+Division = le(M/V, CdTh), V, V/2, SK, SK/2, TF, TF/2, IN, IN/2, INTF, INTF/2, IP, IP/2, S, S/2, M, M/2  % cell division occurs when M-phase cyclin drops below threshold
+
+********** MODEL MATLAB FUNCTIONS
+

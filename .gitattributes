@@ -15,3 +15,4 @@ lib/strict-json.ts -text
 tests/temporal-router/fixtures/** -text
 public/research-index/** -text
 public/research-cases/paired-damage/** -text
+public/research-cases/chlamydomonas/** -text

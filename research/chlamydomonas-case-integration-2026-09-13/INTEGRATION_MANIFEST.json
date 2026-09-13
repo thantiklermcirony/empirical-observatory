@@ -1,0 +1,446 @@
+{
+  "integration_id": "observatory-chlamydomonas-case-20260913",
+  "site_commit": "89f29f3a787a3734b83bfd31e41daa2871a398c3",
+  "site_previous_commit": "68732bc787ad530b9e132917abeea168bd1b4f79",
+  "base_commit": "781b302ab6dd413779967aec8e03ed4f50c31817",
+  "entries": [
+    {
+      "path": ".gitattributes",
+      "before_blob": "ec4fda1a3a86f55b45d95afd5604bffce155aa5a",
+      "sha256": "781df097cd6609a0ba7e9bcbc1fd3e423e757d0640e65116caeb0a8a118160f0",
+      "bytes": 696
+    },
+    {
+      "path": "app/agents/page.tsx",
+      "before_blob": "e4539455e69d5b3012667916bb801cef51b4f94d",
+      "sha256": "9661477bedf7050f10c0509fef7897ee4a2826d9c6600b5fb0bda4ed036f49fc",
+      "bytes": 7373
+    },
+    {
+      "path": "app/api/cases/route.ts",
+      "before_blob": "8b9e239f7271877992ac5063b1fbf86babf27bf5",
+      "sha256": "3653c2a3c80be27882fb051262012b2db53c4211517d53e5abab2f10d3e42911",
+      "bytes": 634
+    },
+    {
+      "path": "app/cases/chlamydomonas/page.tsx",
+      "before_blob": null,
+      "sha256": "958154dfa6cffa9aea2a8c8e3c169dd4a0c97e850dfa9c32389a81f1aa62ebb9",
+      "bytes": 380
+    },
+    {
+      "path": "app/cases/page.tsx",
+      "before_blob": null,
+      "sha256": "70912be9046b60d61f9a203185ec8b8700787e55b5813876269a8539ecc231e8",
+      "bytes": 1169
+    },
+    {
+      "path": "components/observatory/ResearchCaseEngine.tsx",
+      "before_blob": null,
+      "sha256": "b281b58e4d8ec66234d8c94f77064026f477ed8cec1b6ffe67b0a81e8e00083c",
+      "bytes": 19313
+    },
+    {
+      "path": "components/observatory/research-case-engine.css",
+      "before_blob": null,
+      "sha256": "e1ab1ac9ce5cfa215d1e85ac8261713d4869ce2e083b524662adee8e852a79e1",
+      "bytes": 9302
+    },
+    {
+      "path": "lib/case-engine-contract.ts",
+      "before_blob": null,
+      "sha256": "aa454ec126744eab6d3b083da2d615ff364c3730463da754e03900dd8744319a",
+      "bytes": 4230
+    },
+    {
+      "path": "lib/chlamydomonas-case.ts",
+      "before_blob": null,
+      "sha256": "6cdaf297344aa181f0700b9db5c04ff8a12143cf44f2a8cafd0de6bc87d12479",
+      "bytes": 6916
+    },
+    {
+      "path": "lib/observatory-catalogue.ts",
+      "before_blob": "719e554a2ee2adc27b6b8d749ef7e099726ddabe",
+      "sha256": "5ed6e980df5d05b76d06a21bbf7cf1f55b3b2f0460e9a10dd5552028cc3b9819",
+      "bytes": 20335
+    },
+    {
+      "path": "lib/observatory-guide.ts",
+      "before_blob": "09d9c0c0af4eb04c3af98609cbfa1ed2bdd15061",
+      "sha256": "89352e89947545282e4d23df3e9ca6a1203e31e3bda16c963ab3925c3d158bd8",
+      "bytes": 11816
+    },
+    {
+      "path": "lib/research-cases.ts",
+      "before_blob": "acca3c9954f7c2301afcebe83cf2b8aeca4b1985",
+      "sha256": "96b3b33d930517915ad3b81faf81738cd5b3ba78f45d7c1fb733778309f900ff",
+      "bytes": 8673
+    },
+    {
+      "path": "lib/research-knowledge.ts",
+      "before_blob": "62f8be78957c82580a64ea74c92ccafe2039b01f",
+      "sha256": "1ffde8c0b40d305a09fe8f083836217ba4224be3225390e0b95e5287eb53b271",
+      "bytes": 6379
+    },
+    {
+      "path": "lib/scientific-ledger.ts",
+      "before_blob": "20de2edc7ed7eb8b53f37adefa28d3d09b519e07",
+      "sha256": "9c01f0a60ab5eb9af6f4f09b33de0a98d2e0407e41a0a594e8e1012dc00ea175",
+      "bytes": 6462
+    },
+    {
+      "path": "package.json",
+      "before_blob": "eae8a73dc820076c54cb6f73b27c8df17bd33820",
+      "sha256": "1edf8f6c095ba9a1d5e7c823bc6d32798e670e99983297b777bf3ab60c649888",
+      "bytes": 2791
+    },
+    {
+      "path": "public/research-cases/Chlamydomonas_Observatory_Source.zip",
+      "before_blob": null,
+      "sha256": "eeeec64030172ebd2c8a127daf3441a5ad06dc4b864056e8c3fa926ecd8e57c2",
+      "bytes": 366240
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/AUDIT.md",
+      "before_blob": null,
+      "sha256": "12fac2004df4cc3a3a0294d709948ef834cd84b78463275150bd798fd19f0c2c",
+      "bytes": 1682
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/BDF_REFERENCE.json",
+      "before_blob": null,
+      "sha256": "f8ad64864204f81d7e5fa27a3f5f57971adeed828d8f54588c7dcbd53de339cd",
+      "bytes": 3251
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/BROWSER_TESTS.json",
+      "before_blob": null,
+      "sha256": "8752cebc54a1df4069377bfb5714478c7d3ecb551aa1e96bba91d14c62ff409a",
+      "bytes": 321
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/CAMPAIGN_RESULTS.json",
+      "before_blob": null,
+      "sha256": "0f9decfbce26f40beda58cb8839773eb970592a0f0ac8a8de771e56154d3c6b1",
+      "bytes": 725213
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/CONNECTOR_TESTS.json",
+      "before_blob": null,
+      "sha256": "79e21833a79a86027828f88047b60593e420cf8a7b7e0cb2faa6ce182a5a9d9a",
+      "bytes": 1292
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/Chlamydomonas_Observatory.html",
+      "before_blob": null,
+      "sha256": "1ff3a8034c03f40b117c2a42314ac572c7a0902574fbce546792f1031a08cc20",
+      "bytes": 158973
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/EMPIRICAL_RESULTS.json",
+      "before_blob": null,
+      "sha256": "60d19180c2a501cf5e7fd8169b766b63a5ef843d86af6a1fb3944d41eea9647c",
+      "bytes": 13629
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/EVIDENCE_LEDGER.json",
+      "before_blob": null,
+      "sha256": "abc7ce9a45eb8eb60050b9c1c1c3094d60b664143d068d9a8f57c7ddd3d3c96a",
+      "bytes": 2853
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/FINDINGS.md",
+      "before_blob": null,
+      "sha256": "aaf9a5fa4566636f1a6b709eb5a95c63a0d58f8af0e8ef8c605031073c1be324",
+      "bytes": 10663
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/HELD_OUT_PREDICTIONS.json",
+      "before_blob": null,
+      "sha256": "c3d0c8472e38724a3dc64c4ffdfb3b92bcc5dace0f63c7bc54e0b9f9a3e6c5b1",
+      "bytes": 632470
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/INDEPENDENT_FINDING_CHECKS.json",
+      "before_blob": null,
+      "sha256": "42af8dc0c7901da800b6a772cb1ecf66ef72f6f9a551a79497281626afade136",
+      "bytes": 59660
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/JS_REFERENCE.json",
+      "before_blob": null,
+      "sha256": "1373bcadb98a5c9b4ca9e72ea7cd794669a4fb9f8f6048a8a8961ac835b682f6",
+      "bytes": 12690
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/MANIFEST.json",
+      "before_blob": null,
+      "sha256": "220749a1cc5f3a6fa514accb3e1b2cba815df17df4998507e89e19c0f06c06ef",
+      "bytes": 7272
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/MODEL_CONTRACT.json",
+      "before_blob": null,
+      "sha256": "1731f14fa4539e36d66375c56089c1d07b56cabb0a4dcc466d664e365ffb5672",
+      "bytes": 4470
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/NUMERICAL_VALIDATION.json",
+      "before_blob": null,
+      "sha256": "af321223b2f66008fb39bc28183552944653d9456b6bea6734e5f85374413f0e",
+      "bytes": 4934
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/PARAMETER_LEDGER.json",
+      "before_blob": null,
+      "sha256": "b3e24832a30b8406004301a487d5cfd0c3f15e1ab1c455d25e6b1094a136bc76",
+      "bytes": 6483
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/README.md",
+      "before_blob": null,
+      "sha256": "fa59f488bbda563022da811428e7dd66b2f5b90620d146a9856b9508e573b03d",
+      "bytes": 3306
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/REFERENCE_CASES.json",
+      "before_blob": null,
+      "sha256": "00dbec8ef7579b8ae26abd7d192558f16c9c8c008b325fdf2bd4b2135a4256a5",
+      "bytes": 10972
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/REFINEMENT_RESULTS.json",
+      "before_blob": null,
+      "sha256": "ea8f6255f6925675c4477cf4b6facba9dab47ea4f47b178c58217f8f8186aab2",
+      "bytes": 236144
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/REGRESSION_TESTS.json",
+      "before_blob": null,
+      "sha256": "d6ed7fd41bd91f376da1e56e76be07cf51e72969d05f29feffe779c4ed3f6de9",
+      "bytes": 1743
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/STATE_RECOVERY_BDF.json",
+      "before_blob": null,
+      "sha256": "633ab881016cd266fa41b6047abe6481d9b92bfba28721ea406a77170a3fe84a",
+      "bytes": 5073
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/THEOREM_PORTS.md",
+      "before_blob": null,
+      "sha256": "d05b29fa008e7e866afb6af513d553464b323d56c681d6c4cc652bbd49db9e2c",
+      "bytes": 4647
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/UI_LOGIC_TESTS.json",
+      "before_blob": null,
+      "sha256": "40478b1f7edb1346ee62f27f68ef88edf117ac2d3df3718a74cfd272485f33f3",
+      "bytes": 720
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/app.js",
+      "before_blob": null,
+      "sha256": "9faa25119cccdc3ebdd1de7e7df150593ed0cbce051447efc6b8ff799168eca3",
+      "bytes": 20419
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/browser_test.js",
+      "before_blob": null,
+      "sha256": "f074e63b592ba40862e272284437c423c0d2ed0a3e4593d092067900992ef864",
+      "bytes": 2346
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/build.py",
+      "before_blob": null,
+      "sha256": "44371e5bae19a747f8b1a6cbf3d5a424bada48d8bf4c9d5884003612167a489f",
+      "bytes": 19267
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/campaign.js",
+      "before_blob": null,
+      "sha256": "4f75c86e3ea4a71deb34ea357bdf5c0eb8e559cbc66a7ff8b4a9db254a7e1807",
+      "bytes": 6771
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/confirm_findings.py",
+      "before_blob": null,
+      "sha256": "16e233ebdb770530a394ee0167fa88d6c7f49db5670075ff0d51dfd803af5aca",
+      "bytes": 1510
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/connector_tests.js",
+      "before_blob": null,
+      "sha256": "3d10cbdead27d49675c30e295537fc5ee186829545110df5d0fd086d724d0b00",
+      "bytes": 2421
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/connectors.js",
+      "before_blob": null,
+      "sha256": "39d57dfeb1d8ff3f579f10a4d1b667fd0d97907b0cfaa40d5eceda6e2e906e14",
+      "bytes": 4044
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/empirical.py",
+      "before_blob": null,
+      "sha256": "d0d31d65aefaadfda7a294ca68240a71106cf6f849b4690265675ab417565b4f",
+      "bytes": 5872
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/engine.js",
+      "before_blob": null,
+      "sha256": "f370d4e2b0b9a6a78c6f94c54e6ad7b38630ee6fb3e1bd88c3635d444a0a258f",
+      "bytes": 8532
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/lab.template.html",
+      "before_blob": null,
+      "sha256": "e6c5cb007d581acc99334d5f388b20309bed8e7b5398e96331864cce0b541d11",
+      "bytes": 18561
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/reference.py",
+      "before_blob": null,
+      "sha256": "abcd195365a65cfdf96b854f35065bb060162f0773ad772c39b978b6c41d4d8a",
+      "bytes": 2688
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/refine.js",
+      "before_blob": null,
+      "sha256": "fd5073198e0c8a342db36d71bb6d967f33a3b5c956652922517f9ed0649800a4",
+      "bytes": 1078
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/source-provenance.json",
+      "before_blob": null,
+      "sha256": "8dd852e0c623c20080492f571460a29e1bf46c0735d075b9c43e8463d0632150",
+      "bytes": 1420
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/tests.js",
+      "before_blob": null,
+      "sha256": "4af9ed4949affcef7158799f538230dbeafcea685bc9130c3ee60b19f6bd2fcd",
+      "bytes": 5315
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/ui_logic_test.js",
+      "before_blob": null,
+      "sha256": "77d15a153a8c93ec2309a790a7973e5a30b53b6a9711154ca0f3ea72847b41bf",
+      "bytes": 7710
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/LICENSE",
+      "before_blob": null,
+      "sha256": "e57f1c320b8cf8798a7d2ff83a6f9e06a33a03585f6e065fea97f1d86db84052",
+      "bytes": 35150
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/README.md",
+      "before_blob": null,
+      "sha256": "0720060c7b803e088eb7eb60d4bc8a78c7480890cf8b4973ce7b2848483f1b94",
+      "bytes": 584
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/data/Fig4_Data_LD12.dat",
+      "before_blob": null,
+      "sha256": "e3e61c8833077e188a6bd69e692b4c027d7861e2952bafe013b24550ec1fa6de",
+      "bytes": 16801
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/data/Fig4_Data_LD18.dat",
+      "before_blob": null,
+      "sha256": "5733d9df04e7e106a7527c370998b98495fd019461828b28e710fddaf2bfc2f8",
+      "bytes": 27564
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/data/Fig4_Data_LD24.dat",
+      "before_blob": null,
+      "sha256": "19298dfd0afd3bf75d83778151511acf0c7b978b73f1dc73194cec335ea03565",
+      "bytes": 20632
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/data/Fig4_data_LD30.dat",
+      "before_blob": null,
+      "sha256": "63e2e68faf70bf485d11916321c7935686114d1366e644e91fd254a5ca14fbb2",
+      "bytes": 22185
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/data/FigS4_Data.dat",
+      "before_blob": null,
+      "sha256": "a52f6a004148b3fc1a649c522ac198a0d37ac780d6d2c50df35343a5476e4606",
+      "bytes": 28085
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/data/README.md",
+      "before_blob": null,
+      "sha256": "0de1371f7c695aed5d15c3eb61519f62dd2beb81316a93c0e0f05d3d0802c89e",
+      "bytes": 1711
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/models/Heldt2019_ChlamydomonasMultipleFission.ode",
+      "before_blob": null,
+      "sha256": "0ed530829b6afb79a959964c9d0856f1e011a3f06cca6cbb57422bdcc1bff398",
+      "bytes": 2920
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/models/Heldt2019_ChlamydomonasMultipleFission.txt",
+      "before_blob": null,
+      "sha256": "0ac8c103ababe69774c7df826c4cb45e010e1f2db5a473e800f27f05fdb4928d",
+      "bytes": 4750
+    },
+    {
+      "path": "public/research-cases/chlamydomonas/upstream/models/README.md",
+      "before_blob": null,
+      "sha256": "98edf0c1f4320877a31f55930e7d643fc0cef1fe1b6b6362bb542ac30761d8b1",
+      "bytes": 1380
+    },
+    {
+      "path": "public/research-cases/runtime/case-core.mjs",
+      "before_blob": null,
+      "sha256": "94e9dc448461cb3c8b900279745f8a056c900543818921fc1214c209a5f07e12",
+      "bytes": 1502
+    },
+    {
+      "path": "public/research-cases/runtime/chlamydomonas-runner.mjs",
+      "before_blob": null,
+      "sha256": "c97446b8c139d95b8d567561bf2adbd64b346a483af580a54339ad1ded11fbac",
+      "bytes": 18807
+    },
+    {
+      "path": "public/research-cases/runtime/chlamydomonas-worker.mjs",
+      "before_blob": null,
+      "sha256": "c7a1a137c24cd947e2273f68a1c5ed7f61ac857b262787c9a09c1b1ac2cf13ff",
+      "bytes": 1391
+    },
+    {
+      "path": "public/research-cases/runtime/reproduce-state.py",
+      "before_blob": null,
+      "sha256": "d80f5e411425d0598eaf5447d9f81d6faa7514b0a20d01fda480889a40c3a756",
+      "bytes": 2150
+    },
+    {
+      "path": "research/Research_Case_Engine.md",
+      "before_blob": null,
+      "sha256": "eb299a1312bdb0742de758c787034b037893c746af2d00192e0dfc2131118382",
+      "bytes": 8026
+    },
+    {
+      "path": "research/case-engine/verification.json",
+      "before_blob": null,
+      "sha256": "d1e5b3d12cd3ba9654d1e06305e69a41ada9248e89b007c40e1807bdefd253db",
+      "bytes": 8064
+    },
+    {
+      "path": "tests/case-engine.test.mjs",
+      "before_blob": null,
+      "sha256": "1249ba26fadc0287ed045a26ff9a1c52097b058577634b0554aeea93c4d0ef5e",
+      "bytes": 4068
+    },
+    {
+      "path": "tests/research-cases.test.ts",
+      "before_blob": "cd439206948d2c50ad2cbeda5c8742faf695351f",
+      "sha256": "5b727526e93fd3f4d87fbb8c7e8dc40e36b2f13746dabd236ec9ed78a3e3d278",
+      "bytes": 3456
+    }
+  ]
+}

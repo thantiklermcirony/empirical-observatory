@@ -1,0 +1,78 @@
+{
+  "passed": 18,
+  "failed": 0,
+  "results": [
+    {
+      "name": "All 27 defaults match source text exactly",
+      "pass": true
+    },
+    {
+      "name": "Zero volume is rejected, not silently reset",
+      "pass": true
+    },
+    {
+      "name": "Negative initial amount rejected",
+      "pass": true
+    },
+    {
+      "name": "Zero step rejected",
+      "pass": true
+    },
+    {
+      "name": "Unknown and prototype-name parameters rejected",
+      "pass": true
+    },
+    {
+      "name": "Nonfinite schedule rejected",
+      "pass": true
+    },
+    {
+      "name": "Overlong experiment rejected",
+      "pass": true
+    },
+    {
+      "name": "Gapped forcing rejected",
+      "pass": true
+    },
+    {
+      "name": "Subminute pulses rejected",
+      "pass": true
+    },
+    {
+      "name": "Zero and full-duty schedules become darkness and light",
+      "pass": true
+    },
+    {
+      "name": "Default day/night forcing has exactly 24 h of light",
+      "pass": true
+    },
+    {
+      "name": "Four exact total-pool updates match closed forms",
+      "pass": true
+    },
+    {
+      "name": "Current engine recomputed against all independent reference cases",
+      "pass": true
+    },
+    {
+      "name": "Recomputed fine light timing contrast is 1 versus 8",
+      "pass": true
+    },
+    {
+      "name": "Previously spurious hidden-state result is absent at display resolution",
+      "pass": true
+    },
+    {
+      "name": "Measured area is not admitted as modeled volume",
+      "pass": true
+    },
+    {
+      "name": "Brier results recompute independently from every held-out record",
+      "pass": true
+    },
+    {
+      "name": "Full coarse and refined grids contain the same 1000 cases",
+      "pass": true
+    }
+  ]
+}
