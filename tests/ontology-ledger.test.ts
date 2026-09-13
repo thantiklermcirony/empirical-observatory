@@ -3,8 +3,16 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
-import {normalizeOntologyText,ontologyHash,readOntologyRecord,searchOntology,selectOntologyRows,safeOntologyUrl,type SearchRow} from '../lib/ontology-browser.ts';
+import {normalizeOntologyText,ontologyHash,readOntologyRecord,searchOntology,selectOntologyRows,safeOntologyUrl,verifyOntologyBytes,ontologyAssetUrl,type SearchRow} from '../lib/ontology-browser.ts';
 const root=new URL('../public',import.meta.url);
+void test('Hosted data routing permits only pinned files; a changed byte is rejected',async()=>{
+ const path='/ledger-data/records/00.json.gz';const b=new Uint8Array(readFileSync(new URL('../public'+path,import.meta.url)));
+ await verifyOntologyBytes(path,b);await verifyOntologyBytes(path,new Uint8Array(gunzipSync(b)));
+ const altered=b.slice();altered[20]^=1;await assert.rejects(()=>verifyOntologyBytes(path,altered),/integrity/);
+ await assert.rejects(()=>verifyOntologyBytes('/ledger-data/records/unknown.json.gz',b),/Unregistered/);
+ assert.match(ontologyAssetUrl(path),/^https:\/\/raw\.githubusercontent\.com\/thantiklermcirony\/empirical-observatory\/[a-f0-9]{40}\/public\/ledger-data\/records\/00\.json\.gz$/);
+ for(const bad of ['/ledger-data/../secrets','/ledger-data/sources/unknown.gz','/ledger-data/__proto__','https://example.org/'])assert.throws(()=>ontologyAssetUrl(bad),/Unregistered/);
+});
 const read=async(path:string)=>{const b=readFileSync(new URL('.'+path,root+'/'));return JSON.parse((path.endsWith('.gz')?gunzipSync(b):b).toString('utf8'));};
 void test('Labels with identical spelling preserve separate scientific identifiers',()=>{
  const rows:SearchRow[]=[['entropy','one','a','Entropy',false],['entropy','two','b','Entropy',false],['entropy','one','b','Entropy',false],['entropy','old','a','Obsolete entropy',true]];
@@ -25,7 +33,7 @@ void test('Every compiled shard matches the content integrity ledger',()=>{
 });
 void test('Every original capture decompresses to its pinned scientific source bytes',()=>{
  const m=JSON.parse(readFileSync(new URL('../public/ledger-data/manifest.json',import.meta.url),'utf8'));
- for(const s of m.sources){const b=readFileSync(new URL('.'+s.captureDownload,root+'/'));const original=s.captureDownload.endsWith('.gz')?gunzipSync(b):b;assert.equal(original.length,s.bytes,s.id);assert.equal(createHash('sha256').update(original).digest('hex'),s.sha256,s.id);assert.ok(!s.resolvedUrl.includes('?'),'No expiring redirect tokens in public provenance.');}
+ for(const s of m.sources){const b=readFileSync(new URL('.'+(s.localCaptureDownload??s.captureDownload),root+'/'));const original=s.captureDownload.endsWith('.gz')?gunzipSync(b):b;assert.equal(original.length,s.bytes,s.id);assert.equal(createHash('sha256').update(original).digest('hex'),s.sha256,s.id);assert.ok(!s.resolvedUrl.includes('?'),'No expiring redirect tokens in public provenance.');}
 });
 void test('All identifiers and source record totals reconcile without label-based merging',()=>{
  const m=JSON.parse(readFileSync(new URL('../public/ledger-data/manifest.json',import.meta.url),'utf8'));const integrity=JSON.parse(readFileSync(new URL('../public/ledger-data/integrity.json',import.meta.url),'utf8'));let iris=0,assertions=0,relations=0;const counts=new Map<string,number>();
@@ -34,7 +42,7 @@ void test('All identifiers and source record totals reconcile without label-base
 });
 void test('Manifest totals preserve provenance and admit zero new operations',()=>{
  const m=JSON.parse(readFileSync(new URL('../public/ledger-data/manifest.json',import.meta.url),'utf8'));assert.ok(m.totals.sources>=25);assert.ok(m.totals.distinctIris>100000);assert.equal(m.totals.newExecutableOperations,0);assert.equal(m.sources.reduce((n:number,s:{counts:{records:number}})=>n+s.counts.records,0),m.totals.sourceRecords);
- for(const s of m.sources){assert.match(s.sha256,/^[a-f0-9]{64}$/);assert.ok(s.license.url);assert.ok(s.attribution);assert.ok(s.captureDownload.startsWith('/ledger-data/sources/'));}
+ for(const s of m.sources){assert.match(s.sha256,/^[a-f0-9]{64}$/);assert.ok(s.license.url);assert.ok(s.attribution);assert.match(s.captureDownload,/^https:\/\/raw\.githubusercontent\.com\/thantiklermcirony\/empirical-observatory\/[a-f0-9]{40}\/public\/ledger-data\/sources\//);assert.ok(s.localCaptureDownload.startsWith('/ledger-data/sources/'));}
  assert.equal(m.sources.find((s:{id:string})=>s.id==='uat').license.label,'CC BY-SA 3.0');
 });
 void test('Real scientific queries load indexed concepts, with exact source records',async()=>{

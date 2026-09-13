@@ -1,6 +1,6 @@
 {
   "schema": "observatory-vocabulary-audit/1",
-  "generatedAt": "2026-09-13T02:08:29.214Z",
+  "generatedAt": "2026-09-13T02:40:12.550Z",
   "scope": {
     "collections": 32,
     "distinctIris": 306635,
@@ -10,7 +10,7 @@
     "exhaustive": false
   },
   "inputs": {
-    "manifestSha256": "9cdae80acddb0ddda1a36bc3c4e670d2cc8492925e2aacb10b937eeca9b845f7",
+    "manifestSha256": "0a7c94bf9f5be1effcc2d14e5f174df43fa863988543ddd52e26a7711370d7f1",
     "integritySha256": "a5b9e7c513913b597a93685d42a417779840a06a059501c8109b1c5ad28d1280"
   },
   "method": {
