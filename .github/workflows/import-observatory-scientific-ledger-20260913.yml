@@ -28,11 +28,11 @@ jobs:
           python - <<'PY'
           import hashlib, io, json, pathlib, subprocess, zipfile
           data = pathlib.Path('research/scientific-ledger-integration-2026-09-13/Observatory_Scientific_Ledger_20260913.zip').read_bytes()
-          assert len(data) == 53695
-          assert hashlib.sha256(data).hexdigest() == 'c47b4cf3d44db3610bec2b9737b3dd00e97edaadbaaadeead32e2b25e3abe4ed'
+          assert len(data) == 53940
+          assert hashlib.sha256(data).hexdigest() == 'db9c59d2702c716a26623c12db5b5f20b54d2cd14e7012c12b47577a4bbe2a14'
           archive = zipfile.ZipFile(io.BytesIO(data))
           manifest = json.loads(archive.read('INTEGRATION_MANIFEST.json'))
-          assert manifest['site_commit'] == '5bde3a3d764d157b654ad7051e2f07e21480b4f2'
+          assert manifest['site_commit'] == 'd8b81f91370a062971086554cd08ab39512a8377'
           assert manifest['site_previous_commit'] == '311bde285e671fe677a5ea6e11300b200fefb99d'
           assert manifest['base_commit'] == '4aa9ad92c4cbf663146a500feb88396ace884b5b'
           subprocess.run(['git','merge-base','--is-ancestor',manifest['base_commit'],'HEAD'],check=True)
@@ -43,7 +43,7 @@ jobs:
           assert len(names) == len(entries)
           assert set(archive.namelist()) == names | {'INTEGRATION_MANIFEST.json'}
           root = pathlib.Path.cwd().resolve()
-          allowed = {'components/observatory/ScientificSchematic.tsx', 'app/llms.txt/route.ts', 'lib/scientific-vocabulary.ts', 'lib/observatory-guide.ts', 'components/observatory/LedgerReceipt.tsx', 'lib/ledger-revision.ts', 'package.json', 'lib/science-fields.ts', 'lib/lab-engine.ts', 'lib/scientific-ledger.ts', 'components/observatory/LaboratoryIdentity.tsx', 'lib/observatory-catalogue.ts', 'app/api/catalogue/route.ts', 'public/images/room-agriculture-blueprint.svg', 'app/api/ledger/resolve/route.ts', 'public/images/room-language-blueprint.svg', 'research/Scientific_Ledger_Protocol.md', 'lib/ledger-runtime.ts', 'tests/scientific-ledger.test.ts', 'components/observatory/scientific-schematic.css', 'app/api/ledger/run/route.ts', 'app/api/ledger/route.ts', 'app/schematic/page.tsx', 'public/images/room-medicine-blueprint.svg', 'components/observatory/ScienceRoom.tsx'}
+          allowed = {'app/llms.txt/route.ts', 'app/api/catalogue/route.ts', 'lib/observatory-catalogue.ts', 'app/api/ledger/route.ts', 'public/images/room-language-blueprint.svg', 'components/observatory/scientific-schematic.css', 'components/observatory/LedgerReceipt.tsx', 'lib/ledger-runtime.ts', 'lib/scientific-vocabulary.ts', 'app/api/ledger/resolve/route.ts', 'components/observatory/ScientificSchematic.tsx', 'tests/scientific-ledger.test.ts', 'research/Scientific_Ledger_Protocol.md', 'lib/ledger-revision.ts', 'app/schematic/page.tsx', 'lib/observatory-guide.ts', 'app/api/ledger/run/route.ts', 'lib/science-fields.ts', 'package.json', 'components/observatory/LaboratoryIdentity.tsx', 'public/images/room-agriculture-blueprint.svg', 'lib/lab-engine.ts', 'components/observatory/ScienceRoom.tsx', 'lib/scientific-ledger.ts', 'public/images/room-medicine-blueprint.svg'}
           prefixes = ()
           validated = []
           for entry in entries:
