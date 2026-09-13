@@ -1,0 +1,191 @@
+{
+  "schema": "observatory-case-integration-check/1",
+  "runs": [
+    {
+      "request": {
+        "experiment": "timing",
+        "hours": 48,
+        "slots": 6
+      },
+      "classification": "supported-model-pattern",
+      "gates": [
+        {
+          "id": "resolution-0",
+          "label": "Step refinement · schedule 1",
+          "status": "pass",
+          "detail": "dt 0.0625 → 0.03125 min; same event count and every event within 1.5 min."
+        },
+        {
+          "id": "reference-0",
+          "label": "Independent BDF reference · schedule 1",
+          "status": "pass",
+          "detail": "Event counts 0/0; maximum event-time difference 0.000000 min; maximum scaled final-state error 0.001194. Required: event difference < 1.5 min and scaled state error < 0.05. Preserved independent BDF reference; not executed by the browser."
+        },
+        {
+          "id": "resolution-1",
+          "label": "Step refinement · schedule 2",
+          "status": "pass",
+          "detail": "dt 0.0625 → 0.03125 min; same event count and every event within 1.5 min."
+        },
+        {
+          "id": "reference-1",
+          "label": "Independent BDF reference · schedule 2",
+          "status": "pass",
+          "detail": "Event counts 3/3; maximum event-time difference 0.900002 min; maximum scaled final-state error 0.000000. Required: event difference < 1.5 min and scaled state error < 0.05. Preserved independent BDF reference; not executed by the browser."
+        },
+        {
+          "id": "equal-input",
+          "label": "Equal accumulated light and lineage volume",
+          "status": "pass",
+          "detail": "24 light hours in each schedule; no energy calibration."
+        },
+        {
+          "id": "identity",
+          "label": "Growth and division identities",
+          "status": "pass",
+          "detail": "Maximum relative volume error < 1e-8; absolute partition error < 1e-9."
+        }
+      ],
+      "finding": "At 48 hours, the two schedules give 1 and 8 represented descendants, with the same accumulated light and approximately 6.051571 AV of lineage volume. Timing changes division in this model. The 96-hour extension checks delay rather than permanent arrest.",
+      "receiptSha256": "ddb280bfe3bacc0075a3e8a1e2d36321e18b5303622d79894ad3724dfcbfd651",
+      "createdAt": "2026-09-13T10:32:19.460Z",
+      "candidates": null
+    },
+    {
+      "request": {
+        "experiment": "artifact",
+        "hours": 48,
+        "slots": 6
+      },
+      "classification": "rejected-numerical-artifact",
+      "gates": [
+        {
+          "id": "reference",
+          "label": "Both trajectories match independent BDF",
+          "status": "pass",
+          "detail": "Same event count; every event within 1.5 min and scaled state error < 0.05."
+        },
+        {
+          "id": "identity",
+          "label": "Declared identities preserved",
+          "status": "pass",
+          "detail": "Growth and symmetric division checks."
+        },
+        {
+          "id": "artifact",
+          "label": "Coarse apparent effect is absent at fine resolution",
+          "status": "pass",
+          "detail": "The difference must be below 0.01 min at dt 0.03125 min."
+        }
+      ],
+      "finding": "The first-division difference changes from 72.680 minutes at the coarse step to 0.000002 minutes at the fine step. This witness does not support the original hidden-state claim. It does not show that hidden state is generally irrelevant.",
+      "receiptSha256": "b7b9439fe864d866d592c6344bece55a44b6efb0be04e5e976baa3d391f56b7e",
+      "createdAt": "2026-09-13T10:32:20.803Z",
+      "candidates": null
+    },
+    {
+      "request": {
+        "experiment": "empirical",
+        "hours": 48,
+        "slots": 6
+      },
+      "classification": "candidate-prediction-failed",
+      "gates": [
+        {
+          "id": "reproduction",
+          "label": "Reproduces the frozen held-out scores",
+          "status": "pass",
+          "detail": "All 3,679 rows; numerical score tolerance 1e-12."
+        },
+        {
+          "id": "benefit",
+          "label": "Added history improves pooled Brier score",
+          "status": "fail",
+          "detail": "Lower Brier score is better. This is a descriptive replay of an already explored dataset, not a fresh confirmatory test."
+        }
+      ],
+      "finding": "Adding the four-hour area-growth history makes pooled Brier score 3.30% worse: 0.100843 → 0.104172. The extra dial does not earn predictive value overall in these frozen predictions.",
+      "receiptSha256": "b0649e49f562f5ae11259cd18c85b590a5af7dad47a31a64aa69bdd042502567",
+      "createdAt": "2026-09-13T10:32:20.824Z",
+      "candidates": null
+    },
+    {
+      "request": {
+        "experiment": "state",
+        "hours": 48,
+        "slots": 6
+      },
+      "classification": "model-state-insufficiency-witness",
+      "gates": [
+        {
+          "id": "identity",
+          "label": "Declared volume identity across the search",
+          "status": "pass",
+          "detail": "Maximum relative error 3.186e-13"
+        },
+        {
+          "id": "witness",
+          "label": "Equal visible measurements; different future outcomes",
+          "status": "pass",
+          "detail": "100 qualifying history pairs in 20 histories. Same volume, generation and integrated light; identical 24-hour dark future."
+        },
+        {
+          "id": "refinement",
+          "label": "The selected future split survives refinement",
+          "status": "pass",
+          "detail": "Recompute preparation AND future at dt 0.0625 and 0.03125 min. No substitution of coarse checkpoint states."
+        },
+        {
+          "id": "independent",
+          "label": "Selected pair matches independent BDF rerun",
+          "status": "pass",
+          "detail": "Original eight ODEs independently integrated in Python; preserved reference, not browser BDF execution."
+        },
+        {
+          "id": "predictive",
+          "label": "Selected hidden dial improves over volume on untouched histories",
+          "status": "pass",
+          "detail": "Feature and threshold chosen on development histories only; every third ordered history held out. Small deterministic synthetic set, not biological validation."
+        },
+        {
+          "id": "recency",
+          "label": "Hidden dial adds value beyond elapsed-darkness baseline",
+          "status": "fail",
+          "detail": "A tie or worse score does not establish a need to measure hidden chemistry. Qualifying pairs share trajectories and are not independent replications."
+        }
+      ],
+      "finding": "The search found 100 pairs whose checkpoint volume, generation and accumulated light match but whose division occurrence differs under the same next 24 hours of darkness. The selected hidden predictor is IN/V. An explicit time-since-light baseline scores 0.0142 Brier versus 0.0142 for that hidden dial; lower is better. This tests missing information, not a unique minimum state or a new biological mechanism.",
+      "receiptSha256": "6883033525266e13f7a4d27ac6f7e6922091e8980bde1ae5e759fed359a48c5a",
+      "createdAt": "2026-09-13T10:32:35.713Z",
+      "candidates": [
+        {
+          "feature": "volume",
+          "threshold": null,
+          "left": 0.4666666666666667,
+          "right": 0.4666666666666667,
+          "trainingBrier": 0.24854700854700848,
+          "testN": 7,
+          "testBrier": 0.2558730158730159
+        },
+        {
+          "feature": "elapsedDarkHours",
+          "threshold": 2,
+          "left": 0.1111111111111111,
+          "right": 0.875,
+          "trainingBrier": 0.013859211775878443,
+          "testN": 7,
+          "testBrier": 0.014219576719576719
+        },
+        {
+          "feature": "IN/V",
+          "threshold": 2.995438025521853,
+          "left": 0.875,
+          "right": 0.1111111111111111,
+          "trainingBrier": 0.013859211775878443,
+          "testN": 7,
+          "testBrier": 0.014219576719576719
+        }
+      ]
+    }
+  ]
+}

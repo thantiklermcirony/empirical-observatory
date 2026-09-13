@@ -1,0 +1,20 @@
+{
+  "schema": "observatory-case-source/1",
+  "sourceCommit": "ab87e1314e27239d763e9cab188291e01b153574",
+  "source": "https://github.com/novakgroupoxford/2019_Heldt_et_al/tree/ab87e1314e27239d763e9cab188291e01b153574",
+  "sourceArchive": "/research-cases/Chlamydomonas_Observatory_Source.zip",
+  "archiveSha256": "eeeec64030172ebd2c8a127daf3441a5ad06dc4b864056e8c3fa926ecd8e57c2",
+  "preservedFiles": 46,
+  "assets": {
+    "engine.js": "f370d4e2b0b9a6a78c6f94c54e6ad7b38630ee6fb3e1bd88c3635d444a0a258f",
+    "MANIFEST.json": "220749a1cc5f3a6fa514accb3e1b2cba815df17df4998507e89e19c0f06c06ef",
+    "INDEPENDENT_FINDING_CHECKS.json": "42af8dc0c7901da800b6a772cb1ecf66ef72f6f9a551a79497281626afade136",
+    "STATE_RECOVERY_BDF.json": "633ab881016cd266fa41b6047abe6481d9b92bfba28721ea406a77170a3fe84a",
+    "CONNECTOR_TESTS.json": "79e21833a79a86027828f88047b60593e420cf8a7b7e0cb2faa6ce182a5a9d9a",
+    "HELD_OUT_PREDICTIONS.json": "c3d0c8472e38724a3dc64c4ffdfb3b92bcc5dace0f63c7bc54e0b9f9a3e6c5b1",
+    "EMPIRICAL_RESULTS.json": "60d19180c2a501cf5e7fd8169b766b63a5ef843d86af6a1fb3944d41eea9647c",
+    "MODEL_CONTRACT.json": "1731f14fa4539e36d66375c56089c1d07b56cabb0a4dcc466d664e365ffb5672",
+    "THEOREM_PORTS.md": "d05b29fa008e7e866afb6af513d553464b323d56c681d6c4cc652bbd49db9e2c",
+    "upstream/models/Heldt2019_ChlamydomonasMultipleFission.txt": "0ac8c103ababe69774c7df826c4cb45e010e1f2db5a473e800f27f05fdb4928d"
+  }
+}

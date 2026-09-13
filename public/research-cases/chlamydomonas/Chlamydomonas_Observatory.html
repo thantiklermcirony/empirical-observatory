@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Observatory — Chlamydomonas Lab</title>
+<style>
+:root{color-scheme:dark;--bg:#071716;--card:#0e2523;--line:#294541;--ink:#e6f1e9;--muted:#abc4bb;--green:#9be6b2;--violet:#c9b5fc;--gold:#ecc685}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,select{font:inherit}button,select{background:#16332f;color:var(--ink);border:1px solid #40615a;border-radius:8px;padding:9px 12px}button{cursor:pointer}button:hover,button:focus-visible{border-color:var(--green)}button:disabled{cursor:wait;opacity:.6}a{color:var(--green)}header{padding:24px 4vw 18px;border-bottom:1px solid var(--line);display:flex;gap:20px;align-items:center;justify-content:space-between}.brand{letter-spacing:.18em;font-size:12px;color:var(--green)}.status{border:1px solid #5c6344;color:var(--gold);padding:6px 12px;border-radius:20px;font-size:12px}main{max-width:1500px;margin:auto;padding:26px 4vw}h1{font:500 clamp(28px,3.3vw,44px)/1.12 Georgia,serif;margin:10px 0}h2{font-size:18px;font-weight:500;margin:0 0 12px}h3{font-size:15px;margin:0 0 8px}p{margin:8px 0 14px}.intro{max-width:900px;margin-bottom:24px;color:var(--muted)}.intro strong{color:var(--ink)}.workspace{display:grid;grid-template-columns:245px 1fr;gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}.controls{padding:20px;align-self:start}.control{margin-bottom:15px}.control label{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);gap:8px}.control select{width:100%;margin-top:7px;font-size:13px}.control input[type=range]{width:100%;accent-color:var(--green);margin:8px 0 0}.control output{color:var(--ink);font-variant-numeric:tabular-nums}.primary{background:var(--green);color:#0b2920;font-weight:650;width:100%}.small{font-size:12px;color:var(--muted)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.tabs button[aria-selected=true]{background:#d0ead7;color:#102c22;border-color:#d0ead7}.tabs button{font-size:13px}.pane[hidden]{display:none}.scene-head{display:flex;justify-content:space-between;gap:10px;padding:18px 20px 0}.clock{font:28px Georgia,serif;color:var(--green);white-space:nowrap}.eyebrow{font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:14px 20px;border-bottom:1px solid var(--line)}.metric strong{display:block;font-size:20px;font-weight:500;color:var(--green)}.metric span{font-size:11px;color:var(--muted)}canvas{display:block;width:100%}#tank{height:290px}#trace{height:220px}#network{height:390px}.transport{padding:12px 20px;display:flex;gap:12px;align-items:center;border-top:1px solid var(--line)}.transport input{flex:1;min-width:45px;accent-color:var(--green)}.transport select{padding:6px;font-size:12px}.scene-note{padding:0 20px 13px;color:var(--muted);font-size:11px}.chart-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:15px 20px 0;border-top:1px solid var(--line)}.chart-head select{padding:5px 7px;font-size:12px;max-width:60%}.finding{border-left:3px solid var(--green);padding:12px 16px;background:#173730;margin:15px 0;color:var(--ink)}.finding p{margin:0}.quickplays{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}.quick{padding:17px;text-align:left;border-color:var(--line);background:#102824;min-height:145px}.quick span{display:block;color:var(--green);font-size:11px;letter-spacing:.1em;margin-bottom:10px}.quick strong{font-weight:550;display:block;line-height:1.3}.quick small{display:block;color:var(--muted);margin-top:7px;line-height:1.4}.section-heading{margin-top:30px}.explain{padding:22px}.explain p{color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:11px 8px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--muted);font-weight:500}td.num{text-align:right;font-variant-numeric:tabular-nums}.scroll{overflow-x:auto}.pill{padding:3px 7px;border-radius:5px;background:#223e33;color:var(--green);font-size:11px;white-space:nowrap}.pill.amber{color:var(--gold);background:#3f3828}.pill.gray{color:#c7c9c7;background:#343b39}.legend{display:flex;gap:16px;font-size:12px;color:var(--muted);padding:0 20px}.legend .b{color:var(--violet)}.legend .a{color:var(--green)}#notice{min-height:22px;color:var(--muted);font-size:12px;margin-top:9px}.actions{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}.actions button{font-size:12px}details{border-top:1px solid var(--line);margin-top:18px;padding-top:12px}summary{cursor:pointer;color:var(--muted);font-size:13px}.params{display:grid;grid-template-columns:1fr 90px;gap:8px;align-items:center;margin:12px 0;font-size:12px}.params input{width:100%;min-width:0;background:#091c19;border:1px solid var(--line);border-radius:4px;padding:4px;color:var(--ink)}.rate-note{font-size:11px;color:var(--gold)}.node-picker{display:flex;gap:12px;align-items:center;padding:0 20px}.node-picker select{flex:1}.node-detail{padding:18px 20px}.node-detail code{display:block;white-space:normal;color:var(--green);font-size:13px;margin:10px 0}.missing-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.missing-grid article{border:1px solid var(--line);border-radius:9px;padding:15px}.missing-grid p{font-size:13px;margin-bottom:0}footer{padding:24px 0 10px;font-size:12px;color:var(--muted)}.alert{color:#ffcfb3!important}.file-input{display:none}.testline{display:flex;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-top:18px}.testline b{color:var(--ink);font-weight:500}
+@media(max-width:1000px){main{padding:24px}.workspace{grid-template-columns:220px 1fr}.quickplays{grid-template-columns:repeat(3,1fr)}.metrics{grid-template-columns:repeat(2,1fr)}}@media(max-width:720px){header{padding:18px}.workspace{grid-template-columns:1fr}.controls{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}.controls h2,.controls .primary,.controls #notice,.controls details,.controls .actions{grid-column:1/-1}.quickplays{grid-template-columns:1fr 1fr}.missing-grid{grid-template-columns:1fr}.clock{font-size:23px}.transport{padding:10px;gap:6px}main{padding:18px}.chart-head{padding:12px 10px 0}#tank{height:270px}}
+</style></head><body>
+<header><div class="brand">OBSERVATORY / BIOLOGY 01</div><div class="status">Research sandbox · not a complete organism</div></header>
+<main><div class="eyebrow">Digital organism challenge · candidate v0.1</div><h1>One cell. Many possible futures.</h1>
+<p class="intro"><strong>Chlamydomonas reinhardtii.</strong> Change the light, follow the regulatory switch, watch growth become division. A published model and real single-cell measurements live here as separate, inspectable evidence.</p>
+<div class="workspace"><aside class="controls card"><h2>Experiment controls</h2>
+<div class="control"><label for="mode">Light programme</label><select id="mode"><option value="daynight">Day / night</option><option value="pulse">Repeated flashes</option><option value="light">Constant light</option><option value="dark">Constant darkness</option><option value="single">One light pulse</option></select></div>
+<div class="control"><label for="hours">Duration <output id="hoursOut">48 h</output></label><input id="hours" type="range" min="12" max="72" step="12" value="48"></div>
+<div class="control"><label for="volume">Initial volume <output id="volumeOut">1 AV</output></label><input id="volume" type="range" min=".5" max="2" step=".25" value="1"></div>
+<div class="control"><label for="lightHours">Light / day or single pulse <output id="lightHoursOut">12 h</output></label><input id="lightHours" type="range" min="0" max="24" step="1" value="12"></div>
+<div class="control"><label for="period">Flash cycle</label><select id="period"><option value=".5">30 minutes</option><option value="1">1 hour</option><option value="2">2 hours</option><option value="4">4 hours</option><option value="6">6 hours</option><option value="8">8 hours</option><option value="12">12 hours</option><option value="24" selected>24 hours</option></select></div>
+<div class="control"><label for="duty">Flash time in light <output id="dutyOut">50%</output></label><input id="duty" type="range" min="0" max="1" step=".05" value=".5"></div>
+<div class="control"><label for="growth">Growth-rate multiplier <output id="growthOut">1×</output></label><input id="growth" type="range" min="0" max="1.5" step=".25" value="1"></div>
+<div class="control"><label for="sensor">Light-sensing multiplier <output id="sensorOut">1×</output></label><input id="sensor" type="range" min="0" max="2" step=".25" value="1"></div>
+<button class="primary" id="run">Run experiment</button><div id="notice" role="status" aria-live="polite">Ready.</div>
+<div class="actions"><button id="save">Export run</button><button id="import">Import run</button><button id="reset">Reset</button><input class="file-input" id="file" type="file" accept="application/json,.json"></div>
+<details><summary>All 27 rate and threshold dials</summary><p class="rate-note">These are model parameters in arbitrary units. They are not calibrated nutrient, drug or gene doses. Extreme values can invalidate the model.</p><div id="params" class="params"></div><button id="applyRates">Run with these rates</button></details>
+<details><summary>Custom light schedule</summary><p class="small">Ordered segments, in minutes. Light is 0 or 1. No gaps or overlaps. This overrides the light-programme controls and defines the run duration.</p><textarea id="schedule" aria-label="Custom schedule JSON" rows="7" style="width:100%;background:#0a1f1b;color:#dceee1;border:1px solid #456157;border-radius:6px;font:12px monospace;padding:6px">[{"start":0,"end":720,"light":1},{"start":720,"end":1440,"light":0}]</textarea><button id="applySchedule">Run this schedule</button></details>
+</aside><section><nav class="tabs" role="tablist"><button role="tab" aria-selected="true" data-pane="life">Life cycle</button><button role="tab" aria-selected="false" data-pane="links">Connections</button><button role="tab" aria-selected="false" data-pane="evidence">Real-data test</button><button role="tab" aria-selected="false" data-pane="gaps">Missing biology</button></nav>
+<div id="finding" class="finding"><p>Start with a day/night cycle, or choose a paired experiment below. Controls change the model; the timeline changes only what you see.</p></div>
+<section class="pane card" id="life"><div class="scene-head"><div><div class="eyebrow">Asexual growth & division</div><h2 id="runTitle">12-hour day / 12-hour night</h2></div><div class="clock" id="clock">0.0 h</div></div>
+<div class="metrics"><div class="metric"><strong id="cellCount">1</strong><span>represented descendants, A</span></div><div class="metric"><strong id="cellVolume">1.000</strong><span>volume per cell, A (AV)</span></div><div class="metric"><strong id="totalVolume">1.000</strong><span>total lineage volume, A (AV)</span></div><div class="metric"><strong id="lightDose">0.0 h</strong><span>accumulated light time, A</span></div></div>
+<canvas id="tank" aria-label="Schematic cells sized by model volume"></canvas><div class="legend"><span class="a" id="labelA">A · your experiment</span><span class="b" id="labelB"></span></div>
+<div class="transport"><button id="play" aria-label="Play or pause">Play</button><input id="time" aria-label="Simulation time" type="range" min="0" max="48" value="0" step=".02"><select id="speed" aria-label="Playback speed"><option value="1">1 h/s</option><option value="4" selected>4 h/s</option><option value="8">8 h/s</option></select><button id="end">End</button></div>
+<div class="scene-note">Sphere radius follows volume^(1/3). Organelles and cell placement are illustrative; motility and cell mechanics are not simulated. Daughters are assumed identical and synchronous. Up to 32 are drawn.</div>
+<div class="chart-head"><span class="eyebrow">Calculated trajectory</span><select id="measurement" aria-label="Trajectory observable"><option value="volume">Cell volume (AV)</option><option value="total">Lineage volume (AV)</option><option value="count">Descendants (count)</option><option value="M">M concentration (AU/AV)</option><option value="SK">Starter kinase (AU/AV)</option></select></div><canvas id="trace" aria-label="Calculated observable over time"></canvas></section>
+<section class="pane card" id="links" hidden><div class="explain"><h2>Where the equations actually connect</h2><p>A connector must preserve quantity, units, time and meaning. Shared words alone do not authorize a link. This is an equation-dependency diagram, not a physical arrangement of molecules.</p></div><canvas id="network" aria-label="Eight-variable equation dependency network"></canvas><div class="node-picker"><label for="node">Inspect a node</label><select id="node"></select></div><div class="node-detail" id="nodeDetail"></div><div class="explain"><h3>The exact bookkeeping connection</h3><p>Total TF = free TF + complex. Total inhibitor = free inhibitor + complex + phosphorylated inhibitor. Internal reactions cancel in these totals, leaving simple synthesis/decay laws. Division halves every amount and the volume, preserving concentrations and the summed daughter amounts.</p><p class="small">The implemented analytical reduction uses those identities. It is algebra applied to an existing model, not a newly discovered biological law. A pixel-area measurement cannot be plugged into model volume without a calibrated transformation.</p></div></section>
+<section class="pane card" id="evidence" hidden><div class="explain"><div class="eyebrow">Published measurements · held-out prediction</div><h2>Does another dial actually help?</h2><p>Predict whether a cell divides after a light pulse. Compare current cell area + time against the same panel plus its earlier growth rate. Each row below is an entire experiment withheld during fitting. Lower Brier score is better.</p><div class="scroll"><table><thead><tr><th>Held-out endpoint</th><th>Cells</th><th>Area + time</th><th>+ growth history</th></tr></thead><tbody id="empiricalTable"></tbody></table></div><div class="finding" id="empiricalSummary"></div><p id="externalSummary"></p><h3>What this does and does not establish</h3><p>These are observational predictions, not causal experiments. Area is measured in image pixels; it is not silently converted into the simulation's arbitrary volume. Endpoint size and future measurements never enter the predictors. Four experiments from one study are not four independent laboratories.</p><p>The source equations were not fitted here to these cells. This is a test of an observation panel, not validation of a complete organism model.</p><p><a href="https://github.com/novakgroupoxford/2019_Heldt_et_al/tree/ab87e1314e27239d763e9cab188291e01b153574" target="_blank" rel="noreferrer">Original model, measurements and GPL licence — Heldt, Tyson, Cross & Novak</a></p></div></section>
+<section class="pane card" id="gaps" hidden><div class="explain"><h2>The unfinished organism, made explicit</h2><p>No hidden substitute dials. These modules need measured mechanisms and joint validation before the Observatory can use them to predict a cell's life.</p><div class="missing-grid"><article><span class="pill gray">Unsupported</span><h3>Nutrients & water</h3><p>Need nutrient uptake, carbon/nitrogen reserves, osmosis and growth data under joint perturbations. Changing μ is not a nutrient-dose simulation.</p></article><article><span class="pill gray">Unsupported</span><h3>Electricity & energy</h3><p>Need ion flux, membrane potential, photosynthetic electron transport and ATP balance. Binary light is a control signal, not a photon or energy ledger.</p></article><article><span class="pill gray">Unsupported</span><h3>Motion & morphology</h3><p>Need calibrated 3D shape, flagellar mechanics, fluid drag and phototaxis. The cell drawing does not provide those equations.</p></article><article><span class="pill gray">Unsupported</span><h3>Death, sex & evolution</h3><p>Need damage/repair, viability and lifespan, mating and zygote data, stochastic inheritance and selection. This model covers repeated asexual divisions only.</p></article></div><h3 style="margin-top:22px">Next decisive experiment</h3><p>Compare equal-light schedules while measuring cell size, division timing and the relevant regulatory state in the same cells. First calibrate the size transformation and identify measurable counterparts of the source model's generic regulators. A new dial is admitted only if it improves held-out, joint-intervention predictions.</p><p class="small">The portable model contract is a proposed Observatory adapter. This standalone sandbox has not been deployed into the live Observatory.</p></div></section>
+</section></div>
+<h2 class="section-heading">Five experiments worth opening</h2><div class="quickplays"><button class="quick" data-demo="dose"><span>01 / LIGHT TIMING</span><strong>Same light. Different family.</strong><small>One cell or eight descendants at the same endpoint.</small></button><button class="quick" data-demo="clock"><span>02 / PATTERN</span><strong>The schedule is a dial.</strong><small>Equal exposure, different times of first division.</small></button><button class="quick" data-demo="sensor"><span>03 / COUPLING</span><strong>Change what light means.</strong><small>Alter the regulator's light sensitivity, leaving growth unchanged.</small></button><button class="quick" data-demo="hidden"><span>04 / NUMERICAL TRAP</span><strong>A false discovery, caught.</strong><small>Watch a dramatic effect disappear under accurate integration.</small></button><button class="quick" data-demo="evidence"><span>05 / REAL DATA</span><strong>Make a dial earn its place.</strong><small>Growth history fails to improve the held-out prediction overall.</small></button></div>
+<div class="testline" id="testline"></div><footer>Exploratory implementation of the Heldt et al. cell-cycle model. The architecture organizes hypotheses and evidence; it does not make a model's predictions true by connecting them. Source and modified implementation: GPL-3.0-or-later. Full source and licence accompany the reproducibility bundle.</footer>
+</main><script id="engine-source" type="text/plain">/* SPDX-License-Identifier: GPL-3.0-only
+ * Observatory implementation of Heldt et al.'s published model.
+ * Original equations/parameters: upstream/models/*.txt, retained with attribution.
+ * This is a reduced cell-cycle model, not a molecularly complete organism.
+ */
+(function(root){
+ 'use strict';
+ const names=['V','SK','TF','IN','INTF','IP','S','M'];
+ const defaults={mu:.0029,At:1,CdTh:.2,kSySk:.002,kDeSk:.002,kDeSkLi:.038,
+   kSyTf:.06,kDeTf:.06,kSyIn:6.1,kDeIn:.5,kAsTfIn:500,kDsTfIn:.1,
+   kPhInSk:5.6,kPhInFk:65,kDpIn:2,kSySTf:.25,jInSM:.125,nInSM:4,
+   kDeS:.1,kSyMS:.2,kSyMM:.06,kDeM:.1,kDeMA:10,kPhAS:25,kPhAM:2000,nPhA:2,kDpA:2};
+ function parameters(changes={}){
+   const p={...defaults,...changes};
+   for(const [k,v] of Object.entries(p))if(!Object.hasOwn(defaults,k)||!Number.isFinite(v)||v<0)throw Error('Invalid parameter '+k);
+   for(const k of ['CdTh','kDeSk','kDeTf','kDeIn','jInSM','kDpA'])if(p[k]<=0)throw Error(k+' must be positive');
+   return p;
+ }
+ function initial(volume=1){return [volume,volume,0,2.6*volume,volume,8.6*volume,0,0];}
+ function rhs(y,L,p=defaults){
+   const [V,SK,TF,IN,C,IP,S,M]=y;
+   const r=(p.kPhInSk*SK+p.kPhInFk*TF)/V;
+   const bind=p.kAsTfIn/V*IN*TF;
+   const A=p.At*V*p.kDpA/(p.kDpA+p.kPhAS*(S/V)**p.nPhA+p.kPhAM*(M/V)**p.nPhA);
+   const hill=p.jInSM**p.nInSM/(p.jInSM**p.nInSM+(M/V)**p.nInSM);
+   return [p.mu*V*L,p.kSySk*V-(p.kDeSk+p.kDeSkLi*L)*SK,
+    p.kSyTf*V-bind+(p.kDsTfIn+r+p.kDeIn)*C-p.kDeTf*TF,
+    p.kSyIn-bind+(p.kDsTfIn+p.kDeTf)*C-(r+p.kDeIn)*IN+p.kDpIn*IP,
+    bind-(p.kDsTfIn+r+p.kDeIn+p.kDeTf)*C,
+    r*(IN+C)-(p.kDpIn+p.kDeIn)*IP,p.kSySTf*TF*hill-p.kDeS*S,
+    p.kSyMS*S+p.kSyMM*M-(p.kDeM+p.kDeMA*A/V)*M];
+ }
+ function forced(pool,V,g,d,k,h){
+   return pool*Math.exp(-d*h)+k*V*(Math.exp(g*h)-Math.exp(-d*h))/(g+d);
+ }
+ function solve(A,b){
+   const n=b.length;A=A.map((r,i)=>[...r,b[i]]);
+   for(let k=0;k<n;k++){
+     let q=k;for(let i=k+1;i<n;i++)if(Math.abs(A[i][k])>Math.abs(A[q][k]))q=i;
+     if(Math.abs(A[q][k])<1e-18)throw Error('Singular Newton system');
+     [A[k],A[q]]=[A[q],A[k]];
+     for(let i=k+1;i<n;i++){const w=A[i][k]/A[k][k];for(let j=k+1;j<=n;j++)A[i][j]-=w*A[k][j];A[i][k]=0;}
+   }
+   const x=Array(n).fill(0);
+   for(let i=n-1;i>=0;i--){let v=A[i][n];for(let j=i+1;j<n;j++)v-=A[i][j]*x[j];x[i]=v/A[i][i];}
+   return x;
+ }
+ function step(y,L,p,h){
+   const g=p.mu*L, V=y[0]*Math.exp(g*h);
+   const SK=forced(y[1],y[0],g,p.kDeSk+p.kDeSkLi*L,p.kSySk,h);
+   const T=forced(y[2]+y[4],y[0],g,p.kDeTf,p.kSyTf,h);
+   const It=(y[3]+y[4]+y[5])*Math.exp(-p.kDeIn*h)+p.kSyIn/p.kDeIn*(-Math.expm1(-p.kDeIn*h));
+   const old=[y[4],y[5],y[6],y[7]];
+   const valid=x=>x.every(z=>Number.isFinite(z)&&z>=-1e-10)&&x[0]<=T+1e-10&&x[0]+x[1]<=It+1e-10;
+   function residual(x){
+     const [C,IP,S,M]=x,TF=T-C,IN=It-C-IP;
+     const r=(p.kPhInSk*SK+p.kPhInFk*TF)/V;
+     const av=p.At*p.kDpA/(p.kDpA+p.kPhAS*(S/V)**p.nPhA+p.kPhAM*(M/V)**p.nPhA);
+     const f=[p.kAsTfIn/V*IN*TF-(p.kDsTfIn+r+p.kDeIn+p.kDeTf)*C,
+      r*(It-IP)-(p.kDpIn+p.kDeIn)*IP,
+      p.kSySTf*TF*p.jInSM**p.nInSM/(p.jInSM**p.nInSM+(M/V)**p.nInSM)-p.kDeS*S,
+      p.kSyMS*S+p.kSyMM*M-(p.kDeM+p.kDeMA*av)*M];
+     return x.map((v,i)=>v-old[i]-h*f[i]);
+   }
+   let x=old.slice();x[0]=Math.min(x[0],T*.999999,It*.999999);x[1]=Math.min(x[1],(It-x[0])*.999999);
+   const norm=r=>Math.max(...r.map((z,i)=>Math.abs(z)/(1+Math.abs(old[i]))));
+   for(let it=0;it<24;it++){
+     const r=residual(x),n=norm(r);
+     if(n<1e-9){
+       const out=[V,SK,T-x[0],It-x[0]-x[1],x[0],x[1],x[2],x[3]];
+       if(out.some(z=>z < -1e-9||!Number.isFinite(z)))throw Error('Negative/nonfinite solution');
+       return out.map(z=>Math.max(0,z)); // Only roundoff-scale negatives permitted.
+     }
+     const J=Array.from({length:4},()=>Array(4));
+     for(let j=0;j<4;j++){
+       const z=x.slice(),e=1e-6*Math.max(1,Math.abs(z[j]));z[j]+=e;
+       const rr=residual(z);for(let i=0;i<4;i++)J[i][j]=(rr[i]-r[i])/e;
+     }
+     const d=solve(J,r.map(z=>-z));let accepted=false;
+     for(let k=0;k<22;k++){
+       const scale=2**(-k),z=x.map((v,i)=>v+scale*d[i]);
+       if(valid(z)&&norm(residual(z))<n){x=z;accepted=true;break;}
+     }
+     if(!accepted)throw Error('Newton line search failed');
+   }
+   throw Error('Newton iteration limit');
+ }
+ function makeSchedule({mode='daynight',hours=48,period=24,lightHours=12,duty=.5,offset=0}={}){
+   if(![hours,period,offset,lightHours,duty].every(Number.isFinite)||!(hours>0&&hours<=96&&period>0&&lightHours>=0&&duty>=0&&duty<=1))throw Error('Invalid schedule');
+   if(period<1/60)throw Error('Pulse period must be at least one minute');
+   if(!['daynight','light','dark','single','pulse','reverse'].includes(mode))throw Error('Unknown schedule');
+   const end=hours*60,events=new Set([0,end]);
+   if(mode==='single'){if(lightHours*60>0&&lightHours*60<end)events.add(lightHours*60);}
+   if(['daynight','pulse','reverse'].includes(mode)){
+     const lit=mode==='daynight'?Math.min(period,lightHours):period*duty;
+     for(let k=-2-Math.ceil(Math.abs(offset)/period);k<=Math.ceil(hours/period)+2;k++){
+       for(const t of [(k*period+offset)*60,(k*period+offset+lit)*60])if(t>0&&t<end)events.add(t);
+     }
+   }
+   const times=[...events].sort((a,b)=>a-b),segs=[];
+   for(let i=0;i<times.length-1;i++){
+     const t=(times[i]+times[i+1])/120,phase=((t-offset)%period+period)%period;
+     let light=mode==='light'?1:mode==='dark'?0:mode==='single'?+(t<lightHours):+(phase<(mode==='daynight'?Math.min(lightHours,period):period*duty));
+     if(mode==='reverse')light=1-light;
+     segs.push({start:times[i],end:times[i+1],light});
+   }
+   return segs;
+ }
+ function simulate(opts={}){
+   const p=parameters(opts.parameters),schedule=opts.schedule||makeSchedule(opts);
+   let y=(opts.initial||initial(opts.volume??1)).slice(),t=0,generation=0;
+   if(y.length!==8||y[0]<=0||y.some(v=>!Number.isFinite(v)||v<0))throw Error('Invalid initial state');
+   if(!schedule.length||schedule.length>2048)throw Error('Schedule must contain 1 to 2048 segments');
+   schedule.forEach((s,i)=>{if(!Number.isFinite(s.end)||s.start!==(i?schedule[i-1].end:0)||s.end<=s.start||![0,1].includes(s.light))throw Error('Invalid forcing segment');});
+   const dt=opts.dt??.5, sampleEvery=opts.sampleEvery??5;
+   if(!(dt>0&&dt<=5&&sampleEvery>0)||schedule.at(-1).end>5760)throw Error('Invalid integration settings');
+   const initialV=y[0],events=[],trace=[],diagnostics={steps:0,retries:0,minState:0,maxVolumeIdentityRelativeError:0,maxDivisionBalanceError:0};
+   let dose=0,nextSample=0;
+   const snapshot=L=>({t,y:y.slice(),light:L,generation,dose,descendants:2**generation});
+   trace.push(snapshot(schedule[0].light));nextSample=sampleEvery;
+   for(const seg of schedule){
+     while(t<seg.end-1e-9){
+       let h=Math.min(dt,seg.end-t,Math.max(1e-9,nextSample-t)),z;
+       for(;;){try{z=step(y,seg.light,p,h);break;}catch(e){h/=2;diagnostics.retries++;if(h<1e-6)throw e;}}
+       if(y[7]/y[0]>p.CdTh&&z[7]/z[0]<=p.CdTh){
+         let lo=0,hi=h;
+         for(let k=0;k<18;k++){const mid=(lo+hi)/2,w=step(y,seg.light,p,mid);if(w[7]/w[0]>p.CdTh)lo=mid;else hi=mid;}
+         h=hi;z=step(y,seg.light,p,h);
+         const before=z.slice();z=z.map(v=>v/2);generation++;
+         events.push({t:t+h,generation,parent:before,daughter:z.slice(),represented_daughters:2**generation});
+         diagnostics.maxDivisionBalanceError=Math.max(diagnostics.maxDivisionBalanceError,...before.map((v,i)=>Math.abs(v-2*z[i])));
+       }
+       t+=h;dose+=h*seg.light;y=z;diagnostics.steps++;
+       diagnostics.minState=Math.min(diagnostics.minState,...y);
+       const exact=initialV*Math.exp(p.mu*dose),total=y[0]*2**generation;
+       diagnostics.maxVolumeIdentityRelativeError=Math.max(diagnostics.maxVolumeIdentityRelativeError,Math.abs(total/exact-1));
+       if(t>=nextSample-1e-7){trace.push(snapshot(seg.light));nextSample+=sampleEvery;}
+       if(diagnostics.steps>250000)throw Error('Step limit');
+     }
+   }
+   if(trace.at(-1).t<t-1e-7)trace.push(snapshot(schedule.at(-1).light));
+   return {parameters:p,schedule,initial:opts.initial||initial(opts.volume??1),trace,events,final:snapshot(schedule.at(-1).light),diagnostics,
+     scope:'Published deterministic cell-cycle model; symmetric synchronous lineage. No nutrient chemistry, ATP, motility, death or sexual cycle.'};
+ }
+ const api={names,defaults,parameters,initial,rhs,step,makeSchedule,simulate};
+ if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.Organism=api;
+})(typeof globalThis!=='undefined'?globalThis:this);
+</script><script>/* SPDX-License-Identifier: GPL-3.0-only */
+(function(root){
+ 'use strict';
+ const nodes=[
+  {id:'V',label:'Cell volume',unit:'AV',kind:'volume',status:'published-model',equation:'dV/dt = mu × light × V',note:'Arbitrary volume, not calibrated micrometres cubed.'},
+  {id:'SK',label:'Starter kinase',unit:'AU',kind:'model_amount',status:'published-model',equation:'dSK/dt = synthesis × V − (basal decay + light decay × light) × SK',note:'Generic regulator in the source model, not an identified gene assay.'},
+  {id:'TF',label:'Free transcription factor',unit:'AU',kind:'model_amount',status:'published-model',equation:'Synthesis − binding + complex release − degradation',note:'Free and bound pools cannot be freely substituted.'},
+  {id:'IN',label:'Free inhibitor',unit:'AU',kind:'model_amount',status:'published-model',equation:'Synthesis − binding − phosphorylation + dephosphorylation − degradation',note:'Feeds the inhibitor/TF switch.'},
+  {id:'INTF',label:'Bound complex',unit:'AU',kind:'model_amount',status:'published-model',equation:'Association of TF and IN − release, phosphorylation and degradation',note:'Contains both an inhibitor and a TF contribution to their total pools.'},
+  {id:'IP',label:'Phosphorylated inhibitor',unit:'AU',kind:'model_amount',status:'published-model',equation:'Phosphorylation of free/bound inhibitor − dephosphorylation − degradation',note:'A distinct chemical state, not extra total inhibitor.'},
+  {id:'S',label:'S-phase regulator',unit:'AU',kind:'model_amount',status:'published-model',equation:'TF-driven synthesis inhibited by M − degradation',note:'Regulatory proxy, not a count of replicated DNA molecules.'},
+  {id:'M',label:'M-phase regulator',unit:'AU',kind:'model_amount',status:'published-model',equation:'S-driven + feedback synthesis − antagonist-dependent degradation',note:'A downward concentration crossing triggers symmetric division.'}
+ ];
+ const edges=[['V','SK'],['V','TF'],['V','IN'],['V','INTF'],['V','IP'],['V','S'],['V','M'],
+ ['SK','TF'],['SK','IN'],['SK','INTF'],['SK','IP'],['TF','IN'],['TF','INTF'],['TF','IP'],['TF','S'],
+ ['IN','TF'],['IN','INTF'],['IN','IP'],['INTF','TF'],['INTF','IN'],['INTF','IP'],['IP','IN'],['S','M'],['M','S']];
+ const contract={schema:'observatory.candidate-model.v1',model:'heldt-chlamydomonas-cell-cycle',
+  schemaStatus:'Proposed portable adapter. Not deployed or verified against the hosted Observatory contract.',
+  species:'Chlamydomonas reinhardtii',timeUnit:'min',nodes,edges,
+  edgeScope:'Non-self continuous ODE dependencies. Division event dependencies are listed separately.',
+  divisionEvent:{trigger:'M/V crosses CdTh downward',writes:['V','SK','TF','IN','INTF','IP','S','M'],map:'all amounts divided by 2'},
+  evidenceClasses:['measured-data','published-model','algebraic-identity','simulation-only','unsupported'],
+  source:'https://github.com/novakgroupoxford/2019_Heldt_et_al/tree/ab87e1314e27239d763e9cab188291e01b153574',
+  supportedInputs:['binary illumination schedule','initial state','published model rate parameters'],
+  unsupported:['nutrient uptake','water/osmotic flux','membrane voltage','ATP/energy','temperature response','phototaxis','damage/repair/death','sexual reproduction','evolution'],
+  requiredEvidenceForNewConnector:['quantity identity','units and conversion','time convention','organism/strain and preparation','parameter provenance','joint intervention validation','failure domain']};
+ function validatePort(a,b){
+   for(const key of ['kind','unit','meaning','scale','timeUnit'])if(a[key]===undefined||b[key]===undefined||a[key]!==b[key])
+     return {accepted:false,reason:'Missing or incompatible '+key+'. A separately justified transformation is required.'};
+   return {accepted:true,reason:'Representation-compatible. This does not establish a causal relation or empirical validity.'};
+ }
+ const api={contract,validatePort};
+ if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.Connectors=api;
+})(typeof globalThis!=='undefined'?globalThis:this);
+</script><script>const LAB_DATA = {"empirical": {"scope": "Observational prediction of at least one division; not mechanistic parameter fitting.", "source_commit": "ab87e1314e27239d763e9cab188291e01b153574", "audit": [{"file": "Fig4_Data_LD12.dat", "raw_rows": 695, "eligible_rows": 695}, {"file": "Fig4_Data_LD18.dat", "raw_rows": 1157, "eligible_rows": 1157}, {"file": "Fig4_Data_LD24.dat", "raw_rows": 870, "eligible_rows": 870}, {"file": "Fig4_data_LD30.dat", "raw_rows": 957, "eligible_rows": 957}], "total_eligible": 3679, "features": {"baseline": ["log area after light", "dark duration"], "added_dial": "log area growth per hour during light"}, "protocol": "Leave one complete Fig4 experiment out, polynomial logistic regression degree 2, C=1; fixed before scores were inspected.", "folds": [{"held_out_experiment_hours": 12, "prevalence": {"n": 695, "division_fraction": 0.015827338129496403, "brier": 0.062265734853700024, "log_loss": 0.2827946106032467, "auc": 0.5}, "size_time": {"n": 695, "division_fraction": 0.015827338129496403, "brier": 0.014602160725176689, "log_loss": 0.08439254412110316, "auc": 0.7956539074960127}, "size_time_history": {"n": 695, "division_fraction": 0.015827338129496403, "brier": 0.013775865271298527, "log_loss": 0.08149494785004194, "auc": 0.7921318447634236}, "history_brier_improvement": 0.0008262954538781619}, {"held_out_experiment_hours": 18, "prevalence": {"n": 1157, "division_fraction": 0.09680207433016422, "brier": 0.10634751603137486, "log_loss": 0.3816256893102749, "auc": 0.5}, "size_time": {"n": 1157, "division_fraction": 0.09680207433016422, "brier": 0.05014081458718711, "log_loss": 0.17109040389758404, "auc": 0.9419856459330144}, "size_time_history": {"n": 1157, "division_fraction": 0.09680207433016422, "brier": 0.055991547844796645, "log_loss": 0.19374324626733644, "auc": 0.903955912508544}, "history_brier_improvement": -0.005850733257609535}, {"held_out_experiment_hours": 24, "prevalence": {"n": 870, "division_fraction": 0.24597701149425288, "brier": 0.19064102653579032, "log_loss": 0.5742377241561794, "auc": 0.5}, "size_time": {"n": 870, "division_fraction": 0.24597701149425288, "brier": 0.12035474841689679, "log_loss": 0.3765407381800985, "auc": 0.8692621666286755}, "size_time_history": {"n": 870, "division_fraction": 0.24597701149425288, "brier": 0.1186144800218566, "log_loss": 0.3722924074918431, "auc": 0.8713956006382494}, "history_brier_improvement": 0.0017402683950401981}, {"held_out_experiment_hours": 30, "prevalence": {"n": 957, "division_fraction": 0.3824451410658307, "brier": 0.30307504750978365, "log_loss": 0.8805637664167121, "auc": 0.5}, "size_time": {"n": 957, "division_fraction": 0.3824451410658307, "brier": 0.20703192305742876, "log_loss": 0.6420111062504265, "auc": 0.8376212402799738}, "size_time_history": {"n": 957, "division_fraction": 0.3824451410658307, "brier": 0.21493948938309668, "log_loss": 0.6940215255637371, "auc": 0.8216739249026842}, "history_brier_improvement": -0.007907566325667914}], "overall": {"prevalence": {"n": 3679, "division_fraction": 0.19108453384071758, "brier": 0.16912728331737506, "log_loss": 0.5382901661804604, "auc": 0.28539840774560643}, "size_time": {"n": 3679, "division_fraction": 0.19108453384071758, "brier": 0.10084251309324078, "log_loss": 0.325794913392774, "auc": 0.8887771207115434}, "size_time_history": {"n": 3679, "division_fraction": 0.19108453384071758, "brier": 0.10417182282648027, "log_loss": 0.3448961454660199, "auc": 0.8707340086266233}}, "brier_improvement": -0.0033293097332394994, "conditional_cell_bootstrap_95": [-0.006025487601590845, -0.0007001497021588807], "independent_experiments": 4, "external_protocol": {"protocol": "6 h dark, 6 h light, predict division in next 12 h dark", "raw_rows": 450, "eligible_rows": 277, "size_time": {"n": 277, "division_fraction": 0.1552346570397112, "brier": 0.09100641377752262, "log_loss": 0.32188729372527136, "auc": 0.9158715961041543}, "size_time_history": {"n": 277, "division_fraction": 0.1552346570397112, "brier": 0.09012523266472856, "log_loss": 0.3520832406064815, "auc": 0.9138342277877163}, "history_brier_improvement": 0.0008811811127940712, "caveat": "Different protocol, same published study. Pixel-area calibration across files is not independently verified. Not a new laboratory validation."}, "plot_bins": [{"hours": 12, "n": 87, "area4": 625.4942528735633, "observed_division_fraction": 0.011494252873563218, "size_prediction": 1.1409383828196118e-05, "history_prediction": 1.800702676116047e-05}, {"hours": 12, "n": 87, "area4": 733.1149425287356, "observed_division_fraction": 0.0, "size_prediction": 8.954602229008736e-05, "history_prediction": 0.0001694698082955317}, {"hours": 12, "n": 87, "area4": 798.0114942528736, "observed_division_fraction": 0.011494252873563218, "size_prediction": 0.00032885734007414815, "history_prediction": 0.0005038799549915593}, {"hours": 12, "n": 87, "area4": 854.2873563218391, "observed_division_fraction": 0.011494252873563218, "size_prediction": 0.0009530681699791639, "history_prediction": 0.0013256092896517671}, {"hours": 12, "n": 87, "area4": 922.3563218390805, "observed_division_fraction": 0.0, "size_prediction": 0.0029749727381301397, "history_prediction": 0.0035743740603209158}, {"hours": 12, "n": 87, "area4": 997.551724137931, "observed_division_fraction": 0.0, "size_prediction": 0.009323181379190002, "history_prediction": 0.010334106705745699}, {"hours": 12, "n": 87, "area4": 1078.9080459770114, "observed_division_fraction": 0.0, "size_prediction": 0.027576617896670045, "history_prediction": 0.02851339364725754}, {"hours": 12, "n": 86, "area4": 1320.9651162790697, "observed_division_fraction": 0.09302325581395349, "size_prediction": 0.2862462652107853, "history_prediction": 0.2760468247167315}, {"hours": 18, "n": 145, "area4": 577.8275862068965, "observed_division_fraction": 0.0, "size_prediction": 0.0017173661105008963, "history_prediction": 0.002298139794116383}, {"hours": 18, "n": 145, "area4": 680.448275862069, "observed_division_fraction": 0.006896551724137931, "size_prediction": 0.005194046818318023, "history_prediction": 0.006647042578768953}, {"hours": 18, "n": 145, "area4": 737.4137931034483, "observed_division_fraction": 0.0, "size_prediction": 0.009732191561453413, "history_prediction": 0.013642391733320021}, {"hours": 18, "n": 145, "area4": 795.7724137931034, "observed_division_fraction": 0.013793103448275862, "size_prediction": 0.017602296352997218, "history_prediction": 0.021891704801978572}, {"hours": 18, "n": 145, "area4": 849.7172413793104, "observed_division_fraction": 0.006896551724137931, "size_prediction": 0.02921955165704261, "history_prediction": 0.04246020873273121}, {"hours": 18, "n": 144, "area4": 917.7916666666666, "observed_division_fraction": 0.05555555555555555, "size_prediction": 0.05286750938487614, "history_prediction": 0.07170358126857296}, {"hours": 18, "n": 144, "area4": 1017.7152777777778, "observed_division_fraction": 0.10416666666666667, "size_prediction": 0.11327189538520904, "history_prediction": 0.15577183222611338}, {"hours": 18, "n": 144, "area4": 1277.1805555555557, "observed_division_fraction": 0.5902777777777778, "size_prediction": 0.39434273307872414, "history_prediction": 0.43437088127578527}, {"hours": 24, "n": 109, "area4": 555.9357798165138, "observed_division_fraction": 0.0, "size_prediction": 0.010490691844783311, "history_prediction": 0.010373866621329294}, {"hours": 24, "n": 109, "area4": 665.4954128440367, "observed_division_fraction": 0.045871559633027525, "size_prediction": 0.04258762110896365, "history_prediction": 0.043684864647637864}, {"hours": 24, "n": 109, "area4": 727.440366972477, "observed_division_fraction": 0.045871559633027525, "size_prediction": 0.09038088101577887, "history_prediction": 0.08932192105159947}, {"hours": 24, "n": 109, "area4": 778.9174311926605, "observed_division_fraction": 0.13761467889908258, "size_prediction": 0.1546365557855328, "history_prediction": 0.15475321166659683}, {"hours": 24, "n": 109, "area4": 832.8807339449542, "observed_division_fraction": 0.21100917431192662, "size_prediction": 0.24769473124790017, "history_prediction": 0.24915311680847282}, {"hours": 24, "n": 109, "area4": 898.7339449541284, "observed_division_fraction": 0.23853211009174313, "size_prediction": 0.3871725912376382, "history_prediction": 0.3876383042537853}, {"hours": 24, "n": 108, "area4": 996.7314814814815, "observed_division_fraction": 0.49074074074074076, "size_prediction": 0.5965479678720832, "history_prediction": 0.5959054305869159}, {"hours": 24, "n": 108, "area4": 1206.111111111111, "observed_division_fraction": 0.8055555555555556, "size_prediction": 0.8423771506538272, "history_prediction": 0.8469588142071365}, {"hours": 30, "n": 120, "area4": 502.73333333333335, "observed_division_fraction": 0.016666666666666666, "size_prediction": 0.00684913214335585, "history_prediction": 0.006061176435697558}, {"hours": 30, "n": 120, "area4": 592.525, "observed_division_fraction": 0.06666666666666667, "size_prediction": 0.018276495815006552, "history_prediction": 0.01897280620239261}, {"hours": 30, "n": 120, "area4": 646.9333333333333, "observed_division_fraction": 0.20833333333333334, "size_prediction": 0.034623968649067235, "history_prediction": 0.037871706398395294}, {"hours": 30, "n": 120, "area4": 698.05, "observed_division_fraction": 0.2833333333333333, "size_prediction": 0.06319648098404675, "history_prediction": 0.06557308186466863}, {"hours": 30, "n": 120, "area4": 751.425, "observed_division_fraction": 0.4083333333333333, "size_prediction": 0.11479544353705642, "history_prediction": 0.13514148223393857}, {"hours": 30, "n": 119, "area4": 814.8571428571429, "observed_division_fraction": 0.5462184873949579, "size_prediction": 0.21704772141482373, "history_prediction": 0.2157941828510432}, {"hours": 30, "n": 119, "area4": 888.3613445378152, "observed_division_fraction": 0.680672268907563, "size_prediction": 0.3957349696133786, "history_prediction": 0.3778660845598851}, {"hours": 30, "n": 119, "area4": 1069.1176470588234, "observed_division_fraction": 0.8571428571428571, "size_prediction": 0.7536588390536142, "history_prediction": 0.6840166855281394}], "excluded_predictors": ["end-of-experiment size", "xID", "yID", "future divisions"], "raw_files": [{"path": "upstream/data/Fig4_Data_LD12.dat", "sha256": "e3e61c8833077e188a6bd69e692b4c027d7861e2952bafe013b24550ec1fa6de"}, {"path": "upstream/data/Fig4_Data_LD18.dat", "sha256": "5733d9df04e7e106a7527c370998b98495fd019461828b28e710fddaf2bfc2f8"}, {"path": "upstream/data/Fig4_Data_LD24.dat", "sha256": "19298dfd0afd3bf75d83778151511acf0c7b978b73f1dc73194cec335ea03565"}, {"path": "upstream/data/Fig4_data_LD30.dat", "sha256": "63e2e68faf70bf485d11916321c7935686114d1366e644e91fd254a5ca14fbb2"}, {"path": "upstream/data/FigS4_Data.dat", "sha256": "a52f6a004148b3fc1a649c522ac198a0d37ac780d6d2c50df35343a5476e4606"}]}, "campaign": {"scope": "Finite synthetic parameter campaign using the published cell-cycle equations. No real organism was exposed to these interventions.", "attempted": 1000, "successful": 1000, "failures": [], "axes": {"initialVolume": [0.5, 0.75, 1, 1.5, 2], "growthRateMultiplier": [0.5, 0.75, 1, 1.25, 1.5], "lightSensorMultiplier": [0.25, 0.5, 1, 1.5, 2], "pulsePeriodHours": [0.5, 1, 2, 4, 6, 8, 12, 24]}, "invariantTests": {"random_states": 1000, "nonnegative_boundary_checks": 7000, "maxInhibitorIdentityResidual": 3.1863400806741993e-12, "maxTFIdentityResidual": 1.777966662785957e-12, "invalid_input_tests": 5}, "maxVolumeIdentityRelativeError": 3.1663560662309465e-13, "maxDivisionBalanceError": 0, "basePulseComparison": [{"id": 496, "config": {"mode": "pulse", "period": 0.5, "duty": 0.5, "hours": 48, "volume": 1, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "divisions": 6, "firstDivisionHours": 21.54751822153727, "descendantCount": 64, "finalVolume": 1.0172642504912703, "totalVolume": 65.1049120314413, "finalStarterConcentration": 0.10411408376110626, "diagnostics": {"steps": 5789, "retries": 95, "minState": 0, "maxVolumeIdentityRelativeError": 1.3100631690576847e-14, "maxDivisionBalanceError": 0}}, {"id": 497, "config": {"mode": "pulse", "period": 1, "duty": 0.5, "hours": 48, "volume": 1, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "divisions": 6, "firstDivisionHours": 21.37731170654297, "descendantCount": 64, "finalVolume": 1.017264250491273, "totalVolume": 65.10491203144147, "finalStarterConcentration": 0.1216497263674574, "diagnostics": {"steps": 5788, "retries": 83, "minState": 0, "maxVolumeIdentityRelativeError": 1.554312234475219e-14, "maxDivisionBalanceError": 0}}, {"id": 498, "config": {"mode": "pulse", "period": 2, "duty": 0.5, "hours": 48, "volume": 1, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "divisions": 6, "firstDivisionHours": 20.3078932762146, "descendantCount": 64, "finalVolume": 1.0172642504912712, "totalVolume": 65.10491203144136, "finalStarterConcentration": 0.16224525056629607, "diagnostics": {"steps": 5787, "retries": 86, "minState": 0, "maxVolumeIdentityRelativeError": 1.4210854715202004e-14, "maxDivisionBalanceError": 0}}, {"id": 499, "config": {"mode": "pulse", "period": 4, "duty": 0.5, "hours": 48, "volume": 1, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "divisions": 4, "firstDivisionHours": 19.38736432393392, "descendantCount": 16, "finalVolume": 4.069057001965091, "totalVolume": 65.10491203144146, "finalStarterConcentration": 0.25097891261176547, "diagnostics": {"steps": 5796, "retries": 106, "minState": 0, "maxVolumeIdentityRelativeError": 1.532107773982716e-14, "maxDivisionBalanceError": 0}}, {"id": 500, "config": {"mode": "pulse", "period": 6, "duty": 0.5, "hours": 48, "volume": 1, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "divisions": 5, "firstDivisionHours": 17.289401944478353, "descendantCount": 32, "finalVolume": 2.034528500982543, "totalVolume": 65.10491203144137, "finalStarterConcentration": 0.3349384822552999, "diagnostics": {"steps": 5792, "retries": 96, "minState": 0, "maxVolumeIdentityRelativeError": 1.4210854715202004e-14, "maxDivisionBalanceError": 0}}, {"id": 501, "config": {"mode": "pulse", "period": 8, "duty": 0.5, "hours": 48, "volume": 1, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "divisions": 6, "firstDivisionHours": 15.534842999776204, "descendantCount": 64, "finalVolume": 1.0172642504912708, "totalVolume": 65.10491203144133, "finalStarterConcentration": 0.4100719130993389, "diagnostics": {"steps": 5798, "retries": 103, "minState": 0, "maxVolumeIdentityRelativeError": 1.3322676295501878e-14, "maxDivisionBalanceError": 0}}, {"id": 502, "config": {"mode": "pulse", "period": 12, "duty": 0.5, "hours": 48, "volume": 1, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "divisions": 6, "firstDivisionHours": 17.98601868947347, "descendantCount": 64, "finalVolume": 1.0172642504912726, "totalVolume": 65.10491203144144, "finalStarterConcentration": 0.5359402036418764, "diagnostics": {"steps": 5794, "retries": 105, "minState": 0, "maxVolumeIdentityRelativeError": 1.509903313490213e-14, "maxDivisionBalanceError": 0}}, {"id": 503, "config": {"mode": "pulse", "period": 24, "duty": 0.5, "hours": 48, "volume": 1, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "divisions": 6, "firstDivisionHours": 11.98605063756307, "descendantCount": 64, "finalVolume": 1.017264250491272, "totalVolume": 65.1049120314414, "finalStarterConcentration": 0.7741178244732054, "diagnostics": {"steps": 5794, "retries": 105, "minState": 0, "maxVolumeIdentityRelativeError": 1.4432899320127035e-14, "maxDivisionBalanceError": 0}}], "confirmedContrasts": [{"a": 216, "b": 223, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 0.5, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.038}}, "bConfig": {"mode": "pulse", "period": 24, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.038}}, "fineA": {"events": [], "final": {"t": 2880, "y": [6.05157111977801, 0.6474604008416723, 0.0728771593122497, 2.0105641819913256, 5.9369881599978225, 4.2524476580108725, 0.110161444143398, 0.0021899774520586428], "light": 0, "generation": 0, "dose": 1440, "descendants": 1}, "diagnostics": {"steps": 23040, "retries": 0, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineB": {"events": [2230.117488861084, 2266.290036201477, 2301.634925365448], "final": {"t": 2880, "y": [0.7564463899722512, 0.5858709212552708, 0.0016216447241911291, 3.617191243715533, 0.7548247452480599, 7.827984011036403, 0.004013939438379737, 7.997989035555845e-05], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23052, "retries": 23, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 224, "b": 231, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 0.5, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.056999999999999995}}, "bConfig": {"mode": "pulse", "period": 24, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.056999999999999995}}, "fineA": {"events": [], "final": {"t": 2880, "y": [6.05157111977801, 0.48460069579750437, 0.03157361954730842, 3.317895188591018, 5.978291699762764, 2.9038131116462282, 0.06383852769707773, 0.0012705133470426002], "light": 0, "generation": 0, "dose": 1440, "descendants": 1}, "diagnostics": {"steps": 23040, "retries": 0, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineB": {"events": [2237.691472530365, 2273.8700580596924, 2309.21213722229], "final": {"t": 2880, "y": [0.7564463899722512, 0.5831528749124032, 0.001609051809564388, 3.6305122801881753, 0.7548373381626866, 7.814650381649133, 0.003982012387266755, 7.934312048379626e-05], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 20, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 225, "b": 231, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 1, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.056999999999999995}}, "bConfig": {"mode": "pulse", "period": 24, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.056999999999999995}}, "fineA": {"events": [], "final": {"t": 2880, "y": [6.05157111977801, 0.6028052411677136, 0.0507272005420738, 2.5146468947097693, 5.9804418830240005, 3.704911222266226, 0.08898218278842947, 0.0017699764637283978], "light": 0, "generation": 0, "dose": 1440, "descendants": 1}, "diagnostics": {"steps": 23040, "retries": 0, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineB": {"events": [2237.691472530365, 2273.8700580596924, 2309.21213722229], "final": {"t": 2880, "y": [0.7564463899722512, 0.5831528749124032, 0.001609051809564388, 3.6305122801881753, 0.7548373381626866, 7.814650381649133, 0.003982012387266755, 7.934312048379626e-05], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 20, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 232, "b": 239, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 0.5, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.076}}, "bConfig": {"mode": "pulse", "period": 24, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.076}}, "fineA": {"events": [], "final": {"t": 2880, "y": [6.05157111977801, 0.39953945802126123, 0.025115361250092505, 3.748652161090815, 5.98474995805998, 2.466597880849226, 0.05151789196958372, 0.001024979348656602], "light": 0, "generation": 0, "dose": 1440, "descendants": 1}, "diagnostics": {"steps": 23040, "retries": 0, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineB": {"events": [2241.6125621795654, 2277.786009311676, 2313.1285738945007], "final": {"t": 2880, "y": [0.7564463899722512, 0.5817348381482559, 0.0016025053442638715, 3.6374931178947616, 0.7548438846279871, 7.807662997477246, 0.003965416419238384, 7.901212636784432e-05], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 16, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 233, "b": 239, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 1, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.076}}, "bConfig": {"mode": "pulse", "period": 24, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.076}}, "fineA": {"events": [], "final": {"t": 2880, "y": [6.05157111977801, 0.5285585190066134, 0.03700805647095606, 3.031830082110408, 5.994161027095118, 3.1740088907944837, 0.06995897339153899, 0.00139151633474718], "light": 0, "generation": 0, "dose": 1440, "descendants": 1}, "diagnostics": {"steps": 23040, "retries": 0, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineB": {"events": [2241.6125621795654, 2277.786009311676, 2313.1285738945007], "final": {"t": 2880, "y": [0.7564463899722512, 0.5817348381482559, 0.0016025053442638715, 3.6374931178947616, 0.7548438846279871, 7.807662997477246, 0.003965416419238384, 7.901212636784432e-05], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 16, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 234, "b": 239, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 2, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.076}}, "bConfig": {"mode": "pulse", "period": 24, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.00145, "kDeSkLi": 0.076}}, "fineA": {"events": [], "final": {"t": 2880, "y": [6.05157111977801, 0.8244901968175297, 5.62506462048504, 0.05624497292124886, 0.4226999179777149, 11.721055109101046, 1.274114681840859, 4.20585714768251], "light": 0, "generation": 0, "dose": 1440, "descendants": 1}, "diagnostics": {"steps": 23046, "retries": 17, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineB": {"events": [2241.6125621795654, 2277.786009311676, 2313.1285738945007], "final": {"t": 2880, "y": [0.7564463899722512, 0.5817348381482559, 0.0016025053442638715, 3.6374931178947616, 0.7548438846279871, 7.807662997477246, 0.003965416419238384, 7.901212636784432e-05], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 16, "minState": 0, "maxVolumeIdentityRelativeError": 6.281641873329136e-13, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 296, "b": 300, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 0.5, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "bConfig": {"mode": "pulse", "period": 6, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "fineA": {"events": [1501.9766182899475, 1537.2927722930908, 1572.606770515442], "final": {"t": 2880, "y": [6.103585502948115, 0.6354692122969808, 0.0601896555355399, 2.2770164405846343, 5.960383077274244, 3.962600482141128, 0.09957857588717614, 0.001980432156663956], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 19, "minState": 0, "maxVolumeIdentityRelativeError": 9.348077867343818e-14, "maxDivisionBalanceError": 0}}, "fineB": {"events": [1331.6493244171143, 1367.8265743255615, 1403.1733531951904, 2769.7436180114746, 2805.9050364494324, 2841.3666863441467], "final": {"t": 2880, "y": [0.7629481878685144, 0.2555407080840989, 0.0004879430884192626, 6.145039598708167, 0.7624595272225475, 5.292500849168545, 0.0023107600586170333, 4.625535004403342e-05], "light": 0, "generation": 6, "dose": 1440, "descendants": 64}, "diagnostics": {"steps": 23060, "retries": 40, "minState": 0, "maxVolumeIdentityRelativeError": 9.348077867343818e-14, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 296, "b": 301, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 0.5, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "bConfig": {"mode": "pulse", "period": 8, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "fineA": {"events": [1501.9766182899475, 1537.2927722930908, 1572.606770515442], "final": {"t": 2880, "y": [6.103585502948115, 0.6354692122969808, 0.0601896555355399, 2.2770164405846343, 5.960383077274244, 3.962600482141128, 0.09957857588717614, 0.001980432156663956], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 19, "minState": 0, "maxVolumeIdentityRelativeError": 9.348077867343818e-14, "maxDivisionBalanceError": 0}}, "fineB": {"events": [1271.7169604301453, 1307.895920753479, 1343.2419257164001, 2709.793396472931, 2745.9596252441406, 2781.42214679718], "final": {"t": 2880, "y": [0.7629481878685144, 0.3128636229949024, 0.0006334841972350791, 5.527686161133964, 0.7623146840647043, 5.909999154801328, 0.0015256420412350991, 3.0381319168139762e-05], "light": 0, "generation": 6, "dose": 1440, "descendants": 64}, "diagnostics": {"steps": 23059, "retries": 32, "minState": 0, "maxVolumeIdentityRelativeError": 9.348077867343818e-14, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 296, "b": 302, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 0.5, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "bConfig": {"mode": "pulse", "period": 12, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "fineA": {"events": [1501.9766182899475, 1537.2927722930908, 1572.606770515442], "final": {"t": 2880, "y": [6.103585502948115, 0.6354692122969808, 0.0601896555355399, 2.2770164405846343, 5.960383077274244, 3.962600482141128, 0.09957857588717614, 0.001980432156663956], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 19, "minState": 0, "maxVolumeIdentityRelativeError": 9.348077867343818e-14, "maxDivisionBalanceError": 0}}, "fineB": {"events": [1151.6701483726501, 1187.8510389328003, 1223.197160243988, 2589.8313817977905, 2625.997717857361, 2661.4578771591187], "final": {"t": 2880, "y": [0.7629481878685144, 0.4088946071744414, 0.0009243137851306926, 4.704862312300042, 0.7620238740687456, 6.733113813631208, 0.0022512022699305773, 4.4837854443336266e-05], "light": 0, "generation": 6, "dose": 1440, "descendants": 64}, "diagnostics": {"steps": 23059, "retries": 37, "minState": 0, "maxVolumeIdentityRelativeError": 9.348077867343818e-14, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}, {"a": 296, "b": 303, "divisionDifference": 3, "totalVolumeRelativeDifference": 0, "aConfig": {"mode": "pulse", "period": 0.5, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "bConfig": {"mode": "pulse", "period": 24, "duty": 0.5, "hours": 48, "volume": 0.75, "parameters": {"mu": 0.0029, "kDeSkLi": 0.038}}, "fineA": {"events": [1501.9766182899475, 1537.2927722930908, 1572.606770515442], "final": {"t": 2880, "y": [6.103585502948115, 0.6354692122969808, 0.0601896555355399, 2.2770164405846343, 5.960383077274244, 3.962600482141128, 0.09957857588717614, 0.001980432156663956], "light": 0, "generation": 3, "dose": 1440, "descendants": 8}, "diagnostics": {"steps": 23050, "retries": 19, "minState": 0, "maxVolumeIdentityRelativeError": 9.348077867343818e-14, "maxDivisionBalanceError": 0}}, "fineB": {"events": [791.6704287528992, 827.8513488769531, 863.1974596977234, 2229.831480026245, 2265.9978108406067, 2301.4579606056213], "final": {"t": 2880, "y": [0.7629481878685144, 0.5906117913785497, 0.001652101302286435, 3.611194654378618, 0.7612960865662205, 7.827509259055157, 0.004089194950241261, 8.14799662574162e-05], "light": 0, "generation": 6, "dose": 1440, "descendants": 64}, "diagnostics": {"steps": 23059, "retries": 37, "minState": 0, "maxVolumeIdentityRelativeError": 9.348077867343818e-14, "maxDivisionBalanceError": 0}}, "fineDivisionDifference": 3}]}, "refinement": {"attempted": 1000, "successful": 1000, "failures": [], "fineStepMinutes": 0.125, "coarseStepMinutes": 0.5, "divisionCountChanged": 34, "maxVolumeError": 1.0655920590352252e-12}, "numerical": {"method": "Independent eight-state SciPy BDF vs four nonlinear-state implicit Euler with exact total-pool updates", "tolerances": {"BDF_rtol": 1e-09, "BDF_atol": 1e-11, "fineStepMinutes": 0.03125, "coarseStepMinutes": 0.5, "eventTimeMinutes": 1.5, "endpointScaledError": 0.05}, "pass": true, "results": [{"name": "Constant light", "referenceEvents": [722.2294133099952, 758.2852335485466, 794.0060884328058, 1439.2782207607142, 1475.3340410590824, 1511.0548964117115, 2156.3270282357676, 2192.3828484670144, 2228.103703813877, 2873.375835709906], "coarse": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 16.738818483676823, "endpointMaxScaledStateError": 0.2711837187107559}, "fine": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0.9512496564930188, "endpointMaxScaledStateError": 0.045900440683883076}}, {"name": "12 h day, 12 h night", "referenceEvents": [722.2748585084433, 760.2850836892896, 798.0130784281594, 2159.278220756226, 2197.4013473382192, 2235.149349810387], "coarse": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 18.064708448300962, "endpointMaxScaledStateError": 3.942937431102676e-08}, "fine": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 1.0396268137794777, "endpointMaxScaledStateError": 2.4663880697038475e-09}}, {"name": "Four-hour light pulse", "referenceEvents": [], "coarse": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0, "endpointMaxScaledStateError": 1.267343763984567e-07}, "fine": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0, "endpointMaxScaledStateError": 7.936402428939714e-09}}, {"name": "Darkness", "referenceEvents": [], "coarse": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0, "endpointMaxScaledStateError": 1.9268707123656396e-08}, "fine": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0, "endpointMaxScaledStateError": 3.1905276673674054e-07}}, {"name": "Hourly flashes", "referenceEvents": [1285.649606247848, 1323.8353656564036, 1359.0142441508729, 2724.1233542904984, 2762.2679983166026, 2797.4332887077403], "coarse": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 15.946012568231254, "endpointMaxScaledStateError": 1.1849474720702021e-05}, "fine": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0.8866863393855056, "endpointMaxScaledStateError": 1.2880469660432494e-06}}, {"name": "Large initial cell", "referenceEvents": [483.2131394521408, 519.2689596851111, 554.9898145442421, 1920.2619476120278, 1956.317767916686, 1992.0386232484773], "coarse": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 16.73860303058177, "endpointMaxScaledStateError": 6.524996081218767e-08}, "fine": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0.947895670455182, "endpointMaxScaledStateError": 4.202728916176874e-09}}, {"name": "Growth at half rate", "referenceEvents": [1214.7170666824386, 1250.8685479460942], "coarse": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 6.801098376392019, "endpointMaxScaledStateError": 6.430361714775292e-08}, "fine": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0.4723604022251493, "endpointMaxScaledStateError": 4.140029726276289e-09}}, {"name": "Weaker light sensing", "referenceEvents": [689.9835242673204, 726.2363787253274, 763.8952320767999, 2127.032355687418, 2163.1740207660064, 2200.848204759693], "coarse": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 16.540705827808324, "endpointMaxScaledStateError": 3.692893087336086e-08}, "fine": {"matchingDivisionCount": true, "maxEventTimeErrorMinutes": 0.9621559335350867, "endpointMaxScaledStateError": 2.309986792974467e-09}}], "limits": "Finite-case implementation verification, not biological validation; errors are larger near sharp transitions."}, "connectors": {"portTests": [["same representation", true], ["area is not volume", true], ["bound is not free", true], ["AU is not moles", true], ["different clocks", true], ["missing semantics", true]], "witnessesTested": 90, "best": {"preparationTime": 570, "base": [5.222624221519787, 0.2434789848057327, 0.009659058764319717, 5.614399417374354, 4.972176446659959, 1.6134241359656825, 0.022073984974648693, 0.0004394104657567557], "changed": [5.222624221519787, 0.2434789848057327, 4.732743730153064, 10.337484088763098, 0.24909177527121396, 1.6134241359656825, 0.022073984974648693, 0.0004394104657567557], "hiddenComplexFraction": 0.05, "sameVolume": true, "sameTotalTF": true, "sameTotalInhibitor": true, "timeDifference": 72.68012046813965, "aEvents": [110.70330667495728, 147.0401840209961], "bEvents": [38.02318620681763, 74.37351894378662]}, "scope": "Synthetic preparations in a published model; no empirical proof that these states can be prepared in a cell."}, "independent": [{"events": [], "final": [6.051571119775554, 0.6474604008489432, 0.07199289297961076, 2.0261614306398243, 5.937872426336018, 4.2359661430241555, 0.1097039851803391, 0.0021810790405644934], "name": "Light-pattern A, 48 h", "config": {"name": "Light-pattern A, 48 h", "parameters": {"mu": 0.00145, "kDeSkLi": 0.038}, "initial": [0.75, 0.75, 0, 1.9500000000000002, 0.75, 6.449999999999999, 0, 0], "schedule": [{"start": 0.0, "end": 15.0, "light": 1}, {"start": 15.0, "end": 30.0, "light": 0}, {"start": 30.0, "end": 45.0, "light": 1}, {"start": 45.0, "end": 60.0, "light": 0}, {"start": 60.0, "end": 75.0, "light": 1}, {"start": 75.0, "end": 90.0, "light": 0}, {"start": 90.0, "end": 105.0, "light": 1}, {"start": 105.0, "end": 120.0, "light": 0}, {"start": 120.0, "end": 135.0, "light": 1}, {"start": 135.0, "end": 150.0, "light": 0}, {"start": 150.0, "end": 165.0, "light": 1}, {"start": 165.0, "end": 180.0, "light": 0}, {"start": 180.0, "end": 195.0, "light": 1}, {"start": 195.0, "end": 210.0, "light": 0}, {"start": 210.0, "end": 225.0, "light": 1}, {"start": 225.0, "end": 240.0, "light": 0}, {"start": 240.0, "end": 255.0, "light": 1}, {"start": 255.0, "end": 270.0, "light": 0}, {"start": 270.0, "end": 285.0, "light": 1}, {"start": 285.0, "end": 300.0, "light": 0}, {"start": 300.0, "end": 315.0, "light": 1}, {"start": 315.0, "end": 330.0, "light": 0}, {"start": 330.0, "end": 345.0, "light": 1}, {"start": 345.0, "end": 360.0, "light": 0}, {"start": 360.0, "end": 375.0, "light": 1}, {"start": 375.0, "end": 390.0, "light": 0}, {"start": 390.0, "end": 405.0, "light": 1}, {"start": 405.0, "end": 420.0, "light": 0}, {"start": 420.0, "end": 435.0, "light": 1}, {"start": 435.0, "end": 450.0, "light": 0}, {"start": 450.0, "end": 465.0, "light": 1}, {"start": 465.0, "end": 480.0, "light": 0}, {"start": 480.0, "end": 495.0, "light": 1}, {"start": 495.0, "end": 510.0, "light": 0}, {"start": 510.0, "end": 525.0, "light": 1}, {"start": 525.0, "end": 540.0, "light": 0}, {"start": 540.0, "end": 555.0, "light": 1}, {"start": 555.0, "end": 570.0, "light": 0}, {"start": 570.0, "end": 585.0, "light": 1}, {"start": 585.0, "end": 600.0, "light": 0}, {"start": 600.0, "end": 615.0, "light": 1}, {"start": 615.0, "end": 630.0, "light": 0}, {"start": 630.0, "end": 645.0, "light": 1}, {"start": 645.0, "end": 660.0, "light": 0}, {"start": 660.0, "end": 675.0, "light": 1}, {"start": 675.0, "end": 690.0, "light": 0}, {"start": 690.0, "end": 705.0, "light": 1}, {"start": 705.0, "end": 720.0, "light": 0}, {"start": 720.0, "end": 735.0, "light": 1}, {"start": 735.0, "end": 750.0, "light": 0}, {"start": 750.0, "end": 765.0, "light": 1}, {"start": 765.0, "end": 780.0, "light": 0}, {"start": 780.0, "end": 795.0, "light": 1}, {"start": 795.0, "end": 810.0, "light": 0}, {"start": 810.0, "end": 825.0, "light": 1}, {"start": 825.0, "end": 840.0, "light": 0}, {"start": 840.0, "end": 855.0, "light": 1}, {"start": 855.0, "end": 870.0, "light": 0}, {"start": 870.0, "end": 885.0, "light": 1}, {"start": 885.0, "end": 900.0, "light": 0}, {"start": 900.0, "end": 915.0, "light": 1}, {"start": 915.0, "end": 930.0, "light": 0}, {"start": 930.0, "end": 945.0, "light": 1}, {"start": 945.0, "end": 960.0, "light": 0}, {"start": 960.0, "end": 975.0, "light": 1}, {"start": 975.0, "end": 990.0, "light": 0}, {"start": 990.0, "end": 1005.0, "light": 1}, {"start": 1005.0, "end": 1020.0, "light": 0}, {"start": 1020.0, "end": 1035.0, "light": 1}, {"start": 1035.0, "end": 1050.0, "light": 0}, {"start": 1050.0, "end": 1065.0, "light": 1}, {"start": 1065.0, "end": 1080.0, "light": 0}, {"start": 1080.0, "end": 1095.0, "light": 1}, {"start": 1095.0, "end": 1110.0, "light": 0}, {"start": 1110.0, "end": 1125.0, "light": 1}, {"start": 1125.0, "end": 1140.0, "light": 0}, {"start": 1140.0, "end": 1155.0, "light": 1}, {"start": 1155.0, "end": 1170.0, "light": 0}, {"start": 1170.0, "end": 1185.0, "light": 1}, {"start": 1185.0, "end": 1200.0, "light": 0}, {"start": 1200.0, "end": 1215.0, "light": 1}, {"start": 1215.0, "end": 1230.0, "light": 0}, {"start": 1230.0, "end": 1245.0, "light": 1}, {"start": 1245.0, "end": 1260.0, "light": 0}, {"start": 1260.0, "end": 1275.0, "light": 1}, {"start": 1275.0, "end": 1290.0, "light": 0}, {"start": 1290.0, "end": 1305.0, "light": 1}, {"start": 1305.0, "end": 1320.0, "light": 0}, {"start": 1320.0, "end": 1335.0, "light": 1}, {"start": 1335.0, "end": 1350.0, "light": 0}, {"start": 1350.0, "end": 1365.0, "light": 1}, {"start": 1365.0, "end": 1380.0, "light": 0}, {"start": 1380.0, "end": 1395.0, "light": 1}, {"start": 1395.0, "end": 1410.0, "light": 0}, {"start": 1410.0, "end": 1425.0, "light": 1}, {"start": 1425.0, "end": 1440.0, "light": 0}, {"start": 1440.0, "end": 1455.0, "light": 1}, {"start": 1455.0, "end": 1470.0, "light": 0}, {"start": 1470.0, "end": 1485.0, "light": 1}, {"start": 1485.0, "end": 1500.0, "light": 0}, {"start": 1500.0, "end": 1515.0, "light": 1}, {"start": 1515.0, "end": 1530.0, "light": 0}, {"start": 1530.0, "end": 1545.0, "light": 1}, {"start": 1545.0, "end": 1560.0, "light": 0}, {"start": 1560.0, "end": 1575.0, "light": 1}, {"start": 1575.0, "end": 1590.0, "light": 0}, {"start": 1590.0, "end": 1605.0, "light": 1}, {"start": 1605.0, "end": 1620.0, "light": 0}, {"start": 1620.0, "end": 1635.0, "light": 1}, {"start": 1635.0, "end": 1650.0, "light": 0}, {"start": 1650.0, "end": 1665.0, "light": 1}, {"start": 1665.0, "end": 1680.0, "light": 0}, {"start": 1680.0, "end": 1695.0, "light": 1}, {"start": 1695.0, "end": 1710.0, "light": 0}, {"start": 1710.0, "end": 1725.0, "light": 1}, {"start": 1725.0, "end": 1740.0, "light": 0}, {"start": 1740.0, "end": 1755.0, "light": 1}, {"start": 1755.0, "end": 1770.0, "light": 0}, {"start": 1770.0, "end": 1785.0, "light": 1}, {"start": 1785.0, "end": 1800.0, "light": 0}, {"start": 1800.0, "end": 1815.0, "light": 1}, {"start": 1815.0, "end": 1830.0, "light": 0}, {"start": 1830.0, "end": 1845.0, "light": 1}, {"start": 1845.0, "end": 1860.0, "light": 0}, {"start": 1860.0, "end": 1875.0, "light": 1}, {"start": 1875.0, "end": 1890.0, "light": 0}, {"start": 1890.0, "end": 1905.0, "light": 1}, {"start": 1905.0, "end": 1920.0, "light": 0}, {"start": 1920.0, "end": 1935.0, "light": 1}, {"start": 1935.0, "end": 1950.0, "light": 0}, {"start": 1950.0, "end": 1965.0, "light": 1}, {"start": 1965.0, "end": 1980.0, "light": 0}, {"start": 1980.0, "end": 1995.0, "light": 1}, {"start": 1995.0, "end": 2010.0, "light": 0}, {"start": 2010.0, "end": 2025.0, "light": 1}, {"start": 2025.0, "end": 2040.0, "light": 0}, {"start": 2040.0, "end": 2055.0, "light": 1}, {"start": 2055.0, "end": 2070.0, "light": 0}, {"start": 2070.0, "end": 2085.0, "light": 1}, {"start": 2085.0, "end": 2100.0, "light": 0}, {"start": 2100.0, "end": 2115.0, "light": 1}, {"start": 2115.0, "end": 2130.0, "light": 0}, {"start": 2130.0, "end": 2145.0, "light": 1}, {"start": 2145.0, "end": 2160.0, "light": 0}, {"start": 2160.0, "end": 2175.0, "light": 1}, {"start": 2175.0, "end": 2190.0, "light": 0}, {"start": 2190.0, "end": 2205.0, "light": 1}, {"start": 2205.0, "end": 2220.0, "light": 0}, {"start": 2220.0, "end": 2235.0, "light": 1}, {"start": 2235.0, "end": 2250.0, "light": 0}, {"start": 2250.0, "end": 2265.0, "light": 1}, {"start": 2265.0, "end": 2280.0, "light": 0}, {"start": 2280.0, "end": 2295.0, "light": 1}, {"start": 2295.0, "end": 2310.0, "light": 0}, {"start": 2310.0, "end": 2325.0, "light": 1}, {"start": 2325.0, "end": 2340.0, "light": 0}, {"start": 2340.0, "end": 2355.0, "light": 1}, {"start": 2355.0, "end": 2370.0, "light": 0}, {"start": 2370.0, "end": 2385.0, "light": 1}, {"start": 2385.0, "end": 2400.0, "light": 0}, {"start": 2400.0, "end": 2415.0, "light": 1}, {"start": 2415.0, "end": 2430.0, "light": 0}, {"start": 2430.0, "end": 2445.0, "light": 1}, {"start": 2445.0, "end": 2460.0, "light": 0}, {"start": 2460.0, "end": 2475.0, "light": 1}, {"start": 2475.0, "end": 2490.0, "light": 0}, {"start": 2490.0, "end": 2505.0, "light": 1}, {"start": 2505.0, "end": 2520.0, "light": 0}, {"start": 2520.0, "end": 2535.0, "light": 1}, {"start": 2535.0, "end": 2550.0, "light": 0}, {"start": 2550.0, "end": 2565.0, "light": 1}, {"start": 2565.0, "end": 2580.0, "light": 0}, {"start": 2580.0, "end": 2595.0, "light": 1}, {"start": 2595.0, "end": 2610.0, "light": 0}, {"start": 2610.0, "end": 2625.0, "light": 1}, {"start": 2625.0, "end": 2640.0, "light": 0}, {"start": 2640.0, "end": 2655.0, "light": 1}, {"start": 2655.0, "end": 2670.0, "light": 0}, {"start": 2670.0, "end": 2685.0, "light": 1}, {"start": 2685.0, "end": 2700.0, "light": 0}, {"start": 2700.0, "end": 2715.0, "light": 1}, {"start": 2715.0, "end": 2730.0, "light": 0}, {"start": 2730.0, "end": 2745.0, "light": 1}, {"start": 2745.0, "end": 2760.0, "light": 0}, {"start": 2760.0, "end": 2775.0, "light": 1}, {"start": 2775.0, "end": 2790.0, "light": 0}, {"start": 2790.0, "end": 2805.0, "light": 1}, {"start": 2805.0, "end": 2820.0, "light": 0}, {"start": 2820.0, "end": 2835.0, "light": 1}, {"start": 2835.0, "end": 2850.0, "light": 0}, {"start": 2850.0, "end": 2865.0, "light": 1}, {"start": 2865.0, "end": 2880.0, "light": 0}]}, "descendants": 1, "totalVolume": 6.051571119775554}, {"events": [2231.0585279963184, 2269.014250008346, 2305.1897771048334], "final": [0.7564463899726093, 0.5858709212557107, 0.0016216447435252193, 3.6171912018015258, 0.7548247452290889, 7.827984052969384, 0.004013943011792591, 7.997996231570995e-05], "name": "Light-pattern B, 48 h", "config": {"name": "Light-pattern B, 48 h", "parameters": {"mu": 0.00145, "kDeSkLi": 0.038}, "initial": [0.75, 0.75, 0, 1.9500000000000002, 0.75, 6.449999999999999, 0, 0], "schedule": [{"start": 0, "end": 720, "light": 1}, {"start": 720, "end": 1440, "light": 0}, {"start": 1440, "end": 2160, "light": 1}, {"start": 2160, "end": 2880, "light": 0}]}, "descendants": 8, "totalVolume": 6.051571119780874}, {"events": [2919.4960797433087, 2957.1513507537065, 2993.0914350285775], "final": [6.1035855029505095, 0.6530254438283255, 5.6348438481461915, 0.05663134191703686, 0.42667738520197795, 11.716691272880977, 1.2402581764867713, 0.029883942804449667], "name": "Light-pattern A, 96 h", "config": {"name": "Light-pattern A, 96 h", "parameters": {"mu": 0.00145, "kDeSkLi": 0.038}, "initial": [0.75, 0.75, 0, 1.9500000000000002, 0.75, 6.449999999999999, 0, 0], "schedule": [{"start": 0.0, "end": 15.0, "light": 1}, {"start": 15.0, "end": 30.0, "light": 0}, {"start": 30.0, "end": 45.0, "light": 1}, {"start": 45.0, "end": 60.0, "light": 0}, {"start": 60.0, "end": 75.0, "light": 1}, {"start": 75.0, "end": 90.0, "light": 0}, {"start": 90.0, "end": 105.0, "light": 1}, {"start": 105.0, "end": 120.0, "light": 0}, {"start": 120.0, "end": 135.0, "light": 1}, {"start": 135.0, "end": 150.0, "light": 0}, {"start": 150.0, "end": 165.0, "light": 1}, {"start": 165.0, "end": 180.0, "light": 0}, {"start": 180.0, "end": 195.0, "light": 1}, {"start": 195.0, "end": 210.0, "light": 0}, {"start": 210.0, "end": 225.0, "light": 1}, {"start": 225.0, "end": 240.0, "light": 0}, {"start": 240.0, "end": 255.0, "light": 1}, {"start": 255.0, "end": 270.0, "light": 0}, {"start": 270.0, "end": 285.0, "light": 1}, {"start": 285.0, "end": 300.0, "light": 0}, {"start": 300.0, "end": 315.0, "light": 1}, {"start": 315.0, "end": 330.0, "light": 0}, {"start": 330.0, "end": 345.0, "light": 1}, {"start": 345.0, "end": 360.0, "light": 0}, {"start": 360.0, "end": 375.0, "light": 1}, {"start": 375.0, "end": 390.0, "light": 0}, {"start": 390.0, "end": 405.0, "light": 1}, {"start": 405.0, "end": 420.0, "light": 0}, {"start": 420.0, "end": 435.0, "light": 1}, {"start": 435.0, "end": 450.0, "light": 0}, {"start": 450.0, "end": 465.0, "light": 1}, {"start": 465.0, "end": 480.0, "light": 0}, {"start": 480.0, "end": 495.0, "light": 1}, {"start": 495.0, "end": 510.0, "light": 0}, {"start": 510.0, "end": 525.0, "light": 1}, {"start": 525.0, "end": 540.0, "light": 0}, {"start": 540.0, "end": 555.0, "light": 1}, {"start": 555.0, "end": 570.0, "light": 0}, {"start": 570.0, "end": 585.0, "light": 1}, {"start": 585.0, "end": 600.0, "light": 0}, {"start": 600.0, "end": 615.0, "light": 1}, {"start": 615.0, "end": 630.0, "light": 0}, {"start": 630.0, "end": 645.0, "light": 1}, {"start": 645.0, "end": 660.0, "light": 0}, {"start": 660.0, "end": 675.0, "light": 1}, {"start": 675.0, "end": 690.0, "light": 0}, {"start": 690.0, "end": 705.0, "light": 1}, {"start": 705.0, "end": 720.0, "light": 0}, {"start": 720.0, "end": 735.0, "light": 1}, {"start": 735.0, "end": 750.0, "light": 0}, {"start": 750.0, "end": 765.0, "light": 1}, {"start": 765.0, "end": 780.0, "light": 0}, {"start": 780.0, "end": 795.0, "light": 1}, {"start": 795.0, "end": 810.0, "light": 0}, {"start": 810.0, "end": 825.0, "light": 1}, {"start": 825.0, "end": 840.0, "light": 0}, {"start": 840.0, "end": 855.0, "light": 1}, {"start": 855.0, "end": 870.0, "light": 0}, {"start": 870.0, "end": 885.0, "light": 1}, {"start": 885.0, "end": 900.0, "light": 0}, {"start": 900.0, "end": 915.0, "light": 1}, {"start": 915.0, "end": 930.0, "light": 0}, {"start": 930.0, "end": 945.0, "light": 1}, {"start": 945.0, "end": 960.0, "light": 0}, {"start": 960.0, "end": 975.0, "light": 1}, {"start": 975.0, "end": 990.0, "light": 0}, {"start": 990.0, "end": 1005.0, "light": 1}, {"start": 1005.0, "end": 1020.0, "light": 0}, {"start": 1020.0, "end": 1035.0, "light": 1}, {"start": 1035.0, "end": 1050.0, "light": 0}, {"start": 1050.0, "end": 1065.0, "light": 1}, {"start": 1065.0, "end": 1080.0, "light": 0}, {"start": 1080.0, "end": 1095.0, "light": 1}, {"start": 1095.0, "end": 1110.0, "light": 0}, {"start": 1110.0, "end": 1125.0, "light": 1}, {"start": 1125.0, "end": 1140.0, "light": 0}, {"start": 1140.0, "end": 1155.0, "light": 1}, {"start": 1155.0, "end": 1170.0, "light": 0}, {"start": 1170.0, "end": 1185.0, "light": 1}, {"start": 1185.0, "end": 1200.0, "light": 0}, {"start": 1200.0, "end": 1215.0, "light": 1}, {"start": 1215.0, "end": 1230.0, "light": 0}, {"start": 1230.0, "end": 1245.0, "light": 1}, {"start": 1245.0, "end": 1260.0, "light": 0}, {"start": 1260.0, "end": 1275.0, "light": 1}, {"start": 1275.0, "end": 1290.0, "light": 0}, {"start": 1290.0, "end": 1305.0, "light": 1}, {"start": 1305.0, "end": 1320.0, "light": 0}, {"start": 1320.0, "end": 1335.0, "light": 1}, {"start": 1335.0, "end": 1350.0, "light": 0}, {"start": 1350.0, "end": 1365.0, "light": 1}, {"start": 1365.0, "end": 1380.0, "light": 0}, {"start": 1380.0, "end": 1395.0, "light": 1}, {"start": 1395.0, "end": 1410.0, "light": 0}, {"start": 1410.0, "end": 1425.0, "light": 1}, {"start": 1425.0, "end": 1440.0, "light": 0}, {"start": 1440.0, "end": 1455.0, "light": 1}, {"start": 1455.0, "end": 1470.0, "light": 0}, {"start": 1470.0, "end": 1485.0, "light": 1}, {"start": 1485.0, "end": 1500.0, "light": 0}, {"start": 1500.0, "end": 1515.0, "light": 1}, {"start": 1515.0, "end": 1530.0, "light": 0}, {"start": 1530.0, "end": 1545.0, "light": 1}, {"start": 1545.0, "end": 1560.0, "light": 0}, {"start": 1560.0, "end": 1575.0, "light": 1}, {"start": 1575.0, "end": 1590.0, "light": 0}, {"start": 1590.0, "end": 1605.0, "light": 1}, {"start": 1605.0, "end": 1620.0, "light": 0}, {"start": 1620.0, "end": 1635.0, "light": 1}, {"start": 1635.0, "end": 1650.0, "light": 0}, {"start": 1650.0, "end": 1665.0, "light": 1}, {"start": 1665.0, "end": 1680.0, "light": 0}, {"start": 1680.0, "end": 1695.0, "light": 1}, {"start": 1695.0, "end": 1710.0, "light": 0}, {"start": 1710.0, "end": 1725.0, "light": 1}, {"start": 1725.0, "end": 1740.0, "light": 0}, {"start": 1740.0, "end": 1755.0, "light": 1}, {"start": 1755.0, "end": 1770.0, "light": 0}, {"start": 1770.0, "end": 1785.0, "light": 1}, {"start": 1785.0, "end": 1800.0, "light": 0}, {"start": 1800.0, "end": 1815.0, "light": 1}, {"start": 1815.0, "end": 1830.0, "light": 0}, {"start": 1830.0, "end": 1845.0, "light": 1}, {"start": 1845.0, "end": 1860.0, "light": 0}, {"start": 1860.0, "end": 1875.0, "light": 1}, {"start": 1875.0, "end": 1890.0, "light": 0}, {"start": 1890.0, "end": 1905.0, "light": 1}, {"start": 1905.0, "end": 1920.0, "light": 0}, {"start": 1920.0, "end": 1935.0, "light": 1}, {"start": 1935.0, "end": 1950.0, "light": 0}, {"start": 1950.0, "end": 1965.0, "light": 1}, {"start": 1965.0, "end": 1980.0, "light": 0}, {"start": 1980.0, "end": 1995.0, "light": 1}, {"start": 1995.0, "end": 2010.0, "light": 0}, {"start": 2010.0, "end": 2025.0, "light": 1}, {"start": 2025.0, "end": 2040.0, "light": 0}, {"start": 2040.0, "end": 2055.0, "light": 1}, {"start": 2055.0, "end": 2070.0, "light": 0}, {"start": 2070.0, "end": 2085.0, "light": 1}, {"start": 2085.0, "end": 2100.0, "light": 0}, {"start": 2100.0, "end": 2115.0, "light": 1}, {"start": 2115.0, "end": 2130.0, "light": 0}, {"start": 2130.0, "end": 2145.0, "light": 1}, {"start": 2145.0, "end": 2160.0, "light": 0}, {"start": 2160.0, "end": 2175.0, "light": 1}, {"start": 2175.0, "end": 2190.0, "light": 0}, {"start": 2190.0, "end": 2205.0, "light": 1}, {"start": 2205.0, "end": 2220.0, "light": 0}, {"start": 2220.0, "end": 2235.0, "light": 1}, {"start": 2235.0, "end": 2250.0, "light": 0}, {"start": 2250.0, "end": 2265.0, "light": 1}, {"start": 2265.0, "end": 2280.0, "light": 0}, {"start": 2280.0, "end": 2295.0, "light": 1}, {"start": 2295.0, "end": 2310.0, "light": 0}, {"start": 2310.0, "end": 2325.0, "light": 1}, {"start": 2325.0, "end": 2340.0, "light": 0}, {"start": 2340.0, "end": 2355.0, "light": 1}, {"start": 2355.0, "end": 2370.0, "light": 0}, {"start": 2370.0, "end": 2385.0, "light": 1}, {"start": 2385.0, "end": 2400.0, "light": 0}, {"start": 2400.0, "end": 2415.0, "light": 1}, {"start": 2415.0, "end": 2430.0, "light": 0}, {"start": 2430.0, "end": 2445.0, "light": 1}, {"start": 2445.0, "end": 2460.0, "light": 0}, {"start": 2460.0, "end": 2475.0, "light": 1}, {"start": 2475.0, "end": 2490.0, "light": 0}, {"start": 2490.0, "end": 2505.0, "light": 1}, {"start": 2505.0, "end": 2520.0, "light": 0}, {"start": 2520.0, "end": 2535.0, "light": 1}, {"start": 2535.0, "end": 2550.0, "light": 0}, {"start": 2550.0, "end": 2565.0, "light": 1}, {"start": 2565.0, "end": 2580.0, "light": 0}, {"start": 2580.0, "end": 2595.0, "light": 1}, {"start": 2595.0, "end": 2610.0, "light": 0}, {"start": 2610.0, "end": 2625.0, "light": 1}, {"start": 2625.0, "end": 2640.0, "light": 0}, {"start": 2640.0, "end": 2655.0, "light": 1}, {"start": 2655.0, "end": 2670.0, "light": 0}, {"start": 2670.0, "end": 2685.0, "light": 1}, {"start": 2685.0, "end": 2700.0, "light": 0}, {"start": 2700.0, "end": 2715.0, "light": 1}, {"start": 2715.0, "end": 2730.0, "light": 0}, {"start": 2730.0, "end": 2745.0, "light": 1}, {"start": 2745.0, "end": 2760.0, "light": 0}, {"start": 2760.0, "end": 2775.0, "light": 1}, {"start": 2775.0, "end": 2790.0, "light": 0}, {"start": 2790.0, "end": 2805.0, "light": 1}, {"start": 2805.0, "end": 2820.0, "light": 0}, {"start": 2820.0, "end": 2835.0, "light": 1}, {"start": 2835.0, "end": 2850.0, "light": 0}, {"start": 2850.0, "end": 2865.0, "light": 1}, {"start": 2865.0, "end": 2880.0, "light": 0}, {"start": 2880.0, "end": 2895.0, "light": 1}, {"start": 2895.0, "end": 2910.0, "light": 0}, {"start": 2910.0, "end": 2925.0, "light": 1}, {"start": 2925.0, "end": 2940.0, "light": 0}, {"start": 2940.0, "end": 2955.0, "light": 1}, {"start": 2955.0, "end": 2970.0, "light": 0}, {"start": 2970.0, "end": 2985.0, "light": 1}, {"start": 2985.0, "end": 3000.0, "light": 0}, {"start": 3000.0, "end": 3015.0, "light": 1}, {"start": 3015.0, "end": 3030.0, "light": 0}, {"start": 3030.0, "end": 3045.0, "light": 1}, {"start": 3045.0, "end": 3060.0, "light": 0}, {"start": 3060.0, "end": 3075.0, "light": 1}, {"start": 3075.0, "end": 3090.0, "light": 0}, {"start": 3090.0, "end": 3105.0, "light": 1}, {"start": 3105.0, "end": 3120.0, "light": 0}, {"start": 3120.0, "end": 3135.0, "light": 1}, {"start": 3135.0, "end": 3150.0, "light": 0}, {"start": 3150.0, "end": 3165.0, "light": 1}, {"start": 3165.0, "end": 3180.0, "light": 0}, {"start": 3180.0, "end": 3195.0, "light": 1}, {"start": 3195.0, "end": 3210.0, "light": 0}, {"start": 3210.0, "end": 3225.0, "light": 1}, {"start": 3225.0, "end": 3240.0, "light": 0}, {"start": 3240.0, "end": 3255.0, "light": 1}, {"start": 3255.0, "end": 3270.0, "light": 0}, {"start": 3270.0, "end": 3285.0, "light": 1}, {"start": 3285.0, "end": 3300.0, "light": 0}, {"start": 3300.0, "end": 3315.0, "light": 1}, {"start": 3315.0, "end": 3330.0, "light": 0}, {"start": 3330.0, "end": 3345.0, "light": 1}, {"start": 3345.0, "end": 3360.0, "light": 0}, {"start": 3360.0, "end": 3375.0, "light": 1}, {"start": 3375.0, "end": 3390.0, "light": 0}, {"start": 3390.0, "end": 3405.0, "light": 1}, {"start": 3405.0, "end": 3420.0, "light": 0}, {"start": 3420.0, "end": 3435.0, "light": 1}, {"start": 3435.0, "end": 3450.0, "light": 0}, {"start": 3450.0, "end": 3465.0, "light": 1}, {"start": 3465.0, "end": 3480.0, "light": 0}, {"start": 3480.0, "end": 3495.0, "light": 1}, {"start": 3495.0, "end": 3510.0, "light": 0}, {"start": 3510.0, "end": 3525.0, "light": 1}, {"start": 3525.0, "end": 3540.0, "light": 0}, {"start": 3540.0, "end": 3555.0, "light": 1}, {"start": 3555.0, "end": 3570.0, "light": 0}, {"start": 3570.0, "end": 3585.0, "light": 1}, {"start": 3585.0, "end": 3600.0, "light": 0}, {"start": 3600.0, "end": 3615.0, "light": 1}, {"start": 3615.0, "end": 3630.0, "light": 0}, {"start": 3630.0, "end": 3645.0, "light": 1}, {"start": 3645.0, "end": 3660.0, "light": 0}, {"start": 3660.0, "end": 3675.0, "light": 1}, {"start": 3675.0, "end": 3690.0, "light": 0}, {"start": 3690.0, "end": 3705.0, "light": 1}, {"start": 3705.0, "end": 3720.0, "light": 0}, {"start": 3720.0, "end": 3735.0, "light": 1}, {"start": 3735.0, "end": 3750.0, "light": 0}, {"start": 3750.0, "end": 3765.0, "light": 1}, {"start": 3765.0, "end": 3780.0, "light": 0}, {"start": 3780.0, "end": 3795.0, "light": 1}, {"start": 3795.0, "end": 3810.0, "light": 0}, {"start": 3810.0, "end": 3825.0, "light": 1}, {"start": 3825.0, "end": 3840.0, "light": 0}, {"start": 3840.0, "end": 3855.0, "light": 1}, {"start": 3855.0, "end": 3870.0, "light": 0}, {"start": 3870.0, "end": 3885.0, "light": 1}, {"start": 3885.0, "end": 3900.0, "light": 0}, {"start": 3900.0, "end": 3915.0, "light": 1}, {"start": 3915.0, "end": 3930.0, "light": 0}, {"start": 3930.0, "end": 3945.0, "light": 1}, {"start": 3945.0, "end": 3960.0, "light": 0}, {"start": 3960.0, "end": 3975.0, "light": 1}, {"start": 3975.0, "end": 3990.0, "light": 0}, {"start": 3990.0, "end": 4005.0, "light": 1}, {"start": 4005.0, "end": 4020.0, "light": 0}, {"start": 4020.0, "end": 4035.0, "light": 1}, {"start": 4035.0, "end": 4050.0, "light": 0}, {"start": 4050.0, "end": 4065.0, "light": 1}, {"start": 4065.0, "end": 4080.0, "light": 0}, {"start": 4080.0, "end": 4095.0, "light": 1}, {"start": 4095.0, "end": 4110.0, "light": 0}, {"start": 4110.0, "end": 4125.0, "light": 1}, {"start": 4125.0, "end": 4140.0, "light": 0}, {"start": 4140.0, "end": 4155.0, "light": 1}, {"start": 4155.0, "end": 4170.0, "light": 0}, {"start": 4170.0, "end": 4185.0, "light": 1}, {"start": 4185.0, "end": 4200.0, "light": 0}, {"start": 4200.0, "end": 4215.0, "light": 1}, {"start": 4215.0, "end": 4230.0, "light": 0}, {"start": 4230.0, "end": 4245.0, "light": 1}, {"start": 4245.0, "end": 4260.0, "light": 0}, {"start": 4260.0, "end": 4275.0, "light": 1}, {"start": 4275.0, "end": 4290.0, "light": 0}, {"start": 4290.0, "end": 4305.0, "light": 1}, {"start": 4305.0, "end": 4320.0, "light": 0}, {"start": 4320.0, "end": 4335.0, "light": 1}, {"start": 4335.0, "end": 4350.0, "light": 0}, {"start": 4350.0, "end": 4365.0, "light": 1}, {"start": 4365.0, "end": 4380.0, "light": 0}, {"start": 4380.0, "end": 4395.0, "light": 1}, {"start": 4395.0, "end": 4410.0, "light": 0}, {"start": 4410.0, "end": 4425.0, "light": 1}, {"start": 4425.0, "end": 4440.0, "light": 0}, {"start": 4440.0, "end": 4455.0, "light": 1}, {"start": 4455.0, "end": 4470.0, "light": 0}, {"start": 4470.0, "end": 4485.0, "light": 1}, {"start": 4485.0, "end": 4500.0, "light": 0}, {"start": 4500.0, "end": 4515.0, "light": 1}, {"start": 4515.0, "end": 4530.0, "light": 0}, {"start": 4530.0, "end": 4545.0, "light": 1}, {"start": 4545.0, "end": 4560.0, "light": 0}, {"start": 4560.0, "end": 4575.0, "light": 1}, {"start": 4575.0, "end": 4590.0, "light": 0}, {"start": 4590.0, "end": 4605.0, "light": 1}, {"start": 4605.0, "end": 4620.0, "light": 0}, {"start": 4620.0, "end": 4635.0, "light": 1}, {"start": 4635.0, "end": 4650.0, "light": 0}, {"start": 4650.0, "end": 4665.0, "light": 1}, {"start": 4665.0, "end": 4680.0, "light": 0}, {"start": 4680.0, "end": 4695.0, "light": 1}, {"start": 4695.0, "end": 4710.0, "light": 0}, {"start": 4710.0, "end": 4725.0, "light": 1}, {"start": 4725.0, "end": 4740.0, "light": 0}, {"start": 4740.0, "end": 4755.0, "light": 1}, {"start": 4755.0, "end": 4770.0, "light": 0}, {"start": 4770.0, "end": 4785.0, "light": 1}, {"start": 4785.0, "end": 4800.0, "light": 0}, {"start": 4800.0, "end": 4815.0, "light": 1}, {"start": 4815.0, "end": 4830.0, "light": 0}, {"start": 4830.0, "end": 4845.0, "light": 1}, {"start": 4845.0, "end": 4860.0, "light": 0}, {"start": 4860.0, "end": 4875.0, "light": 1}, {"start": 4875.0, "end": 4890.0, "light": 0}, {"start": 4890.0, "end": 4905.0, "light": 1}, {"start": 4905.0, "end": 4920.0, "light": 0}, {"start": 4920.0, "end": 4935.0, "light": 1}, {"start": 4935.0, "end": 4950.0, "light": 0}, {"start": 4950.0, "end": 4965.0, "light": 1}, {"start": 4965.0, "end": 4980.0, "light": 0}, {"start": 4980.0, "end": 4995.0, "light": 1}, {"start": 4995.0, "end": 5010.0, "light": 0}, {"start": 5010.0, "end": 5025.0, "light": 1}, {"start": 5025.0, "end": 5040.0, "light": 0}, {"start": 5040.0, "end": 5055.0, "light": 1}, {"start": 5055.0, "end": 5070.0, "light": 0}, {"start": 5070.0, "end": 5085.0, "light": 1}, {"start": 5085.0, "end": 5100.0, "light": 0}, {"start": 5100.0, "end": 5115.0, "light": 1}, {"start": 5115.0, "end": 5130.0, "light": 0}, {"start": 5130.0, "end": 5145.0, "light": 1}, {"start": 5145.0, "end": 5160.0, "light": 0}, {"start": 5160.0, "end": 5175.0, "light": 1}, {"start": 5175.0, "end": 5190.0, "light": 0}, {"start": 5190.0, "end": 5205.0, "light": 1}, {"start": 5205.0, "end": 5220.0, "light": 0}, {"start": 5220.0, "end": 5235.0, "light": 1}, {"start": 5235.0, "end": 5250.0, "light": 0}, {"start": 5250.0, "end": 5265.0, "light": 1}, {"start": 5265.0, "end": 5280.0, "light": 0}, {"start": 5280.0, "end": 5295.0, "light": 1}, {"start": 5295.0, "end": 5310.0, "light": 0}, {"start": 5310.0, "end": 5325.0, "light": 1}, {"start": 5325.0, "end": 5340.0, "light": 0}, {"start": 5340.0, "end": 5355.0, "light": 1}, {"start": 5355.0, "end": 5370.0, "light": 0}, {"start": 5370.0, "end": 5385.0, "light": 1}, {"start": 5385.0, "end": 5400.0, "light": 0}, {"start": 5400.0, "end": 5415.0, "light": 1}, {"start": 5415.0, "end": 5430.0, "light": 0}, {"start": 5430.0, "end": 5445.0, "light": 1}, {"start": 5445.0, "end": 5460.0, "light": 0}, {"start": 5460.0, "end": 5475.0, "light": 1}, {"start": 5475.0, "end": 5490.0, "light": 0}, {"start": 5490.0, "end": 5505.0, "light": 1}, {"start": 5505.0, "end": 5520.0, "light": 0}, {"start": 5520.0, "end": 5535.0, "light": 1}, {"start": 5535.0, "end": 5550.0, "light": 0}, {"start": 5550.0, "end": 5565.0, "light": 1}, {"start": 5565.0, "end": 5580.0, "light": 0}, {"start": 5580.0, "end": 5595.0, "light": 1}, {"start": 5595.0, "end": 5610.0, "light": 0}, {"start": 5610.0, "end": 5625.0, "light": 1}, {"start": 5625.0, "end": 5640.0, "light": 0}, {"start": 5640.0, "end": 5655.0, "light": 1}, {"start": 5655.0, "end": 5670.0, "light": 0}, {"start": 5670.0, "end": 5685.0, "light": 1}, {"start": 5685.0, "end": 5700.0, "light": 0}, {"start": 5700.0, "end": 5715.0, "light": 1}, {"start": 5715.0, "end": 5730.0, "light": 0}, {"start": 5730.0, "end": 5745.0, "light": 1}, {"start": 5745.0, "end": 5760.0, "light": 0}]}, "descendants": 8, "totalVolume": 48.828684023604076}, {"events": [2231.0585279963184, 2269.014250008346, 2305.1897771048334, 5109.095242472601, 5147.047482197322, 5183.358690586252], "final": [0.7629481878702545, 0.59090659116518, 0.0016534866422285301, 3.609765631543727, 0.7612947012280288, 7.828939667228245, 0.004092710925249306, 8.15500936399386e-05], "name": "Light-pattern B, 96 h", "config": {"name": "Light-pattern B, 96 h", "parameters": {"mu": 0.00145, "kDeSkLi": 0.038}, "initial": [0.75, 0.75, 0, 1.9500000000000002, 0.75, 6.449999999999999, 0, 0], "schedule": [{"start": 0, "end": 720, "light": 1}, {"start": 720, "end": 1440, "light": 0}, {"start": 1440, "end": 2160, "light": 1}, {"start": 2160, "end": 2880, "light": 0}, {"start": 2880, "end": 3600, "light": 1}, {"start": 3600, "end": 4320, "light": 0}, {"start": 4320, "end": 5040, "light": 1}, {"start": 5040, "end": 5760, "light": 0}]}, "descendants": 64, "totalVolume": 48.82868402369629}, {"events": [111.6900858774409, 149.6891908925307], "final": [1.3056560553799468, 1.0107316251080452, 0.006041488441006623, 2.9748334843313002, 1.2996145669389454, 7.925551948729755, 0.014934058908860149, 0.0002979573089092328], "name": "Hidden-state original", "config": {"name": "Hidden-state original", "initial": [5.222624221519787, 0.2434789848057327, 0.009659058764319717, 5.614399417374354, 4.972176446659959, 1.6134241359656825, 0.022073984974648693, 0.0004394104657567557], "schedule": [{"start": 0, "end": 720, "light": 0}]}, "descendants": 4, "totalVolume": 5.222624221519787}, {"events": [111.69008468798529, 149.6891897021625], "final": [1.3056560553799468, 1.0107316251082206, 0.006041488441008592, 2.974833484330796, 1.29961456693894, 7.925551948730267, 0.014934058908865143, 0.00029795730890933285], "name": "Hidden-state redistributed", "config": {"name": "Hidden-state redistributed", "initial": [5.222624221519787, 0.2434789848057327, 4.732743730153064, 10.337484088763098, 0.24909177527121396, 1.6134241359656825, 0.022073984974648693, 0.0004394104657567557], "schedule": [{"start": 0, "end": 720, "light": 0}]}, "descendants": 4, "totalVolume": 5.222624221519787}], "ledger": [{"id": "F01", "title": "Equal light time, different division outcome", "status": "simulation-only; independently integrated", "result": "At 48 h, 1 versus 8 descendants; both lineage volumes are 6.051571 AV.", "intervention": "Initial volume 0.75 AV, growth rate 0.00145 /min; 15 min light/15 min dark versus 12 h light/12 h dark.", "mechanism": "Light is used by both the growth equation and starter-kinase degradation. Equal light duration fixes total lineage volume here, but not the regulatory path.", "limit": "Finite 48 h endpoint, not permanent arrest. At 96 h the independent model predicts 8 versus 64 descendants. Light is binary, not an energy accounting system.", "evidence": ["INDEPENDENT_FINDING_CHECKS.json", "CAMPAIGN_RESULTS.json", "engine.js"]}, {"id": "F02", "title": "Pulse schedule shifts first division", "status": "published-model reproduction", "result": "Hourly flashes: 21.4275 h; 12 h day/night: 12.0379 h to first division.", "limit": "Default model parameters. The underlying light-sensitive mechanism is existing prior work, not our discovery.", "evidence": ["BDF_REFERENCE.json"]}, {"id": "F03", "title": "Growth and light sensing are distinct controls", "status": "simulation-only parameter intervention", "result": "Halving the light-dependent starter-kinase degradation rate advances first division by 32.291 min under day/night forcing.", "limit": "No calibrated genetic manipulation or nutrient-dose interpretation is supplied.", "evidence": ["REFERENCE_CASES.json", "BDF_REFERENCE.json"]}, {"id": "F04", "title": "A hidden-state discovery disappears", "status": "rejected numerical artifact", "result": "A coarse 0.125-minute integration suggested a 72.680-minute effect of redistributing a complex. Independent BDF gives a first-division difference of 1.19e-06 min.", "limit": "These are synthetic initial-state preparations, not wet-lab data. The negative result concerns this outcome and protocol, not every transient or all hidden state.", "evidence": ["CONNECTOR_TESTS.json", "INDEPENDENT_FINDING_CHECKS.json"]}, {"id": "F05", "title": "Growth history does not earn admission here", "status": "negative held-out observational result", "result": "For 3679 cells, the Brier score changes from 0.100843 to 0.104172 when growth history is added (worse).", "limit": "Two of four held-out experiments improve and two worsen. This is a fixed polynomial logistic model, not proof that no use of history can help. The 277-cell different-protocol test is mixed across metrics.", "evidence": ["EMPIRICAL_RESULTS.json", "HELD_OUT_PREDICTIONS.json", "empirical.py"]}], "parameters": [{"name": "mu", "value": 0.0029, "unit": "1/min", "meaning": "specific growth rate (4h mass doubling time)", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "At", "value": 1.0, "unit": "AU/AV", "meaning": "total antagonist concentration", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "CdTh", "value": 0.2, "unit": "AU/AV", "meaning": "cell division threshold (if M falls below CdTh cell division ensues)", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kSySk", "value": 0.002, "unit": "AU/(AV*min)", "meaning": "starter kinase synthesis", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kDeSk", "value": 0.002, "unit": "1/min", "meaning": "constitutive starter kinase degradation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kDeSkLi", "value": 0.038, "unit": "1/min", "meaning": "light-dependent starter kinase degradation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kSyTf", "value": 0.06, "unit": "AU/(AV*min)", "meaning": "transcription factor synthesis", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kDeTf", "value": 0.06, "unit": "1/min", "meaning": "transcription factor degradation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kSyIn", "value": 6.1, "unit": "AU/min", "meaning": "inhibitor synthesis", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kDeIn", "value": 0.5, "unit": "1/min", "meaning": "inhibitor degradation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kAsTfIn", "value": 500.0, "unit": "AV/(AU*min)", "meaning": "association of transcription factor and inhibitor", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kDsTfIn", "value": 0.1, "unit": "1/min", "meaning": "dissociation of transcription factor-inhibitor complexes", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kPhInSk", "value": 5.6, "unit": "AV/(AU*min)", "meaning": "inhibitor phosphorylation by starter kinase", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kPhInFk", "value": 65.0, "unit": "AV/(AU*min)", "meaning": "inhibitor phosphorylation by feedback kinase", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kDpIn", "value": 2.0, "unit": "1/min", "meaning": "inhibitor dephosphorylation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kSySTf", "value": 0.25, "unit": "1/min", "meaning": "transcription factor-dependent synthesis of S", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "jInSM", "value": 0.125, "unit": "AU/AV", "meaning": "half-saturation constant for inhibition of S by M", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "nInSM", "value": 4.0, "unit": "-", "meaning": "hill exponent for inhibition of S by M", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": true}, {"name": "kDeS", "value": 0.1, "unit": "1/min", "meaning": "constitutive S degradation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kSyMS", "value": 0.2, "unit": "1/min", "meaning": "synthesis of M promoted by S", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kSyMM", "value": 0.06, "unit": "1/min", "meaning": "synthesis of M promoted by M", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kDeM", "value": 0.1, "unit": "1/min", "meaning": "constitutive M degradation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kDeMA", "value": 10.0, "unit": "AV/(AU*min)", "meaning": "antagonist-mediated degradation of M", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kPhAS", "value": 25.0, "unit": "AV^n/(AU^n*min)", "meaning": "phosphorylation of antagonist by S", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "kPhAM", "value": 2000.0, "unit": "AV^n/(AU^n*min)", "meaning": "phosphorylation of antagonist by M", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}, {"name": "nPhA", "value": 2.0, "unit": "-", "meaning": "hill exponent for antagonist phosphorylation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": true}, {"name": "kDpA", "value": 2.0, "unit": "1/min", "meaning": "antagonist dephosphorylation", "status": "published model parameter, not a calibrated organism-wide constant", "structural_dial": false}]};</script><script>/* SPDX-License-Identifier: GPL-3.0-only */
+'use strict';
+const $=id=>document.getElementById(id), engineCode=$('engine-source').textContent;
+const boot=document.createElement('script');boot.textContent=engineCode;document.head.append(boot);
+const O=globalThis.Organism, green='#9be6b2', violet='#c9b5fc', muted='#a6c1b6';
+let runs=[],configs=[],labels=['Your experiment'],currentTime=0,playing=false,worker=null,requestId=0,lastFrame=0,activeDemo=null;
+let customInitial=null,customParameters=null;
+const controls=['mode','hours','volume','lightHours','period','duty','growth','sensor'];
+function outputs(){for(const [id,suffix] of [['hours',' h'],['volume',' AV'],['lightHours',' h'],['growth','×'],['sensor','×']])$(id+'Out').textContent=$(id).value+suffix;$('dutyOut').textContent=Math.round(100*+$('duty').value)+'%';}
+function configFromUI(){return {mode:$('mode').value,hours:+$('hours').value,volume:+$('volume').value,
+ lightHours:+$('lightHours').value,period:$('mode').value==='daynight'?24:+$('period').value,duty:+$('duty').value,
+ parameters:customParameters||{mu:O.defaults.mu*+$('growth').value,kDeSkLi:O.defaults.kDeSkLi*+$('sensor').value},
+ ...(customInitial?{initial:customInitial}:{}),dt:.03125,sampleEvery:3};}
+function setUI(c){for(const id of ['mode','hours','volume','lightHours','period','duty'])if(c[id]!==undefined)$(id).value=c[id];
+ $('growth').value=(c.parameters?.mu??O.defaults.mu)/O.defaults.mu;
+ $('sensor').value=(c.parameters?.kDeSkLi??O.defaults.kDeSkLi)/O.defaults.kDeSkLi;
+ customInitial=c.initial||null;customParameters=c.parameters||null;outputs();fillParameters(O.parameters(c.parameters));}
+function fillParameters(p=O.defaults){$('params').innerHTML='';for(const [key,value] of Object.entries(p)){
+ const lab=document.createElement('label');lab.htmlFor='p_'+key;lab.textContent=key;
+ const input=document.createElement('input');input.id='p_'+key;input.type='number';input.min='0';input.step='any';input.value=value;input.dataset.param=key;
+ const info=LAB_DATA.parameters?.find(p=>p.name===key);if(info){input.title=info.unit+' — '+info.meaning+(info.structural_dial?' (changes the model response law)':'');lab.title=input.title;}
+ $('params').append(lab,input);}}
+function showPane(id){document.querySelectorAll('.pane').forEach(p=>p.hidden=p.id!==id);document.querySelectorAll('[data-pane]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.pane===id)));draw();}
+document.querySelectorAll('[data-pane]').forEach(b=>b.onclick=()=>showPane(b.dataset.pane));
+function download(value,name){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);}
+function integral(schedule,t){return schedule.reduce((a,s)=>a+s.light*Math.max(0,Math.min(t,s.end)-s.start),0);}
+function prepareDisplay(r){
+ const points=r.trace.map(s=>({...s}));
+ for(const e of r.events){const dose=integral(r.schedule,e.t),L=r.schedule.find(s=>s.start<=e.t&&s.end>=e.t)?.light||0;
+   points.push({t:e.t,y:e.parent,generation:e.generation-1,descendants:2**(e.generation-1),light:L,dose,order:0});
+   points.push({t:e.t,y:e.daughter,generation:e.generation,descendants:2**e.generation,light:L,dose,order:1});}
+ r.display=points.sort((a,b)=>a.t-b.t||(a.order??2)-(b.order??2));return r;
+}
+function stateAt(r,t){const a=r.display;let lo=0,hi=a.length;
+ while(lo<hi){const mid=(lo+hi)>>1;if(a[mid].t<=t+1e-8)lo=mid+1;else hi=mid;}
+ const left=a[Math.max(0,lo-1)],right=a[Math.min(a.length-1,lo)];
+ const light=r.schedule.find(s=>s.start<=t&&s.end>t)?.light??r.schedule.at(-1).light;
+ if(left.generation!==right.generation||right.t<=left.t)return {...left,light};
+ const f=Math.max(0,Math.min(1,(t-left.t)/(right.t-left.t)));
+ return {...left,t,light,dose:integral(r.schedule,t),y:left.y.map((v,i)=>v+f*(right.y[i]-v))};
+}
+function requestRun(cs,title='Your experiment',names=['Your experiment'],jump=0){
+ playing=false;$('play').textContent='Play';worker?.terminate();requestId++;
+ runs=[];currentTime=0;$('save').disabled=true;
+ for(const id of ['clock','cellCount','cellVolume','totalVolume','lightDose'])$(id).textContent='—';
+ drawTank();drawChart();
+ configs=cs.map(c=>({...c,dt:.03125,sampleEvery:3}));labels=names;
+ $('run').disabled=true;$('notice').className='';$('notice').textContent='Integrating the cell-cycle equations…';$('runTitle').textContent=title;
+ const code=engineCode+'\nonmessage=function(e){try{postMessage({id:e.data.id,runs:e.data.configs.map(c=>Organism.simulate(c))});}catch(err){postMessage({id:e.data.id,error:err.message});}};';
+ const url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));worker=new Worker(url);URL.revokeObjectURL(url);
+ worker.onmessage=e=>{if(e.data.id!==requestId)return;$('run').disabled=false;
+   if(e.data.error){$('notice').textContent='Model run rejected: '+e.data.error;$('notice').className='alert';return;}
+   runs=e.data.runs.map(prepareDisplay);currentTime=Math.min(jump,runs[0].final.t/60);$('time').max=runs[0].final.t/60;$('time').value=currentTime;
+   $('save').disabled=false;
+   $('labelA').textContent='A · '+labels[0];$('labelB').textContent=runs[1]?'B · '+labels[1]:'';
+   const states=runs.map(r=>r.final.descendants).join(' / ');
+   $('notice').textContent='Calculated. Endpoint descendants: '+states+'. Simulation-only prediction.';
+   if(activeDemo==='dose')$('finding').textContent=`At 48 h: ${runs[0].final.descendants} versus ${runs[1].final.descendants} descendants. Both received ${runs[0].final.dose/60} h of light and have the same total lineage volume. The timing acts through regulation. This is a model prediction, independently checked numerically—not a measured biological discovery.`;
+   if(activeDemo==='hidden')$('finding').textContent=`A false lead caught: a coarse solver suggested a 72.7-minute difference after redistributing a bound pool. At this finer step, first division is ${(runs[0].events[0].t/60).toFixed(3)} versus ${(runs[1].events[0].t/60).toFixed(3)} h. Independent BDF integration also removes the difference. The apparent discovery was numerical error.`;
+   draw();worker.terminate();worker=null;
+ };
+ worker.onerror=e=>{$('run').disabled=false;$('notice').textContent='Worker failed: '+e.message;$('notice').className='alert';};
+ worker.postMessage({id:requestId,configs});
+}
+function reset(){customParameters=null;customInitial=null;activeDemo=null;for(const [id,v] of Object.entries({mode:'daynight',hours:48,volume:1,lightHours:12,period:24,duty:.5,growth:1,sensor:1}))$(id).value=v;outputs();fillParameters();}
+$('run').onclick=()=>{activeDemo=null;$('finding').textContent='Your custom intervention. Growth and light-sensing multipliers modify published rate parameters, not measured nutrient or gene doses.';requestRun([configFromUI()]);};
+$('reset').onclick=()=>{reset();$('run').click();};
+controls.forEach(id=>$(id).addEventListener('input',()=>{customInitial=null;customParameters=null;outputs();$('notice').textContent='Controls changed. Press Run experiment to calculate.';fillParameters(O.parameters({mu:O.defaults.mu*+$('growth').value,kDeSkLi:O.defaults.kDeSkLi*+$('sensor').value}));}));
+$('applyRates').onclick=()=>{try{const p={};document.querySelectorAll('[data-param]').forEach(e=>p[e.dataset.param]=e.value===''?NaN:+e.value);customParameters=O.parameters(p);$('run').click();}catch(e){$('notice').textContent=e.message;$('notice').className='alert';}};
+$('applySchedule').onclick=()=>{try{const schedule=JSON.parse($('schedule').value);if(!Array.isArray(schedule))throw Error('Expected a segment array');activeDemo=null;$('finding').textContent='Custom ordered illumination segments. Times are in minutes; the schedule sets the horizon. Other rate and initial-state controls are retained.';requestRun([{...configFromUI(),schedule}],'Custom light schedule');}catch(e){$('notice').textContent=e.message;$('notice').className='alert';}};
+$('play').onclick=()=>{if(!runs.length)return;if(currentTime>=runs[0].final.t/60)currentTime=0;playing=!playing;$('play').textContent=playing?'Pause':'Play';};
+$('end').onclick=()=>{if(!runs.length)return;playing=false;currentTime=runs[0].final.t/60;$('play').textContent='Play';draw();};
+$('time').oninput=()=>{playing=false;$('play').textContent='Play';currentTime=+$('time').value;draw();};
+$('measurement').onchange=draw;
+$('save').onclick=()=>{if(!runs.length)return;download({schema:'observatory.organism-run.v1',model:Connectors.contract.model,configurations:configs,labels,
+ evidence:'Published model simulation, not a measured experiment',sourceCommit:LAB_DATA.empirical.source_commit,
+ results:runs.map(({display,...r})=>r)},'Observatory_Experiment.json');};
+$('import').onclick=()=>$('file').click();
+$('file').onchange=async()=>{try{const f=$('file').files[0];if(!f)return;if(f.size>20000000)throw Error('Run file is too large');const v=JSON.parse(await f.text());
+ if(v.schema!=='observatory.organism-run.v1'||v.model!==Connectors.contract.model||!Array.isArray(v.configurations)||v.configurations.length<1||v.configurations.length>2)throw Error('Unrecognized model/run format');
+ for(const c of v.configurations){O.parameters(c.parameters);if(c.initial&&(c.initial.length!==8||c.initial.some(x=>!Number.isFinite(x)||x<0)||c.initial[0]<=0))throw Error('Invalid initial state');}
+ activeDemo=null;setUI(v.configurations[0]);showPane('life');$('finding').textContent='Imported configuration. Results are recalculated locally; saved results are not treated as evidence.';requestRun(v.configurations,'Imported experiment',['Imported A','Imported B']);
+ }catch(e){$('notice').textContent='Import rejected: '+e.message;$('notice').className='alert';}};
+function demo(id){activeDemo=id;showPane(id==='evidence'?'evidence':'life');if(id==='evidence'){$('finding').textContent='A real-data observation-panel test. The added history dial does not improve prediction overall. This is separate from the mechanistic simulation.';return;}
+ let cs,names,title,jump=0;
+ if(id==='dose'){const p=LAB_DATA.campaign.confirmedContrasts[0];cs=[p.aConfig,p.bConfig];names=['15 min light / 15 min dark','12 h light / 12 h dark'];title='Same light, different family';jump=48;}
+ if(id==='clock'){cs=[{mode:'pulse',period:1,duty:.5,hours:48},{mode:'daynight',hours:48}];names=['Hourly flashes','Day / night'];title='The schedule is a dial';jump=14;$('finding').textContent='Same starting cell, same rates, same 24 h of light over 48 h. Changing the pulse schedule changes when the first division occurs. The source model already contains this light-sensitive mechanism.';}
+ if(id==='sensor'){cs=[{mode:'daynight',hours:48},{mode:'daynight',hours:48,parameters:{kDeSkLi:O.defaults.kDeSkLi*.5}}];names=['Default light sensitivity','Half light sensitivity'];title='Change what light means';jump=12;$('finding').textContent='Only the starter-kinase light-dependent degradation rate changes. Growth per hour of light is identical. This separates light as a growth input from light as a regulatory signal; it is a parameter intervention, not a calibrated gene edit.';}
+ if(id==='hidden'){const w=LAB_DATA.connectors.best;cs=[{initial:w.base,mode:'dark',hours:12},{initial:w.changed,mode:'dark',hours:12}];names=['Original distribution','Redistributed complex'];title='A false discovery, caught';jump=2;}
+ setUI({mode:'daynight',hours:48,volume:1,lightHours:12,period:24,duty:.5,...cs[0]});requestRun(cs,title,names,jump);
+}
+document.querySelectorAll('[data-demo]').forEach(b=>b.onclick=()=>demo(b.dataset.demo));
+function canvas(id){const c=$(id),box=c.getBoundingClientRect(),dpr=window.devicePixelRatio||1;if(!box.width)return null;
+ if(c.width!==Math.round(box.width*dpr)||c.height!==Math.round(box.height*dpr)){c.width=Math.round(box.width*dpr);c.height=Math.round(box.height*dpr);}
+ const ctx=c.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,box.width,box.height);return {ctx,w:box.width,h:box.height};}
+function cell(ctx,x,y,r,s,color){
+ const g=ctx.createRadialGradient(x-r*.3,y-r*.3,1,x,y,r);g.addColorStop(0,'#8dcf9c');g.addColorStop(.5,'#276a53');g.addColorStop(1,'#163e32');
+ ctx.beginPath();ctx.ellipse(x,y,r*.9,r,0,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();ctx.strokeStyle=color;ctx.lineWidth=1.5;ctx.stroke();
+ ctx.beginPath();ctx.ellipse(x-r*.16,y+r*.05,r*.52,r*.65,-.4,.2,5.8);ctx.strokeStyle='#90bb5d';ctx.lineWidth=Math.max(2,r*.11);ctx.stroke();
+ ctx.beginPath();ctx.arc(x+r*.12,y-r*.15,Math.max(2,r*.19),0,Math.PI*2);ctx.fillStyle=`rgba(226,210,124,${Math.min(.95,.2+s.y[7]/s.y[0])})`;ctx.fill();
+ ctx.beginPath();ctx.arc(x-r*.6,y-r*.2,Math.max(1.4,r*.08),0,Math.PI*2);ctx.fillStyle='#e78d56';ctx.fill();
+ ctx.strokeStyle=color+'aa';ctx.lineWidth=1;
+ for(const sign of [-1,1]){ctx.beginPath();ctx.moveTo(x+sign*r*.2,y-r*.95);ctx.bezierCurveTo(x+sign*r*.25,y-r*1.55,x+sign*r,y-r*1.65,x+sign*r*.65,y-r*1.9);ctx.stroke();}
+}
+function drawTank(){const c=canvas('tank');if(!c||!runs.length)return;const {ctx,w,h}=c;
+ let commonScale=20;
+ for(const r of runs)for(const s of r.trace){const area=w/runs.length,n=Math.min(32,s.descendants),cols=Math.ceil(Math.sqrt(n*area/(h-80))),rows=Math.ceil(n/cols);
+   commonScale=Math.min(commonScale,(area-25)/(cols*2.6*Math.cbrt(s.y[0])),(h-76)/(rows*3*Math.cbrt(s.y[0])));}
+ for(let j=0;j<runs.length;j++){
+  const s=stateAt(runs[j],currentTime*60),area=w/runs.length,x0=area*j,color=j?violet:green;
+  const grad=ctx.createLinearGradient(0,0,0,h);grad.addColorStop(0,s.light?'#203c31':'#081d23');grad.addColorStop(1,'#0b2320');ctx.fillStyle=grad;ctx.fillRect(x0,0,area,h);
+  if(j){ctx.strokeStyle='#466159';ctx.beginPath();ctx.moveTo(x0,18);ctx.lineTo(x0,h-18);ctx.stroke();}
+  ctx.font='12px system-ui';ctx.fillStyle=color;ctx.fillText((j?'B':'A')+'   '+(s.light?'LIGHT':'DARK'),x0+20,26);
+  ctx.fillStyle=muted;ctx.fillText(`${s.descendants.toLocaleString()} descendants · ${s.y[0].toFixed(3)} AV each`,x0+20,h-16);
+  const count=Math.min(32,s.descendants),cols=Math.ceil(Math.sqrt(count*area/(h-80))),rows=Math.ceil(count/cols);
+  const radius=commonScale*Math.cbrt(s.y[0]);
+  for(let k=0;k<count;k++){const row=Math.floor(k/cols),col=k%cols,x=x0+area/2+(col-(cols-1)/2)*Math.min(65,(area-28)/cols),y=h/2+14+(row-(rows-1)/2)*Math.min(60,(h-90)/rows);cell(ctx,x,y,Math.max(2,radius),s,color);}
+ }
+}
+function value(s,key){return key==='volume'?s.y[0]:key==='total'?s.y[0]*s.descendants:key==='count'?s.descendants:s.y[O.names.indexOf(key)]/s.y[0];}
+function drawChart(){const c=canvas('trace');if(!c||!runs.length)return;const {ctx,w,h}=c,key=$('measurement').value,p={l:58,r:18,t:20,b:30},W=w-p.l-p.r,H=h-p.t-p.b;
+ const maxT=runs[0].final.t,maxY=Math.max(.001,...runs.flatMap(r=>r.display.map(s=>value(s,key))))*1.08;
+ const x=t=>p.l+t/maxT*W,y=v=>p.t+H-v/maxY*H;
+ for(const seg of runs[0].schedule)if(!seg.light){ctx.fillStyle='#071c20';ctx.fillRect(x(seg.start),p.t,x(seg.end)-x(seg.start),H);}
+ ctx.font='11px system-ui';for(let k=0;k<=4;k++){let v=maxY*k/4;ctx.strokeStyle='#2a4540';ctx.beginPath();ctx.moveTo(p.l,y(v));ctx.lineTo(w-p.r,y(v));ctx.stroke();ctx.fillStyle=muted;ctx.textAlign='right';ctx.fillText(v>=100?v.toFixed(0):v.toFixed(v<1?2:1),p.l-7,y(v)+4);}
+ ctx.textAlign='center';for(let k=0;k<=4;k++)ctx.fillText((maxT/60*k/4).toFixed(0)+' h',x(maxT*k/4),h-8);
+ runs.forEach((r,j)=>{ctx.beginPath();r.display.forEach((s,i)=>{if(i===0)ctx.moveTo(x(s.t),y(value(s,key)));else ctx.lineTo(x(s.t),y(value(s,key)));});ctx.strokeStyle=j?violet:green;ctx.lineWidth=1.8;ctx.stroke();});
+ ctx.strokeStyle='#e4eac0';ctx.setLineDash([3,4]);ctx.beginPath();ctx.moveTo(x(currentTime*60),p.t);ctx.lineTo(x(currentTime*60),h-p.b);ctx.stroke();ctx.setLineDash([]);ctx.textAlign='left';
+}
+let networkPositions=[];
+function drawNetwork(){const c=canvas('network');if(!c)return;const {ctx,w,h}=c,selected=$('node').value;
+ networkPositions=O.names.map((id,i)=>{const a=-Math.PI/2+i*Math.PI/4;return {id,x:w/2+Math.cos(a)*Math.min(190,w*.34),y:h/2+Math.sin(a)*140};});
+ for(const [from,to] of Connectors.contract.edges){const a=networkPositions.find(n=>n.id===from),b=networkPositions.find(n=>n.id===to),dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy),ux=dx/len,uy=dy/len;
+  ctx.beginPath();ctx.moveTo(a.x+ux*24,a.y+uy*24);ctx.lineTo(b.x-ux*29,b.y-uy*29);ctx.strokeStyle=from===selected||to===selected?'#7ba98e':'#2e4d43';ctx.lineWidth=from===selected||to===selected?1.6:.7;ctx.stroke();
+  const px=b.x-ux*29,py=b.y-uy*29;ctx.beginPath();ctx.moveTo(px,py);ctx.lineTo(px-ux*6-uy*3,py-uy*6+ux*3);ctx.lineTo(px-ux*6+uy*3,py-uy*6-ux*3);ctx.closePath();ctx.fillStyle=ctx.strokeStyle;ctx.fill();}
+ for(const n of networkPositions){ctx.beginPath();ctx.arc(n.x,n.y,25,0,Math.PI*2);ctx.fillStyle=n.id===selected?'#a7d8b4':'#193c30';ctx.fill();ctx.strokeStyle='#8fb699';ctx.stroke();ctx.fillStyle=n.id===selected?'#092116':'#e1eddf';ctx.textAlign='center';ctx.font='12px system-ui';ctx.fillText(n.id,n.x,n.y+4);}
+ ctx.fillStyle=muted;ctx.font='12px system-ui';ctx.fillText('Equation dependencies',w/2,h/2);ctx.fillText('Click a node to inspect',w/2,h/2+20);ctx.textAlign='left';nodeDetail();
+}
+$('network').onclick=e=>{const box=$('network').getBoundingClientRect(),n=networkPositions.find(n=>Math.hypot(e.clientX-box.left-n.x,e.clientY-box.top-n.y)<30);if(n){$('node').value=n.id;drawNetwork();}};
+for(const n of Connectors.contract.nodes){const o=document.createElement('option');o.value=n.id;o.textContent=n.id+' — '+n.label;$('node').append(o);}
+function nodeDetail(){const n=Connectors.contract.nodes.find(n=>n.id===$('node').value),s=runs[0]?stateAt(runs[0],currentTime*60):null;
+ $('nodeDetail').innerHTML=`<span class="pill">Published model</span><h3 style="margin-top:10px">${n.label}</h3><code>${n.equation}</code><p class="small">${n.note}</p><p>Current amount in A: ${s?s.y[O.names.indexOf(n.id)].toPrecision(5):'—'} ${n.unit}</p>`;}
+$('node').onchange=drawNetwork;
+function draw(){if(runs.length){const s=stateAt(runs[0],currentTime*60);$('clock').textContent=currentTime.toFixed(1)+' h';$('time').value=currentTime;$('cellCount').textContent=s.descendants.toLocaleString();$('cellVolume').textContent=s.y[0].toFixed(3);$('totalVolume').textContent=(s.y[0]*s.descendants).toFixed(3);$('lightDose').textContent=(s.dose/60).toFixed(1)+' h';}drawTank();drawChart();drawNetwork();}
+function animate(ts){if(playing&&runs.length){currentTime+=Math.min(.1,(ts-lastFrame)/1000)*+$('speed').value;if(currentTime>=runs[0].final.t/60){currentTime=runs[0].final.t/60;playing=false;$('play').textContent='Play';}draw();}lastFrame=ts;requestAnimationFrame(animate);}
+const em=LAB_DATA.empirical;
+$('empiricalTable').innerHTML=em.folds.map(f=>`<tr><td>${f.held_out_experiment_hours} h</td><td>${f.size_time.n}</td><td class="num">${f.size_time.brier.toFixed(4)}</td><td class="num">${f.size_time_history.brier.toFixed(4)}</td></tr>`).join('')+`<tr><th>Combined held-out predictions</th><td>${em.total_eligible}</td><td class="num">${em.overall.size_time.brier.toFixed(4)}</td><td class="num">${em.overall.size_time_history.brier.toFixed(4)}</td></tr>`;
+$('empiricalSummary').textContent=`The added history dial made the overall Brier score ${(-em.brier_improvement/em.overall.size_time.brier*100).toFixed(1)}% worse. It helped in two experiments and hurt in two. This test does not support admitting that particular dial as a general improvement.`;
+const ext=em.external_protocol;$('externalSummary').textContent=`Different-protocol check: ${ext.eligible_rows} eligible cells. Brier score ${ext.size_time.brier.toFixed(4)} → ${ext.size_time_history.brier.toFixed(4)} with history, but log loss ${ext.size_time.log_loss.toFixed(4)} → ${ext.size_time_history.log_loss.toFixed(4)} (worse). The mixed result does not reverse the conclusion.`;
+$('testline').innerHTML=`<span><b>${LAB_DATA.campaign.successful.toLocaleString()}</b> parameter combinations</span><span><b>${em.total_eligible.toLocaleString()}</b> held-out cell records</span><span><b>${LAB_DATA.numerical.results.length}</b> independent solver cases</span><span><b>${LAB_DATA.refinement.divisionCountChanged}</b> counts changed on grid refinement</span>`;
+window.OrganismLab={get state(){return {configs,runs,currentTime,activeDemo};},run:c=>requestRun([c]),demo,contract:Connectors.contract};
+window.addEventListener('resize',draw);fillParameters();outputs();requestAnimationFrame(animate);
+requestRun([configFromUI()],'12-hour day / 12-hour night');
+</script><script id="gpl-license" type="text/plain">                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  By contrast,
+the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program--to make sure it remains free
+software for all its users.  We, the Free Software Foundation, use the
+GNU General Public License for most of our software; it applies also to
+any other work released this way by its authors.  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it if you
+want it, that you can change the software or use pieces of it in new
+free programs, and that you know you can do these things.
+
+  To protect your rights, we need to prevent others from denying you
+these rights or asking you to surrender the rights.  Therefore, you have
+certain responsibilities if you distribute copies of the software, or if
+you modify it: responsibilities to respect the freedom of others.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must pass on to the recipients the same
+freedoms that you received.  You must make sure that they, too, receive
+or can get the source code.  And you must show them these terms so they
+know their rights.
+
+  Developers that use the GNU GPL protect your rights with two steps:
+(1) assert copyright on the software, and (2) offer you this License
+giving you legal permission to copy, distribute and/or modify it.
+
+  For the developers' and authors' protection, the GPL clearly explains
+that there is no warranty for this free software.  For both users' and
+authors' sake, the GPL requires that modified versions be marked as
+changed, so that their problems will not be attributed erroneously to
+authors of previous versions.
+
+  Some devices are designed to deny users access to install or run
+modified versions of the software inside them, although the manufacturer
+can do so.  This is fundamentally incompatible with the aim of
+protecting users' freedom to change the software.  The systematic
+pattern of such abuse occurs in the area of products for individuals to
+use, which is precisely where it is most unacceptable.  Therefore, we
+have designed this version of the GPL to prohibit the practice for those
+products.  If such problems arise substantially in other domains, we
+stand ready to extend this provision to those domains in future versions
+of the GPL, as needed to protect the freedom of users.
+
+  Finally, every program is threatened constantly by software patents.
+States should not allow patents to restrict development and use of
+software on general-purpose computers, but in those that do, we wish to
+avoid the special danger that patents applied to a free program could
+make it effectively proprietary.  To prevent this, the GPL assures that
+patents cannot be used to render the program non-free.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                       TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  "This License" refers to version 3 of the GNU General Public License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds of
+works, such as semiconductor masks.
+
+  "The Program" refers to any copyrightable work licensed under this
+License.  Each licensee is addressed as "you".  "Licensees" and
+"recipients" may be individuals or organizations.
+
+  To "modify" a work means to copy from or adapt all or part of the work
+in a fashion requiring copyright permission, other than the making of an
+exact copy.  The resulting work is called a "modified version" of the
+earlier work or a work "based on" the earlier work.
+
+  A "covered work" means either the unmodified Program or a work based
+on the Program.
+
+  To "propagate" a work means to do anything with it that, without
+permission, would make you directly or secondarily liable for
+infringement under applicable copyright law, except executing it on a
+computer or modifying a private copy.  Propagation includes copying,
+distribution (with or without modification), making available to the
+public, and in some countries other activities as well.
+
+  To "convey" a work means any kind of propagation that enables other
+parties to make or receive copies.  Mere interaction with a user through
+a computer network, with no transfer of a copy, is not conveying.
+
+  An interactive user interface displays "Appropriate Legal Notices"
+to the extent that it includes a convenient and prominently visible
+feature that (1) displays an appropriate copyright notice, and (2)
+tells the user that there is no warranty for the work (except to the
+extent that warranties are provided), that licensees may convey the
+work under this License, and how to view a copy of this License.  If
+the interface presents a list of user commands or options, such as a
+menu, a prominent item in the list meets this criterion.
+
+  1. Source Code.
+
+  The "source code" for a work means the preferred form of the work
+for making modifications to it.  "Object code" means any non-source
+form of a work.
+
+  A "Standard Interface" means an interface that either is an official
+standard defined by a recognized standards body, or, in the case of
+interfaces specified for a particular programming language, one that
+is widely used among developers working in that language.
+
+  The "System Libraries" of an executable work include anything, other
+than the work as a whole, that (a) is included in the normal form of
+packaging a Major Component, but which is not part of that Major
+Component, and (b) serves only to enable use of the work with that
+Major Component, or to implement a Standard Interface for which an
+implementation is available to the public in source code form.  A
+"Major Component", in this context, means a major essential component
+(kernel, window system, and so on) of the specific operating system
+(if any) on which the executable work runs, or a compiler used to
+produce the work, or an object code interpreter used to run it.
+
+  The "Corresponding Source" for a work in object code form means all
+the source code needed to generate, install, and (for an executable
+work) run the object code and to modify the work, including scripts to
+control those activities.  However, it does not include the work's
+System Libraries, or general-purpose tools or generally available free
+programs which are used unmodified in performing those activities but
+which are not part of the work.  For example, Corresponding Source
+includes interface definition files associated with source files for
+the work, and the source code for shared libraries and dynamically
+linked subprograms that the work is specifically designed to require,
+such as by intimate data communication or control flow between those
+subprograms and other parts of the work.
+
+  The Corresponding Source need not include anything that users
+can regenerate automatically from other parts of the Corresponding
+Source.
+
+  The Corresponding Source for a work in source code form is that
+same work.
+
+  2. Basic Permissions.
+
+  All rights granted under this License are granted for the term of
+copyright on the Program, and are irrevocable provided the stated
+conditions are met.  This License explicitly affirms your unlimited
+permission to run the unmodified Program.  The output from running a
+covered work is covered by this License only if the output, given its
+content, constitutes a covered work.  This License acknowledges your
+rights of fair use or other equivalent, as provided by copyright law.
+
+  You may make, run and propagate covered works that you do not
+convey, without conditions so long as your license otherwise remains
+in force.  You may convey covered works to others for the sole purpose
+of having them make modifications exclusively for you, or provide you
+with facilities for running those works, provided that you comply with
+the terms of this License in conveying all material for which you do
+not control copyright.  Those thus making or running the covered works
+for you must do so exclusively on your behalf, under your direction
+and control, on terms that prohibit them from making any copies of
+your copyrighted material outside their relationship with you.
+
+  Conveying under any other circumstances is permitted solely under
+the conditions stated below.  Sublicensing is not allowed; section 10
+makes it unnecessary.
+
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+
+  No covered work shall be deemed part of an effective technological
+measure under any applicable law fulfilling obligations under article
+11 of the WIPO copyright treaty adopted on 20 December 1996, or
+similar laws prohibiting or restricting circumvention of such
+measures.
+
+  When you convey a covered work, you waive any legal power to forbid
+circumvention of technological measures to the extent such circumvention
+is effected by exercising rights under this License with respect to
+the covered work, and you disclaim any intention to limit operation or
+modification of the work as a means of enforcing, against the work's
+users, your or third parties' legal rights to forbid circumvention of
+technological measures.
+
+  4. Conveying Verbatim Copies.
+
+  You may convey verbatim copies of the Program's source code as you
+receive it, in any medium, provided that you conspicuously and
+appropriately publish on each copy an appropriate copyright notice;
+keep intact all notices stating that this License and any
+non-permissive terms added in accord with section 7 apply to the code;
+keep intact all notices of the absence of any warranty; and give all
+recipients a copy of this License along with the Program.
+
+  You may charge any price or no price for each copy that you convey,
+and you may offer support or warranty protection for a fee.
+
+  5. Conveying Modified Source Versions.
+
+  You may convey a work based on the Program, or the modifications to
+produce it from the Program, in the form of source code under the
+terms of section 4, provided that you also meet all of these conditions:
+
+    a) The work must carry prominent notices stating that you modified
+    it, and giving a relevant date.
+
+    b) The work must carry prominent notices stating that it is
+    released under this License and any conditions added under section
+    7.  This requirement modifies the requirement in section 4 to
+    "keep intact all notices".
+
+    c) You must license the entire work, as a whole, under this
+    License to anyone who comes into possession of a copy.  This
+    License will therefore apply, along with any applicable section 7
+    additional terms, to the whole of the work, and all its parts,
+    regardless of how they are packaged.  This License gives no
+    permission to license the work in any other way, but it does not
+    invalidate such permission if you have separately received it.
+
+    d) If the work has interactive user interfaces, each must display
+    Appropriate Legal Notices; however, if the Program has interactive
+    interfaces that do not display Appropriate Legal Notices, your
+    work need not make them do so.
+
+  A compilation of a covered work with other separate and independent
+works, which are not by their nature extensions of the covered work,
+and which are not combined with it such as to form a larger program,
+in or on a volume of a storage or distribution medium, is called an
+"aggregate" if the compilation and its resulting copyright are not
+used to limit the access or legal rights of the compilation's users
+beyond what the individual works permit.  Inclusion of a covered work
+in an aggregate does not cause this License to apply to the other
+parts of the aggregate.
+
+  6. Conveying Non-Source Forms.
+
+  You may convey a covered work in object code form under the terms
+of sections 4 and 5, provided that you also convey the
+machine-readable Corresponding Source under the terms of this License,
+in one of these ways:
+
+    a) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by the
+    Corresponding Source fixed on a durable physical medium
+    customarily used for software interchange.
+
+    b) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by a
+    written offer, valid for at least three years and valid for as
+    long as you offer spare parts or customer support for that product
+    model, to give anyone who possesses the object code either (1) a
+    copy of the Corresponding Source for all the software in the
+    product that is covered by this License, on a durable physical
+    medium customarily used for software interchange, for a price no
+    more than your reasonable cost of physically performing this
+    conveying of source, or (2) access to copy the
+    Corresponding Source from a network server at no charge.
+
+    c) Convey individual copies of the object code with a copy of the
+    written offer to provide the Corresponding Source.  This
+    alternative is allowed only occasionally and noncommercially, and
+    only if you received the object code with such an offer, in accord
+    with subsection 6b.
+
+    d) Convey the object code by offering access from a designated
+    place (gratis or for a charge), and offer equivalent access to the
+    Corresponding Source in the same way through the same place at no
+    further charge.  You need not require recipients to copy the
+    Corresponding Source along with the object code.  If the place to
+    copy the object code is a network server, the Corresponding Source
+    may be on a different server (operated by you or a third party)
+    that supports equivalent copying facilities, provided you maintain
+    clear directions next to the object code saying where to find the
+    Corresponding Source.  Regardless of what server hosts the
+    Corresponding Source, you remain obligated to ensure that it is
+    available for as long as needed to satisfy these requirements.
+
+    e) Convey the object code using peer-to-peer transmission, provided
+    you inform other peers where the object code and Corresponding
+    Source of the work are being offered to the general public at no
+    charge under subsection 6d.
+
+  A separable portion of the object code, whose source code is excluded
+from the Corresponding Source as a System Library, need not be
+included in conveying the object code work.
+
+  A "User Product" is either (1) a "consumer product", which means any
+tangible personal property which is normally used for personal, family,
+or household purposes, or (2) anything designed or sold for incorporation
+into a dwelling.  In determining whether a product is a consumer product,
+doubtful cases shall be resolved in favor of coverage.  For a particular
+product received by a particular user, "normally used" refers to a
+typical or common use of that class of product, regardless of the status
+of the particular user or of the way in which the particular user
+actually uses, or expects or is expected to use, the product.  A product
+is a consumer product regardless of whether the product has substantial
+commercial, industrial or non-consumer uses, unless such uses represent
+the only significant mode of use of the product.
+
+  "Installation Information" for a User Product means any methods,
+procedures, authorization keys, or other information required to install
+and execute modified versions of a covered work in that User Product from
+a modified version of its Corresponding Source.  The information must
+suffice to ensure that the continued functioning of the modified object
+code is in no case prevented or interfered with solely because
+modification has been made.
+
+  If you convey an object code work under this section in, or with, or
+specifically for use in, a User Product, and the conveying occurs as
+part of a transaction in which the right of possession and use of the
+User Product is transferred to the recipient in perpetuity or for a
+fixed term (regardless of how the transaction is characterized), the
+Corresponding Source conveyed under this section must be accompanied
+by the Installation Information.  But this requirement does not apply
+if neither you nor any third party retains the ability to install
+modified object code on the User Product (for example, the work has
+been installed in ROM).
+
+  The requirement to provide Installation Information does not include a
+requirement to continue to provide support service, warranty, or updates
+for a work that has been modified or installed by the recipient, or for
+the User Product in which it has been modified or installed.  Access to a
+network may be denied when the modification itself materially and
+adversely affects the operation of the network or violates the rules and
+protocols for communication across the network.
+
+  Corresponding Source conveyed, and Installation Information provided,
+in accord with this section must be in a format that is publicly
+documented (and with an implementation available to the public in
+source code form), and must require no special password or key for
+unpacking, reading or copying.
+
+  7. Additional Terms.
+
+  "Additional permissions" are terms that supplement the terms of this
+License by making exceptions from one or more of its conditions.
+Additional permissions that are applicable to the entire Program shall
+be treated as though they were included in this License, to the extent
+that they are valid under applicable law.  If additional permissions
+apply only to part of the Program, that part may be used separately
+under those permissions, but the entire Program remains governed by
+this License without regard to the additional permissions.
+
+  When you convey a copy of a covered work, you may at your option
+remove any additional permissions from that copy, or from any part of
+it.  (Additional permissions may be written to require their own
+removal in certain cases when you modify the work.)  You may place
+additional permissions on material, added by you to a covered work,
+for which you have or can give appropriate copyright permission.
+
+  Notwithstanding any other provision of this License, for material you
+add to a covered work, you may (if authorized by the copyright holders of
+that material) supplement the terms of this License with terms:
+
+    a) Disclaiming warranty or limiting liability differently from the
+    terms of sections 15 and 16 of this License; or
+
+    b) Requiring preservation of specified reasonable legal notices or
+    author attributions in that material or in the Appropriate Legal
+    Notices displayed by works containing it; or
+
+    c) Prohibiting misrepresentation of the origin of that material, or
+    requiring that modified versions of such material be marked in
+    reasonable ways as different from the original version; or
+
+    d) Limiting the use for publicity purposes of names of licensors or
+    authors of the material; or
+
+    e) Declining to grant rights under trademark law for use of some
+    trade names, trademarks, or service marks; or
+
+    f) Requiring indemnification of licensors and authors of that
+    material by anyone who conveys the material (or modified versions of
+    it) with contractual assumptions of liability to the recipient, for
+    any liability that these contractual assumptions directly impose on
+    those licensors and authors.
+
+  All other non-permissive additional terms are considered "further
+restrictions" within the meaning of section 10.  If the Program as you
+received it, or any part of it, contains a notice stating that it is
+governed by this License along with a term that is a further
+restriction, you may remove that term.  If a license document contains
+a further restriction but permits relicensing or conveying under this
+License, you may add to a covered work material governed by the terms
+of that license document, provided that the further restriction does
+not survive such relicensing or conveying.
+
+  If you add terms to a covered work in accord with this section, you
+must place, in the relevant source files, a statement of the
+additional terms that apply to those files, or a notice indicating
+where to find the applicable terms.
+
+  Additional terms, permissive or non-permissive, may be stated in the
+form of a separately written license, or stated as exceptions;
+the above requirements apply either way.
+
+  8. Termination.
+
+  You may not propagate or modify a covered work except as expressly
+provided under this License.  Any attempt otherwise to propagate or
+modify it is void, and will automatically terminate your rights under
+this License (including any patent licenses granted under the third
+paragraph of section 11).
+
+  However, if you cease all violation of this License, then your
+license from a particular copyright holder is reinstated (a)
+provisionally, unless and until the copyright holder explicitly and
+finally terminates your license, and (b) permanently, if the copyright
+holder fails to notify you of the violation by some reasonable means
+prior to 60 days after the cessation.
+
+  Moreover, your license from a particular copyright holder is
+reinstated permanently if the copyright holder notifies you of the
+violation by some reasonable means, this is the first time you have
+received notice of violation of this License (for any work) from that
+copyright holder, and you cure the violation prior to 30 days after
+your receipt of the notice.
+
+  Termination of your rights under this section does not terminate the
+licenses of parties who have received copies or rights from you under
+this License.  If your rights have been terminated and not permanently
+reinstated, you do not qualify to receive new licenses for the same
+material under section 10.
+
+  9. Acceptance Not Required for Having Copies.
+
+  You are not required to accept this License in order to receive or
+run a copy of the Program.  Ancillary propagation of a covered work
+occurring solely as a consequence of using peer-to-peer transmission
+to receive a copy likewise does not require acceptance.  However,
+nothing other than this License grants you permission to propagate or
+modify any covered work.  These actions infringe copyright if you do
+not accept this License.  Therefore, by modifying or propagating a
+covered work, you indicate your acceptance of this License to do so.
+
+  10. Automatic Licensing of Downstream Recipients.
+
+  Each time you convey a covered work, the recipient automatically
+receives a license from the original licensors, to run, modify and
+propagate that work, subject to this License.  You are not responsible
+for enforcing compliance by third parties with this License.
+
+  An "entity transaction" is a transaction transferring control of an
+organization, or substantially all assets of one, or subdividing an
+organization, or merging organizations.  If propagation of a covered
+work results from an entity transaction, each party to that
+transaction who receives a copy of the work also receives whatever
+licenses to the work the party's predecessor in interest had or could
+give under the previous paragraph, plus a right to possession of the
+Corresponding Source of the work from the predecessor in interest, if
+the predecessor has it or can get it with reasonable efforts.
+
+  You may not impose any further restrictions on the exercise of the
+rights granted or affirmed under this License.  For example, you may
+not impose a license fee, royalty, or other charge for exercise of
+rights granted under this License, and you may not initiate litigation
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+any patent claim is infringed by making, using, selling, offering for
+sale, or importing the Program or any portion of it.
+
+  11. Patents.
+
+  A "contributor" is a copyright holder who authorizes use under this
+License of the Program or a work on which the Program is based.  The
+work thus licensed is called the contributor's "contributor version".
+
+  A contributor's "essential patent claims" are all patent claims
+owned or controlled by the contributor, whether already acquired or
+hereafter acquired, that would be infringed by some manner, permitted
+by this License, of making, using, or selling its contributor version,
+but do not include claims that would be infringed only as a
+consequence of further modification of the contributor version.  For
+purposes of this definition, "control" includes the right to grant
+patent sublicenses in a manner consistent with the requirements of
+this License.
+
+  Each contributor grants you a non-exclusive, worldwide, royalty-free
+patent license under the contributor's essential patent claims, to
+make, use, sell, offer for sale, import and otherwise run, modify and
+propagate the contents of its contributor version.
+
+  In the following three paragraphs, a "patent license" is any express
+agreement or commitment, however denominated, not to enforce a patent
+(such as an express permission to practice a patent or covenant not to
+sue for patent infringement).  To "grant" such a patent license to a
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+
+  If you convey a covered work, knowingly relying on a patent license,
+and the Corresponding Source of the work is not available for anyone
+to copy, free of charge and under the terms of this License, through a
+publicly available network server or other readily accessible means,
+then you must either (1) cause the Corresponding Source to be so
+available, or (2) arrange to deprive yourself of the benefit of the
+patent license for this particular work, or (3) arrange, in a manner
+consistent with the requirements of this License, to extend the patent
+license to downstream recipients.  "Knowingly relying" means you have
+actual knowledge that, but for the patent license, your conveying the
+covered work in a country, or your recipient's use of the covered work
+in a country, would infringe one or more identifiable patents in that
+country that you have reason to believe are valid.
+
+  If, pursuant to or in connection with a single transaction or
+arrangement, you convey, or propagate by procuring conveyance of, a
+covered work, and grant a patent license to some of the parties
+receiving the covered work authorizing them to use, propagate, modify
+or convey a specific copy of the covered work, then the patent license
+you grant is automatically extended to all recipients of the covered
+work and works based on it.
+
+  A patent license is "discriminatory" if it does not include within
+the scope of its coverage, prohibits the exercise of, or is
+conditioned on the non-exercise of one or more of the rights that are
+specifically granted under this License.  You may not convey a covered
+work if you are a party to an arrangement with a third party that is
+in the business of distributing software, under which you make payment
+to the third party based on the extent of your activity of conveying
+the work, and under which the third party grants, to any of the
+parties who would receive the covered work from you, a discriminatory
+patent license (a) in connection with copies of the covered work
+conveyed by you (or copies made from those copies), or (b) primarily
+for and in connection with specific products or compilations that
+contain the covered work, unless you entered into that arrangement,
+or that patent license was granted, prior to 28 March 2007.
+
+  Nothing in this License shall be construed as excluding or limiting
+any implied license or other defenses to infringement that may
+otherwise be available to you under applicable patent law.
+
+  12. No Surrender of Others' Freedom.
+
+  If conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot convey a
+covered work so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you may
+not convey it at all.  For example, if you agree to terms that obligate you
+to collect a royalty for further conveying from those to whom you convey
+the Program, the only way you could satisfy both those terms and this
+License would be to refrain entirely from conveying the Program.
+
+  13. Use with the GNU Affero General Public License.
+
+  Notwithstanding any other provision of this License, you have
+permission to link or combine any covered work with a work licensed
+under version 3 of the GNU Affero General Public License into a single
+combined work, and to convey the resulting work.  The terms of this
+License will continue to apply to the part which is the covered work,
+but the special requirements of the GNU Affero General Public License,
+section 13, concerning interaction through a network will apply to the
+combination as such.
+
+  14. Revised Versions of this License.
+
+  The Free Software Foundation may publish revised and/or new versions of
+the GNU General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+  Each version is given a distinguishing version number.  If the
+Program specifies that a certain numbered version of the GNU General
+Public License "or any later version" applies to it, you have the
+option of following the terms and conditions either of that numbered
+version or of any later version published by the Free Software
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License, you may choose any version ever published
+by the Free Software Foundation.
+
+  If the Program specifies that a proxy can decide which future
+versions of the GNU General Public License can be used, that proxy's
+public statement of acceptance of a version permanently authorizes you
+to choose that version for the Program.
+
+  Later license versions may give you additional or different
+permissions.  However, no additional obligations are imposed on any
+author or copyright holder as a result of your choosing to follow a
+later version.
+
+  15. Disclaimer of Warranty.
+
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+  16. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+  17. Interpretation of Sections 15 and 16.
+
+  If the disclaimer of warranty and limitation of liability provided
+above cannot be given local legal effect according to their terms,
+reviewing courts shall apply local law that most closely approximates
+an absolute waiver of all civil liability in connection with the
+Program, unless a warranty or assumption of liability accompanies a
+copy of the Program in return for a fee.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+state the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Also add information on how to contact you by electronic and paper mail.
+
+  If the program does terminal interaction, make it output a short
+notice like this when it starts in an interactive mode:
+
+    <program>  Copyright (C) <year>  <name of author>
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, your program's commands
+might be different; for a GUI interface, you would use an "about box".
+
+  You should also get your employer (if you work as a programmer) or school,
+if any, to sign a "copyright disclaimer" for the program, if necessary.
+For more information on this, and how to apply and follow the GNU GPL, see
+<https://www.gnu.org/licenses/>.
+
+  The GNU General Public License does not permit incorporating your program
+into proprietary programs.  If your program is a subroutine library, you
+may consider it more useful to permit linking proprietary applications with
+the library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.  But first, please read
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
+
+</script></body></html>

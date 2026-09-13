@@ -1,0 +1,169 @@
+{
+  "method": "Independent eight-state SciPy BDF vs four nonlinear-state implicit Euler with exact total-pool updates",
+  "tolerances": {
+    "BDF_rtol": 1e-9,
+    "BDF_atol": 1e-11,
+    "fineStepMinutes": 0.03125,
+    "coarseStepMinutes": 0.5,
+    "eventTimeMinutes": 1.5,
+    "endpointScaledError": 0.05
+  },
+  "pass": true,
+  "results": [
+    {
+      "name": "Constant light",
+      "referenceEvents": [
+        722.2294133099952,
+        758.2852335485466,
+        794.0060884328058,
+        1439.2782207607142,
+        1475.3340410590824,
+        1511.0548964117115,
+        2156.3270282357676,
+        2192.3828484670144,
+        2228.103703813877,
+        2873.375835709906
+      ],
+      "coarse": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 16.738818483676823,
+        "endpointMaxScaledStateError": 0.2711837187107559
+      },
+      "fine": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0.9512496564930188,
+        "endpointMaxScaledStateError": 0.045900440683883076
+      }
+    },
+    {
+      "name": "12 h day, 12 h night",
+      "referenceEvents": [
+        722.2748585084433,
+        760.2850836892896,
+        798.0130784281594,
+        2159.278220756226,
+        2197.4013473382192,
+        2235.149349810387
+      ],
+      "coarse": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 18.064708448300962,
+        "endpointMaxScaledStateError": 3.942937431102676e-8
+      },
+      "fine": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 1.0396268137794777,
+        "endpointMaxScaledStateError": 2.4663880697038475e-9
+      }
+    },
+    {
+      "name": "Four-hour light pulse",
+      "referenceEvents": [],
+      "coarse": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0,
+        "endpointMaxScaledStateError": 1.267343763984567e-7
+      },
+      "fine": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0,
+        "endpointMaxScaledStateError": 7.936402428939714e-9
+      }
+    },
+    {
+      "name": "Darkness",
+      "referenceEvents": [],
+      "coarse": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0,
+        "endpointMaxScaledStateError": 1.9268707123656396e-8
+      },
+      "fine": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0,
+        "endpointMaxScaledStateError": 3.1905276673674054e-7
+      }
+    },
+    {
+      "name": "Hourly flashes",
+      "referenceEvents": [
+        1285.649606247848,
+        1323.8353656564036,
+        1359.0142441508729,
+        2724.1233542904984,
+        2762.2679983166026,
+        2797.4332887077403
+      ],
+      "coarse": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 15.946012568231254,
+        "endpointMaxScaledStateError": 0.000011849474720702021
+      },
+      "fine": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0.8866863393855056,
+        "endpointMaxScaledStateError": 0.0000012880469660432494
+      }
+    },
+    {
+      "name": "Large initial cell",
+      "referenceEvents": [
+        483.2131394521408,
+        519.2689596851111,
+        554.9898145442421,
+        1920.2619476120278,
+        1956.317767916686,
+        1992.0386232484773
+      ],
+      "coarse": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 16.73860303058177,
+        "endpointMaxScaledStateError": 6.524996081218767e-8
+      },
+      "fine": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0.947895670455182,
+        "endpointMaxScaledStateError": 4.202728916176874e-9
+      }
+    },
+    {
+      "name": "Growth at half rate",
+      "referenceEvents": [
+        1214.7170666824386,
+        1250.8685479460942
+      ],
+      "coarse": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 6.801098376392019,
+        "endpointMaxScaledStateError": 6.430361714775292e-8
+      },
+      "fine": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0.4723604022251493,
+        "endpointMaxScaledStateError": 4.140029726276289e-9
+      }
+    },
+    {
+      "name": "Weaker light sensing",
+      "referenceEvents": [
+        689.9835242673204,
+        726.2363787253274,
+        763.8952320767999,
+        2127.032355687418,
+        2163.1740207660064,
+        2200.848204759693
+      ],
+      "coarse": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 16.540705827808324,
+        "endpointMaxScaledStateError": 3.692893087336086e-8
+      },
+      "fine": {
+        "matchingDivisionCount": true,
+        "maxEventTimeErrorMinutes": 0.9621559335350867,
+        "endpointMaxScaledStateError": 2.309986792974467e-9
+      }
+    }
+  ],
+  "limits": "Finite-case implementation verification, not biological validation; errors are larger near sharp transitions."
+}

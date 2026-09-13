@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "startup computes in a real worker thread",
+    "all three parameterized paired quick-plays compute; equal-light run gives 1 vs 8",
+    "playback changes observed time without rerunning",
+    "node inspection",
+    "rejected numerical lead is shown as rejected",
+    "real-data negative result displayed",
+    "export records actual configuration and results",
+    "import recalculates instead of trusting stored results",
+    "control changes alter the computation",
+    "custom schedule is obeyed",
+    "invalid rates rejected"
+  ],
+  "scope": "Node VM interaction logic with a small DOM/canvas stand-in; actual simulation in worker threads. Not real browser/CSS/visual QA."
+}

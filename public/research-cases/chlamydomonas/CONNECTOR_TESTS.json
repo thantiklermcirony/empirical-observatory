@@ -1,0 +1,66 @@
+{
+  "portTests": [
+    [
+      "same representation",
+      true
+    ],
+    [
+      "area is not volume",
+      true
+    ],
+    [
+      "bound is not free",
+      true
+    ],
+    [
+      "AU is not moles",
+      true
+    ],
+    [
+      "different clocks",
+      true
+    ],
+    [
+      "missing semantics",
+      true
+    ]
+  ],
+  "witnessesTested": 90,
+  "best": {
+    "preparationTime": 570,
+    "base": [
+      5.222624221519787,
+      0.2434789848057327,
+      0.009659058764319717,
+      5.614399417374354,
+      4.972176446659959,
+      1.6134241359656825,
+      0.022073984974648693,
+      0.0004394104657567557
+    ],
+    "changed": [
+      5.222624221519787,
+      0.2434789848057327,
+      4.732743730153064,
+      10.337484088763098,
+      0.24909177527121396,
+      1.6134241359656825,
+      0.022073984974648693,
+      0.0004394104657567557
+    ],
+    "hiddenComplexFraction": 0.05,
+    "sameVolume": true,
+    "sameTotalTF": true,
+    "sameTotalInhibitor": true,
+    "timeDifference": 72.68012046813965,
+    "aEvents": [
+      110.70330667495728,
+      147.0401840209961
+    ],
+    "bEvents": [
+      38.02318620681763,
+      74.37351894378662
+    ]
+  },
+  "scope": "Synthetic preparations in a published model; no empirical proof that these states can be prepared in a cell."
+}

@@ -1,0 +1,56 @@
+### Heldt2019 - Chlamydomonas multiple-fission cycles
+###
+### This model is described in the article:
+### A single light-responsive sizer can control multiple-fission cycles in Chlamydomonas
+### Frank S. Heldt, John J. Tyson, Frederick R. Cross, Bela Novak
+###
+### Abstract:
+### Most eukaryotic cells execute binary division after each mass doubling, in order to maintain size homeostasis by coordinating cell growth and division. By contrast, the photosynthetic green alga Chlamydomonas can grow more than eight-fold during daytime before undergoing rapid cycles of DNA replication, mitosis and cell division at night, which produce up to 16 daughter cells. Here, we propose a mechanistic model for multiple-fission cycles and cell-size control in Chlamydomonas. The model comprises a light-sensitive and size-dependent biochemical toggle switch that acts as a sizer, guarding transitions into and exit from a phase of cell-division cycle oscillations. This simple 'sizer-oscillator' arrangement reproduces the experimentally observed features of multiple-fission cycles and the response of Chlamydomonas cells to different light-dark regimes. Our model also makes specific predictions about the size dependence of the time of onset of cell division after cells are transferred from light to dark conditions, and we confirm these predictions by single-cell experiments. Collectively, our results provide a new perspective on the concept of a 'commitment point' during the growth of Chlamydomonas cells and hint at intriguing similarities of cell-size control in different eukaryotic lineages.
+
+### MODEL STATES
+V' = mu*V*Light
+
+SK' = kSySk*V - (kDeSk + kDeSkLi*Light)*SK
+
+TF' = kSyTf*V - kAsTfIn/V*IN*TF + (kDsTfIn + rPhIn + kDeIn)*INTF - kDeTf*TF
+IN' = kSyIn   - kAsTfIn/V*IN*TF + (kDsTfIn         + kDeTf)*INTF - (rPhIn + kDeIn)*IN + kDpIn*IP
+
+INTF' = kAsTfIn/V*IN*TF - (kDsTfIn + rPhIn + kDeIn + kDeTf)*INTF
+IP'   = rPhIn*(IN+INTF) - (kDpIn + kDeIn)*IP
+
+S' = kSySTf*TF*jInSM^nInSM/(jInSM^nInSM + (M/V)^nInSM) - kDeS*S
+M' = kSyMS*S + kSyMM*M - (kDeM + kDeMA*A/V)*M
+
+### INITIAL CONDITIONS
+init V=1, SK=1, IN=2.6, INTF=1, IP=8.6
+
+### ALGEBRAIC EQUATIONS
+FK = TF
+A  = At*V*kDpA/(kDpA + kPhAS*(S/V)^nPhA + kPhAM*(M/V)^nPhA)
+
+### MODEL PARAMETERS
+par Light=1, mu=.0029, At=1, CdTh=.2
+
+par kSySk=.002,  kDeSk=.002, kDeSkLi=.038
+par kSyTf=.06,   kDeTf=.06,  kSyIn=6.1, kDeIn=.5
+par kAsTfIn=500, kDsTfIn=.1
+par kPhInSk=5.6, kPhInFk=65, kDpIn=2
+
+par kSySTf=.25, jInSM=.125, nInSM=4, kDeS=.1
+par kSyMS=.2,   kSyMM=.06,  kDeM=.1, kDeMA=10
+par kPhAS=25,   kPhAM=2000, nPhA=2,  kDpA=2
+
+### REACTION RATES
+rPhIn = (kPhInSk*SK + kPhInFk*FK)/V
+
+### MODEL EVENTS
+global -1 {M/V-CdTh} {V=V/2; SK=SK/2; TF=TF/2; IN=IN/2; INTF=INTF/2; IP=IP/2; S=S/2; M=M/2}
+
+### AUXILIARY QUANTITIES
+
+### XppAut SETTINGS
+@ Method=stiff, Total=1560, Bounds=200, Dt=1
+@ Xplot=t, Xlo=0, Xhi=1560, Ylo=0, Yhi=9
+@ Nplot=4, Yp1=V, Yp2=TF, Yp3=S, Yp4=M
+
+done
