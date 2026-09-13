@@ -1,0 +1,68 @@
+{
+  "integration_id": "observatory-ontology-hosting-20260913",
+  "site_commit": "68732bc787ad530b9e132917abeea168bd1b4f79",
+  "site_previous_commit": "ff8b9466da80389e4fb6c35baf7cd593fcf6ce1a",
+  "base_commit": "081430c987e5f39ce659f86a1cb2840dd1546c30",
+  "entries": [
+    {
+      "path": "components/observatory/OntologyLedger.tsx",
+      "before_blob": "3bfec9531708b0bf87f05bc8c25823412bb09f16",
+      "sha256": "076440f7ba0d49bd2e602c19b245dc6a55c750381f7f1d63823dd6bbd7f7a7b3",
+      "bytes": 15422
+    },
+    {
+      "path": "lib/ontology-browser.ts",
+      "before_blob": "c05afd580340e1a5ad593c524328a413501a33a2",
+      "sha256": "86340c7eac3371e9056474ca8ce46f5faa60a4f0af42f96c7ddb8b036cb3c4a9",
+      "bytes": 5306
+    },
+    {
+      "path": "lib/ontology-distribution.json",
+      "before_blob": null,
+      "sha256": "f0f944e38da5ba7f47dc25d993b4626d7e05c277c320019385758afe8fd39075",
+      "bytes": 116968
+    },
+    {
+      "path": "package.json",
+      "before_blob": "fcee987fa095db7189257a9ab70513199bbc7780",
+      "sha256": "497c3b919a0a6f8145ae1a246aa063adf56e54a1c9a644298c267efa41ca0b6a",
+      "bytes": 2764
+    },
+    {
+      "path": "public/ledger-data/manifest.json",
+      "before_blob": "909bb6fd152b1c30393553944641ad6b07250214",
+      "sha256": "0a7c94bf9f5be1effcc2d14e5f174df43fa863988543ddd52e26a7711370d7f1",
+      "bytes": 88782
+    },
+    {
+      "path": "public/ledger-data/quality.json",
+      "before_blob": "24ada7092d22782320fac7bda7efb6d97f283fa8",
+      "sha256": "e6f6feb9278b1f2471dc0a58c8b34e43048d60d7f0d7d130c7ba72a559750af6",
+      "bytes": 6186
+    },
+    {
+      "path": "research/Ontology_Ledger_Protocol.md",
+      "before_blob": "26ec914ccd5aa4fd25faeba95ebc37bd99e46205",
+      "sha256": "21adaecb5bced39fca978c3ffd78f2ecec08cdfe3510a4a60ed50d04031968f8",
+      "bytes": 8355
+    },
+    {
+      "path": "scripts/ontology/pin-captures.mjs",
+      "before_blob": null,
+      "sha256": "8a570548195b7ebd19764b3bbab51e3469968ea9d188bd2105fbcf4c8ecc0123",
+      "bytes": 1220
+    },
+    {
+      "path": "scripts/ontology/prepare-hosted.mjs",
+      "before_blob": null,
+      "sha256": "82474007799a7393d8f386e0464c13ea5722fbaed720f86c1b338d1a20be9cbe",
+      "bytes": 1334
+    },
+    {
+      "path": "tests/ontology-ledger.test.ts",
+      "before_blob": "34b300baf1d083db9a4bc305e420b23f757955b6",
+      "sha256": "b22199be7a1bbef931579b49a3cf7826cd1fbb2b573c499126a4d07d93ed3cfe",
+      "bytes": 7901
+    }
+  ]
+}
