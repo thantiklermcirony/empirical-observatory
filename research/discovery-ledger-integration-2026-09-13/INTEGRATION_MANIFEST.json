@@ -1,0 +1,80 @@
+{
+  "integration_id": "observatory-discovery-ledger-20260913",
+  "site_commit": "311bde285e671fe677a5ea6e11300b200fefb99d",
+  "site_previous_commit": "aab788a5ec86e3ab65708aacf0117626528bce07",
+  "base_commit": "701c1a4ef17579f506494914aa8db2d22f65e05c",
+  "entries": [
+    {
+      "path": "app/api/discoveries/route.ts",
+      "before_blob": null,
+      "sha256": "70f944e3b94b589f3fc563eea5de03d086e358f25dd032a48a9800f89b7e4534",
+      "bytes": 340
+    },
+    {
+      "path": "app/discoveries/discovery.css",
+      "before_blob": null,
+      "sha256": "0eedde2b7fa348d3b6d4ece7b1061c4c5bc44a5888156999d275c59f32b778eb",
+      "bytes": 7660
+    },
+    {
+      "path": "app/discoveries/layout.tsx",
+      "before_blob": null,
+      "sha256": "ff53c39abe8ac33c1a0a86be55888fbfa0fabb7acd1030d3293cd6df10527894",
+      "bytes": 308
+    },
+    {
+      "path": "app/discoveries/page.tsx",
+      "before_blob": null,
+      "sha256": "766d62b1d15364ab2aafcc1a70825d73462561e24c9635f628dd6640dd0bedad",
+      "bytes": 11684
+    },
+    {
+      "path": "components/observatory/Encyclopedia.tsx",
+      "before_blob": "f72be054fc3c5f77eb0be0cd386c506f9edc1017",
+      "sha256": "d24f4201f47318fbcae8afb1b7f9bbbea594f183c9145f6c1a6a58e511b41ff5",
+      "bytes": 4498
+    },
+    {
+      "path": "components/observatory/LaboratoryIdentity.tsx",
+      "before_blob": "f1a0999eda8aef9e4ff1a043590d70afa6525c25",
+      "sha256": "478bf3518e7bf16113468127724fbd3d5f1476dde1baa2664540aa840ed58b54",
+      "bytes": 1957
+    },
+    {
+      "path": "lib/discovery-corpus.json",
+      "before_blob": null,
+      "sha256": "af7eae18963dfb5b25626c51620a4c0c08262974a33522355cff6aaa7160dae7",
+      "bytes": 26637
+    },
+    {
+      "path": "lib/discovery-ledger.ts",
+      "before_blob": null,
+      "sha256": "f7b03eea652b6b325dda81fcd379195cb0113bf4a67bb29ea70b9f8b2846f2f8",
+      "bytes": 7425
+    },
+    {
+      "path": "lib/observatory-catalogue.ts",
+      "before_blob": "a408be25642a030b37df5914e7d187af73294a15",
+      "sha256": "f98257a618d96ae16d3f92a4e704f5e0f0cc269b5e4d8721541ed3559296d00e",
+      "bytes": 17094
+    },
+    {
+      "path": "lib/observatory-guide.ts",
+      "before_blob": "21a9f921ca4087c77dc1c14849b394ca72c43b01",
+      "sha256": "3912091d7bccd0322d584478b0648387ad7f614851dd38295e5ad071130d56d0",
+      "bytes": 8068
+    },
+    {
+      "path": "package.json",
+      "before_blob": "956004cb94df6558cdebd8c0f896124cbed4b0b0",
+      "sha256": "c1745fc50aa5a176504bb63526c897c27f335edaec5afc863f7997d7a883c0d1",
+      "bytes": 2658
+    },
+    {
+      "path": "tests/discovery-ledger.test.ts",
+      "before_blob": null,
+      "sha256": "3810897181e95854e197fc0b3c0214274b984e9387b0336a6509d7e4d5cbd709",
+      "bytes": 1999
+    }
+  ]
+}
