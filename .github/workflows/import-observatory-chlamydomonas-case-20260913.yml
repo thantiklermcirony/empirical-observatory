@@ -1,0 +1,103 @@
+name: Import reviewed Chlamydomonas case engine
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: import-observatory-chlamydomonas-case-20260913
+  cancel-in-progress: false
+jobs:
+  import-reviewed-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Refuse reuse of the single-use review branch
+        run: |
+          if git ls-remote --exit-code --heads origin refs/heads/import/observatory-chlamydomonas-case-20260913; then
+            echo "This integration branch already exists; do not rerun this workflow."
+            exit 1
+          else
+            status=$?
+            if [ "$status" -ne 2 ]; then exit "$status"; fi
+          fi
+      - name: Verify pinned release and existing source before import
+        run: |
+          python - <<'PY'
+          import hashlib, io, json, pathlib, subprocess, zipfile
+          data = pathlib.Path('research/chlamydomonas-case-integration-2026-09-13/Observatory_Chlamydomonas_Case_20260913.zip').read_bytes()
+          assert len(data) == 799181
+          assert hashlib.sha256(data).hexdigest() == '9bc8998e4dc801c06c499be2a772f6b841a6f3264d1b8a4cbb209b3e7ba80db4'
+          archive = zipfile.ZipFile(io.BytesIO(data))
+          manifest = json.loads(archive.read('INTEGRATION_MANIFEST.json'))
+          assert manifest['site_commit'] == '89f29f3a787a3734b83bfd31e41daa2871a398c3'
+          assert manifest['site_previous_commit'] == '68732bc787ad530b9e132917abeea168bd1b4f79'
+          assert manifest['base_commit'] == '781b302ab6dd413779967aec8e03ed4f50c31817'
+          subprocess.run(['git','merge-base','--is-ancestor',manifest['base_commit'],'HEAD'],check=True)
+          assert manifest['integration_id'] == 'observatory-chlamydomonas-case-20260913'
+          entries = manifest['entries']
+          assert len(entries) == 73
+          names = {e['path'] for e in entries}
+          assert len(names) == len(entries)
+          assert set(archive.namelist()) == names | {'INTEGRATION_MANIFEST.json'}
+          root = pathlib.Path.cwd().resolve()
+          allowed = {'public/research-cases/chlamydomonas/upstream/models/README.md', 'public/research-cases/chlamydomonas/EVIDENCE_LEDGER.json', 'public/research-cases/chlamydomonas/upstream/README.md', 'public/research-cases/chlamydomonas/confirm_findings.py', 'public/research-cases/chlamydomonas/CAMPAIGN_RESULTS.json', 'components/observatory/research-case-engine.css', 'public/research-cases/chlamydomonas/UI_LOGIC_TESTS.json', 'public/research-cases/chlamydomonas/REFINEMENT_RESULTS.json', 'public/research-cases/chlamydomonas/engine.js', 'package.json', 'lib/observatory-catalogue.ts', 'public/research-cases/runtime/chlamydomonas-worker.mjs', 'public/research-cases/chlamydomonas/connectors.js', 'lib/observatory-guide.ts', 'public/research-cases/chlamydomonas/upstream/models/Heldt2019_ChlamydomonasMultipleFission.ode', 'tests/case-engine.test.mjs', 'public/research-cases/chlamydomonas/NUMERICAL_VALIDATION.json', 'app/cases/page.tsx', 'research/Research_Case_Engine.md', 'app/api/cases/route.ts', 'public/research-cases/chlamydomonas/upstream/data/FigS4_Data.dat', 'public/research-cases/chlamydomonas/upstream/data/Fig4_Data_LD24.dat', 'public/research-cases/chlamydomonas/upstream/data/README.md', 'public/research-cases/chlamydomonas/README.md', 'public/research-cases/chlamydomonas/THEOREM_PORTS.md', 'public/research-cases/chlamydomonas/upstream/data/Fig4_Data_LD12.dat', 'public/research-cases/chlamydomonas/ui_logic_test.js', 'public/research-cases/runtime/reproduce-state.py', 'public/research-cases/chlamydomonas/campaign.js', 'public/research-cases/chlamydomonas/upstream/data/Fig4_Data_LD18.dat', 'public/research-cases/chlamydomonas/BDF_REFERENCE.json', 'public/research-cases/chlamydomonas/Chlamydomonas_Observatory.html', 'public/research-cases/chlamydomonas/upstream/data/Fig4_data_LD30.dat', 'public/research-cases/chlamydomonas/AUDIT.md', 'public/research-cases/chlamydomonas/empirical.py', 'public/research-cases/chlamydomonas/INDEPENDENT_FINDING_CHECKS.json', 'public/research-cases/chlamydomonas/STATE_RECOVERY_BDF.json', 'app/agents/page.tsx', 'app/cases/chlamydomonas/page.tsx', 'public/research-cases/chlamydomonas/MODEL_CONTRACT.json', 'public/research-cases/chlamydomonas/connector_tests.js', 'public/research-cases/runtime/case-core.mjs', 'public/research-cases/chlamydomonas/upstream/models/Heldt2019_ChlamydomonasMultipleFission.txt', 'research/case-engine/verification.json', 'public/research-cases/runtime/chlamydomonas-runner.mjs', 'public/research-cases/chlamydomonas/FINDINGS.md', 'public/research-cases/chlamydomonas/BROWSER_TESTS.json', 'public/research-cases/chlamydomonas/upstream/LICENSE', 'lib/research-cases.ts', 'public/research-cases/Chlamydomonas_Observatory_Source.zip', 'lib/research-knowledge.ts', 'public/research-cases/chlamydomonas/browser_test.js', 'public/research-cases/chlamydomonas/app.js', 'public/research-cases/chlamydomonas/REFERENCE_CASES.json', 'public/research-cases/chlamydomonas/build.py', 'lib/chlamydomonas-case.ts', 'public/research-cases/chlamydomonas/reference.py', '.gitattributes', 'public/research-cases/chlamydomonas/CONNECTOR_TESTS.json', 'public/research-cases/chlamydomonas/PARAMETER_LEDGER.json', 'public/research-cases/chlamydomonas/REGRESSION_TESTS.json', 'public/research-cases/chlamydomonas/EMPIRICAL_RESULTS.json', 'public/research-cases/chlamydomonas/refine.js', 'public/research-cases/chlamydomonas/MANIFEST.json', 'public/research-cases/chlamydomonas/JS_REFERENCE.json', 'public/research-cases/chlamydomonas/lab.template.html', 'components/observatory/ResearchCaseEngine.tsx', 'lib/scientific-ledger.ts', 'public/research-cases/chlamydomonas/HELD_OUT_PREDICTIONS.json', 'public/research-cases/chlamydomonas/source-provenance.json', 'tests/research-cases.test.ts', 'public/research-cases/chlamydomonas/tests.js', 'lib/case-engine-contract.ts'}
+          prefixes = ()
+          validated = []
+          for entry in entries:
+              name = entry['path']
+              path = pathlib.PurePosixPath(name)
+              assert not path.is_absolute() and '..' not in path.parts and '\\' not in name
+              assert name in allowed or name.startswith(prefixes)
+              assert str(path) == name
+              assert not any(p in {'.git','.github','.openai'} or p.startswith('.env') for p in path.parts)
+              target = root.joinpath(*path.parts)
+              target.resolve().relative_to(root)
+              current = subprocess.run(['git','rev-parse','--verify',f'HEAD:{name}'], capture_output=True, text=True)
+              if entry['before_blob'] is None:
+                  assert current.returncode != 0 and not target.exists(), name
+              else:
+                  assert current.returncode == 0 and current.stdout.strip() == entry['before_blob'], name
+              content = archive.read(name)
+              assert len(content) == entry['bytes']
+              assert hashlib.sha256(content).hexdigest() == entry['sha256'], name
+              validated.append((target,content))
+          # All paths and preimages pass before any repository file is changed.
+          for target,content in validated:
+              target.parent.mkdir(parents=True,exist_ok=True)
+              target.write_bytes(content)
+          receipt = root/'research/chlamydomonas-case-integration-2026-09-13/INTEGRATION_MANIFEST.json'
+          receipt.parent.mkdir(parents=True,exist_ok=True)
+          receipt.write_text(json.dumps(manifest,indent=2)+'\n')
+          print('Verified and imported 73 files. Existing public-only research and workflows retained.')
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm build
+      - name: Check frozen engine identities
+        run: |
+          python - <<'PY'
+          import hashlib,pathlib
+          expected={'lib/engine/temporal-router.ts':'e430925cc2d4a1bf5c6665043a645697236afc111b95ce0c3e6c432d4d0c3c29','lib/engine/quantum-reference.ts':'3ecb62e0c834c50dc197b7e8b2196dc38ba9b1ea3345c2ed995386b319ebbabc','lib/strict-json.ts':'9f15120dfcaa09da00ed15febd175d007a7bd9364d571457119d448169988d2c'}
+          for name,digest in expected.items():
+              assert hashlib.sha256(pathlib.Path(name).read_bytes()).hexdigest()==digest,name
+          PY
+      - name: Publish a review branch
+        run: |
+          git config user.name 'Observatory source integration'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -c import/observatory-chlamydomonas-case-20260913
+          git add .gitattributes CENTRAL_DESK.md PROGRAMME_STATUS.md README.md package.json tsconfig.json app components db drizzle lib public research scripts tests
+          git diff --cached --stat
+          git commit -m 'Add runnable state-recovery case engine with retained failures'
+          git push origin HEAD:refs/heads/import/observatory-chlamydomonas-case-20260913
