@@ -1,3 +1,26 @@
+<div align="center">
+
+# The Empirical Observatory
+
+**Part of the Murray Research Programme · the observer in the world**
+
+[![Enter the Boundedness Atlas](https://raw.githubusercontent.com/thantiklermcirony/thantiklermcirony/main/boundedness-atlas-entrance.jpg)](https://boundedness-atlas.madmanmuzza.chatgpt.site)
+
+## [Enter the public Atlas →](https://boundedness-atlas.madmanmuzza.chatgpt.site)
+
+[Current programme direction](https://github.com/thantiklermcirony/boundedness-atlas/blob/main/PROGRAMME_DIRECTION.md) · [41 manuscript records](https://boundedness-atlas.madmanmuzza.chatgpt.site/papers/) · [Falsifiable predictions](https://boundedness-atlas.madmanmuzza.chatgpt.site/predictions/)
+
+</div>
+
+**Current direction · 14 September 2026.** The programme connects boundedness, observation, memory, biological resources and viable action. The current focus is a complete adaptive observer–environment loop: test which distinctions a prediction needs, choose a useful observation or intervention, and validate changes to the retained state.
+
+This repository preserves its source and scientific history. The public entrance is the Boundedness Atlas; the older Observatory website is now owner-only. Current research runs locally. A continuously autonomous discovery service remains a development objective. [Read the shared programme map and status](https://github.com/thantiklermcirony/boundedness-atlas/blob/main/PROGRAMME_DIRECTION.md).
+
+The historical release material below is preserved as a dated record. Its invitations to a public or live Observatory describe earlier deployments and do not override the current access notice. Original code, evidence, reproduction instructions and licences remain available.
+
+<details>
+<summary><strong>Preserved release documentation, source and reproduction</strong></summary>
+
 <p align="center"><strong>THE EMPIRICAL OBSERVATORY</strong></p>
 <h1 align="center">A growing map of reality.</h1>
 <p align="center">Enter the night office. Meet the projects. Build the next connection.</p>
@@ -271,3 +294,7 @@ The [hosted Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site)
 
 
 </details>
+
+
+</details>
+
