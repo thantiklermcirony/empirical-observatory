@@ -1,6 +1,8 @@
 # Cancer Lab · The Recovery Boundary
 
-**Daniel Murray · Empirical Architecture Observatory**[Download the model, source and evidence](cancer-lab.zip) · [Explore the public research Atlas](https://boundedness-atlas.madmanmuzza.chatgpt.site/)
+**Daniel Murray · Empirical Architecture Observatory**
+
+[Download the model, source and evidence](cancer-lab.zip) · [Explore the public research Atlas](https://boundedness-atlas.madmanmuzza.chatgpt.site/)
 
 **Access checked 15 September 2026:** the hosted Observatory has restricted access and its dedicated /cancer route was unavailable. The downloadable package is the current way to run this exhibit.
 
