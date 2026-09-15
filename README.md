@@ -1,32 +1,37 @@
-<div align="center">
+# Empirical Architecture Observatory
 
-# The Empirical Observatory
+**Daniel John Murray · Bounded systems, observation and adaptation**
 
-**Part of the Murray Research Programme · the observer in the world**
+[Enter the Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site/) · **[Cancer Lab](https://empirical-observatory.madmanmuzza.chatgpt.site/cancer)** · [Microplastics](https://empirical-observatory.madmanmuzza.chatgpt.site/microplastics) · [All laboratories](https://empirical-observatory.madmanmuzza.chatgpt.site/#laboratories)
 
-[![Enter the Boundedness Atlas](https://raw.githubusercontent.com/thantiklermcirony/thantiklermcirony/main/boundedness-atlas-entrance.jpg)](https://boundedness-atlas.madmanmuzza.chatgpt.site)
+An exhibit of the programme's publications, working instruments and research results across eleven laboratory rooms. Each project connects its question to a model, source evidence, limitations and a next test.
 
-## [Enter the public Atlas →](https://boundedness-atlas.madmanmuzza.chatgpt.site)
+## Featured: Cancer Lab — the recovery boundary
 
-[Current programme direction](https://github.com/thantiklermcirony/boundedness-atlas/blob/main/PROGRAMME_DIRECTION.md) · [41 manuscript records](https://boundedness-atlas.madmanmuzza.chatgpt.site/papers/) · [Falsifiable predictions](https://boundedness-atlas.madmanmuzza.chatgpt.site/predictions/)
+When does a stressed cancer cell lose the ability to recover? Move stress, rescue delay and restored support in a working mathematical model. Inspect published measurements separately, then follow the proposed experiment that could support or reject the hypothesis. The model is not a validated cancer treatment.
 
-</div>
+[Read the Cancer project](CANCER_LAB.md) · [Download the self-contained lab](cancer-lab.zip)
 
-**Current direction · 14 September 2026.** The programme connects boundedness, observation, memory, biological resources and viable action. The current focus is a complete adaptive observer–environment loop: test which distinctions a prediction needs, choose a useful observation or intervention, and validate changes to the retained state.
+## September 2026 source edition
 
-This repository preserves its source and scientific history. The public entrance is the Boundedness Atlas; the older Observatory website is now owner-only. Current research runs locally. A continuously autonomous discovery service remains a development objective. [Read the shared programme map and status](https://github.com/thantiklermcirony/boundedness-atlas/blob/main/PROGRAMME_DIRECTION.md).
+The Cancer Lab and refreshed exhibition are supplied in the **[Observatory and Cancer Lab source release](https://github.com/thantiklermcirony/empirical-observatory/releases/tag/observatory-cancer-2026-09-15)**. Its full source archive is the exact Sites checkout for this edition. The repository's existing source tree retains earlier integrations; use the release archive to reproduce the current exhibit. The small Cancer Lab archive runs independently without installation: extract, serve over local HTTP, open index.html. `node --test model.test.mjs` runs its six mathematical checks.
 
-The historical release material below is preserved as a dated record. Its invitations to a public or live Observatory describe earlier deployments and do not override the current access notice. Original code, evidence, reproduction instructions and licences remain available.
+The hosted website currently requires the owner's access. GitHub code, manuscripts and downloaded experiments are public. This access notice will change only when public website access is enabled.
+
+## Evidence you can inspect
+
+- Published foundations: [glutathione and redox dynamics](https://doi.org/10.1016/j.rbc.2026.100084), [conditional bounded adaptive responses](https://doi.org/10.1177/15593258261469171).
+- Microplastics: exploratory model comparison on 360 published metabolic-assay values; this does not establish hormesis or a redox mechanism.
+- Recovery and Virtual Cell: negative success gates remain visible alongside working instruments and proposed tests.
+- The corpus contains 41 manuscript records, including historical versions—not 41 independently established discoveries.
 
 <details>
-<summary><strong>Preserved release documentation, source and reproduction</strong></summary>
+<summary>Preserved earlier source documentation and scientific record</summary>
 
 <p align="center"><strong>THE EMPIRICAL OBSERVATORY</strong></p>
-<h1 align="center">A growing map of reality.</h1>
-<p align="center">Enter the night office. Meet the projects. Build the next connection.</p>
+<h1 align="center">Every question leaves a trace.</h1>
+<p align="center">Enter the night office. Ask the terminal. Follow the evidence.</p>
 <a href="https://empirical-observatory.madmanmuzza.chatgpt.site/"><img width="100%" src="public/images/observatory-exterior.png" alt="Enter the Observatory — a lighted doorway beneath the night dome" /></a>
-
-**[Living science framework](https://empirical-observatory.madmanmuzza.chatgpt.site/framework)** — established references, conditional models, hypotheses and gaps, linked to anatomy, sources and executable checks. [Editor workshop](https://empirical-observatory.madmanmuzza.chatgpt.site/framework/work) · [Architecture and next experiment](research/framework/README.md). The central computer is now the visitor guide; scientific instruments remain available separately.
 <p align="center"><em>Boundedness · time · adaptation · biology · dynamics · quantum mechanisms</em></p>
 
 Questions become scoped calculations, illustrated reports and the next observation to make. The [investigation contract](research/Investigation_Pipeline.md) distinguishes source-guided reports from hosted AI, and mathematical models from empirical discoveries.
@@ -295,6 +300,4 @@ The [hosted Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site)
 
 </details>
 
-
 </details>
-
