@@ -1,8 +1,8 @@
 # Cancer Lab · The Recovery Boundary
 
-**Daniel Murray · Empirical Architecture Observatory**
+**Daniel Murray · Empirical Architecture Observatory**[Download the model, source and evidence](cancer-lab.zip) · [Explore the public research Atlas](https://boundedness-atlas.madmanmuzza.chatgpt.site/)
 
-[Open the working model](https://empirical-observatory.madmanmuzza.chatgpt.site/cancer)
+**Access checked 15 September 2026:** the hosted Observatory has restricted access and its dedicated /cancer route was unavailable. The downloadable package is the current way to run this exhibit.
 
 ## The research question
 
@@ -14,7 +14,7 @@ This is a visitor-facing, reproducible hypothesis exhibit. It does not claim to 
 
 Three sliders change stress depth, rescue delay and restored support. The model recomputes a deterministic trajectory and the exact finite-passage boundary. Earlier/later examples and a downloadable scenario make the assumptions inspectable. A separate chart shows published measurements; it does not reuse model output as evidence.
 
-The static application has no external packages, trackers, AI calls, accounts or backend. Serve this directory over local HTTP and open index.html. To run the numerical checks: `node --test model.test.mjs`. The Observatory's /cancer entry routes to this same application.
+The static application has no external packages, trackers, AI calls, accounts or backend. Extract cancer-lab.zip, serve the extracted application directory over local HTTP and open index.html. Run its numerical checks with `node --test model.test.mjs`. The downloadable application and hosted route have separate release states.
 
 ## Model and limits
 
