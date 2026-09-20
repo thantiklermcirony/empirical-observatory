@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "rules_version": "1.0.0",
-  "generated_at": "2026-09-19T23:21:11.109041+00:00",
+  "generated_at": "2026-09-20T01:24:44.452280+00:00",
   "mode": "deterministic evidence triage",
-  "inputs_sha256": "a0d28a9d07e58b1c2fad90391e44956d5a736fefbe4d69b5d649b545fbc887a1",
+  "inputs_sha256": "e9a660878a84ee5a9b502c4631066b8e31f358aeb389be1e43f284eae63cc687",
   "checks": [
     {
       "id": "recovery-observation-coverage",
@@ -27,7 +27,7 @@
       "id": "grid-prospective-evidence",
       "state": "collecting",
       "title": "Accumulate prospective forecast evidence",
-      "reason": "45 mature national outcomes recorded.",
+      "reason": "46 mature national outcomes recorded.",
       "acceptance": "Qualify acquisition, missed-slot accounting and outcome revisions; then specify an independent model comparison before fitting a candidate.",
       "automatic_action": "Collect official forecasts, verify archive integrity and resolve mature estimated actuals. No predictor promotion."
     },
@@ -35,7 +35,7 @@
       "id": "grid-availability",
       "state": "review",
       "title": "Inspect missed collection slots",
-      "reason": "398 scheduled slots are recorded as missed.",
+      "reason": "401 scheduled slots are recorded as missed.",
       "acceptance": "Determine scheduling/source failure from the archived run records. Keep misses in the denominator.",
       "automatic_action": "Report the failure; never reconstruct an earlier forecast from later historical data."
     }
