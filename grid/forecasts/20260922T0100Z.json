@@ -1,0 +1,28 @@
+{
+  "attribution": {
+    "description": "Official national carbon-intensity forecasts and estimated actuals; collector maintained independently",
+    "endorsement": "No provider endorsement or affiliation is implied",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "provider": "National Energy System Operator (NESO)",
+    "source": "https://carbonintensity.org.uk/",
+    "terms": "https://github.com/carbon-intensity/terms",
+    "units": "gCO2/kWh"
+  },
+  "capture_record": "captures/20260921T005656799570Z-ec2c47ba-forecast.json",
+  "evidence": "local receipt clock; public pre-outcome commitment not established by this file",
+  "exact_lead_seconds": 86582.647317,
+  "forecast_id": "20260922T0100Z",
+  "issued_at": "2026-09-21T00:56:57.352683Z",
+  "matures_at": "2026-09-24T01:30:00.000000Z",
+  "nominal_run_slot": "2026-09-21T00:35:00.000000Z",
+  "provider": "NESO",
+  "provider_issued_at": null,
+  "raw_sha256": "ccb2c63717b50f3c4e3681c27a63db1ff6893d662fef4982d49679928abe964d",
+  "received_at": "2026-09-21T00:56:57.352683Z",
+  "schema_version": 1,
+  "target_end": "2026-09-22T01:30:00.000000Z",
+  "target_start": "2026-09-22T01:00:00.000000Z",
+  "units": "gCO2/kWh",
+  "value": 153
+}
