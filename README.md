@@ -1,5 +1,7 @@
 # Empirical Architecture Observatory
 
+> Part of [The Bounded Observer](https://github.com/thantiklermcirony/bounded-observer). This repository holds laboratory experiments, applications, data routes and execution. The [current project map](https://thantiklermcirony.github.io/bounded-observer/project.html) and [mathematical library](https://github.com/thantiklermcirony/bounded-observer/tree/main/papers) provide the common entrance. The sources below retain their versions, premises, licences and individual outcomes.
+
 **Daniel John Murray · Models, measurements and experiments**
 
 The laboratory repository for a programme studying bounded systems, hidden state, finite resources and useful action. The aim is to connect an explanation of a system with a calculation, a discriminating experiment and a result that can change the explanation.
