@@ -1,0 +1,11 @@
+{
+  "actual": 85,
+  "capture_record": "captures/20261016T215619444053Z-5c5c8011-actual.json",
+  "forecast_id": "20261014T2030Z",
+  "kind": "national_estimated_actual_not_final_or_marginal_emissions",
+  "observed_at": "2026-10-16T21:56:20.338286Z",
+  "raw_sha256": "3acdd5b0ea0a88b45d55906876de74dd60a447df576bc83185ae2f38c718f0c5",
+  "resolved_at": "2026-10-16T21:56:20.338286Z",
+  "target_end": "2026-10-14T21:00:00.000000Z",
+  "target_start": "2026-10-14T20:30:00.000000Z"
+}
