@@ -10,26 +10,10 @@
     "units": "gCO2/kWh"
   },
   "candidate_model": null,
-  "capturedAt": "2026-10-15T22:34:44.513871Z",
+  "capturedAt": "2026-10-16T00:40:24.931574Z",
   "detail": "Collecting NESO forecasts for the first half-hour starting at least 24 hours after receipt. Actuals resolve no earlier than 48 hours after target end. Issued time is our receipt time; no candidate predictor is being evaluated. Missed counts are unobserved nominal run slots, not verified scheduler failures.",
   "evidence": "Local capture records; GitHub publication time must be established separately",
   "forecast_records": [
-    {
-      "actual": 150,
-      "actual_raw_sha256": "5229393ad2fce32bd556e9432f8ef15988a43f640f9baeccd94626b06849694b",
-      "exact_lead_seconds": 87110.457773,
-      "forecast_id": "20260911T2230Z",
-      "issued_at": "2026-09-10T22:18:09.542227Z",
-      "matures_at": "2026-09-13T23:00:00.000000Z",
-      "raw_sha256": "5965ea84bd4ba183caeec5f1b9c92e2868fec0ffd0952bdf06b4f15dbaca8a97",
-      "received_at": "2026-09-10T22:18:09.542227Z",
-      "resolved_at": "2026-09-14T00:22:03.248858Z",
-      "revision_count": 0,
-      "status": "resolved",
-      "target_end": "2026-09-11T23:00:00.000000Z",
-      "target_start": "2026-09-11T22:30:00.000000Z",
-      "value": 114
-    },
     {
       "actual": 116,
       "actual_raw_sha256": "b97da736444d9515f230cbc0e752414f694e3ac714bda00c55728a53ef1cb804",
@@ -2831,17 +2815,17 @@
       "value": 72
     },
     {
-      "actual": null,
-      "actual_raw_sha256": null,
+      "actual": 95,
+      "actual_raw_sha256": "3acdd5b0ea0a88b45d55906876de74dd60a447df576bc83185ae2f38c718f0c5",
       "exact_lead_seconds": 87366.377855,
       "forecast_id": "20261014T0000Z",
       "issued_at": "2026-10-12T23:43:53.622145Z",
       "matures_at": "2026-10-16T00:30:00.000000Z",
       "raw_sha256": "bd7b707c6c058b86290d9b3f5de6db1bbc1df3731afb4f3a06b74de3fdd61610",
       "received_at": "2026-10-12T23:43:53.622145Z",
-      "resolved_at": null,
+      "resolved_at": "2026-10-16T00:40:25.324316Z",
       "revision_count": 0,
-      "status": "pending",
+      "status": "resolved",
       "target_end": "2026-10-14T00:30:00.000000Z",
       "target_start": "2026-10-14T00:00:00.000000Z",
       "value": 80
@@ -3085,37 +3069,49 @@
       "target_end": "2026-10-16T23:30:00.000000Z",
       "target_start": "2026-10-16T23:00:00.000000Z",
       "value": 93
+    },
+    {
+      "actual": null,
+      "actual_raw_sha256": null,
+      "exact_lead_seconds": 87575.068426,
+      "forecast_id": "20261017T0100Z",
+      "issued_at": "2026-10-16T00:40:24.931574Z",
+      "matures_at": "2026-10-19T01:30:00.000000Z",
+      "raw_sha256": "7ead6bcea3482e7fe4283a98fbe4af7ff3c99e7c011a5a1a6b1f6bad9cabe573",
+      "received_at": "2026-10-16T00:40:24.931574Z",
+      "resolved_at": null,
+      "revision_count": 0,
+      "status": "pending",
+      "target_end": "2026-10-17T01:30:00.000000Z",
+      "target_start": "2026-10-17T01:00:00.000000Z",
+      "value": 81
     }
   ],
-  "generated_at": "2026-10-15T22:34:45.077674Z",
+  "generated_at": "2026-10-16T00:40:25.326027Z",
   "geography": "Great Britain national",
   "health": {
     "error_count": 0,
-    "expected_run_slots": 1710,
-    "forecast_count": 197,
+    "expected_run_slots": 1715,
+    "forecast_count": 198,
     "last_run": {
       "collector_sha256": "c8647f54dc8351c99e7a4cf2382aad46f7f0a71efc59682782dd8543a7e6551f",
-      "completed_at": "2026-10-15T22:34:45.077674Z",
+      "completed_at": "2026-10-16T00:40:25.326027Z",
       "errors": [],
       "forecast_status": "captured",
-      "mature_checked": 4,
+      "mature_checked": 1,
       "mature_missing": 0,
-      "new_resolutions": 0,
+      "new_resolutions": 1,
       "new_revisions": 0,
-      "nominal_slot": "2026-10-15T22:05:00.000000Z",
-      "run_id": "20261015T223443967314Z-e9a72554",
-      "started_at": "2026-10-15T22:34:43.967314Z",
-      "target_id": "20261016T2300Z"
+      "nominal_slot": "2026-10-16T00:35:00.000000Z",
+      "run_id": "20261016T004024442341Z-ce213c60",
+      "started_at": "2026-10-16T00:40:24.442341Z",
+      "target_id": "20261017T0100Z"
     },
     "mature_missing_checks": 0,
     "mature_unresolved_count": 0,
-    "observed_run_slots": 197,
+    "observed_run_slots": 198,
     "pending_count": 16,
     "recent_unobserved_slots": [
-      "2026-10-13T16:05:00.000000Z",
-      "2026-10-13T16:35:00.000000Z",
-      "2026-10-13T17:05:00.000000Z",
-      "2026-10-13T17:35:00.000000Z",
       "2026-10-13T18:05:00.000000Z",
       "2026-10-13T18:35:00.000000Z",
       "2026-10-13T19:05:00.000000Z",
@@ -3207,29 +3203,25 @@
       "2026-10-15T20:05:00.000000Z",
       "2026-10-15T20:35:00.000000Z",
       "2026-10-15T21:05:00.000000Z",
-      "2026-10-15T21:35:00.000000Z"
+      "2026-10-15T21:35:00.000000Z",
+      "2026-10-15T22:35:00.000000Z",
+      "2026-10-15T23:05:00.000000Z",
+      "2026-10-15T23:35:00.000000Z",
+      "2026-10-16T00:05:00.000000Z"
     ],
-    "resolved_count": 181,
+    "resolved_count": 182,
     "revision_count": 0,
-    "run_count": 197,
+    "run_count": 198,
     "slot_interpretation": "Latest nominal UTC slot at actual run start; queued scheduler event times are not reconstructed",
-    "unobserved_run_slots": 1513
+    "unobserved_run_slots": 1517
   },
-  "last_capture": "2026-10-15T22:34:44.513871Z",
+  "last_capture": "2026-10-16T00:40:24.931574Z",
   "maturity_rule": "first observed non-null national actual at least 48h after target end",
-  "missed": 1513,
+  "missed": 1517,
   "phase": "collector_only",
   "predictive_superiority_claim": false,
   "provenance": "Local capture records; GitHub publication time must be established separately",
   "records": [
-    {
-      "actual": 150,
-      "end": "2026-09-11T23:00:00.000000Z",
-      "forecast": 114,
-      "issuedAt": "2026-09-10T22:18:09.542227Z",
-      "leadHours": 24.19734938138889,
-      "start": "2026-09-11T22:30:00.000000Z"
-    },
     {
       "actual": 116,
       "end": "2026-09-12T01:00:00.000000Z",
@@ -4631,7 +4623,7 @@
       "start": "2026-10-13T17:30:00.000000Z"
     },
     {
-      "actual": null,
+      "actual": 95,
       "end": "2026-10-14T00:30:00.000000Z",
       "forecast": 80,
       "issuedAt": "2026-10-12T23:43:53.622145Z",
@@ -4757,9 +4749,17 @@
       "issuedAt": "2026-10-15T22:34:44.513871Z",
       "leadHours": 24.420968369166665,
       "start": "2026-10-16T23:00:00.000000Z"
+    },
+    {
+      "actual": null,
+      "end": "2026-10-17T01:30:00.000000Z",
+      "forecast": 81,
+      "issuedAt": "2026-10-16T00:40:24.931574Z",
+      "leadHours": 24.32640789611111,
+      "start": "2026-10-17T01:00:00.000000Z"
     }
   ],
-  "resolved": 181,
+  "resolved": 182,
   "schema_version": 1,
   "source": "https://carbonintensity.org.uk/",
   "status": "collecting",
