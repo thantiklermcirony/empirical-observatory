@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "rules_version": "1.0.0",
-  "generated_at": "2026-10-16T21:56:20.990259+00:00",
+  "generated_at": "2026-10-17T00:10:26.848023+00:00",
   "mode": "deterministic evidence triage",
-  "inputs_sha256": "6dd2fbffd63dbf6917f2c1b2f82a7a27d256543fb8bc42c872c35dcbffd1ebb1",
+  "inputs_sha256": "c16fe3f5ed6224a08b0c25516fb316c0a3981848573b3cd58bc2d4d0c8fc8832",
   "checks": [
     {
       "id": "recovery-observation-coverage",
@@ -35,7 +35,7 @@
       "id": "grid-availability",
       "state": "review",
       "title": "Inspect missed collection slots",
-      "reason": "1554 scheduled slots are recorded as missed.",
+      "reason": "1558 scheduled slots are recorded as missed.",
       "acceptance": "Determine scheduling/source failure from the archived run records. Keep misses in the denominator.",
       "automatic_action": "Report the failure; never reconstruct an earlier forecast from later historical data."
     }
