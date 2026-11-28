@@ -1,0 +1,13 @@
+{
+  "bytes": 450,
+  "headers": {
+    "content-type": "application/json",
+    "date": "Sat, 28 Nov 2026 03:07:21 GMT"
+  },
+  "http_status": 200,
+  "kind": "forecast",
+  "raw_sha256": "719c497b802d6c25044033aee299f02d8701695fdf7e596919584ae50077aa2a",
+  "received_at": "2026-11-28T03:07:21.532458Z",
+  "requested_at": "2026-11-28T03:07:20.971511Z",
+  "url": "https://api.carbonintensity.org.uk/intensity/2026-11-29T03:00Z/2026-11-29T04:30Z"
+}
